@@ -18,9 +18,9 @@
     <meta name="theme-color" content="#ffffff">
 </head>
 
-<body class="min-h-screen bg-white {{ environment == 'local' ? 'debug' : '' }}">
+<body class="min-h-screen bg-white mx-auto {{ environment == 'local' ? 'debug' : '' }}">
     {{ yield:google_tag_manager }}
-    {{ partial:layout/header }}
+    {{ partial:layout/monsun_header }}
     {{ template_content }}
     {{ partial:layout/footer }}
     <script src="{{ mix src='/js/site.js' }}"></script>
