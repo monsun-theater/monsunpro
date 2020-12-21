@@ -16,8 +16,8 @@ module.exports = {
     // all default Tailwind colors you should extend the colors instead. 
     colors: {
       transparent: 'transparent',
-      black:   '#000',
-      white:  '#fff',
+      black: '#1A1A1A',
+      white: '#fff',
       // Grays (currently default TW blue gray).
       neutral: colors.blueGray,
       // Client primary color (currently default TW blue).
@@ -61,7 +61,7 @@ module.exports = {
     },
   },
   plugins: [
-    plugin(function({ addBase, theme }) {
+    plugin(function ({ addBase, theme }) {
       addBase({
         // Default color transition on links unless user prefers reduced motion.
         '@media (prefers-reduced-motion: no-preference)': {
@@ -70,36 +70,36 @@ module.exports = {
           },
         },
         'html': {
-            fontDisplay: 'swap',
-            color: theme('colors.neutral.800'),
-            //--------------------------------------------------------------------------
-            // Set sans, serif or mono stack with optional custom font as default.
-            //--------------------------------------------------------------------------
-            // fontFamily: theme('fontFamily.mono'),
-            fontFamily: theme('fontFamily.sans'),
-            // fontFamily: theme('fontFamily.serif'),
+          fontDisplay: 'swap',
+          color: theme('colors.neutral.800'),
+          //--------------------------------------------------------------------------
+          // Set sans, serif or mono stack with optional custom font as default.
+          //--------------------------------------------------------------------------
+          // fontFamily: theme('fontFamily.mono'),
+          fontFamily: theme('fontFamily.sans'),
+          // fontFamily: theme('fontFamily.serif'),
         },
         '::selection': {
-            backgroundColor: theme('colors.primary.600'),
-            color: theme('colors.white'),
+          backgroundColor: theme('colors.primary.600'),
+          color: theme('colors.white'),
         },
         '::-moz-selection': {
-            backgroundColor: theme('colors.primary.600'),
-            color: theme('colors.white'),
+          backgroundColor: theme('colors.primary.600'),
+          color: theme('colors.white'),
         },
       })
     }),
 
     // Custom components for this particular site.
-    plugin(function({ addComponents, theme }) {
+    plugin(function ({ addComponents, theme }) {
       const components = {
-        
+
       }
       addComponents(components)
     }),
 
     // Custom utilities for this particular site.
-    plugin(function({ addUtilities, theme, variants }) {
+    plugin(function ({ addUtilities, theme, variants }) {
       const newUtilities = {
       }
       addUtilities(newUtilities)

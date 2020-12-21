@@ -1,8 +1,31 @@
 {{# The sites main navigation rendered on each page. It's 2 levels deep by default and uses AlpineJS for interactivity.
 There's a desktop and a mobile version. #}}
-
 {{# The desktop navigation. Hidden on smaller screen. Shown from md and up. #}}
-<nav class="hidden md:block">
+<!-- This example requires Tailwind CSS v2.0+ -->
+<nav class="hidden sm:block">
+
+
+    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+        aria-hidden="true">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+    </svg>
+    <div>MENU</div>
+
+
+
+    <div class="max-w-xs mx-auto">{{ partial:components/logo }}</div>
+
+    <div>SUCHE</div>
+    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+    </svg>
+
+
+</nav>
+
+
+<nav class="hidden sm:block">
     <ul class="flex space-x-8">
         {{ nav:main max_depth="2" include_home="true" }}
         <li {{ if children }} x-data="{ subnavOpen: false }" {{ /if }} class="relative leading-none">
@@ -35,8 +58,9 @@ There's a desktop and a mobile version. #}}
     </ul>
 </nav>
 
+
 {{# The mobile navigation. Hidden from md and up #}}
-<nav class="md:hidden" x-data="{ mobileNavOpen: false }">
+<nav class="sm:hidden" x-data="{ mobileNavOpen: false }">
     <button
         @click.prevent="mobileNavOpen = !mobileNavOpen, mobileNavOpen ? document.body.classList.add('no-scroll') : document.body.classList.remove('no-scroll')"
         class="fixed z-20 w-16 h-16 flex justify-center items-center right-0 bottom-0 mb-safe mr-8 bg-primary-500 text-white text-xs text-uppercase tracking-widest font-bold"
