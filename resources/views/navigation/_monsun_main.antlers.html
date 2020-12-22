@@ -4,58 +4,65 @@ There's a desktop and a mobile version. #}}
 <!-- This example requires Tailwind CSS v2.0+ -->
 <nav class="hidden sm:block">
 
-
-    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
-        aria-hidden="true">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-    </svg>
-    <div>MENU</div>
-
-
-
-    <div class="max-w-xs mx-auto">{{ partial:components/logo }}</div>
-
-    <div>SUCHE</div>
-    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-    </svg>
+    <div class="flex items-center justify-between border-b-2 px-2 pb-2">
+        <div class="flex">
+            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+            <div>MENU</div>
+        </div>
 
 
+        <div><a aria-label="Logo {{ config:app:name }}" href="{{ site:url }}">
+                <img class="h-14" src="/assets/site-setup/logos/monsun-logo-wordmark.svg" alt="{{ config:app:name }}" />
+            </a></div>
+        <div class="flex">
+            <div>SUCHE</div>
+            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+        </div>
+    </div>
 </nav>
 
 
 <nav class="hidden sm:block">
-    <ul class="flex space-x-8">
-        {{ nav:main max_depth="2" include_home="true" }}
-        <li {{ if children }} x-data="{ subnavOpen: false }" {{ /if }} class="relative leading-none">
-            <a class="flex items-center font-bold text-xs uppercase tracking-wide hover:text-primary-600 {{ is_current || is_parent ? 'text-primary-600' : 'text-neutral-800' }}"
-                {{ if children }} href="#" @click.prevent="subnavOpen = true" @click.away="subnavOpen = false" {{ else
-                }} href="{{ url }}" {{ /if }}>
-                {{ title }}
+    <div>
+        <ul class="flex items-center justify-around">
+            {{ nav:main max_depth="2" }}
+            <li {{ if children }} x-data="{ subnavOpen: false }" {{ /if }} class="relative leading-none">
+                <a class="flex items-center font-bold text-xs uppercase tracking-wide hover:text-primary-600 {{ is_current || is_parent ? 'text-primary-600' : 'text-neutral-800' }}"
+                    {{ if children }} href="#" @click.prevent="subnavOpen = true" @click.away="subnavOpen = false" {{
+                    else }} href="{{ url }}" {{ /if }}>
+                    {{ title }}
+                    {{ if children }}
+                    <svg class="ml-1 w-2 text-neutral-800 stroke-current overflow-visible transform"
+                        :class="{ 'rotate-180': subnavOpen }" aria-hidden="true" stroke-width="16"
+                        viewBox="0 0 140 140">
+                        <path d="M135.625 42.648l-62.533 62.527a4.37 4.37 0 01-6.184 0L4.375 42.648" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    {{ /if }}
+                </a>
                 {{ if children }}
-                <svg class="ml-1 w-2 text-neutral-800 stroke-current overflow-visible transform"
-                    :class="{ 'rotate-180': subnavOpen }" aria-hidden="true" stroke-width="16" viewBox="0 0 140 140">
-                    <path d="M135.625 42.648l-62.533 62.527a4.37 4.37 0 01-6.184 0L4.375 42.648" fill="none"
-                        stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
+                <ul x-show="subnavOpen" class="absolute py-2 bg-white space-y-2" :aria-expanded="subnavOpen" x-cloak>
+                    {{ children }}
+                    <li class="">
+                        <a class="whitespace-nowrap text-xs font-bold hover:text-primary-600 {{ is_current || is_parent ? 'text-primary-600' : 'text-neutral-800' }}"
+                            href="{{ url }}">
+                            {{ title }}
+                        </a>
+                    </li>
+                    {{ /children }}
+                </ul>
                 {{ /if }}
-            </a>
-            {{ if children }}
-            <ul x-show="subnavOpen" class="absolute py-2 bg-white space-y-2" :aria-expanded="subnavOpen" x-cloak>
-                {{ children }}
-                <li class="">
-                    <a class="whitespace-nowrap text-xs font-bold hover:text-primary-600 {{ is_current || is_parent ? 'text-primary-600' : 'text-neutral-800' }}"
-                        href="{{ url }}">
-                        {{ title }}
-                    </a>
-                </li>
-                {{ /children }}
-            </ul>
-            {{ /if }}
-        </li>
-        {{ /nav:main }}
-    </ul>
+            </li>
+            {{ /nav:main }}
+        </ul>
+    </div>
 </nav>
 
 

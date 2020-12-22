@@ -1,7 +1,7 @@
 ---
-title: 'Second page'
-updated_by: 0099140b-7e75-4f28-a8f7-9ff4fec4e3a9
-updated_at: 1602585616
+title: Spielplan
+updated_by: 34d4dc92-ec1a-4900-9a81-ed8dd8606f23
+updated_at: 1608628184
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
