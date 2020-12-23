@@ -1,8 +1,8 @@
-/* .outside .logo svg {
+.outside .logo svg {
     display: none;
 }
 .outside .logo {
-    background-image: url('/visuals/logo.svg');
+    background-image: url('/assets/site-setup/logos/monsun-logo-wordmark.svg');
     background-size: auto 60px;
     background-position: center;
     background-repeat: no-repeat;
@@ -13,7 +13,7 @@
     * {
         fill: black;
     }
-} */
+}
 
 /* Make dashboard widgets vertially stretch so it's easier on the eyes. */
 .widget .card {
