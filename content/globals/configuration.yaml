@@ -1,1 +1,4 @@
 title: Configuration
+data:
+  404_title: 'Seite nicht gefunden'
+  404_text: 'Die von Ihnen gesuchte Seite konnte leider nicht gefunden werden.'

@@ -1,0 +1,58 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: strasse
+        field:
+          input_type: text
+          antlers: true
+          display: Straße
+          type: text
+          icon: text
+          listable: hidden
+      -
+        handle: hausnummer
+        field:
+          input_type: text
+          antlers: true
+          display: Hausnummer
+          type: text
+          icon: text
+          listable: hidden
+      -
+        handle: postleitzahl
+        field:
+          input_type: text
+          antlers: false
+          display: Postleitzahl
+          type: text
+          icon: text
+          listable: hidden
+      -
+        handle: wohnort
+        field:
+          input_type: text
+          antlers: true
+          display: Wohnort
+          type: text
+          icon: text
+          listable: hidden
+      -
+        handle: e-mail-adresse
+        field:
+          input_type: text
+          antlers: false
+          display: E-Mail-Adresse
+          type: text
+          icon: text
+          listable: hidden
+      -
+        handle: telefonnummer
+        field:
+          input_type: text
+          antlers: true
+          display: Telefonnummer
+          type: text
+          icon: text
+          listable: hidden

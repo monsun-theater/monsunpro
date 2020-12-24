@@ -1,1 +1,31 @@
 title: 'Social media'
+data:
+  social_media:
+    -
+      url: monsuntheater
+      prefix: 'https://www.facebook.com/'
+      type: facebook
+      enabled: true
+      social_icon:
+        - site-setup/social-media-icons/icon-facebook.svg
+    -
+      url: monsun.theater/
+      prefix: 'https://www.instagram.com/'
+      type: instagram
+      enabled: true
+      social_icon:
+        - site-setup/social-media-icons/icon-instagram.svg
+    -
+      url: channel/UCzHWAr2bLp8W0YfOVlVXSWg
+      prefix: 'https://www.youtube.com/'
+      type: youtube
+      enabled: true
+      social_icon:
+        - site-setup/social-media-icons/icon-youtube.svg
+    -
+      url: monsuntheater
+      prefix: 'https://www.vimeo.com/'
+      type: vimeo
+      enabled: true
+      social_icon:
+        - site-setup/social-media-icons/icon-vimeo.svg

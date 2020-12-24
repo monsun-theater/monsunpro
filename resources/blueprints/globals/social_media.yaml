@@ -25,11 +25,23 @@ sections:
                     prepend: 'https://www.facebook.com/'
                     display: URL
                     validate: required
-                - 
+                -
                   handle: prefix
-                  field: 
+                  field:
                     type: hidden
                     default: 'https://www.facebook.com/'
+                -
+                  handle: social_icon
+                  field:
+                    mode: grid
+                    container: assets
+                    folder: site-setup/social-media-icons
+                    restrict: false
+                    allow_uploads: true
+                    display: 'Social Icon'
+                    type: assets
+                    icon: assets
+                    listable: hidden
             instagram:
               display: Instagram
               fields:
@@ -43,11 +55,23 @@ sections:
                     prepend: 'https://www.instagram.com/'
                     display: URL
                     validate: required
-                - 
+                -
                   handle: prefix
-                  field: 
+                  field:
                     type: hidden
                     default: 'https://www.instagram.com/'
+                -
+                  handle: social_icon
+                  field:
+                    mode: grid
+                    container: assets
+                    folder: site-setup/social-media-icons
+                    restrict: false
+                    allow_uploads: true
+                    display: 'Social Icon'
+                    type: assets
+                    icon: assets
+                    listable: hidden
             linkedin:
               display: LinkedIn
               fields:
@@ -61,11 +85,23 @@ sections:
                     prepend: 'https://www.linkedin.com/'
                     display: URL
                     validate: required
-                - 
+                -
                   handle: prefix
-                  field: 
+                  field:
                     type: hidden
                     default: 'https://www.linkedin.com/'
+                -
+                  handle: social_icon
+                  field:
+                    mode: grid
+                    container: assets
+                    folder: site-setup/social-media-icons
+                    restrict: false
+                    allow_uploads: true
+                    display: 'Social Icon'
+                    type: assets
+                    icon: assets
+                    listable: hidden
             twitter:
               display: Twitter
               fields:
@@ -79,11 +115,23 @@ sections:
                     prepend: 'https://www.twitter.com/'
                     display: URL
                     validate: required
-                - 
+                -
                   handle: prefix
-                  field: 
+                  field:
                     type: hidden
                     default: 'https://www.twitter.com/'
+                -
+                  handle: social_icon
+                  field:
+                    mode: grid
+                    container: assets
+                    folder: site-setup/social-media-icons
+                    restrict: false
+                    allow_uploads: true
+                    display: 'Social Icon'
+                    type: assets
+                    icon: assets
+                    listable: hidden
             vimeo:
               display: Vimeo
               fields:
@@ -97,11 +145,23 @@ sections:
                     prepend: 'https://www.vimeo.com/'
                     display: URL
                     validate: required
-                - 
+                -
                   handle: prefix
-                  field: 
+                  field:
                     type: hidden
                     default: 'https://www.vimeo.com/'
+                -
+                  handle: social_icon
+                  field:
+                    mode: grid
+                    container: assets
+                    folder: site-setup/social-media-icons
+                    restrict: false
+                    allow_uploads: true
+                    display: 'Social Icon'
+                    type: assets
+                    icon: assets
+                    listable: hidden
             youtube:
               display: YouTube
               fields:
@@ -115,11 +175,24 @@ sections:
                     prepend: 'https://www.youtube.com/'
                     display: URL
                     validate: required
-                - 
+                -
                   handle: prefix
-                  field: 
+                  field:
                     type: hidden
                     default: 'https://www.youtube.com/'
+                -
+                  handle: social_icon
+                  field:
+                    mode: grid
+                    container: assets
+                    folder: site-setup/social-media-icons
+                    restrict: false
+                    allow_uploads: true
+                    display: 'Social Icon'
+                    type: assets
+                    icon: assets
+                    listable: hidden
           type: replicator
           listable: hidden
           display: 'Social media'
+          collapse: false
