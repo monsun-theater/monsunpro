@@ -18,6 +18,7 @@ module.exports = {
       transparent: 'transparent',
       black: '#1A1A1A',
       white: '#fff',
+      monsun: '#f38a49',
       // Grays (currently default TW blue gray).
       neutral: colors.blueGray,
       // Client primary color (currently default TW blue).

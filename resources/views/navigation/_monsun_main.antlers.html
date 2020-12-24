@@ -34,7 +34,7 @@ There's a desktop and a mobile version. #}}
                     <ul class="flex items-start justify-left px-2 space-x-6">
                         {{ nav:top_menu_primary max_depth="2" }}
                         <li class="relative leading-none">
-                            <a class="text-2xl flex font-bold uppercase tracking-wide hover:text-primary-600 {{ is_current || is_parent ? 'text-primary-600' : 'text-neutral-800' }}"
+                            <a class="text-2xl flex font-bold uppercase tracking-wide hover:text-monsun {{ is_current || is_parent ? 'text-monsun' : 'text-neutral-800' }}"
                                 {{ if children }} href="{{ url }}" {{ /if }}>
                                 {{ title }}
 
@@ -43,7 +43,7 @@ There's a desktop and a mobile version. #}}
                             <ul class="py-2 bg-white space-y-2">
                                 {{ children }}
                                 <li class="">
-                                    <a class="whitespace-nowrap text-xs font-bold hover:text-primary-600 {{ is_current || is_parent ? 'text-primary-600' : 'text-neutral-800' }}"
+                                    <a class="whitespace-nowrap text-xs font-bold hover:text-monsun {{ is_current || is_parent ? 'text-monsun' : 'text-neutral-800' }}"
                                         href="{{ url }}">
                                         {{ title }}
                                     </a>
@@ -85,7 +85,7 @@ There's a desktop and a mobile version. #}}
                 <ul class="flex items-center justify-right px-2 space-x-6">
                     {{ nav:top_menu_secondary max_depth="2" }}
                     <li class="relative leading-none">
-                        <a class="text-2xl flex items-start font-bold uppercase tracking-wide hover:text-primary-600 {{ is_current || is_parent ? 'text-primary-600' : 'text-neutral-800' }}"
+                        <a class="text-2xl flex items-start font-bold uppercase tracking-wide hover:text-monsun {{ is_current || is_parent ? 'text-monsun' : 'text-neutral-800' }}"
                             {{ if children }} href="{{ url }}" {{ /if }}>
                             {{ title }}
 
@@ -94,7 +94,7 @@ There's a desktop and a mobile version. #}}
                         <ul class="py-2 bg-white space-y-2">
                             {{ children }}
                             <li class="">
-                                <a class="whitespace-nowrap text-xs font-bold hover:text-primary-600 {{ is_current || is_parent ? 'text-primary-600' : 'text-neutral-800' }}"
+                                <a class="whitespace-nowrap text-xs font-bold hover:text-monsun {{ is_current || is_parent ? 'text-monsun' : 'text-neutral-800' }}"
                                     href="{{ url }}">
                                     {{ title }}
                                 </a>
@@ -120,7 +120,7 @@ There's a desktop and a mobile version. #}}
         x-show="mobileNavOpen" x-cloak>
         {{ nav:main max_depth="2" include_home="true" }}
         <li {{ if children }} x-data="{ mobileNavSubnavOpen: false }" {{ /if }} class="leading-none">
-            <a class="flex items-center font-bold uppercase tracking-wide hover:text-primary-600 {{ is_current || is_parent ? 'text-primary-600' : 'text-neutral-800' }}"
+            <a class="flex items-center font-bold uppercase tracking-wide hover:text-monsun {{ is_current || is_parent ? 'text-monsun' : 'text-neutral-800' }}"
                 {{ if children }} href="#" @click.prevent="mobileNavSubnavOpen = true"
                 @click.away="mobileNavSubnavOpen = false" {{ else }} href="{{ url }}" {{ /if }}>
                 {{ title }}
@@ -137,7 +137,7 @@ There's a desktop and a mobile version. #}}
             <ul x-show="mobileNavSubnavOpen" class="mt-4 space-y-4" :aria-expanded="mobileNavSubnavOpen" x-cloak>
                 {{ children }}
                 <li>
-                    <a class="whitespace-nowrap font-bold hover:text-primary-600 {{ is_current || is_parent ? 'text-primary-600' : 'text-neutral-800' }}"
+                    <a class="whitespace-nowrap font-bold hover:text-monsun {{ is_current || is_parent ? 'text-monsun' : 'text-neutral-800' }}"
                         href="{{ url }}">
                         {{ title }}
                     </a>
