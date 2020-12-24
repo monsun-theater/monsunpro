@@ -28,55 +28,83 @@ There's a desktop and a mobile version. #}}
     </div>
     {{# Primary Menu Desktop #}}
     <div x-show="isOpen" class="hidden sm:block  bg-white">
-        <div class="flex justify-between">
-            <ul class="flex items-center justify-left px-2 space-x-6">
-                {{ nav:top_menu_primary max_depth="2" }}
-                <li class="relative leading-none">
-                    <a class="text-2xl flex items-center font-bold uppercase tracking-wide hover:text-primary-600 {{ is_current || is_parent ? 'text-primary-600' : 'text-neutral-800' }}"
-                        {{ if children }} href="{{ url }}" {{ /if }}>
-                        {{ title }}
-
-                    </a>
-                    {{ if children }}
-                    <ul class="absolute py-2 bg-white space-y-2">
-                        {{ children }}
-                        <li class="">
-                            <a class="whitespace-nowrap text-xs font-bold hover:text-primary-600 {{ is_current || is_parent ? 'text-primary-600' : 'text-neutral-800' }}"
-                                href="{{ url }}">
+        <div class="flex flex-col">
+            <div>
+                <div class="flex justify-between">
+                    <ul class="flex items-start justify-left px-2 space-x-6">
+                        {{ nav:top_menu_primary max_depth="2" }}
+                        <li class="relative leading-none">
+                            <a class="text-2xl flex font-bold uppercase tracking-wide hover:text-primary-600 {{ is_current || is_parent ? 'text-primary-600' : 'text-neutral-800' }}"
+                                {{ if children }} href="{{ url }}" {{ /if }}>
                                 {{ title }}
+
                             </a>
+                            {{ if children }}
+                            <ul class="py-2 bg-white space-y-2">
+                                {{ children }}
+                                <li class="">
+                                    <a class="whitespace-nowrap text-xs font-bold hover:text-primary-600 {{ is_current || is_parent ? 'text-primary-600' : 'text-neutral-800' }}"
+                                        href="{{ url }}">
+                                        {{ title }}
+                                    </a>
+                                </li>
+                                {{ /children }}
+                            </ul>
+                            {{ /if }}
                         </li>
-                        {{ /children }}
+                        {{ /nav:top_menu_primary }}
                     </ul>
-                    {{ /if }}
-                </li>
-                {{ /nav:top_menu_primary }}
-            </ul>
-            {{# Social icons #}}
-            <div class="flex items-center justify-right px-2 space-x-4">
-                <button type="button" aria-label="Social Facebook" aria-hidden="true">
-                    <a href="/"> <img src="/assets/site-setup/social-media-icons/icon-facebook.svg" alt="Facebook Icon">
-                    </a></button>
-                <button type="button" aria-label="Social Instagram" aria-hidden="true">
-                    <a href="/"> <img src="/assets/site-setup/social-media-icons/icon-instagram.svg"
-                            alt="Instagram Icon">
-                    </a></button>
-                <button type="button" aria-label="Social Vimeo" aria-hidden="true">
-                    <a href="/"> <img src="/assets/site-setup/social-media-icons/icon-vimeo.svg" alt="Vimeo Icon">
-                    </a></button>
-                <button type="button" aria-label="Social Youtube" aria-hidden="true">
-                    <a href="/"> <img src="/assets/site-setup/social-media-icons/icon-youtube.svg" alt="Vimeo Icon">
-                    </a></button>
-                <button @click="isOpen = false" type="button" aria-label="Close window" aria-hidden="true">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="48" height="48">
-                        <path
-                            d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z" />
-                    </svg>
-                </button>
+                    {{# Social icons #}}
+                    <div class="flex items-start justify-right px-2 py-2 space-x-4">
+                        <button type="button" aria-label="Social Facebook" aria-hidden="true">
+                            <a href="/"> <img class="h-12 w-12"
+                                    src="/assets/site-setup/social-media-icons/icon-facebook.svg" alt="Facebook Icon">
+                            </a></button>
+                        <button type="button" aria-label="Social Instagram" aria-hidden="true">
+                            <a href="/"> <img class="h-12 w-12"
+                                    src="/assets/site-setup/social-media-icons/icon-instagram.svg" alt="Instagram Icon">
+                            </a></button>
+                        <button type="button" aria-label="Social Vimeo" aria-hidden="true">
+                            <a href="/"> <img class="h-12 w-12"
+                                    src="/assets/site-setup/social-media-icons/icon-vimeo.svg" alt="Vimeo Icon">
+                            </a></button>
+                        <button type="button" aria-label="Social Youtube" aria-hidden="true">
+                            <a href="/"> <img class="h-12 w-12"
+                                    src="/assets/site-setup/social-media-icons/icon-youtube.svg" alt="Vimeo Icon">
+                            </a></button>
+                        <button @click="isOpen = false" type="button" aria-label="Close window" aria-hidden="true">
+                            <svg class="h-12 w-12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                <path
+                                    d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <ul class="flex items-center justify-right px-2 space-x-6">
+                    {{ nav:top_menu_secondary max_depth="2" }}
+                    <li class="relative leading-none">
+                        <a class="text-2xl flex items-start font-bold uppercase tracking-wide hover:text-primary-600 {{ is_current || is_parent ? 'text-primary-600' : 'text-neutral-800' }}"
+                            {{ if children }} href="{{ url }}" {{ /if }}>
+                            {{ title }}
 
-
-
-
+                        </a>
+                        {{ if children }}
+                        <ul class="py-2 bg-white space-y-2">
+                            {{ children }}
+                            <li class="">
+                                <a class="whitespace-nowrap text-xs font-bold hover:text-primary-600 {{ is_current || is_parent ? 'text-primary-600' : 'text-neutral-800' }}"
+                                    href="{{ url }}">
+                                    {{ title }}
+                                </a>
+                            </li>
+                            {{ /children }}
+                        </ul>
+                        {{ /if }}
+                    </li>
+                    {{ /nav:top_menu_secondary }}
+                </ul>
             </div>
         </div>
     </div>
