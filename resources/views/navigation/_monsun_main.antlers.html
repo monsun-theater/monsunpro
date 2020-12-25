@@ -27,14 +27,50 @@ There's a desktop and a mobile version. #}}
         </div>
     </div>
     {{# Primary Menu Desktop #}}
-    <div x-show="isOpen" class="hidden sm:block  bg-white">
-        <div class="flex flex-col">
-            <div>
+    <div x-show="isOpen" class="hidden sm:block">
+        <div class="fixed inset-0 bg-white">
+            <div class="flex flex-col">
+                <div>
+                    <div class="flex justify-between">
+                        <ul class="flex items-start justify-left px-2 py-2 space-x-6">
+                            {{ nav:top_menu_primary max_depth="2" }}
+                            <li class="relative leading-none">
+                                <a class="text-3xl flex font-bold uppercase tracking-wide hover:text-monsun {{ is_current || is_parent ? 'text-monsun' : 'text-neutral-800' }}"
+                                    {{ if children }} href="{{ url }}" {{ /if }}>
+                                    {{ title }}
+
+                                </a>
+                                {{ if children }}
+                                <ul class="py-2 bg-white space-y-2">
+                                    {{ children }}
+                                    <li class="">
+                                        <a class="whitespace-nowrap text-xs font-bold hover:text-monsun {{ is_current || is_parent ? 'text-monsun' : 'text-neutral-800' }}"
+                                            href="{{ url }}">
+                                            {{ title }}
+                                        </a>
+                                    </li>
+                                    {{ /children }}
+                                </ul>
+                                {{ /if }}
+                            </li>
+                            {{ /nav:top_menu_primary }}
+                        </ul>
+                        <div class="flex items-start justify-right px-2 py-2 space-x-4">
+                            {{ partial:components/buttons_social_media }}
+                            <button @click="isOpen = false" type="button" aria-label="Close window" aria-hidden="true">
+                                <svg class="h-10 w-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                    <path
+                                        d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
                 <div class="flex justify-between">
-                    <ul class="flex items-start justify-left px-2 space-x-6">
-                        {{ nav:top_menu_primary max_depth="2" }}
+                    <ul class="flex items-center justify-right px-2 space-x-6">
+                        {{ nav:top_menu_secondary max_depth="2" }}
                         <li class="relative leading-none">
-                            <a class="text-2xl flex font-bold uppercase tracking-wide hover:text-monsun {{ is_current || is_parent ? 'text-monsun' : 'text-neutral-800' }}"
+                            <a class="text-2xl flex items-start font-bold uppercase tracking-wide hover:text-monsun {{ is_current || is_parent ? 'text-monsun' : 'text-neutral-800' }}"
                                 {{ if children }} href="{{ url }}" {{ /if }}>
                                 {{ title }}
 
@@ -52,50 +88,9 @@ There's a desktop and a mobile version. #}}
                             </ul>
                             {{ /if }}
                         </li>
-                        {{ /nav:top_menu_primary }}
+                        {{ /nav:top_menu_secondary }}
                     </ul>
-                    {{# Social icons #}}
-
-                    <div class="flex items-start justify-right px-2 py-2 space-x-4">
-                        {{ social_media:social_media }}
-                        <button type="button" aria-hidden="true">
-                            <a href="{{ prefix }}{{ url }}" rel="noopener" aria-label="{{ type | title }}"
-                                target="_blank">{{ type | title }}</a> <img class="h-12 w-12" {{ social_icon }}
-                                src="{{ url }}" {{ /social_icon }} alt="{{ title }} Icon">
-                            </a></button>{{ /social_media:social_media }}
-                        <button @click="isOpen = false" type="button" aria-label="Close window" aria-hidden="true">
-                            <svg class="h-12 w-12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                <path
-                                    d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z" />
-                            </svg>
-                        </button>
-                    </div>
                 </div>
-            </div>
-            <div>
-                <ul class="flex items-center justify-right px-2 space-x-6">
-                    {{ nav:top_menu_secondary max_depth="2" }}
-                    <li class="relative leading-none">
-                        <a class="text-2xl flex items-start font-bold uppercase tracking-wide hover:text-monsun {{ is_current || is_parent ? 'text-monsun' : 'text-neutral-800' }}"
-                            {{ if children }} href="{{ url }}" {{ /if }}>
-                            {{ title }}
-
-                        </a>
-                        {{ if children }}
-                        <ul class="py-2 bg-white space-y-2">
-                            {{ children }}
-                            <li class="">
-                                <a class="whitespace-nowrap text-xs font-bold hover:text-monsun {{ is_current || is_parent ? 'text-monsun' : 'text-neutral-800' }}"
-                                    href="{{ url }}">
-                                    {{ title }}
-                                </a>
-                            </li>
-                            {{ /children }}
-                        </ul>
-                        {{ /if }}
-                    </li>
-                    {{ /nav:top_menu_secondary }}
-                </ul>
             </div>
         </div>
     </div>
