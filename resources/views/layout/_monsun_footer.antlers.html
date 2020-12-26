@@ -1,0 +1,15 @@
+<div class="flex justify-between border-b-2 border-t-2">
+    <div class="flex items-center justify-start space-x-2 p-3">
+        {{ partial:components/buttons_social_media}}
+    </div>{{ kontaktdaten}}
+
+    <div class="flex items-center justify-end p-3">
+        <div class="text-md">{{ strasse }} {{ hausnummer }}, {{ postleitzahl }} {{ wohnort}}, <span
+                class="lg:hidden"></br></span> {{
+            telefonnummer }}<a href="mailto:{{
+                        e-mail-adresse | obfuscate }}">, {{
+                e-mail-adresse | obfuscate }}</a> </div>
+        {{ /kontaktdaten }}
+    </div>
+</div>
+</div>

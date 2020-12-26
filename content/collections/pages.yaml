@@ -8,9 +8,9 @@ structure:
   root: true
   tree:
     -
-      entry: a6bc5b37-3fcd-4c82-b5f4-94042b68c80c
-    -
       entry: home
+    -
+      entry: a6bc5b37-3fcd-4c82-b5f4-94042b68c80c
     -
       entry: 6b995156-142b-43d6-be4e-6c260ea90d37
       children:
