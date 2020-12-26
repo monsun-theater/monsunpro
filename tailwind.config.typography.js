@@ -9,39 +9,39 @@
 
 const plugin = require('tailwindcss/plugin')
 
-module.exports = { 
+module.exports = {
   theme: {
     extend: {
       typography: (theme) => ({
         DEFAULT: {
           css: {
-            color: theme('colors.neutral.800'),
+            color: theme('colors.black'),
             '[class~="lead"]': {
               color: theme('colors.neutral.800'),
             },
             a: {
               color: theme('colors.primary.600'),
               '&:hover': {
-                color: theme('colors.primary.800'),
+                color: theme('colors.monsun'),
               },
             },
             'a.no-underline': {
               textDecoration: 'none',
             },
             'h1, h2, h3, h4': {
-              scrollMarginTop: theme('spacing.36'), 
-              color: theme('colors.neutral.900'),
+              scrollMarginTop: theme('spacing.36'),
+              color: theme('colors.black'),
             },
             blockquote: {
-              borderColor: theme('colors.primary.200'),
+              borderColor: theme('colors.black'),
             },
             hr: {
-              borderColor: theme('colors.neutral.100'), 
+              borderColor: theme('colors.neutral.100'),
             },
-            'ul > li::before': { 
+            'ul > li::before': {
               backgroundColor: theme('colors.neutral.500'),
             },
-            'ol > li::before': { 
+            'ol > li::before': {
               color: theme('colors.neutral.500'),
             },
             pre: {

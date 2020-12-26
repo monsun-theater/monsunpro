@@ -33,17 +33,18 @@ module.exports = {
     require('@tailwindcss/aspect-ratio'),
     // Use Tailwinds forms plugin for form styling: https://github.com/tailwindlabs/tailwindcss-forms
     require('@tailwindcss/forms'),
-    plugin(function({ addBase, theme }) {
+    plugin(function ({ addBase, theme }) {
       addBase({
         ':root': {
           // Fluid typography from 1 rem to 1.15 rem with fallback to 16px. 
-          fontSize: '16px',
-          'font-size': 'clamp(1rem, 1.6vw, 1.2rem)',
+          //1vw = 1% viewport width
+          fontSize: '18px',
+          'font-size': 'clamp(1.125rem, 1.6vw, 1.4rem)',
           // Safari resize fix. 
           minHeight: '0vw',
         },
         // Used to hide alpine elements before being rendered.
-        '[x-cloak]': { 
+        '[x-cloak]': {
           display: 'none !important'
         },
         // Implement the focus-visible polyfill: https://github.com/WICG/focus-visible
@@ -74,7 +75,7 @@ module.exports = {
     }),
 
     // Render screen names in the breakpoint display.
-    plugin(function({ addBase, theme}) {
+    plugin(function ({ addBase, theme }) {
       const breakpoints = _.map(theme('screens'), (value, key) => {
         return {
           [`@media (min-width: ${value})`]: {
@@ -87,7 +88,7 @@ module.exports = {
       addBase(breakpoints)
     }),
 
-    plugin(function({ addComponents, theme }) {
+    plugin(function ({ addComponents, theme }) {
       const components = {
         // The main wrapper for all sections on our website. Has a max width and is centered. 
         '.fluid-container': {
@@ -151,7 +152,7 @@ module.exports = {
       addComponents(components)
     }),
 
-    plugin(function({ addUtilities, theme, variants }) {
+    plugin(function ({ addUtilities, theme, variants }) {
       const newUtilities = {
         // Add a ? utility to quickly highlight an element. 
         '.\?': {
@@ -181,7 +182,7 @@ module.exports = {
           '.size-lg': {
             gridColumn: 'span 8 / span 8',
             gridColumnStart: '3',
-          }, 
+          },
           '.size-xl': {
             gridColumn: 'span 10 / span 10',
             gridColumnStart: '2',
@@ -201,7 +202,7 @@ module.exports = {
           '.size-lg': {
             gridColumn: 'span 8 / span 8',
             gridColumnStart: '3',
-          }, 
+          },
           '.size-xl': {
             gridColumn: 'span 10 / span 10',
             gridColumnStart: '2',

@@ -72,7 +72,7 @@ module.exports = {
         },
         'html': {
           fontDisplay: 'swap',
-          color: theme('colors.neutral.800'),
+          color: theme('colors.black'),
           //--------------------------------------------------------------------------
           // Set sans, serif or mono stack with optional custom font as default.
           //--------------------------------------------------------------------------
@@ -81,11 +81,11 @@ module.exports = {
           // fontFamily: theme('fontFamily.serif'),
         },
         '::selection': {
-          backgroundColor: theme('colors.primary.600'),
+          backgroundColor: theme('colors.monsun'),
           color: theme('colors.white'),
         },
         '::-moz-selection': {
-          backgroundColor: theme('colors.primary.600'),
+          backgroundColor: theme('colors.monsun'),
           color: theme('colors.white'),
         },
       })

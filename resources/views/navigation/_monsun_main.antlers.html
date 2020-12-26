@@ -27,86 +27,101 @@ There's a desktop and a mobile version. #}}
         </div>
     </div>
     {{# Primary Menu Desktop #}}
+
+
     <div x-show="isOpen" class="hidden sm:block">
-        <div class="fixed inset-0 bg-white">
-            <div class="flex flex-col">
-                <div>
-                    <div class="flex justify-between">
-                        <ul class="flex items-start justify-left px-2 py-2 space-x-6">
-                            {{ nav:top_menu_primary max_depth="2" }}
-                            <li class="relative leading-none">
-                                <a class="text-3xl flex font-bold uppercase tracking-wide hover:text-monsun {{ is_current || is_parent ? 'text-monsun' : 'text-neutral-800' }}"
-                                    {{ if children }} href="{{ url }}" {{ /if }}>
-                                    {{ title }}
+        <!-- Primary Menu -->
+        <div class="grid grid-cols-3 justify-items-center auto-cols-min py-3 border-b-2">
+            {{ nav:top_menu_primary max_depth="2" }}
+            <div class="lowercase tracking-wider"><a
+                    class="font-bold text-lg hover:text-monsun {{ is_current || is_parent ? 'text-monsun' : 'text-neutral-800' }}"
+                    {{ if children }} href="{{ url }}" {{ /if }}>
+                    {{ title }}
+                </a>
+                {{ if children }}
+                <ul class="py-4 text-left">
+                    {{ children }}
+                    <li class="">
+                        <a class="whitespace-nowrap text-md hover:text-monsun {{ is_current || is_parent ? 'text-monsun' : 'text-neutral-800' }}"
+                            href="{{ url }}">
+                            {{ title }}
+                        </a>
+                    </li>
+                    {{ /children }}
+                </ul>
+                {{ /if }}
 
-                                </a>
-                                {{ if children }}
-                                <ul class="py-2 bg-white space-y-2">
-                                    {{ children }}
-                                    <li class="">
-                                        <a class="whitespace-nowrap text-xs font-bold hover:text-monsun {{ is_current || is_parent ? 'text-monsun' : 'text-neutral-800' }}"
-                                            href="{{ url }}">
-                                            {{ title }}
-                                        </a>
-                                    </li>
-                                    {{ /children }}
-                                </ul>
-                                {{ /if }}
-                            </li>
-                            {{ /nav:top_menu_primary }}
-                        </ul>
-                        <div class="flex items-start justify-right px-2 py-2 space-x-4">
-                            {{ partial:components/buttons_social_media }}
-                            <button @click="isOpen = false" type="button" aria-label="Close window" aria-hidden="true">
-                                <svg class="h-10 w-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                    <path
-                                        d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z" />
-                                </svg>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex justify-between">
-                    <ul class="flex items-center justify-right px-2 space-x-6">
-                        {{ nav:top_menu_secondary max_depth="2" }}
-                        <li class="relative leading-none">
-                            <a class="text-2xl flex items-start font-bold uppercase tracking-wide hover:text-monsun {{ is_current || is_parent ? 'text-monsun' : 'text-neutral-800' }}"
-                                {{ if children }} href="{{ url }}" {{ /if }}>
-                                {{ title }}
-
-                            </a>
-                            {{ if children }}
-                            <ul class="py-2 bg-white space-y-2">
-                                {{ children }}
-                                <li class="">
-                                    <a class="whitespace-nowrap text-xs font-bold hover:text-monsun {{ is_current || is_parent ? 'text-monsun' : 'text-neutral-800' }}"
-                                        href="{{ url }}">
-                                        {{ title }}
-                                    </a>
-                                </li>
-                                {{ /children }}
-                            </ul>
-                            {{ /if }}
-                        </li>
-                        {{ /nav:top_menu_secondary }}
-                    </ul>
-                </div>
             </div>
+            {{ /nav:top_menu_primary }}
         </div>
+        <!-- Secondary Menu -->
+        <div class="grid grid-cols-3 justify-items-center auto-cols-min py-3 border-b-2">
+            {{ nav:top_menu_secondary max_depth="2" }}
+            <div class="lowercase tracking-wider"><a
+                    class="font-bold text-lg hover:text-monsun {{ is_current || is_parent ? 'text-monsun' : 'text-neutral-800' }}"
+                    {{ if children }} href="{{ url }}" {{ /if }}>
+                    {{ title }}
+                </a>
+                {{ if children }}
+                <ul class="py-4 text-left">
+                    {{ children }}
+                    <li class="">
+                        <a class="whitespace-nowrap text-md hover:text-monsun {{ is_current || is_parent ? 'text-monsun' : 'text-neutral-800' }}"
+                            href="{{ url }}">
+                            {{ title }}
+                        </a>
+                    </li>
+                    {{ /children }}
+                </ul>
+                {{ /if }}
+
+            </div>
+            {{ /nav:top_menu_secondary }}
+        </div>
+
+
+        <!-- <button class="flex items-start justify-end pr-3 pt-3" @click="isOpen = false" type="button"
+                    aria-label="Close window" aria-hidden="true">
+                    <svg class="h-6 w-6" fill="#1a1a1a" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                        <path
+                            d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z" />
+                    </svg>
+                </button> -->
+    </div>
+
+    <div class="flex justify-between border-b-2">
+        <div class="flex items-center justify-start space-x-2 p-3">
+            {{ partial:components/buttons_social_media}}
+        </div>{{ kontaktdaten}}
+
+        <div class="flex items-center justify-end p-3">
+            <div class="text-md">{{ strasse }} {{ hausnummer }}, {{ postleitzahl }} {{ wohnort}}, <span
+                    class="lg:hidden"></br></span> {{
+                telefonnummer }}<a href="mailto:{{
+                                e-mail-adresse | obfuscate }}">, {{
+                    e-mail-adresse | obfuscate }}</a> </div>
+            {{ /kontaktdaten }}
+        </div>
+    </div>
+    </div>
+
+
+
+    </div>
     </div>
 </nav>
 {{# The mobile navigation. Hidden from md and up #}}
 <nav class="sm:hidden" x-data="{ mobileNavOpen: false }">
     <button
         @click.prevent="mobileNavOpen = !mobileNavOpen, mobileNavOpen ? document.body.classList.add('no-scroll') : document.body.classList.remove('no-scroll')"
-        class="fixed z-20 w-16 h-16 flex justify-center items-center right-0 bottom-0 mb-safe mr-8 bg-primary-500 text-white text-xs text-uppercase tracking-widest font-bold"
-        aria-label="Toggle menu" x-text="mobileNavOpen ? 'Close' : 'Menu'"></button>
+        class="fixed z-20 w-16 h-16 flex justify-center items-center right-0 bottom-0 mb-safe mr-8 bg-monsun text-white text-xs text-uppercase tracking-widest 
+        aria-label=" Toggle menu" x-text="mobileNavOpen ? 'Close' : 'Menu'"></button>
 
     <ul class="fixed z-10 inset-0 flex flex-col justify-center items-center space-y-8 bg-white overflow-auto"
         x-show="mobileNavOpen" x-cloak>
         {{ nav:main max_depth="2" include_home="true" }}
         <li {{ if children }} x-data="{ mobileNavSubnavOpen: false }" {{ /if }} class="leading-none">
-            <a class="flex items-center font-bold uppercase tracking-wide hover:text-monsun {{ is_current || is_parent ? 'text-monsun' : 'text-neutral-800' }}"
+            <a class="flex items-center uppercase tracking-wide hover:text-monsun {{ is_current || is_parent ? 'text-monsun' : 'text-neutral-800' }}"
                 {{ if children }} href="#" @click.prevent="mobileNavSubnavOpen = true"
                 @click.away="mobileNavSubnavOpen = false" {{ else }} href="{{ url }}" {{ /if }}>
                 {{ title }}
@@ -123,7 +138,7 @@ There's a desktop and a mobile version. #}}
             <ul x-show="mobileNavSubnavOpen" class="mt-4 space-y-4" :aria-expanded="mobileNavSubnavOpen" x-cloak>
                 {{ children }}
                 <li>
-                    <a class="whitespace-nowrap font-bold hover:text-monsun {{ is_current || is_parent ? 'text-monsun' : 'text-neutral-800' }}"
+                    <a class="whitespace-nowrap hover:text-monsun {{ is_current || is_parent ? 'text-monsun' : 'text-neutral-800' }}"
                         href="{{ url }}">
                         {{ title }}
                     </a>
