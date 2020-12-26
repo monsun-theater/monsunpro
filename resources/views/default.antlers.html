@@ -1,6 +1,9 @@
-{{# The outer wrapper grid as defined in tailwind.config.js. It makes sure all blocks on a page get evenly spaced without having to worry about margins or paddings. #}}
-<main class="outer-grid">    
+{{# The outer wrapper grid as defined in tailwind.config.js. It makes sure all blocks on a page get evenly spaced
+without having to worry about margins or paddings. #}}
+{{ partial:components/monsun_wand}}
+<main class="outer-grid">
+
     {{ page_builder scope="block" }}
-        {{ partial src="page_builder/{type}" }}
+    {{ partial src="page_builder/{type}" }}
     {{ /page_builder }}
 </main>

@@ -5,7 +5,7 @@ There's a desktop and a mobile version. #}}
 
 {{# Navbar desktop #}}
 <nav x-data="{ isOpen: false }" class="hidden sm:block">
-    <div class="flex items-center justify-between border-b-2 px-2 pb-2">
+    <div class="flex items-center justify-between px-2 pb-2">
         <div class="flex space-x-2">
             <button type="button" aria-label="Toggle Menu" @click="isOpen = !isOpen">
                 <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -96,7 +96,7 @@ There's a desktop and a mobile version. #}}
     </div>
 </nav>
 {{# The mobile navigation. Hidden from md and up #}}
-<nav class="sm:hidden" x-data="{ mobileNavOpen: false }">
+<nav class="sm:hidden pb-2" x-data="{ mobileNavOpen: false }">
     <button
         @click.prevent="mobileNavOpen = !mobileNavOpen, mobileNavOpen ? document.body.classList.add('no-scroll') : document.body.classList.remove('no-scroll')"
         class="fixed z-20 w-16 h-16 flex justify-center items-center right-0 bottom-0 mb-safe mr-8 bg-monsun text-white text-xs text-uppercase tracking-widest 
