@@ -17,10 +17,10 @@ module.exports = {
           css: {
             color: theme('colors.black'),
             '[class~="lead"]': {
-              color: theme('colors.neutral.800'),
+              color: theme('colors.black'),
             },
             a: {
-              color: theme('colors.primary.600'),
+              color: theme('colors.black'),
               '&:hover': {
                 color: theme('colors.monsun'),
               },
@@ -36,7 +36,7 @@ module.exports = {
               borderColor: theme('colors.black'),
             },
             hr: {
-              borderColor: theme('colors.neutral.100'),
+              borderColor: theme('colors.black'),
             },
             'ul > li::before': {
               backgroundColor: theme('colors.neutral.500'),

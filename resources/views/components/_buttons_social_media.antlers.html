@@ -2,6 +2,7 @@
 {{ social_media:social_media }}
 <button type="button" aria-hidden="true">
     <a href="{{ prefix }}{{ url }}" rel="noopener" aria-label="{{ type | title }}" target="_blank">
-        <img class="h-6 w-6 fill-current" {{ social_icon }} src="{{ url }}" {{ /social_icon }} alt="{{ title }} Icon">
+        <img class="h-6 w-6 text-black fill-current" {{ social_icon }} src="{{ url }}" {{ /social_icon }}
+            alt="{{ title }} Icon">
     </a>
 </button>{{ /social_media:social_media }}

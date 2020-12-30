@@ -16,6 +16,14 @@ sections:
             - required
       -
         import: page_builder
+      -
+        handle: monsun_alert
+        field:
+          display: monsun_alert
+          type: toggle
+          icon: toggle
+          instructions: 'Alert zeigen'
+          listable: hidden
   seo:
     display: SEO
     fields:
