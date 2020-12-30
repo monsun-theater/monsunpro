@@ -2,7 +2,7 @@
 There's a desktop and a mobile version. #}}
 {{# The desktop navigation. Hidden on smaller screen. Shown from md and up. #}}
 {{# Navbar desktop #}}
-<nav x-data="{ isOpen: false }" class="hidden sm:block">
+<nav x-data="{ isOpen: false }" class="hidden sm:block max-w-4xl mx-auto">
     <div class="flex items-center justify-between px-2 pb-2">
         <div class="flex space-x-2">
             <button type="button" aria-label="Toggle Menu" @click="isOpen = !isOpen">

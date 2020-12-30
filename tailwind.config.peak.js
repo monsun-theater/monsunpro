@@ -110,24 +110,24 @@ module.exports = {
         '.outer-grid': {
           width: '100%',
           display: 'grid',
-          rowGap: theme('spacing.12'),
-          paddingTop: theme('spacing.12'),
-          paddingBottom: theme('spacing.12'),
+          rowGap: theme('spacing.3'),
+          paddingTop: theme('spacing.3'),
+          paddingBottom: theme('spacing.3'),
           // If the last child of the outer grid is full width (e.g. when it has a full width 
           // colored background), give it negative margin bottom to get it flush to your 
           // sites footer.
           '& > *:last-child:has(.w-full)': {
-            marginBottom: theme('spacing.12') * -1,
+            marginBottom: theme('spacing.3') * -1,
           },
         },
         [`@media (min-width: ${theme('screens.md')})`]: {
           // Larger vertical spacing between blocks on larger screens.
           '.outer-grid': {
-            rowGap: theme('spacing.16'),
-            paddingTop: theme('spacing.16'),
-            paddingBottom: theme('spacing.16'),
+            rowGap: theme('spacing.3'),
+            paddingTop: theme('spacing.3'),
+            paddingBottom: theme('spacing.3'),
             '& > *:last-child:has(.w-full)': {
-              marginBottom: theme('spacing.16') * -1,
+              marginBottom: theme('spacing.3') * -1,
             },
           },
         },
@@ -140,11 +140,11 @@ module.exports = {
           },
           // Larger vertical spacing between blocks on larger screens.
           '.outer-grid': {
-            rowGap: theme('spacing.24'),
-            paddingTop: theme('spacing.24'),
-            paddingBottom: theme('spacing.24'),
+            rowGap: theme('spacing.3'),
+            paddingTop: theme('spacing.3'),
+            paddingBottom: theme('spacing.3'),
             '& > *:last-child:has(.w-full)': {
-              marginBottom: theme('spacing.24') * -1,
+              marginBottom: theme('spacing.3') * -1,
             },
           },
         },
