@@ -30,7 +30,7 @@ There's a desktop and a mobile version. #}}
     </div>
     {{# Primary Menu Desktop #}}
     <div x-show="isOpen" class="hidden sm:block">
-        <div class="max-w-xl mx-auto p-3" @click.away="isOpen = false">
+        <div class="max-w-3xl mx-auto p-3" @click.away="isOpen = false">
             <!-- Primary Menu -->
             <div class="grid grid-cols-3 gap-4 justify-items-right pb-3">
                 {{ nav:top_menu_primary max_depth="2" }}
