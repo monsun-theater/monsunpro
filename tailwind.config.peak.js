@@ -97,8 +97,8 @@ module.exports = {
           marginLeft: 'auto',
           marginRight: 'auto',
           // Use safe-area-inset together with default padding for Apple devices with a notch.
-          paddingLeft: 'calc(env(safe-area-inset-left, 0rem) + ' + theme('padding.8') + ')',
-          paddingRight: 'calc(env(safe-area-inset-right, 0rem) + ' + theme('padding.8') + ')',
+          paddingLeft: 'calc(env(safe-area-inset-left, 0rem) + ' + theme('padding.4') + ')',
+          paddingRight: 'calc(env(safe-area-inset-right, 0rem) + ' + theme('padding.4') + ')',
         },
         // Disable scroll e.g. when a modal is open. Should be used on the <body>
         '.no-scroll': {
@@ -140,11 +140,11 @@ module.exports = {
           },
           // Larger vertical spacing between blocks on larger screens.
           '.outer-grid': {
-            rowGap: theme('spacing.3'),
-            paddingTop: theme('spacing.3'),
-            paddingBottom: theme('spacing.3'),
+            rowGap: theme('spacing.5'),
+            paddingTop: theme('spacing.5'),
+            paddingBottom: theme('spacing.5'),
             '& > *:last-child:has(.w-full)': {
-              marginBottom: theme('spacing.3') * -1,
+              marginBottom: theme('spacing.5') * -1,
             },
           },
         },

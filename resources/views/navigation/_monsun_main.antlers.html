@@ -2,8 +2,8 @@
 There's a desktop and a mobile version. #}}
 {{# The desktop navigation. Hidden on smaller screen. Shown from md and up. #}}
 {{# Navbar desktop #}}
-<nav x-data="{ isOpen: false }" class="hidden sm:block max-w-4xl mx-auto">
-    <div class="flex items-center justify-between px-2 pb-2">
+<nav x-data="{ isOpen: false }" class="hidden sm:block">
+    <div class="flex items-center justify-between pb-2">
         <div class="flex space-x-2">
             <button type="button" aria-label="Toggle Menu" @click="isOpen = !isOpen">
                 <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" x-show="!isOpen" x-cloak fill="none"
@@ -17,7 +17,7 @@ There's a desktop and a mobile version. #}}
             <div>MENU</div>
         </div>
         <div><a aria-label="Logo {{ config:app:name }}" href="{{ site:url }}">
-                <img class="h-14" src="/assets/site-setup/logos/monsun-logo-wordmark.svg" alt="{{ config:app:name }}" />
+                <img class="h-12" src="/assets/site-setup/logos/monsun-logo-wordmark.svg" alt="{{ config:app:name }}" />
             </a></div>
         <div class="flex space-x-2">
             <div>SUCHE</div>
@@ -30,7 +30,7 @@ There's a desktop and a mobile version. #}}
     </div>
     {{# Primary Menu Desktop #}}
     <div x-show="isOpen" class="hidden sm:block">
-        <div class="max-w-3xl mx-auto p-3" @click.away="isOpen = false">
+        <div class="" @click.away="isOpen = false">
             <!-- Primary Menu -->
             <div class="grid grid-cols-3 gap-4 justify-items-right pb-3">
                 {{ nav:top_menu_primary max_depth="2" }}
@@ -55,7 +55,6 @@ There's a desktop and a mobile version. #}}
                 </div>
                 {{ /nav:top_menu_primary }}
             </div>
-
         </div>
         <!-- <button class="flex items-start justify-end pr-3 pt-3" @click="isOpen = false" type="button"
                     aria-label="Close window" aria-hidden="true">

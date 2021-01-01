@@ -1,7 +1,7 @@
 {{# The outer wrapper grid as defined in tailwind.config.js. It makes sure all blocks on a page get evenly spaced
 without having to worry about margins or paddings. #}}
 {{if monsun_alert}} {{ partial:components/monsun_alert}} {{ /if }}
-<main class="outer-grid">
+<main class="outer-grid fluid-container">
     {{ partial:components/monsun_wand}}
     {{ page_builder scope="block" }}
     {{ partial src="page_builder/{type}" }}
