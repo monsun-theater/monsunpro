@@ -1,11 +1,67 @@
-<div class="max-w-4xl mx-auto">
+<div class="fluid-container opacity-75">
+    <div class="grid grid-cols-1 gap-6">
+        <label class="block">
+            <span class="text-gray-700">Full name</span>
+            <input type="text" class="mt-1 block w-full" placeholder="">
+        </label>
+        <label class="block">
+            <span class="text-gray-700">Email address</span>
+            <input type="email" class="mt-1 block w-full" placeholder="john@example.com">
+        </label>
+        <label class="block">
+            <span class="text-gray-700">When is your event?</span>
+            <input type="date" class="mt-1 block w-full">
+        </label>
+        <label class="block">
+            <span class="text-gray-700">What type of event is it?</span>
+            <select class="block w-full mt-1">
+                <option>Corporate event</option>
+                <option>Wedding</option>
+                <option>Birthday</option>
+                <option>Other</option>
+            </select>
+        </label>
+        <label class="block">
+            <span class="text-gray-700">Additional details</span>
+            <textarea class="mt-1 block w-full" rows="3"></textarea>
+        </label>
+        <div class="block">
+            <div class="mt-2">
+                <div>
+                    <label class="inline-flex items-center">
+                        <input type="checkbox" checked="">
+                        <span class="ml-2">Email me news and special offers</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="flex justify-between align-bottom space-x-4 py-3">
+        <div class="flex text-lg">Newsletter abonnieren</div>
+        <input type="email" class="flex border-2 border-black">Ihre E-mail angeben</input>
+        <div class="flex underline"><input type="checkbox"
+                class="flex appearance-none align-bottom checked:bg-blue-600 checked:border-transparent ">AGB
+            akzeptieren</div>
+        <button class="flex">SCHICKEN<span class="text-monsun font-bold">→</span></button>
+
+    </div>
+
+    <div class="grid grid-cols-3 sm:flex justify-between">
+        {{ nav:footer_primary }}
+        <div class="sm:flex justify-evenly">
+            {{
+            title }}
+        </div>
+        {{ /nav:footer_primary }}
+    </div>
+
     <div class="flex justify-between">
-        <div class="flex items-center justify-start space-x-2 p-3">
+        <div class="flex items-center justify-start space-x-2">
             {{ partial:components/buttons_social_media}}
         </div>{{ kontaktdaten}}
 
-        <div class="flex items-center justify-end p-3">
-            <div class="text-xs sm:text-sm">{{ strasse }} {{ hausnummer }}, {{ postleitzahl }} <span
+        <div class="flex items-center justify-end pl-3 py-3">
+            <div class="text-xs sm:text-sm text-center">{{ strasse }} {{ hausnummer }}, {{ postleitzahl }} <span
                     class="sm:hidden"></br></span> {{ wohnort}}, <span class="md:hidden"></br></span> {{
                 telefonnummer }}<a href="mailto:{{
                         e-mail-adresse | obfuscate }}">, {{
