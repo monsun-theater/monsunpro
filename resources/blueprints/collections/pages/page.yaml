@@ -1,4 +1,4 @@
-title: Page
+title: Seite
 sections:
   main:
     display: Main
@@ -19,11 +19,22 @@ sections:
       -
         handle: monsun_alert
         field:
-          display: monsun_alert
+          display: 'Alert nachricht'
           type: toggle
           icon: toggle
           instructions: 'Alert zeigen'
           listable: hidden
+          width: 25
+      -
+        handle: alert_nachricht_text
+        field:
+          antlers: true
+          display: 'Alert Nachricht Text'
+          type: textarea
+          icon: textarea
+          listable: hidden
+          if:
+            monsun_alert: 'equals true'
   seo:
     display: SEO
     fields:
