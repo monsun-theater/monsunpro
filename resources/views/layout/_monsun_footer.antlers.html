@@ -1,57 +1,33 @@
 <div class="fluid-container opacity-75">
-    <div class="grid grid-cols-1 gap-6">
-        <label class="block">
-            <span class="text-gray-700">Full name</span>
-            <input type="text" class="mt-1 block w-full" placeholder="">
-        </label>
-        <label class="block">
-            <span class="text-gray-700">Email address</span>
-            <input type="email" class="mt-1 block w-full" placeholder="john@example.com">
-        </label>
-        <label class="block">
-            <span class="text-gray-700">When is your event?</span>
-            <input type="date" class="mt-1 block w-full">
-        </label>
-        <label class="block">
-            <span class="text-gray-700">What type of event is it?</span>
-            <select class="block w-full mt-1">
-                <option>Corporate event</option>
-                <option>Wedding</option>
-                <option>Birthday</option>
-                <option>Other</option>
-            </select>
-        </label>
-        <label class="block">
-            <span class="text-gray-700">Additional details</span>
-            <textarea class="mt-1 block w-full" rows="3"></textarea>
-        </label>
-        <div class="block">
-            <div class="mt-2">
-                <div>
-                    <label class="inline-flex items-center">
-                        <input type="checkbox" checked="">
-                        <span class="ml-2">Email me news and special offers</span>
-                    </label>
-                </div>
-            </div>
+    <div class="text-2xl uppercase tracking-widest">Newsletter abonnieren</div>
+    <div class="md:grid grid-cols-12 gap-4 items-baseline bg-neutral-100 p-3">
+        <div class="col-span-4">
+            <div class="sm:text-lg">Bleiben sie im Kontakt mit munsun.theater!</div>
+        </div>
+
+        <div class="col-span-8 sm:text-lg py-3 md:py-0">
+            <div class="text-xl font-bold leading-tight md:leading-normal pb-3"><input type="email"
+                    class="mt-1 block w-full" placeholder="Ihre E-mail Adresse">
+                </label></div>
+            <div class="sm:text-lg"><label class="items-center">
+                    <input type="checkbox" checked="">
+                    <span class="ml-2">AGB akzeptieren</span>
+                </label></div>
+            <button class="text-center uppercase tracking-wider hover:text-monsun sm:text-lg"><a class="block" href="/">
+                    <div class="pt-3 tracking-widest uppercase">Schicken<span
+                            class="text-monsun font-bold">&nbsp;→</span>
+                    </div>
+                </a>
+            </button>
         </div>
     </div>
-    <div class="flex justify-between align-bottom space-x-4 py-3">
-        <div class="flex text-lg">Newsletter abonnieren</div>
-        <input type="email" class="flex border-2 border-black">Ihre E-mail angeben</input>
-        <div class="flex underline"><input type="checkbox"
-                class="flex appearance-none align-bottom checked:bg-blue-600 checked:border-transparent ">AGB
-            akzeptieren</div>
-        <button class="flex">SCHICKEN<span class="text-monsun font-bold">→</span></button>
-
-    </div>
-
-    <div class="grid grid-cols-3 sm:flex justify-between">
+    <div class="grid grid-cols-3 sm:flex justify-between pt-6 pb-3">
         {{ nav:footer_primary }}
-        <div class="sm:flex justify-evenly">
-            {{
-            title }}
-        </div>
+        <button class="sm:flex justify-evenly uppercase tracking-widest hover:text-monsun"><a class="block"
+                href="{{ url }}">
+                {{
+                title }}</a>
+        </button>
         {{ /nav:footer_primary }}
     </div>
 
