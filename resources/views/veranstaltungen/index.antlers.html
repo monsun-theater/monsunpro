@@ -1,0 +1,286 @@
+<main>
+    <div class="outer-grid fluid-container">
+        <div>
+
+            <div class="sm:text-lg">12.01.2021 - 14.02.2021</div>
+            <div class="sm:text-lg">Schauspiel</div>
+            <div class="text-xl sm:text-3xl font-bold leading-tight md:leading-none pt-5">{{ title }}</div>
+            <div class="sm:text-lg"> Eine pseudologische Auferstehungsgeschichte</div>
+
+
+        </div>
+        <img src="https://source.unsplash.com/moK7ZiiquG8/1400x700" alt="">
+
+    </div>
+
+
+
+    <div class="outer-grid fluid-container">
+        <div class="md:grid grid-cols-12 gap-4">
+            <div class="md:col-span-4">
+                <div class="text-sm"> <span class="font-bold">Premiere:</span> Do – 16. Jul 20, 18:00</div>
+                <div class="text-sm"><span class="font-bold">Spielzeit:</span> 1 Stunde, ohne Pause</div>
+                <div class="text-sm"><span class="font-bold">Karten:</span> VVK 15,90 € І 13,40 € · AK 16,50 € І 14,00 €
+                </div>
+            </div>
+            <div class="md:grid col-span-8 pt-3 md:pt-0">
+                <p class="italic pb-3">„Es ist dem Gericht unmöglich, seine Entscheidung in Kürze zu
+                    begründen.
+                    Eine auch nur annähernd
+                    vollständige Begründung füllt ein Buch.“
+                    (Urteilsverkündung zum Fall Anna A. am Hanseatischen Oberlandesgericht Hamburg)</p>
+
+                <p>Wiederauferstehungsmythos, Verschwörungstheorie, Kaspar-Hauser-Geschichte: Als 1920 ein „Fräulein
+                    Unbekannt“
+                    aus
+                    dem Berliner Landwehrkanal gezogen und in die Psychiatrie eingeliefert wird, ahnt niemand, welche
+                    spektakuläre
+                    Wendung der missglückte Selbstmordversuch nehmen wird. Bald behauptet die Unbekannte, sie sei die
+                    letzte
+                    Überlebende des Massakers an der Zarenfamilie Romanow: die Großfürstin Anastasia. Anna Anderson, wie
+                    sie
+                    sich
+                    später nennt, wird die Rolle der verkannten Zarentochter bis zum Ende ihres Lebens spielen.
+                    Jahrzehntelang
+                    beschäftigt sie sich mit Psychiatrie, Justiz, Medien und Öffentlichkeit. Die Geschichte vom armen
+                    Waisenmädchen,
+                    das sein Gedächtnis verliert, quer durch Europa flieht und eigentlich eine Prinzessin ist, fand
+                    Eingang
+                    in
+                    die
+                    Populärkultur und inspirierte Musicals, Bücher und Filme.
+                    Basierend auf dokumentarischem Material findet das Faszinosum um die ikonisch gewordene Geschichte
+                    der
+                    angeblichen Anastasia ihren Weg auf die Bühne. In surrealen Collagen kommen Zeugen,
+                    Wegbegleiter*innen,
+                    Freund*innen und Feind*innen der vermeintlichen Großfürstin zu Wort.
+
+                    Eine Koproduktion mit dem monsun.theater. Gefördert durch die Claussen-Simon-Stiftung.</p>
+            </div>
+        </div>
+        {{# Termine #}}
+        <div class="md:grid grid-cols-12 gap-4">
+            <div class="col-span-8 md:col-start-5">
+                <div class="text-3xl pb-3">Termine und Karten</div>
+                <div class="sm:grid grid-cols-8 pb-3 sm:pb-1 gap-4">
+                    <div class="text-base sm:text-xl col-span-3 font-bold">
+                        <div>
+                            Donnerstag
+                        </div>
+                    </div>
+                    <div class="text-xl sm:col-span-5">
+                        <div>
+                            03.09.2020 | 20:00 Uhr | Uraufführung
+                        </div>
+                        <button class="text-center uppercase tracking-wider hover:text-monsun sm:text-lg"><a
+                                class="block" href="/">
+                                <div class="tracking-widest uppercase">Karten<span
+                                        class="text-monsun font-bold">&nbsp;→</span>
+                                </div>
+                            </a>
+                        </button>
+                    </div>
+                </div>
+                <div class="sm:grid grid-cols-8 pb-3 sm:pb-1 gap-4">
+                    <div class="text-base sm:text-xl col-span-3 font-bold">
+                        <div>
+                            Freitag
+                        </div>
+                    </div>
+                    <div class="text-xl sm:col-span-5">
+                        <div>
+                            04.09.2020 | 20:00 Uhr
+                        </div>
+                        <button class="text-center uppercase tracking-wider hover:text-monsun sm:text-lg"><a
+                                class="block" href="/">
+                                <div class="tracking-widest uppercase">Karten<span
+                                        class="text-monsun font-bold">&nbsp;→</span>
+                                </div>
+                            </a>
+                        </button>
+                    </div>
+                </div>
+                <div class="sm:grid grid-cols-8 pb-3 sm:pb-1 gap-4">
+                    <div class="text-base sm:text-xl col-span-3 font-bold">
+                        <div>
+                            Sonntag
+                        </div>
+                    </div>
+                    <div class="text-xl sm:col-span-5">
+                        <div>
+                            06.09.2020 | 20:00 Uhr
+                        </div>
+                        <button class="text-center uppercase tracking-wider hover:text-monsun sm:text-lg"><a
+                                class="block" href="/">
+                                <div class="tracking-widest uppercase">Karten<span
+                                        class="text-monsun font-bold">&nbsp;→</span>
+                                </div>
+                            </a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    <div x-data="{swiper: null}" x-init="swiper = new Swiper($refs.container, {
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 0,
+
+    breakpoints: {
+      640: {
+        slidesPerView: 1,
+        spaceBetween: 0,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 0,
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 0,
+      },
+    },
+  })" class="relative w-full mx-auto flex flex-row">
+        <div class="absolute inset-y-0 left-0 z-10 flex items-center">
+            <button @click="swiper.slidePrev()"
+                class="bg-white opacity-60 -ml-2 lg:-ml-4 flex justify-center items-center w-10 h-10 rounded-full shadow focus:outline-none">
+                <svg viewBox="0 0 20 20" fill="currentColor" class="chevron-left w-6 h-6">
+                    <path fill-rule="evenodd"
+                        d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
+                        clip-rule="evenodd"></path>
+                </svg>
+            </button>
+        </div>
+
+        <div class="swiper-container" x-ref="container">
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide p-4">
+                    <div class="flex flex-col rounded shadow overflow-hidden">
+                        <div class="flex-shrink-0">
+                            <img class="h-48 w-full object-cover" src="https://source.unsplash.com/Moiprruv4Rw" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide p-4">
+                    <div class="flex flex-col rounded shadow overflow-hidden">
+                        <div class="flex-shrink-0">
+                            <img class="h-48 w-full object-cover" src="https://source.unsplash.com/moK7ZiiquG8" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide p-4">
+                    <div class="flex flex-col rounded shadow overflow-hidden">
+                        <div class="flex-shrink-0">
+                            <img class="h-48 w-full object-cover" src="https://source.unsplash.com/pw8bcjNop6U" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="absolute inset-y-0 right-0 z-10 flex items-center">
+            <button @click="swiper.slideNext()"
+                class="opacity-60 bg-white -mr-2 lg:-mr-4 flex justify-center items-center w-10 h-10 rounded-full shadow focus:outline-none">
+                <svg viewBox="0 0 20 20" fill="currentColor" class="chevron-right w-6 h-6">
+                    <path fill-rule="evenodd"
+                        d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                        clip-rule="evenodd"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <div class="outer-grid fluid-container">
+        {{# Info #}}
+        <div class="sm:grid grid-cols-3 gap-4 md:grid-cols-4">
+            <div class="pb-2">
+                <div class="text-sm font-bold">
+                    Spiel
+                </div>
+                <div class="text-sm">
+                    <div>Melissa Anna Schmidt
+                    </div>
+                    <div>Urs Fabian Winiger
+                    </div>
+                </div>
+            </div>
+
+            <div class="pb-2">
+                <div class="text-sm font-bold">
+                    Text
+                </div>
+                <div class="text-sm">
+                    <div> Michael Alexander Müller
+                    </div>
+                </div>
+            </div>
+
+            <div class="pb-2">
+                <div class="text-sm font-bold">
+                    Video & Animation
+                </div>
+                <div class="text-sm">
+                    <div> Mara Wild
+                    </div>
+                </div>
+            </div>
+
+            <div class="pb-2">
+                <div class="text-sm font-bold">
+                    Licht
+                </div>
+                <div class="text-sm">
+                    <div> Thomas Schick
+                    </div>
+                </div>
+            </div>
+            <div class="pb-2">
+                <div class="text-sm font-bold">
+                    Technik OFFline
+                </div>
+                <div class="text-sm">
+                    <div>Oliver Gayk
+                    </div>
+                    <div>Robert Schüller
+                    </div>
+                </div>
+            </div>
+            <div class="pb-2">
+                <div class="text-sm font-bold">
+                    Technik ONline
+                </div>
+                <div class="text-sm">
+                    <div> Ole Schmetzer
+                    </div>
+                </div>
+            </div>
+            <div class="pb-2">
+                <div class="text-sm font-bold">
+                    Produktionsassistenz
+                </div>
+                <div class="text-sm">
+                    <div>Lotta Huber
+                    </div>
+                </div>
+            </div>
+            <div class="pb-2">
+                <div class=" text-sm font-bold">
+                    Konzept & Ausstattung
+                </div>
+                <div class="text-sm">
+                    <div>Francoise Hüsges
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {{ page_builder scope=" block" }} {{ partial src="page_builder/{type}" }} {{ /page_builder }}
+    </div>
+
+</main>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>

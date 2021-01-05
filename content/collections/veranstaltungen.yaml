@@ -1,5 +1,9 @@
 title: Veranstaltungen
+template: veranstaltungen/index
+layout: layout
 revisions: false
+route: '/veranstaltungen/{slug}'
+sort_dir: asc
 date_behavior:
   past: public
   future: private
