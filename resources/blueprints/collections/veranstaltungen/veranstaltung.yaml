@@ -2,4 +2,24 @@ title: Veranstaltung
 sections:
   main:
     display: Main
-    fields: {  }
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          validate:
+            - required
+      -
+        import: page_builder
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          required: true
+          localizable: true
+          validate:
+            - required

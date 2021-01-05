@@ -1,10 +1,10 @@
 {{# A pull quote with an optional author. #}}
 <div class="size-lg">
-    <div class="p-0 m-0 text-black italic text-sm sm:text-base">
+    <div class="p-0 m-0 text-black text-sm">
         “{{ quote | nl2br }}”
     </div>
     {{ if author }}
-    <span class="block pt-3 font-bold text-black opacity-80">
+    <span class="block pt-3 italic text-black">
         – {{ author }} –
     </span>
     {{ /if }}
