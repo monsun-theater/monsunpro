@@ -39,7 +39,7 @@ module.exports = {
           // Fluid typography from 1 rem to 1.15 rem with fallback to 16px. 
           //1vw = 1% viewport width
           fontSize: '18px',
-          'font-size': 'clamp(1.125rem, 1.6vw, 1.4rem)',
+          'font-size': 'clamp(1.125rem, 1.6vw, 1.6rem)',
           // Safari resize fix. 
           minHeight: '0vw',
         },
@@ -93,7 +93,7 @@ module.exports = {
         // The main wrapper for all sections on our website. Has a max width and is centered. 
         '.fluid-container': {
           width: '100%',
-          maxWidth: theme('screens.xl'),
+          maxWidth: theme('screens.2xl'),
           marginLeft: 'auto',
           marginRight: 'auto',
           // Use safe-area-inset together with default padding for Apple devices with a notch.

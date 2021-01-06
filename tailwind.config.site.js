@@ -12,6 +12,12 @@ const colors = require('tailwindcss/colors')
 
 module.exports = {
   theme: {
+    listStyleType: {
+      none: 'none',
+      disc: 'disc',
+      decimal: 'decimal',
+      square: 'square',
+    },
     // Here we define the default colors available. If you want to include
     // all default Tailwind colors you should extend the colors instead. 
     colors: {

@@ -5,21 +5,33 @@ sections:
       -
         handle: name
         field:
-          display: Name
+          display: 'Ihre Name'
           type: text
-          validate: required
+          validate:
+            - required
           localizable: true
+          listable: hidden
+          input_type: text
+          antlers: false
       -
         handle: email
         field:
-          display: "E-mail address"
+          display: 'Ihre E-mail'
           type: text
-          validate: required|email
+          validate:
+            - required
+            - email
           localizable: true
+          listable: hidden
+          input_type: text
+          antlers: false
       -
         handle: message_body
         field:
-          display: Message
+          display: Nachricht
           type: textarea
-          validate: required
+          validate:
+            - required
           localizable: true
+          listable: hidden
+          antlers: false

@@ -4,26 +4,22 @@
         {{ partial:typography/h2 :content="block:title" }}
     </div>
     {{ block:link_blocks }}
-        <a 
-            class="flex flex-col justify-between items-start bg-white shadow p-6 no-underline
+    <a class="flex flex-col justify-between items-start bg-white shadow p-6 no-underline
             {{ if total_results == 1 }}
                 md:col-span-8 md:col-start-3
             {{ elseif total_results == 2 }}
                 md:col-span-6
             {{ elseif total_results > 2 }}
                 md:col-span-8 md:col-start-3 lg:col-span-4 lg:col-start-0
-            {{ /if }}"
-            aria-labelledby="{{ title | slugify }}" 
-            draggable="false"
-            {{ partial:components/button_attributes }}
-        >
-            <div>
-                <span id="{{ title | slugify }}">
-                    {{ partial src="typography/h2" class="mb-2" :content="title" }}
-                </span>
-                {{ partial:typography/paragraph class="mb-4" :content="text" }}
-            </div>
-            {{ partial:components/button tag="span" faux="true" }}
-        </a>
+            {{ /if }}" aria-labelledby="{{ title | slugify }}" draggable="false" {{
+        partial:components/button_attributes }}>
+        <div>
+            <span id="{{ title | slugify }}">
+                {{ partial src="typography/h2" class="mb-2" :content="title" }}
+            </span>
+            {{ partial:typography/paragraph class="mb-4" :content="text" }}
+        </div>
+        {{ partial:components/button tag="span" faux="true" }}
+    </a>
     {{ /block:link_blocks }}
 </section>

@@ -12,6 +12,21 @@ const plugin = require('tailwindcss/plugin')
 module.exports = {
   theme: {
     extend: {
+      typography: {
+        DEFAULT: {
+          css: {
+            h1: {
+              'font-weight': 'normal',
+            },
+            h2: {
+              'font-weight': 'normal',
+            },
+            h3: {
+              'font-weight': 'normal',
+            },
+          }
+        },
+      },
       typography: (theme) => ({
         DEFAULT: {
           css: {
@@ -29,6 +44,7 @@ module.exports = {
               textDecoration: 'none',
             },
             'h1, h2, h3, h4': {
+              fontWeight: 'normal',
               scrollMarginTop: theme('spacing.36'),
               color: theme('colors.black'),
             },

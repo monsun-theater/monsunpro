@@ -1,14 +1,14 @@
 {{# The collection content block with optional title. #}}
-<section class="fluid-container grid md:grid-cols-12 gap-y-8 md:gap-8">
-    <div class="md:col-start-3 md:col-span-8">
+<section class="grid md:grid-cols-12 gap-y-2">
+    <div class="md:col-start-5 md:col-span-8 bg-neutral-100 p-3">
         {{ partial:typography/h2 class="mb-4" :content="block:title" }}
-        <ul class="list-inside list-disc">
+        <ul class="list-inside tracking-wider list-disc">
             {{ block:collection }}
-                <li>
-                    <a class="text-primary-600 underline" href="{{ url }}">
-                        {{ title }}
-                    </a>
-                </li>
+            <li>
+                <a class="text-black uppercase hover:text-monsun" href="{{ url }}">
+                    {{ title }} <span class="text-monsun font-bold">&nbsp;→</span>
+                </a>
+            </li>
             {{ /block:collection }}
         </ul>
     </div>
