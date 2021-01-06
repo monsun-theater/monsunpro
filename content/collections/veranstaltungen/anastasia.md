@@ -1,7 +1,7 @@
 ---
 title: 'Anastasia, wann bekommst du deine Juwelen zurück?'
 updated_by: 34d4dc92-ec1a-4900-9a81-ed8dd8606f23
-updated_at: 1609948886
+updated_at: 1609949115
 blueprint: veranstaltung
 page_builder:
   -
@@ -47,66 +47,7 @@ page_builder:
             type: pull_quote
             quote: 'Nach ihrer erfolgreichen Tour und Einladung zum Festival Hauptsache Frei ist diese Produktion auch im Rahmen des Festivals Theater der Welt zu sehen. Zwei unterschiedliche Menschen gehen zusammen über die Grenzen.'
             author: 'Hamburger Allgemeine Zeitung, 23.Jul 2020'
-      -
-        type: set
-        attrs:
-          values:
-            type: table
-            size: md
-            first_row_headers: false
-            first_column_headers: false
-            table:
-              -
-                cells:
-                  - Francoise
-                  - Regi
-              -
-                cells:
-                  - Bela
-                  - Architektur
-              -
-                cells:
-                  - Lara
-                  - Cello
-              -
-                cells:
-                  - Martin
-                  - Video
-            caption: 'Familie Hüsges'
-      -
-        type: paragraph
     type: article
-    enabled: true
-  -
-    title: Weiterlesen
-    collection:
-      - 4c004f61-6b73-4c69-8d59-d9722c6b77a5
-      - a6bc5b37-3fcd-4c82-b5f4-94042b68c80c
-      - f9354585-729b-46cc-a345-d5f217ac13e3
-    type: collection
-    enabled: true
-  -
-    title: Kontakt
-    text: 'Reservieren Sie Ihre Karten'
-    form: contact
-    type: form
-    enabled: true
-  -
-    title: 'Ring oss för detaljer.'
-    text: 'Kontakta oss direkt'
-    buttons:
-      -
-        label: 'Ring 07819862'
-        target_blank: false
-        link_type: tel
-        entry: null
-        url: null
-        email: null
-        tel: '07819862'
-        asset: null
-        attr_title: null
-        attr_aria: null
-    type: call_to_action
     enabled: true
 id: 961cd561-580b-4b71-8625-dd6f4451511a
 ---
