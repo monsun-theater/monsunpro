@@ -1,0 +1,11 @@
+<main class="outer-grid fluid-container">
+    {{ collection:aktuelles}}
+    {{ partial:typography/_h1}}
+    {{ untertitel}}
+    {{ bild_url}}
+    {{ /collection:aktuelles}}
+
+    {{ page_builder scope="block" }}
+    {{ partial src="page_builder/{type}" }}
+    {{ /page_builder }}
+</main>

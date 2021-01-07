@@ -1,0 +1,10 @@
+title: Aktuelles
+template: aktuell/show
+layout: layout
+revisions: false
+route: 'aktuelles/{slug}'
+date: true
+sort_dir: asc
+date_behavior:
+  past: public
+  future: private

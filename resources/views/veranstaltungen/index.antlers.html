@@ -9,7 +9,10 @@
                 }}</div>
             <div class="text-lg sm:text-xl leading-tight"> Eine pseudologische Auferstehungsgeschichte</div>
         </div>
-        <img src="https://source.unsplash.com/FNv2A112Kl8/1400x800" alt="">
+        <div class="relative">
+            <img src="https://source.unsplash.com/FNv2A112Kl8/1400x800" alt="">
+        </div>
+
         {{ partial:components/_monsun_vstinfo}}
         {{ partial:components/_monsun_vst_termine }}
         {{ page_builder scope="block" }}
@@ -17,9 +20,7 @@
         {{ /page_builder }}
     </div>
     {{ partial:components/_swiper_monsun}}
-
     <div class="outer-grid fluid-container">
         {{ partial:components/_monsun_fst_info_besetzung }}
-
     </div>
 </main>

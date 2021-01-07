@@ -1,26 +1,5 @@
 <div class="fluid-container outer-grid">
-    <div class="md:grid grid-cols-12 gap-4 items-baseline bg-neutral-100 p-3">
-        <div class="col-span-4">
-            <div class="sm:text-lg font-bold tracking-wider">Abonnieren Sie unseren Newsletter!</div>
-        </div>
-
-        <div class="col-span-8 sm:text-lg py-3 md:py-0">
-            <div class="text-xl font-bold leading-tight md:leading-normal pb-3"><input type="email"
-                    class="mt-1 block w-full" placeholder="Ihre E-mail Adresse">
-                </label></div>
-            <div class="sm:text-lg"><label>
-                    <input type="checkbox" checked="">
-                    <span class="ml-2 text-base"><a class="hover:text-monsun underline" href="">AGB</a>
-                        akzeptieren</span>
-                </label></div>
-            <button class="text-center uppercase tracking-wider hover:text-monsun sm:text-lg"><a class="block" href="/">
-                    <div class="pt-3 tracking-widest uppercase">Schicken<span
-                            class="text-monsun font-bold">&nbsp;→</span>
-                    </div>
-                </a>
-            </button>
-        </div>
-    </div>
+    {{ partial:components/_monsun_newsletter }}
     <div class="grid grid-cols-3 sm:flex justify-between pt-6 pb-3">
         {{ nav:footer_primary }}
         <button class="text-sm sm:text-base sm:flex uppercase tracking-widest hover:text-monsun"><a class="block"

@@ -1,0 +1,58 @@
+title: Aktuell
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          validate:
+            - required
+      -
+        handle: bild_url
+        field:
+          input_type: text
+          antlers: false
+          display: 'Bild URL'
+          type: text
+          icon: text
+          listable: hidden
+      -
+        handle: untertitel
+        field:
+          input_type: text
+          antlers: false
+          display: Untertitel
+          type: text
+          icon: text
+          listable: hidden
+      -
+        handle: einleitung
+        field:
+          antlers: false
+          display: Einleitung
+          type: textarea
+          icon: textarea
+          listable: hidden
+      -
+        import: page_builder
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          required: true
+          localizable: true
+          validate:
+            - required
+      -
+        handle: date
+        field:
+          type: date
+          required: true
+          validate:
+            - required
