@@ -79,7 +79,7 @@ sections:
         handle: premiere_urauffuehrung
         field:
           mode: single
-          time_enabled: false
+          time_enabled: true
           time_required: true
           earliest_date: '1900-01-01'
           full_width: false

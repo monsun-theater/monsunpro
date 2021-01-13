@@ -1,5 +1,5 @@
 title: Veranstaltungen
-template: veranstaltungen/index
+template: veranstaltungen/show
 layout: layout
 taxonomies:
   - kategorien
@@ -8,6 +8,3 @@ revisions: false
 route: '/veranstaltungen/{slug}'
 date: true
 sort_dir: asc
-date_behavior:
-  past: public
-  future: private
