@@ -1,7 +1,7 @@
 ---
 title: 'Anastasia, wann bekommst du deine Juwelen zurück?'
 updated_by: 34d4dc92-ec1a-4900-9a81-ed8dd8606f23
-updated_at: 1609949115
+updated_at: 1610280751
 blueprint: veranstaltung
 page_builder:
   -
@@ -33,7 +33,13 @@ page_builder:
             text: 'innen, Freund'
           -
             type: text
-            text: "innen und Feind*innen der vermeintlichen Großfürstin zu Wort.\_"
+            text: 'innen und Feind*innen der vermeintlichen Großfürstin z'
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: "u Wort.\_"
       -
         type: paragraph
         content:
@@ -41,13 +47,72 @@ page_builder:
             type: text
             text: 'Eine Koproduktion mit dem monsun.theater. Gefördert durch die Claussen-Simon-Stiftung.'
       -
+        type: paragraph
+      -
         type: set
         attrs:
           values:
             type: pull_quote
             quote: 'Nach ihrer erfolgreichen Tour und Einladung zum Festival Hauptsache Frei ist diese Produktion auch im Rahmen des Festivals Theater der Welt zu sehen. Zwei unterschiedliche Menschen gehen zusammen über die Grenzen.'
             author: 'Hamburger Allgemeine Zeitung, 23.Jul 2020'
+      -
+        type: paragraph
+      -
+        type: paragraph
+      -
+        type: set
+        attrs:
+          enabled: false
+          values:
+            type: video
+            youtube_url: 'https://vimeo.com/485609448'
+            size: md
+            caption: null
+      -
+        type: paragraph
+      -
+        type: set
+        attrs:
+          values:
+            type: buttons
+            buttons:
+              -
+                label: 'Contact us'
+                target_blank: false
+                link_type: entry
+                entry: a2a41c54-09eb-4e08-8d84-1a856f2a42b7
+                url: null
+                email: null
+                tel: null
+                asset: null
+                attr_title: null
+                attr_aria: 'Contact us'
+      -
+        type: paragraph
     type: article
+    enabled: true
+  -
+    title: 'Book now'
+    text: 'Contact us!'
+    buttons:
+      -
+        label: 'Call 1110009862'
+        target_blank: false
+        link_type: tel
+        entry: null
+        url: null
+        email: null
+        tel: '0048'
+        asset: null
+        attr_title: null
+        attr_aria: 'Conact us!'
+    type: call_to_action
+    enabled: true
+  -
+    title: 'Skontaktuje sie z Nami'
+    text: 'Nowosci itd...'
+    form: contact
+    type: form
     enabled: true
 id: 961cd561-580b-4b71-8625-dd6f4451511a
 ---
