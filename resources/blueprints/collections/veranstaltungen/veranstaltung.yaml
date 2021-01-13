@@ -10,8 +10,71 @@ sections:
           required: true
           validate:
             - required
+          display: Titel
+          listable: hidden
+          input_type: text
+          antlers: false
       -
         import: page_builder
+      -
+        handle: untertitel
+        field:
+          input_type: text
+          antlers: false
+          display: Untertitel
+          type: text
+          icon: text
+          listable: hidden
+      -
+        handle: zusatsinformation
+        field:
+          input_type: text
+          antlers: false
+          display: Zusatsinformation
+          type: text
+          icon: text
+          listable: hidden
+      -
+        handle: von_bis
+        field:
+          mode: range
+          time_enabled: false
+          time_required: false
+          earliest_date: '1900-01-01'
+          full_width: false
+          inline: false
+          columns: 1
+          rows: 1
+          display: Von...Bis
+          type: date
+          icon: date
+          instructions: 'Daten: Die Erste und die letzte Vorstellung'
+          listable: hidden
+      -
+        handle: premiere
+        field:
+          mode: single
+          time_enabled: false
+          time_required: true
+          earliest_date: '1900-01-01'
+          full_width: false
+          inline: false
+          columns: 1
+          rows: 1
+          display: Premiere
+          type: date
+          icon: date
+          listable: hidden
+      -
+        handle: spielzeit
+        field:
+          input_type: text
+          antlers: false
+          display: Spielzeit
+          type: text
+          icon: text
+          instructions: 'z.B. 1 Stunde, ohne Pause.'
+          listable: hidden
   sidebar:
     display: Sidebar
     fields:
@@ -32,5 +95,15 @@ sections:
           display: Kategorien
           mode: select
           listable: hidden
+      -
+        handle: date
+        field:
+          type: date
+          required: true
+          validate:
+            - required
+  seo:
+    display: SEO
+    fields:
       -
         import: seo

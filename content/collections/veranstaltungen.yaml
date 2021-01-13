@@ -3,8 +3,10 @@ template: veranstaltungen/index
 layout: layout
 taxonomies:
   - kategorien
+  - preisprofil
 revisions: false
 route: '/veranstaltungen/{slug}'
+date: true
 sort_dir: asc
 date_behavior:
   past: public

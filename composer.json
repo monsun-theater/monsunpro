@@ -5,12 +5,14 @@
     "type": "project",
     "require": {
         "php": "^7.3",
+        "doublethreedigital/duplicator": "^1.2",
         "fideloper/proxy": "^4.2",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",
         "laravel/framework": "^8.0",
         "laravel/tinker": "^2.0",
         "pixelfear/composer-dist-plugin": "^0.1",
+        "rias/statamic-data-import": "^1.1",
         "statamic/cms": "3.0.38"
     },
     "require-dev": {
