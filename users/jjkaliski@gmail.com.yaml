@@ -6,6 +6,8 @@ preferences:
   collections:
     pages:
       after_save: continue_editing
+    kuenstler_innen:
+      per_page: 100
   taxonomies:
     kategorien:
       after_save: create_another
