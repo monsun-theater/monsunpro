@@ -6,3 +6,6 @@ preferences:
   collections:
     pages:
       after_save: continue_editing
+  taxonomies:
+    kategorien:
+      after_save: create_another

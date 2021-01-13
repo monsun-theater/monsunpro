@@ -1,6 +1,8 @@
 title: Veranstaltungen
 template: veranstaltungen/index
 layout: layout
+taxonomies:
+  - kategorien
 revisions: false
 route: '/veranstaltungen/{slug}'
 sort_dir: asc
