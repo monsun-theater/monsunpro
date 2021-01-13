@@ -8,6 +8,14 @@ preferences:
       after_save: continue_editing
     kuenstler_innen:
       per_page: 100
+    rollen:
+      after_save: create_another
+    veranstaltungen:
+      columns:
+        - title
+        - date
+        - slug
+      after_save: continue_editing
   taxonomies:
     kategorien:
       after_save: create_another

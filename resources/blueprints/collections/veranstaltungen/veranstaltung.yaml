@@ -15,8 +15,6 @@ sections:
           input_type: text
           antlers: false
       -
-        import: page_builder
-      -
         handle: untertitel
         field:
           input_type: text
@@ -35,6 +33,32 @@ sections:
           icon: text
           listable: hidden
       -
+        handle: ueberblick
+        field:
+          display: Überblick
+          type: section
+          icon: section
+          listable: hidden
+      -
+        handle: kategorien
+        field:
+          type: terms
+          taxonomies:
+            - kategorien
+          display: Kategorien
+          mode: select
+          listable: hidden
+          width: 50
+      -
+        handle: preisprofil
+        field:
+          type: terms
+          taxonomies:
+            - preisprofil
+          display: Preisprofil
+          mode: select
+          width: 50
+      -
         handle: von_bis
         field:
           mode: range
@@ -45,13 +69,14 @@ sections:
           inline: false
           columns: 1
           rows: 1
-          display: Von...Bis
+          display: 'Erste-letzte Vorstellung'
           type: date
           icon: date
-          instructions: 'Daten: Die Erste und die letzte Vorstellung'
+          instructions: Von...Bis
           listable: hidden
+          width: 33
       -
-        handle: premiere
+        handle: premiere_urauffuehrung
         field:
           mode: single
           time_enabled: false
@@ -61,19 +86,120 @@ sections:
           inline: false
           columns: 1
           rows: 1
-          display: Premiere
+          display: Premiere/Uraufführung
           type: date
           icon: date
           listable: hidden
+          width: 33
+          instructions: 'Erste Vorstellung'
       -
-        handle: spielzeit
+        handle: dauer
         field:
           input_type: text
           antlers: false
-          display: Spielzeit
+          display: Dauer
           type: text
           icon: text
           instructions: 'z.B. 1 Stunde, ohne Pause.'
+          listable: hidden
+          width: 33
+      -
+        handle: ticket-link_eventgruppe
+        field:
+          input_type: url
+          antlers: false
+          display: 'Ticket-Link Eventgruppe'
+          type: text
+          icon: text
+          listable: hidden
+      -
+        handle: veranstaltungsinfo
+        field:
+          display: Veranstaltungsinfo
+          type: section
+          icon: section
+          listable: hidden
+      -
+        handle: credits
+        field:
+          fields:
+            -
+              handle: rolle
+              field:
+                mode: typeahead
+                collections:
+                  - rollen
+                display: Rolle
+                type: entries
+                icon: entries
+                width: 50
+                listable: hidden
+            -
+              handle: kuenstler_innen
+              field:
+                mode: typeahead
+                collections:
+                  - kuenstler_innen
+                display: 'Künstler*innen'
+                type: entries
+                icon: entries
+                listable: hidden
+                width: 50
+          mode: stacked
+          add_row: 'Neue Rolle eintragen'
+          reorderable: true
+          display: Credits
+          type: grid
+          icon: grid
+          listable: hidden
+      -
+        handle: seite_content
+        field:
+          display: 'Seite / Content'
+          type: section
+          icon: section
+          listable: hidden
+      -
+        import: page_builder
+      -
+        handle: presse
+        field:
+          display: Presse
+          type: section
+          icon: section
+          listable: hidden
+      -
+        handle: bildmaterial
+        field:
+          mode: grid
+          restrict: false
+          allow_uploads: true
+          display: Bildmaterial
+          type: assets
+          icon: assets
+          width: 33
+          listable: hidden
+      -
+        handle: pressemitteilung
+        field:
+          mode: grid
+          restrict: false
+          allow_uploads: true
+          display: Pressemitteilung
+          type: assets
+          icon: assets
+          width: 33
+          listable: hidden
+      -
+        handle: pressestimmen
+        field:
+          mode: grid
+          restrict: false
+          allow_uploads: true
+          display: Pressestimmen
+          type: assets
+          icon: assets
+          width: 33
           listable: hidden
   sidebar:
     display: Sidebar
@@ -87,21 +213,37 @@ sections:
           validate:
             - required
       -
-        handle: kategorien
-        field:
-          type: terms
-          taxonomies:
-            - kategorien
-          display: Kategorien
-          mode: select
-          listable: hidden
-      -
         handle: date
         field:
           type: date
           required: true
           validate:
             - required
+          listable: hidden
+          mode: single
+          time_enabled: true
+          time_required: true
+          earliest_date: '1900-01-01'
+          full_width: false
+          inline: false
+          columns: 1
+          rows: 1
+      -
+        handle: ticket-link_veranstaltung
+        field:
+          input_type: url
+          antlers: false
+          display: 'Ticket-Link Veranstaltung'
+          type: text
+          icon: text
+          listable: hidden
+      -
+        handle: ausverkauft
+        field:
+          display: Ausverkauft
+          type: toggle
+          icon: toggle
+          listable: hidden
   seo:
     display: SEO
     fields:
