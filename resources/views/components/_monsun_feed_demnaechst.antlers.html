@@ -1,10 +1,14 @@
 <div class="text-3xl lg:text-4xl">Demnächst</div>
 <!-- Fst 1 -->
-{{ collection:veranstaltungen }}
+{{ collection:veranstaltungen since="now" sort="desc" limit="1" }}
 <div class="md:grid grid-cols-12 gap-4 items-baseline bg-neutral-100 p-3">
     <div class="col-span-4">
-        <div class="sm:text-lg">{{ date }}</div>
-        <div class="sm:text-lg">{{ kategorien }} {{ title }} {{ /kategorien }}</div>
+        <div class="text-xs sm:text-sm uppercase tracking-widest font-bold" style="color: {{ kategorien }} {{ kategorie_farbe }}{{
+            /kategorien }};">{{ kategorien }} {{ title }}
+            {{ /kategorien }}</div>
+        <div class="sm:text-lg">{{ date format="l, F jS" }}</div>
+        <div class="sm:text-lg">{{ date format="H:i"}} Uhr</div>
+        <div class="sm:text-lg"></div>
     </div>
 
     <div class="col-span-8 sm:text-lg pt-5 md:py-0">
@@ -19,5 +23,5 @@
             </a>
         </button>
     </div>
-    {{ /collection:veranstaltungen }}
 </div>
+{{ /collection:veranstaltungen }}

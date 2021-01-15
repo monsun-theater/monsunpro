@@ -1,7 +1,11 @@
 <div class="md:grid grid-cols-12 gap-4">
     <div class="col-span-8 md:col-start-5">
         <div class="text-sm"> <span class="font-bold">Premiere:&nbsp</span>{{ premiere_urauffuehrung }}</div>
-        <div class="text-sm"><span class="font-bold">Spielzeit:</span>{{ dauer }}</div>
+        <div class="text-sm"><span class="font-bold">Dauer:&nbsp</span>{{ dauer }}</div>
+        <div class="text-sm"><span class="font-bold">In der spielzeit:&nbsp</span>{{ von_bis:start }} &dash; {{
+            von_bis:start
+            }}</div>
+
         <div class="text-sm"><span class="font-bold">Karten:</span> {{ preisprofil }} {{ title }} {{ /preisprofil }}
         </div>
     </div>

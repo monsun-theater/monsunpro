@@ -161,46 +161,6 @@ sections:
           listable: hidden
       -
         import: page_builder
-      -
-        handle: presse
-        field:
-          display: Presse
-          type: section
-          icon: section
-          listable: hidden
-      -
-        handle: bildmaterial
-        field:
-          mode: grid
-          restrict: false
-          allow_uploads: true
-          display: Bildmaterial
-          type: assets
-          icon: assets
-          width: 33
-          listable: hidden
-      -
-        handle: pressemitteilung
-        field:
-          mode: grid
-          restrict: false
-          allow_uploads: true
-          display: Pressemitteilung
-          type: assets
-          icon: assets
-          width: 33
-          listable: hidden
-      -
-        handle: pressestimmen
-        field:
-          mode: grid
-          restrict: false
-          allow_uploads: true
-          display: Pressestimmen
-          type: assets
-          icon: assets
-          width: 33
-          listable: hidden
   sidebar:
     display: Sidebar
     fields:

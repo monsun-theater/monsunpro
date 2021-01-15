@@ -1,0 +1,39 @@
+title: Kategorien
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          validate:
+            - required
+      -
+        handle: content
+        field:
+          type: markdown
+          localizable: true
+      -
+        handle: kategorie_farbe
+        field:
+          theme: classic
+          lock_opacity: false
+          default_color_mode: HEXA
+          color_modes:
+            - HEXA
+          display: 'Kategorie:Farbe'
+          type: color
+          icon: color
+          listable: hidden
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          required: true
+          validate:
+            - required

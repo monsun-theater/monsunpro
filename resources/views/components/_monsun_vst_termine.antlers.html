@@ -1,62 +1,25 @@
 {{# Termine #}}
 <div class="md:grid grid-cols-12 gap-4">
     <div class="col-span-8 md:col-start-5 bg-neutral-100 p-3">
+        {{ collection:veranstaltungen title:contains="{title}" sort="date" since="now" }}
         <div class="sm:grid grid-cols-8 pb-3 sm:pb-1 gap-4">
             <div class="text-base sm:text-xl col-span-3 font-bold">
                 <div>
-                    Donnerstag
+                    {{ date format="l"}}
                 </div>
             </div>
             <div class="text-xl sm:col-span-5 pb-3">
                 <div>
-                    03.09.2020 | 20:00 Uhr | Uraufführung
+                    {{ date format="F jS"}} | {{ date format="H:i"}} Uhr
                 </div>
                 <button class="text-center uppercase tracking-wider hover:text-monsun sm:text-lg"><a class="block"
-                        href="/">
+                        href="{{ ticket-link_veranstaltung }}">
                         <div class="tracking-widest font-bold uppercase">Karten<span
                                 class="text-monsun font-bold">&nbsp;→</span>
                         </div>
                     </a>
                 </button>
             </div>
-        </div>
-        <div class="sm:grid grid-cols-8 pb-3 sm:pb-1 gap-4">
-            <div class="text-base sm:text-xl col-span-3 font-bold">
-                <div>
-                    Freitag
-                </div>
-            </div>
-            <div class="text-xl sm:col-span-5 pb-3">
-                <div>
-                    04.09.2020 | 20:00 Uhr
-                </div>
-                <button class="text-center uppercase tracking-wider hover:text-monsun sm:text-lg"><a class="block"
-                        href="/">
-                        <div class="tracking-widest font-bold uppercase">Karten<span
-                                class="text-monsun font-bold">&nbsp;→</span>
-                        </div>
-                    </a>
-                </button>
-            </div>
-        </div>
-        <div class="sm:grid grid-cols-8 pb-3 sm:pb-1 gap-4">
-            <div class="text-base sm:text-xl col-span-3 font-bold">
-                <div>
-                    Sonntag
-                </div>
-            </div>
-            <div class="text-xl sm:col-span-5">
-                <div>
-                    06.09.2020 | 20:00 Uhr
-                </div>
-                <button class="text-center uppercase tracking-wider hover:text-monsun sm:text-lg"><a class="block"
-                        href="/">
-                        <div class="tracking-widest font-bold uppercase">Karten<span
-                                class="text-monsun font-bold">&nbsp;→</span>
-                        </div>
-                    </a>
-                </button>
-            </div>
-        </div>
+        </div> {{ /collection:veranstaltungen }}
     </div>
 </div>

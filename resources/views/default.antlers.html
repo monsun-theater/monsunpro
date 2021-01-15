@@ -3,6 +3,8 @@ without having to worry about margins or paddings. #}}
 {{if monsun_alert}} {{ partial:components/monsun_alert}} {{ /if }}
 <main class="outer-grid fluid-container">
     {{ partial:components/monsun_wand}}
+    {{ partial:components/monsun_vst_monatsplan}}
+
     {{ page_builder scope="block" }}
     {{ partial src="page_builder/{type}" }}
     {{ /page_builder }}

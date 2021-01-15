@@ -1,9 +1,11 @@
 <main>
     {{ collection:veranstaltungen }}
     <div class="outer-grid fluid-container">
+
         <div>
-            <div class="text-sm sm:text-lg">{{ kategorien }} {{ title }} {{ /kategorien }}</div>
-            <div class="text-sm sm:text-lg">{{ von_bis:start }} &ndash; {{ von_bis:end }} </div>
+            <div class="text-xs sm:text-sm uppercase tracking-widest font-bold" style="color: {{ kategorien }} {{ kategorie_farbe }}{{
+                /kategorien }};">{{ kategorien }} {{ title }}
+                {{ /kategorien }}</div>
             <div
                 class="text-xl sm:text-3xl xl:text-4xl font-bold leading-tight md:leading-none pt-5 max-w-md xl:max-w-lg">
                 {{ title
@@ -22,7 +24,7 @@
     </div>
     {{ partial:components/_swiper_monsun}}
     <div class="outer-grid fluid-container">
-        {{ partial:components/_monsun_fst_info_besetzung }}
+        {{ partial:components/_monsun_vst_info_besetzung }}
     </div>
     {{ collection:veranstaltungen }}
 </main>

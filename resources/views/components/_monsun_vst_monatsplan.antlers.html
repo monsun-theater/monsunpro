@@ -1,0 +1,27 @@
+<div class="text-3xl lg:text-4xl">Monatsplan</div>
+<!-- Fst 1 -->
+{{ collection:veranstaltungen since="first day of January" until="last day of January" sort="date" }}
+<div class="md:grid grid-cols-12 gap-4 items-baseline {{ switch between='bg-neutral-50|bg-neutral-100'}} p-3">
+    <div class="col-span-4">
+        <div class="text-xs sm:text-sm uppercase tracking-widest font-bold" style="color: {{ kategorien }} {{ kategorie_farbe }}{{
+            /kategorien }};">{{ kategorien }} {{ title }}
+            {{ /kategorien }}</div>
+        <div class="sm:text-lg">{{ date format="l, F jS" }}</div>
+        <div class="sm:text-lg">{{ date format="H:i"}} Uhr</div>
+        <div class="sm:text-lg"></div>
+    </div>
+
+    <div class="col-span-8 sm:text-lg pt-5 md:py-0">
+        <div class="text-xl sm:text-2xl font-bold leading-tight md:leading-normal"><a href="{{ url }}">{{ title }}</a>
+        </div>
+        <div class="sm:text-lg">{{ untertitel }}</div>
+        <button class="text-center uppercase tracking-wider hover:text-monsun sm:text-lg"><a class="block"
+                href="{{ ticket-link_veranstaltung }}">
+                <div class="pt-3 tracking-widest font-bold uppercase">Karten<span
+                        class="text-monsun font-bold">&nbsp;→</span>
+                </div>
+            </a>
+        </button>
+    </div>
+</div>
+{{ /collection:veranstaltungen }}
