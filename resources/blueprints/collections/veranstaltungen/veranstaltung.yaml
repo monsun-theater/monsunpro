@@ -46,9 +46,10 @@ sections:
           taxonomies:
             - kategorien
           display: Kategorien
-          mode: select
+          mode: default
           listable: hidden
           width: 50
+          max_items: 1
       -
         handle: preisprofil
         field:
@@ -204,6 +205,14 @@ sections:
           type: toggle
           icon: toggle
           listable: hidden
+      -
+        handle: anzeigen
+        field:
+          type: terms
+          taxonomies:
+            - anzeigen
+          display: Anzeigen
+          mode: select
   seo:
     display: SEO
     fields:

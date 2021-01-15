@@ -61,6 +61,14 @@ sections:
           validate:
             - required
       -
+        handle: template
+        field:
+          hide_partials: true
+          display: Template
+          type: template
+          icon: template
+          listable: hidden
+      -
         handle: parent
         field:
           type: entries

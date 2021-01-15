@@ -1,0 +1,7 @@
+{{if monsun_alert}} {{ partial:components/monsun_alert}} {{ /if }}
+<main class="outer-grid fluid-container">
+    <div class="text-3xl lg:text-4xl">{{ title }}</div>
+    {{ page_builder scope="block" }}
+    {{ partial src="page_builder/{type}" }}
+    {{ /page_builder }}
+</main>
