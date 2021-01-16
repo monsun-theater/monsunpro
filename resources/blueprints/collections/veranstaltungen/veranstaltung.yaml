@@ -46,10 +46,9 @@ sections:
           taxonomies:
             - kategorien
           display: Kategorien
-          mode: default
+          mode: select
           listable: hidden
           width: 50
-          max_items: 1
       -
         handle: preisprofil
         field:
@@ -127,7 +126,7 @@ sections:
             -
               handle: rolle
               field:
-                mode: typeahead
+                mode: select
                 collections:
                   - rollen
                 display: Rolle
@@ -138,7 +137,7 @@ sections:
             -
               handle: kuenstler_innen
               field:
-                mode: typeahead
+                mode: select
                 collections:
                   - kuenstler_innen
                 display: 'Künstler*innen'

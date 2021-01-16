@@ -1,11 +1,57 @@
-<main class="outer-grid fluid-container">
-    {{ collection:aktuelles}}
-    {{ partial:typography/_h1}}
-    {{ untertitel}}
-    {{ bild_url}}
-    {{ /collection:aktuelles}}
+<article class="outer-grid fluid-container">
 
+    <!-- Aktuelles -->
+    <h1 class="text-3xl lg:text-4xl">Aktuelles</h1>
+    <div class="md:grid grid-cols-12 gap-4 items-baseline pb-3">
+        <div class="col-span-4">
+            <div class="sm:text-lg">{{ date }}</div>
+        </div>
+        <div class="col-span-8">
+            <h2 class="text-xl sm:text-2xl font-bold leading-tight ">
+                {{ title }}</h2>
+            <div class="sm:text-lg pb-2">{{ untertitel }}</div>
+            <figure class="pb-3"><img src="{{ bild_url }}" alt=""></figure>
+            <h3 class="text-lg">{{ einleitung }}</h3>
+        </div>
+    </div>
     {{ page_builder scope="block" }}
     {{ partial src="page_builder/{type}" }}
     {{ /page_builder }}
-</main>
+
+
+
+
+    <div class="md:grid grid-cols-12 gap-4 items-baseline pb-3">
+        <div class="col-span-8 col-start-5">
+            {{ collection:previous in="blog" as="posts" limit="2" sort="date:asc" }}
+
+            {{ if no_results }}
+
+            {{ /if }}
+
+            {{ posts }}
+            <button
+                class="inline-flex items-center pt-3 font-bold tracking-widest uppercase leading-none select-none whitespace-nowrap text-lg hover:text-monsun"><a
+                    href="{{ url }}"><span class="text-monsun font-bold">←</span> {{ title }} </a> </button>
+            {{ /posts }}
+
+            {{ /collection:previous }}
+            {{ collection:next in="posts" as="posts" limit="1" sort="date:asc" }}
+
+            {{ if no_results }}
+
+            {{ /if }}
+
+            {{ posts }}
+            <button
+                class="inline-flex items-center pt-3 tracking-widest font-bold uppercase leading-none select-none whitespace-nowrap text-lg hover:text-monsun"><a
+                    href="{{ url }}">{{ title }} <span class="text-monsun font-bold"> →</span></a> </button>
+            {{ /posts }}
+            {{ /collection:next }}
+
+
+
+
+        </div>
+    </div>
+</article>

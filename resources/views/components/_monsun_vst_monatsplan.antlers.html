@@ -1,8 +1,11 @@
 <div class="text-3xl lg:text-4xl">Monatsplan</div>
 <!-- Fst 1 -->
 {{ collection:veranstaltungen since="first day of January" until="last day of January" sort="date" }}
-<div class="md:grid grid-cols-12 gap-4 items-baseline pb-6">
-    <div class="col-span-4" style="color: {{ kategorien }} {{ kategorie_farbe }}{{
+{{if ! no_results }}
+
+<div class="md:grid grid-cols-12 gap-4 items-baseline pb-8">
+    <div class="hidden col-span-1 text-base lg:text-lg transform -rotate-90 border-b-2">Januar</div>
+    <div class="col-span-3" style="color: {{ kategorien }} {{ kategorie_farbe }}{{
         /kategorien }};">
         <div class="text-xs sm:text-sm uppercase tracking-widest font-bold" style="color: {{ kategorien }} {{ kategorie_farbe }}{{
             /kategorien }};">{{ kategorien }} {{ title }}
@@ -10,17 +13,46 @@
         <div class="sm:text-lg text-black">{{ date format="l, F jS" }}</div>
         <div class="sm:text-lg text-black">{{ date format="H:i"}} Uhr</div>
     </div>
-    <div class="col-span-8 sm:text-lg pt-3 md:py-0">
+    <div class="col-span-8 sm:text-lg  md:py-0">
         <div class="text-xl sm:text-2xl font-bold leading-tight md:leading-normal"><a href="{{ url }}">{{ title }}</a>
         </div>
         <div class="sm:text-lg">{{ untertitel }}</div>
         <button class="text-center uppercase tracking-wider hover:text-monsun sm:text-lg"><a class="block"
                 href="{{ ticket-link_veranstaltung }}">
-                <div class="pt-3 tracking-widest font-bold uppercase">Karten<span
+                <div class="pt-1 tracking-widest font-bold uppercase">Karten<span
                         class="text-monsun font-bold">&nbsp;→</span>
                 </div>
             </a>
         </button>
     </div>
 </div>
+{{endif}}
+{{ /collection:veranstaltungen }}
+{{ collection:veranstaltungen since="first day of February" until="last day of February" sort="date" }}
+{{if ! no_results }}
+
+<div class="md:grid grid-cols-12 gap-4 items-baseline pb-8">
+    <div class="hidden col-span-1 text-base lg:text-lg transform -rotate-90 border-b-2">Januar</div>
+    <div class="col-span-3" style="color: {{ kategorien }} {{ kategorie_farbe }}{{
+        /kategorien }};">
+        <div class="text-xs sm:text-sm uppercase tracking-widest font-bold" style="color: {{ kategorien }} {{ kategorie_farbe }}{{
+            /kategorien }};">{{ kategorien }} {{ title }}
+            {{ /kategorien }}</div>
+        <div class="sm:text-lg text-black">{{ date format="l, F jS" }}</div>
+        <div class="sm:text-lg text-black">{{ date format="H:i"}} Uhr</div>
+    </div>
+    <div class="col-span-8 sm:text-lg  md:py-0">
+        <div class="text-xl sm:text-2xl font-bold leading-tight md:leading-normal"><a href="{{ url }}">{{ title }}</a>
+        </div>
+        <div class="sm:text-lg">{{ untertitel }}</div>
+        <button class="text-center uppercase tracking-wider hover:text-monsun sm:text-lg"><a class="block"
+                href="{{ ticket-link_veranstaltung }}">
+                <div class="pt-1 tracking-widest font-bold uppercase">Karten<span
+                        class="text-monsun font-bold">&nbsp;→</span>
+                </div>
+            </a>
+        </button>
+    </div>
+</div>
+{{endif}}
 {{ /collection:veranstaltungen }}
