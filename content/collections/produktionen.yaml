@@ -1,0 +1,9 @@
+title: Produktionen
+template: produktionen/show
+layout: layout
+revisions: false
+route: 'produktionen/{slug}'
+sort_dir: asc
+date_behavior:
+  past: public
+  future: private
