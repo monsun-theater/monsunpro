@@ -49,6 +49,7 @@ sections:
           mode: select
           listable: hidden
           width: 50
+          max_items: 1
       -
         handle: preisprofil
         field:
@@ -212,6 +213,24 @@ sections:
             - anzeigen
           display: Anzeigen
           mode: select
+      -
+        handle: monsun_digital
+        field:
+          display: monsun.digital
+          type: toggle
+          icon: toggle
+          listable: hidden
+      -
+        handle: streaming-link
+        field:
+          input_type: text
+          antlers: false
+          display: Streaming-Link
+          type: text
+          icon: text
+          listable: hidden
+          if:
+            monsun_digital: 'equals true'
   seo:
     display: SEO
     fields:
