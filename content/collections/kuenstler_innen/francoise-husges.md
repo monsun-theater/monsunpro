@@ -1,7 +1,7 @@
 ---
 title: 'Francoise Hüsges'
 updated_by: 34d4dc92-ec1a-4900-9a81-ed8dd8606f23
-updated_at: 1610904465
+updated_at: 1610906898
 page_builder:
   -
     bard:
@@ -54,7 +54,7 @@ page_builder:
     enabled: true
 kuenstler_artist_website_link: www.google.com
 hat_eigene_website_has_own_website: false
-biographie_eintragen_create_artist_s_biography: false
+biographie_eintragen_create_artist_s_biography: true
 kuenstler_artist_website_url_link: 'https://'
 id: 230ec157-5076-45d0-8d68-597a5f3d0743
 ---

@@ -1,7 +1,5 @@
 <main class="outer-grid fluid-container">
-    {{partial:typography/h1}}
+    {{block}}{{ partial src="typography/h2" :content="title" }} {{ /block }}
     {{ partial:components/monsun_vst_monatsplan}}
-    {{ page_builder scope="block" }}
-    {{ partial src="page_builder/{type}" }}
-    {{ /page_builder }}
+
 </main>

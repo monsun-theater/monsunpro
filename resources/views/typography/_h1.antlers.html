@@ -1,5 +1,6 @@
 {{# Typography h1 partial with class, tag, color and content attributes. #}}
-<{{ tag or 'h1' }} class="text-xl font-normal tracking-widest {{ color or 'text-black' }} {{ class }}">
+<{{ tag or 'h1' }} class="text-xl sm:text-3xl xl:text-4xl font-bold leading-tight
+md:leading-none pt-5 max-w-md xl:max-w-lg {{ color or 'text-black' }} {{ class }}">
     {{
     content | nl2br
     }}</{{ tag or 'h1' }}>

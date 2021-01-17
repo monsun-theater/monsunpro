@@ -34,11 +34,10 @@ There's a desktop and a mobile version. #}}
             <!-- Primary Menu -->
             <div class="grid grid-cols-3 gap-4 justify-items-right pb-3">
                 {{ nav:top_menu_primary max_depth="2" }}
-                <div class="lowercase tracking-wider"><a
-                        class="font-bold text-lg hover:text-monsun {{ is_current || is_parent ? 'text-monsun' : 'text-black' }}"
-                        {{ if children }} href="{{ url }}" {{ /if }}>
+                <div class="lowercase tracking-wider">
+                    <div class="font-bold text-lg" {{ if children }} href="{{ url }}" {{ /if }}>
                         {{ title }}
-                    </a>
+                    </div>
                     {{ if children }}
                     <ul class="text-left">
                         {{ children }}
