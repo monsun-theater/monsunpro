@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8cdf5cfcc5d284e237f81d7fdfe76201",
+    "content-hash": "f6cf189d34fffd33255a6bd9a44999fc",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1489,6 +1489,70 @@
                 "source": "https://github.com/Intervention/image/tree/master"
             },
             "time": "2019-11-02T09:15:47+00:00"
+        },
+        {
+            "name": "jonassiewertsen/statamic-external-link",
+            "version": "v1.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jonassiewertsen/statamic-external-link.git",
+                "reference": "46c8e42351ec26f842a8e719db4443f4818f0310"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jonassiewertsen/statamic-external-link/zipball/46c8e42351ec26f842a8e719db4443f4818f0310",
+                "reference": "46c8e42351ec26f842a8e719db4443f4818f0310",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^8.0",
+                "php": "^7.3 || ^8.0",
+                "statamic/cms": "3.0.*"
+            },
+            "type": "library",
+            "extra": {
+                "statamic": {
+                    "name": "External Link",
+                    "description": "A Statamic fieldtype for external links"
+                },
+                "laravel": {
+                    "providers": [
+                        "Jonassiewertsen\\ExternalLink\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Jonassiewertsen\\ExternalLink\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jonas Siewertsen"
+                }
+            ],
+            "description": "A Statamic fieldtype for external links",
+            "keywords": [
+                "fieldtype",
+                "link",
+                "statamic"
+            ],
+            "support": {
+                "email": "mail@jonassiewertsen.com",
+                "issues": "https://github.com/jonassiewertsen/statamic-external-link/issues",
+                "source": "https://github.com/jonassiewertsen/statamic-external-link/tree/v1.2.1"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/jonassiewertsen",
+                    "type": "github"
+                }
+            ],
+            "time": "2021-01-03T17:25:36+00:00"
         },
         {
             "name": "justinrainbow/json-schema",

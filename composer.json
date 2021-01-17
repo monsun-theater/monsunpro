@@ -9,6 +9,7 @@
         "fideloper/proxy": "^4.2",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",
+        "jonassiewertsen/statamic-external-link": "^1.2",
         "laravel/framework": "^8.0",
         "laravel/tinker": "^2.0",
         "pixelfear/composer-dist-plugin": "^0.1",

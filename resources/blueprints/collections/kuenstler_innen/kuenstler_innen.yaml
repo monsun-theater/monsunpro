@@ -11,6 +11,44 @@ sections:
           validate:
             - required
       -
+        handle: kuenstler_innens_eigene_website
+        field:
+          display: 'Künstler*innens Website / Artist''s own Homepage'
+          type: section
+          icon: section
+          listable: hidden
+      -
+        handle: hat_eigene_website_has_own_website
+        field:
+          display: 'Künstler*innen hat eine eigene Website? / Artist has his*her own Website?'
+          type: toggle
+          icon: toggle
+          width: 50
+          listable: hidden
+      -
+        handle: kuenstler_artist_website_url_link
+        field:
+          display: 'Künstler/Artist Website URL/Link'
+          type: external_link
+          icon: earth
+          listable: hidden
+          if:
+            hat_eigene_website_has_own_website: 'equals true'
+      -
+        handle: biographie_biography
+        field:
+          display: 'Biographie / Biography'
+          type: section
+          icon: section
+          listable: hidden
+      -
+        handle: biographie_eintragen_create_artist_s_biography
+        field:
+          display: 'Biographie zeigen / Show Artist''s Biography'
+          type: toggle
+          icon: toggle
+          listable: hidden
+      -
         import: page_builder
   sidebar:
     display: Sidebar

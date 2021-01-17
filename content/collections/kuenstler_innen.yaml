@@ -1,5 +1,9 @@
 title: 'Künstler*innen'
+template: diverse
+layout: layout
 revisions: false
+route: 'kuenstler-innen/{slug}'
+sort_dir: asc
 date_behavior:
   past: public
   future: private

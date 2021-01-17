@@ -10,7 +10,14 @@
             </div>
             <div class="text-sm">{{ kuenstler_innen }}
                 <div>
+                    {{ if hat_eigene_website_has_own_website }}
+                    <a class="underline" href="{{ kuenstler_artist_website_url_link }}">{{ title }}</a>
+                    {{ elseif biographie_eintragen_create_artist_s_biography }}
+                    <a class="underline" href="{{ url }}">{{ title }}</a>
+                    {{ else}}
                     {{ title }}
+
+                    {{ /if}}
                 </div>{{ /kuenstler_innen }}
             </div>
         </div>
