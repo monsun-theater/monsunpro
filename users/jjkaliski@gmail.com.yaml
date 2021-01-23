@@ -14,6 +14,13 @@ preferences:
         - slug
     rollen:
       per_page: 25
+    produktionen:
+      after_save: create_another
+      columns:
+        - title
+        - slug
+        - date
+        - og_image
   taxonomies:
     kategorien:
       columns:
