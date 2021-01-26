@@ -6,12 +6,37 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 34d4dc92-ec1a-4900-9a81-ed8dd8606f23
-updated_at: 1610734138
+updated_at: 1611507460
 page_builder:
   -
-    bard: null
+    bard:
+      -
+        type: heading
+        attrs:
+          level: 2
+        content:
+          -
+            type: text
+            text: Kartenkasse
+      -
+        type: heading
+        attrs:
+          level: 3
+        content:
+          -
+            type: text
+            marks:
+              -
+                type: bold
+            text: 'ABEND- / TAGESKASSE'
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: dfd
     type: article
-    enabled: true
+    enabled: false
 monsun_alert: false
 template: diverse
 id: a6bc5b37-3fcd-4c82-b5f4-94042b68c80c

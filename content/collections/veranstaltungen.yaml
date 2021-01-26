@@ -1,10 +1,6 @@
 title: Veranstaltungen
 template: veranstaltungen/show
 layout: layout
-taxonomies:
-  - kategorien
-  - preisprofil
-  - anzeigen
 revisions: false
 route: '/veranstaltungen/{slug}'
 date: true

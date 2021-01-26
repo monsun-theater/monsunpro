@@ -10,6 +10,361 @@ sections:
           required: true
           validate:
             - required
+          display: Titel
+          listable: hidden
+          input_type: text
+          antlers: false
+          instructions: Title
+      -
+        handle: subtitle
+        field:
+          input_type: text
+          antlers: false
+          display: Undertitel
+          type: text
+          icon: text
+          listable: hidden
+          instructions: Subtitle
+      -
+        handle: additional_info_title
+        field:
+          input_type: text
+          antlers: false
+          display: Titelzusatz
+          type: text
+          icon: text
+          listable: hidden
+          instructions: 'Additional info title'
+      -
+        handle: additional_info
+        field:
+          input_type: text
+          antlers: false
+          display: Zusatzinfo
+          type: text
+          icon: text
+          listable: hidden
+          instructions: 'Additional info'
+      -
+        handle: general_info_section
+        field:
+          display: 'Überblick / General info'
+          type: section
+          icon: section
+          listable: hidden
+      -
+        handle: category
+        field:
+          type: terms
+          taxonomies:
+            - kategorien
+          display: Kategorie
+          mode: select
+          width: 50
+          listable: hidden
+          instructions: Category
+      -
+        handle: von_bis_toggle
+        field:
+          display: 'Alter Von-Bis'
+          type: toggle
+          icon: toggle
+          listable: hidden
+          width: 50
+          instructions: '(Age) From - To'
+      -
+        handle: from_age
+        field:
+          input_type: text
+          antlers: false
+          display: Von
+          type: text
+          icon: text
+          width: 25
+          listable: hidden
+          instructions: 'From (Age)'
+          if:
+            von_bis_toggle: 'equals true'
+      -
+        handle: to_age
+        field:
+          input_type: text
+          antlers: false
+          display: Bis
+          type: text
+          icon: text
+          width: 25
+          listable: hidden
+          instructions: 'To (Age)'
+          if:
+            von_bis_toggle: 'equals true'
+      -
+        handle: duration
+        field:
+          display: Dauer
+          type: time
+          icon: time
+          width: 25
+          listable: hidden
+          instructions: Duration
+      -
+        handle: intermission
+        field:
+          options:
+            keine: keine
+            eine: eine
+          multiple: false
+          max_items: 1
+          clearable: false
+          searchable: true
+          taggable: false
+          push_tags: false
+          cast_booleans: false
+          display: Pause
+          type: select
+          icon: select
+          width: 25
+          listable: hidden
+          instructions: Intermission
+      -
+        handle: besetzung
+        field:
+          display: Besetzung
+          type: section
+          icon: section
+          instructions: 'Cast and crew'
+          listable: hidden
+      -
+        handle: credits
+        field:
+          fields:
+            -
+              handle: role
+              field:
+                mode: select
+                collections:
+                  - rollen
+                display: Rolle
+                type: entries
+                icon: entries
+                instructions: Role
+                listable: hidden
+                width: 50
+            -
+              handle: performer
+              field:
+                mode: select
+                collections:
+                  - kuenstler_innen
+                display: 'Künstler*innen'
+                type: entries
+                icon: entries
+                instructions: Performer
+                listable: hidden
+                width: 50
+          mode: stacked
+          add_row: 'Neue Funktion / New Role'
+          reorderable: true
+          display: Credits
+          type: grid
+          icon: grid
+          instructions: Credits
+          listable: hidden
+      -
+        handle: content
+        field:
+          display: Content
+          type: section
+          icon: section
+          instructions: 'Site content'
+          listable: hidden
+      -
+        import: page_builder
+      -
+        handle: perf_section
+        field:
+          display: Veranstaltungen
+          type: section
+          icon: section
+          instructions: Performances
+          listable: hidden
+      -
+        handle: performance_dates
+        field:
+          collapse: false
+          sets:
+            '':
+              display: 'Veranstaltung / Performance'
+              fields:
+                -
+                  handle: perf_date
+                  field:
+                    mode: single
+                    time_enabled: true
+                    time_required: true
+                    earliest_date: '1900-01-01'
+                    full_width: false
+                    inline: false
+                    columns: 1
+                    rows: 1
+                    display: Datum
+                    type: date
+                    icon: date
+                    instructions: Date
+                    listable: hidden
+                    width: 66
+                -
+                  handle: premiere_toggle
+                  field:
+                    display: Premiere
+                    type: toggle
+                    icon: toggle
+                    instructions: Premiere
+                    listable: hidden
+                    width: 33
+                -
+                  handle: performance_type
+                  field:
+                    max_items: 1
+                    mode: select
+                    display: 'In ''Premieren'' anzeigen?'
+                    type: terms
+                    icon: taxonomy
+                    instructions: 'Choose ''Premiere'' Tag to show it in ''Premieren'''
+                    listable: hidden
+                    taxonomies:
+                      - veranstaltungsart
+                    width: 50
+                    if:
+                      premiere_toggle: 'equals true'
+                -
+                  handle: premiere_type
+                  field:
+                    options:
+                      Premiere: Premiere
+                      Uraufführung: Uraufführung
+                      'Hamburg Premiere': 'Hamburg Premiere'
+                      'Deutschland Premiere': 'Deutschland Premiere'
+                      Wiederaufnahme: Wiederaufnahme
+                      'Zum letzten Mal': 'Zum letzten Mal'
+                    multiple: false
+                    max_items: 1
+                    clearable: true
+                    searchable: true
+                    taggable: true
+                    push_tags: true
+                    cast_booleans: false
+                    display: 'Was für eine Premiere?'
+                    type: select
+                    icon: select
+                    instructions: 'Premiere Type'
+                    listable: hidden
+                    width: 50
+                    if:
+                      premiere_toggle: 'equals true'
+                -
+                  handle: tickets_section
+                  field:
+                    display: Tickets
+                    type: section
+                    icon: section
+                    listable: hidden
+                -
+                  handle: ticket_price
+                  field:
+                    mode: select
+                    taxonomies:
+                      - preisprofil
+                    display: Preisprofil
+                    type: terms
+                    icon: taxonomy
+                    instructions: 'Ticket price'
+                    listable: hidden
+                -
+                  handle: restkarten
+                  field:
+                    display: Restkarten
+                    type: toggle
+                    icon: toggle
+                    instructions: 'Few tickets left'
+                    width: 33
+                    listable: hidden
+                -
+                  handle: sold_out
+                  field:
+                    display: Ausverkauft
+                    type: toggle
+                    icon: toggle
+                    instructions: 'Sold out'
+                    width: 33
+                    listable: hidden
+                -
+                  handle: cancelled
+                  field:
+                    display: Abgesagt
+                    type: toggle
+                    icon: toggle
+                    instructions: Cancelled
+                    listable: hidden
+                    width: 33
+                -
+                  handle: ticket_url
+                  field:
+                    display: Ticketlink
+                    type: external_link
+                    icon: earth
+                    instructions: 'Ticket URL'
+                    listable: hidden
+                -
+                  handle: additional_info_performance
+                  field:
+                    antlers: false
+                    display: Zusatzinfo
+                    type: textarea
+                    icon: textarea
+                    instructions: 'Any additional info for this particular performance, e.g. change in the cast.'
+                    listable: hidden
+                -
+                  handle: monsun_digital_section
+                  field:
+                    display: monsun.digital
+                    type: section
+                    icon: section
+                    listable: hidden
+                    instructions: 'Online performance'
+                -
+                  handle: monsun_digital
+                  field:
+                    display: monsun.digital
+                    type: toggle
+                    icon: toggle
+                    listable: hidden
+                -
+                  handle: streaming-link
+                  field:
+                    display: Streaming-Link
+                    type: external_link
+                    icon: earth
+                    instructions: 'Streaming URL'
+                    listable: hidden
+                    if:
+                      monsun_digital: 'equals true'
+                -
+                  handle: streaming_info
+                  field:
+                    antlers: false
+                    display: Streaming-Info
+                    type: textarea
+                    icon: textarea
+                    instructions: 'Information about streaming'
+                    listable: hidden
+                    if:
+                      monsun_digital: 'equals true'
+          display: Termine
+          type: replicator
+          icon: replicator
+          instructions: Dates
+          listable: hidden
   sidebar:
     display: Sidebar
     fields:
@@ -28,19 +383,3 @@ sections:
           required: true
           validate:
             - required
-      -
-        handle: kategorien
-        field:
-          type: terms
-          taxonomies:
-            - kategorien
-          display: Kategorien
-          mode: select
-      -
-        handle: preisprofil
-        field:
-          type: terms
-          taxonomies:
-            - preisprofil
-          display: Preisprofil
-          mode: select
