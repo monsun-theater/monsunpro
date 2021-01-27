@@ -13,6 +13,7 @@ preferences:
         - title
         - hero_image
         - category
+      after_save: continue_editing
     rollen:
       per_page: 25
     produktionen:

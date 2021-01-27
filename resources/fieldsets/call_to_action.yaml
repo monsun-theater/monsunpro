@@ -1,4 +1,4 @@
-title: 'Call to action'
+title: 'Call to action with portrait image'
 fields:
   -
     handle: title
@@ -11,6 +11,13 @@ fields:
       instructions: 'The title you want to display above the text.'
       validate:
         - required
+      width: 50
+  -
+    handle: image
+    field: figure.image
+    config:
+      instructions: 'Use only 4x3 format here'
+      folder: /
   -
     handle: text
     field: common.text_plain
@@ -20,3 +27,13 @@ fields:
         - required
   -
     import: buttons
+  -
+    handle: description
+    field:
+      input_type: text
+      antlers: false
+      display: Description
+      type: text
+      icon: text
+      instructions: 'Short Description'
+      listable: hidden
