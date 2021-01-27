@@ -117,7 +117,7 @@ sections:
           max_items: 1
           clearable: false
           searchable: true
-          taggable: false
+          taggable: true
           push_tags: false
           cast_booleans: false
           display: Pause

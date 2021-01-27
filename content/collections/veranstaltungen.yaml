@@ -8,3 +8,6 @@ sort_dir: asc
 date_behavior:
   past: unlisted
   future: public
+structure:
+  root: false
+  tree: {  }
