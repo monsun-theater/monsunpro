@@ -11,7 +11,8 @@ preferences:
       columns:
         - date
         - title
-        - slug
+        - hero_image
+        - category
     rollen:
       per_page: 25
     produktionen:
@@ -27,3 +28,10 @@ preferences:
         - title
         - slug
         - kategorie_farbe
+  favorites:
+    -
+      name: 'Veranstaltungen ‹ Collections'
+      url: collections/veranstaltungen
+  assets:
+    assets:
+      mode: table

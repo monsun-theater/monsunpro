@@ -5,35 +5,5 @@ revisions: false
 route: '{parent_uri}/{slug}'
 sort_dir: asc
 structure:
-  root: true
-  tree:
-    -
-      entry: home
-    -
-      entry: ca841a8f-1738-4103-844a-215f0a056ecb
-    -
-      entry: a6bc5b37-3fcd-4c82-b5f4-94042b68c80c
-    -
-      entry: 20bfb41c-c259-4949-b36c-3310597f0900
-    -
-      entry: b1e38ee5-a7ed-4bfc-9aad-07af4c8b1d42
-    -
-      entry: 02d49eff-12f3-44b6-b5e1-c68430690b7f
-    -
-      entry: d63bdb9f-4fbc-4e53-9582-a5ed887778db
-    -
-      entry: d8ec837a-baf8-43fb-9736-11eb4f72dfc7
-    -
-      entry: f9e72c61-93b9-4eb5-b2a8-c7b80202fc1f
-    -
-      entry: e3c7972e-45f4-4a34-8dd7-9641a6a2452e
-    -
-      entry: fcedbc6a-bc07-479e-9643-0b2f08ab2c2e
-    -
-      entry: c87dc0bd-8f2e-4f9f-9929-819a043d1263
-    -
-      entry: d8d3c830-7ded-43bc-868a-08554cb0f28e
-    -
-      entry: 3e9f0d20-2e72-4df3-b68e-be8c22daedaf
-    -
-      entry: a2a41c54-09eb-4e08-8d84-1a856f2a42b7
+  root: false
+  tree: {  }

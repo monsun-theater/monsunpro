@@ -16,17 +16,16 @@ sections:
           antlers: false
           instructions: Title
       -
-        handle: subtitle
+        handle: show_add_title
         field:
-          input_type: text
-          antlers: false
-          display: Undertitel
-          type: text
-          icon: text
+          display: 'Titelzusatz zeigen'
+          type: toggle
+          icon: toggle
+          instructions: 'Show additional title'
           listable: hidden
-          instructions: Subtitle
+          width: 25
       -
-        handle: additional_info_title
+        handle: additional_title
         field:
           input_type: text
           antlers: false
@@ -34,7 +33,22 @@ sections:
           type: text
           icon: text
           listable: hidden
-          instructions: 'Additional info title'
+          instructions: 'Additional title'
+          if:
+            show_add_title: 'equals true'
+          width: 75
+      -
+        handle: subtitle
+        field:
+          input_type: text
+          antlers: false
+          display: Untertitel
+          type: text
+          icon: text
+          listable: hidden
+          instructions: Subtitle
+          validate:
+            - required
       -
         handle: additional_info
         field:
@@ -53,6 +67,19 @@ sections:
           icon: section
           listable: hidden
       -
+        handle: ticket_price_profile
+        field:
+          max_items: 1
+          mode: select
+          taxonomies:
+            - preisprofil
+          display: Preisprofil
+          type: terms
+          icon: taxonomy
+          instructions: 'Ticket Price'
+          listable: hidden
+          width: 50
+      -
         handle: category
         field:
           type: terms
@@ -63,41 +90,29 @@ sections:
           width: 50
           listable: hidden
           instructions: Category
+          max_items: 1
       -
-        handle: von_bis_toggle
+        handle: from_to_toggle
         field:
-          display: 'Alter Von-Bis'
+          display: 'Von - Bis (Alter)'
           type: toggle
           icon: toggle
           listable: hidden
-          width: 50
-          instructions: '(Age) From - To'
+          width: 25
+          instructions: 'From - To (Age)'
       -
-        handle: from_age
+        handle: from_to
         field:
           input_type: text
           antlers: false
-          display: Von
+          display: 'Von - Bis (Alter)'
           type: text
           icon: text
-          width: 25
+          instructions: 'From - To (Age)'
           listable: hidden
-          instructions: 'From (Age)'
           if:
-            von_bis_toggle: 'equals true'
-      -
-        handle: to_age
-        field:
-          input_type: text
-          antlers: false
-          display: Bis
-          type: text
-          icon: text
-          width: 25
-          listable: hidden
-          instructions: 'To (Age)'
-          if:
-            von_bis_toggle: 'equals true'
+            from_to_toggle: 'equals true'
+          width: 75
       -
         handle: duration
         field:
@@ -123,7 +138,7 @@ sections:
           display: Pause
           type: select
           icon: select
-          width: 25
+          width: 50
           listable: hidden
           instructions: Intermission
       -
@@ -179,6 +194,20 @@ sections:
           instructions: 'Site content'
           listable: hidden
       -
+        handle: hero_image
+        field:
+          mode: grid
+          container: assets
+          folder: produktionen
+          restrict: false
+          allow_uploads: true
+          max_files: 1
+          display: 'Hero Image'
+          type: assets
+          icon: assets
+          instructions: 'Hero Image'
+          listable: hidden
+      -
         import: page_builder
       -
         handle: perf_section
@@ -212,7 +241,7 @@ sections:
                     icon: date
                     instructions: Date
                     listable: hidden
-                    width: 66
+                    width: 50
                 -
                   handle: premiere_toggle
                   field:
@@ -221,7 +250,53 @@ sections:
                     icon: toggle
                     instructions: Premiere
                     listable: hidden
+                    width: 25
+                -
+                  handle: special-event_toggle
+                  field:
+                    display: Special-Event
+                    type: toggle
+                    icon: toggle
+                    instructions: 'Extra Event'
+                    width: 25
+                    listable: hidden
+                -
+                  handle: extra_event_colour
+                  field:
+                    swatches:
+                      - '#d4d4d4'
+                      - '#fbd4bc'
+                      - '#ffe1ae'
+                      - '#90d0fe'
+                      - '#a4eab7'
+                      - '#c5c1d1'
+                      - '#cfcabf'
+                    theme: nano
+                    lock_opacity: true
+                    default_color_mode: HEXA
+                    color_modes:
+                      - HEXA
+                    display: 'Special-Event Farbe'
+                    type: color
+                    icon: color
+                    instructions: 'Accent colour'
+                    listable: hidden
                     width: 33
+                    if:
+                      special-event_toggle: 'equals true'
+                -
+                  handle: special-event-titel
+                  field:
+                    input_type: text
+                    antlers: false
+                    display: Special-Event-Titel
+                    type: text
+                    icon: text
+                    instructions: 'Extra Event Caption'
+                    width: 66
+                    listable: hidden
+                    if:
+                      special-event_toggle: 'equals true'
                 -
                   handle: performance_type
                   field:
@@ -270,24 +345,13 @@ sections:
                     icon: section
                     listable: hidden
                 -
-                  handle: ticket_price
-                  field:
-                    mode: select
-                    taxonomies:
-                      - preisprofil
-                    display: Preisprofil
-                    type: terms
-                    icon: taxonomy
-                    instructions: 'Ticket price'
-                    listable: hidden
-                -
                   handle: restkarten
                   field:
                     display: Restkarten
                     type: toggle
                     icon: toggle
                     instructions: 'Few tickets left'
-                    width: 33
+                    width: 25
                     listable: hidden
                 -
                   handle: sold_out
@@ -296,7 +360,7 @@ sections:
                     type: toggle
                     icon: toggle
                     instructions: 'Sold out'
-                    width: 33
+                    width: 25
                     listable: hidden
                 -
                   handle: cancelled
@@ -306,7 +370,16 @@ sections:
                     icon: toggle
                     instructions: Cancelled
                     listable: hidden
-                    width: 33
+                    width: 25
+                -
+                  handle: last_performance
+                  field:
+                    display: 'Zum Letzten Mal'
+                    type: toggle
+                    icon: toggle
+                    instructions: 'Last Performance'
+                    listable: hidden
+                    width: 25
                 -
                   handle: ticket_url
                   field:
@@ -319,7 +392,7 @@ sections:
                   handle: additional_info_performance
                   field:
                     antlers: false
-                    display: Zusatzinfo
+                    display: Termininfo
                     type: textarea
                     icon: textarea
                     instructions: 'Any additional info for this particular performance, e.g. change in the cast.'
@@ -383,3 +456,12 @@ sections:
           required: true
           validate:
             - required
+      -
+        handle: parent
+        field:
+          type: entries
+          collections:
+            - veranstaltungen
+          max_items: 1
+          listable: false
+          localizable: true

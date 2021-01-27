@@ -4,14 +4,12 @@ fields:
     handle: bard
     field:
       buttons:
-        - h1
         - h2
         - h3
         - bold
         - italic
         - unorderedlist
         - orderedlist
-        - quote
         - removeformat
         - anchor
       save_html: false
@@ -47,7 +45,7 @@ fields:
             -
               import: pull_quote
         table:
-          display: 'Table'
+          display: Table
           fields:
             -
               import: table
