@@ -1,22 +1,16 @@
 title: Video
 fields:
   -
-    handle: youtube_url
+    handle: video_url
     field:
-      placeholder: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
+      placeholder: 'https://www.vimeo.com/linktoyourvideo'
       input_type: url
       type: text
-      width: 50
       listable: hidden
       display: 'Video URL'
-      instructions: 'The URL of the video you''d like to embed.'
+      instructions: 'The URL of the video you''d like to embed. ''Do Not Track'' parameter is ''ON'' by default.'
       antlers: false
-  -
-    handle: size
-    field: common.size
-    config:
-      width: 50
-      instructions: 'The size in which the video should be displayed.'
+      append: '?dnt=1'
   -
     handle: caption
     field:

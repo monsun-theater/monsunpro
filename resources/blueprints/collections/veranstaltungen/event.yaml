@@ -465,3 +465,8 @@ sections:
           max_items: 1
           listable: false
           localizable: true
+  seo:
+    display: SEO
+    fields:
+      -
+        import: seo
