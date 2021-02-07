@@ -1,12 +1,12 @@
 <div class="md:grid grid-cols-12 gap-4">
     <div class="col-span-8 md:col-start-5">
-        <div class="text-sm"> <span class="font-bold">Premiere:&nbsp</span>{{ premiere_urauffuehrung }}</div>
-        <div class="text-sm"><span class="font-bold">Dauer:&nbsp</span>{{ dauer }}</div>
-        <div class="text-sm"><span class="font-bold">In der spielzeit:&nbsp</span>{{ von_bis:start }} &dash; {{
-            von_bis:start
-            }}</div>
-
-        <div class="text-sm"><span class="font-bold">Karten:</span> {{ preisprofil }} {{ title }} {{ /preisprofil }}
+        {{ if from_to_toggle }}
+        <div class="text-sm"> <span class="font-bold">{{ from_to }}</span></div>
+        {{ /if }}
+        <div class="text-sm"> <span class="font-bold">Premiere:&nbsp</span>{{ premiere_date }} Uhr</div>
+        <div class="text-sm"><span class="font-bold">Dauer:&nbsp</span>{{ duration }} | {{ intermission }}</div>
+        <div class="text-sm"><span class="font-bold">Karten:</span> {{ ticket_price_profile }} {{ title }} {{
+            /ticket_price_profile }}
         </div>
     </div>
 </div>

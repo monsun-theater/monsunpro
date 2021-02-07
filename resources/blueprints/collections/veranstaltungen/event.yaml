@@ -80,17 +80,22 @@ sections:
           listable: hidden
           width: 50
       -
-        handle: category
+        handle: premiere_date
         field:
-          type: terms
-          taxonomies:
-            - kategorien
-          display: Kategorie
-          mode: select
+          mode: single
+          time_enabled: true
+          time_required: true
+          earliest_date: '1900-01-01'
+          full_width: false
+          inline: false
+          columns: 1
+          rows: 1
+          display: Uraufführung
+          type: date
+          icon: date
+          instructions: Premiere
           width: 50
           listable: hidden
-          instructions: Category
-          max_items: 1
       -
         handle: from_to_toggle
         field:
@@ -126,8 +131,8 @@ sections:
         handle: intermission
         field:
           options:
-            keine: keine
-            eine: eine
+            'keine Pause': 'keine Pause'
+            'eine Pause': 'eine Pause'
           multiple: false
           max_items: 1
           clearable: false
@@ -465,6 +470,15 @@ sections:
           max_items: 1
           listable: false
           localizable: true
+      -
+        handle: kategorien
+        field:
+          type: terms
+          taxonomies:
+            - kategorien
+          display: Kategorien
+          mode: select
+          listable: hidden
   seo:
     display: SEO
     fields:

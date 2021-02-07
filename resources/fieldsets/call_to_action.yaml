@@ -25,15 +25,16 @@ fields:
       instructions: 'The text you want to display above the buttons.'
       validate:
         - required
-  -
-    import: buttons
+      width: 50
   -
     handle: description
     field:
-      input_type: text
       antlers: false
       display: Description
-      type: text
-      icon: text
-      instructions: 'Short Description'
+      type: textarea
+      icon: textarea
+      instructions: 'A short description'
+      width: 50
       listable: hidden
+  -
+    import: buttons

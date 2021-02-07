@@ -1,6 +1,8 @@
 title: Veranstaltungen
 template: veranstaltungen/show
 layout: layout
+taxonomies:
+  - kategorien
 revisions: false
 route: '/veranstaltungen/{slug}'
 date: true
@@ -8,8 +10,3 @@ sort_dir: asc
 date_behavior:
   past: unlisted
   future: public
-structure:
-  root: false
-  tree:
-    -
-      entry: 100dcf20-68de-492d-a84c-7cf31d8d288d

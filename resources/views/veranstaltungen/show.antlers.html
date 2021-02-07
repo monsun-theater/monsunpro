@@ -6,15 +6,18 @@
                 /kategorien }};">{{ kategorien }} {{ title }}
                 {{ /kategorien }}</div>
             {{ partial src="typography/h1" :content="title" }}
-            <div class=" text-lg sm:text-xl leading-tight"> {{ untertitel }}
+            {{ if show_add_title }}<div>{{ additional_title }}</div> {{ /if}}
+            <div class=" text-lg sm:text-xl leading-tight"> {{ subtitle }}
             </div>
         </div>
         <div class="relative">
             <img src="https://source.unsplash.com/Gm71ppC7y9Y/1400x800" alt="">
         </div>
 
+
         {{ partial:components/_monsun_vstinfo}}
         {{ partial:components/_monsun_vst_termine }}
+        {{ partial src="typography/h3" :content="additional_info" }}
         {{ page_builder scope="block" }}
         {{ partial src="page_builder/{type}" }}
         {{ /page_builder }}
