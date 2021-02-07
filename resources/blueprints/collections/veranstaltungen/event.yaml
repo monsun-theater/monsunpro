@@ -227,7 +227,7 @@ sections:
         field:
           collapse: false
           sets:
-            '':
+            veranstaltung_performance:
               display: 'Veranstaltung / Performance'
               fields:
                 -
