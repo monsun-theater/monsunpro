@@ -11,8 +11,10 @@ preferences:
       columns:
         - date
         - title
-        - hero_image
-        - category
+        - additional_title
+        - subtitle
+        - additional_info
+        - slug
       after_save: continue_editing
     rollen:
       per_page: 25

@@ -1,5 +1,6 @@
 <div class="md:grid grid-cols-12 gap-4">
     <div class="col-span-8 md:col-start-5">
+        {{ partial src="typography/h3" :content="additional_info" }}
         {{ if from_to_toggle }}
         <div class="text-sm"> <span class="font-bold">{{ from_to }}</span></div>
         {{ /if }}
@@ -8,5 +9,10 @@
         <div class="text-sm"><span class="font-bold">Karten:</span> {{ ticket_price_profile }} {{ title }} {{
             /ticket_price_profile }}
         </div>
+        <div class="text-sm"><span class="font-bold">Ort:</span> {{ veranstaltungsoerter }} {{ title }} {{
+            /veranstaltungsoerter }}
+        </div>
+
+
     </div>
 </div>

@@ -3,7 +3,7 @@
 {{ collection:aktuelles sort="desc" }}
 <div class="md:grid grid-cols-12 gap-4 items-baseline pb-3">
     <div class="col-span-4">
-        <div class="sm:text-lg">{{ date }}</div>
+        <div class="sm:text-lg">{{ date format_localized="%A %d %B %Y" }}</div>
     </div>
     <div class="col-span-8"><a href="{{ url }}">
             <div class="text-xl sm:text-2xl font-bold leading-tight ">

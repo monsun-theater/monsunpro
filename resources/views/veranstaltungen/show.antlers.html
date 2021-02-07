@@ -3,7 +3,7 @@
     <div class="outer-grid fluid-container">
         <div>
             <div class="text-xs sm:text-sm uppercase tracking-widest font-bold" style="color: {{ kategorien }} {{ kategorie_farbe }}{{
-                /kategorien }};">{{ kategorien }} {{ title }}
+                /kategorien }};">{{ kategorien }} <a href="{{ url }}">{{ title }}</a>
                 {{ /kategorien }}</div>
             {{ partial src="typography/h1" :content="title" }}
             {{ if show_add_title }}<div>{{ additional_title }}</div> {{ /if}}
@@ -11,20 +11,16 @@
             </div>
         </div>
         <div class="relative">
-            <img src="https://source.unsplash.com/Gm71ppC7y9Y/1400x800" alt="">
+            {{partial:components/figure_onesize}}
         </div>
-
-
-        {{ partial:components/_monsun_vstinfo}}
-        {{ partial:components/_monsun_vst_termine }}
-        {{ partial src="typography/h3" :content="additional_info" }}
+        {{ partial:components/_monsun_perf_info}}
+        {{ partial:components/_monsun_perf_dates }}
         {{ page_builder scope="block" }}
         {{ partial src="page_builder/{type}" }}
         {{ /page_builder }}
     </div>
-    {{ partial:components/_swiper_monsun}}
     <div class="outer-grid fluid-container">
-        {{ partial:components/_monsun_vst_info_besetzung }}
+        {{ partial:components/_monsun_perf_credits }}
     </div>
     {{ collection:veranstaltungen }}
 </main>

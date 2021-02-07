@@ -3,6 +3,7 @@ template: veranstaltungen/show
 layout: layout
 taxonomies:
   - kategorien
+  - veranstaltungsoerter
 revisions: false
 route: '/veranstaltungen/{slug}'
 date: true

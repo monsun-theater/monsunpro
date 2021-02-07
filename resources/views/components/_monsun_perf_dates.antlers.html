@@ -1,25 +1,25 @@
 {{# Termine #}}
 <div class="md:grid grid-cols-12 gap-4">
     <div class="col-span-8 md:col-start-5 bg-neutral-100 p-3">
-        {{ collection:veranstaltungen title:contains="{title}" sort="date" since="now" }}
+        {{ performance_dates }}
         <div class="sm:grid grid-cols-8 pb-3 sm:pb-1 gap-4">
             <div class="text-base sm:text-xl col-span-3 font-bold">
                 <div>
-                    {{ date format="l"}}
+                    {{ perf_date format="l"}}
                 </div>
             </div>
             <div class="text-xl sm:col-span-5 pb-3">
                 <div>
-                    {{ date format="F jS"}} | {{ date format="H:i"}} Uhr
+                    {{ perf_date format="F jS"}} | {{ perf_date format="H:i"}} Uhr
                 </div>
                 <button class="text-center uppercase tracking-wider hover:text-monsun sm:text-lg"><a class="block"
-                        href="{{ ticket-link_veranstaltung }}">
+                        href="{{ ticket_url }}">
                         <div class="tracking-widest font-bold uppercase">Karten<span
                                 class="text-monsun font-bold">&nbsp;→</span>
                         </div>
                     </a>
                 </button>
             </div>
-        </div> {{ /collection:veranstaltungen }}
+        </div> {{ /performance_dates }}
     </div>
 </div>
