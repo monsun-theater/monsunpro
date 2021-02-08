@@ -17,9 +17,9 @@
 
         <div class="flex items-center justify-end pl-3 py-3">
             <div class="text-xs sm:text-sm text-center">{{ strasse }} {{ hausnummer }}, {{ postleitzahl }} <span
-                    class="sm:hidden"></br></span> {{ wohnort}}, <span class="md:hidden"></br></span> {{
-                telefonnummer }}<a href="mailto:{{
-                        e-mail-adresse | obfuscate_email }}">, {{
+                    class="sm:hidden"></br></span> {{ wohnort}}, <span class="md:hidden"></br></span><a href="tel:{{
+                telefonnummer }}">{{
+                    telefonnummer }}</a><a href=" mailto:{{ e-mail-adresse | obfuscate_email }}">, {{
                     e-mail-adresse | obfuscate_email }}</a> </div>
             {{ /kontaktdaten }}
         </div>

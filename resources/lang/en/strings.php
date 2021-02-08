@@ -12,7 +12,7 @@ return [
     'form_mail_closing'                 => 'Kind regards',
     'form_mail_from'                    => config('app.name'),
     'form_mail_greeting'                => 'Dear',
-    'form_mail_logo'                    => 'https://studio1902.ams3.cdn.digitaloceanspaces.com/assets/statamic-peak/statamic-peak-logo.png',
+    'form_mail_logo'                    => 'https://unavatar.now.sh/jjkaliski@gmail.com',
     'form_mail_submitted'               => 'Submitted',
     'form_mail_title'                   => 'Contact form',
     'form_mail_url'                     => config('app.url'),

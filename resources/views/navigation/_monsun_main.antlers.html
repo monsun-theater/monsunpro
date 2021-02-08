@@ -3,22 +3,21 @@
         <div class="flex space-x-2">
             <button type="button" aria-label="Toggle Menu" @click="isOpen = !isOpen">
                 <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" x-show="!isOpen" x-cloak fill="none"
-                    viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                    viewBox="0 0 24 24" stroke="#fff" aria-hidden="true">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                 </svg><svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" x-show="isOpen" x-cloak fill="none"
-                    viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                    viewBox="0 0 24 24" stroke="#fff" aria-hidden="true">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                 </svg></button>
 
-            <div class="tracking-widest">MENU</div>
+            <div class="tracking-widest text-white">MENU</div>
         </div>
         <div><a aria-label="Logo {{ config:app:name }}" href="{{ site:url }}">
                 <img class="h-12" src="/assets/site-setup/logos/monsun-logo-wordmark.svg" alt="{{ config:app:name }}" />
             </a></div>
         <div class="flex space-x-2">
-            <div class="tracking-widest">SUCHE</div>
-            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor">
+            <div class="tracking-widest text-white">SUCHE</div>
+            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="#fff">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
             </svg>
@@ -31,8 +30,8 @@
             <div class="grid grid-cols-3 gap-2 justify-items-center pb-3">
                 {{ nav:top_menu_primary max_depth="2" }}
                 <div class="lowercase tracking-wider">
-                    <a href="{{ url }}" class="text-2xl font-bold hover:text-monsun {{ is_current || is_parent
-                        ? 'text-monsun' : 'text-black' }} " {{ if children }} href=" {{ url }}" {{ /if }}>
+                    <a href="{{ url }}" class="text-2xl font-medium hover:text-monsun {{ is_current || is_parent
+                        ? 'text-monsun' : 'text-white' }} " {{ if children }} href=" {{ url }}" {{ /if }}>
                         {{ title }}
                     </a>
                     {{ if children }}

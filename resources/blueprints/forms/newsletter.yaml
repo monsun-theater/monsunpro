@@ -1,0 +1,14 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: e_mail
+        field:
+          input_type: email
+          antlers: false
+          display: 'Ihre E-mail Adresse'
+          type: text
+          icon: text
+          instructions: 'Your e-mail address'
+          listable: hidden
