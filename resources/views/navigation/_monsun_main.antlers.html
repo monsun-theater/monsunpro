@@ -10,7 +10,9 @@
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                 </svg></button>
 
-            <div class="tracking-widest text-white">MENU</div>
+            <button>
+                <div aria-label="Toggle Menu" @click="isOpen = !isOpen" class="tracking-widest text-white">MENU</div>
+            </button>
         </div>
         <div><a aria-label="Logo {{ config:app:name }}" href="{{ site:url }}">
                 <img class="h-12" src="/assets/site-setup/logos/monsun-logo-wordmark.svg" alt="{{ config:app:name }}" />
@@ -24,13 +26,16 @@
         </div>
     </div>
     {{# Primary Menu Desktop #}}
-    <div x-show="isOpen" class="hidden sm:block">
+    <div x-show="isOpen" class="hidden sm:block" x-transition:enter="transition ease-out duration-300"
+        x-transition:enter-start="opacity-0 transform scale-90" x-transition:enter-end="opacity-100 transform scale-100"
+        x-transition:leave="transition ease-in duration-300" x-transition:leave-start="opacity-100 transform scale-100"
+        x-transition:leave-end="opacity-0 transform scale-90">
         <div class="" @click.away="isOpen = false">
             <!-- Primary Menu -->
-            <div class="grid grid-cols-3 gap-2 justify-items-center pb-3">
+            <div class="grid grid-cols-12 gap-2 justify-items-left pb-3 pt-6">
                 {{ nav:top_menu_primary max_depth="2" }}
-                <div class="lowercase tracking-wider">
-                    <a href="{{ url }}" class="text-2xl font-medium hover:text-monsun {{ is_current || is_parent
+                <div class="lowercase tracking-widest col-start-5 xl:col-start-7">
+                    <a href="{{ url }}" class="text-4xl lg:text-5xl hover:text-monsun {{ is_current || is_parent
                         ? 'text-monsun' : 'text-white' }} " {{ if children }} href=" {{ url }}" {{ /if }}>
                         {{ title }}
                     </a>
@@ -49,7 +54,29 @@
                 </div>
                 {{ /nav:top_menu_primary }}
             </div>
-
+            <!-- Secondary Menu -->
+            <div class="grid grid-cols-12 gap-2 justify-items-left pb-3">
+                {{ nav:top_menu_secondary max_depth="2" }}
+                <div class="lowercase tracking-widest col-start-5 xl:col-start-7">
+                    <a href="{{ url }}" class="text-md hover:text-monsun {{ is_current || is_parent
+            ? 'text-monsun' : 'text-white' }} " {{ if children }} href=" {{ url }}" {{ /if }}>
+                        {{ title }}
+                    </a>
+                    {{ if children }}
+                    <ul class="text-left text-white">
+                        {{ children }}
+                        <li class="text-white">
+                            <a class="whitespace-nowrap text-md hover:text-monsun {{ is_current || is_parent ? 'text-monsun' : 'text-white' }}"
+                                href="{{ url }}">
+                                {{ title }}
+                            </a>
+                        </li>
+                        {{ /children }}
+                    </ul>
+                    {{ /if }}
+                </div>
+                {{ /nav:top_menu_secondary }}
+            </div>
         </div>
     </div>
     <!-- <button class="flex items-start justify-end pr-3 pt-3" @click="isOpen = false" type="button"

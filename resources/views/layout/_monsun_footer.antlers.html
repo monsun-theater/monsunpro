@@ -1,29 +1,31 @@
-<div class="fluid-container outer-grid">
-    {{ partial:components/_monsun_newsletter }}
-    <div class="grid grid-cols-3 sm:flex justify-between pt-6 pb-3">
-        {{ nav:footer_primary }}
-        <button class="text-sm sm:text-base sm:flex uppercase tracking-widest hover:text-monsun"><a class="block"
-                href="{{ url }}">
-                {{
-                title }}</a>
-        </button>
-        {{ /nav:footer_primary }}
-    </div>
+<footer class="bg-black">
+    <div class="fluid-container outer-grid">
+        {{ partial:components/_monsun_newsletter }}
+        <div class="grid grid-cols-3 sm:flex justify-between pt-6 pb-3">
+            {{ nav:footer_primary }}
+            <button class="text-white text-sm sm:text-base sm:flex uppercase tracking-widest hover:text-monsun"><a
+                    class="block" href="{{ url }}">
+                    {{
+                    title }}</a>
+            </button>
+            {{ /nav:footer_primary }}
+        </div>
 
-    <div class="flex justify-between">
-        <div class="flex items-center justify-start space-x-2 opacity-80">
-            {{ partial:components/buttons_social_media}}
-        </div>{{ kontaktdaten }}
+        <div class="flex justify-between">
+            <div class="flex items-center justify-start space-x-2">
+                {{ partial:components/buttons_social_media }}
+            </div>{{ kontaktdaten }}
 
-        <div class="flex items-center justify-end pl-3 py-3">
-            <div class="text-xs sm:text-sm text-center">{{ strasse }} {{ hausnummer }}, {{ postleitzahl }} <span
-                    class="sm:hidden"></br></span> {{ wohnort}}, <span class="md:hidden"></br></span><a href="tel:{{
+            <div class="flex items-center justify-end pl-3 py-3">
+                <div class="text-xs sm:text-sm text-center text-white">{{ strasse }} {{ hausnummer }}, {{ postleitzahl
+                    }} <span class="sm:hidden"></br></span> {{ wohnort}}, <span class="md:hidden"></br></span><a href="tel:{{
                 telefonnummer }}">{{
-                    telefonnummer }}</a><a href=" mailto:{{ e-mail-adresse | obfuscate_email }}">, {{
-                    e-mail-adresse | obfuscate_email }}</a> </div>
-            {{ /kontaktdaten }}
+                        telefonnummer }}</a><a href=" mailto:{{ e-mail-adresse | obfuscate_email }}">, {{
+                        e-mail-adresse | obfuscate_email }}</a> </div>
+                {{ /kontaktdaten }}
+            </div>
         </div>
     </div>
-</div>
-</div>
-</div>
+    </div>
+    </div>
+</footer>
