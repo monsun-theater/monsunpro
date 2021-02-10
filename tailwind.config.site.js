@@ -25,6 +25,10 @@ module.exports = {
       black: '#1A1A1A',
       white: '#fff',
       monsun: '#f38a49',
+      darkGray: '#333333',
+      stdGray: '#4D4D4D',
+      lightGray: '#666666',
+      lightestGray: '#737373',
       // Grays (currently default TW blue gray).
       neutral: colors.blueGray,
       // Client primary color (currently default TW blue).
