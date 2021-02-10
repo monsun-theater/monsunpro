@@ -2,9 +2,9 @@ title: Newsletter
 honeypot: fax
 email:
   -
-    to: info@monsun.theater
-    from: info@monsun.theater
-    reply_to: info@monsun.theater
+    to: newsletter@monsun.theater
+    from: newsletter@monsun.theater
+    reply_to: newsletter@monsun.theater
     subject: Newsletter
     html: email/form_owner
     text: email/form_owner_text

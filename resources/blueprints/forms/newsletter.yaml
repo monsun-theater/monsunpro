@@ -12,3 +12,17 @@ sections:
           icon: text
           instructions: 'Your e-mail address'
           listable: hidden
+          placeholder: alexander.schmidt@example.de
+      -
+        handle: agb_akzeptieren
+        field:
+          inline: false
+          options:
+            'null': null
+          display: 'AGB Akzeptieren'
+          type: checkboxes
+          icon: checkboxes
+          instructions: 'Accept terms of service'
+          listable: hidden
+          validate:
+            - required

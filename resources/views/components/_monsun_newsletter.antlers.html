@@ -4,19 +4,46 @@
         <div class="sm:text-lg text-white">Bleiben Sie im Kontakt mit monsun.theater!</div>
     </div>
     <div class="col-span-8 sm:text-lg py-3 md:py-0">
-        <div class="text-xl font-bold leading-tight md:leading-normal pb-3"><input type="email"
-                class="mt-1 block w-full" placeholder="Ihre E-mail Adresse">
-            </label></div>
-        <div class="sm:text-lg text-white"><label>
-                <input type="checkbox" checked="">
-                <span class="ml-2 text-base"><a class="hover:text-monsun underline" href="">AGB</a>
-                    akzeptieren</span>
-            </label></div>
-        <button class="text-center text-white uppercase tracking-wider hover:text-monsun sm:text-lg"><a class="block"
-                href="/">
-                <div class="pt-3 tracking-widest uppercase">Schicken<span class="text-monsun font-bold">&nbsp;→</span>
-                </div>
-            </a>
-        </button>
+        <div class="text-xl font-bold leading-tight md:leading-normal pb-3">
+
+            {{ form:newsletter }}
+            {{ if success }}
+            <div class="bg-green-300 text-white p-2">
+                {{ success }}
+            </div>
+            {{ else }}
+
+            {{ if errors }}
+            <div class="bg-red-300 text-white p-2">
+                {{ errors }}
+                {{ value }}<br>
+                {{ /errors }}
+            </div>
+            {{ /if }}
+
+
+            {{ fields }}
+            <input type="text" name="fax" class="hidden" />
+            <div class="bg-black focus:bg-darkGray pb-3">
+                <label class="text-white tracking-wider text-xs font-normal">{{display}}</label>
+                <div>
+                    {{ field }}</div>
+                {{ if error }}
+                <p class="text-gray-500">{{ error }}</p>
+                {{ /if }}
+            </div>
+            {{ /fields }}
+            <button type="submit"
+                class="text-center text-white uppercase tracking-wider hover:text-monsun sm:text-lg"><a class="block"
+                    href="/">
+                    <div class="pt-3 tracking-widest uppercase">Schicken<span
+                            class="text-monsun font-bold">&nbsp;→</span>
+                    </div>
+                </a>
+            </button>
+            {{ /if }}
+            {{ /form:newsletter }}
+
+        </div>
     </div>
 </div>
