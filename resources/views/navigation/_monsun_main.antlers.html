@@ -145,10 +145,12 @@
 </nav>
 {{# The mobile navigation. Hidden from md and up #}}
 <nav class="sm:hidden pb-2" x-data="{ mobileNavOpen: false }">
+
     <button
         @click.prevent="mobileNavOpen = !mobileNavOpen, mobileNavOpen ? document.body.classList.add('no-scroll') : document.body.classList.remove('no-scroll')"
-        class="fixed z-20 w-16 h-16 flex justify-center items-center right-0 bottom-0 mb-safe mr-8 bg-monsun text-white text-xs text-uppercase tracking-widest 
-        aria-label=" Toggle menu" x-text="mobileNavOpen ? 'Schließe' : 'Menu'"></button>
+        class="fixed bottom-0 z-20 h-14 flex font-bold border-2 border-white uppercase justify-center items-center right-0 w-full bg-black text-white text-base tracking-widest 
+        aria-label=" Toggle menu" x-text="mobileNavOpen ? 'Schließe' : 'Menu'">
+    </button>
 
     <ul class="fixed z-10 inset-0 flex flex-col justify-center items-center space-y-3 bg-black overflow-auto"
         x-show="mobileNavOpen" x-cloak>
