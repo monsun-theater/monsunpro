@@ -1,35 +1,42 @@
-<footer class="bg-white dark:bg-black">
-    <div class="fluid-container outer-grid ">
-        <div class="">
-            {{ partial:components/_monsun_newsletter }}
-        </div>
-        <div class="max-w-md mx-auto">
-            {{ yield:dark_mode_toggle }}</div>
-        <div class="max-w-md mx-auto text-white">Dark-mode-aktivieren </div>
-        <div class="flex justify-between">
-            <div class="flex items-center justify-start space-x-2">
-                {{ partial:components/buttons_social_media }}
-            </div>{{ kontaktdaten }}
-            <div class="flex items-center justify-end pl-3 pt-3">
-                <div class="text-xs sm:text-sm text-center text-white">{{ strasse }} {{ hausnummer }}, {{
-                    postleitzahl
-                    }} <span class="sm:hidden"></br></span> {{ wohnort}}, <span class="md:hidden"></br></span><a href="tel:{{
-                telefonnummer }}">{{
-                        telefonnummer }}</a><a href=" mailto:{{ e-mail-adresse | obfuscate_email }}">, {{
-                        e-mail-adresse | obfuscate_email }}</a> </div>
-                {{ /kontaktdaten }}
+<footer>
+    <div class="bg-white dark:bg-black">
+        <div class="fluid-container outer-grid">
+            <div class="">
+                {{ partial:components/_monsun_newsletter }}
             </div>
         </div>
-        <div class="grid grid-cols-3 sm:flex justify-between pt-3 border-t-2 border-white pb-16 sm:pb-0">
-            {{ nav:footer_primary }}
-            <button class="text-white text-xs lowercase sm:text-base sm:flex  tracking-widest hover:text-monsun"><a
-                    class="block" href="{{ url }}">
-                    {{
-                    title }}</a>
-            </button>
-            {{ /nav:footer_primary }}
+        <div class="bg-black">
+            <div class="fluid-container outer-grid">
+                <div class="max-w-xl mx-auto">
+                    {{ yield:dark_mode_toggle }}
+
+                </div>
+                <div class="max-w-md mx-auto text-white"> Dark/Light modus</div>
+                <div class="flex justify-between">
+                    <div class="flex items-center justify-start space-x-2">
+                        {{ partial:components/buttons_social_media }}
+                    </div>{{ kontaktdaten }}
+                    <div class="flex items-center justify-end pl-3 pt-3">
+                        <div class="text-xs sm:text-sm text-center text-white">{{ strasse }} {{ hausnummer }}, {{
+                            postleitzahl
+                            }} <span class="sm:hidden"></br></span> {{ wohnort}}, <span class="md:hidden"></br></span><a
+                                href="tel:{{
+                telefonnummer }}">{{
+                                telefonnummer }}</a><a href=" mailto:{{ e-mail-adresse | obfuscate_email }}">, {{
+                                e-mail-adresse | obfuscate_email }}</a> </div>
+                        {{ /kontaktdaten }}
+                    </div>
+                </div>
+                <div class="grid grid-cols-3 sm:flex justify-between pt-3 border-t-2 border-white pb-16 sm:pb-0">
+                    {{ nav:footer_primary }}
+                    <button
+                        class="text-white text-xs lowercase sm:text-base sm:flex  tracking-widest hover:text-monsun"><a
+                            class="block" href="{{ url }}">
+                            {{
+                            title }}</a>
+                    </button>
+                    {{ /nav:footer_primary }}
+                </div>
+            </div>
         </div>
-    </div>
-    </div>
-    </div>
 </footer>

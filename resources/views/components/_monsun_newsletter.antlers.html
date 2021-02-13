@@ -1,7 +1,7 @@
-<div class="text-3xl lg:text-4xl text-white pt-3">Newsletter abonnieren</div>
+<div class="text-3xl lg:text-4xl text-black dark:text-white pt-3">Newsletter abonnieren</div>
 <div class="md:grid grid-cols-12 gap-4 items-baseline">
     <div class="col-span-4 ">
-        <div class="sm:text-lg text-white">Bleiben Sie im Kontakt mit monsun.theater!</div>
+        <div class="sm:text-lg text-black dark:text-white">Bleiben Sie im Kontakt mit monsun.theater!</div>
     </div>
     <div class="col-span-8 sm:text-lg py-3 md:py-0">
         <div class="text-xl font-bold leading-tight md:leading-normal pb-3">
@@ -24,8 +24,8 @@
 
             {{ fields }}
             <input type="text" name="fax" class="hidden" />
-            <div class="bg-black focus:bg-darkGray pb-3">
-                <label class="text-white tracking-wider text-xs font-normal">{{display}}</label>
+            <div class="pb-3">
+                <label class="text-black dark:text-white tracking-wider text-xs font-normal">{{display}}</label>
                 <div>
                     {{ field }}</div>
                 {{ if error }}
@@ -34,8 +34,8 @@
             </div>
             {{ /fields }}
             <button type="submit"
-                class="text-center text-white uppercase tracking-wider hover:text-monsun sm:text-lg"><a class="block"
-                    href="/">
+                class="text-center text-black dark:text-white uppercase tracking-wider hover:text-monsun sm:text-lg"><a
+                    class="block" href="/">
                     <div class="pt-3 tracking-widest uppercase">Schicken<span
                             class="text-monsun font-bold">&nbsp;→</span>
                     </div>
