@@ -15,7 +15,6 @@ preferences:
         - subtitle
         - additional_info
         - slug
-      after_save: continue_editing
     rollen:
       per_page: 25
     produktionen:

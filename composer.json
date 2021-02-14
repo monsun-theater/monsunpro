@@ -14,7 +14,7 @@
         "laravel/tinker": "^2.0",
         "pixelfear/composer-dist-plugin": "^0.1",
         "rias/statamic-data-import": "^1.1",
-        "statamic/cms": "3.0.42"
+        "statamic/cms": "3.0.43"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.5",
