@@ -15,6 +15,9 @@ sections:
           validate:
             - required
       -
+        import: featured_section
+        prefix: hero_
+      -
         import: page_builder
       -
         handle: monsun_alert
