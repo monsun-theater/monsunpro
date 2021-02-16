@@ -39,7 +39,7 @@ module.exports = {
           // Fluid typography from 1 rem to 1.15 rem with fallback to 16px. 
           //1vw = 1% viewport width
           fontSize: '18px',
-          'font-size': 'clamp(1.125rem, 1.6vw, 1.6rem)',
+          'font-size': 'clamp(1.0rem, 1.6vw, 1.6rem)',
           // Safari resize fix. 
           minHeight: '0vw',
         },
