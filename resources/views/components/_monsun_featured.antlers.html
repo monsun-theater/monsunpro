@@ -1,18 +1,36 @@
+<!-- Hero card -->
 <div class="relative">
 
-    {{ partial:components/picture image="{{hero_featured_image}}" class="w-full h-full relative" }}
-
-    <div class="absolute top-1/3 px-2">
-
-        <h1 class="leading-none tracking-wider font-medium text-2xl text-center text-white lowercase pb-4">{{
-            hero_title_desc }}</h1>
-        <h2
-            class="leading-none tracking-wider text-4xl font-medium md:text-5xl lg:text-6xl text-white text-center lg:px-5">
-            {{
-            hero_title }}
-        </h2>
-        <h3 class="text-xl text-center max-w-xs mx-auto bg-white bg-opacity-50 mt-3">{{ partial:components/button
-            :content="{{hero_buttons}}"}}</h3>
-
+    <div class="max-w-full mx-auto">
+        <div class="relative shadow-xl sm:overflow-hidden">
+            <div class="absolute inset-0">
+                {{ partial:components/picture image="{{hero_featured_image}}" class="h-full w-full
+                object-cover" }}
+                <div class="absolute inset-0 bg-neutral-200" style="mix-blend-mode: multiply;"></div>
+            </div>
+            <div class="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
+                <h1 class="text-center text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
+                    <span class="block text-white">{{
+                        hero_title }}</span>
+                </h1>
+                <p
+                    class="mt-6 max-w-lg mx-auto text-center font-medium text-white text-xl text-indigo-200 sm:max-w-3xl">
+                    {{
+                    hero_title_desc }}
+                </p>
+                <button aria-label="{{ attr_aria }}" class="mt-10 max-w-sm mx-auto sm:max-w-none flex justify-center">
+                    <div class="space-y-4 sm:mx-auto sm:inline">
+                        {{hero_buttons}}
+                        <{{ tag or 'a' }} {{ attribute }} class="flex items-center justify-center px-4
+                                        py-3 border-4 text-white text-md font-bold tracking-wider uppercase shadow-sm
+                                          hover:bg-monsun sm:px-8" {{ unless faux }} {{
+                            partial:components/button_attributes }} {{ /unless }}>
+                            {{ label }} <span class="text-monsun font-bold hover:text-white">&nbsp;→</span>
+                        </{{ tag or 'a' }}>
+                        {{/hero_buttons}}
+                    </div>
+                </button>
+            </div>
+        </div>
     </div>
 </div>
