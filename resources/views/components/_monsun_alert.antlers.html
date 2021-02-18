@@ -1,6 +1,5 @@
-<div x-data="{ open: true }" class="text-center border-black p-3 text-black">
-    <div x-show="open" class="md:max-w-lg mx-auto md:text-lg"> {{ alert_nachricht_text }}
-        {{# <button @click="{ open = false }" class="font-bold text-monsun text-xl">×</button> #}}
+<div class="text-center bg-error-500">
+    <div class="text-white text-xs p-2"> {{ alert_message }} {{ alert_nachricht_text }}
+        {{ /alert_message }}
     </div>
-
 </div>

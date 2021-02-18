@@ -1,0 +1,24 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: monsun_alert_msg
+        field:
+          display: 'Alert-Nachricht zeigen'
+          type: toggle
+          icon: toggle
+          instructions: 'Display Alert Message'
+          listable: hidden
+      -
+        handle: alert_nachricht_text
+        field:
+          input_type: text
+          antlers: false
+          display: Alert-Nachricht
+          type: text
+          icon: text
+          instructions: 'Your alert message, visible on whole website'
+          listable: hidden
+          if:
+            monsun_alert_msg: 'equals true'

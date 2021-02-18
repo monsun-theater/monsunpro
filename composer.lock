@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "56d7b002f76aeb963b2bd64b5bcc120b",
+    "content-hash": "b733d7ce5db78911132ca9eaf72865af",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -798,56 +798,6 @@
                 }
             ],
             "time": "2020-05-25T17:44:05+00:00"
-        },
-        {
-            "name": "doublethreedigital/duplicator",
-            "version": "v1.2.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/doublethreedigital/duplicator.git",
-                "reference": "14695bc617f2120e6e081b688f674664e6d9789f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/doublethreedigital/duplicator/zipball/14695bc617f2120e6e081b688f674664e6d9789f",
-                "reference": "14695bc617f2120e6e081b688f674664e6d9789f",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.3 || ^7.4 || ^8.0",
-                "statamic/cms": "3.0.*"
-            },
-            "require-dev": {
-                "nunomaduro/collision": "^4.2",
-                "orchestra/testbench": "^5.0"
-            },
-            "type": "library",
-            "extra": {
-                "statamic": {
-                    "name": "Duplicator",
-                    "description": "Duplicate Entries in the Statamic 3 Control Panel"
-                },
-                "laravel": {
-                    "providers": [
-                        "DoubleThreeDigital\\Duplicator\\ServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "DoubleThreeDigital\\Duplicator\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "proprietary"
-            ],
-            "description": "Duplicate Entries in the Statamic 3 Control Panel",
-            "support": {
-                "issues": "https://github.com/doublethreedigital/duplicator/issues",
-                "source": "https://github.com/doublethreedigital/duplicator/tree/v1.2.3"
-            },
-            "time": "2020-12-31T14:15:59+00:00"
         },
         {
             "name": "dragonmantank/cron-expression",
@@ -3764,16 +3714,16 @@
         },
         {
             "name": "statamic/cms",
-            "version": "v3.0.43",
+            "version": "v3.0.44",
             "source": {
                 "type": "git",
                 "url": "https://github.com/statamic/cms.git",
-                "reference": "86c2b96bd1d0b135717c17944cf120b0051bf433"
+                "reference": "ef60b8aa2c60aa3112c25669838af33c4ffbc739"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/statamic/cms/zipball/86c2b96bd1d0b135717c17944cf120b0051bf433",
-                "reference": "86c2b96bd1d0b135717c17944cf120b0051bf433",
+                "url": "https://api.github.com/repos/statamic/cms/zipball/ef60b8aa2c60aa3112c25669838af33c4ffbc739",
+                "reference": "ef60b8aa2c60aa3112c25669838af33c4ffbc739",
                 "shasum": ""
             },
             "require": {
@@ -3840,7 +3790,7 @@
             ],
             "support": {
                 "issues": "https://github.com/statamic/cms/issues",
-                "source": "https://github.com/statamic/cms/tree/v3.0.43"
+                "source": "https://github.com/statamic/cms/tree/v3.0.44"
             },
             "funding": [
                 {
@@ -3848,7 +3798,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-02-11T16:12:05+00:00"
+            "time": "2021-02-17T17:02:33+00:00"
         },
         {
             "name": "statamic/stringy",

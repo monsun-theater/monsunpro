@@ -24,9 +24,7 @@
                         <{{ tag or 'a' }} {{ attribute }} class="flex items-center justify-center px-4
                                         py-3 border-4 text-white text-md font-bold tracking-wider uppercase shadow-sm
                                           hover:bg-monsun sm:px-8" {{ unless faux }} {{
-                            partial:components/button_attributes }} {{ /unless }}>
-                            {{ label }} <span class="text-monsun font-bold hover:text-white">&nbsp;→</span>
-                        </{{ tag or 'a' }}>
+                            partial:components/button_attributes }} {{ /unless }}>{{ label }} </{{ tag or 'a' }}>
                         {{/hero_buttons}}
                     </div>
                 </button>
