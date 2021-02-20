@@ -4,11 +4,11 @@
 <div class="grid grid-cols-2 gap-1 sm:grid-cols-3 sm:gap-4 md:grid-cols-4">
     {{ credits }}
     <div>
-        <div class="pb-2">
-            <div class="text-sm font-bold">
-                {{ role | join }} {{ title }} {{ /role }}
-            </div>
-            <div class="text-sm">{{ performer }}
+        <div class="pb-2">{{ role }}
+            <div class="text-black text-sm font-bold dark:text-white">
+                {{ title }}
+            </div>{{ /role }}
+            <div class="text-sm text-black dark:text-white">{{ performer }}
                 <div>
                     {{ if hat_eigene_website_has_own_website }}
                     <a class="underline" href="{{ kuenstler_artist_website_url_link }}">{{ title }}</a>
