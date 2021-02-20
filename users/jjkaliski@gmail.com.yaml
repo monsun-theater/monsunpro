@@ -12,8 +12,6 @@ preferences:
         - date
         - title
         - additional_title
-        - subtitle
-        - additional_info
         - slug
     rollen:
       per_page: 25

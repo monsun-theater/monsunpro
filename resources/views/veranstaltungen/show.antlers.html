@@ -1,12 +1,13 @@
 <main>
     {{ collection:veranstaltungen }}
-    <div class="relative pb-3">
+    <div class="relative pb-1">
         <div class="max-w-full mx-auto">
-            <div class="relative shadow-xl overflow-hidden">
-                <div class="absolute inset-0">
-                    {{ partial:components/figure_onesize class="h-full w-full
+            <div class="relative shadow-xl sm:overflow-hidden">
+                <div class="absolute inset-0 object-cover">
+                    {{ partial:components/picture class="h-full w-full
                     object-cover" }}
-                    <div class="absolute inset-0 bg-neutral-200 h-full w-full" style="mix-blend-mode: multiply;"></div>
+                    <div class="absolute inset-0 bg-neutral-300" style="mix-blend-mode: multiply;">
+                    </div>
                 </div>
                 <div class="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
                     <h1 class="text-center text-4xl font-extrabold tracking-wider sm:text-5xl lg:text-6xl">
@@ -17,18 +18,20 @@
                         class="mt-6 max-w-lg mx-auto text-center font-medium text-white text-2xl text-indigo-200 sm:max-w-3xl">
                         {{ additional_title }}
                     </p>
-
-                    <p
-                        class="mt-10 max-w-lg mx-auto text-center font-medium text-white text-lg text-indigo-200 sm:max-w-3xl">
-                        {{ subtitle }}
-                    </p>
-
+                    <button aria-label="{{ kategorien }} {{ title }} {{
+                        /kategorien }} Kategorie Zeigen"
+                        class="opacity-90 mt-10 max-w-sm mx-auto sm:max-w-none flex justify-center text-md text-white p-2 sm:text-lg uppercase tracking-widest font-bold"
+                        style="background-color: {{ kategorien }} {{ kategorie_farbe }}{{
+                        /kategorien }};">{{ kategorien }} <a href="{{ url }}">{{ title }}</a>
+                        {{ /kategorien }}</button>
                 </div>
             </div>
         </div>
+        <div class="text-neutral-300 dark:text-neutral-400 text-xs text-center">© {{
+            image_credit }}</div>
+
     </div>
     <div class="outer-grid fluid-container">
-
         {{ partial:components/_monsun_perf_info}}
         {{ partial:components/_monsun_perf_dates }}
         {{ page_builder scope="block" }}

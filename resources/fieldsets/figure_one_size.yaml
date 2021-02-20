@@ -3,3 +3,13 @@ fields:
   -
     handle: image
     field: common.image
+  -
+    handle: image_credit
+    field:
+      input_type: text
+      antlers: false
+      display: 'Image Credit'
+      type: text
+      icon: text
+      instructions: 'Image credits info'
+      listable: hidden

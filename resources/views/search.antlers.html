@@ -2,25 +2,29 @@
 `views/navigation/_main.antlers.html` and the route in `routes/web.php`. #}}
 <main class="outer-grid">
     <section class="fluid-container grid grid-cols-12 gap-y-6">
-        <div class="col-span-12 md:col-span-8 md:col-start-3">
-            {{ partial:typography/h1 class="mb-2" content="{trans:strings.search_results_for} &quot;{get:q}&quot;" }}
+        <div class="col-span-12 md:col-span-8 md:col-start-5">
+            {{ partial:typography/h1 class="mb-2 dark:text-white" content="{trans:strings.search_results_for}
+            &quot;{get:q}&quot;" }}
         </div>
 
         {{ search:results }}
         {{ if no_results }}
-        <article class="col-span-12 md:col-span-8 md:col-start-3">
-            {{ partial:typography/paragraph content="{trans:strings.search_no_results}" }}
+        <article class="col-span-12 md:col-span-8 md:col-start-5">
+            {{ partial:typography/paragraph class="dark:text-white" content="{trans:strings.search_no_results}" }}
         </article>
         {{ else }}
-        <article class="col-span-12 md:col-span-8 md:col-start-3">
+        <article class="col-span-12 md:col-span-8 md:col-start-5">
             <a class="flex flex-col pb-2" href="{{ url }}">
                 {{# <span class="text-neutral-400">{{ permalink }}</span> #}}
 
-                {{ partial:typography/h2 class="mt-0" color="text-monsun" :content="title" }}
+                {{ partial:typography/h2 class="mt-0 text-4xl font-bold tracking-wider" color="text-black
+                dark:text-white
+                hover:text-monsun
+                dark:hover:text-monsun" :content="title" }}
                 {{ partial:components/figure_onesize :content="image" }}
 
             </a>
-            <p>
+            <p class="dark:text-white">
                 {{# Sow the SEO meta description if available. #}}
                 {{ if seo_description }}
                 {{ seo_description }}

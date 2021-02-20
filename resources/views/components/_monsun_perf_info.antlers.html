@@ -1,9 +1,6 @@
 <div class="md:grid grid-cols-12 gap-4">
     <div class="col-span-8 md:col-start-5">
-        <button class="text-md text-white p-2 sm:text-lg max-w-xs uppercase tracking-widest font-bold" style="background-color: {{ kategorien }} {{ kategorie_farbe }}{{
-            /kategorien }};">{{ kategorien }} <a href="{{ url }}">{{ title }}</a>
-            {{ /kategorien }}</button>
-        {{ partial src="typography/h3" :content="additional_info" }}
+        {{ partial src="typography/h3" :content="subtitle" class="dark:text-white pb-1" }}
         {{ if from_to_toggle }}
         <div class="text-sm text-black dark:text-white"> <span class="font-bold ">{{ from_to }}</span></div>
         {{ /if }}
@@ -19,7 +16,5 @@
             {{ title }} {{
             /veranstaltungsoerter }}
         </div>
-
-
     </div>
 </div>

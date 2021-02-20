@@ -1,17 +1,17 @@
 <article class="outer-grid fluid-container">
 
     <!-- Aktuelles -->
-    <h1 class="text-3xl lg:text-4xl">Aktuelles</h1>
+    <h1 class="text-3xl lg:text-4xl text-black dark:text-white">Aktuelles</h1>
     <div class="md:grid grid-cols-12 gap-4 items-baseline pb-3">
         <div class="col-span-4">
-            <div class="sm:text-lg">{{ date }}</div>
+            <div class="sm:text-lg text-black dark:text-white">{{ date format_localized="%A, %d %B %Y" }}</div>
         </div>
         <div class="col-span-8">
-            <h2 class="text-xl sm:text-2xl font-bold leading-tight ">
+            <h2 class="text-xl sm:text-2xl font-bold leading-tight text-black dark:text-white">
                 {{ title }}</h2>
-            <div class="sm:text-lg pb-2">{{ untertitel }}</div>
+            <div class="sm:text-lg pb-2 text-black dark:text-white">{{ untertitel }}</div>
             <figure class="pb-3"><img src="{{ bild_url }}" alt=""></figure>
-            <h3 class="text-lg">{{ einleitung }}</h3>
+            <h3 class="text-lg text-black dark:text-white">{{ einleitung }}</h3>
         </div>
     </div>
     {{ page_builder scope="block" }}
@@ -31,7 +31,7 @@
 
             {{ posts }}
             <button
-                class="inline-flex items-center pt-3 font-bold tracking-widest uppercase leading-none select-none whitespace-nowrap text-lg hover:text-monsun"><a
+                class="text-black dark:text-white inline-flex items-center pt-3 font-bold tracking-widest uppercase leading-none select-none whitespace-nowrap text-lg hover:text-monsun dark:hover:text-monsun"><a
                     href="{{ url }}"><span class="text-monsun font-bold">←</span> {{ title }} </a> </button>
             {{ /posts }}
 
@@ -44,7 +44,7 @@
 
             {{ posts }}
             <button
-                class="inline-flex items-center pt-3 tracking-widest font-bold uppercase leading-none select-none whitespace-nowrap text-lg hover:text-monsun"><a
+                class="text-black dark:text-white inline-flex items-center pt-3 tracking-widest font-bold uppercase leading-none select-none whitespace-nowrap text-lg hover:text-monsun dark:hover:text-monsun"><a
                     href="{{ url }}">{{ title }} <span class="text-monsun font-bold"> →</span></a> </button>
             {{ /posts }}
             {{ /collection:next }}
