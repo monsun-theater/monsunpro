@@ -24,26 +24,28 @@
                 {{ partial:components/figure_onesize :content="image" }}
 
             </a>
-            <p class="dark:text-white">
-                {{# Sow the SEO meta description if available. #}}
-                {{ if seo_description }}
-                {{ seo_description }}
+            <a href="{{ url }}">
+                <p class="dark:text-white hover:text-monsun dark:hover:text-monsun">
+                    {{# Sow the SEO meta description if available. #}}
+                    {{ if seo_description }}
+                    {{ seo_description }}
 
-                {{# Fall back to the bard field. #}}
-                {{ elseif page_builder }}
-                {{ page_builder limit="1" }}
-                {{ if bard }}
-                {{ bard where="type:text" limit="1" }}
-                {{ text | strip_tags | safe_truncate:300:... }}
-                {{ /bard }}
+                    {{# Fall back to the bard field. #}}
+                    {{ elseif page_builder }}
+                    {{ page_builder limit="1" }}
+                    {{ if bard }}
+                    {{ bard where="type:text" limit="1" }}
+                    {{ text | strip_tags | safe_truncate:300:... }}
+                    {{ /bard }}
 
-                {{# Or a field called `text`. #}}
-                {{ elseif text }}
-                {{ text safe_truncate="180|..." }}
-                {{ /if }}
-                {{ /page_builder }}
-                {{ /if }}
-            </p>
+                    {{# Or a field called `text`. #}}
+                    {{ elseif text }}
+                    {{ text safe_truncate="180|..." }}
+                    {{ /if }}
+                    {{ /page_builder }}
+                    {{ /if }} <span class="text-monsun font-bold"> →</span></div>
+                </p>
+            </a>
         </article>
         {{ /if }}
         {{ /search:results }}

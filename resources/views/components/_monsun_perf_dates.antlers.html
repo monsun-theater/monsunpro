@@ -1,7 +1,9 @@
 {{# Termine #}}
 <div class="md:grid grid-cols-12 gap-4">
     <div class="col-span-8 md:col-start-5 bg-neutral-100 dark:bg-darkGray p-3">
-        {{ performance_dates }}
+
+        {{ performance_dates}}
+        {{ if perf_date | is_future }}
         <div class="sm:grid grid-cols-8 pb-3 sm:pb-1 gap-4">
             <div class="text-base sm:text-xl col-span-3 font-medium text-black dark:text-white">
                 <div>
@@ -20,6 +22,9 @@
                     </a>
                 </button>
             </div>
-        </div> {{ /performance_dates }}
+        </div>
+        {{ /if }}
+        {{ /performance_dates }}
+
     </div>
 </div>
