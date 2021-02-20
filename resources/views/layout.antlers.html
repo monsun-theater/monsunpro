@@ -24,6 +24,7 @@
 
 <body class="min-h-screen  {{ environment == 'local' ? 'debug' : '' }}">
     {{ yield:google_tag_manager }}
+    {{ if alert_message:monsun_alert_msg }}{{ partial:components/monsun_alert}} {{ /if }}
     {{ partial:layout/monsun_header }}
     <div class="bg-white dark:bg-black">{{ template_content }}</div>
     {{ partial:layout/monsun_footer }}

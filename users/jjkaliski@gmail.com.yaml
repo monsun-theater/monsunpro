@@ -6,7 +6,7 @@ preferences:
   collections:
     kuenstler_innen:
       per_page: 25
-      after_save: continue_editing
+      after_save: create_another
     veranstaltungen:
       columns:
         - date
