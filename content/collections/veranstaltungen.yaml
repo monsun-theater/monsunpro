@@ -5,9 +5,9 @@ taxonomies:
   - kategorien
   - veranstaltungsoerter
 revisions: false
-route: '/veranstaltungen/{slug}'
+route: 'veranstaltungen/{slug}'
 date: true
 sort_dir: asc
 date_behavior:
-  past: unlisted
-  future: public
+  past: public
+  future: private

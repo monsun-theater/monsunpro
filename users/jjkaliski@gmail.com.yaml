@@ -28,10 +28,6 @@ preferences:
         - title
         - slug
         - kategorie_farbe
-  favorites:
-    -
-      name: 'Veranstaltungen ‹ Collections'
-      url: collections/veranstaltungen
   assets:
     assets:
       mode: table

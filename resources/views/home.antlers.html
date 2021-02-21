@@ -2,8 +2,9 @@
 without having to worry about margins or paddings. #}}
 {{ partial:components/monsun_featured}}
 <main class="outer-grid fluid-container">
-    {{ partial:components/monsun_wall}}
-    {{# {{ partial:components/monsun_vst_perf_list_monthly}} #}}
+    {{ partial:components/_monsun_feed_upcoming_perf}}
+    {{ partial:components/_monsun_feed_news}}
+    {{ partial:components/_monsun_feed_programme}}
     {{ page_builder scope="block" }}
     {{ partial src="page_builder/{type}" }}
     {{ /page_builder }}

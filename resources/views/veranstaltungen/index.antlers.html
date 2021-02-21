@@ -1,1 +1,37 @@
-{{ partial:components/_monsun_feed_demnaechst}}
+<!-- Calendar Page
+Here I need to list all my events from the Veranstaltungen collection 
+They are sorted by the performance's dates (from the grid field) and grouped by month (if possible with paginate function).
+Events with past dates should be hidden from the list. If there are no_results a text message No Events is displayed. -->
+<div class="outer-grid fluid-container">
+    <!-- Month's name -->
+    <div class="text-3xl lg:text-4xl text-black dark:text-white">Januar</div>
+    {{ collection:veranstaltungen }}
+    <div class="md:grid grid-cols-12 gap-4 items-baseline bg-neutral-100 dark:bg-darkGray p-3">
+        <div class="col-span-4">
+            <!-- Event's category from the Kategorien taxonomy -->
+            <div class="text-xs sm:text-sm uppercase tracking-widest font-bold" style="color: {{ kategorien }} {{ kategorie_farbe }}{{
+            /kategorien }};">{{ kategorien }} {{ title }}
+                {{ /kategorien }}</div>
+            <!-- Event's date -->
+            <div class="sm:text-lg text-black dark:text-white">{{ date format_localized="%A %d %B %Y" }}</div>
+            <div class="sm:text-lg text-black dark:text-white">{{ date format="H:i"}} Uhr</div>
+        </div>
+
+        <div class="col-span-8 sm:text-lg pt-5 md:py-0">
+            <div class="text-xl sm:text-2xl font-bold leading-tight md:leading-normal text-black dark:text-white"><a
+                    href="{{ url }}">{{ title }}</a>
+            </div>
+            <div class="sm:text-lg text-black dark:text-white">{{ subtitle }}</div>
+            <!-- Event's ticket URL -->
+            <button
+                class="text-center uppercase tracking-wider text-black dark:text-white hover:text-monsun sm:text-lg"><a
+                    class="block" href="{{ ticket_url }}">
+                    <div class="pt-3 tracking-widest font-bold uppercase">Karten<span
+                            class="text-monsun font-bold">&nbsp;→</span>
+                    </div>
+                </a>
+            </button>
+        </div>
+    </div>
+    {{ /collection:veranstaltungen }}
+</div>
