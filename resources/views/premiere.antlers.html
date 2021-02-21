@@ -1,16 +1,14 @@
-<!-- Here I will list all my events from the 'Veranstaltungen' collection: 
-- they should be sorted by the performance's dates perf_date (from the grid field) and 
-grouped by month - if possible with paginate function, otherwise the list may get too long, 
-- events with past dates should be hidden from this list,
-- if there are no_results a simple text message 'No Events' is displayed.
-- the toggles: monsun_digital special-event_toggle extra_event_colour few_tickets_left sold_out cancelled last_performance premiere_toggle premiere_type
-are visual messages, I just need to access to them in the loop -->
+<!-- This layout is very similar to 'resources/views/veranstaltungen/index.antlers.html'
+- here I need to output the performance dates that have premiere_toggle=true
+- the premiere_type field will be displayed on the same place in the layout as in index.antlers.html
+Please do let me know if the premiere_toggle it's not enough to make this work.
+I will try to find another solution or gladly listen to your suggestions. -->
 
+<!-- Premieres  -->
 <div class="outer-grid fluid-container">
-    <!-- Event's module -->
-    <!-- Month's name -->
-    <div class="text-3xl lg:text-4xl text-black dark:text-white">Januar</div>
-    {{ collection:veranstaltungen }}
+    <!-- Premieres module -->
+    <div class="text-3xl lg:text-4xl text-black dark:text-white">Premieres</div>
+    {{ collection:veranstaltungen}}
     <div class="md:grid grid-cols-12 gap-4 items-baseline bg-neutral-100 dark:bg-darkGray p-3">
         <div class="col-span-4">
             <!-- Event's category from the Kategorien taxonomy -->
@@ -25,13 +23,12 @@ are visual messages, I just need to access to them in the loop -->
                 style="color: {{ special_event_colour }};">{{ special_event_title }}Special event</div>
             {{ /if }}
             <!-- Premiere Type -->
-            {{if premiere_toggle}}<div
-                class="pt-1 sm:text-lg text-black dark:text-white tracking-widest font-medium uppercase">
+            <div class="pt-1 sm:text-lg text-black dark:text-white tracking-widest font-medium uppercase">
                 {{premiere_type}} </div>
-            {{ /if }}
+
             <!-- Event's date and time -->
-            <div class="sm:text-lg text-black dark:text-white">{{ date format_localized="%A %d %B %Y" }}</div>
-            <div class="sm:text-lg text-black dark:text-white">{{ date format="H:i"}} Uhr</div>
+            <div class="sm:text-lg text-black dark:text-white">{{ perf_date format_localized="%A %d %B %Y" }}</div>
+            <div class="sm:text-lg text-black dark:text-white">{{ perf_date format="H:i"}} Uhr</div>
             <!-- monsun.digital -->
             {{if monsun_digital }}<div class="flex pt-1">
                 <p class="pr-1 font-medium text-black dark:text-white">monsun</p><img

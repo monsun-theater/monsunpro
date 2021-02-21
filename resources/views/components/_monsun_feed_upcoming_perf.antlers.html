@@ -1,6 +1,6 @@
-<!-- I need a component that shows today’s performances(Today/Heute) If there are no performances today 
-it shows an x amount (3 upcoming performances) of upcoming performances(Future Performances/Demnächst). 
-And if there is nothing to show at all the components are not visible.
+<!-- This is a component that shows today’s performances (Today/Heute):
+- if there are no performances today it shows 3 upcoming performances of upcoming performances (Future Performances/Demnächst). 
+- lastly if there is nothing to show at all the component is not visible.
 -->
 
 <!-- Today/Heute -->
@@ -11,10 +11,10 @@ And if there is nothing to show at all the components are not visible.
         <button aria-label="Vorstellungen in der {{ kategorien }} {{ title }} {{
             /kategorien }} Kategorie Zeigen"
             class="text-white p-2 text-xs sm:text-sm uppercase tracking-widest font-bold" style="background-color: {{ kategorien }} {{ kategorie_farbe }}{{
-            /kategorien }};">{{ kategorien }} {{ title }}
+            /kategorien }};">{{ kategorien }} <a href="{{ url }}">{{ title }}</a>
             {{ /kategorien }}</button>
-        <div class="sm:text-lg text-black dark:text-white">{{ perf_date format_localized="%A %d %B %Y" }}</div>
-        <div class="sm:text-lg text-black dark:text-white">{{ perf_date format="H:i"}} Uhr</div>
+        <div class="sm:text-lg text-black dark:text-white">{{ date format_localized="%A %d %B %Y" }}</div>
+        <div class="sm:text-lg text-black dark:text-white">{{ date format="H:i"}} Uhr</div>
     </div>
 
     <div class="col-span-8 sm:text-lg pt-5 md:py-0">
@@ -41,10 +41,10 @@ And if there is nothing to show at all the components are not visible.
         <button aria-label="Vorstellungen in der {{ kategorien }} {{ title }} {{
             /kategorien }} Kategorie Zeigen"
             class="text-white p-2 text-xs sm:text-sm uppercase tracking-widest font-bold" style="background-color: {{ kategorien }} {{ kategorie_farbe }}{{
-            /kategorien }};">{{ kategorien }} {{ title }}
+            /kategorien }};">{{ kategorien }} <a href="{{ url }}">{{ title }}</a>
             {{ /kategorien }}</button>
-        <div class="sm:text-lg text-black dark:text-white">{{ perf_date format_localized="%A %d %B %Y" }}</div>
-        <div class="sm:text-lg text-black dark:text-white">{{ perf_date format="H:i"}} Uhr</div>
+        <div class="sm:text-lg text-black dark:text-white">{{ date format_localized="%A %d %B %Y" }}</div>
+        <div class="sm:text-lg text-black dark:text-white">{{ date format="H:i"}} Uhr</div>
     </div>
     <div class="col-span-8 sm:text-lg pt-5 md:py-0">
         <div class="text-xl sm:text-2xl font-bold leading-tight md:leading-normal text-black dark:text-white"><a
