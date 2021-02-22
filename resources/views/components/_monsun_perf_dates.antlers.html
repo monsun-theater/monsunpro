@@ -1,34 +1,33 @@
 <!-- I need to display No Upcoming Events Message (See Message below)when all the event's dates have passed  -->
 
-<div class="md:grid grid-cols-12 gap-4">
-    <div class="col-span-8 md:col-start-5 bg-neutral-100 dark:bg-darkGray p-3">
-        {{ performance_dates}}
-        {{ if perf_date | is_future }}
-        <div class="sm:grid grid-cols-8 pb-3 sm:pb-1 gap-4">
-            <div class="text-base sm:text-xl col-span-3 font-medium text-black dark:text-white">
-                <div>
-                    {{ perf_date format_localized="%A"}}
+<div class="grid-cols-12 gap-4 md:grid">
+    <div class="col-span-8 p-3 md:col-start-5 bg-neutral-100 dark:bg-darkGray">
+        {{ performance_dates future="true" }}
+            {{ if no_results }}
+                <div class="col-span-3 text-base font-medium text-black sm:text-xl dark:text-white">
+                    Keine Vorstellungen/No Upcoming Events
                 </div>
-            </div>
-            <div class="text-xl sm:col-span-5 pb-3 text-black dark:text-white">
-                <div>
-                    {{ perf_date format_localized="%d %B %Y"}} | {{ perf_date format="H:i"}} Uhr
-                </div>
-                <button class="text-center uppercase tracking-wider hover:text-monsun sm:text-lg"><a class="block"
-                        href="{{ ticket_url }}">
-                        <div class="tracking-widest font-bold uppercase">Karten<span
-                                class="text-monsun font-bold">&nbsp;→</span>
+            {{ else }}
+                <div class="grid-cols-8 gap-4 pb-3 sm:grid sm:pb-1">
+                    <div class="col-span-3 text-base font-medium text-black sm:text-xl dark:text-white">
+                        <div>
+                            {{ perf_date format_localized="%A"}}
                         </div>
-                    </a>
-                </button>
-            </div>
-        </div>
-        {{ /if }}
+                    </div>
+                    <div class="pb-3 text-xl text-black sm:col-span-5 dark:text-white">
+                        <div>
+                            {{ perf_date format_localized="%d %B %Y"}} | {{ perf_date format="H:i"}} Uhr
+                        </div>
+                        <button class="tracking-wider text-center uppercase hover:text-monsun sm:text-lg"><a class="block"
+                                href="{{ ticket_url }}">
+                                <div class="font-bold tracking-widest uppercase">Karten<span
+                                        class="font-bold text-monsun">&nbsp;→</span>
+                                </div>
+                            </a>
+                        </button>
+                    </div>
+                </div>
+            {{ /if }}
         {{ /performance_dates }}
-        <!-- No Upcoming Events Message -->
-        <div class="text-base sm:text-xl col-span-3 font-medium text-black dark:text-white">Keine Vorstellungen/No
-            Upcoming Events</div>
-
     </div>
-
 </div>
