@@ -22,9 +22,7 @@ class Events extends CollectionTag
     {
         return $this
             ->getEvents()
-            ->filter(function (Entry $entry) {
-                return $this->getNextDate($entry->get('performance_dates'))->isToday();
-            });
+            ->filter(fn (Entry $entry) => Carbon::parse(Arr::get($event, 'perf_date'))->isToday());
     }
 
     public function count()
@@ -42,25 +40,23 @@ class Events extends CollectionTag
             $events = $events[$as];
         }
 
-        /** @var \Illuminate\Support\Collection */
-        $output = $events
-            // filter to include events that have a date in the future
-            ->filter(fn (Entry $event) => $this->hasFutureDate($event->get('performance_dates')));
-
-        $entries = $output
-            ->sortBy(fn (Entry $entry) => $this->getNextDate($entry->get('performance_dates')));
+        $dates = $events
+            ->flatMap(fn (Entry $event) => collect($event->get('performance_dates'))
+                ->map(fn (array $date) => array_merge($event->toAugmentedArray(), $date))
+            )->filter(fn (array $event) => Carbon::parse(Arr::get($event, 'perf_date')) > now())
+            ->sortBy(fn (array $event) => Carbon::parse(Arr::get($event, 'perf_date')));
 
         // if group by
         if ($groupByFormat = $this->params->get('group_by_format')) {
             return collect([
-                'date_groups' => $entries
-                    ->groupBy(fn ($entry) => $this->getNextDate($entry->get('performance_dates'))->format($groupByFormat))
-                    ->map(fn ($entries, $date_group) => ['date_group' => $date_group, 'entries' => $entries])
+                'date_groups' => $dates
+                    ->groupBy(fn ($event) => Carbon::parse(Arr::get($event, 'perf_date'))->format($groupByFormat))
+                    ->map(fn ($events, $date_group) => ['date_group' => $date_group, 'entries' => $events])
                     ->values(),
             ]);
         }
 
-        return $entries;
+        return $dates;
     }
 
     private function hasFutureDate($dates): bool
