@@ -70,6 +70,10 @@ class Events extends CollectionTag
     private function outputDates(Collection $dates): array
     {
         if ($groupByFormat = $this->params->get('group_by_format')) {
+            if ($dates->isEmpty()) {
+                return ['no_results' => true];
+            }
+
             return collect([
                 'date_groups' => $dates
                 ->groupBy(fn ($event) => Carbon::parse(Arr::get($event, 'perf_date'))->format($groupByFormat))
