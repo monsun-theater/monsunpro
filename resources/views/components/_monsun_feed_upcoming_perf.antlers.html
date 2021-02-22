@@ -1,63 +1,63 @@
 <!-- This is a component that shows today’s performances (Today/Heute):
-- if there are no performances today it shows 3 upcoming performances of upcoming performances (Future Performances/Demnächst). 
+- if there are no performances today it shows 3 upcoming performances of upcoming performances (Future Performances/Demnächst).
 - lastly if there is nothing to show at all the component is not visible.
 -->
 
 <!-- Today/Heute -->
-<div class="text-3xl lg:text-4xl text-black dark:text-white">Today/Heute</div>
-{{ collection:veranstaltungen}}
-<div class="md:grid grid-cols-12 gap-4 items-baseline bg-neutral-100 dark:bg-darkGray p-3">
+<div class="text-3xl text-black lg:text-4xl dark:text-white">Today/Heute</div>
+{{ events:today }}
+<div class="items-baseline grid-cols-12 gap-4 p-3 md:grid bg-neutral-100 dark:bg-darkGray">
     <div class="col-span-4">
         <button aria-label="Vorstellungen in der {{ kategorien }} {{ title }} {{
             /kategorien }} Kategorie Zeigen"
-            class="text-white p-2 text-xs sm:text-sm uppercase tracking-widest font-bold" style="background-color: {{ kategorien }} {{ kategorie_farbe }}{{
+            class="p-2 text-xs font-bold tracking-widest text-white uppercase sm:text-sm" style="background-color: {{ kategorien }} {{ kategorie_farbe }}{{
             /kategorien }};">{{ kategorien }} <a href="{{ url }}">{{ title }}</a>
             {{ /kategorien }}</button>
-        <div class="sm:text-lg text-black dark:text-white">{{ date format_localized="%A %d %B %Y" }}</div>
-        <div class="sm:text-lg text-black dark:text-white">{{ date format="H:i"}} Uhr</div>
+        <div class="text-black sm:text-lg dark:text-white">{{ date format_localized="%A %d %B %Y" }}</div>
+        <div class="text-black sm:text-lg dark:text-white">{{ date format="H:i"}} Uhr</div>
     </div>
 
-    <div class="col-span-8 sm:text-lg pt-5 md:py-0">
-        <div class="text-xl sm:text-2xl font-bold leading-tight md:leading-normal text-black dark:text-white"><a
+    <div class="col-span-8 pt-5 sm:text-lg md:py-0">
+        <div class="text-xl font-bold leading-tight text-black sm:text-2xl md:leading-normal dark:text-white"><a
                 href="{{ url }}">{{ title }}</a>
         </div>
-        <div class="sm:text-lg text-black dark:text-white">{{ subtitle }}</div>
-        <button class="text-center uppercase tracking-wider text-black dark:text-white hover:text-monsun sm:text-lg"><a
+        <div class="text-black sm:text-lg dark:text-white">{{ subtitle }}</div>
+        <button class="tracking-wider text-center text-black uppercase dark:text-white hover:text-monsun sm:text-lg"><a
                 class="block" href="{{ ticket_url }}">
-                <div class="pt-3 tracking-widest font-bold uppercase">Karten<span
-                        class="text-monsun font-bold">&nbsp;→</span>
+                <div class="pt-3 font-bold tracking-widest uppercase">Karten<span
+                        class="font-bold text-monsun">&nbsp;→</span>
                 </div>
             </a>
         </button>
     </div>
 </div>
-{{ /collection:veranstaltungen}}
+{{ /events:today }}
 
 <!-- Future Performances/Demnächst -->
-<div class="text-3xl lg:text-4xl text-black dark:text-white">Future Performances/Demnächst</div>
-{{ collection:veranstaltungen}}
-<div class="md:grid grid-cols-12 gap-4 items-baseline bg-neutral-100 dark:bg-darkGray p-3">
+<div class="text-3xl text-black lg:text-4xl dark:text-white">Future Performances/Demnächst</div>
+{{ events:future }}
+<div class="items-baseline grid-cols-12 gap-4 p-3 md:grid bg-neutral-100 dark:bg-darkGray">
     <div class="col-span-4">
         <button aria-label="Vorstellungen in der {{ kategorien }} {{ title }} {{
             /kategorien }} Kategorie Zeigen"
-            class="text-white p-2 text-xs sm:text-sm uppercase tracking-widest font-bold" style="background-color: {{ kategorien }} {{ kategorie_farbe }}{{
+            class="p-2 text-xs font-bold tracking-widest text-white uppercase sm:text-sm" style="background-color: {{ kategorien }} {{ kategorie_farbe }}{{
             /kategorien }};">{{ kategorien }} <a href="{{ url }}">{{ title }}</a>
             {{ /kategorien }}</button>
-        <div class="sm:text-lg text-black dark:text-white">{{ date format_localized="%A %d %B %Y" }}</div>
-        <div class="sm:text-lg text-black dark:text-white">{{ date format="H:i"}} Uhr</div>
+        <div class="text-black sm:text-lg dark:text-white">{{ date format_localized="%A %d %B %Y" }}</div>
+        <div class="text-black sm:text-lg dark:text-white">{{ date format="H:i"}} Uhr</div>
     </div>
-    <div class="col-span-8 sm:text-lg pt-5 md:py-0">
-        <div class="text-xl sm:text-2xl font-bold leading-tight md:leading-normal text-black dark:text-white"><a
+    <div class="col-span-8 pt-5 sm:text-lg md:py-0">
+        <div class="text-xl font-bold leading-tight text-black sm:text-2xl md:leading-normal dark:text-white"><a
                 href="{{ url }}">{{ title }}</a>
         </div>
-        <div class="sm:text-lg text-black dark:text-white">{{ subtitle }}</div>
-        <button class="text-center uppercase tracking-wider text-black dark:text-white hover:text-monsun sm:text-lg"><a
+        <div class="text-black sm:text-lg dark:text-white">{{ subtitle }}</div>
+        <button class="tracking-wider text-center text-black uppercase dark:text-white hover:text-monsun sm:text-lg"><a
                 class="block" href="{{ ticket_url }}">
-                <div class="pt-3 tracking-widest font-bold uppercase">Karten<span
-                        class="text-monsun font-bold">&nbsp;→</span>
+                <div class="pt-3 font-bold tracking-widest uppercase">Karten<span
+                        class="font-bold text-monsun">&nbsp;→</span>
                 </div>
             </a>
         </button>
     </div>
 </div>
-{{ /collection:veranstaltungen}}
+{{ /events:future }}

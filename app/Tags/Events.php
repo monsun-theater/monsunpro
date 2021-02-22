@@ -3,18 +3,28 @@
 namespace App\Tags;
 
 use Carbon\Carbon;
+use Illuminate\Support\Collection;
 use Statamic\Entries\Entry;
 use Statamic\Support\Arr;
 use Statamic\Tags\Collection\Collection as CollectionTag;
 
-class FutureEvents extends CollectionTag
+class Events extends CollectionTag
 {
     /**
      * @return string|array
      */
-    public function index()
+    public function future()
     {
         return $this->getEvents();
+    }
+
+    public function today()
+    {
+        return $this
+            ->getEvents()
+            ->filter(function (Entry $entry) {
+                return $this->getNextDate($entry->get('performance_dates'))->isToday();
+            });
     }
 
     public function count()
@@ -22,7 +32,7 @@ class FutureEvents extends CollectionTag
         return $this->getEvents()->count();
     }
 
-    private function getEvents()
+    private function getEvents(): Collection
     {
         $this->params->put('from', 'veranstaltungen');
 
@@ -42,12 +52,12 @@ class FutureEvents extends CollectionTag
 
         // if group by
         if ($groupByFormat = $this->params->get('group_by_format')) {
-            return [
+            return collect([
                 'date_groups' => $entries
-                    ->groupBy(fn ($entry) => Carbon::parse($this->getNextDate($entry->get('performance_dates')))->format($groupByFormat))
+                    ->groupBy(fn ($entry) => $this->getNextDate($entry->get('performance_dates'))->format($groupByFormat))
                     ->map(fn ($entries, $date_group) => ['date_group' => $date_group, 'entries' => $entries])
                     ->values(),
-            ];
+            ]);
         }
 
         return $entries;
@@ -58,10 +68,14 @@ class FutureEvents extends CollectionTag
         return $this->getNextDate($dates) != null;
     }
 
-    private function getNextDate(array $dates = [])
+    private function getNextDate(array $dates = []): ?Carbon
     {
         $data = collect($dates)->first(fn ($event) => Carbon::parse($event['perf_date']) >= now()->startOfDay());
 
-        return Arr::get($data, 'perf_date');
+        if (! $date = Arr::get($data, 'perf_date')) {
+            return null;
+        }
+
+        return Carbon::parse($date);
     }
 }
