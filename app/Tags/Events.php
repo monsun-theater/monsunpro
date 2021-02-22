@@ -76,7 +76,7 @@ class Events extends CollectionTag
                 ->map(fn ($events, $date_group) => ['date_group' => $date_group, 'entries' => $events])
                 ->values()
                 ->all(),
-                ]);
+            ])->all();
         }
 
         if ($as = $this->params->get('as')) {
