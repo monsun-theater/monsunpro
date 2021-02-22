@@ -10,29 +10,39 @@ use Statamic\Tags\Collection\Collection as CollectionTag;
 
 class Events extends CollectionTag
 {
+    public function afterToday()
+    {
+        return $this->outputDates($this
+            ->getDates()
+            ->filter(fn (array $event) => Carbon::parse(Arr::get($event, 'perf_date')) > now()->endOfDay())
+        );
+    }
+
     /**
      * @return string|array
      */
     public function future()
     {
-        return $this->getEvents();
+        return $this->outputDates($this->getDates());
     }
 
     public function today()
     {
-        return $this
-            ->getEvents()
-            ->filter(fn (Entry $entry) => Carbon::parse(Arr::get($event, 'perf_date'))->isToday());
+        return $this->outputDates($this
+            ->getDates()
+            ->filter(fn (array $event) => Carbon::parse(Arr::get($event, 'perf_date'))->isToday())
+        );
     }
 
     public function count()
     {
-        return $this->getEvents()->count();
+        return $this->getDates()->count();
     }
 
-    private function getEvents(): Collection
+    private function getDates(): Collection
     {
         $this->params->put('from', 'veranstaltungen');
+        $limit = $this->params->pull('limit');
 
         $events = parent::index();
 
@@ -40,38 +50,33 @@ class Events extends CollectionTag
             $events = $events[$as];
         }
 
-        $dates = $events
+        return $events
             ->flatMap(fn (Entry $event) => collect($event->get('performance_dates'))
                 ->map(fn (array $date) => array_merge($event->toAugmentedArray(), $date))
             )->filter(fn (array $event) => Carbon::parse(Arr::get($event, 'perf_date')) > now())
-            ->sortBy(fn (array $event) => Carbon::parse(Arr::get($event, 'perf_date')));
+            ->sortBy(fn (array $event) => Carbon::parse(Arr::get($event, 'perf_date')))
+            ->take($limit);
+    }
 
-        // if group by
+    private function outputDates(Collection $dates): array
+    {
         if ($groupByFormat = $this->params->get('group_by_format')) {
             return collect([
                 'date_groups' => $dates
-                    ->groupBy(fn ($event) => Carbon::parse(Arr::get($event, 'perf_date'))->format($groupByFormat))
-                    ->map(fn ($events, $date_group) => ['date_group' => $date_group, 'entries' => $events])
-                    ->values(),
-            ]);
+                ->groupBy(fn ($event) => Carbon::parse(Arr::get($event, 'perf_date'))->format($groupByFormat))
+                ->map(fn ($events, $date_group) => ['date_group' => $date_group, 'entries' => $events])
+                ->values()
+                ->all(),
+                ]);
         }
 
-        return $dates;
-    }
-
-    private function hasFutureDate($dates): bool
-    {
-        return $this->getNextDate($dates) != null;
-    }
-
-    private function getNextDate(array $dates = []): ?Carbon
-    {
-        $data = collect($dates)->first(fn ($event) => Carbon::parse($event['perf_date']) >= now()->startOfDay());
-
-        if (! $date = Arr::get($data, 'perf_date')) {
-            return null;
+        if ($as = $this->params->get('as')) {
+            return [
+                'no_results' => $dates->isEmpty(),
+                $as => $dates->all(),
+            ];
         }
 
-        return Carbon::parse($date);
+        return $dates->all();
     }
 }
