@@ -10,7 +10,7 @@ are visual messages, I just need to access to them in the loop -->
     <!-- Event's module -->
     <!-- Month's name -->
     {{ events:future group_by_format="M-Y" }}
-        {{ date_groups }}
+    {{ date_groups }}
     <div class="text-3xl text-black lg:text-4xl dark:text-white">{{ date_group }}</div>
     {{ entries }}
     <div class="items-baseline grid-cols-12 gap-4 p-3 md:grid bg-neutral-100 dark:bg-darkGray">
@@ -32,8 +32,8 @@ are visual messages, I just need to access to them in the loop -->
                 {{premiere_type}} </div>
             {{ /if }}
             <!-- Event's date and time -->
-            <div class="text-black sm:text-lg dark:text-white">{{ date format_localized="%A %d %B %Y" }}</div>
-            <div class="text-black sm:text-lg dark:text-white">{{ date format="H:i"}} Uhr</div>
+            <div class="text-black sm:text-lg dark:text-white">{{ perf_date format_localized="%A %d %B %Y" }}</div>
+            <div class="text-black sm:text-lg dark:text-white">{{ perf_date format="H:i"}} Uhr</div>
             <!-- monsun.digital -->
             {{if monsun_digital }}<div class="flex pt-1">
                 <p class="pr-1 font-medium text-black dark:text-white">monsun</p><img
