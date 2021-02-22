@@ -23,41 +23,39 @@
         <div class="text-black sm:text-lg dark:text-white">{{ perf_date format="H:i"}} Uhr</div>
         <!-- monsun.digital -->
         {{if monsun_digital }}<div class="flex pt-1">
-            <p class="pr-1 font-medium text-black dark:text-white">monsun</p><img
-                src="/assets/site-setup/logos/monsun-logo-symbol.svg" class="w-6" alt="monsun digital logo" />
-            <p class="pl-1 font-medium text-black dark:text-white">digital</p>
-        </div>{{ /if }}
+            <p class="pr-1 text-black dark:text-white">monsun.digital</p>{{ /if }}
+        </div>
+        <div class="col-span-8 pt-5 sm:text-lg md:py-0">
+            <div class="text-xl font-bold leading-tight text-black sm:text-2xl md:leading-normal dark:text-white"><a
+                    href="{{ url }}">{{ title }}</a>
+            </div>
+            <div class="text-black sm:text-lg dark:text-white">{{ subtitle }}</div>
+            <!-- Few tickets left -->
+            {{if few_tickets_left}}<div class=" text-error-600 sm:text-lg"> Restkarten!
+            </div> {{ /if }}
+            <!-- Last performance -->
+            {{if last_performance}}<div class=" text-error-600 sm:text-lg"> Zum letzten Mal!
+            </div> {{ /if }}
+            <!-- Event's ticket URL -->
+            <!-- Tickets sold out -->
+            {{ if sold_out}}
+            <div class="pt-3 font-bold tracking-widest uppercase text-error-600 sm:text-lg">Ausverkauft
+            </div>
+            <!-- Event cancelled -->
+            {{ elseif cancelled }}
+            <div class="pt-3 font-bold tracking-widest uppercase text-error-600 sm:text-lg">Abgesagt
+            </div>
+            <!-- Tickets available -->
+            {{ else }}
+            <button
+                class="tracking-wider text-center text-black uppercase dark:text-white hover:text-monsun sm:text-lg"><a
+                    class="block" href="{{ ticket_url }}">
+                    <div class="pt-3 font-bold tracking-widest uppercase">Karten<span
+                            class="font-bold text-monsun">&nbsp;→</span>
+                    </div>
+                </a>
+            </button>
+            {{ /if }}
+        </div>
     </div>
-    <div class="col-span-8 pt-5 sm:text-lg md:py-0">
-        <div class="text-xl font-bold leading-tight text-black sm:text-2xl md:leading-normal dark:text-white"><a
-                href="{{ url }}">{{ title }}</a>
-        </div>
-        <div class="text-black sm:text-lg dark:text-white">{{ subtitle }}</div>
-        <!-- Few tickets left -->
-        {{if few_tickets_left}}<div class=" text-error-600 sm:text-lg"> Restkarten!
-        </div> {{ /if }}
-        <!-- Last performance -->
-        {{if last_performance}}<div class=" text-error-600 sm:text-lg"> Zum letzten Mal!
-        </div> {{ /if }}
-        <!-- Event's ticket URL -->
-        <!-- Tickets sold out -->
-        {{ if sold_out}}
-        <div class="pt-3 font-bold tracking-widest uppercase text-error-600 sm:text-lg">Ausverkauft
-        </div>
-        <!-- Event cancelled -->
-        {{ elseif cancelled }}
-        <div class="pt-3 font-bold tracking-widest uppercase text-error-600 sm:text-lg">Abgesagt
-        </div>
-        <!-- Tickets available -->
-        {{ else }}
-        <button class="tracking-wider text-center text-black uppercase dark:text-white hover:text-monsun sm:text-lg"><a
-                class="block" href="{{ ticket_url }}">
-                <div class="pt-3 font-bold tracking-widest uppercase">Karten<span
-                        class="font-bold text-monsun">&nbsp;→</span>
-                </div>
-            </a>
-        </button>
-        {{ /if }}
-    </div>
-</div>
-{{ /dates }}
+    {{ /dates }}

@@ -22,11 +22,8 @@
         <div class="text-black sm:text-lg dark:text-white">{{ perf_date format_localized="%A %d %B %Y" }}</div>
         <div class="text-black sm:text-lg dark:text-white">{{ perf_date format="H:i"}} Uhr</div>
         <!-- monsun.digital -->
-        {{if monsun_digital }}<div class="flex pt-1">
-            <p class="pr-1 font-medium text-black dark:text-white">monsun</p><img
-                src="/assets/site-setup/logos/monsun-logo-symbol.svg" class="w-6" alt="monsun digital logo" />
-            <p class="pl-1 font-medium text-black dark:text-white">digital</p>
-        </div>{{ /if }}
+        {{if monsun_digital }}
+        <p class="pr-1 text-black dark:text-white">monsun.digital</p>{{ /if }}
     </div>
     <div class="col-span-8 pt-5 sm:text-lg md:py-0">
         <div class="text-xl font-bold leading-tight text-black sm:text-2xl md:leading-normal dark:text-white"><a
