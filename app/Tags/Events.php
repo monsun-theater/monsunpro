@@ -26,6 +26,15 @@ class Events extends CollectionTag
         return $this->outputDates($this->getDates());
     }
 
+    public function premieres()
+    {
+        return $this->outputDates(
+            $this
+                ->getDates()
+                ->filter(fn (array $event) => Arr::get($event, 'premiere_toggle', false))
+        );
+    }
+
     public function today()
     {
         return $this->outputDates($this
