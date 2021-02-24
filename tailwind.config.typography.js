@@ -28,6 +28,43 @@ module.exports = {
         },
       },
       typography: (theme) => ({
+        dark: {
+          css: {
+            color: theme('colors.white'),
+            '[class~="lead"]': {
+              color: theme('colors.white'),
+            },
+            a: {
+              color: theme('colors.white'),
+              '&:hover': {
+                color: theme('colors.monsun'),
+              },
+            },
+            'a.no-underline': {
+              textDecoration: 'none',
+            },
+            'h1, h2, h3, h4': {
+              fontWeight: 'normal',
+              scrollMarginTop: theme('spacing.36'),
+              color: theme('colors.white'),
+            },
+            blockquote: {
+              borderColor: theme('colors.white'),
+            },
+            hr: {
+              borderColor: theme('colors.white'),
+            },
+            'ul > li::before': {
+              backgroundColor: theme('colors.white'),
+            },
+            'ol > li::before': {
+              color: theme('colors.white'),
+            },
+            pre: {
+              whiteSpace: 'pre-wrap',
+            },
+          }
+        },
         DEFAULT: {
           css: {
             color: theme('colors.black'),
@@ -64,7 +101,7 @@ module.exports = {
               whiteSpace: 'pre-wrap',
             },
           }
-        }
+        },
       }),
     }
   },

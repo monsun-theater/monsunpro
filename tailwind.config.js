@@ -22,7 +22,7 @@ module.exports = {
   future: {},
   // Dark mode
   // Uncomment the next line to enable Dark mode using `prefers-color-scheme`.
-  //darkMode: 'media', 
+  //darkMode: 'media',
   // Or use the next line to use darkmode by adding a class to your html.
   darkMode: 'class',
   // Configure Purge CSS.
@@ -52,7 +52,7 @@ module.exports = {
       transitionDuration: ['motion-safe'],
       transitionProperty: ['motion-safe'],
       translate: ['group-hover', 'motion-safe'],
-      // typography: ["dark"],
+      typography: ["dark"],
     }
   }
 }

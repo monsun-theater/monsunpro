@@ -1,5 +1,5 @@
 title: 'Künstler*innen'
-template: diverse
+template: default
 layout: layout
 revisions: false
 route: 'kuenstler-innen/{slug}'
