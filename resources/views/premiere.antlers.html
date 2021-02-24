@@ -9,9 +9,9 @@ I will try to find another solution or gladly listen to your suggestions. -->
     <!-- Premieres module -->
     {{ events:premieres as="dates" }}
     {{ if no_results }}
-    <div class="text-3xl text-black lg:text-4xl dark:text-white">No events/Keine Vorstellungen zur Zeit</div>
+    <div class="text-3xl text-black lg:text-4xl dark:text-white">Keine Premieren zur Zeit</div>
     {{ else }}
-    <div class="text-3xl text-black lg:text-4xl dark:text-white">Premieres</div>
+    <div class="text-3xl text-black lg:text-4xl dark:text-white">Premieren</div>
     {{ dates }}
     <div class="items-baseline grid-cols-12 gap-4 p-3 md:grid bg-neutral-100 dark:bg-darkGray">
         <div class="col-span-4">

@@ -9,13 +9,13 @@ are visual messages, I just need to access to them in the loop -->
 <div class="outer-grid fluid-container">
     <!-- Event's module -->
     <!-- Month's name -->
-    {{ events:future group_by_format="M Y" }}
+    {{ events:future group_by_format="M-Y" }}
     {{ if no_results }}
     <!-- message 'No Events'  -->
     <div class="text-3xl text-black lg:text-4xl dark:text-white">No events/Keine Vorstellungen zur Zeit</div>
     {{ else }}
     {{ date_groups }}
-    <div class="text-3xl text-black lg:text-4xl dark:text-white">{{ date_group }}</div>
+    <div class="text-3xl text-black lg:text-4xl dark:text-white">{{ date_group format_localized="%B %G" }}</div>
     {{ entries }}
     <div class="items-baseline grid-cols-12 gap-4 p-3 md:grid bg-neutral-100 dark:bg-darkGray">
         <div class="col-span-4">
