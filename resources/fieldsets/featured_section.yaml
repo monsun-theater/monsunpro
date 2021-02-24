@@ -1,38 +1,61 @@
 title: 'Featured section'
 fields:
   -
-    handle: featured_image
+    handle: featured_sect
     field:
-      mode: grid
-      container: assets
-      folder: produktionen
-      restrict: false
-      allow_uploads: true
-      max_files: 1
-      display: 'Featured Image'
-      type: assets
-      icon: assets
-      instructions: 'The image of your choice'
+      collapse: false
+      sets:
+        featured:
+          display: Featured
+          fields:
+            -
+              handle: featured_image
+              field:
+                mode: grid
+                container: assets
+                folder: produktionen
+                restrict: false
+                allow_uploads: true
+                max_files: 1
+                display: 'Featured Image'
+                type: assets
+                icon: assets
+                instructions: 'The image of your choice'
+                listable: hidden
+                width: 66
+            -
+              handle: einfarbiger_hintergrund
+              field:
+                display: 'Einfarbiger Hintergrund'
+                type: toggle
+                icon: toggle
+                instructions: 'Plain background'
+                width: 33
+                listable: hidden
+            -
+              handle: title
+              field:
+                input_type: text
+                antlers: false
+                display: Title
+                type: text
+                icon: text
+                instructions: Title
+                listable: hidden
+            -
+              handle: title_desc
+              field:
+                input_type: text
+                antlers: false
+                display: Untertitel
+                type: text
+                icon: text
+                instructions: 'Short description'
+                listable: hidden
+            -
+              import: buttons
+      display: 'Featured section'
+      type: replicator
+      icon: replicator
+      instructions: 'What''s on in monsun?'
       listable: hidden
-  -
-    handle: title
-    field:
-      input_type: text
-      antlers: false
-      display: Titel
-      type: text
-      icon: text
-      instructions: Title
-      listable: hidden
-  -
-    handle: title_desc
-    field:
-      input_type: text
-      antlers: false
-      display: Untertitel
-      type: text
-      icon: text
-      instructions: 'Short description'
-      listable: hidden
-  -
-    import: buttons

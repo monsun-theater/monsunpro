@@ -1,33 +1,38 @@
 <!-- Hero card -->
+{{ hero_featured_sect }}
 <div class="relative">
     <div class="max-w-full mx-auto">
         <div class="relative shadow-xl overflow-hidden">
             <div class="absolute inset-0">
-                {{ partial:components/picture image="{{hero_featured_image}}" class="h-full w-full
+
+                {{ partial:components/picture image="{{featured_image}}" class="h-full w-full
                 object-cover" }}
-                <div class="absolute inset-0 bg-neutral-200" style="mix-blend-mode: multiply;"></div>
+                <div class="absolute inset-0 {{ if einfarbiger_hintergrund}} bg-white dark:bg-black {{ else
+                    }}bg-neutral-200" style="mix-blend-mode: multiply;{{ /if}}"></div>
             </div>
             <div class="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
                 <h1 class="text-center text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
-                    <span class="block text-white">{{
-                        hero_title }}</span>
+                    <span
+                        class="block {{ if einfarbiger_hintergrund}}text-black dark:text-white {{ else }} text-white {{ /if }}">{{
+                        title }}</span>
                 </h1>
                 <p
-                    class="mt-6 max-w-lg mx-auto text-center font-medium text-white text-xl text-indigo-200 sm:max-w-3xl">
+                    class="mt-6 max-w-lg mx-auto text-center font-medium  {{ if einfarbiger_hintergrund}}text-black dark:text-white {{ else }} text-white {{ /if }} text-xl sm:max-w-3xl">
                     {{
-                    hero_title_desc }}
+                    title_desc }}
                 </p>
                 <button aria-label="{{ attr_aria }}" class="mt-10 max-w-sm mx-auto sm:max-w-none flex justify-center">
                     <div class="space-y-4 sm:mx-auto sm:inline">
-                        {{hero_buttons}}
+                        {{buttons}}
                         <{{ tag or 'a' }} {{ attribute }} class="flex items-center justify-center px-4
-                                        py-3 border-4 text-white text-md font-bold tracking-wider uppercase shadow-sm
+                                        py-3 border-4  {{ if einfarbiger_hintergrund}}text-black dark:text-white {{ else }} text-white {{ /if }} text-md font-bold tracking-wider uppercase shadow-sm
                                           hover:bg-monsun sm:px-8" {{ unless faux }} {{
                             partial:components/button_attributes }} {{ /unless }}>{{ label }} </{{ tag or 'a' }}>
-                        {{/hero_buttons}}
+                        {{/buttons}}
                     </div>
                 </button>
+
             </div>
         </div>
     </div>
-</div>
+</div>{{ /hero_featured_sect }}

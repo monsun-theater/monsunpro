@@ -22,6 +22,8 @@ preferences:
         - slug
         - date
         - og_image
+    pages:
+      after_save: continue_editing
   taxonomies:
     kategorien:
       columns:
@@ -31,3 +33,7 @@ preferences:
   assets:
     assets:
       mode: table
+  favorites:
+    -
+      name: 'Startseite ‹ Seiten ‹ Collections'
+      url: collections/pages/entries/home/home
