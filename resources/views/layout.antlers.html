@@ -22,11 +22,11 @@
 
 </head>
 
-<body class="min-h-screen {{ environment == 'local' ? 'debug' : '' }}">
+<body class="flex flex-col min-h-screen {{ environment == 'local' ? 'debug' : '' }}">
     {{ yield:google_tag_manager }}
     {{ if alert_message:monsun_alert_msg }}{{ partial:components/monsun_alert}} {{ /if }}
     {{ partial:layout/monsun_header }}
-    <div class="bg-white dark:bg-black">{{ template_content }}</div>
+    <div class="bg-white dark:bg-black flex-grow">{{ template_content }}</div>
     {{ partial:layout/monsun_footer }}
     <script src="{{ mix src='/js/site.js' }}"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
