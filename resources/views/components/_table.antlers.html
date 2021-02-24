@@ -7,7 +7,7 @@
             <tr>
                 {{ cells }}
                 <th
-                    class="px-3 xl:px-6 py-3 border-b border-neutral-200 text-left text-xs font-bold text-black uppercase tracking-widest">
+                    class="px-3 xl:px-6 py-3 border-b border-neutral-200 text-left text-xs font-bold text-black dark:text-white uppercase tracking-widest">
                     {{ value }}</th>
                 {{ /cells }}
             </tr>
@@ -24,11 +24,11 @@
                 {{ cells }}
                 {{ if first && first_column_headers }}
                 <th
-                    class="px-3 xl:px-6 py-3 border-b border-neutral-200 bg-neutral-50 text-left text-xs font-bold text-black uppercase tracking-wider">
+                    class="px-3 xl:px-6 py-3 border-b border-neutral-200 bg-neutral-50 text-left text-xs font-bold text-black dark:text-white uppercase tracking-wider">
                     {{ value }}</th>
                 {{ else }}
                 <td
-                    class="px-3 xl:px-6 py-3 whitespace-nowrap border-b border-neutral-200 text-sm leading-3 text-black">
+                    class="px-3 xl:px-6 py-3 whitespace-nowrap border-b border-neutral-200 text-sm leading-3 text-black dark:text-white">
                     {{ value }}</td>
                 {{ /if }}
                 {{ /cells }}
@@ -42,7 +42,7 @@
     </table>
 
     {{ if caption }}
-    <span class="block mt-2 text-black">
+    <span class="block mt-2 text-black dark:text-white">
         {{ caption }}
     </span>
     {{ /if }}

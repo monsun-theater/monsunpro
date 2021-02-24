@@ -1,11 +1,12 @@
 {{# The collection content block with optional title. #}}
 <section class="grid md:grid-cols-12 gap-y-2">
-    <div class="md:col-start-5 md:col-span-8 bg-neutral-100 p-3">
-        {{ partial:typography/h2 class="mb-4" :content="block:title" }}
+    <div class="md:col-start-5 md:col-span-8 bg-neutral-100 dark:bg-darkGray  p-3">
+        {{ partial:typography/h2 class="mb-4 dark:text-white" :content="block:title" }}
         <ul class="list-inside tracking-wider list-disc">
             {{ block:collection }}
             <li>
-                <a class="text-black uppercase hover:text-monsun" href="{{ url }}">
+                <a class="text-black uppercase hover:text-monsun dark:text-white dark:hover:text-monsun"
+                    href="{{ url }}">
                     {{ title }} <span class="text-monsun font-bold">&nbsp;→</span>
                 </a>
             </li>
