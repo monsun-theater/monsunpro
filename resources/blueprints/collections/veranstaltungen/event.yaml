@@ -241,30 +241,6 @@ sections:
                 width: 25
                 listable: hidden
             -
-              handle: special_event_colour
-              field:
-                swatches:
-                  - '#d4d4d4'
-                  - '#fbd4bc'
-                  - '#ffe1ae'
-                  - '#90d0fe'
-                  - '#a4eab7'
-                  - '#c5c1d1'
-                  - '#cfcabf'
-                theme: nano
-                lock_opacity: true
-                default_color_mode: HEXA
-                color_modes:
-                  - HEXA
-                display: 'Special-Event Farbe'
-                type: color
-                icon: color\
-                instructions: 'Accent colour'
-                listable: hidden
-                width: 33
-                if:
-                  special_event_toggle: 'equals true'
-            -
               handle: special_event_title
               field:
                 input_type: text

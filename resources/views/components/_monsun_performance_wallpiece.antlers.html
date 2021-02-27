@@ -1,0 +1,67 @@
+{{# Entry start #}}
+<div class="items-baseline grid-cols-12 gap-4 p-3 md:grid bg-neutral-100 dark:bg-darkGray">
+    <div class="col-span-4">
+        <!-- Event's category from the Kategorien taxonomy -->
+        <button aria-label="Vorstellungen in der {{ kategorien }} {{ title }} {{
+                            /kategorien }} Kategorie Zeigen"
+            class="p-2 text-xs font-bold tracking-widest text-white uppercase sm:text-sm" style="background-color: {{ kategorien }} {{ kategorie_farbe }}{{
+                            /kategorien }};">{{ kategorien }} <a href="{{ url }}">{{ title }}</a>
+            {{ /kategorien }}</button>
+        <!-- Premiere Type -->
+        {{if premiere_toggle}}
+        <div class="pt-1">
+            <button aria-label="Premieren Zeigen"
+                class="p-2 text-xs font-bold tracking-widest bg-error-700 text-white uppercase sm:text-sm"><a
+                    href="/premieren">{{
+                    premiere_type }}</a>
+            </button>
+        </div>
+        {{ /if }}
+        <!-- Special event -->
+        {{if special_event_toggle}}
+        <div class="pt-1 font-medium tracking-widest text-black uppercase sm:text-lg dark:text-white">{{
+            special_event_title }}</div>
+        {{ /if }}
+        <!-- Event's date and time -->
+        <div class="text-black sm:text-lg dark:text-white">{{ perf_date format_localized="%A, %d %B %Y" }}</div>
+        <div class="text-black sm:text-lg dark:text-white">{{ perf_date format="H:i"}} Uhr</div>
+        <!-- Last performance -->
+        {{if last_performance}}<div class="text-black dark:text-white sm:text-lg"> Zum letzten Mal!
+        </div> {{ /if }}
+        <!-- monsun.digital -->
+        {{if monsun_digital }}
+        <p class="pr-1 text-black dark:text-white">monsun.digital</p>
+        {{ /if }}
+    </div>
+    <!-- Event's title and subtitle -->
+    <div class="col-span-8 pt-5 sm:text-lg md:py-0">
+        <div class="text-xl font-bold leading-tight text-black sm:text-2xl md:leading-normal dark:text-white"><a
+                href="{{ url }}">{{ title }}</a>
+        </div>
+        <div class="text-black sm:text-lg dark:text-white"><a href="{{ url }}">{{ subtitle }}</a></div>
+        <!-- Few tickets left -->
+        {{# {{if few_tickets_left}}<div class=" text-error-600 sm:text-lg"> Restkarten!
+        </div> {{ /if }} #}}
+        <!-- Event's ticket URL -->
+        <!-- Tickets sold out -->
+        {{ if sold_out}}
+        <div class="pt-3 font-bold tracking-widest uppercase dark:text-white sm:text-lg">Ausverkauft!
+        </div>
+        <!-- Event cancelled -->
+        {{ elseif cancelled }}
+        <div class="pt-3 font-bold tracking-widest uppercase dark:text-white sm:text-lg">Abgesagt
+        </div>
+        <!-- Tickets available -->
+        {{ else }}
+        <button class="text-black uppercase dark:text-white hover:text-monsun dark:hover:text-monsun sm:text-lg"><a
+                class="block" href="{{ ticket_url }}">
+                <div class="pt-3 font-bold tracking-widest uppercase">
+                    <!-- Few tickets left -->
+                    {{if few_tickets_left}}Rest{{ /if }}Karten<span class="font-bold text-monsun">&nbsp;→</span>
+                </div>
+            </a>
+        </button>
+        {{ /if }}
+    </div>
+</div>
+{{# Entry end #}}

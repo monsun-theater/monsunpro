@@ -1,81 +1,14 @@
-<!-- Here I will list all my events from the 'Veranstaltungen' collection:
-- they should be sorted by the performance's dates perf_date (from the grid field) and
-grouped by month - if possible with paginate function, otherwise the list may get too long,
-- events with past dates should be hidden from this list,
-- if there are no_results a simple text message 'No Events' is displayed.
-- the toggles: monsun_digital special-event_toggle extra_event_colour few_tickets_left sold_out cancelled last_performance premiere_toggle premiere_type
-are visual messages, I just need to access to them in the loop -->
-
 <div class="outer-grid fluid-container">
-    <!-- Event's module -->
     <!-- Month's name -->
     {{ events:future group_by_format="M-Y" }}
     {{ if no_results }}
     <!-- message 'No Events'  -->
-    <div class="text-3xl text-black lg:text-4xl dark:text-white">No events/Keine Vorstellungen zur Zeit</div>
+    <div class="text-3xl text-black lg:text-4xl dark:text-white">Keine Vorstellungen zur Zeit</div>
     {{ else }}
     {{ date_groups }}
     <div class="text-3xl text-black lg:text-4xl dark:text-white">{{ date_group format_localized="%B %G" }}</div>
     {{ entries }}
-    <div class="items-baseline grid-cols-12 gap-4 p-3 md:grid bg-neutral-100 dark:bg-darkGray">
-        <div class="col-span-4">
-            <!-- Event's category from the Kategorien taxonomy -->
-            <button aria-label="Vorstellungen in der {{ kategorien }} {{ title }} {{
-                                /kategorien }} Kategorie Zeigen"
-                class="p-2 text-xs font-bold tracking-widest text-white uppercase sm:text-sm" style="background-color: {{ kategorien }} {{ kategorie_farbe }}{{
-                                /kategorien }};">{{ kategorien }} <a href="{{ url }}">{{ title }}</a>
-                {{ /kategorien }}</button>
-            <!-- Special event -->
-            {{if special_event_toggle}}
-            <div class="pt-1 font-medium tracking-widest text-black uppercase sm:text-lg dark:text-white"
-                style="color: {{ special_event_colour }};">{{ special_event_title }}</div>
-            {{ /if }}
-            <!-- Premiere Type -->
-            {{if premiere_toggle}}<div
-                class="pt-1 font-medium tracking-widest text-black uppercase sm:text-lg dark:text-white">
-                {{premiere_type}} </div>
-            {{ /if }}
-            <!-- Event's date and time -->
-            <div class="text-black sm:text-lg dark:text-white">{{ perf_date format_localized="%A %d %B %Y" }}</div>
-            <div class="text-black sm:text-lg dark:text-white">{{ perf_date format="H:i"}} Uhr</div>
-            <!-- monsun.digital -->
-            {{if monsun_digital }}
-            <p class="pr-1 text-black dark:text-white">monsun.digital</p>
-            {{ /if }}
-        </div>
-        <!-- Event's title and subtitle -->
-        <div class="col-span-8 pt-5 sm:text-lg md:py-0">
-            <div class="text-xl font-bold leading-tight text-black sm:text-2xl md:leading-normal dark:text-white"><a
-                    href="{{ url }}">{{ title }}</a>
-            </div>
-            <div class="text-black sm:text-lg dark:text-white">{{ subtitle }}</div>
-            <!-- Few tickets left -->
-            {{if few_tickets_left}}<div class=" text-error-600 sm:text-lg"> Restkarten!
-            </div> {{ /if }}
-            <!-- Last performance -->
-            {{if last_performance}}<div class=" text-error-600 sm:text-lg"> Zum letzten Mal!
-            </div> {{ /if }}
-            <!-- Event's ticket URL -->
-            <!-- Tickets sold out -->
-            {{ if sold_out}}
-            <div class="pt-3 font-bold tracking-widest uppercase dark:text-white sm:text-lg">Ausverkauft!
-            </div>
-            <!-- Event cancelled -->
-            {{ elseif cancelled }}
-            <div class="pt-3 font-bold tracking-widest uppercase text-error-600 sm:text-lg">Abgesagt
-            </div>
-            <!-- Tickets available -->
-            {{ else }}
-            <button class="text-black uppercase dark:text-white hover:text-monsun dark:hover:text-monsun sm:text-lg"><a
-                    class="block" href="{{ ticket_url }}">
-                    <div class="pt-3 font-bold tracking-widest uppercase">Karten<span
-                            class="font-bold text-monsun">&nbsp;→</span>
-                    </div>
-                </a>
-            </button>
-            {{ /if }}
-        </div>
-    </div>
+    {{ partial:components/monsun_performance_wallpiece}}
     {{ /entries }}
     {{ /date_groups }}
     {{ /if }}
