@@ -1,0 +1,13 @@
+<div class="outer-grid fluid-container">
+    <!-- Premieres module -->
+    {{ events:digital as="dates" }}
+    {{ if no_results }}
+    <div class="text-3xl text-black lg:text-4xl dark:text-white">Keine Online-Vorstellungen zur Zeit</div>
+    {{ else }}
+    <div class="text-3xl text-black lg:text-4xl dark:text-white">Vorstellungen Online - monsun.digital</div>
+    {{ dates }}
+    {{ partial:components/monsun_performance_wallpiece}}
+    {{ /dates }}
+    {{ /if }}
+    {{ /events:digital }}
+</div>
