@@ -54,8 +54,3 @@ fields:
           fields:
             -
               import: video
-        figure_onesize:
-          display: Image
-          fields:
-            -
-              import: figure_one_size

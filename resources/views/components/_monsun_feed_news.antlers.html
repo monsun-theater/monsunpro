@@ -9,7 +9,7 @@
             <div class="text-xl sm:text-2xl font-bold leading-tight text-black dark:text-white">
                 {{ title }}</div>
             <div class="sm:text-lg pb-2 text-black dark:text-white">{{ untertitel }}</div>
-            <figure class="pb-3"><img src="{{ bild_url }}" alt=""></figure>
+            <figure class="pb-3">{{ partial:components/picture class="w-full"}}</figure>
             <div
                 class="text-sm sm:text-base text-black dark:text-white hover:text-monsun dark:hover:text-monsun duration-300">
                 {{ einleitung }}<span class="text-monsun font-bold"> →</span></div>
