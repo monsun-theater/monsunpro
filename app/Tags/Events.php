@@ -35,6 +35,15 @@ class Events extends CollectionTag
         );
     }
 
+    public function digital()
+    {
+        return $this->outputDates(
+            $this
+                ->getDates()
+                ->filter(fn (array $event) => Arr::get($event, 'monsun_digital', false))
+        );
+    }
+
     public function today()
     {
         return $this->outputDates($this
