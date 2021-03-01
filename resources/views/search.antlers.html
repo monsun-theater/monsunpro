@@ -13,7 +13,7 @@
             {{ partial:typography/paragraph class="dark:text-white" content="{trans:strings.search_no_results}" }}
         </article>
         {{ else }}
-        <article class="col-span-12 md:col-span-8 md:col-start-5">
+        <article class="dark:bg-black col-span-12 md:col-span-8 md:col-start-5">
             <a class="flex flex-col pb-2" href="{{ url }}">
                 {{# <span class="text-neutral-400">{{ permalink }}</span> #}}
 
@@ -24,8 +24,9 @@
                 {{ partial:components/figure_onesize :content="image" }}
 
             </a>
-            <a href="{{ url }}">
-                <p class="dark:text-white hover:text-monsun dark:hover:text-monsun">
+            <a class="dark:text-white col-span-12 md:col-span-8 md:col-start-5" href="{{ url }}">
+                <p
+                    class="dark:bg-black dark:text-white hover:text-monsun dark:hover:text-monsun col-span-12 md:col-span-8 md:col-start-5">
                     {{# Sow the SEO meta description if available. #}}
                     {{ if seo_description }}
                     {{ seo_description }}

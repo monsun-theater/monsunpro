@@ -6,7 +6,7 @@ preferences:
   collections:
     kuenstler_innen:
       per_page: 25
-      after_save: create_another
+      after_save: continue_editing
     veranstaltungen:
       columns:
         - date
@@ -34,7 +34,3 @@ preferences:
   assets:
     assets:
       mode: table
-  favorites:
-    -
-      name: 'Startseite ‹ Seiten ‹ Collections'
-      url: collections/pages/entries/home/home

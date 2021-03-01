@@ -10,6 +10,10 @@ fields:
     handle: size
     field: common.size
     config:
+      options:
+        md: MD
+        lg: LG
+        xl: XL
       width: 50
       instructions: 'The size in which the image should be displayed.'
   -
