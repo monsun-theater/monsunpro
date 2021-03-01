@@ -4,7 +4,10 @@ without having to worry about margins or paddings. #}}
 <main class="outer-grid fluid-container">
     {{ partial:components/_monsun_feed_upcoming_perf}}
     {{ partial:components/_monsun_feed_news}}
-    {{ partial:components/_monsun_feed_programme}}
+    <!-- Spielplan -->
+    <div class="text-3xl lg:text-4xl text-black dark:text-white">Spielplan</div>
+    {{ collection:veranstaltungen limit="3" sort="date" }} {{ partial:components/_monsun_feed_programme}}{{
+    /collection:veranstaltungen }}
     {{ page_builder scope="block" }}
     {{ partial src="page_builder/{type}" }}
     {{ /page_builder }}

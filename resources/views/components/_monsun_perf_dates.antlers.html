@@ -3,31 +3,31 @@
 <div class="grid-cols-12 gap-4 md:grid">
     <div class="col-span-8 p-3 md:col-start-5 bg-neutral-100 dark:bg-darkGray">
         {{ performance_dates future="true" }}
-            {{ if no_results }}
-                <div class="col-span-3 text-base font-medium text-black sm:text-xl dark:text-white">
-                    Keine Vorstellungen/No Upcoming Events
+        {{ if no_results }}
+        <div class="col-span-3 text-base font-medium text-black sm:text-xl dark:text-white">
+            Zur Zeit keine Vorstellungen
+        </div>
+        {{ else }}
+        <div class="grid-cols-8 gap-4 pb-3 sm:grid sm:pb-1">
+            <div class="col-span-3 text-base font-medium text-black sm:text-xl dark:text-white">
+                <div>
+                    {{ perf_date format_localized="%A"}}
                 </div>
-            {{ else }}
-                <div class="grid-cols-8 gap-4 pb-3 sm:grid sm:pb-1">
-                    <div class="col-span-3 text-base font-medium text-black sm:text-xl dark:text-white">
-                        <div>
-                            {{ perf_date format_localized="%A"}}
-                        </div>
-                    </div>
-                    <div class="pb-3 text-xl text-black sm:col-span-5 dark:text-white">
-                        <div>
-                            {{ perf_date format_localized="%d %B %Y"}} | {{ perf_date format="H:i"}} Uhr
-                        </div>
-                        <button class="tracking-wider text-center uppercase hover:text-monsun sm:text-lg"><a class="block"
-                                href="{{ ticket_url }}">
-                                <div class="font-bold tracking-widest uppercase">Karten<span
-                                        class="font-bold text-monsun">&nbsp;→</span>
-                                </div>
-                            </a>
-                        </button>
-                    </div>
+            </div>
+            <div class="pb-3 text-xl text-black sm:col-span-5 dark:text-white">
+                <div>
+                    {{ perf_date format_localized="%d %B %Y"}} | {{ perf_date format="H:i"}} Uhr
                 </div>
-            {{ /if }}
+                <button class="tracking-wider text-center uppercase hover:text-monsun sm:text-lg"><a class="block"
+                        href="{{ ticket_url }}">
+                        <div class="font-bold tracking-widest uppercase">Karten<span
+                                class="font-bold text-monsun">&nbsp;→</span>
+                        </div>
+                    </a>
+                </button>
+            </div>
+        </div>
+        {{ /if }}
         {{ /performance_dates }}
     </div>
 </div>

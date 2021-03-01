@@ -1,9 +1,9 @@
 <div class="md:grid grid-cols-12 gap-4">
     <div class="col-span-8 md:col-start-5">
         {{ partial src="typography/h3" :content="subtitle" class="dark:text-white pb-1" }}
-        {{ if from_to_toggle }}
+        <!-- {{ if from_to_toggle }}
         <div class="text-sm text-black dark:text-white"> <span class="font-bold ">{{ from_to }}</span></div>
-        {{ /if }}
+        {{ /if }} -->
         <div class="text-sm text-black dark:text-white"> <span class="font-bold ">Premiere:&nbsp</span>
             {{ premiere_date format_localized="%A, %d %B %Y" }} | {{ premiere_date format_localized="%H:%M" }} Uhr</div>
         <div class="text-sm text-black dark:text-white"><span class="font-bold ">Dauer:&nbsp</span>{{ duration }} | {{
