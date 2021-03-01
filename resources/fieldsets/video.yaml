@@ -8,9 +8,8 @@ fields:
       type: text
       listable: hidden
       display: 'Video URL'
-      instructions: 'The URL of the video you''d like to embed. ''Do Not Track'' parameter is ''ON'' by default.'
+      instructions: 'The URL of the video you''d like to embed.'
       antlers: false
-      append: '?dnt=1'
   -
     handle: caption
     field:
@@ -21,3 +20,11 @@ fields:
       display: Caption
       instructions: 'An optional caption that will be displayed under the video.'
       antlers: false
+  -
+    handle: do_not_track
+    field:
+      display: 'Do not track'
+      type: toggle
+      icon: toggle
+      instructions: 'Turn this on if you add videos from Vimeo.'
+      listable: hidden

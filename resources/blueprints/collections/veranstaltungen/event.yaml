@@ -203,6 +203,30 @@ sections:
       -
         import: page_builder
       -
+        handle: image_gallery
+        field:
+          mode: grid
+          container: assets
+          folder: produktionen
+          restrict: false
+          allow_uploads: true
+          display: 'Image gallery'
+          type: assets
+          icon: assets
+          listable: hidden
+          width: 66
+      -
+        handle: image_credits
+        field:
+          input_type: text
+          antlers: false
+          display: 'Image credits'
+          type: text
+          icon: text
+          instructions: 'Image Copyright Info'
+          width: 33
+          listable: hidden
+      -
         handle: perf_section
         field:
           display: Veranstaltungen

@@ -1,6 +1,6 @@
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<div class="md:grid grid-cols-12">
-    <div class="col-span-8 md:col-start-5">
+<div class="lg:grid grid-cols-12">
+    <div class="col-span-8 lg:col-start-5">
         <div x-data="{swiper: null}" x-init="swiper = new Swiper($refs.container, {
     loop: true,
     slidesPerView: 1,
@@ -20,14 +20,30 @@
             <div class="swiper-container" x-ref="container">
                 <div class="swiper-wrapper">
                     <!-- Slides -->
-                    <div class="swiper-slide ">
+                    {{image_gallery}}
+                    <div class="swiper-slide">
                         <div class="flex flex-col overflow-hidden">
                             <div class="flex-shrink-0">
-                                <img class="h-auto w-full object-cover" src="https://source.unsplash.com/kVKz9qnJC-k"
-                                    alt="">
+                                {{ if image_gallery }}
+                                <picture>
+                                    {{ if extension == 'svg' || extension == 'gif' }}
+                                    <img class="" src="{{ url }}" alt="{{ alt }}" />
+                                    {{ else }}
+                                    <source srcset="{{ glide:url }}" type="image/webp">
+                                    <source srcset=" {{ glide:url }} " {{ if extension=='png' }} type="image/png" {{
+                                        else }} type="image/jpeg" {{ /if }}>
+                                    <img {{ if cover }} class="object-cover {{ class }}"
+                                        style="object-position: {{ focus | background_position }}" {{ else }}
+                                        class="{{ class }}" {{ /if }} src="{{ glide:url preset='lg' }}" alt="{{ alt }}"
+                                        {{ if lazy }} loading="lazy" {{ /if }}>
+                                    {{ /if }}
+                                </picture>
+                                {{ /if }}
                             </div>
+                            <div class="text-neutral-300 dark:text-neutral-600 text-xs text-center">© {{ image_credits
+                                }}</div>
                         </div>
-                    </div>
+                    </div>{{/image_gallery}}
                 </div>
             </div>
 
