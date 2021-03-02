@@ -1,0 +1,144 @@
+sections:
+  monsun_theaters_team:
+    display: 'monsun.theaters team'
+    fields:
+      -
+        handle: mitglieder
+        field:
+          collapse: false
+          sets:
+            neues_mitgleid:
+              display: 'Neues Mitgleid'
+              fields:
+                -
+                  handle: name
+                  field:
+                    input_type: text
+                    antlers: false
+                    display: Name
+                    type: text
+                    icon: text
+                    instructions: 'Member''s Name'
+                    listable: hidden
+                    width: 50
+                -
+                  handle: role_list
+                  field:
+                    display: Rollen
+                    type: list
+                    icon: list
+                    listable: hidden
+                    width: 50
+                    instructions: 'Member''s roles'
+                -
+                  handle: e-mail-adresse
+                  field:
+                    collapse: false
+                    sets:
+                      neue_e-mail-adresse:
+                        display: 'Neue E-Mail-Adresse'
+                        fields:
+                          -
+                            handle: e-mail
+                            field:
+                              input_type: text
+                              antlers: false
+                              display: E-mail
+                              type: text
+                              icon: text
+                              instructions: 'Member''s E-mail Address'
+                              listable: hidden
+                          -
+                            handle: extra_info_email
+                            field:
+                              display: 'Extra Info'
+                              type: toggle
+                              icon: toggle
+                              instructions: 'Additional info'
+                              listable: hidden
+                          -
+                            handle: info
+                            field:
+                              input_type: text
+                              antlers: false
+                              display: Info
+                              type: text
+                              icon: text
+                              instructions: 'Additional description'
+                              listable: hidden
+                              if:
+                                extra_info_email: 'equals true'
+                    display: E-Mail-Adresse
+                    type: replicator
+                    icon: replicator
+                    instructions: 'Member''s E-mail addresses'
+                    listable: hidden
+                    width: 50
+                -
+                  handle: telefonnummer
+                  field:
+                    collapse: false
+                    sets:
+                      telefonnummer:
+                        display: '+ Telefonnummer'
+                        fields:
+                          -
+                            handle: nummer
+                            field:
+                              input_type: text
+                              antlers: false
+                              display: Nummer
+                              type: text
+                              icon: text
+                              instructions: 'Telephone Number'
+                              listable: hidden
+                          -
+                            handle: extra_info_telefon
+                            field:
+                              display: 'Extra info'
+                              type: toggle
+                              icon: toggle
+                              instructions: 'Any additional info'
+                              listable: hidden
+                          -
+                            handle: info
+                            field:
+                              input_type: text
+                              antlers: false
+                              display: Info
+                              type: text
+                              icon: text
+                              instructions: 'Additional description'
+                              listable: hidden
+                              if:
+                                extra_info_telefon: 'equals true'
+                    display: Telefonnummer
+                    type: replicator
+                    icon: replicator
+                    instructions: 'Member''s Phone numbers'
+                    width: 50
+                    listable: hidden
+                -
+                  handle: extra_info_toggle
+                  field:
+                    display: 'Extra info'
+                    type: toggle
+                    icon: toggle
+                    instructions: 'Add additional information'
+                    listable: hidden
+                -
+                  handle: extra_info
+                  field:
+                    mode: dynamic
+                    display: 'Extra Info'
+                    type: array
+                    icon: array
+                    listable: hidden
+                    instructions: 'Any additional information'
+                    if:
+                      extra_info_toggle: 'equals true'
+          display: Mitglieder
+          type: replicator
+          icon: replicator
+          instructions: 'Team Members'
+          listable: hidden

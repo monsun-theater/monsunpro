@@ -1,0 +1,98 @@
+title: 'Monsun Team'
+data:
+  mitglieder:
+    -
+      name: 'Francoise Hüsges'
+      role_list:
+        - Intendanz
+        - Geschäftsführung
+      e-mail-adresse:
+        -
+          e-mail: f.huesges@monsun.theater
+          type: neue_e-mail-adresse
+          enabled: true
+          extra_info_email: false
+      extra_info_toggle: false
+      type: neues_mitgleid
+      enabled: true
+      telefonnummer:
+        -
+          extra_info_telefon: false
+          type: telefonnummer
+          enabled: true
+    -
+      name: 'Ole Schmetzer'
+      role_list:
+        - Technik
+      e-mail-adresse:
+        -
+          e-mail: technik@monsun.theater
+          type: neue_e-mail-adresse
+          enabled: true
+          extra_info_email: false
+      extra_info_toggle: false
+      type: neues_mitgleid
+      enabled: true
+    -
+      role_list:
+        - Presse
+        - Öffentlichkeitsarbeit
+        - Kommunikation
+      e-mail-adresse:
+        -
+          e-mail: info@monsun.theater
+          type: neue_e-mail-adresse
+          enabled: true
+          extra_info_email: false
+        -
+          e-mail: presse@monsun.theater
+          type: neue_e-mail-adresse
+          enabled: true
+          extra_info_email: false
+      extra_info_toggle: false
+      type: neues_mitgleid
+      enabled: true
+      name: 'Jenny Schmidt'
+    -
+      name: 'Lotta Huber'
+      role_list:
+        - 'FSJ Kultur'
+      e-mail-adresse:
+        -
+          e-mail: info@monsun.theater
+          extra_info_email: false
+          type: neue_e-mail-adresse
+          enabled: true
+      extra_info_toggle: false
+      type: neues_mitgleid
+      enabled: true
+    -
+      name: 'ADticket GmbH'
+      role_list:
+        - Ticketdienstleister
+      e-mail-adresse:
+        -
+          e-mail: info@adticket.de
+          extra_info_email: false
+          type: neue_e-mail-adresse
+          enabled: true
+      telefonnummer:
+        -
+          nummer: '0180 - 60 50 400'
+          extra_info_telefon: true
+          info: '(0,20 € / Anruf inkl. MwSt aus den Festnetzen, max. 0,60 € / Anruf inkl. MwSt aus den Mobilfunknetzen)'
+          type: telefonnummer
+          enabled: true
+      extra_info_toggle: true
+      extra_info:
+        Website: www.adticket.de
+      type: neues_mitgleid
+      enabled: true
+    -
+      name: monsun.theater
+      role_list:
+        - Bildnachweis
+        - Illustration
+      extra_info_toggle: false
+      type: neues_mitgleid
+      enabled: true
