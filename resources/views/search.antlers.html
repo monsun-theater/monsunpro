@@ -1,54 +1,41 @@
 {{# The search template showing search results, if you enable the search form partial in
 `views/navigation/_main.antlers.html` and the route in `routes/web.php`. #}}
-<main class="outer-grid">
-    <section class="fluid-container grid grid-cols-12 gap-y-6">
+<main class="outer-grid fluid-container">
+    <div class="text-3xl lg:text-4xl text-black dark:text-white">{{trans:strings.search_results_for}} <span
+            class="italic">
+            {{get:q}}</span> </div>
+    <section class=" grid grid-cols-12 gap-y-6">
+
         <div class="col-span-12 md:col-span-8 md:col-start-5">
-            {{ partial:typography/h1 class="mb-2 dark:text-white" content="{trans:strings.search_results_for}
-            &quot;{get:q}&quot;" }}
-        </div>
+            {{ search:results }}
+            {{ if no_results }}
+            <article class="col-span-12 md:col-span-8 md:col-start-5">
+                {{ partial:typography/paragraph class="dark:text-white" content="{trans:strings.search_no_results}" }}
+                {{ else }}
+                <article class="dark:bg-black col-span-12 md:col-span-8 md:col-start-5">
+                    <a class="flex flex-col pb-2" href="{{ url }}">
+                        {{# <span class="text-neutral-400">{{ permalink }}</span> #}}
 
-        {{ search:results }}
-        {{ if no_results }}
-        <article class="col-span-12 md:col-span-8 md:col-start-5">
-            {{ partial:typography/paragraph class="dark:text-white" content="{trans:strings.search_no_results}" }}
-        </article>
-        {{ else }}
-        <article class="dark:bg-black col-span-12 md:col-span-8 md:col-start-5">
-            <a class="flex flex-col pb-2" href="{{ url }}">
-                {{# <span class="text-neutral-400">{{ permalink }}</span> #}}
+                        {{ partial:typography/h2 class="mt-0 text-4xl font-bold tracking-wider" color="text-black
+                        dark:text-white
+                        hover:text-monsun
+                        dark:hover:text-monsun" :content="title" }}
+                        {{ partial:components/figure_onesize :content="image" }}
+                        {{ page_builder limit="1" }}
+                        <span class="dark:bg-black dark:text-white hover:text-monsun dark:hover:text-monsun">{{ if bard
+                            }}
+                            {{ bard where="type:text" limit="1" }}
+                            {{ text | strip_tags | safe_truncate:300:... }}
+                            {{ /bard }}
 
-                {{ partial:typography/h2 class="mt-0 text-4xl font-bold tracking-wider" color="text-black
-                dark:text-white
-                hover:text-monsun
-                dark:hover:text-monsun" :content="title" }}
-                {{ partial:components/figure_onesize :content="image" }}
-
-            </a>
-            <a class="dark:text-white col-span-12 md:col-span-8 md:col-start-5" href="{{ url }}">
-                <p
-                    class="dark:bg-black dark:text-white hover:text-monsun dark:hover:text-monsun col-span-12 md:col-span-8 md:col-start-5">
-                    {{# Sow the SEO meta description if available. #}}
-                    {{ if seo_description }}
-                    {{ seo_description }}
-
-                    {{# Fall back to the bard field. #}}
-                    {{ elseif page_builder }}
-                    {{ page_builder limit="1" }}
-                    {{ if bard }}
-                    {{ bard where="type:text" limit="1" }}
-                    {{ text | strip_tags | safe_truncate:300:... }}
-                    {{ /bard }}
-
-                    {{# Or a field called `text`. #}}
-                    {{ elseif text }}
-                    {{ text safe_truncate="180|..." }}
+                            {{# Or a field called `text`. #}}
+                            {{ elseif text }}
+                            {{ text safe_truncate="180|..." }}
+                            {{ /if }}<span class="text-monsun font-bold"> →</span>
+                            {{ /page_builder }}</span>
+                    </a>
                     {{ /if }}
-                    {{ /page_builder }}
-                    {{ /if }} <span class="text-monsun font-bold"> →</span></div>
-                </p>
-            </a>
-        </article>
-        {{ /if }}
-        {{ /search:results }}
+                    {{ /search:results }}
+        </div>
     </section>
 </main>

@@ -29,7 +29,7 @@
             {{ page_builder limit="1" }}
             {{ if bard }}
             {{ bard where="type:text" limit="1" }}
-            {{ text | safe_truncate:300:... }}
+            {{ text | strip_tags | safe_truncate:300:... }}
             {{ /bard }}
             {{# Or a field called `text`. #}}
             {{ elseif text }}

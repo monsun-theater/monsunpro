@@ -1,0 +1,52 @@
+<div class="fluid-container outer-grid">
+    {{ if no_results }}
+    <div class="text-3xl text-black lg:text-4xl dark:text-white">Keine Vorstellungen zur Zeit</div>
+    {{ else }}
+    <div class="text-3xl text-black lg:text-4xl dark:text-white">{{ title }}</div>
+    <div class="md:grid grid-cols-12 gap-4 items-baseline pb-6">
+        {{ entries }}
+        <div class="col-span-4">
+            <button aria-label="Vorstellungen in der {{ kategorien }} {{ title }} {{
+            /kategorien }} Kategorie Zeigen"
+                class="p-2 mb-1 text-xs font-bold tracking-widest text-white uppercase sm:text-sm" style="background-color: {{ kategorien }} {{ kategorie_farbe }}{{
+            /kategorien }};">{{ kategorien }} <a href="{{ url }}">{{ title }}
+                    {{ /kategorien }}{{ if from_to_toggle }} <span>{{from_to}}</span> {{ /if }}</a></button>
+            {{ veranstaltungsoerter }}
+
+            <div class="text-black sm:text-lg dark:text-white">{{ title }} </div>{{ /veranstaltungsoerter }}
+        </div>
+
+        <div class="col-span-8">
+            <a href=" {{ url }}">
+                <div class="text-xl font-bold sm:text-2xl leading-tight text-black dark:text-white">
+                    {{ title }}</div>
+                <div class="sm:text-lg pb-2 dark:text-white font-medium">{{ additional_title }}</div>
+                <div class="sm:text-lg pb-2 dark:text-white">{{ subtitle }}</div>
+                <figure class="pb-3">{{ partial:components/picture class="w-full"}}</figure>
+            </a>
+
+            <a href=" {{ url }}"
+                class="italic text-sm sm:text-base text-black dark:text-white hover:text-monsun dark:hover:text-monsun">
+                {{# Sow the SEO meta description if available. #}}
+                {{ if seo_description }}
+                {{ seo_description }}
+                {{# Fall back to the bard field. #}}
+                {{ elseif page_builder }}
+                {{ page_builder limit="1" }}
+                {{ if bard }}
+                {{ bard where="type:text" limit="1" }}
+                {{ text | strip_tags | safe_truncate:300:... }}
+                {{ /bard }}
+                {{# Or a field called `text`. #}}
+                {{ elseif text }}
+                {{ text safe_truncate="180|..." }}
+                {{ /if }}
+                {{ /page_builder }}
+                {{ /if }}<span class="text-monsun font-bold">→</span>
+            </a>
+        </div>
+
+        {{ /entries }}
+    </div>
+    {{ /if }}
+</div>

@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::statamic('/search', 'search', [
-    'title' => 'Suchergebnisse'
+    'title' => 'Search results'
  ]);
 
 Route::get('/!/DynamicToken/refresh', 'DynamicToken@getRefresh');
