@@ -444,6 +444,90 @@ sections:
           instructions: 'Performance Dates'
           listable: hidden
           add_row: '+ Vorstellung / + Performance'
+      -
+        handle: presse_section
+        field:
+          display: Presse
+          type: section
+          icon: section
+          instructions: Pressroom
+          listable: hidden
+      -
+        handle: bildmaterial
+        field:
+          mode: grid
+          container: assets
+          folder: produktionen
+          restrict: false
+          allow_uploads: true
+          display: Bildmaterial
+          type: assets
+          icon: assets
+          instructions: Imagery
+          width: 33
+          listable: hidden
+      -
+        handle: pressemitteilung
+        field:
+          mode: grid
+          container: assets
+          folder: produktionen
+          restrict: false
+          allow_uploads: true
+          display: Pressemitteilung
+          type: assets
+          icon: assets
+          instructions: 'Press Release'
+          width: 33
+          listable: hidden
+      -
+        handle: pressestimmen
+        field:
+          mode: grid
+          container: assets
+          folder: produktionen
+          restrict: false
+          allow_uploads: true
+          display: Pressestimmen
+          type: assets
+          icon: assets
+          instructions: 'Press Reports'
+          width: 33
+          listable: hidden
+      -
+        handle: zusatsinfo_zeigen_presse
+        field:
+          display: 'Zusatsinfo zeigen'
+          type: toggle
+          icon: toggle
+          instructions: 'Show additional info'
+          listable: hidden
+      -
+        handle: zusatsinfo_presse
+        field:
+          always_show_set_button: false
+          buttons:
+            - bold
+            - italic
+            - unorderedlist
+            - orderedlist
+            - removeformat
+            - anchor
+          save_html: false
+          toolbar_mode: fixed
+          link_noopener: false
+          link_noreferrer: false
+          target_blank: true
+          reading_time: false
+          fullscreen: true
+          allow_source: true
+          display: Zusatsinfo
+          type: bard
+          icon: bard
+          instructions: 'Additional info'
+          listable: hidden
+          if:
+            zusatsinfo_zeigen_presse: 'equals true'
   sidebar:
     display: Sidebar
     fields:
