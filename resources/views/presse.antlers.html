@@ -3,31 +3,30 @@
     <section class=" grid grid-cols-12 gap-y-6">
 
         <div class="col-span-12 md:col-span-8 md:col-start-5">
-            {{ collection:veranstaltungen as="posts"}}
-            {{ posts }}
-            {{ partial src="typography/h3" :content="title" class="text-2xl dark:text-white"}}
+            {{ collection:veranstaltungen show_unpublished="true" }}
+            <a href={{ url }}>{{ partial src="typography/h3" :content="title" class="text-2xl dark:text-white"}}</a>
             <div class="pb-12">
-                <div>{{ bildmaterial }}<a
+                <div>{{ bildmaterial }} <a
                         class="text-black text-xl dark:text-white hover:text-monsun dark:hover:text-monsun"
-                        href="{{ url }}">{{basename}}
+                        href="{{ url }}">Bildmaterial
                         ({{size}})<span class="text-monsun font-bold"> →</span> </a>{{
                     /bildmaterial }}
                 </div>
                 <div>{{ pressemitteilung }} <a
-                        class="text-black dark:text-white text-xl hover:text-monsun dark:hover:text-monsun"
-                        href="{{ url }}">{{title}}
+                        class="text-black text-xl dark:text-white  hover:text-monsun dark:hover:text-monsun"
+                        href="{{ url }}">Pressemitteilung
                         ({{size}})<span class="text-monsun font-bold"> →</span> </a>{{
                     /pressemitteilung }}
                 </div>
                 <div">{{ pressestimmen }} <a
                         class="text-black text-xl dark:text-white hover:text-monsun dark:hover:text-monsun"
-                        href="{{ url }}">{{title}}
+                        href="{{ url }}">Pressestimmen
                         ({{size}})<span class="text-monsun font-bold"> →</span> </a>{{
                     /pressestimmen }}
             </div>
-            {{ /posts }}
+            {{ /collection:veranstaltungen}}
         </div>
-        {{ /collection:veranstaltungen}}
+
         </div>
     </section>
 
