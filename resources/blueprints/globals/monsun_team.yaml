@@ -22,14 +22,16 @@ sections:
                     listable: hidden
                     width: 50
                 -
-                  handle: role_list
+                  handle: rolle
                   field:
-                    display: Rollen
-                    type: list
-                    icon: list
+                    input_type: text
+                    antlers: false
+                    display: Rolle
+                    type: text
+                    icon: text
+                    instructions: 'Member''s role'
                     listable: hidden
                     width: 50
-                    instructions: 'Member''s roles'
                 -
                   handle: e-mail-adresse
                   field:
@@ -127,14 +129,29 @@ sections:
                     instructions: 'Add additional information'
                     listable: hidden
                 -
-                  handle: extra_info
+                  handle: zusatsinfo
                   field:
-                    mode: dynamic
-                    display: 'Extra Info'
-                    type: array
-                    icon: array
+                    always_show_set_button: false
+                    buttons:
+                      - bold
+                      - italic
+                      - unorderedlist
+                      - orderedlist
+                      - removeformat
+                      - anchor
+                    save_html: false
+                    toolbar_mode: fixed
+                    link_noopener: false
+                    link_noreferrer: false
+                    target_blank: false
+                    reading_time: false
+                    fullscreen: true
+                    allow_source: true
+                    display: Zusatsinfo
+                    type: bard
+                    icon: bard
+                    instructions: 'Any additional info'
                     listable: hidden
-                    instructions: 'Any additional information'
                     if:
                       extra_info_toggle: 'equals true'
           display: Mitglieder

@@ -1,4 +1,4 @@
-title: 'Monsun Team'
+title: Monsun_team
 data:
   mitglieder:
     -
@@ -11,15 +11,19 @@ data:
           e-mail: f.huesges@monsun.theater
           type: neue_e-mail-adresse
           enabled: true
-          extra_info_email: false
+          extra_info_email: true
+          info: '(Antwort innerhalb von 24 Stunden)'
       extra_info_toggle: false
       type: neues_mitgleid
       enabled: true
       telefonnummer:
         -
-          extra_info_telefon: false
+          extra_info_telefon: true
           type: telefonnummer
           enabled: true
+          nummer: '07001238126'
+          info: '(Zwischen 10-18)'
+      rolle: 'Intendanz, Geschäftsführung'
     -
       name: 'Ole Schmetzer'
       role_list:
@@ -33,6 +37,7 @@ data:
       extra_info_toggle: false
       type: neues_mitgleid
       enabled: true
+      rolle: Technik
     -
       role_list:
         - Presse
@@ -53,6 +58,7 @@ data:
       type: neues_mitgleid
       enabled: true
       name: 'Jenny Schmidt'
+      rolle: 'Presse, Öffentlichkeitsarbeit, Kommunikation'
     -
       name: 'Lotta Huber'
       role_list:
@@ -66,6 +72,7 @@ data:
       extra_info_toggle: false
       type: neues_mitgleid
       enabled: true
+      rolle: 'FSJ Kultur'
     -
       name: 'ADticket GmbH'
       role_list:
@@ -73,7 +80,7 @@ data:
       e-mail-adresse:
         -
           e-mail: info@adticket.de
-          extra_info_email: false
+          extra_info_email: true
           type: neue_e-mail-adresse
           enabled: true
       telefonnummer:
@@ -88,11 +95,69 @@ data:
         Website: www.adticket.de
       type: neues_mitgleid
       enabled: true
+      zusatsinfo:
+        -
+          type: paragraph
+          content:
+            -
+              type: text
+              text: 'Kaiserstr. 69 '
+        -
+          type: paragraph
+          content:
+            -
+              type: text
+              text: 'D-60329 Frankfurt'
+      rolle: Ticketdienstleister
     -
       name: monsun.theater
       role_list:
         - Bildnachweis
         - Illustration
       extra_info_toggle: false
+      type: neues_mitgleid
+      enabled: true
+      rolle: 'Bildnachweis, Illustration'
+    -
+      name: 'Hamburger Sparkasse'
+      rolle: Bankverbindung
+      extra_info_toggle: true
+      zusatsinfo:
+        -
+          type: paragraph
+          content:
+            -
+              type: text
+              text: 'IBAN: DE51200505501042232395'
+        -
+          type: paragraph
+          content:
+            -
+              type: text
+              text: 'BIC: HASPDEHHXXX'
+      type: neues_mitgleid
+      enabled: true
+    -
+      rolle: Copyright
+      extra_info_toggle: true
+      zusatsinfo:
+        -
+          type: paragraph
+          content:
+            -
+              type: text
+              text: 'Sämtliche Inhalte und Fotos unterliegen dem Urheberrecht und dürfen nicht ohne vorherige Genehmigung kopiert und anderweitig genutzt werden.'
+      type: neues_mitgleid
+      enabled: true
+    -
+      rolle: Haftungsausschluss
+      extra_info_toggle: true
+      zusatsinfo:
+        -
+          type: paragraph
+          content:
+            -
+              type: text
+              text: 'Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.'
       type: neues_mitgleid
       enabled: true

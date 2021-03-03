@@ -1,0 +1,28 @@
+<main class="outer-grid fluid-container">
+    {{ partial src="typography/h2" :content="title" class="dark:text-white"}}
+    <div class="md:grid grid-cols-12 gap-4">
+        <div class="col-span-8 md:col-start-5">
+            {{ monsun_team }}
+            {{mitglieder}}
+            <div class="pb-12">
+                {{ partial src="typography/h3" :content="rolle" class="text-xl dark:text-white"}}
+                <div class="text-lg dark:text-white font-medium"> {{name}} </div>
+
+                {{ e-mail-adresse }}<div class="text-lg dark:text-white"> <a
+                        class="text-lg dark:text-white hover:text-monsun dark:hover:text-monsun"
+                        href=" mailto:{{ e-mail | obfuscate_email }}">{{e-mail | obfuscate_email }}</a>{{ if
+                    extra_info_toggle }} {{ info }} {{ /if }}
+                </div>{{ /e-mail-adresse }}
+                {{ telefonnummer }} <div class="text-lg dark:text-white"><a href="tel:{{ nummer }}">{{ nummer }} </a>{{
+                    if extra_info_telefon}} {{ info }} {{ /if }}
+                </div>{{ /telefonnummer }}
+                <div class="text-lg dark:text-white"> {{ if extra_info_toggle}} {{zusatsinfo}}{{ /if }}</div>
+            </div>
+            {{/mitglieder}}
+            {{ /monsun_team }}
+        </div>
+    </div>
+    {{ page_builder scope="block" }}
+    {{ partial src="page_builder/{type}" }}
+    {{ /page_builder }}
+</main>
