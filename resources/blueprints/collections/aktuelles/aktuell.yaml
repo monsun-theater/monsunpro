@@ -22,14 +22,6 @@ sections:
       -
         import: figure_one_size
       -
-        handle: einleitung
-        field:
-          antlers: false
-          display: Einleitung
-          type: textarea
-          icon: textarea
-          listable: hidden
-      -
         import: page_builder
   sidebar:
     display: Sidebar

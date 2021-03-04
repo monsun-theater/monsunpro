@@ -31,8 +31,9 @@
 
             {{ posts }}
             <button
-                class="text-black dark:text-white inline-flex items-center pt-3 font-bold tracking-widest uppercase leading-none select-none whitespace-nowrap text-lg hover:text-monsun dark:hover:text-monsun"><a
-                    href="{{ url }}"><span class="text-monsun font-bold">←</span> {{ title }} </a> </button>
+                class=" text-black dark:text-white pt-3 font-bold tracking-widest uppercase leading-none select-none whitespace-normal text-lg hover:text-monsun dark:hover:text-monsun"><a
+                    href="{{ url }}"><span class="text-monsun font-bold ">←</span> {{ title }} </a>
+            </button>
             {{ /posts }}
 
             {{ /collection:previous }}
@@ -44,7 +45,7 @@
 
             {{ posts }}
             <button
-                class="text-black dark:text-white inline-flex items-center pt-3 tracking-widest font-bold uppercase leading-none select-none whitespace-nowrap text-lg hover:text-monsun dark:hover:text-monsun"><a
+                class="text-black dark:text-white pt-3 tracking-widest font-bold uppercase leading-none select-none whitespace-normal text-lg hover:text-monsun dark:hover:text-monsun"><a
                     href="{{ url }}">{{ title }} <span class="text-monsun font-bold"> →</span></a> </button>
             {{ /posts }}
             {{ /collection:next }}

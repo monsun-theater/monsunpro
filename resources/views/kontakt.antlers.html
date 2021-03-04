@@ -2,17 +2,15 @@
     {{ partial src="typography/h2" :content="title" class="dark:text-white"}}
     <div class="md:grid grid-cols-12 gap-4">
         <div class="col-span-8 md:col-start-5">
-
+            <div class="text-lg dark:text-white">{{ config:app:name }}</div>
             {{ kontaktdaten }}
             <div class="text-lg dark:text-white">{{ strasse }} {{ hausnummer }}</div>
             <div class="text-lg dark:text-white">{{ postleitzahl }} {{ wohnort}}</div>
-            <div><a class="text-lg dark:text-white" href="tel:{{ telefonnummer }}">{{ telefonnummer }}</a></div>
+            <div><a class="text-lg dark:text-white" href="tel:{{ telefonnummer }}">Tel: {{ telefonnummer }}</a></div>
+            <div class="text-lg dark:text-white">Fax: {{ fax }}</div>
             <div><a class="text-lg dark:text-white" href=" mailto:{{ e-mail-adresse | obfuscate_email }}">
-                    {{e-mail-adresse |
-                    obfuscate_email }}</a></div>
-
+                    {{e-mail-adresse | obfuscate_email }}</a></div>
             {{ /kontaktdaten }}
-
         </div>
     </div>
     {{ page_builder scope="block" }}

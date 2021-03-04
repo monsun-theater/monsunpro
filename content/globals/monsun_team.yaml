@@ -16,13 +16,6 @@ data:
       extra_info_toggle: false
       type: neues_mitgleid
       enabled: true
-      telefonnummer:
-        -
-          extra_info_telefon: true
-          type: telefonnummer
-          enabled: true
-          nummer: '07001238126'
-          info: '(Zwischen 10-18)'
       rolle: 'Intendanz, Geschäftsführung'
     -
       name: 'Ole Schmetzer'

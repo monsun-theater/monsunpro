@@ -1,7 +1,7 @@
 ---
 title: Startseite
 updated_by: 34d4dc92-ec1a-4900-9a81-ed8dd8606f23
-updated_at: 1614190637
+updated_at: 1614848631
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -15,16 +15,16 @@ hero_featured_sect:
     title_desc: 'Premiere am Dienstag, 6. April 2021!'
     buttons:
       -
-        label: 'Jetzt Karten Buchen'
+        label: 'Karten Kaufen'
         target_blank: false
         link_type: url
         entry: null
-        url: 'https://ticknet.de'
+        url: 'https://vaganten.reservix.de/tickets-filetstuecke-im-live-stream-urauffuehrung-von-michael-alexander-mueller-in-berlin-vaganten-buehne-am-7-4-2021/e1652996'
         email: null
         tel: null
         asset: null
-        attr_title: Karten
-        attr_aria: 'Karten buchen'
+        attr_title: 'Karten Kaufen'
+        attr_aria: 'Karten Kaufen'
       -
         label: 'Mehr erfahren'
         target_blank: false
@@ -42,7 +42,7 @@ hero_featured_sect:
   -
     einfarbiger_hintergrund: true
     title: 'Theatersall, Theaterfoyer oder Werkstattraum?'
-    title_desc: 'Lassen Sie sich durch einen Rundgang durchs monsun theater inspirieren!'
+    title_desc: 'Lassen Sie sich durch einen Rundgang durchs monsun.theater inspirieren!'
     buttons:
       -
         label: 'Mehr erfahren'
@@ -53,10 +53,10 @@ hero_featured_sect:
         email: null
         tel: null
         asset: null
-        attr_title: Tooltip
-        attr_aria: 'Mehr lesen'
+        attr_title: 'Mehr lesen'
+        attr_aria: 'Über Raumvermietung lesen'
       -
-        label: 'Jetzt buchen'
+        label: 'Jetzt reservieren'
         target_blank: false
         link_type: email
         entry: null
@@ -73,7 +73,7 @@ hero_featured_sect:
     title_desc: 'Von Michael Alexander Müller'
     buttons:
       -
-        label: 'Mehr erfahren'
+        label: 'Mehr lesen'
         target_blank: false
         link_type: entry
         entry: 42c93945-a9c9-4918-9336-e32034cce110

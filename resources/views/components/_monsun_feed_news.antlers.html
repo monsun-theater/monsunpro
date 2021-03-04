@@ -10,9 +10,25 @@
                 {{ title }}</div>
             <div class="sm:text-lg pb-2 text-black dark:text-white">{{ untertitel }}</div>
             <figure class="pb-3">{{ partial:components/picture class="w-full"}}</figure>
-            <div
-                class="text-sm sm:text-base text-black dark:text-white hover:text-monsun dark:hover:text-monsun duration-300">
-                {{ einleitung }}<span class="text-monsun font-bold"> →</span></div>
+        </a>
+        <a href=" {{ url }}"
+            class="italic text-sm sm:text-base text-black dark:text-white hover:text-monsun dark:hover:text-monsun">
+            {{# Sow the SEO meta description if available. #}}
+            {{ if seo_description }}
+            {{ seo_description }}
+            {{# Fall back to the bard field. #}}
+            {{ elseif page_builder }}
+            {{ page_builder limit="1" }}
+            {{ if bard }}
+            {{ bard where="type:text" limit="1" }}
+            {{ text | strip_tags | safe_truncate:300:... }}
+            {{ /bard }}
+            {{# Or a field called `text`. #}}
+            {{ elseif text }}
+            {{ text safe_truncate="180|..." }}
+            {{ /if }}
+            {{ /page_builder }}
+            {{ /if }}<span class="text-monsun font-bold">→</span>
         </a>
     </div>
     <span class="pb-6"></span>
