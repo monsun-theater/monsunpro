@@ -3,6 +3,7 @@ data:
   strasse: Friedensallee
   hausnummer: '20'
   postleitzahl: '22765'
+  website: 'https://www.monsun.theater'
   wohnort: Hamburg-Ottensen
   e-mail-adresse: info@monsun.theater
   telefonnummer: '040 - 390 3148'

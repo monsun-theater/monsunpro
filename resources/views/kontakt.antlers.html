@@ -8,7 +8,9 @@
             <div class="text-lg dark:text-white">{{ postleitzahl }} {{ wohnort}}</div>
             <div><a class="text-lg dark:text-white" href="tel:{{ telefonnummer }}">Tel: {{ telefonnummer }}</a></div>
             <div class="text-lg dark:text-white">Fax: {{ fax }}</div>
-            <div><a class="text-lg dark:text-white" href=" mailto:{{ e-mail-adresse | obfuscate_email }}">
+            <div><a class="text-lg dark:text-white font-bold" href="{{ website }}">
+                    {{ website }}</a></div>
+            <div><a class="text-lg dark:text-white font-bold" href=" mailto:{{ e-mail-adresse | obfuscate_email }}">
                     {{e-mail-adresse | obfuscate_email }}</a></div>
             {{ /kontaktdaten }}
         </div>

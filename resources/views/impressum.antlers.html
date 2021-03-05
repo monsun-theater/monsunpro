@@ -10,18 +10,20 @@
                 <div><a class="text-lg dark:text-white" href="tel:{{ telefonnummer }}">Tel: {{ telefonnummer }}</a>
                 </div>
                 <div class="text-lg dark:text-white">Fax: {{ fax }}</div>
-                <div><a class="text-lg dark:text-white" href=" mailto:{{ e-mail-adresse | obfuscate_email }}">
+                <div><a class="text-lg dark:text-white font-bold" href="{{ website }}">
+                        {{ website }}</a></div>
+                <div><a class="text-lg dark:text-white font-bold" href=" mailto:{{ e-mail-adresse | obfuscate_email }}">
                         {{e-mail-adresse | obfuscate_email }}</a></div>
                 {{ /kontaktdaten }}
             </div>
             {{ monsun_team }}
             {{mitglieder}}
             <div class="pb-12">
-                {{ partial src="typography/h3" :content="rolle" class="text-xl dark:text-white"}}
+                <h3 class="text-lg dark:text-white font-normal uppercase"> {{rolle}} </h3>
                 <div class="text-lg dark:text-white font-medium"> {{name}} </div>
 
                 {{ e-mail-adresse }}<div class="text-lg dark:text-white"> <a
-                        class="text-lg dark:text-white hover:text-monsun dark:hover:text-monsun"
+                        class="text-lg font-bold dark:text-white hover:text-monsun dark:hover:text-monsun"
                         href=" mailto:{{ e-mail | obfuscate_email }}">{{e-mail | obfuscate_email }}</a>{{ if
                     extra_info_toggle }} {{ info }} {{ /if }}
                 </div>{{ /e-mail-adresse }}

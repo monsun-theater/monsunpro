@@ -22,7 +22,7 @@ sections:
           type: text
           icon: text
           listable: hidden
-          width: 50
+          width: 25
           instructions: 'House number'
       -
         handle: postleitzahl
@@ -33,8 +33,17 @@ sections:
           type: text
           icon: text
           listable: hidden
-          width: 50
+          width: 25
           instructions: 'ZIP code'
+      -
+        handle: website
+        field:
+          display: Website
+          type: external_link
+          icon: earth
+          instructions: 'Website URL'
+          width: 50
+          listable: hidden
       -
         handle: wohnort
         field:

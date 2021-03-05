@@ -6,7 +6,6 @@ fields:
       buttons:
         - h2
         - h3
-        - bold
         - italic
         - unorderedlist
         - orderedlist

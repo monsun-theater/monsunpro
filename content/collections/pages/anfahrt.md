@@ -7,7 +7,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 34d4dc92-ec1a-4900-9a81-ed8dd8606f23
-updated_at: 1614681520
+updated_at: 1614958116
 template: kontakt
 page_builder:
   -
@@ -27,7 +27,7 @@ page_builder:
         content:
           -
             type: text
-            text: 'Mit dem Auto'
+            text: 'MIT DEM AUTO'
       -
         type: paragraph
         content:
@@ -51,7 +51,7 @@ page_builder:
         content:
           -
             type: text
-            text: 'Mit öffentlichen Verkehrsmitteln'
+            text: 'MIT ÖFFENTLICHEN VERKEHRSMITTELN'
       -
         type: paragraph
         content:
@@ -64,9 +64,7 @@ page_builder:
             type: text
             text: 'S1, S2, S3, S11 oder S31 bis Altona, Metrobus 2, Bus 150 und Schnellbus 37 bis zur Haltestelle Friedensallee.'
       -
-        type: heading
-        attrs:
-          level: 3
+        type: paragraph
         content:
           -
             type: text

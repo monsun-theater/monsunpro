@@ -2,14 +2,16 @@
 <section class="grid md:grid-cols-12 gap-y-2">
     <div class="md:col-start-5 md:col-span-8 bg-neutral-100 dark:bg-darkGray p-3">
         {{ partial:typography/h2 class="mb-3 dark:text-white" :content="block:title" }}
+
+        <div>{{ partial:typography/paragraph class="text-lg sm:text-xl dark:text-white" :content="block:text"
+            }}
+        </div>
         <div class="grid grid-cols-2 items-center">
-            <div>{{ partial:typography/h3 class="text-lg sm:text-xl dark:text-white" :content="block:text" }}
-                {{ partial:typography/paragraph class="dark:text-white" :content="block:description" }} </div>
-            <div>{{ partial:components/figure :content="block:image" }}
-            </div>
-            <div class="justify-start">{{ if block:buttons }}
+            <div>{{ partial:typography/paragraph class="dark:text-white uppercase sm:text-xl md:text-2xl
+                whitespace-normal text-center"
+                :content="block:description" }}</div>
+            <div>{{ partial:components/figure :content="block:image" }}</div>
+            <div>{{ if block:buttons }}
                 {{ partial:components/buttons class="" }} {{ /if }}</div>
 
-
-        </div>
 </section>

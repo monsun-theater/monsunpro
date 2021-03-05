@@ -1,6 +1,9 @@
-<main class="outer-grid fluid-container">
-    {{ page_builder scope="block" }}
-    {{ partial src="typography/h2" :content="title" class="dark:text-white"}}
-    {{ partial src="page_builder/{type}" }}
-    {{ /page_builder }}
+<main>
+    {{ partial:components/monsun_featured}}
+    <div class="outer-grid fluid-container">
+        {{ partial src="typography/h2" :content="title" class="dark:text-white"}}
+        {{ page_builder scope="block" }}
+        {{ partial src="page_builder/{type}" }}
+        {{ /page_builder }}
+    </div>
 </main>

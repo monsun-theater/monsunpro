@@ -1,10 +1,11 @@
 {{# The link blocks content block. #}}
 <section class="grid md:grid-cols-12">
     <div class="md:col-start-5 md:col-span-8 pb-3">
-        {{ partial:typography/h2 class="dark:text-white" :content="block:title" }}
+        <div class="dark:text-white uppercase text-xl">{{block:title}}</div>
     </div>
-    {{ block:link_blocks }}
-    <a class="flex flex-col justify-between items-start bg-neutral-100 dark:bg-darkGray p-6 no-underline
+    <div class="md:col-start-5 md:col-span-8 pb-3">
+        {{ block:link_blocks }}
+        <a class="flex flex-col justify-between items-start bg-neutral-100 dark:bg-darkGray p-6 no-underline
             {{ if total_results == 1 }}
                 md:col-span-8 md:col-start-5 
             {{ elseif total_results == 2 }}
@@ -12,14 +13,14 @@
             {{ elseif total_results > 2 }}
                 md:col-span-8 md:col-start-5
             {{ /if }}" aria-labelledby="{{ title | slugify }}" draggable="false" {{
-        partial:components/button_attributes }}>
-        <div>
-            <span id="{{ title | slugify }}">
-                {{ partial src="typography/h3" class="mb-2 dark:text-white" :content="title" }}
-            </span>
-            {{ partial:typography/paragraph class="mb-4 dark:text-white" :content="text" }}
-        </div>
-        {{ partial:components/button tag="span" faux="true" }}
-    </a>
-    {{ /block:link_blocks }}
+            partial:components/button_attributes }}>
+            <div>
+                <span id="{{ title | slugify }}">
+                    {{ partial src="typography/h3" class="mb-2 dark:text-white" :content="title" }}
+                </span>
+                {{ partial:typography/paragraph class="mb-4 dark:text-white" :content="text" }}
+            </div>
+            {{ partial:components/button tag="span" faux="true" }}
+        </a>
+        {{ /block:link_blocks }}
 </section>
