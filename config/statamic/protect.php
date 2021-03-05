@@ -43,7 +43,7 @@ return [
 
         'password' => [
             'driver' => 'password',
-            'allowed' => ['secret'],
+            'allowed' => ['BackstagePresseMonsunTheater'],
             'form_url' => null,
         ],
 

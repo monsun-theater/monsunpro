@@ -41,8 +41,28 @@ return [
         // 'getting_started',
         [
             'type' => 'collection',
-            'collection' => 'pages',
-            'width' => 50
+            'collection' => 'veranstaltungen',
+            'limit' => 10,
+            'width' => 100
+        ],
+        [
+            'type' => 'collection',
+            'collection' => 'aktuelles',
+            'limit' => 10,
+            'width' => 100
+        ],
+        [
+            'type' => 'collection',
+            'collection' => 'aktuelles',
+            'limit' => 10,
+            'width' => 100
+        ],
+        [
+            'type' => 'form',
+            'form' => 'newsletter', // name of your form
+            'fields' => ['name','email'], // the fields you want to display in the widget
+            'width' => 100,
+            'limit' => 10
         ],
     ],
 

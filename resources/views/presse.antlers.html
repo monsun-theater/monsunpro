@@ -1,33 +1,32 @@
 <article class="outer-grid fluid-container">
     {{ partial src="typography/h2" :content="title" class="dark:text-white"}}
     <section class=" grid grid-cols-12 gap-y-6">
-
         <div class="col-span-12 md:col-span-8 md:col-start-5">
             {{ collection:veranstaltungen show_unpublished="true" }}
-            <a href={{ url }}>{{ partial src="typography/h3" :content="title" class="text-2xl dark:text-white"}}</a>
+            <a href={{ url }}>{{ partial src="typography/h3" :content="title" class="text-2xl dark:text-white
+                pb-3"}}</a>
             <div class="pb-12">
-                <div>{{ bildmaterial }} <a
+                <div class="pb-3">{{ bildmaterial }} <a
                         class="text-black text-xl dark:text-white hover:text-monsun dark:hover:text-monsun"
                         href="{{ url }}">Bildmaterial
-                        ({{size}})<span class="text-monsun font-bold"> →</span> </a>{{
+                        ({{ extension }}, {{size}})<span class="text-monsun font-bold"> →</span> </a>{{
                     /bildmaterial }}
                 </div>
-                <div>{{ pressemitteilung }} <a
+                <div class="pb-3">{{ pressemitteilung }} <a
                         class="text-black text-xl dark:text-white  hover:text-monsun dark:hover:text-monsun"
                         href="{{ url }}">Pressemitteilung
-                        ({{size}})<span class="text-monsun font-bold"> →</span> </a>{{
+                        ({{ extension }}, {{size}})<span class="text-monsun font-bold"> →</span> </a>{{
                     /pressemitteilung }}
                 </div>
-                <div">{{ pressestimmen }} <a
+                <div class="pb-3">{{ pressestimmen }} <a
                         class="text-black text-xl dark:text-white hover:text-monsun dark:hover:text-monsun"
                         href="{{ url }}">Pressestimmen
-                        ({{size}})<span class="text-monsun font-bold"> →</span> </a>{{
+                        ({{ extension }}, {{size}})<span class="text-monsun font-bold">
+                            →</span> </a>{{
                     /pressestimmen }}
+                </div>
+                {{ /collection:veranstaltungen}}
             </div>
-            {{ /collection:veranstaltungen}}
-        </div>
-
         </div>
     </section>
-
 </article>

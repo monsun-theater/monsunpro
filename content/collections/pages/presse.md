@@ -1,5 +1,6 @@
 ---
 title: Presse
+protect: password
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
