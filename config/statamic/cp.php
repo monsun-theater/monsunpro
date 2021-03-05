@@ -38,7 +38,7 @@ return [
     */
 
     'widgets' => [
-        // 'getting_started',
+         //'getting_started',
         [
             'type' => 'collection',
             'collection' => 'veranstaltungen',
@@ -47,9 +47,11 @@ return [
         ],
         [
             'type' => 'collection',
-            'collection' => 'aktuelles',
+            'collection' => 'pages',
             'limit' => 10,
-            'width' => 100
+            'width' => 100,
+            'sort' => 'title:desc'
+
         ],
         [
             'type' => 'collection',
