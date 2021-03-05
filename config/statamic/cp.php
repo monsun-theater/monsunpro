@@ -47,17 +47,17 @@ return [
         ],
         [
             'type' => 'collection',
+            'collection' => 'aktuelles',
+            'limit' => 10,
+            'width' => 100
+        ],
+        [
+            'type' => 'collection',
             'collection' => 'pages',
             'limit' => 10,
             'width' => 100,
             'sort' => 'title:desc'
 
-        ],
-        [
-            'type' => 'collection',
-            'collection' => 'aktuelles',
-            'limit' => 10,
-            'width' => 100
         ],
         [
             'type' => 'form',
