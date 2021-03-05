@@ -1,4 +1,4 @@
-title: Seite
+title: Startseite
 sections:
   main:
     display: Main
@@ -14,6 +14,33 @@ sections:
           display: Title
           validate:
             - required
+      -
+        handle: anzahl_vorstellungen_in_demnaechst
+        field:
+          display: 'Anzahl Vorstellungen in Demnächst'
+          type: integer
+          icon: integer
+          instructions: 'The amount of performances listed in Upcoming component.'
+          listable: hidden
+          width: 33
+      -
+        handle: anzahl_eintraege_in_aktuelles
+        field:
+          display: 'Anzahl Einträge in Aktuelles'
+          type: integer
+          icon: integer
+          instructions: 'The amount of entries listed in News Section component.'
+          width: 33
+          listable: hidden
+      -
+        handle: anzahl_stuecke_in_spielzeit_component
+        field:
+          display: 'Anzahl Stücke in Spielzeit'
+          type: integer
+          icon: integer
+          instructions: 'The amount of entries listed in Repertoire component.'
+          width: 33
+          listable: hidden
       -
         import: featured_section
         prefix: hero_

@@ -1,18 +1,10 @@
 ---
 title: 'Francoise Hüsges'
 updated_by: 34d4dc92-ec1a-4900-9a81-ed8dd8606f23
-updated_at: 1614596925
+updated_at: 1614955321
 page_builder:
   -
     bard:
-      -
-        type: set
-        attrs:
-          values:
-            type: figure
-            image: monsun-team/csm_Francoise_Husges_Altona_Magazin_04_8ac19b71d5.jpg
-            size: md
-            caption: 'Altona Zeitung'
       -
         type: paragraph
         content:

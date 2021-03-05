@@ -11,6 +11,7 @@ fields:
     field: common.size
     config:
       options:
+        sm: SM
         md: MD
         lg: LG
         xl: XL

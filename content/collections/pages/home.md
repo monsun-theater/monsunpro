@@ -1,7 +1,8 @@
 ---
 title: Startseite
+blueprint: homepage
 updated_by: 34d4dc92-ec1a-4900-9a81-ed8dd8606f23
-updated_at: 1614943001
+updated_at: 1614954658
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -19,7 +20,7 @@ hero_featured_sect:
         target_blank: false
         link_type: url
         entry: null
-        url: 'https://vaganten.reservix.de/tickets-filetstuecke-im-live-stream-urauffuehrung-von-michael-alexander-mueller-in-berlin-vaganten-buehne-am-7-4-2021/e1652996'
+        url: 'https://vaganten.reservix.de/events'
         email: null
         tel: null
         asset: null
@@ -88,5 +89,11 @@ hero_featured_sect:
     featured_image: produktionen/anastasia/Anastasia.jpg
     einfarbiger_hintergrund: false
 anzahl_vorstellungen_in_demnaechst: 3
+anzahl_eintraege_in_aktuelles: 3
+anzahl_stuecke_in_spielzeit_component: 3
+seo_title: monsun.theater
+seo_description: 'monsun.theater ist das älteste Off-Theater in Hamburg und besteht seit 1980. Es befindet sich im Stadtteil Ottensen.'
+og_title: monsun.theater
+og_description: 'Das Monsun-Theater (Eigenschreibweise: monsun.theater) ist das älteste Off-Theater in Hamburg und besteht seit 1980. Es befindet sich im Stadtteil Ottensen.'
 id: home
 ---

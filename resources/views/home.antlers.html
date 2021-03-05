@@ -5,9 +5,15 @@ without having to worry about margins or paddings. #}}
     {{ partial:components/_monsun_feed_upcoming_perf}}
     {{ partial:components/_monsun_feed_news}}
     <!-- Spielplan -->
-    <div class="text-3xl lg:text-4xl text-black dark:text-white">Spielplan</div>
-    {{ collection:veranstaltungen limit="3" sort="date" }} {{ partial:components/_monsun_feed_programme}}{{
-    /collection:veranstaltungen }}
+    <div class="text-3xl lg:text-4xl text-black dark:text-white">Spielzeit</div>
+    {{ collection:veranstaltungen limit="{anzahl_stuecke_in_spielzeit_component}" sort="date" }}
+    {{ partial:components/_monsun_feed_programme }}
+    {{ /collection:veranstaltungen }}
+    <button aria-label="Repertoire Zeigen"
+        class="max-w-sm mx-auto sm:max-w-none flex justify-center text-black dark:text-white">
+        <a href="/repertoire" class="flex items-center justify-center px-4 py-3 border-4  text-md font-bold tracking-wider uppercase shadow-sm
+                          hover:bg-monsun dark:hover:bg-monsun sm:px-8">Unseres Repertoire</a>
+    </button>
     {{ page_builder scope="block" }}
     {{ partial src="page_builder/{type}" }}
     {{ /page_builder }}

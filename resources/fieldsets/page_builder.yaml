@@ -4,7 +4,6 @@ fields:
     handle: page_builder
     field:
       type: replicator
-      localizable: false
       collapse: true
       listable: false
       display: 'Page builder'
@@ -17,7 +16,7 @@ fields:
             -
               import: article
         call_to_action:
-          display: Call to action
+          display: 'Call to action'
           instructions: 'Show a call to action.'
           fields:
             -
@@ -35,7 +34,7 @@ fields:
             -
               import: form
         link_blocks:
-          display: Link blocks
+          display: 'Link blocks'
           instructions: 'Show link blocks.'
           fields:
             -

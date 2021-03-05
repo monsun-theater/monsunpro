@@ -1,6 +1,6 @@
 <!-- Aktuelles -->
 <div class="text-3xl lg:text-4xl text-black dark:text-white">Aktuelles</div>
-{{ collection:aktuelles }}
+{{ collection:aktuelles limit="{anzahl_eintraege_in_aktuelles}"}}
 <div class="md:grid grid-cols-12 gap-4 items-baseline pb-3">
     <div class="col-span-4">
         <div class="sm:text-lg text-black dark:text-white">{{ date format_localized="%A, %d %B %Y" }}</div>
