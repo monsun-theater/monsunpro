@@ -152,11 +152,11 @@
         aria-label=" Toggle menu" x-text="mobileNavOpen ? 'Schließe' : 'Menu'">
     </button>
 
-    <ul class="fixed z-10 inset-0 flex flex-col justify-center items-center space-y-3 bg-black overflow-auto"
+    <ul class="fixed z-10 inset-0 flex flex-col justify-center pt-3 items-center space-y-3 bg-black overflow-auto"
         x-show="mobileNavOpen" x-cloak>
         {{ nav:top_menu_mobile max_depth="2" include_home="true" }}
         <li {{ if children }} x-data="{ mobileNavSubnavOpen: false }" {{ /if }} class="leading-none">
-            <a class="flex items-start text-2xl lowercase tracking-widest hover:text-monsun {{ is_current || is_parent ? 'text-monsun' : 'text-white' }}"
+            <a class="flex items-start text-2xl lowercase tracking-wide font-bold hover:text-monsun {{ is_current || is_parent ? 'text-monsun' : 'text-white' }}"
                 {{ if children }} href="#" @click.prevent="mobileNavSubnavOpen = true"
                 @click.away="mobileNavSubnavOpen = false" {{ else }} href="{{ url }}" {{ /if }}>
                 {{ title }}
