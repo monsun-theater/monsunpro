@@ -15,6 +15,15 @@ sections:
           validate:
             - required
       -
+        handle: anzahl_vorstellungen_in_demnaechst
+        field:
+          display: 'Anzahl Vorstellungen in Demnächst'
+          type: integer
+          icon: integer
+          instructions: 'The amount of performances listed in Demnächst component.'
+          listable: hidden
+          width: 33
+      -
         import: featured_section
         prefix: hero_
       -
