@@ -2,9 +2,7 @@
 <section class="grid md:grid-cols-12 gap-y-2">
     <div class="md:col-start-5 md:col-span-8 bg-neutral-100 dark:bg-darkGray p-3">
         {{ partial:typography/h2 class="mb-3 dark:text-white" :content="block:title" }}
-
-        <div>{{ partial:typography/paragraph class="text-lg sm:text-xl dark:text-white" :content="block:text"
-            }}
+        <div>{{ partial:typography/paragraph class="text-lg sm:text-xl dark:text-white" :content="block:text" }}
         </div>
         <div class="grid grid-cols-2 items-center">
             <div>{{ partial:typography/paragraph class="dark:text-white uppercase sm:text-xl md:text-2xl
@@ -13,5 +11,4 @@
             <div>{{ partial:components/figure :content="block:image" }}</div>
             <div>{{ if block:buttons }}
                 {{ partial:components/buttons class="" }} {{ /if }}</div>
-
 </section>

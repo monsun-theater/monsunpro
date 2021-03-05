@@ -7,39 +7,11 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 34d4dc92-ec1a-4900-9a81-ed8dd8606f23
-updated_at: 1614962299
+updated_at: 1614963118
 template: default
 page_builder:
   -
     bard:
-      -
-        type: set
-        attrs:
-          values:
-            type: buttons
-            buttons:
-              -
-                label: Marikajhdfkadgfadsfsd
-                target_blank: false
-                link_type: entry
-                entry: 5021dc20-f133-4504-b684-6598083c4d33
-                url: null
-                email: null
-                tel: null
-                asset: null
-                attr_title: null
-                attr_aria: null
-              -
-                label: '123214234123'
-                target_blank: false
-                link_type: email
-                entry: null
-                url: null
-                email: info@site.com
-                tel: null
-                asset: null
-                attr_title: '123123123'
-                attr_aria: '123123'
       -
         type: heading
         attrs:
