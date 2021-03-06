@@ -105,6 +105,13 @@ module.exports = {
           height: '100%',
           overflow: 'hidden',
         },
+        // Utility class to center an absolute positioned element:
+        '.inset-center': {
+          position: 'absolute',
+          top: '50%',
+          left: '50%',
+          transform: 'translate(-50%, -50%)',
+        },
         // The outer grid where all block builder blocks are a child of. Spreads out all blocks 
         // vertically with a uniform space between them.
         '.outer-grid': {

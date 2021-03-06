@@ -184,14 +184,23 @@
             {{ /if }}
         </li>
         {{ /nav:top_menu_mobile }}
-        <form class="pt-5" action="/search">
-            <input aria-label="{{ trans:strings.search }}"
-                class="bg-black focus:bg-darkGray text-white border-white border-2 focus:border-monsun focus:ring focus:ring-monsun motion-safe:transition"
-                type="search" name="q" placeholder="{{ trans:strings.search }}">
-            <button aria-label="{{ trans:strings.search }}"
-                class="pt-1 block mx-auto text-white text-2xl lowercase tracking-widest hover:text-monsun {{ is_current || is_parent ? 'text-monsun' : 'text-white' }}"
-                type="submit">{{ svg:search class="pr-2 w-10 h-10 fill-current transition-colors" }}</button>
-        </form>
+        <li class="flex py-2 relative">
+            <button x-on:click="{ open = !open, setTimeout(() => {$refs.input.focus()}, 200) }" class="text-white"
+                aria-label="{{ trans:strings.search }}">
+                {{ svg:search class="w-6 h-6 fill-current transition-colors" }}
+            </button>
+
+            <form action="/search" x-show.transition.origin.right.duration.200ms="open" class="inset-center -mr-2 flex">
+                <input x-ref="input"
+                    class="bg-black focus:bg-darkGray text-white w-52 h-full pr-10 border-darkGray focus:border-monsun focus:ring focus:ring-monsun motion-safe:transition"
+                    placeholder="{{ trans:strings.search }}" type="text" value="{{ get:q }}" name="q" />
+
+                <button class="absolute inset-y-0 right-0 mr-2 flex items-center text-white hover:text-monsun"
+                    aria-label="{{ trans:strings.search }}">
+                    {{ svg:search class="w-5 h-5 fill-current transition-colors" }}
+                </button>
+            </form>
+        </li>
         </div>
     </ul>
 </nav>
