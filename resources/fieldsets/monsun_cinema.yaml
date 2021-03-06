@@ -1,0 +1,10 @@
+title: 'Monsun Cinema'
+fields:
+  -
+    handle: video
+    field:
+      display: Video
+      type: video
+      icon: video
+      instructions: Video
+      listable: hidden

@@ -15,6 +15,36 @@ sections:
           validate:
             - required
       -
+        handle: cinema_monsun
+        field:
+          display: 'Cinema Monsun'
+          type: toggle
+          icon: toggle
+          instructions: 'Show Full-Width Video Player'
+          width: 33
+          listable: hidden
+      -
+        handle: do_not_track_toggle
+        field:
+          display: 'Do Not Track'
+          type: toggle
+          icon: toggle
+          instructions: 'Switch on if you are embedding videos from Vimeo'
+          width: 66
+          listable: hidden
+          if:
+            cinema_monsun: 'equals true'
+      -
+        handle: monsun_video
+        field:
+          display: 'Monsun Video'
+          type: video
+          icon: video
+          instructions: 'Choose your video'
+          listable: hidden
+          if:
+            cinema_monsun: 'equals true'
+      -
         import: featured_section
         prefix: hero_
       -

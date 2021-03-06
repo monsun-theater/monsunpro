@@ -27,10 +27,10 @@ return [
 
         'default' => [
             'driver' => 'local',
-            'searchables' => ['collection:aktuelles', 'collection:seiten', 'collection:veranstaltungen', 'collection:kuenstler_innen', 'taxonomy:kategorien'],
+            'searchables' => 'all',
             'fields' => ['title'],
         ],
-
+        //['collection:aktuelles', 'collection:seiten', 'collection:veranstaltungen', 'collection:kuenstler_innen', 'taxonomy:kategorien'],    
         // 'blog' => [
         //     'driver' => 'local',
         //     'searchables' => 'collection:blog',

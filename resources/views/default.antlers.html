@@ -1,4 +1,6 @@
 <main>
+    {{ if cinema_monsun}}
+    {{ partial:components/cinema_monsun}} {{ /if }}
     {{ partial:components/monsun_featured}}
     <div class="outer-grid fluid-container">
         {{ partial src="typography/h2" :content="title" class="dark:text-white"}}
