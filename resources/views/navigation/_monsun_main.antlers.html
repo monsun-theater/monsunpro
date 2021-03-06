@@ -184,15 +184,11 @@
             {{ /if }}
         </li>
         {{ /nav:top_menu_mobile }}
-        <li class="flex py-2 relative">
-            <button x-on:click="{ open = !open, setTimeout(() => {$refs.input.focus()}, 200) }" class="text-white"
-                aria-label="{{ trans:strings.search }}">
-                {{ svg:search class="w-6 h-6 fill-current transition-colors" }}
-            </button>
-
+        </div>
+        <li class="flex pt-10 relative">
             <form action="/search" x-show.transition.origin.right.duration.200ms="open" class="inset-center -mr-2 flex">
                 <input x-ref="input"
-                    class="bg-black focus:bg-darkGray text-white w-52 h-full pr-10 border-darkGray focus:border-monsun focus:ring focus:ring-monsun motion-safe:transition"
+                    class="bg-black focus:bg-darkGray text-white w-52 h-full pr-10 border-2 border-white focus:border-monsun focus:ring focus:ring-monsun motion-safe:transition"
                     placeholder="{{ trans:strings.search }}" type="text" value="{{ get:q }}" name="q" />
 
                 <button class="absolute inset-y-0 right-0 mr-2 flex items-center text-white hover:text-monsun"
@@ -201,6 +197,6 @@
                 </button>
             </form>
         </li>
-        </div>
     </ul>
+
 </nav>
