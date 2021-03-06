@@ -53,3 +53,8 @@ fields:
           fields:
             -
               import: video
+        swiper_gallery:
+          display: 'Swiper gallery'
+          fields:
+            -
+              import: swiper_gallery

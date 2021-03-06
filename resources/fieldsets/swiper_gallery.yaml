@@ -1,0 +1,26 @@
+title: 'Swiper gallery'
+fields:
+  -
+    handle: image
+    field:
+      mode: grid
+      container: assets
+      restrict: false
+      allow_uploads: true
+      display: Bilden
+      type: assets
+      icon: assets
+      instructions: Images
+      width: 66
+      listable: hidden
+  -
+    handle: credits
+    field:
+      input_type: text
+      antlers: false
+      display: Credits
+      type: text
+      icon: text
+      instructions: 'Image Caption'
+      width: 33
+      listable: hidden

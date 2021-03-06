@@ -40,9 +40,14 @@
     </div>
     <!-- Event's title and subtitle -->
     <div class="col-span-8 pt-5 sm:text-lg md:py-0">
-        <div class="text-xl font-bold leading-tight text-black sm:text-2xl md:leading-normal dark:text-white"><a
+        <div class="text-2xl font-bold leading-tight text-black sm:text-3xl md:leading-normal dark:text-white"><a
                 href="{{ url }}">{{ title }}</a>
         </div>
+        {{ if show_add_title}}
+        <div class="text-sm font-bold leading-tight text-black sm:text-xl md:leading-normal dark:text-white"><a
+                href="{{ url }}">{{ additional_title }}</a>
+        </div>
+        {{ /if }}
         <div class="text-black sm:text-lg dark:text-white"><a href="{{ url }}">{{ subtitle }}</a></div>
 
         <!-- Few tickets left -->
