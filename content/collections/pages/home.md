@@ -2,7 +2,7 @@
 title: Startseite
 blueprint: homepage
 updated_by: 34d4dc92-ec1a-4900-9a81-ed8dd8606f23
-updated_at: 1614954658
+updated_at: 1615024965
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -95,5 +95,6 @@ seo_title: monsun.theater
 seo_description: 'monsun.theater ist das älteste Off-Theater in Hamburg und besteht seit 1980. Es befindet sich im Stadtteil Ottensen.'
 og_title: monsun.theater
 og_description: 'Das Monsun-Theater (Eigenschreibweise: monsun.theater) ist das älteste Off-Theater in Hamburg und besteht seit 1980. Es befindet sich im Stadtteil Ottensen.'
+spielzeit: 'Spielzeit 2020-2021'
 id: home
 ---

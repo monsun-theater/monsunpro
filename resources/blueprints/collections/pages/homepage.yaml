@@ -11,9 +11,23 @@ sections:
           input_type: text
           localizable: true
           listable: true
-          display: Title
+          display: Titel
           validate:
             - required
+          width: 66
+          instructions: Title
+          antlers: false
+      -
+        handle: spielzeit
+        field:
+          input_type: text
+          antlers: false
+          display: Spielzeit
+          type: text
+          icon: text
+          instructions: Season
+          width: 33
+          listable: hidden
       -
         handle: anzahl_vorstellungen_in_demnaechst
         field:

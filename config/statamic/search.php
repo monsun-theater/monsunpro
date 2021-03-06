@@ -27,7 +27,7 @@ return [
 
         'default' => [
             'driver' => 'local',
-            'searchables' => 'all',
+            'searchables' => ['collection:aktuelles', 'collection:seiten', 'collection:veranstaltungen', 'collection:kuenstler_innen', 'taxonomy:kategorien'],
             'fields' => ['title'],
         ],
 

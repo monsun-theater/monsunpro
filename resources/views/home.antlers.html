@@ -5,7 +5,7 @@ without having to worry about margins or paddings. #}}
     {{ partial:components/_monsun_feed_upcoming_perf}}
     {{ partial:components/_monsun_feed_news}}
     <!-- Spielplan -->
-    <div class="text-3xl lg:text-4xl text-black dark:text-white">Spielzeit</div>
+    <div class="text-3xl lg:text-4xl text-black dark:text-white">{{ spielzeit }}</div>
     {{ collection:veranstaltungen limit="{anzahl_stuecke_in_spielzeit_component}" sort="date" }}
     {{ partial:components/_monsun_feed_programme }}
     {{ /collection:veranstaltungen }}
