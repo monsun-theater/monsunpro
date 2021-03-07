@@ -21,8 +21,10 @@
     <meta name="theme-color" content="#ffffff">
 
 </head>
+{{# Dev Bar Breakpoints // Attach to Body #}}
+{{# {{ environment == 'local' ? 'debug' : '' }} #}}
 
-<body class="flex flex-col min-h-screen {{ environment == 'local' ? 'debug' : '' }}">
+<body class="flex flex-col min-h-screen ">
     {{ yield:google_tag_manager }}
     {{ if alert_message:monsun_alert_msg }}{{ partial:components/monsun_alert}} {{ /if }}
     {{ partial:layout/monsun_header }}

@@ -2,7 +2,7 @@
     {{ partial src="typography/h2" :content="title" class="dark:text-white"}}
     <section class=" grid grid-cols-12 gap-y-6">
         <div class="col-span-12 md:col-span-8 md:col-start-5">
-            {{ collection:veranstaltungen show_unpublished="true" }}
+            {{ collection:veranstaltungen show_unpublished="true" sort="desc"}}
             <a href={{ url }}>{{ partial src="typography/h3" :content="title" class="text-2xl dark:text-white
                 pb-3"}}</a>
             <div class="pb-12">

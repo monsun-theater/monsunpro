@@ -78,7 +78,14 @@ sections:
           icon: taxonomy
           instructions: 'Ticket Price'
           listable: hidden
-          width: 50
+      -
+        handle: urauffuehrung_zeigen
+        field:
+          display: Uraufführung
+          type: toggle
+          icon: toggle
+          instructions: 'Show Premiere Field'
+          listable: hidden
       -
         handle: premiere_date
         field:
@@ -94,30 +101,18 @@ sections:
           type: date
           icon: date
           instructions: Premiere
-          width: 50
-          listable: hidden
-      -
-        handle: from_to_toggle
-        field:
-          display: 'Von - Bis (Alter)'
-          type: toggle
-          icon: toggle
-          listable: hidden
-          width: 25
-          instructions: 'From - To (Age)'
-      -
-        handle: from_to
-        field:
-          input_type: text
-          antlers: false
-          display: 'Von - Bis (Alter)'
-          type: text
-          icon: text
-          instructions: 'From - To (Age)'
           listable: hidden
           if:
-            from_to_toggle: 'equals true'
-          width: 75
+            urauffuehrung_zeigen: 'equals true'
+      -
+        handle: dauer_zeigen
+        field:
+          display: Dauer
+          type: toggle
+          icon: toggle
+          instructions: 'Show Duration Field'
+          width: 25
+          listable: hidden
       -
         handle: duration
         field:
@@ -127,6 +122,17 @@ sections:
           width: 25
           listable: hidden
           instructions: Duration
+          if:
+            dauer_zeigen: 'equals true'
+      -
+        handle: pause_zeigen
+        field:
+          display: Pause
+          type: toggle
+          icon: toggle
+          instructions: 'Show Pause Field'
+          width: 25
+          listable: hidden
       -
         handle: intermission
         field:
@@ -143,9 +149,75 @@ sections:
           display: Pause
           type: select
           icon: select
-          width: 50
+          width: 25
           listable: hidden
           instructions: Intermission
+          if:
+            pause_zeigen: 'equals true'
+      -
+        handle: from_to_toggle
+        field:
+          display: 'Von - Bis (Alter)'
+          type: toggle
+          icon: toggle
+          listable: hidden
+          instructions: 'Show From - To (Age)'
+      -
+        handle: from_to
+        field:
+          input_type: text
+          antlers: false
+          display: 'Von - Bis (Alter)'
+          type: text
+          icon: text
+          instructions: 'From - To (Age)'
+          listable: hidden
+          if:
+            from_to_toggle: 'equals true'
+      -
+        handle: extra_info_zeigen
+        field:
+          display: 'Extra-Info zeigen'
+          type: toggle
+          icon: toggle
+          instructions: 'Show Custom Info Section'
+          listable: hidden
+      -
+        handle: extra_info_section_grid
+        field:
+          fields:
+            -
+              handle: bezeichnung
+              field:
+                input_type: text
+                antlers: false
+                display: Bezeichnung
+                type: text
+                icon: text
+                instructions: Label
+                listable: hidden
+                width: 50
+            -
+              handle: beschreibung
+              field:
+                input_type: text
+                antlers: false
+                display: Beschreibung
+                type: text
+                icon: text
+                instructions: Description
+                listable: hidden
+                width: 50
+          mode: table
+          add_row: '+ Info / Add Info'
+          reorderable: true
+          display: Extra-Info
+          type: grid
+          icon: grid
+          instructions: 'Add Custom Info'
+          listable: hidden
+          if:
+            extra_info_zeigen: 'equals true'
       -
         handle: besetzung
         field:
@@ -176,7 +248,7 @@ sections:
                 mode: select
                 collections:
                   - kuenstler_innen
-                display: 'Künstler*innen'
+                display: 'Künstler:innen'
                 type: entries
                 icon: entries
                 instructions: Performer
@@ -507,7 +579,6 @@ sections:
         field:
           always_show_set_button: false
           buttons:
-            - bold
             - italic
             - unorderedlist
             - orderedlist

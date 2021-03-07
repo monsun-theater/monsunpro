@@ -13,11 +13,6 @@
         </a>
         <a href=" {{ url }}"
             class="italic text-sm sm:text-base text-black dark:text-white hover:text-monsun dark:hover:text-monsun">
-            {{# Sow the SEO meta description if available. #}}
-            {{ if seo_description }}
-            {{ seo_description }}
-            {{# Fall back to the bard field. #}}
-            {{ elseif page_builder }}
             {{ page_builder limit="1" }}
             {{ if bard }}
             {{ bard where="type:text" limit="1" }}
@@ -27,8 +22,7 @@
             {{ elseif text }}
             {{ text safe_truncate="180|..." }}
             {{ /if }}
-            {{ /page_builder }}
-            {{ /if }}<span class="text-monsun font-bold">→</span>
+            {{ /page_builder }}<span class="text-monsun font-bold">→</span>
         </a>
     </div>
     <span class="pb-6"></span>
