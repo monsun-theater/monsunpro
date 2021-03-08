@@ -1,5 +1,4 @@
 {{if image_gallery_toggle }}
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <div class="lg:grid grid-cols-12">
     <div class="col-span-8 lg:col-start-5">
         <div x-data="{swiper: null}" x-init="swiper = new Swiper($refs.container, {
@@ -62,4 +61,5 @@
         </div>
     </div>
 </div>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 {{ /if }}

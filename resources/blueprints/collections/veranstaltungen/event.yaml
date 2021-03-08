@@ -525,6 +525,14 @@ sections:
           instructions: Pressroom
           listable: hidden
       -
+        handle: in_presse_zeigen
+        field:
+          display: 'In Presse zeigen'
+          type: toggle
+          icon: toggle
+          instructions: 'Show this production in Pressroom listing'
+          listable: hidden
+      -
         handle: bildmaterial
         field:
           mode: grid
