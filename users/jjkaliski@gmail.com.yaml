@@ -1,7 +1,7 @@
 name: admin
 super: true
 id: 34d4dc92-ec1a-4900-9a81-ed8dd8606f23
-password_hash: $2y$10$IiB6JvVS3MDzP55XJIbtiuQugG3aYkE.NmhRxOr9OCjMDriYDgJa2
+password_hash: $2y$10$G.V6.sNZVaWmeY1utU0jDOE2EH7YkB67SlgtYRa.yVJP1zOq2ndvu
 preferences:
   collections:
     kuenstler_innen:
