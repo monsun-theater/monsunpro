@@ -17,7 +17,7 @@ The dark mode toggle when you use class based dark mode. To enable this do the f
 
     {{# The actual toggle yielded in the `resources/views/navigation/_main.antlers.html`. #}}
     {{ section:dark_mode_toggle }}
-    <li x-data="{ 
+    <li class="list-none" x-data="{ 
             theme: (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches))
                 ? 'dark'
                 : 'light'

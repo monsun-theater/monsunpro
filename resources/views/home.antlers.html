@@ -6,7 +6,7 @@ without having to worry about margins or paddings. #}}
     {{ partial:components/_monsun_feed_news}}
     <!-- Spielplan -->
     <div class="text-3xl lg:text-4xl text-black dark:text-white">{{ spielzeit }}</div>
-    {{ collection:veranstaltungen limit="{anzahl_stuecke_in_spielzeit_component}" sort="date" }}
+    {{ collection:veranstaltungen limit="{anzahl_stuecke_in_spielzeit_component}" sort="date:desc"}}
     {{ partial:components/_monsun_feed_programme }}
     {{ /collection:veranstaltungen }}
     <button aria-label="Repertoire Zeigen"
