@@ -13,6 +13,7 @@
         "laravel/tinker": "^2.0",
         "pixelfear/composer-dist-plugin": "^0.1",
         "rias/statamic-data-import": "^1.1",
+        "silentz/mailchimp": "^2.5",
         "statamic/cms": "3.0.45"
     },
     "require-dev": {

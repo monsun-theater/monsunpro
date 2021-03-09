@@ -20,7 +20,7 @@ fields:
                 display: 'Featured Image'
                 type: assets
                 icon: assets
-                instructions: 'The image of your choice'
+                instructions: 'Image of your choice'
                 listable: hidden
                 width: 66
             -
