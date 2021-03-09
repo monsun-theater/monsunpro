@@ -14,7 +14,7 @@ sections:
           listable: hidden
           placeholder: alexander.schmidt@example.de
       -
-        handle: agb_akzeptieren
+        handle: consent
         field:
           inline: false
           options:
