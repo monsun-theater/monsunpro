@@ -7,7 +7,7 @@
                             /kategorien }} Kategorie Zeigen"
                 class="p-2 text-xs font-bold tracking-widest text-white uppercase sm:text-sm" style="background-color: {{ kategorien }} {{ kategorie_farbe }}{{
                             /kategorien }};">{{ kategorien }}<a href="{{ url }}">{{ title }}</a>
-                {{ /kategorien }}</button>
+                {{ /kategorien }}{{ if from_to_toggle }} <span>{{from_to}}</span> {{ /if }}</button>
             <!-- Premiere Type -->
             {{if premiere_toggle}}
             <div class="pt-1">

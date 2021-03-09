@@ -43,11 +43,32 @@ fields:
                 instructions: Title
                 listable: hidden
             -
+              handle: titelzusatz_zeigen
+              field:
+                display: 'Titelzusatz zeigen'
+                type: toggle
+                icon: toggle
+                instructions: 'Show additional title'
+                width: 33
+                listable: hidden
+            -
+              handle: subtitle
+              field:
+                input_type: text
+                antlers: false
+                display: Titelzusatz
+                type: text
+                icon: text
+                width: 66
+                listable: hidden
+                if:
+                  titelzusatz_zeigen: 'equals true'
+            -
               handle: title_desc
               field:
                 input_type: text
                 antlers: false
-                display: Untertitel
+                display: Zusatsinfo
                 type: text
                 icon: text
                 instructions: 'Short description'

@@ -9,11 +9,18 @@
                     }}bg-neutral-300" style="mix-blend-mode: multiply;{{ /if}}"></div>
             </div>
             <div class="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
-                <h1 class="text-center text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
+                <h2 class="text-center text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
                     <span
                         class="block {{ if einfarbiger_hintergrund}}text-black dark:text-white {{ else }} text-white {{ /if }}">{{
                         title }}</span>
-                </h1>
+                </h2>
+                {{ if titelzusatz_zeigen}}
+                <h3 class="text-center text-1xl font-medium tracking-tight sm:text-3xl lg:text-2xl">
+                    <span
+                        class="block {{ if einfarbiger_hintergrund}}text-black dark:text-white {{ else }} text-white {{ /if }}">{{
+                        subtitle }}</span>
+                </h3>
+                {{ /if }}
                 <p
                     class="mt-6 max-w-lg mx-auto text-center font-medium  {{ if einfarbiger_hintergrund}}text-black dark:text-white {{ else }} text-white {{ /if }} text-xl sm:max-w-3xl">
                     {{
