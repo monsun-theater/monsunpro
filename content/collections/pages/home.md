@@ -2,7 +2,7 @@
 title: Startseite
 blueprint: homepage
 updated_by: 34d4dc92-ec1a-4900-9a81-ed8dd8606f23
-updated_at: 1615320709
+updated_at: 1615369306
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -37,11 +37,12 @@ hero_featured_sect:
         tel: null
         asset: null
         attr_title: 'Mehr lesen'
-        attr_aria: 'Mehr lesen'
+        attr_aria: 'Mehr über Filetstücke lesen'
     type: featured
     enabled: true
     titelzusatz_zeigen: true
     subtitle: 'Wem gehört das Land?'
+    overlay_color: neutral-300
 anzahl_vorstellungen_in_demnaechst: 3
 anzahl_eintraege_in_aktuelles: 2
 anzahl_stuecke_in_spielzeit_component: 3

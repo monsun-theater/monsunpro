@@ -9,30 +9,6 @@ fields:
           display: Featured
           fields:
             -
-              handle: featured_image
-              field:
-                mode: grid
-                container: assets
-                folder: produktionen
-                restrict: false
-                allow_uploads: true
-                max_files: 1
-                display: 'Featured Image'
-                type: assets
-                icon: assets
-                instructions: 'Image of your choice'
-                listable: hidden
-                width: 66
-            -
-              handle: einfarbiger_hintergrund
-              field:
-                display: 'Einfarbiger Hintergrund'
-                type: toggle
-                icon: toggle
-                instructions: 'Plain background'
-                width: 33
-                listable: hidden
-            -
               handle: title
               field:
                 input_type: text
@@ -59,7 +35,7 @@ fields:
                 display: Titelzusatz
                 type: text
                 icon: text
-                width: 66
+                width: 50
                 listable: hidden
                 if:
                   titelzusatz_zeigen: 'equals true'
@@ -73,6 +49,60 @@ fields:
                 icon: text
                 instructions: 'Short description'
                 listable: hidden
+            -
+              handle: einfarbiger_hintergrund
+              field:
+                display: 'Einfarbiger Hintergrund'
+                type: toggle
+                icon: toggle
+                instructions: 'Plain background (Black or White, according to Dark/Light Mode)'
+                width: 66
+                listable: hidden
+            -
+              handle: featured_image
+              field:
+                mode: grid
+                container: assets
+                folder: produktionen
+                restrict: false
+                allow_uploads: true
+                max_files: 1
+                display: 'Featured Image'
+                type: assets
+                icon: assets
+                instructions: 'Image of your choice'
+                listable: hidden
+                width: 50
+                unless:
+                  einfarbiger_hintergrund: 'equals true'
+            -
+              handle: overlay_color
+              field:
+                placeholder: 'neutral-300 (default)'
+                options:
+                  neutral-100: 'neutral-100 (lightest)'
+                  neutral-200: neutral-200
+                  neutral-300: 'neutral-300 (default)'
+                  neutral-400: neutral-400
+                  neutral-500: neutral-500
+                  neutral-600: neutral-600
+                  neutral-700: 'neutral-700 (darkest)'
+                  '': null
+                multiple: false
+                max_items: 1
+                clearable: true
+                searchable: true
+                taggable: false
+                push_tags: false
+                cast_booleans: false
+                display: 'Mix Farbe wählen'
+                type: select
+                icon: select
+                instructions: 'The white text displayed on the image must have sufficient contrast to the background. Choose the overlay that works best for your particular image.'
+                listable: hidden
+                width: 50
+                unless:
+                  einfarbiger_hintergrund: 'equals true'
             -
               import: buttons
       display: 'Featured section'
