@@ -7,7 +7,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 34d4dc92-ec1a-4900-9a81-ed8dd8606f23
-updated_at: 1615138488
+updated_at: 1615374728
 template: default
 page_builder:
   -
@@ -20,17 +20,6 @@ page_builder:
           -
             type: text
             text: THEATERSAAL
-      -
-        type: set
-        attrs:
-          values:
-            type: swiper_gallery
-            image:
-              - fake-content/asia-culturecenter-COWf-5ZtZ6w-unsplash.jpg
-              - fake-content/felix-mooneeram-evlkOfkQ5rE-unsplash.jpg
-              - fake-content/v2osk-QaLUIjQI0pI-unsplash.jpg
-              - fake-content/mark-thompson-QM3suFW_Y4E-unsplash.jpg
-            credits: Unsplash
       -
         type: paragraph
         content:
