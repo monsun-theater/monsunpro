@@ -13,6 +13,7 @@ fields:
       icon: assets
       instructions: 'Choose your small image'
       listable: hidden
+      width: 50
   -
     handle: zusatzinfo_zeigen
     field:

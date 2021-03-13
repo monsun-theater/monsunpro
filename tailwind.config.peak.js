@@ -175,7 +175,7 @@ module.exports = {
           gridColumn: 'span 12 / span 12',
         },
         '.size-xsm' : {
-          gridColumn: 'span 6 / span 2',
+          gridColumn: 'span 4 / span 3',
         },
         [`@media (min-width: ${theme('screens.md')})`]: {
           // Sizing utilities for sets in our bard (long form content).
