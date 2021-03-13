@@ -61,8 +61,8 @@ return [
         ],
         [
             'type' => 'form',
-            'form' => 'newsletter', // name of your form
-            'fields' => ['name','email'], // the fields you want to display in the widget
+            'form' => 'contact', // name of your form
+            'fields' => ['email'], // the fields you want to display in the widget
             'width' => 100,
             'limit' => 10
         ],

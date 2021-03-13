@@ -11,12 +11,11 @@ fields:
     field: common.size
     config:
       options:
-        sm: SM
         md: MD
         lg: LG
         xl: XL
       width: 50
-      instructions: 'The size in which the image should be displayed.'
+      instructions: 'The width of this image should always fill the container. Use the image of high quality.'
   -
     handle: caption
     field:

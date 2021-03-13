@@ -6,7 +6,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 34d4dc92-ec1a-4900-9a81-ed8dd8606f23
-updated_at: 1614959114
+updated_at: 1615628665
 page_builder:
   -
     bard:
@@ -252,6 +252,8 @@ page_builder:
             type: text
             text: ', oder direkt bei uns im Theater.'
       -
+        type: paragraph
+      -
         type: heading
         attrs:
           level: 2
@@ -329,5 +331,7 @@ page_builder:
     enabled: true
 monsun_alert: false
 template: default
+cinema_monsun: false
+do_not_track_toggle: false
 id: a6bc5b37-3fcd-4c82-b5f4-94042b68c80c
 ---

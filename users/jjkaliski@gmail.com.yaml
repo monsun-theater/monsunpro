@@ -34,10 +34,13 @@ preferences:
   assets:
     assets:
       mode: table
-  favorites:
-    -
-      name: 'Startseite ‹ Seiten ‹ Sammlungen'
-      url: collections/pages/entries/home/home
-    -
-      name: 'Filetstücke ‹ Veranstaltungen ‹ Sammlungen'
-      url: collections/veranstaltungen/entries/c6ee169b-2221-4746-9f04-5ea08d0bcbe9/filetstuecke
+  forms:
+    newsletter:
+      columns:
+        - datestamp
+        - e_mail
+        - consent
+    contact:
+      columns:
+        - datestamp
+        - email

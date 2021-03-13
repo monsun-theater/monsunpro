@@ -58,3 +58,8 @@ fields:
           fields:
             -
               import: swiper_gallery
+        small_picture:
+          display: 'Small picture'
+          fields:
+            -
+              import: small_picture

@@ -28,3 +28,29 @@ fields:
       display: Form
       validate:
         - required
+  -
+    handle: zusatsinfo_forms
+    field:
+      always_show_set_button: false
+      buttons:
+        - h2
+        - h3
+        - italic
+        - unorderedlist
+        - orderedlist
+        - removeformat
+        - anchor
+        - table
+      save_html: false
+      toolbar_mode: fixed
+      link_noopener: false
+      link_noreferrer: false
+      target_blank: false
+      reading_time: false
+      fullscreen: true
+      allow_source: true
+      display: Zusatsinfo
+      type: bard
+      icon: bard
+      instructions: 'Any additional information you would like to display in forms.'
+      listable: hidden

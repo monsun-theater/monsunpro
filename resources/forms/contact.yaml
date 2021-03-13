@@ -1,17 +1,10 @@
-title: Contact
+title: 'Newsletter contact'
 honeypot: fax
 email:
   -
     to: info@monsun.theater
     from: info@monsun.theater
     reply_to: '{{ email }}'
-    subject: 'Contact form received'
+    subject: 'Neue Newsletter-Anmeldung'
     html: email/form_owner
     text: email/form_owner_text
-  -
-    to: '{{ email }}'
-    from: info@monsun.theater
-    reply_to: info@monsun.theater
-    subject: 'Contact form sent'
-    html: email/form_sender
-    text: email/form_sender_text

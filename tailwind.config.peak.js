@@ -174,6 +174,9 @@ module.exports = {
         '.size-sm, .size-md, .size-lg, .size-xl': {
           gridColumn: 'span 12 / span 12',
         },
+        '.size-xsm' : {
+          gridColumn: 'span 6 / span 2',
+        },
         [`@media (min-width: ${theme('screens.md')})`]: {
           // Sizing utilities for sets in our bard (long form content).
           // On larger devices they go from small to extra large.

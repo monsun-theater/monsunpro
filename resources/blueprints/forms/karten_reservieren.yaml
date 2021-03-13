@@ -1,0 +1,54 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: name
+        field:
+          input_type: text
+          antlers: false
+          display: 'Ihre Name'
+          type: text
+          icon: text
+          listable: hidden
+          validate:
+            - required
+      -
+        handle: ihre_telefonnummer
+        field:
+          input_type: text
+          antlers: false
+          display: 'Ihre telefonnummer'
+          type: text
+          icon: text
+          listable: hidden
+          validate:
+            - required
+      -
+        handle: email
+        field:
+          input_type: text
+          antlers: false
+          display: 'Ihre E-mail'
+          type: text
+          icon: text
+          listable: hidden
+          validate:
+            - required
+            - email
+      -
+        handle: vorstellung
+        field:
+          input_type: text
+          antlers: false
+          display: Vorstellung
+          type: text
+          icon: text
+          listable: hidden
+      -
+        handle: anzahl_tickets
+        field:
+          display: 'Anzahl Tickets'
+          type: integer
+          icon: integer
+          listable: hidden

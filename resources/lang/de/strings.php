@@ -7,14 +7,14 @@ return [
 
     // Contact form
     'form_honeypot'                     => 'Fax',
-    'form_mail_body_owner'              => 'Ihre Kontaktformular wurde uns gesendet.',
-    'form_mail_body_sender'             => 'Vielen Dank für Ihre Nachricht. Wir werden Sie so schnell wie moeglich kontaktieren.',
+    'form_mail_body_owner'              => 'Ihre Formular wurde uns gesendet.',
+    'form_mail_body_sender'             => 'Vielen Dank für Ihre Nachricht.',
     'form_mail_closing'                 => 'Mit freundlichen Grüßen',
     'form_mail_from'                    => config('app.name'),
     'form_mail_greeting'                => '',
-    'form_mail_logo'                    => 'https://unavatar.now.sh/jjkaliski@gmail.com',
+    'form_mail_logo'                    => 'https://unavatar.now.sh/facebook/monsuntheater',
     'form_mail_submitted'               => 'Formular gesendet',
-    'form_mail_title'                   => 'Kontaktformular',
+    'form_mail_title'                   => 'Kontaktformular monsun.theater',
     'form_mail_url'                     => config('app.url'),
     'form_send'                         => 'Schicken',
     'form_success'                      => 'Vielen Dank!',

@@ -17,12 +17,14 @@ class DynamicToken extends Controller
         if (config('app.env') != 'local')
         {
             $referer = request()->headers->get('referer');
-            $startWithAppUrl = starts_with($referer, config('app.url'));
-            if (empty($referer) || !$startWithAppUrl) {
+            $contains = str_contains($referer, request()->getHttpHost());
+            if (empty($referer) || !$contains) {
                 abort(404);
             }
         }
 
-        return csrf_token();
+        return response()->json([
+            'csrf_token' => csrf_token()
+        ]);
     }
 }

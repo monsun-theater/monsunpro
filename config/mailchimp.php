@@ -10,7 +10,7 @@ return [
     'add_new_users' => false,
 
     'users' => [
-        'audience_id' => '9164c325e8',
+        'audience_id' => null,
         'disable_opt_in' => false,
         'check_consent' => false,
         'consent_field' => null,
@@ -31,13 +31,13 @@ return [
         [
             'audience_id' => '9164c325e8',
             'disable_opt_in' => false,
-            'check_consent' => true,
-            'consent_field' => 'consent',
-            'form' => 'newsletter',
+            'check_consent' => false,
+            'consent_field' => null,
+            'form' => 'contact',
             'merge_fields' => [
                 [
                     'tag' => 'EMAIL',
-                    'field_name' => 'e_mail',
+                    'field_name' => 'email',
                 ],
             ],
             'tag' => null,

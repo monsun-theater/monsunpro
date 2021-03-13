@@ -3,17 +3,6 @@ sections:
     display: Main
     fields:
       -
-        handle: name
-        field:
-          display: 'Ihre Name'
-          type: text
-          validate:
-            - required
-          localizable: true
-          listable: hidden
-          input_type: text
-          antlers: false
-      -
         handle: email
         field:
           display: 'Ihre E-mail'
@@ -24,14 +13,4 @@ sections:
           localizable: true
           listable: hidden
           input_type: text
-          antlers: false
-      -
-        handle: message_body
-        field:
-          display: Nachricht
-          type: textarea
-          validate:
-            - required
-          localizable: true
-          listable: hidden
           antlers: false
