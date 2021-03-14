@@ -5,6 +5,7 @@
     "type": "project",
     "require": {
         "php": "^7.3",
+        "lib-imagick-imagemagick": "^7.0",
         "edalzell/forma": "0.8.7",
         "fideloper/proxy": "^4.2",
         "fruitcake/laravel-cors": "^2.0",
@@ -13,7 +14,6 @@
         "laravel/framework": "^8.0",
         "laravel/tinker": "^2.0",
         "pixelfear/composer-dist-plugin": "^0.1",
-        "rias/statamic-data-import": "^1.1",
         "silentz/mailchimp": "^2.5",
         "statamic/cms": "3.0.46"
     },
