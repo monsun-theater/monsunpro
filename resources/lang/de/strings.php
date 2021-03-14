@@ -21,7 +21,7 @@ return [
     
     // Search
     'search'                            => 'Suche',
-    'search_no_results'                 => 'Keine Suchergebnisse gefunden.',
+    'search_no_results'                 => 'Kein Suchergebnis gefunden.',
     'search_results_for'                => 'Suchergebnisse für',
     
     // Other
