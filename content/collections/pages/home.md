@@ -2,7 +2,7 @@
 title: Startseite
 blueprint: homepage
 updated_by: 34d4dc92-ec1a-4900-9a81-ed8dd8606f23
-updated_at: 1615742764
+updated_at: 1615742792
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -13,7 +13,7 @@ hero_featured_sect:
   -
     featured_image: produktionen/filestuecke/filetstuecke-hero.jpg
     einfarbiger_hintergrund: false
-    title: FILESTÜCKE
+    title: FILETSTÜCKE
     title_desc: 'Premiere am 6. April 2021 um 20:00 Uhr!'
     buttons:
       -
