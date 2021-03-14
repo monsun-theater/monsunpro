@@ -11,12 +11,11 @@ data:
           e-mail: f.huesges@monsun.theater
           type: neue_e-mail-adresse
           enabled: true
-          extra_info_email: true
-          info: '(Antwort innerhalb von 24 Stunden)'
+          extra_info_email: false
       extra_info_toggle: false
       type: neues_mitgleid
       enabled: true
-      rolle: 'Intendanz, Geschäftsführung'
+      rolle: 'Geschäftsführung & Theaterleitung'
     -
       name: 'Ole Schmetzer'
       role_list:
@@ -30,7 +29,7 @@ data:
       extra_info_toggle: false
       type: neues_mitgleid
       enabled: true
-      rolle: Technik
+      rolle: 'Technische Leitung'
     -
       role_list:
         - Presse
@@ -53,34 +52,20 @@ data:
       name: 'Jenny Schmidt'
       rolle: 'Presse, Öffentlichkeitsarbeit, Kommunikation'
     -
-      name: 'Lotta Huber'
-      role_list:
-        - 'FSJ Kultur'
-      e-mail-adresse:
-        -
-          e-mail: info@monsun.theater
-          extra_info_email: false
-          type: neue_e-mail-adresse
-          enabled: true
-      extra_info_toggle: false
-      type: neues_mitgleid
-      enabled: true
-      rolle: 'FSJ Kultur'
-    -
-      name: 'ADticket GmbH'
+      name: Reservix
       role_list:
         - Ticketdienstleister
       e-mail-adresse:
         -
-          e-mail: info@adticket.de
+          e-mail: tickets@reservix.de
           extra_info_email: true
           type: neue_e-mail-adresse
           enabled: true
       telefonnummer:
         -
-          nummer: '0180 - 60 50 400'
+          nummer: '01806 700 733'
           extra_info_telefon: true
-          info: '(0,20 € / Anruf inkl. MwSt aus den Festnetzen, max. 0,60 € / Anruf inkl. MwSt aus den Mobilfunknetzen)'
+          info: '(0,20 € pauschal aus dem deutschen Festnetz; aus dem Mobilfunknetz 0,60 €)'
           type: telefonnummer
           enabled: true
       extra_info_toggle: true
@@ -94,13 +79,40 @@ data:
           content:
             -
               type: text
-              text: 'Kaiserstr. 69 '
+              marks:
+                -
+                  type: link
+                  attrs:
+                    href: 'https://www.reservix.de/'
+                    target: null
+                    rel: null
+                -
+                  type: bold
+              text: www.reservix.de
         -
           type: paragraph
           content:
             -
               type: text
-              text: 'D-60329 Frankfurt'
+              text: 'Reservix GmbH'
+        -
+          type: paragraph
+          content:
+            -
+              type: text
+              text: 'Humboldtstraße 2'
+        -
+          type: paragraph
+          content:
+            -
+              type: text
+              text: '79098 Freiburg im Breisgau'
+        -
+          type: paragraph
+          content:
+            -
+              type: text
+              text: Deutschland
       rolle: Ticketdienstleister
     -
       name: monsun.theater
@@ -130,27 +142,111 @@ data:
               text: 'BIC: HASPDEHHXXX'
       type: neues_mitgleid
       enabled: true
+  zusatzinfo:
     -
-      rolle: Copyright
-      extra_info_toggle: true
-      zusatsinfo:
+      type: paragraph
+      content:
         -
-          type: paragraph
-          content:
-            -
-              type: text
-              text: 'Sämtliche Inhalte und Fotos unterliegen dem Urheberrecht und dürfen nicht ohne vorherige Genehmigung kopiert und anderweitig genutzt werden.'
-      type: neues_mitgleid
-      enabled: true
+          type: text
+          text: 'Sitz: Hamburg'
+        -
+          type: hard_break
+        -
+          type: text
+          text: 'Amtsgericht Hamburg Altona'
+        -
+          type: hard_break
+        -
+          type: text
+          text: 'Steuernummer 41/101/01029'
     -
-      rolle: Haftungsausschluss
-      extra_info_toggle: true
-      zusatsinfo:
+      type: paragraph
+      content:
         -
-          type: paragraph
-          content:
+          type: text
+          text: 'Alle Texte und Bilder sind urheberrechtlich geschützt und dürfen ohne ausdrückliche Genehmigung nicht reproduziert, wiederverwendet oder für gewerbliche Zwecke benutzt werden.'
+    -
+      type: paragraph
+      content:
+        -
+          type: text
+          text: "© Copyright monsun.theater Hamburg 2021\_"
+    -
+      type: heading
+      attrs:
+        level: 3
+      content:
+        -
+          type: text
+          marks:
             -
-              type: text
-              text: 'Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.'
-      type: neues_mitgleid
-      enabled: true
+              type: bold
+          text: Haftungsausschluss
+    -
+      type: paragraph
+      content:
+        -
+          type: text
+          text: '1. Inhalt des Onlineangebotes'
+    -
+      type: paragraph
+      content:
+        -
+          type: text
+          text: 'Der Autor übernimmt keinerlei Gewähr für die Aktualität, Korrektheit, Vollständigkeit oder Qualität der bereitgestellten Informationen. Haftungsansprüche gegen den Autor, welche sich auf Schäden materieller oder ideeller Art beziehen, die durch die Nutzung oder Nichtnutzung der dargebotenen Informationen bzw. durch die Nutzung fehlerhafter und unvollständiger Informationen verursacht wurden sind grundsätzlich ausgeschlossen, sofern seitens des Autors kein nachweislich vorsätzliches oder grob fahrlässiges Verschulden vorliegt.'
+    -
+      type: paragraph
+      content:
+        -
+          type: text
+          text: 'Alle Angebote sind freibleibend und unverbindlich. Der Autor behält es sich ausdrücklich vor, Teile der Seiten oder das gesamte Angebot ohne gesonderte Ankündigung zu verändern, zu ergänzen, zu löschen oder die Veröffentlichung zeitweise oder endgültig einzustellen.'
+    -
+      type: paragraph
+      content:
+        -
+          type: text
+          text: '2. Verweise und Links'
+    -
+      type: paragraph
+      content:
+        -
+          type: text
+          text: 'Bei direkten oder indirekten Verweisen auf fremde Internetseiten ("Links"), die außerhalb des Verantwortungsbereiches des Autors liegen, würde eine Haftungsverpflichtung ausschließlich in dem Fall in Kraft treten, in dem der Autor von den Inhalten Kenntnis hat und es ihm technisch möglich und zumutbar wäre, die Nutzung im Falle rechtswidriger Inhalte zu verhindern. Der Autor erklärt hiermit ausdrücklich, dass zum Zeitpunkt der Linksetzung die entsprechenden verlinkten Seiten frei von illegalen Inhalten waren. Auf die aktuelle und zukünftige Gestaltung, die Inhalte oder die Urheberschaft der gelinkten/verknüpften Seiten hat der Autor keinerlei Einfluss. Deshalb distanziert er sich hiermit ausdrücklich von allen Inhalten aller gelinkten/verknüpften Seiten, die nach der Linksetzung verändert wurden. Diese Feststellung gilt für alle innerhalb des eigenen Internetangebotes gesetzten Links und Verweise. Für illegale, fehlerhafte oder unvollständige Inhalte und insbesondere für Schäden, die aus der Nutzung oder Nichtnutzung solcherart dargebotener Informationen entstehen, haftet allein der Anbieter der Seite, auf welche verwiesen wurde, nicht derjenige, der über Links auf die jeweilige Veröffentlichung lediglich verweist.'
+    -
+      type: paragraph
+      content:
+        -
+          type: text
+          text: '3. Urheber- und Kennzeichenrecht'
+    -
+      type: paragraph
+      content:
+        -
+          type: text
+          text: 'Der Autor ist bestrebt, in allen Publikationen die Urheberrechte der verwendeten Grafiken, Fotografien und Texte zu beachten, von ihm selbst erstellte Grafiken, Fotografien und Texte zu nutzen oder auf lizenzfreie Grafiken, Fotografien und Texte zurückzugreifen. Alle innerhalb des Internetangebotes genannten und ggf. durch Dritte geschützten Marken- und Warenzeichen unterliegen uneingeschränkt den Bestimmungen des jeweils gültigen Kennzeichenrechts und den Besitzrechten der jeweiligen eingetragenen Eigentümer. Allein aufgrund der bloßen Nennung ist nicht der Schluß zu ziehen, dass Markenzeichen nicht durch Rechte Dritter geschützt sind! Das Copyright für veröffentlichte, vom Autor selbst erstellte Objekte bleibt allein beim Autor der Seiten. Eine Vervielfältigung oder Verwendung solcher Grafiken/Fotografien und Texte in anderen elektronischen oder gedruckten Publikationen ist ohne ausdrückliche Zustimmung des Autors nicht gestattet.'
+    -
+      type: paragraph
+      content:
+        -
+          type: text
+          text: '4. Rechtswirksamkeit dieses Haftungsausschlusses'
+    -
+      type: paragraph
+      content:
+        -
+          type: text
+          text: 'Dieser Haftungsausschluss ist als Teil des Internetangebotes zu betrachten, von dem aus auf diese Seite verwiesen wurde. Sofern Teile oder einzelne Formulierungen dieses Textes der geltenden Rechtslage nicht, nicht mehr oder nicht vollständig entsprechen sollten, bleiben die übrigen Teile des Dokumentes in ihrem Inhalt und ihrer Gültigkeit davon unberührt.'
+    -
+      type: paragraph
+      content:
+        -
+          type: text
+          text: 'Haftungshinweis: Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.'
+    -
+      type: paragraph
+      content:
+        -
+          type: text
+          text: 'Sollten wir versehentlich gegen irgendwelche Copyrights verstoßen haben, benachrichtigen Sie uns bitte umgehend per E-Mail.'
+        -
+          type: hard_break

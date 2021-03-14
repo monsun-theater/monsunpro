@@ -2,7 +2,7 @@
 title: Startseite
 blueprint: homepage
 updated_by: 34d4dc92-ec1a-4900-9a81-ed8dd8606f23
-updated_at: 1615742792
+updated_at: 1615743943
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -64,9 +64,7 @@ page_builder:
         content:
           -
             type: text
-            text: 'Wir nutzen MailChimp als Software für die Versendung unserer Newsletter. Nach Bestätigen des Buttons "Schicken" erhalten Sie innerhalb der nächsten Minuten an die angegebene E-Mailadresse eine Nachricht. In dieser E-Mail ist ein Link angegeben, den Sie anklicken müssen, um Ihre Anmeldung abzuschließen. Erst danach sind Sie endgültig angemeldet. Wir nutzen MailChimp als Software für die Versendung unserer Newsletter.'
-          -
-            type: hard_break
+            text: 'Wir nutzen MailChimp als Software für die Versendung unserer Newsletter. Nach Bestätigen des Buttons "Schicken" erhalten Sie innerhalb der nächsten Minuten an die angegebene E-Mailadresse eine Nachricht. In dieser E-Mail ist ein Link angegeben, den Sie anklicken müssen, um Ihre Anmeldung abzuschließen. Erst danach sind Sie endgültig angemeldet.'
           -
             type: hard_break
           -

@@ -13,9 +13,7 @@ page_builder:
         content:
           -
             type: text
-            text: 'Nach Bestätigen des Buttons "Schicken" erhalten Sie innerhalb der nächsten Minuten an die angegebene E-Mailadresse eine Nachricht. In dieser E-Mail ist ein Link angegeben, den Sie anklicken müssen, um Ihre Anmeldung abzuschließen. Erst danach sind Sie endgültig angemeldet.'
-          -
-            type: hard_break
+            text: 'Wir nutzen MailChimp als Software für die Versendung unserer Newsletter. Nach Bestätigen des Buttons "Schicken" erhalten Sie innerhalb der nächsten Minuten an die angegebene E-Mailadresse eine Nachricht. In dieser E-Mail ist ein Link angegeben, den Sie anklicken müssen, um Ihre Anmeldung abzuschließen. Erst danach sind Sie endgültig angemeldet.'
           -
             type: hard_break
           -
@@ -43,7 +41,7 @@ sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 template: default
 updated_by: 34d4dc92-ec1a-4900-9a81-ed8dd8606f23
-updated_at: 1615625999
+updated_at: 1615743957
 blueprint: page
 seo_title: Newsletter
 seo_description: 'Bleiben Sie im Kontakt mit monsun.theater! Das ist die aktuelle und schnelle Informationsquelle für Premieren, Extra-Veranstaltungen, Gastspiele, Ensemble und Hintergründe.'
