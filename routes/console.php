@@ -19,7 +19,7 @@ Artisan::command('inspire', function () {
     $this->comment(Inspiring::quote());
 })->describe('Display an inspiring quote');
 
-// A simple way to get al URL's and visit them to warm up the static cache.
+// A simple way to get all URL's and visit them to warm up the static cache.
 Artisan::command('warm', function () {
     Entry::query()
         ->where('status', 'published')
