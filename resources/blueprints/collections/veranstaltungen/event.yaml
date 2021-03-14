@@ -603,7 +603,7 @@ sections:
       -
         handle: zusatsinfo_zeigen_presse
         field:
-          display: 'Zusatsinfo zeigen'
+          display: 'Zusatzinfo zeigen'
           type: toggle
           icon: toggle
           instructions: 'Show additional info'
@@ -626,7 +626,7 @@ sections:
           reading_time: false
           fullscreen: true
           allow_source: true
-          display: Zusatsinfo
+          display: Zusatzinfo
           type: bard
           icon: bard
           instructions: 'Additional info'
