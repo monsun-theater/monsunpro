@@ -1,0 +1,132 @@
+{{ if cinema_monsun}}
+{{ partial:components/cinema_monsun}} {{ /if }}
+{{ partial:components/monsun_featured}}
+<div class="outer-grid fluid-container">
+    <div class="text-3xl lg:text-4xl text-black dark:text-white">{{ title }}</div>
+    {{ page_builder scope="block" }}
+        {{ partial src="page_builder/{type}" }}
+        {{ /page_builder }}
+    {{ collection:veranstaltungen status:not_in="published" sort="title:asc"}} 
+    
+<div class="md:grid grid-cols-12 gap-4 items-baseline pb-6">
+    {{ if no_results }}
+    <div class="text-2xl md:col-span-12 text-black dark:text-white">Zur Zeit keine Vorstellungen.</div>
+    <div class="pt-9 md:col-span-12"><button aria-label="Zur Startseite"
+            class="max-w-sm mx-auto sm:max-w-none flex justify-center text-black dark:text-white">
+            <a href="/"
+                class="flex items-center justify-center px-4 py-3 border-2  text-md font-bold tracking-wider uppercase shadow-sm
+                      hover:bg-monsun dark:hover:bg-monsun sm:px-8 focus-visible:ring-2 focus-visible:border-monsun">Zur
+                Startseite</a>
+        </button></div>
+    {{ else }}
+    <div class="col-span-4">
+
+        <button aria-label="Vorstellungen in der {{ kategorien }} {{ title }} {{
+            /kategorien }} Kategorie Zeigen"
+            class="p-2 mb-1 text-xs font-bold tracking-widest text-white uppercase sm:text-sm" style="background-color: {{ kategorien }} {{ kategorie_farbe }}{{
+            /kategorien }};">{{ kategorien }} <a href="{{ url }}">{{ title }}
+                {{ /kategorien }}{{ if from_to_toggle }} <span>{{from_to}}</span> {{ /if }}</a></button>
+        {{ veranstaltungsoerter }}
+
+        <div class="text-black sm:text-lg dark:text-white">{{ title }} </div>{{ /veranstaltungsoerter }}
+    </div>
+    <div class="col-span-8">
+        <div class="text-2xl font-bold sm:text-3xl leading-tight text-black dark:text-white">
+                {{ title }}</div>
+            <div class="sm:text-lg pb-2 dark:text-white font-medium">{{ additional_title }}</div>
+            <div class="sm:text-lg pb-2 dark:text-white">{{ subtitle }}</div>
+            <figure class="pb-3">{{ partial:components/picture class="w-full"}}</figure>
+            <div class="bg-darkWhite dark:bg-darkGray p-3 mb-2">
+            {{ performance_dates future="true" }}
+            {{ if no_results }}
+            <div class="col-span-3 text-base font-medium text-black sm:text-xl dark:text-white">
+                Zur Zeit keine Vorstellungen.
+            </div>
+            {{ else }}
+            <div class="grid-cols-8 gap-4 pb-4 sm:grid sm:pb-3">
+                <div class="col-span-3 text-base font-medium text-black sm:text-xl dark:text-white">
+                    <div>
+                        {{ perf_date format_localized="%A"}}
+                    </div>
+                </div>
+                {{# Right-side component #}}
+                <div class="pb-3 text-xl text-black sm:col-span-5 dark:text-white">
+                    <div>
+                        {{ perf_date format_localized="%e. %B %Y"}} | {{ perf_date format="H:i"}} Uhr
+                    </div>
+                    <!-- Tickets sold out -->
+                    {{ if sold_out}}
+                    <div class="font-bold tracking-widest uppercase dark:text-white sm:text-lg">Ausverkauft!
+                    </div>
+                    <!-- Event cancelled -->
+                    {{ elseif cancelled }}
+                    <div class="font-bold tracking-widest uppercase dark:text-white sm:text-lg">Abgesagt
+                    </div>
+                    <!-- Tickets available -->
+                    {{ else }}
+                    <button class="block tracking-wider text-center uppercase hover:text-monsun sm:text-lg"><a class="block"
+                            href="{{ ticket_url }}">
+                            <div class="font-bold tracking-widest uppercase">{{if few_tickets_left}}Rest{{ /if }}Karten<span
+                                    class="font-bold text-monsun">&nbsp;→</span>
+                            </div>
+                        </a>
+                    </button>
+                    {{ if additional_info_performance_toggle}}<div class="text-sm dark:text-white"> {{
+                        additional_info_performance }}</div>{{ /if }}
+                    {{# monsun.digital #}}
+                    {{ if monsun_digital }}
+                    <button class="block tracking-wider text-center uppercase hover:text-monsun sm:text-lg"><a class="block"
+                            href="{{ streaming-link }}">
+                            <div class="font-bold tracking-widest uppercase">streaming-link<span
+                                    class="font-bold text-monsun">&nbsp;→</span>
+                            </div>
+                        </a>
+                    </button>
+                    {{ if streaming_info}}
+                    <div class="text-sm dark:text-white"> {{ additional_streaming_info }}</div>{{ /if }}
+                    {{ /if }}{{ /if }}
+                </div>
+                {{# Right-side component end#}}
+            </div>
+            {{ /if }}
+            {{ /performance_dates }}</div>
+        <div class="italic text-sm sm:text-base text-black dark:text-white">
+            {{# Fall back to the bard field. #}}
+            {{ page_builder limit="1" }}
+            {{ if bard }}
+            {{ bard where="type:text" limit="1" }}
+            {{ text }}
+            {{ /bard }}
+            {{# Or a field called `text`. #}}
+            {{ elseif text }}
+            {{ text safe_truncate="180|..." }}
+            {{ /if }}
+            {{ /page_builder }}
+            </div>
+            <div class="grid grid-cols-2 gap-1 sm:grid-cols-3 sm:gap-4 md:grid-cols-4 mt-3">
+                {{ credits }}
+                <div>
+                    <div class="pb-2">{{ role }}
+                        <div class="text-black text-sm font-bold dark:text-white">
+                            {{ title }}
+                        </div>{{ /role }}
+                        <div class="text-sm text-black dark:text-white">{{ performer }}
+                            <div>
+                                {{ if hat_eigene_website_has_own_website }}
+                                <a class="underline" href="{{ kuenstler_artist_website_url_link }}">{{ title }}</a>
+                                {{ elseif biographie_eintragen_create_artist_s_biography }}
+                                <a class="underline" href="{{ url }}">{{ title }}</a>
+                                {{ else}}
+                                {{ title }}
+            
+                                {{ /if}}
+                            </div>{{ /performer }}
+                        </div>
+                    </div>
+                </div>
+                {{ /credits }}
+            </div>
+    </div> {{ /if }}
+</div>
+{{/collection:veranstaltungen }}
+</div>
