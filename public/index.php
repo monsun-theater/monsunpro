@@ -58,3 +58,4 @@ $response = $kernel->handle(
 $response->send();
 
 $kernel->terminate($request, $response);
+setlocale (LC_TIME, "de_DE.utf8");
