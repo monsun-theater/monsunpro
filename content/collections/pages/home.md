@@ -2,7 +2,7 @@
 title: Startseite
 blueprint: homepage
 updated_by: 34d4dc92-ec1a-4900-9a81-ed8dd8606f23
-updated_at: 1615743943
+updated_at: 1615983318
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -17,7 +17,7 @@ hero_featured_sect:
     title_desc: 'Premiere am 6. April 2021 um 20:00 Uhr!'
     buttons:
       -
-        label: 'Karten Kaufen!'
+        label: 'Karten Kaufen'
         target_blank: true
         link_type: url
         entry: null
@@ -42,7 +42,7 @@ hero_featured_sect:
     enabled: true
     titelzusatz_zeigen: true
     subtitle: '- wem gehört das Land'
-    overlay_color: neutral-300
+    overlay_color: neutral-500
 anzahl_vorstellungen_in_demnaechst: 3
 anzahl_eintraege_in_aktuelles: 2
 anzahl_stuecke_in_spielzeit_component: 3
