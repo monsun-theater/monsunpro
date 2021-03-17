@@ -10,3 +10,10 @@ preferences:
         - title
         - date
         - subtitle
+    aktuelles:
+      columns:
+        - title
+        - untertitel
+        - date
+        - image
+        - slug
