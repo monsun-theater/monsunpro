@@ -1,5 +1,10 @@
 /node_modules
 /public/hot
+/public/assets/aktuelles
+/public/assets/extras
+/public/assets/kuenstler-innen
+/public/assets/produktionen
+/public/assets/monsun-team
 /public/storage
 /public/vendor/statamic
 /public/img/
@@ -21,3 +26,4 @@ monsuntheater.code-workspace
 /public/js/site.js.map
 /public/js/site.js.LICENSE.txt
 /public/mix-manifest.json
+
