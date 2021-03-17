@@ -12,3 +12,9 @@ preferences:
         - image
         - date
         - slug
+    veranstaltungen:
+      columns:
+        - title
+        - subtitle
+        - date
+        - kategorien
