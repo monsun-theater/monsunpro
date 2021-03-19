@@ -54,17 +54,17 @@
         {{ /if }}   </div>{{ /posts }}
         <div class="max-w-full mx-auto justify-center flex">
             {{ paginate }}
-    <button class="flex-row items-center justify-center px-4 hover:text-monsun
+    <button class="flex-row items-center justify-center px-2 
     py-3  dark:text-white text-xl sm:text-2xl font-bold tracking-widest uppercase
-      "><a href="{{ prev_page }}"><span
+      "><a class="hover:text-monsun" href="{{ prev_page }}"><span
         class="font-bold text-monsun">&nbsp;←</span> Zurück</a></button>
-            <button class="flex-row items-center justify-center px-4 hover:text-monsun
+            <button class="flex-row items-center justify-center px-2
             py-3   dark:text-white  text-xl sm:text-2xl font-bold tracking-widest uppercase 
-               sm:px-8"><a href="{{ next_page }}">Weiter<span
+               sm:px-8"><a class="hover:text-monsun" href="{{ next_page }}">Weiter<span
                 class="font-bold text-monsun">&nbsp;→</span></a></button>
               
             </div>
-            <div class="max-w-md mx-auto dark:text-white">
+            <div class="max-w-md mx-auto dark:text-white sm:text-xl">
            {{ current_page }}. von {{ total_pages }} Seite(n).
             {{ total_items }} Produktion(en) insgesamt.</div>
        {{ /paginate }}
