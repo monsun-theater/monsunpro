@@ -1,10 +1,9 @@
 {{# Showing entries tagged with their respective Categories #}}
 <div class="fluid-container outer-grid">
     <div class="text-3xl text-black lg:text-4xl dark:text-white">{{ title }}</div>
-    
-        {{ entries status:in="published" as="posts" sort="title:asc" limit="5" paginate="true"}}
-        {{ posts }}
-        <div class="md:grid grid-cols-12 gap-4 items-baseline pb-6">
+    {{ entries status:in="published" as="posts" sort="title:asc" limit="5" paginate="true"}}
+    {{ posts }}
+    <div class="md:grid grid-cols-12 gap-4 items-baseline pb-6">
         {{ if no_results }}
         <div class="text-2xl col-span-12 text-black dark:text-white">Zur Zeit keine Vorstellungen
             in
@@ -16,7 +15,6 @@
                               hover:bg-monsun dark:hover:bg-monsun sm:px-8">Zur Startseite</a>
             </button></div>
         {{ else }}
-
         <div class="col-span-4">
             <button aria-label="Vorstellungen in der {{ kategorien }} {{ title }} {{
             /kategorien }} Kategorie Zeigen"
@@ -24,10 +22,8 @@
             /kategorien }};">{{ kategorien }} <a href="{{ url }}">{{ title }}
                     {{ /kategorien }}{{ if from_to_toggle }} <span>{{from_to}}</span> {{ /if }}</a></button>
             {{ veranstaltungsoerter }}
-
             <div class="text-black sm:text-lg dark:text-white">{{ title }} </div>{{ /veranstaltungsoerter }}
         </div>
-
         <div class="col-span-8 pb-6">
             <a href=" {{ url }}">
                 <div class="text-2xl font-bold sm:text-3xl leading-tight text-black dark:text-white">
@@ -36,7 +32,6 @@
                 <div class="sm:text-lg pb-2 dark:text-white">{{ subtitle }}</div>
                 <figure class="pb-3">{{ partial:components/picture class="w-full"}}</figure>
             </a>
-
             <a href=" {{ url }}"
                 class="italic text-sm sm:text-base text-black dark:text-white hover:text-monsun dark:hover:text-monsun">
                 {{ page_builder limit="1" }}
@@ -51,25 +46,22 @@
                 {{ /page_builder }}<span class="text-monsun font-bold">→</span>
             </a>
         </div>
-        {{ /if }}   </div>{{ /posts }}
-        <div class="max-w-full mx-auto justify-center flex">
-            {{ paginate }}
-    <button class="flex-row items-center justify-center px-2 
+        {{ /if }}
+    </div>{{ /posts }}
+    <div class="max-w-full mx-auto justify-center flex">
+        {{ paginate }}
+        <button class="flex-row items-center justify-center px-2 
     py-3  dark:text-white text-xl sm:text-2xl font-bold tracking-widest uppercase
-      "><a class="hover:text-monsun" href="{{ prev_page }}"><span
-        class="font-bold text-monsun">&nbsp;←</span> Zurück</a></button>
-            <button class="flex-row items-center justify-center px-2
+      "><a class="hover:text-monsun" href="{{ prev_page }}"><span class="font-bold text-monsun">&nbsp;←</span>
+                Zurück</a></button>
+        <button class="flex-row items-center justify-center px-2
             py-3   dark:text-white  text-xl sm:text-2xl font-bold tracking-widest uppercase 
                sm:px-8"><a class="hover:text-monsun" href="{{ next_page }}">Weiter<span
-                class="font-bold text-monsun">&nbsp;→</span></a></button>
-              
-            </div>
-            <div class="max-w-md mx-auto dark:text-white sm:text-xl">
-           {{ current_page }}. von {{ total_pages }} Seite(n).
-            {{ total_items }} Produktion(en) insgesamt.</div>
-       {{ /paginate }}
-        
-        {{ /entries }}
-   
-
+                    class="font-bold text-monsun">&nbsp;→</span></a></button>
+    </div>
+    <div class="max-w-md mx-auto dark:text-white sm:text-xl">
+        {{ current_page }}. von {{ total_pages }} Seite(n).
+        {{ total_items }} Produktion(en) insgesamt.</div>
+    {{ /paginate }}
+    {{ /entries }}
 </div>
