@@ -16,7 +16,7 @@ return [
     'form_mail_submitted'               => 'Formular gesendet',
     'form_mail_title'                   => 'Kontaktformular monsun.theater',
     'form_mail_url'                     => config('app.url'),
-    'form_send'                         => 'Schicken',
+    'form_send'                         => 'Senden',
     'form_success'                      => 'Vielen Dank!',
     
     // Search

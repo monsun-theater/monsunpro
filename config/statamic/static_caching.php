@@ -54,6 +54,7 @@ return [
 
     'exclude' => [
         '/nebeneingang',
+        '/presse',
     ],
 
     /*
@@ -68,6 +69,7 @@ return [
     | https://docs.statamic.com/static-caching
     |
     */
+
 
     'invalidation' => [
 
