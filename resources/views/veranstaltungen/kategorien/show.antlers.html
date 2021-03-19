@@ -1,10 +1,22 @@
+{{# Showing entries tagged with their respective Categories #}}
 <div class="fluid-container outer-grid">
-    {{ if no_results }}
-    <div class="text-3xl text-black lg:text-4xl dark:text-white">Keine Vorstellungen zur Zeit</div>
-    {{ else }}
     <div class="text-3xl text-black lg:text-4xl dark:text-white">{{ title }}</div>
-    <div class="md:grid grid-cols-12 gap-4 items-baseline pb-6">
-        {{ entries status:in="published"}}
+    
+        {{ entries status:in="published" as="posts" sort="title:asc" limit="5" paginate="true"}}
+        {{ posts }}
+        <div class="md:grid grid-cols-12 gap-4 items-baseline pb-6">
+        {{ if no_results }}
+        <div class="text-2xl col-span-12 text-black dark:text-white">Zur Zeit keine Vorstellungen
+            in
+            dieser
+            Kategorie.</div>
+        <div class="pt-9 md:col-span-12"><button aria-label="Zur Startseite"
+                class="max-w-sm mx-auto sm:max-w-none flex justify-center text-black dark:text-white ">
+                <a href="/" class="flex items-center justify-center px-4 py-3 border-2  text-md font-bold tracking-wider uppercase shadow-sm
+                              hover:bg-monsun dark:hover:bg-monsun sm:px-8">Zur Startseite</a>
+            </button></div>
+        {{ else }}
+
         <div class="col-span-4">
             <button aria-label="Vorstellungen in der {{ kategorien }} {{ title }} {{
             /kategorien }} Kategorie Zeigen"
@@ -27,11 +39,6 @@
 
             <a href=" {{ url }}"
                 class="italic text-sm sm:text-base text-black dark:text-white hover:text-monsun dark:hover:text-monsun">
-                {{# Sow the SEO meta description if available. #}}
-                {{ if seo_description }}
-                {{ seo_description }}
-                {{# Fall back to the bard field. #}}
-                {{ elseif page_builder }}
                 {{ page_builder limit="1" }}
                 {{ if bard }}
                 {{ bard where="type:text" limit="1" }}
@@ -41,11 +48,28 @@
                 {{ elseif text }}
                 {{ text safe_truncate="180|..." }}
                 {{ /if }}
-                {{ /page_builder }}
-                {{ /if }}<span class="text-monsun font-bold">→</span>
+                {{ /page_builder }}<span class="text-monsun font-bold">→</span>
             </a>
         </div>
+        {{ /if }}   </div>{{ /posts }}
+        <div class="max-w-full mx-auto justify-center flex">
+            {{ paginate }}
+    <button class="flex-row items-center justify-center px-4 hover:text-monsun
+    py-3  dark:text-white text-xl sm:text-2xl font-bold tracking-widest uppercase
+      "><a href="{{ prev_page }}"><span
+        class="font-bold text-monsun">&nbsp;←</span> Zurück</a></button>
+            <button class="flex-row items-center justify-center px-4 hover:text-monsun
+            py-3   dark:text-white  text-xl sm:text-2xl font-bold tracking-widest uppercase 
+               sm:px-8"><a href="{{ next_page }}">Weiter<span
+                class="font-bold text-monsun">&nbsp;→</span></a></button>
+              
+            </div>
+            <div class="max-w-md mx-auto dark:text-white">
+           {{ current_page }}. von {{ total_pages }} Seite(n).
+            {{ total_items }} Produktion(en) insgesamt.</div>
+       {{ /paginate }}
+        
         {{ /entries }}
-    </div>
-    {{ /if }}
+   
+
 </div>

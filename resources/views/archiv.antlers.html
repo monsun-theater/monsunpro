@@ -132,7 +132,7 @@
 
     
         <div class="max-w-full mx-auto justify-center flex">
-            <div class="">
+            
 {{ paginate }}
 <button class="flex-row items-center justify-center px-4 hover:text-monsun
 py-3  dark:text-white text-xl sm:text-2xl font-bold tracking-widest uppercase
@@ -142,10 +142,10 @@ py-3  dark:text-white text-xl sm:text-2xl font-bold tracking-widest uppercase
         py-3   dark:text-white  text-xl sm:text-2xl font-bold tracking-widest uppercase 
            sm:px-8"><a href="{{ next_page }}">Weiter<span
             class="font-bold text-monsun">&nbsp;→</span></a></button>
-          </div>
+          
         </div>
         <div class="max-w-md mx-auto dark:text-white">
-       {{ current_page }}. von {{ total_pages }} Seiten.
+       {{ current_page }}. von {{ total_pages }} Seite(n).
         {{ total_items }} Produktion(en) insgesamt.</div>
    {{ /paginate }}
 {{/collection:veranstaltungen }}
