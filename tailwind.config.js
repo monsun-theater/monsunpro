@@ -37,7 +37,7 @@ module.exports = {
       // Remove unused keyframes during purging.
       keyframes: true,
       // Always keep the following classes during purging.
-      safelist: ['size-sm', 'size-md', 'size-lg', 'size-xl', 'js-focus-visible'],
+      safelist: ['size-sm', 'size-md', 'size-lg', 'size-xl', 'js-focus-visible', 'bg-neutral-100', 'bg-neutral-200', 'bg-neutral-300', 'bg-neutral-400', 'bg-neutral-500', 'bg-neutral-600', 'bg-neutral-700'],
     }
   },
   // Extend variants.
