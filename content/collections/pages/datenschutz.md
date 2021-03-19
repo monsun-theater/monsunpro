@@ -7,7 +7,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 34d4dc92-ec1a-4900-9a81-ed8dd8606f23
-updated_at: 1615744232
+updated_at: 1616153240
 cinema_monsun: false
 do_not_track_toggle: false
 page_builder:
@@ -70,7 +70,7 @@ page_builder:
             type: hard_break
           -
             type: text
-            text: 'Email info@monsun.theater'
+            text: 'Email: info(at)monsun.theater'
       -
         type: heading
         attrs:
@@ -222,12 +222,6 @@ page_builder:
         attrs:
           level: 2
         content:
-          -
-            type: text
-            marks:
-              -
-                type: italic
-            text: "\_"
           -
             type: text
             text: 'Rechtmäßigkeit der Verarbeitung'
@@ -407,12 +401,6 @@ page_builder:
         content:
           -
             type: text
-            marks:
-              -
-                type: italic
-            text: "\_"
-          -
-            type: text
             text: 'Weitere Funktionen und Angebote unserer Website'
       -
         type: paragraph
@@ -437,12 +425,6 @@ page_builder:
         attrs:
           level: 2
         content:
-          -
-            type: text
-            marks:
-              -
-                type: italic
-            text: "\_"
           -
             type: text
             text: Newsletter
@@ -513,7 +495,7 @@ page_builder:
                   href: 'https://www.reservix.net/files/data/docs/Datenschutzerklaerung_Reservix.pdf'
                   target: null
                   rel: null
-            text: 'https://www.reservix.net/files/data/docs/Datenschutzerklaerung_Reservix.pdf'
+            text: Datenschutzerklaerung_Reservix.pdf
       -
         type: paragraph
         content:
@@ -541,7 +523,7 @@ page_builder:
                   href: 'https://www.reservix.net/files/data/docs/Datenschutzerklaerung_Reservix.pdf'
                   target: null
                   rel: null
-            text: 'https://www.reservix.net/files/data/docs/Datenschutzerklaerung_Reservix.pdf'
+            text: Datenschutzerklaerung_Reservix.pdf
       -
         type: heading
         attrs:
@@ -950,10 +932,6 @@ page_builder:
           -
             type: text
             text: 'Sie haben unbeschadet eines verfügbaren verwaltungsrechtlichen oder außergerichtlichen Rechtsbehelfs einschließlich des Rechts auf Beschwerde bei einer Aufsichtsbehörde gemäß Artikel 77 DSGVO das Recht auf einen wirksamen gerichtlichen Rechtsbehelf, wenn sie der Ansicht sind, dass die ihr aufgrund dieser Verordnung zustehenden Rechte infolge einer nicht im Einklang mit dieser Verordnung stehenden Verarbeitung ihrer personenbezogenen Daten verletzt wurden.'
-          -
-            type: hard_break
-          -
-            type: hard_break
     type: article
     enabled: true
 id: c87dc0bd-8f2e-4f9f-9929-819a043d1263
