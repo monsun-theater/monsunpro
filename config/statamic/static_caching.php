@@ -55,6 +55,7 @@ return [
     'exclude' => [
         '/nebeneingang',
         '/presse',
+        '/password',
     ],
 
     /*
