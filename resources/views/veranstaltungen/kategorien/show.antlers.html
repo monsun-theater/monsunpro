@@ -4,7 +4,7 @@
     {{ else }}
     <div class="text-3xl text-black lg:text-4xl dark:text-white">{{ title }}</div>
     <div class="md:grid grid-cols-12 gap-4 items-baseline pb-6">
-        {{ entries }}
+        {{ entries status:in="published"}}
         <div class="col-span-4">
             <button aria-label="Vorstellungen in der {{ kategorien }} {{ title }} {{
             /kategorien }} Kategorie Zeigen"

@@ -2,7 +2,7 @@
 title: Startseite
 blueprint: homepage
 updated_by: 34d4dc92-ec1a-4900-9a81-ed8dd8606f23
-updated_at: 1615983318
+updated_at: 1616149887
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -54,7 +54,7 @@ spielzeit: 'Spielzeit 2020-2021'
 page_builder:
   -
     title: Newsletter
-    text: 'Bleiben Sie im Kontakt mit monsun.theater! Das ist die aktuelle und schnelle Informationsquelle für Premieren, Extra-Veranstaltungen, Gastspiele, Ensemble und Hintergründe.'
+    text: 'Bleiben Sie im Kontakt mit dem monsun.theater! Einmal im Monat aktuelle Informationen zu unseren Veranstaltungen: Premieren, Festivals, Extra-Events und ein Blick hinter die Kulissen.'
     form: contact
     type: form
     enabled: true
@@ -64,12 +64,7 @@ page_builder:
         content:
           -
             type: text
-            text: 'Wir nutzen MailChimp als Software für die Versendung unserer Newsletter. Nach Bestätigen des Buttons "Schicken" erhalten Sie innerhalb der nächsten Minuten an die angegebene E-Mailadresse eine Nachricht. In dieser E-Mail ist ein Link angegeben, den Sie anklicken müssen, um Ihre Anmeldung abzuschließen. Erst danach sind Sie endgültig angemeldet.'
-          -
-            type: hard_break
-          -
-            type: text
-            text: "Sie willigen hiermit in die Verarbeitung Ihrer Daten zu diesem Zweck ein. Ihre Daten werden nur zu diesem Zweck verwendet und nicht an Dritte weitergegeben. Sie können den Newsletter jederzeit wieder durch einen Klick auf das entsprechende Feld am Ende des Newsletters abbestellen. Ihre E-Maildaten werden nach Abbestellung automatisch aus dem Verteiler ausgetragen. Hinweise zum Datenschutz finden Sie\_"
+            text: "Wir nutzen MailChimp als Software für den Versand unseres Newsletter. Nach Bestätigen des Buttons \"SENDEN\" erhalten Sie innerhalb weniger Minuten eine E-Mail mit einem Bestätigungslink, um Ihre Anmeldung abzuschließen. Sie willigen hiermit in die Verarbeitung Ihrer Daten zu diesem Zweck ein. Ihre Daten werden nur zu diesem Zweck verwendet und nicht an Dritte weitergegeben. Sie können den Newsletter jederzeit wieder durch einen Klick auf das entsprechende Feld am Ende des Newsletters abbestellen. Ihre E-Maildaten werden dann automatisch aus dem Verteiler ausgetragen. Hinweise zum Datenschutz finden Sie\_"
           -
             type: text
             marks:

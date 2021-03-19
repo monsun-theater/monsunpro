@@ -5,7 +5,7 @@ sections:
       -
         handle: email
         field:
-          display: 'Ihre E-mail'
+          display: 'Ihre E-Mail'
           type: text
           validate:
             - required
