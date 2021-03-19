@@ -64,7 +64,7 @@ sections:
           type: text
           icon: text
           listable: hidden
-          width: 33
+          width: 25
           instructions: E-mail
       -
         handle: telefonnummer
@@ -75,7 +75,7 @@ sections:
           type: text
           icon: text
           listable: hidden
-          width: 33
+          width: 25
           instructions: Telephone
       -
         handle: fax
@@ -87,4 +87,15 @@ sections:
           icon: text
           instructions: 'Fax number'
           listable: hidden
-          width: 33
+          width: 25
+      -
+        handle: presse_e-mail
+        field:
+          input_type: text
+          antlers: false
+          display: 'Presse E-mail'
+          type: text
+          icon: text
+          instructions: 'Pressroom E-mail address'
+          width: 25
+          listable: hidden

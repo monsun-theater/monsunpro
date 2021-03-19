@@ -19,3 +19,7 @@ Route::statamic('/search', 'search', [
 
 Route::get('/!/DynamicToken/refresh', 'DynamicToken@getRefresh');
 Route::statamic('/sitemap.xml', 'sitemap/sitemap', ['layout' => null, 'content_type' => 'application/xml']); 
+
+Route::statamic('/password', 'password', [
+    'title' => 'Passwort geschützte Seite'
+ ]);
