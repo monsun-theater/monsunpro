@@ -1,8 +1,8 @@
 ---
 title: 'Johanna Hasse'
-hat_eigene_website_has_own_website: true
-kuenstler_artist_website_url_link: 'https://google.com'
-biographie_eintragen_create_artist_s_biography: false
+hat_eigene_website_has_own_website: false
+kuenstler_artist_website_url_link: 'https://'
+biographie_eintragen_create_artist_s_biography: true
 page_builder:
   -
     bard:
@@ -105,6 +105,6 @@ page_builder:
     type: article
     enabled: true
 updated_by: 34d4dc92-ec1a-4900-9a81-ed8dd8606f23
-updated_at: 1616269323
+updated_at: 1616269405
 id: 5f9ebe63-a818-4ee9-b39c-85f98a4343b9
 ---
