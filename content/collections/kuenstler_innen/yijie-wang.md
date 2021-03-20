@@ -17,7 +17,7 @@ page_builder:
         content:
           -
             type: text
-            text: '# MOMENT '
+            text: '#MOMENT! '
           -
             type: text
             marks:
@@ -55,6 +55,6 @@ page_builder:
     type: article
     enabled: true
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1616251220
+updated_at: 1616252395
 id: ec61f759-3537-4312-8c08-554b46c10f81
 ---
