@@ -28,78 +28,35 @@ page_builder:
         content:
           -
             type: text
-            text: 'WIR SIND IN DIE WELT GEVÖGELT, ABER KÖNNEN NICHT FLIEGEN - Teil II '
-          -
-            type: text
-            marks:
-              -
-                type: italic
-            text: '(Figuren & Regie)'
+            text: 'WIR SIND IN DIE WELT GEVÖGELT, ABER KÖNNEN NICHT FLIEGEN - Teil II (Figuren & Regie)'
           -
             type: hard_break
           -
             type: text
-            text: 'BROKEN HEART '
-          -
-            type: text
-            marks:
-              -
-                type: italic
-            text: (Kostüm)
+            text: 'BROKEN HEART (Kostüm)'
           -
             type: hard_break
           -
             type: text
-            text: 'WENN WIR TANZEN, SUMMT DIE WELT '
-          -
-            type: text
-            marks:
-              -
-                type: italic
-            text: '(Masken & Regie)'
+            text: 'WENN WIR TANZEN, SUMMT DIE WELT (Masken & Regie)'
           -
             type: hard_break
           -
             type: text
-            text: 'PAULA '
-          -
-            type: text
-            marks:
-              -
-                type: italic
-            text: (Ausstattung)
+            text: 'PAULA (Ausstattung)'
           -
             type: hard_break
           -
             type: text
-            text: 'DAS HIRN IST EIN TAUBENSCHLAG '
-          -
-            type: text
-            marks:
-              -
-                type: italic
-            text: '(Figuren & Kostüm & Regie)'
+            text: 'DAS HIRN IST EIN TAUBENSCHLAG (Figuren & Kostüm & Regie)'
           -
             type: hard_break
           -
             type: text
-            text: 'ANASTASIA, WANN BEKOMMST DU DEINE JUWELEN ZURÜCK? '
-          -
-            type: text
-            marks:
-              -
-                type: italic
-            text: '(Figuren & Regie)'
-      -
-        type: paragraph
-        content:
-          -
-            type: hard_break
-          -
-            type: hard_break
+            text: 'ANASTASIA, WANN BEKOMMST DU DEINE JUWELEN ZURÜCK? (Figuren & Regie)'
     type: article
     enabled: true
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1616242668
+updated_at: 1616243750
 id: 78a4fa9b-1bc1-418e-91f4-859095e18045
 ---
