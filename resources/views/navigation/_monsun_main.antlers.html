@@ -148,11 +148,11 @@
 
     <button
         @click.prevent="mobileNavOpen = !mobileNavOpen, mobileNavOpen ? document.body.classList.add('no-scroll') : document.body.classList.remove('no-scroll')"
-        class="fixed bottom-0 z-20 h-14 flex font-bold border-2 border-white uppercase justify-center items-center right-0 w-full bg-black text-white text-base tracking-widest 
+        class="fixed bottom-0 z-30 h-14 flex font-bold border-2 border-white uppercase justify-center items-center right-0 w-full bg-black text-white text-base tracking-widest 
         aria-label=" Toggle menu" x-text="mobileNavOpen ? 'Schließe' : 'Menu'">
     </button>
 
-    <ul class="fixed z-10 inset-0 flex flex-col justify-center pt-3 items-center space-y-3 bg-black overflow-auto"
+    <ul class="fixed z-20 inset-0 flex flex-col justify-center pt-3 items-center space-y-3 bg-black overflow-auto"
         x-show="mobileNavOpen" x-cloak>
         {{ nav:top_menu_mobile max_depth="2" include_home="true" }}
         <li {{ if children }} x-data="{ mobileNavSubnavOpen: false }" {{ /if }} class="leading-none">
@@ -174,7 +174,7 @@
                 x-cloak>
                 {{ children }}
                 <li>
-                    <a class="whitespace-nowrap lowercase hover:text-monsun {{ is_current || is_parent ? 'text-monsun' : 'text-white' }}"
+                    <a class="whitespace-nowrap font-medium lowercase hover:text-monsun {{ is_current || is_parent ? 'text-monsun' : 'text-white' }}"
                         href="{{ url }}">
                         {{ title }}
                     </a>
