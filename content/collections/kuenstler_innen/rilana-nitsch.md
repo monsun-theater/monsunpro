@@ -4,7 +4,7 @@ hat_eigene_website_has_own_website: false
 kuenstler_artist_website_url_link: 'https://'
 biographie_eintragen_create_artist_s_biography: true
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1616251849
+updated_at: 1616251942
 page_builder:
   -
     bard:
@@ -21,7 +21,7 @@ page_builder:
         content:
           -
             type: text
-            text: "Rilana Nitsch studiert Psychologie an der LMU München und absolvierte ihre Ausbildung zur Schauspielerin an der\_Schauspielschule Zerboni in München, sowie\_dem\_Lee Strasberg Theater and Film Institute in New York."
+            text: "Rilana Nitsch studiert Psychologie an der LMU München und absolviert ihre Ausbildung zur Schauspielerin an der\_Schauspielschule Zerboni in München, sowie\_dem\_Lee Strasberg Theater and Film Institute in New York."
       -
         type: paragraph
         content:
