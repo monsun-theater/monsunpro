@@ -1,7 +1,7 @@
 ---
 title: 'Francoise Hüsges'
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1616256019
+updated_at: 1616256136
 page_builder:
   -
     bard:
@@ -37,147 +37,321 @@ page_builder:
         content:
           -
             type: text
-            text: 'ALICE IM WUNDERLAND (Regie)'
+            text: 'ALICE IM WUNDERLAND '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: (Regie)
           -
             type: hard_break
           -
             type: text
-            text: 'NICHTS WAS IM LEBEN WICHTIG IST (Regie)'
+            text: 'NICHTS WAS IM LEBEN WICHTIG IST '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: (Regie)
           -
             type: hard_break
           -
             type: text
-            text: 'KNALLHART (Regie)'
+            text: 'KNALLHART '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: (Regie)
           -
             type: hard_break
           -
             type: text
-            text: 'FÜR JEDEN DRECK ZU HABEN (Regie)'
+            text: 'FÜR JEDEN DRECK ZU HABEN '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: (Regie)
           -
             type: hard_break
           -
             type: text
-            text: 'FUCKING ÅMÅL (Regie)'
+            text: 'FUCKING ÅMÅL '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: (Regie)
           -
             type: hard_break
           -
             type: text
-            text: 'HOMEVIDEO (Regie)'
+            text: 'HOMEVIDEO '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: (Regie)
           -
             type: hard_break
           -
             type: text
-            text: 'IM AUGE DER ANDEREN (Regie)'
+            text: 'IM AUGE DER ANDEREN '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: (Regie)
           -
             type: hard_break
           -
             type: text
-            text: 'ASYL – FLUCHT INS MORGENLAND (Regie)'
+            text: 'ASYL – FLUCHT INS MORGENLAND '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: (Regie)
           -
             type: hard_break
           -
             type: text
-            text: 'IHR KÖNNT EUCH NIEMALS SICHER SEIN (Regie)'
+            text: 'IHR KÖNNT EUCH NIEMALS SICHER SEIN '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: (Regie)
           -
             type: hard_break
           -
             type: text
-            text: 'WIR SPIELEN NUR (Regie)'
+            text: 'WIR SPIELEN NUR '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: (Regie)
           -
             type: hard_break
           -
             type: text
-            text: 'MÄRTYRER (Regie)'
+            text: 'MÄRTYRER '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: (Regie)
           -
             type: hard_break
           -
             type: text
-            text: 'WEGGESPERRT (Regie)'
+            text: 'WEGGESPERRT '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: (Regie)
           -
             type: hard_break
           -
             type: text
-            text: 'FRÜHLINGS ERWACHEN (Regie)'
+            text: 'FRÜHLINGS ERWACHEN '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: (Regie)
           -
             type: hard_break
           -
             type: text
-            text: 'CRANK (Regie)'
+            text: 'CRANK '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: (Regie)
           -
             type: hard_break
           -
             type: text
-            text: 'JACKPOT (Regie)'
+            text: 'JACKPOT '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: (Regie)
           -
             type: hard_break
           -
             type: text
-            text: 'HALT! (Regie)'
+            text: 'HALT! '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: (Regie)
           -
             type: hard_break
           -
             type: text
-            text: 'WIR SIND ES (Regie)'
+            text: 'WIR SIND ES '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: (Regie)
           -
             type: hard_break
           -
             type: text
-            text: 'DAS SCHICKSAL IST EIN MIESER VERRÄTER (Regie)'
+            text: 'DAS SCHICKSAL IST EIN MIESER VERRÄTER '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: (Regie)
           -
             type: hard_break
           -
             type: text
-            text: 'TOTE MÄDCHEN LÜGEN NICHT (Regie)'
+            text: 'TOTE MÄDCHEN LÜGEN NICHT '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: (Regie)
           -
             type: hard_break
           -
             type: text
-            text: 'EIN KURZER AUGENBLICK (Regie)'
+            text: 'EIN KURZER AUGENBLICK '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: (Regie)
           -
             type: hard_break
           -
             type: text
-            text: 'SCHÖNHEIT (Regie)'
+            text: 'SCHÖNHEIT '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: (Regie)
           -
             type: hard_break
           -
             type: text
-            text: 'DIE WELLE (Regie)'
+            text: 'DIE WELLE '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: (Regie)
           -
             type: hard_break
           -
             type: text
-            text: 'DER NUSSKNACKER (Regie)'
+            text: 'DER NUSSKNACKER '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: (Regie)
           -
             type: hard_break
           -
             type: text
-            text: 'WHY NOT? (Regie)'
+            text: 'WHY NOT? '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: (Regie)
           -
             type: hard_break
           -
             type: text
-            text: 'FLY (Regie)'
+            text: 'FLY '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: (Regie)
           -
             type: hard_break
           -
             type: text
-            text: '#MOMENT! (Regie)'
+            text: '#MOMENT! '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: (Regie)
           -
             type: hard_break
           -
             type: text
-            text: 'DAS LANGE NACHSPIEL EINER KURZEN MITTEILUNG (Ausstattung)'
+            text: 'DAS LANGE NACHSPIEL EINER KURZEN MITTEILUNG '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: (Ausstattung)
           -
             type: hard_break
           -
             type: text
-            text: 'FABIAN ODER DER GANG VOR DIE HUNDE (Bühne)'
+            text: 'FABIAN ODER DER GANG VOR DIE HUNDE '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: (Bühne)
           -
             type: hard_break
           -
             type: text
-            text: 'BRUCHLINIEN (Konzept & Ausstattung)'
+            text: 'BRUCHLINIEN '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: '(Konzept & Ausstattung)'
           -
             type: hard_break
           -
@@ -192,7 +366,13 @@ page_builder:
             text: 'FILETSTÜCKE – WEM GEHÖRT DAS LAND'
           -
             type: text
-            text: ' (Konzept & Regie)'
+            text: ' '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: '(Konzept & Regie)'
     type: article
     enabled: true
 kuenstler_artist_website_link: www.google.com
