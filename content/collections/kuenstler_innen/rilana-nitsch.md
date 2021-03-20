@@ -4,10 +4,18 @@ hat_eigene_website_has_own_website: false
 kuenstler_artist_website_url_link: 'https://'
 biographie_eintragen_create_artist_s_biography: true
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1616251516
+updated_at: 1616251849
 page_builder:
   -
     bard:
+      -
+        type: set
+        attrs:
+          values:
+            type: small_picture
+            image: monsun-team/kuenstler/Rilana_Nitsch_c_Elena_Zaucke.jpg
+            zusatzinfo_zeigen: true
+            kleinbild_zusatzinfo: '© Elena Zaucke'
       -
         type: paragraph
         content:
