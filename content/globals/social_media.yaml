@@ -35,4 +35,4 @@ data:
       social_icon:
         - site-setup/social-media-icons/twitter-2170.svg
       type: twitter
-      enabled: true
+      enabled: false
