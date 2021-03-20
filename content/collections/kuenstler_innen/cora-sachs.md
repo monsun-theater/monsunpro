@@ -36,37 +36,73 @@ page_builder:
         content:
           -
             type: text
-            text: 'WIR SIND IN DIE WELT GEVÖGELT, ABER KÖNNEN NICHT FLIEGEN - Teil II (Figuren & Regie)'
+            text: 'WIR SIND IN DIE WELT GEVÖGELT, ABER KÖNNEN NICHT FLIEGEN - Teil II '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: '(Figuren & Regie)'
           -
             type: hard_break
           -
             type: text
-            text: 'BROKEN HEART (Kostüm)'
+            text: 'BROKEN HEART '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: (Kostüm)
           -
             type: hard_break
           -
             type: text
-            text: 'WENN WIR TANZEN, SUMMT DIE WELT (Masken & Regie)'
+            text: 'WENN WIR TANZEN, SUMMT DIE WELT '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: '(Masken & Regie)'
           -
             type: hard_break
           -
             type: text
-            text: 'PAULA (Ausstattung)'
+            text: 'PAULA '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: (Ausstattung)
           -
             type: hard_break
           -
             type: text
-            text: 'DAS HIRN IST EIN TAUBENSCHLAG (Figuren & Kostüm & Regie)'
+            text: 'DAS HIRN IST EIN TAUBENSCHLAG '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: '(Figuren & Kostüm & Regie)'
           -
             type: hard_break
           -
             type: text
-            text: 'ANASTASIA, WANN BEKOMMST DU DEINE JUWELEN ZURÜCK? (Figuren & Regie)'
+            text: 'ANASTASIA, WANN BEKOMMST DU DEINE JUWELEN ZURÜCK? '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: '(Figuren & Regie)'
       -
         type: paragraph
     type: article
     enabled: true
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1616244426
+updated_at: 1616244507
 id: 78a4fa9b-1bc1-418e-91f4-859095e18045
 ---
