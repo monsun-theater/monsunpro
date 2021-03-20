@@ -29,3 +29,10 @@ data:
       enabled: true
       social_icon:
         - site-setup/social-media-icons/icon-vimeo.svg
+    -
+      url: monsun_theater
+      prefix: 'https://www.twitter.com/'
+      social_icon:
+        - site-setup/social-media-icons/twitter-2170.svg
+      type: twitter
+      enabled: true
