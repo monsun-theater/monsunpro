@@ -1,16 +1,24 @@
 ---
 title: 'Francoise Hüsges'
-updated_by: 34d4dc92-ec1a-4900-9a81-ed8dd8606f23
-updated_at: 1614955321
+updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
+updated_at: 1616255799
 page_builder:
   -
     bard:
+      -
+        type: set
+        attrs:
+          values:
+            type: small_picture
+            image: Francoise_Huesges_c_Altona_Magazin.jpg
+            zusatzinfo_zeigen: true
+            kleinbild_zusatzinfo: '© Altona Magazin'
       -
         type: paragraph
         content:
           -
             type: text
-            text: "Die\_Regisseurin und Bühnenbildnerin Francoise Hüsges leitet seit der Spielzeit 2015/2016 das\_"
+            text: "Die\_Regisseurin und Bühnenbildnerin Francoise Hüsges leitet seit der Spielzeit 2015/16 das\_"
           -
             type: text
             marks:
@@ -23,33 +31,168 @@ page_builder:
             text: monsun.theater
           -
             type: text
-            text: "\_in Hamburg. Ihr künstlerischer Fokus liegt im Erforschen neuer Ästhetiken sowie in der Zusammenarbeit, dem digitalen Austausch und der Vernetzung mit anderen Ländern. Ihre grenzüberschreitende Arbeitsweise zeigt sich u.a. in der Inszenierung „#MOMENT“, in der zwei Bühnen in Hamburg und Toulouse digital vernetzt werden. Außerdem entwickelt sie neue Akzente für die Bühne per Live-Stream. 2017 gründete und etablierte sie außerdem das Hamburger AUSSICHT Festival – eine Plattform für Künstler*innen mit und ohne Behinderung. Neben der Theaterleitung entstehen weiterhin Arbeiten im Bereich der Regie und Bühne für die regionale und überregionale freie Szene. Mit der Regisseurin\_"
+            text: "\_in Hamburg. Ihr künstlerischer Fokus liegt im Erforschen neuer Ästhetiken sowie in der Zusammenarbeit, dem digitalen Austausch und der Vernetzung mit anderen Ländern. Ihre grenzüberschreitende Arbeitsweise zeigt sich u.a. in der Inszenierung #MOMENT!, in der zwei Bühnen in Hamburg und Toulouse digital vernetzt werden. Außerdem entwickelt sie neue Akzente für die Bühne per Live-Stream. 2017 gründete und etablierte sie außerdem das Hamburger AUSSICHT Festival – eine Plattform für Künstler:innen mit und ohne Behinderung. Neben der Theaterleitung entstehen weiterhin Arbeiten im Bereich der Regie und Bühne für die regionale und überregionale freie Szene."
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'ALICE IM WUNDERLAND (Regie)'
+          -
+            type: hard_break
+          -
+            type: text
+            text: 'NICHTS WAS IM LEBEN WICHTIG IST (Regie)'
+          -
+            type: hard_break
+          -
+            type: text
+            text: 'KNALLHART (Regie)'
+          -
+            type: hard_break
+          -
+            type: text
+            text: 'FÜR JEDEN DRECK ZU HABEN (Regie)'
+          -
+            type: hard_break
+          -
+            type: text
+            text: 'FUCKING ÅMÅL (Regie)'
+          -
+            type: hard_break
+          -
+            type: text
+            text: 'HOMEVIDEO (Regie)'
+          -
+            type: hard_break
+          -
+            type: text
+            text: 'IM AUGE DER ANDEREN (Regie)'
+          -
+            type: hard_break
+          -
+            type: text
+            text: 'ASYL – FLUCHT INS MORGENLAND (Regie)'
+          -
+            type: hard_break
+          -
+            type: text
+            text: 'IHR KÖNNT EUCH NIEMALS SICHER SEIN (Regie)'
+          -
+            type: hard_break
+          -
+            type: text
+            text: 'WIR SPIELEN NUR (Regie)'
+          -
+            type: hard_break
+          -
+            type: text
+            text: 'MÄRTYRER (Regie)'
+          -
+            type: hard_break
+          -
+            type: text
+            text: 'WEGGESPERRT (Regie)'
+          -
+            type: hard_break
+          -
+            type: text
+            text: 'FRÜHLINGS ERWACHEN (Regie)'
+          -
+            type: hard_break
+          -
+            type: text
+            text: 'CRANK (Regie)'
+          -
+            type: hard_break
+          -
+            type: text
+            text: 'JACKPOT (Regie)'
+          -
+            type: hard_break
+          -
+            type: text
+            text: 'HALT! (Regie)'
+          -
+            type: hard_break
+          -
+            type: text
+            text: 'WIR SIND ES (Regie)'
+          -
+            type: hard_break
+          -
+            type: text
+            text: 'DAS SCHICKSAL IST EIN MIESER VERRÄTER (Regie)'
+          -
+            type: hard_break
+          -
+            type: text
+            text: 'TOTE MÄDCHEN LÜGEN NICHT (Regie)'
+          -
+            type: hard_break
+          -
+            type: text
+            text: 'EIN KURZER AUGENBLICK (Regie)'
+          -
+            type: hard_break
+          -
+            type: text
+            text: 'SCHÖNHEIT (Regie)'
+          -
+            type: hard_break
+          -
+            type: text
+            text: 'DIE WELLE (Regie)'
+          -
+            type: hard_break
+          -
+            type: text
+            text: 'DER NUSSKNACKER (Regie)'
+          -
+            type: hard_break
+          -
+            type: text
+            text: 'WHY NOT? (Regie)'
+          -
+            type: hard_break
+          -
+            type: text
+            text: 'FLY (Regie)'
+          -
+            type: hard_break
+          -
+            type: text
+            text: '#MOMENT! (Regie)'
+          -
+            type: hard_break
+          -
+            type: text
+            text: 'DAS LANGE NACHSPIEL EINER KURZEN MITTEILUNG (Ausstattung)'
+          -
+            type: hard_break
+          -
+            type: text
+            text: 'FABIAN ODER DER GANG VOR DIE HUNDE (Bühne)'
+          -
+            type: hard_break
+          -
+            type: text
+            text: 'BRUCHLINIEN (Konzept & Ausstattung)'
+          -
+            type: hard_break
           -
             type: text
             marks:
               -
                 type: link
                 attrs:
-                  href: 'https://www.vaganten.de/regie/johanna-hasse'
+                  href: 'https://monsun.theater/veranstaltungen/filetstuecke'
                   target: null
                   rel: null
-            text: 'Johanna Hasse'
+            text: 'FILETSTÜCKE – WEM GEHÖRT DAS LAND'
           -
             type: text
-            text: "\_und dem Autor\_"
-          -
-            type: text
-            marks:
-              -
-                type: link
-                attrs:
-                  href: 'https://www.vaganten.de/kuenstlerinnen/autorinnen/michael-alexander-mueller'
-                  target: null
-                  rel: null
-            text: 'Michael Alexander Müller'
-          -
-            type: text
-            text: ' verbindet sie eine mehrjährige, sehr erfolgreiche Zusammenarbeit.'
+            text: ' (Konzept & Regie)'
     type: article
     enabled: true
 kuenstler_artist_website_link: www.google.com
