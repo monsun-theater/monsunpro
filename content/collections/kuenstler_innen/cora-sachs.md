@@ -1,7 +1,7 @@
 ---
 title: 'Cora Sachs'
-hat_eigene_website_has_own_website: false
-kuenstler_artist_website_url_link: 'https://'
+hat_eigene_website_has_own_website: true
+kuenstler_artist_website_url_link: 'https://www.corasachs.com'
 biographie_eintragen_create_artist_s_biography: true
 page_builder:
   -
@@ -67,6 +67,6 @@ page_builder:
     type: article
     enabled: true
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1616244079
+updated_at: 1616244185
 id: 78a4fa9b-1bc1-418e-91f4-859095e18045
 ---
