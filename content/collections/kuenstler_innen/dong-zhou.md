@@ -1,11 +1,19 @@
 ---
 title: 'Dong Zhou'
-hat_eigene_website_has_own_website: false
-kuenstler_artist_website_url_link: 'https://'
+hat_eigene_website_has_own_website: true
+kuenstler_artist_website_url_link: 'https://dongzhou.live'
 biographie_eintragen_create_artist_s_biography: true
 page_builder:
   -
     bard:
+      -
+        type: set
+        attrs:
+          values:
+            type: small_picture
+            image: monsun-team/kuenstler/Dong_Zhou_c_Thomas_Zydatis.jpg
+            zusatzinfo_zeigen: true
+            kleinbild_zusatzinfo: '© Thomas Zydatis'
       -
         type: paragraph
         content:
@@ -54,6 +62,6 @@ page_builder:
     type: article
     enabled: true
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1616249337
+updated_at: 1616249889
 id: 2a783111-0fd9-4d70-9f20-8a0e95eb067c
 ---
