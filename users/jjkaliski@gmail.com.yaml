@@ -48,3 +48,6 @@ preferences:
     -
       name: 'Startseite ‹ Seiten ‹ Sammlungen'
       url: collections/pages/entries/home/home
+    -
+      name: 'Startseite ‹ Seiten ‹ Sammlungen'
+      url: collections/pages/entries/home/home
