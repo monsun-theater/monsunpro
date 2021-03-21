@@ -44,7 +44,3 @@ preferences:
       columns:
         - datestamp
         - email
-  favorites:
-    -
-      name: 'Startseite ‹ Seiten ‹ Sammlungen'
-      url: collections/pages/entries/home/home
