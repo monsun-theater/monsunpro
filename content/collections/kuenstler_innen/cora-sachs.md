@@ -107,10 +107,27 @@ page_builder:
             caption: 'Theaterpreis Hamburg „Rolf Mares“ 2018 – Herausragende Inszenierung „Wenn wir tanzen, summt die Welt“'
             do_not_track: true
       -
+        type: set
+        attrs:
+          values:
+            type: buttons
+            buttons:
+              -
+                label: 'Website Cora Sachs'
+                target_blank: true
+                link_type: url
+                entry: null
+                url: 'https://www.corasachs.com'
+                email: null
+                tel: null
+                asset: null
+                attr_title: null
+                attr_aria: null
+      -
         type: paragraph
     type: article
     enabled: true
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1616453317
+updated_at: 1616453496
 id: 78a4fa9b-1bc1-418e-91f4-859095e18045
 ---
