@@ -10,15 +10,15 @@ page_builder:
         type: set
         attrs:
           values:
-            type: small_picture
+            type: figure
             image: kuenstler-innen/Ahmed_Soura_c_Andreas_Schlieter.jpg
-            zusatzinfo_zeigen: true
-            kleinbild_zusatzinfo: '© Andreas Schlieter'
+            size: md
+            caption: 'Andreas Schlieter'
       -
         type: paragraph
     type: article
     enabled: true
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1616452534
+updated_at: 1616453766
 id: 605d1fff-6e51-4810-8b7c-9abdb2b7de9d
 ---
