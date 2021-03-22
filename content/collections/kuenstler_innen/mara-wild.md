@@ -13,7 +13,7 @@ page_builder:
             type: figure
             image: kuenstler-innen/mara_wild_c_marie_seeberger.jpg
             size: md
-            caption: '© Marie Seeberger'
+            caption: 'Marie Seeberger'
       -
         type: paragraph
         content:
@@ -51,6 +51,6 @@ page_builder:
     type: article
     enabled: true
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1616452955
+updated_at: 1616453697
 id: 604b43e0-b5ff-42fe-9b32-54c805b306ce
 ---
