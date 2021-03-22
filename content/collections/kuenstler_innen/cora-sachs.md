@@ -10,10 +10,10 @@ page_builder:
         type: set
         attrs:
           values:
-            type: small_picture
+            type: figure
             image: kuenstler-innen/Cora_Sachs_01_c_G2_Baraniak.jpeg
-            zusatzinfo_zeigen: true
-            kleinbild_zusatzinfo: '© G2 Baraniak'
+            size: md
+            caption: '© G2 Baraniak'
       -
         type: paragraph
         content:
@@ -111,6 +111,6 @@ page_builder:
     type: article
     enabled: true
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1616452461
+updated_at: 1616453103
 id: 78a4fa9b-1bc1-418e-91f4-859095e18045
 ---
