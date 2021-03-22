@@ -10,10 +10,10 @@ page_builder:
         type: set
         attrs:
           values:
-            type: small_picture
+            type: figure
             image: kuenstler-innen/mara_wild_c_marie_seeberger.jpg
-            zusatzinfo_zeigen: true
-            kleinbild_zusatzinfo: '© Marie Seeberger'
+            size: md
+            caption: '© Marie Seeberger'
       -
         type: paragraph
         content:
@@ -51,6 +51,6 @@ page_builder:
     type: article
     enabled: true
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1616451224
+updated_at: 1616452955
 id: 604b43e0-b5ff-42fe-9b32-54c805b306ce
 ---
