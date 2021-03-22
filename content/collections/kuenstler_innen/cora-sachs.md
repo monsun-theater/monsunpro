@@ -99,6 +99,8 @@ page_builder:
                 type: italic
             text: '(Figuren & Regie)'
       -
+        type: paragraph
+      -
         type: set
         attrs:
           values:
@@ -106,6 +108,8 @@ page_builder:
             video_url: 'https://vimeo.com/404334909'
             caption: 'Theaterpreis Hamburg „Rolf Mares“ 2018 – Herausragende Inszenierung „Wenn wir tanzen, summt die Welt“'
             do_not_track: true
+      -
+        type: paragraph
       -
         type: set
         attrs:
@@ -128,6 +132,6 @@ page_builder:
     type: article
     enabled: true
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1616453591
+updated_at: 1616453974
 id: 78a4fa9b-1bc1-418e-91f4-859095e18045
 ---
