@@ -13,6 +13,7 @@ page_builder:
             type: small_picture
             zusatzinfo_zeigen: true
             kleinbild_zusatzinfo: '© Thomas Zydatis'
+            image: kuenstler-innen/Dong_Zhou_c_Thomas_Zydatis.jpg
       -
         type: paragraph
         content:
@@ -61,6 +62,6 @@ page_builder:
     type: article
     enabled: true
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1616450870
+updated_at: 1616450910
 id: 2a783111-0fd9-4d70-9f20-8a0e95eb067c
 ---
