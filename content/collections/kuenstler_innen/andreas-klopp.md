@@ -4,7 +4,7 @@ hat_eigene_website_has_own_website: false
 kuenstler_artist_website_url_link: 'https://'
 biographie_eintragen_create_artist_s_biography: true
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1616452872
+updated_at: 1616453682
 page_builder:
   -
     bard:
@@ -15,7 +15,7 @@ page_builder:
             type: figure
             image: kuenstler-innen/Andreas_Klopp_c_Pascal_Buenning.jpg
             size: md
-            caption: '© Jörg Reichardt'
+            caption: 'Jörg Reichardt'
       -
         type: paragraph
         content:
