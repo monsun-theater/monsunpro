@@ -6,8 +6,8 @@ seo_nofollow: false
 seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
-updated_by: 34d4dc92-ec1a-4900-9a81-ed8dd8606f23
-updated_at: 1615374728
+updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
+updated_at: 1616451969
 template: default
 page_builder:
   -
@@ -100,57 +100,12 @@ page_builder:
           -
             type: text
             text: 'Eine kleine Beschallungsanlage mit CD-Player ist vorhanden,alles weitere auf Anfrage.'
-      -
-        type: heading
-        attrs:
-          level: 3
-        content:
-          -
-            type: text
-            text: GASTRONOMIE
-      -
-        type: paragraph
-        content:
-          -
-            type: text
-            text: 'Für die kulinarischen Wünsche Ihrer Veranstaltung im monsun theater empfehlen wir Ihnen unser hausinternes Restaurant.'
-      -
-        type: paragraph
-        content:
-          -
-            type: text
-            text: 'Es gibt verschiedene Möglichkeiten: Gäste von Stehempfängen werden mit deliziösem Fingerfood versorgt, wahlweise können auch dem Anlass entsprechende Themenbuffets angeboten, mehrgängige Menüs arrangiert oder Snacks gereicht werden.'
-      -
-        type: paragraph
-        content:
-          -
-            type: text
-            text: 'Dazu werden alle Arten von Getränken angeboten.'
-      -
-        type: paragraph
-        content:
-          -
-            type: text
-            text: 'Gemeinsam mit unserem italienischen Restaurant im Haus »Pizza 2.0« oder einem Caterer greifen wir Ihre Vorschläge gern auf und setzen Ihre Wünsche optimal um.'
     type: article
     enabled: true
   -
     title: Anfrage
-    image: monsun-team/portrait-4-3.jpg
-    text: 'Telefon oder E-mail.'
-    description: 'Martin Schmidt'
+    text: E-mail
     buttons:
-      -
-        label: 'Tel: 0403903148'
-        target_blank: false
-        link_type: tel
-        entry: null
-        url: null
-        email: info@monsun.theater
-        tel: '0403903148'
-        asset: null
-        attr_title: Telefonieren
-        attr_aria: 'monsun.theater telefonieren'
       -
         label: info@monsun.theater
         target_blank: false
