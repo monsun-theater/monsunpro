@@ -38,7 +38,7 @@ page_builder:
                   href: 'https://monsun.theater/veranstaltungen/filetstuecke'
                   target: null
                   rel: null
-            text: 'FILETSTÜCKE – wem gehört das Land'
+            text: 'FILETSTÜCKE – WEM GEHÖRT DAS LAND'
           -
             type: text
             text: ' '
@@ -51,6 +51,6 @@ page_builder:
     type: article
     enabled: true
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1616450524
+updated_at: 1616451224
 id: 604b43e0-b5ff-42fe-9b32-54c805b306ce
 ---
