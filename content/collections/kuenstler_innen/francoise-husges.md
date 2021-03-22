@@ -1,7 +1,7 @@
 ---
 title: 'Francoise Hüsges'
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1616451270
+updated_at: 1616452781
 page_builder:
   -
     bard:
@@ -9,10 +9,10 @@ page_builder:
         type: set
         attrs:
           values:
-            type: small_picture
+            type: figure
             image: kuenstler-innen/Francoise_Huesges_c_Altona_Magazin.jpg
-            zusatzinfo_zeigen: true
-            kleinbild_zusatzinfo: '© Altona Magazin'
+            size: md
+            caption: '© Altona Magazin'
       -
         type: paragraph
         content:
