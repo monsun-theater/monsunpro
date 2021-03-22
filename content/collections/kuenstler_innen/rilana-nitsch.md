@@ -4,7 +4,7 @@ hat_eigene_website_has_own_website: false
 kuenstler_artist_website_url_link: 'https://'
 biographie_eintragen_create_artist_s_biography: true
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1616452921
+updated_at: 1616453637
 page_builder:
   -
     bard:
@@ -15,7 +15,7 @@ page_builder:
             type: figure
             image: kuenstler-innen/Rilana_Nitsch_c_Elena_Zaucke.jpg
             size: md
-            caption: '© Elena Zaucke'
+            caption: 'Elena Zaucke'
       -
         type: paragraph
         content:
