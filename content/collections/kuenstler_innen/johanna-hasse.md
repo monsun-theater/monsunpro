@@ -101,10 +101,10 @@ page_builder:
             marks:
               -
                 type: italic
-            text: (Regie)
+            text: '(Konzept & Raum & Regie)'
     type: article
     enabled: true
-updated_by: 34d4dc92-ec1a-4900-9a81-ed8dd8606f23
-updated_at: 1616269405
+updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
+updated_at: 1616451312
 id: 5f9ebe63-a818-4ee9-b39c-85f98a4343b9
 ---
