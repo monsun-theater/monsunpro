@@ -4,7 +4,7 @@ hat_eigene_website_has_own_website: false
 kuenstler_artist_website_url_link: 'https://'
 biographie_eintragen_create_artist_s_biography: true
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1616254500
+updated_at: 1616440164
 page_builder:
   -
     bard:
@@ -13,7 +13,7 @@ page_builder:
         attrs:
           values:
             type: small_picture
-            image: monsun-team/kuenstler/Andreas_Klopp_c_Pascal_Buenning.jpg
+            image: kuenstler-innen/Andreas_Klopp_c_Pascal_Buenning.jpg
             zusatzinfo_zeigen: true
             kleinbild_zusatzinfo: '© Pascal Buenning'
       -
