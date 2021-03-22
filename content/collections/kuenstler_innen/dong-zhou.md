@@ -15,6 +15,23 @@ page_builder:
             size: md
             caption: 'Thomas Zydatis'
       -
+        type: set
+        attrs:
+          values:
+            type: buttons
+            buttons:
+              -
+                label: 'Website Dong Zhou'
+                target_blank: true
+                link_type: url
+                entry: null
+                url: 'https://dongzhou.live'
+                email: null
+                tel: null
+                asset: null
+                attr_title: null
+                attr_aria: null
+      -
         type: paragraph
         content:
           -
@@ -62,6 +79,6 @@ page_builder:
     type: article
     enabled: true
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1616453790
+updated_at: 1616453865
 id: 2a783111-0fd9-4d70-9f20-8a0e95eb067c
 ---
