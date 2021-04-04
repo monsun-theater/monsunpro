@@ -13,6 +13,7 @@ page_builder:
             type: figure
             image: kuenstler-innen/michael_alexander_mueller.jpg
             size: md
+            caption: 'Andreas Schlieter'
       -
         type: paragraph
         content:
@@ -78,6 +79,6 @@ page_builder:
     type: article
     enabled: true
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1617390850
+updated_at: 1617556616
 id: e6c03a3d-126d-48f3-b7df-26cd340bc2de
 ---
