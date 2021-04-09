@@ -2,7 +2,7 @@
 title: Startseite
 blueprint: homepage
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1617998175
+updated_at: 1618002780
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -39,10 +39,32 @@ hero_featured_sect:
         attr_title: 'Mehr lesen'
         attr_aria: 'Mehr über Filetstücke lesen'
     type: featured
-    enabled: true
+    enabled: false
     titelzusatz_zeigen: true
     subtitle: '- wem gehört das Land'
     overlay_color: neutral-300
+  -
+    title: 'Die Orestie'
+    titelzusatz_zeigen: true
+    subtitle: 'Von Aischylos'
+    title_desc: 'Theater im Bauturm (Köln) im monsun.stream'
+    einfarbiger_hintergrund: false
+    featured_image: produktionen/die_orestie/tib_die_orestie_1_c_laura_thomas.jpg
+    overlay_color: neutral-300
+    buttons:
+      -
+        label: 'Mehr lesen'
+        target_blank: false
+        link_type: entry
+        entry: 876c3b71-60f6-4caf-9a97-2c266e83d428
+        url: null
+        email: null
+        tel: null
+        asset: null
+        attr_title: 'Mehr lesen'
+        attr_aria: 'Mehr über die Orestie lesen'
+    type: featured
+    enabled: true
 anzahl_vorstellungen_in_demnaechst: 4
 anzahl_eintraege_in_aktuelles: 2
 anzahl_stuecke_in_spielzeit_component: 3
