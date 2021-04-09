@@ -2,7 +2,7 @@
 title: Startseite
 blueprint: homepage
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1617988001
+updated_at: 1617988021
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -43,7 +43,7 @@ hero_featured_sect:
     titelzusatz_zeigen: true
     subtitle: '- wem gehört das Land'
     overlay_color: neutral-300
-anzahl_vorstellungen_in_demnaechst: 0
+anzahl_vorstellungen_in_demnaechst: 3
 anzahl_eintraege_in_aktuelles: 2
 anzahl_stuecke_in_spielzeit_component: 3
 seo_title: Startseite
