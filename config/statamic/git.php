@@ -71,11 +71,11 @@ return [
     |
     */
 
-    'use_authenticated' => true,
+    'use_authenticated' => false,
 
     'user' => [
-        'name' => env('STATAMIC_GIT_USER_NAME', 'Spock'),
-        'email' => env('STATAMIC_GIT_USER_EMAIL', 'spock@example.com'),
+        'name' => env('STATAMIC_GIT_USER_NAME', 'jkaliski'),
+        'email' => env('STATAMIC_GIT_USER_EMAIL', 'jjkaliski@gmail.com'),
     ],
 
     /*
