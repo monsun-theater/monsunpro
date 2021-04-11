@@ -1,11 +1,16 @@
 {
     "name": "studio1902/statamic-peak",
     "description": "Statamic Peak",
-    "keywords": ["statamic", "cms", "flat file", "laravel"],
+    "keywords": [
+        "statamic",
+        "cms",
+        "flat file",
+        "laravel"
+    ],
     "type": "project",
     "require": {
         "php": "^7.3",
-        "edalzell/forma": "0.8.8",
+        "edalzell/forma": "0.8.11",
         "fideloper/proxy": "^4.2",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",
@@ -14,7 +19,7 @@
         "laravel/tinker": "^2.0",
         "pixelfear/composer-dist-plugin": "^0.1",
         "silentz/mailchimp": "^2.5",
-        "statamic/cms": "3.0.47"
+        "statamic/cms": "3.1.*"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.5",
@@ -51,6 +56,9 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "scripts": {
+        "pre-update-cmd": [
+            "Statamic\\Console\\Composer\\Scripts::preUpdateCmd"
+        ],
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
             "@php artisan package:discover --ansi",
