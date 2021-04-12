@@ -2,7 +2,7 @@
 title: Startseite
 blueprint: homepage
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1618045398
+updated_at: 1618244207
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -16,7 +16,7 @@ hero_featured_sect:
     subtitle: 'Von Aischylos'
     title_desc: 'Theater im Bauturm (Köln) im monsun.stream'
     einfarbiger_hintergrund: false
-    featured_image: produktionen/die_orestie/tib_die_orestie_1_c_laura_thomas.jpg
+    featured_image: produktionen/die_orestie/tib_die_orestie_01_c_laura_thomas.jpg
     overlay_color: neutral-300
     buttons:
       -
@@ -33,7 +33,7 @@ hero_featured_sect:
     type: featured
     enabled: true
   -
-    featured_image: produktionen/filestuecke/filetstuecke_03_c_g2_baraniak.jpg
+    featured_image: produktionen/filestuecke/filetstuecke_01_c_g2_baraniak_web.jpg
     einfarbiger_hintergrund: false
     title: FILETSTÜCKE
     title_desc: 'Von Michael Alexander Müller'
