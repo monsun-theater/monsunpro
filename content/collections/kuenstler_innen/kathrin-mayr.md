@@ -32,7 +32,20 @@ page_builder:
         content:
           -
             type: text
-            text: "Seit 2016 führt sie regelmäßig im monsun.theater für unsere Eigenproduktionen Regie. Ihre Inszenierung AUSTRALISCHER FROST läuft 2017 im Wettbewerbsprogramm der Heidelberger Theatertage. Für FABIAN ODER DER GANG VOR DIE HUNDE am monsun.theater wird sie 2020 gemeinsam mit Clemens Mädge mit dem Theaterpreis Hamburg „Rolf Mares“ in der Kategorie „Beste Regie & Dramaturgie“ ausgezeichnet.\_"
+            text: 'Seit 2016 führt sie regelmäßig im monsun.theater für unsere Eigenproduktionen Regie. Ihre Inszenierung AUSTRALISCHER FROST läuft 2017 im Wettbewerbsprogramm der Heidelberger Theatertage. Für FABIAN ODER DER GANG VOR DIE HUNDE am monsun.theater wird sie 2020 gemeinsam mit '
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'https://monsun.theater/kuenstler-innen/clemens-madge'
+                  target: null
+                  rel: null
+            text: 'Clemens Mädge'
+          -
+            type: text
+            text: " mit dem Theaterpreis Hamburg „Rolf Mares“ in der Kategorie „Beste Regie & Dramaturgie“ ausgezeichnet.\_"
       -
         type: paragraph
         content:
@@ -99,6 +112,6 @@ page_builder:
     type: article
     enabled: true
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1618305239
+updated_at: 1618333955
 id: e464194a-4194-4f91-af1f-baddf66033a8
 ---
