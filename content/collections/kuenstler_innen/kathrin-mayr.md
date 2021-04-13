@@ -11,8 +11,9 @@ page_builder:
         attrs:
           values:
             type: figure
-            image: kuenstler-innen/kathrin_mayr.jpg
+            image: kuenstler-innen/kathrin_mayr.jpeg
             size: md
+            caption: 'Karoline Weber'
       -
         type: paragraph
         content:
@@ -79,18 +80,25 @@ page_builder:
                 type: italic
           -
             type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'https://monsun.theater/veranstaltungen/fabian-oder-der-gang-vor-die-hunde'
+                  target: null
+                  rel: null
             text: 'FABIAN ODER DER GANG VOR DIE HUNDE'
           -
             type: text
             marks:
               -
                 type: italic
-            text: ' (Regie)'
+            text: ' (Kostüm & Regie)'
           -
             type: hard_break
     type: article
     enabled: true
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1618301599
+updated_at: 1618305239
 id: e464194a-4194-4f91-af1f-baddf66033a8
 ---
