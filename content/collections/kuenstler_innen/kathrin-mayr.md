@@ -19,7 +19,7 @@ page_builder:
         content:
           -
             type: text
-            text: 'Jahrgang ''84, macht ihren Magisterabschluss in Kunst und Literaturwissenschaft und ist feste Regieassistentin am Theater Osnabrück. Dort realisiert sie ihre ersten Projekte (z.B. Heiner Müllers BILDBESCHREIBUNG) und arbeitete anschließend als Assistentin für Christoph Schlingensief und die Operndorf Afrika gGmbH in Berlin.'
+            text: 'Jahrgang ''84, macht ihren Magisterabschluss in Kunst und Literaturwissenschaft und ist feste Regieassistentin am Theater Osnabrück. Dort realisiert sie ihre ersten Projekte (z.B. Heiner Müllers BILDBESCHREIBUNG) und arbeitet anschließend als Assistentin für Christoph Schlingensief und die Operndorf Afrika gGmbH in Berlin.'
           -
             type: hard_break
           -
@@ -112,6 +112,6 @@ page_builder:
     type: article
     enabled: true
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1618333955
+updated_at: 1618352594
 id: e464194a-4194-4f91-af1f-baddf66033a8
 ---
