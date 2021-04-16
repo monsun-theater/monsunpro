@@ -13,6 +13,7 @@ page_builder:
             type: figure
             image: kuenstler-innen/fiona_metscher.jpg
             size: md
+            caption: 'Gregory B. Waldis'
       -
         type: paragraph
         content:
@@ -72,6 +73,6 @@ page_builder:
     type: article
     enabled: true
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1618350491
+updated_at: 1618582991
 id: dc55a55e-2f58-48ea-b717-96af8ccf55d4
 ---
