@@ -6,7 +6,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1616452397
+updated_at: 1618680436
 template: default
 cinema_monsun: false
 do_not_track_toggle: false
@@ -27,6 +27,9 @@ page_builder:
   -
     title: M
     collection:
+      - e834ffc9-f737-4277-b74d-e9aabe51340c
+      - e464194a-4194-4f91-af1f-baddf66033a8
+      - dc55a55e-2f58-48ea-b717-96af8ccf55d4
       - e6c03a3d-126d-48f3-b7df-26cd340bc2de
     type: collection
     enabled: true

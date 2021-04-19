@@ -2,7 +2,7 @@
 title: Startseite
 blueprint: homepage
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1618244207
+updated_at: 1618778237
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -10,28 +10,6 @@ sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 template: home
 hero_featured_sect:
-  -
-    title: 'Die Orestie'
-    titelzusatz_zeigen: true
-    subtitle: 'Von Aischylos'
-    title_desc: 'Theater im Bauturm (Köln) im monsun.stream'
-    einfarbiger_hintergrund: false
-    featured_image: produktionen/die_orestie/tib_die_orestie_01_c_laura_thomas.jpg
-    overlay_color: neutral-300
-    buttons:
-      -
-        label: 'Mehr lesen'
-        target_blank: false
-        link_type: entry
-        entry: 876c3b71-60f6-4caf-9a97-2c266e83d428
-        url: null
-        email: null
-        tel: null
-        asset: null
-        attr_title: 'Mehr lesen'
-        attr_aria: 'Mehr über die Orestie lesen'
-    type: featured
-    enabled: true
   -
     featured_image: produktionen/filestuecke/filetstuecke_01_c_g2_baraniak_web.jpg
     einfarbiger_hintergrund: false
