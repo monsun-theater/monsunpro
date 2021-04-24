@@ -19,7 +19,7 @@ class Future extends Modifier
     public function index($dates, $params, $context)
     {
         $dates = collect($dates)->filter(function ($date) {
-            return Carbon::parse(Arr::get($date, 'perf_date')) > Carbon::now();
+            return Carbon::parse(Arr::get($date, 'perf_date')) > Carbon::yesterday();
         })->values();
 
         if ($dates->isEmpty()) {
