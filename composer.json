@@ -10,7 +10,7 @@
     "type": "project",
     "require": {
         "php": "^7.3",
-        "edalzell/forma": "0.8.11",
+        "edalzell/forma": "0.8.12",
         "fideloper/proxy": "^4.2",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",
@@ -18,7 +18,7 @@
         "laravel/framework": "^8.0",
         "laravel/tinker": "^2.0",
         "pixelfear/composer-dist-plugin": "^0.1",
-        "silentz/mailchimp": "^2.5",
+        "silentz/mailchimp": "2.5.5",
         "statamic/cms": "3.1.*"
     },
     "require-dev": {
