@@ -17,3 +17,6 @@ preferences:
         - date
         - image
         - slug
+  assets:
+    assets:
+      mode: table

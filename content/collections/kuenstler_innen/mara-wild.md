@@ -1,4 +1,5 @@
 ---
+id: 604b43e0-b5ff-42fe-9b32-54c805b306ce
 title: 'Mara Wild'
 hat_eigene_website_has_own_website: false
 kuenstler_artist_website_url_link: 'https://'
@@ -31,6 +32,76 @@ page_builder:
         content:
           -
             type: text
+            text: 'WENN WIR TANZEN SUMMT DIE WELT '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: '(Video & Live Visuals)'
+          -
+            type: hard_break
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'https://monsun.theater/veranstaltungen/das-hirn-ist-ein-taubenschlag'
+                  target: null
+                  rel: null
+            text: 'DAS HIRN IST EIN TAUBENSCHLAG'
+          -
+            type: text
+            text: ' '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: '(Video & Live Visuals)'
+          -
+            type: hard_break
+            marks:
+              -
+                type: italic
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'https://monsun.theater/veranstaltungen/anastasia'
+                  target: null
+                  rel: null
+            text: 'ANASTASIA, WANN BEKOMMST DU DEINE JUWELEN ZURÜCK?'
+          -
+            type: text
+            text: ' '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: '(Video & Live Visuals)'
+          -
+            type: hard_break
+          -
+            type: text
+            text: 'BRUCHLINIEN '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: '(Video & Live Visuals)'
+          -
+            type: hard_break
+            marks:
+              -
+                type: italic
+          -
+            type: text
             marks:
               -
                 type: link
@@ -51,6 +122,5 @@ page_builder:
     type: article
     enabled: true
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1616453697
-id: 604b43e0-b5ff-42fe-9b32-54c805b306ce
+updated_at: 1619371302
 ---

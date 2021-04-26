@@ -1,4 +1,5 @@
 ---
+id: 78a4fa9b-1bc1-418e-91f4-859095e18045
 title: 'Cora Sachs'
 hat_eigene_website_has_own_website: false
 kuenstler_artist_website_url_link: 'https://www.corasachs.com'
@@ -80,7 +81,17 @@ page_builder:
             type: hard_break
           -
             type: text
-            text: 'DAS HIRN IST EIN TAUBENSCHLAG '
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'https://monsun.theater/veranstaltungen/das-hirn-ist-ein-taubenschlag'
+                  target: null
+                  rel: null
+            text: 'DAS HIRN IST EIN TAUBENSCHLAG'
+          -
+            type: text
+            text: ' '
           -
             type: text
             marks:
@@ -91,15 +102,23 @@ page_builder:
             type: hard_break
           -
             type: text
-            text: 'ANASTASIA, WANN BEKOMMST DU DEINE JUWELEN ZURÜCK? '
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'https://monsun.theater/veranstaltungen/anastasia'
+                  target: null
+                  rel: null
+            text: 'ANASTASIA, WANN BEKOMMST DU DEINE JUWELEN ZURÜCK?'
+          -
+            type: text
+            text: ' '
           -
             type: text
             marks:
               -
                 type: italic
             text: '(Figuren & Regie)'
-      -
-        type: paragraph
       -
         type: set
         attrs:
@@ -132,6 +151,5 @@ page_builder:
     type: article
     enabled: true
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1616453974
-id: 78a4fa9b-1bc1-418e-91f4-859095e18045
+updated_at: 1619371370
 ---
