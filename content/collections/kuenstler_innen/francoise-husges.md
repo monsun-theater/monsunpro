@@ -1,7 +1,8 @@
 ---
+id: 230ec157-5076-45d0-8d68-597a5f3d0743
 title: 'Francoise Hüsges'
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1616453718
+updated_at: 1619456467
 page_builder:
   -
     bard:
@@ -279,13 +280,23 @@ page_builder:
             type: hard_break
           -
             type: text
-            text: 'DER NUSSKNACKER '
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'https://monsun.theater/veranstaltungen/der-nussknacker'
+                  target: null
+                  rel: null
+            text: 'DER NUSSKNACKER'
+          -
+            type: text
+            text: ' '
           -
             type: text
             marks:
               -
                 type: italic
-            text: (Regie)
+            text: '(Bühne & Regie)'
           -
             type: hard_break
           -
@@ -379,5 +390,4 @@ kuenstler_artist_website_link: www.google.com
 hat_eigene_website_has_own_website: false
 biographie_eintragen_create_artist_s_biography: true
 kuenstler_artist_website_url_link: 'https://'
-id: 230ec157-5076-45d0-8d68-597a5f3d0743
 ---
