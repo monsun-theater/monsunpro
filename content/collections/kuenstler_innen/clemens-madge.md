@@ -1,4 +1,5 @@
 ---
+id: e834ffc9-f737-4277-b74d-e9aabe51340c
 title: 'Clemens Mädge'
 hat_eigene_website_has_own_website: false
 kuenstler_artist_website_url_link: 'https://'
@@ -136,6 +137,5 @@ page_builder:
     type: article
     enabled: true
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1618328628
-id: e834ffc9-f737-4277-b74d-e9aabe51340c
+updated_at: 1619646869
 ---
