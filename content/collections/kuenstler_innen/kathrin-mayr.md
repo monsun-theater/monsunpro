@@ -1,4 +1,5 @@
 ---
+id: e464194a-4194-4f91-af1f-baddf66033a8
 title: 'Kathrin Mayr'
 hat_eigene_website_has_own_website: false
 kuenstler_artist_website_url_link: 'https://'
@@ -51,7 +52,17 @@ page_builder:
         content:
           -
             type: text
-            text: 'AUSTRALISCHER FROST '
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'https://monsun.theater/veranstaltungen/australischer-frost'
+                  target: null
+                  rel: null
+            text: 'AUSTRALISCHER FROST'
+          -
+            type: text
+            text: ' '
           -
             type: text
             marks:
@@ -79,6 +90,13 @@ page_builder:
                 type: italic
           -
             type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'https://monsun.theater/veranstaltungen/paula'
+                  target: null
+                  rel: null
             text: PAULA
           -
             type: text
@@ -112,6 +130,5 @@ page_builder:
     type: article
     enabled: true
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1618352594
-id: e464194a-4194-4f91-af1f-baddf66033a8
+updated_at: 1619875860
 ---

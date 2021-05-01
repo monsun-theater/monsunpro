@@ -50,7 +50,17 @@ page_builder:
         content:
           -
             type: text
-            text: "AUSTRALISCHER FROST\_"
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'https://monsun.theater/veranstaltungen/australischer-frost'
+                  target: null
+                  rel: null
+            text: 'AUSTRALISCHER FROST'
+          -
+            type: text
+            text: "\_"
           -
             type: text
             marks:
@@ -78,6 +88,13 @@ page_builder:
                 type: italic
           -
             type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'https://monsun.theater/veranstaltungen/paula'
+                  target: null
+                  rel: null
             text: PAULA
           -
             type: text
@@ -137,5 +154,5 @@ page_builder:
     type: article
     enabled: true
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1619646869
+updated_at: 1619875796
 ---

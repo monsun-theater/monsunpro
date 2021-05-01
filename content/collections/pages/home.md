@@ -2,8 +2,8 @@
 id: home
 blueprint: homepage
 title: Startseite
-updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1619550261
+updated_by: 34d4dc92-ec1a-4900-9a81-ed8dd8606f23
+updated_at: 1619792603
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -79,4 +79,5 @@ page_builder:
           -
             type: text
             text: .
+og_image: site-setup/logos/78A1A120-5FF7-42B1-88BD-D1281ADAA019.jpeg
 ---

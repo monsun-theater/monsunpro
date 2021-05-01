@@ -1,4 +1,5 @@
 ---
+id: f9e72c61-93b9-4eb5-b2a8-c7b80202fc1f
 title: 'Künstler:innen'
 seo_noindex: false
 seo_nofollow: false
@@ -6,11 +7,17 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1618680436
+updated_at: 1619887675
 template: default
 cinema_monsun: false
 do_not_track_toggle: false
 page_builder:
+  -
+    title: B
+    collection:
+      - 0e810994-4499-46e6-ba2c-ce31e765fe50
+    type: collection
+    enabled: true
   -
     title: H
     collection:
@@ -59,5 +66,4 @@ page_builder:
       - 2a783111-0fd9-4d70-9f20-8a0e95eb067c
     type: collection
     enabled: true
-id: f9e72c61-93b9-4eb5-b2a8-c7b80202fc1f
 ---
