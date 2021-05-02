@@ -20,7 +20,7 @@ page_builder:
         content:
           -
             type: text
-            text: 'Geboren in Burkina Faso, absolviert Ahmed Soura sein Diplom am Institut National de Formation Artistique et Culturelle (INAFAC) und tritt als Tänzer beim Festival „Dialogue de corps“ auf. 2007 nimmt er am Programm „Exerce 2007 des CCN de Montpellier“ teil. 5 Jahre lang tanzt und assistiert Ahmed Soura für Irène Tassembédo. Durch die Mitarbeit in Christoph Schlingensiefs „Via Intoleranz II“ verlagert er seinen Lebensmittelpunkt nach Berlin. 2011 gewinnt er beim Internationalen Tanz-Theater-Festival Stuttgart den 3. Preis, beim Need2Danceden 2013 den 2. Preis und mit Christoph Winkler den FAUST-Preis 2014 für die „Beste Choreografie“. Ahmed Soura tanzt in zahlreichen Opernproduktion für die Deutsche Oper Berlin, die Philharmonie Berlin auch als Solist im MESSIAH. Er arbeitet mit Louise Wagner, Pink Mama Theater, Anna Melnikova, Magda Korsinsky, Konstantin Tsakalidis, Frederic WakeWalker, Christoph Schlingensief, Christoph Winkler, Faso Danse Theatre (Serge Aimé Coulibaly), entwickelt eigene Tanz-Performances und tourt seit Jahren erfolgreich in der ganzen Welt. '
+            text: 'Geboren in Burkina Faso, absolviert Ahmed Soura sein Diplom am Institut National de Formation Artistique et Culturelle (INAFAC) und tritt als Tänzer beim Festival „Dialogue de corps“ auf. 2007 nimmt er am Programm „Exerce 2007 des CCN de Montpellier“ teil. 5 Jahre lang tanzt und assistiert Ahmed Soura für Irène Tassembédo. Durch die Mitarbeit in Christoph Schlingensiefs „Via Intoleranza II“ verlagert er seinen Lebensmittelpunkt nach Berlin. 2011 gewinnt er beim Internationalen Tanz-Theater-Festival Stuttgart den 3. Preis, beim Need2Danceden 2013 den 2. Preis und mit Christoph Winkler den FAUST-Preis 2014 für die „Beste Choreografie“. Ahmed Soura tanzt in zahlreichen Opernproduktion für die Deutsche Oper Berlin, die Philharmonie Berlin auch als Solist im MESSIAH. Er arbeitet mit Louise Wagner, Pink Mama Theater, Anna Melnikova, Magda Korsinsky, Konstantin Tsakalidis, Frederic WakeWalker, Christoph Schlingensief, Christoph Winkler, Faso Danse Theatre (Serge Aimé Coulibaly), entwickelt eigene Tanz-Performances und tourt seit Jahren erfolgreich in der ganzen Welt. '
           -
             type: hard_break
           -
@@ -81,6 +81,13 @@ page_builder:
             type: hard_break
           -
             type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'https://monsun.theater/veranstaltungen/fly'
+                  target: null
+                  rel: null
             text: FLY
           -
             type: text
@@ -119,5 +126,5 @@ page_builder:
     type: article
     enabled: true
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1619965989
+updated_at: 1619973229
 ---
