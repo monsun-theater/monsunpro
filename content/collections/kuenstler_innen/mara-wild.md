@@ -32,7 +32,17 @@ page_builder:
         content:
           -
             type: text
-            text: 'WENN WIR TANZEN SUMMT DIE WELT '
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'https://monsun.theater/veranstaltungen/wenn-wir-tanzen-summt-die-welt'
+                  target: null
+                  rel: null
+            text: 'WENN WIR TANZEN SUMMT DIE WELT'
+          -
+            type: text
+            text: ' '
           -
             type: text
             marks:
@@ -88,7 +98,17 @@ page_builder:
             type: hard_break
           -
             type: text
-            text: 'BRUCHLINIEN '
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'https://monsun.theater/veranstaltungen/bruchlinien'
+                  target: null
+                  rel: null
+            text: BRUCHLINIEN
+          -
+            type: text
+            text: ' '
           -
             type: text
             marks:
@@ -122,5 +142,5 @@ page_builder:
     type: article
     enabled: true
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1619371302
+updated_at: 1620155582
 ---

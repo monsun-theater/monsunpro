@@ -59,7 +59,17 @@ page_builder:
             type: hard_break
           -
             type: text
-            text: 'WENN WIR TANZEN, SUMMT DIE WELT '
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'https://monsun.theater/veranstaltungen/wenn-wir-tanzen-summt-die-welt'
+                  target: null
+                  rel: null
+            text: 'WENN WIR TANZEN, SUMMT DIE WELT'
+          -
+            type: text
+            text: ' '
           -
             type: text
             marks:
@@ -73,6 +83,13 @@ page_builder:
                 type: italic
           -
             type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'https://monsun.theater/veranstaltungen/fly'
+                  target: null
+                  rel: null
             text: FLY
           -
             type: text
@@ -84,7 +101,17 @@ page_builder:
             type: hard_break
           -
             type: text
-            text: 'PAULA '
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'https://monsun.theater/veranstaltungen/paula'
+                  target: null
+                  rel: null
+            text: PAULA
+          -
+            type: text
+            text: ' '
           -
             type: text
             marks:
@@ -165,5 +192,5 @@ page_builder:
     type: article
     enabled: true
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1619884495
+updated_at: 1620155452
 ---

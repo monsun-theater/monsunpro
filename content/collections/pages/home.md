@@ -2,8 +2,8 @@
 id: home
 blueprint: homepage
 title: Startseite
-updated_by: 34d4dc92-ec1a-4900-9a81-ed8dd8606f23
-updated_at: 1619792603
+updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
+updated_at: 1620150138
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -17,17 +17,6 @@ hero_featured_sect:
     title: FILETSTÜCKE
     title_desc: 'Von Michael Alexander Müller'
     buttons:
-      -
-        label: 'Karten Kaufen'
-        target_blank: true
-        link_type: url
-        entry: null
-        url: 'https://vaganten.reservix.de/p/reservix/group/357525'
-        email: null
-        tel: null
-        asset: null
-        attr_title: 'Karten Kaufen'
-        attr_aria: 'Karten Kaufen'
       -
         label: 'Mehr lesen'
         target_blank: false
@@ -79,5 +68,4 @@ page_builder:
           -
             type: text
             text: .
-og_image: site-setup/logos/78A1A120-5FF7-42B1-88BD-D1281ADAA019.jpeg
 ---

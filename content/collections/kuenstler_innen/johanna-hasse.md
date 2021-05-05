@@ -1,4 +1,5 @@
 ---
+id: 5f9ebe63-a818-4ee9-b39c-85f98a4343b9
 title: 'Johanna Hasse'
 hat_eigene_website_has_own_website: false
 kuenstler_artist_website_url_link: 'https://'
@@ -63,7 +64,17 @@ page_builder:
             type: hard_break
           -
             type: text
-            text: 'DAS LANGE NACHSPIEL EINER KURZEN MITTEILUNG '
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'https://monsun.theater/veranstaltungen/das-lange-nachspiel-einer-kurzen-mitteilung'
+                  target: null
+                  rel: null
+            text: 'DAS LANGE NACHSPIEL EINER KURZEN MITTEILUNG'
+          -
+            type: text
+            text: ' '
           -
             type: text
             marks:
@@ -74,7 +85,17 @@ page_builder:
             type: hard_break
           -
             type: text
-            text: 'BRUCHLINIEN '
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'https://monsun.theater/veranstaltungen/bruchlinien'
+                  target: null
+                  rel: null
+            text: BRUCHLINIEN
+          -
+            type: text
+            text: ' '
           -
             type: text
             marks:
@@ -105,6 +126,5 @@ page_builder:
     type: article
     enabled: true
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1616451312
-id: 5f9ebe63-a818-4ee9-b39c-85f98a4343b9
+updated_at: 1620155151
 ---

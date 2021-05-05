@@ -109,6 +109,13 @@ page_builder:
                 type: italic
           -
             type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'https://monsun.theater/veranstaltungen/aufzeichnungen-aus-dem-kellerloch'
+                  target: null
+                  rel: null
             text: 'AUFZEICHNUNGEN AUS DEM KELLERLOCH'
           -
             type: text
@@ -144,7 +151,17 @@ page_builder:
                 type: italic
           -
             type: text
-            text: 'DER MANTEL. DIE NASE. DER WAHNSINN. '
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'https://monsun.theater/veranstaltungen/der-matel-die-nase-wahnsinn'
+                  target: null
+                  rel: null
+            text: 'DER MANTEL. DIE NASE. DER WAHNSINN.'
+          -
+            type: text
+            text: ' '
           -
             type: text
             marks:
@@ -154,5 +171,5 @@ page_builder:
     type: article
     enabled: true
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1619875796
+updated_at: 1620155241
 ---

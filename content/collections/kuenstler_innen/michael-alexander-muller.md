@@ -1,4 +1,5 @@
 ---
+id: e6c03a3d-126d-48f3-b7df-26cd340bc2de
 title: 'Michael Alexander Müller'
 hat_eigene_website_has_own_website: false
 kuenstler_artist_website_url_link: 'https://'
@@ -48,7 +49,17 @@ page_builder:
             type: hard_break
           -
             type: text
-            text: 'BRUCHLINIEN '
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'https://monsun.theater/veranstaltungen/bruchlinien'
+                  target: null
+                  rel: null
+            text: BRUCHLINIEN
+          -
+            type: text
+            text: ' '
           -
             type: text
             marks:
@@ -79,6 +90,5 @@ page_builder:
     type: article
     enabled: true
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1617556616
-id: e6c03a3d-126d-48f3-b7df-26cd340bc2de
+updated_at: 1620155358
 ---

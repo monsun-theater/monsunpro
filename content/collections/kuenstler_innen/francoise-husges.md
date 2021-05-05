@@ -2,7 +2,7 @@
 id: 230ec157-5076-45d0-8d68-597a5f3d0743
 title: 'Francoise Hüsges'
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1619456467
+updated_at: 1620150063
 page_builder:
   -
     bard:
@@ -301,7 +301,17 @@ page_builder:
             type: hard_break
           -
             type: text
-            text: 'WHY NOT? '
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'https://monsun.theater/veranstaltungen/why-not'
+                  target: null
+                  rel: null
+            text: 'WHY NOT?'
+          -
+            type: text
+            text: ' '
           -
             type: text
             marks:
@@ -312,7 +322,17 @@ page_builder:
             type: hard_break
           -
             type: text
-            text: 'FLY '
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'https://monsun.theater/veranstaltungen/fly'
+                  target: null
+                  rel: null
+            text: FLY
+          -
+            type: text
+            text: ' '
           -
             type: text
             marks:
@@ -334,7 +354,17 @@ page_builder:
             type: hard_break
           -
             type: text
-            text: 'DAS LANGE NACHSPIEL EINER KURZEN MITTEILUNG '
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'https://monsun.theater/veranstaltungen/das-lange-nachspiel-einer-kurzen-mitteilung'
+                  target: null
+                  rel: null
+            text: 'DAS LANGE NACHSPIEL EINER KURZEN MITTEILUNG'
+          -
+            type: text
+            text: ' '
           -
             type: text
             marks:
@@ -345,7 +375,17 @@ page_builder:
             type: hard_break
           -
             type: text
-            text: 'FABIAN ODER DER GANG VOR DIE HUNDE '
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'https://monsun.theater/veranstaltungen/das-lange-nachspiel-einer-kurzen-mitteilung'
+                  target: null
+                  rel: null
+            text: 'FABIAN ODER DER GANG VOR DIE HUNDE'
+          -
+            type: text
+            text: ' '
           -
             type: text
             marks:
@@ -356,7 +396,17 @@ page_builder:
             type: hard_break
           -
             type: text
-            text: 'BRUCHLINIEN '
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'https://monsun.theater/veranstaltungen/bruchlinien'
+                  target: null
+                  rel: null
+            text: BRUCHLINIEN
+          -
+            type: text
+            text: ' '
           -
             type: text
             marks:
@@ -384,6 +434,27 @@ page_builder:
               -
                 type: italic
             text: '(Konzept & Raum & Regie)'
+          -
+            type: hard_break
+            marks:
+              -
+                type: italic
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'https://monsun.theater/veranstaltungen/die-orestie'
+                  target: null
+                  rel: null
+            text: 'DIE ORESTIE'
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: ' (Bildregie)'
     type: article
     enabled: true
 kuenstler_artist_website_link: www.google.com
