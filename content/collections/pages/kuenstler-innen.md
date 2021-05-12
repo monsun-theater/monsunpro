@@ -7,7 +7,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1620149547
+updated_at: 1620770607
 template: default
 cinema_monsun: false
 do_not_track_toggle: false
@@ -36,6 +36,12 @@ page_builder:
     title: K
     collection:
       - 81fab807-4f32-46bd-ba79-c5e313806612
+    type: collection
+    enabled: true
+  -
+    title: L
+    collection:
+      - 03ddc47d-280c-4d6e-873f-c01b9b9908e5
     type: collection
     enabled: true
   -
@@ -71,8 +77,9 @@ page_builder:
   -
     title: W
     collection:
-      - 604b43e0-b5ff-42fe-9b32-54c805b306ce
       - ec61f759-3537-4312-8c08-554b46c10f81
+      - 604b43e0-b5ff-42fe-9b32-54c805b306ce
+      - f4a3deb5-88e1-4818-b926-4932738888b5
     type: collection
     enabled: true
   -
