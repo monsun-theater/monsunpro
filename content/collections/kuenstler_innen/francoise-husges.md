@@ -2,7 +2,7 @@
 id: 230ec157-5076-45d0-8d68-597a5f3d0743
 title: 'Francoise Hüsges'
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1620150063
+updated_at: 1620943287
 page_builder:
   -
     bard:
@@ -455,6 +455,30 @@ page_builder:
               -
                 type: italic
             text: ' (Bildregie)'
+          -
+            type: hard_break
+            marks:
+              -
+                type: italic
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'https://monsun.theater/veranstaltungen/hier-und-da-nah-und-fern'
+                  target: null
+                  rel: null
+            text: 'HIER UND DA - NAH UND FERN- WIR KOMMEN ÜBERALL HIN'
+          -
+            type: text
+            text: ' '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: (Leitung)
     type: article
     enabled: true
 kuenstler_artist_website_link: www.google.com

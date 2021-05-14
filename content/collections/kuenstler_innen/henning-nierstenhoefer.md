@@ -1,4 +1,5 @@
 ---
+id: afcab694-180f-4d45-b6be-b707d9d61297
 title: 'Henning Nierstenhöfer'
 hat_eigene_website_has_own_website: false
 kuenstler_artist_website_url_link: 'https://'
@@ -44,21 +45,30 @@ page_builder:
           -
             type: text
             text: "ist er als Live-Musiker auf der Bühne.\_"
-          -
-            type: hard_break
       -
         type: paragraph
         content:
           -
             type: text
-            text: 'Die Orestie (Spiel)'
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'https://monsun.theater/veranstaltungen/die-orestie'
+                  target: null
+                  rel: null
+            text: 'DIE ORESTIE'
           -
-            type: hard_break
+            type: text
+            text: ' '
           -
-            type: hard_break
+            type: text
+            marks:
+              -
+                type: italic
+            text: (Spiel)
     type: article
     enabled: true
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1617985226
-id: afcab694-180f-4d45-b6be-b707d9d61297
+updated_at: 1620941307
 ---

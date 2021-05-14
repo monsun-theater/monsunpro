@@ -3,7 +3,7 @@ id: home
 blueprint: homepage
 title: Startseite
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1620150138
+updated_at: 1620925197
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -29,10 +29,32 @@ hero_featured_sect:
         attr_title: 'Mehr lesen'
         attr_aria: 'Mehr über Filetstücke lesen'
     type: featured
-    enabled: true
+    enabled: false
     titelzusatz_zeigen: true
     subtitle: '- wem gehört das Land'
     overlay_color: neutral-300
+  -
+    title: 'HIER UND DA<br>NAH UND FERN<br>WIR KOMMEN ÜBERALL HIN'
+    titelzusatz_zeigen: true
+    subtitle: 'magische momente im monsun'
+    title_desc: '19.05. | 18:00 Uhr'
+    einfarbiger_hintergrund: false
+    featured_image: produktionen/magische_momente_im_monsun/2021/Jannis_Martensen_tusch_cover.jpg
+    overlay_color: neutral-400
+    buttons:
+      -
+        label: 'Mehr lesen'
+        target_blank: false
+        link_type: entry
+        entry: 9f9f57ea-6d37-46b0-bacb-7aae0dc5d71f
+        url: null
+        email: null
+        tel: null
+        asset: null
+        attr_title: 'Mehr lesen'
+        attr_aria: 'Mehr über HIER UND DA - NAH UND FERN lesen'
+    type: featured
+    enabled: true
 anzahl_vorstellungen_in_demnaechst: 4
 anzahl_eintraege_in_aktuelles: 2
 anzahl_stuecke_in_spielzeit_component: 2
