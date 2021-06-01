@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "57045773995b2b4b64187ffa8e2dc684",
+    "content-hash": "c1248dce0b01ff77a2fb2d469e249fc3",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -3715,16 +3715,16 @@
         },
         {
             "name": "silentz/mailchimp",
-            "version": "v2.5.5",
+            "version": "v2.5.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silentzco/statamic-mailchimp.git",
-                "reference": "d8af518817e16ac407028b25b3b7c6cca68b7a82"
+                "reference": "785fc375d0378c98b4793b353185833f5e427a83"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silentzco/statamic-mailchimp/zipball/d8af518817e16ac407028b25b3b7c6cca68b7a82",
-                "reference": "d8af518817e16ac407028b25b3b7c6cca68b7a82",
+                "url": "https://api.github.com/repos/silentzco/statamic-mailchimp/zipball/785fc375d0378c98b4793b353185833f5e427a83",
+                "reference": "785fc375d0378c98b4793b353185833f5e427a83",
                 "shasum": ""
             },
             "require": {
@@ -3778,9 +3778,9 @@
             "description": "Subscribe registrations or contact forms to Mailchimp",
             "support": {
                 "issues": "https://github.com/silentzco/statamic-mailchimp/issues",
-                "source": "https://github.com/silentzco/statamic-mailchimp/tree/v2.5.5"
+                "source": "https://github.com/silentzco/statamic-mailchimp/tree/v2.5.6"
             },
-            "time": "2021-04-14T04:28:38+00:00"
+            "time": "2021-05-04T02:55:08+00:00"
         },
         {
             "name": "spatie/blink",
@@ -3842,16 +3842,16 @@
         },
         {
             "name": "spatie/laravel-newsletter",
-            "version": "4.9.0",
+            "version": "4.10.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-newsletter.git",
-                "reference": "659893001e73b5ea5b9b6dd73a06a8574ea735a7"
+                "reference": "c3b9061a8410650aeab1416ed76e1afb57adc685"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-newsletter/zipball/659893001e73b5ea5b9b6dd73a06a8574ea735a7",
-                "reference": "659893001e73b5ea5b9b6dd73a06a8574ea735a7",
+                "url": "https://api.github.com/repos/spatie/laravel-newsletter/zipball/c3b9061a8410650aeab1416ed76e1afb57adc685",
+                "reference": "c3b9061a8410650aeab1416ed76e1afb57adc685",
                 "shasum": ""
             },
             "require": {
@@ -3900,7 +3900,7 @@
             ],
             "support": {
                 "issues": "https://github.com/spatie/laravel-newsletter/issues",
-                "source": "https://github.com/spatie/laravel-newsletter/tree/4.9.0"
+                "source": "https://github.com/spatie/laravel-newsletter/tree/4.10.0"
             },
             "funding": [
                 {
@@ -3908,7 +3908,7 @@
                     "type": "custom"
                 }
             ],
-            "time": "2020-11-25T14:14:49+00:00"
+            "time": "2021-05-18T11:28:48+00:00"
         },
         {
             "name": "statamic/cms",
