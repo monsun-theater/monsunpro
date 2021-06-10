@@ -8,16 +8,17 @@
       font-family: GT-Walsheim;
       font-weight: 400;
       font-style: normal;
-      font-display: auto;
+      font-display: swap;
       src: url("/assets/site-setup/fonts/GT-Walsheim-Regular.woff2") format("woff2"),
         url("/assets/site-setup/fonts/GT-Walsheim-Regular.woff") format("woff");
+        
     }
     
     @font-face {
       font-family: GT-Walsheim;
       font-weight: 400;
       font-style: italic;
-      font-display: auto;
+      font-display: swap;
       src: url("/assets/site-setup/fonts/GT-Walsheim-Regular-Oblique.woff2") format("woff2"),
         url("/assets/site-setup/fonts/GT-Walsheim-Regular-Oblique.woff") format("woff");
     }
@@ -25,7 +26,7 @@
       font-family: GT-Walsheim;
       font-weight: 500;
       font-style: normal;
-      font-display: auto;
+      font-display: swap;
       src: url("/assets/site-setup/fonts/GT-Walsheim-Medium.woff2") format("woff2"),
         url("/assets/site-setup/fonts/GT-Walsheim-Medium.woff") format("woff");
     }
@@ -34,7 +35,7 @@
       font-family: GT-Walsheim;
       font-weight: 500;
       font-style: italic;
-      font-display: auto;
+      font-display: swap;
       src: url("/assets/site-setup/fonts/GT-Walsheim-Medium-Oblique.woff2") format("woff2"),
         url("/assets/site-setup/fonts/GT-Walsheim-Medium-Oblique.woff") format("woff");
     }
@@ -42,7 +43,7 @@
       font-family: GT-Walsheim;
       font-weight: 600;
       font-style: normal;
-      font-display: auto;
+      font-display: swap;
       src: url("/assets/site-setup/fonts/GT-Walsheim-Bold.woff2") format("woff2"),
         url("/assets/site-setup/fonts/GT-Walsheim-Bold.woff") format("woff");
     }
@@ -51,7 +52,7 @@
       font-family: GT-Walsheim;
       font-weight: 600;
       font-style: italic;
-      font-display: auto;
+      font-display: swap;
       src: url("/assets/site-setup/fonts/GT-Walsheim-Bold-Oblique.woff2") format("woff2"),
         url("/assets/site-setup/fonts/GT-Walsheim-Bold-Oblique.woff") format("woff");
     }
