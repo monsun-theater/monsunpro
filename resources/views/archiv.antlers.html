@@ -6,7 +6,7 @@
     {{ page_builder scope="block" }}
         {{ partial src="page_builder/{type}" }}
         {{ /page_builder }}
-    {{ collection:veranstaltungen status:not_in="published" as="posts" sort="title:asc" limit="5" paginate="true"}} 
+    {{ collection:veranstaltungen as="posts" sort="title:asc" limit="5" paginate="true"}} 
     
 
     {{ posts }}<div class="md:grid grid-cols-12 gap-4 items-baseline pb-6">
