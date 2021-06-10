@@ -28,14 +28,14 @@
                                 {{ if image_gallery }}
                                 <picture>
                                     {{ if extension == 'svg' || extension == 'gif' }}
-                                    <img class="" src="{{ url }}" alt="{{ alt }}" />
+                                    <img src="{{ url }}" alt="{{ alt }}" />
                                     {{ else }}
-                                    <source srcset="{{ glide:url }}" type="image/webp">
-                                    <source srcset=" {{ glide:url }} " {{ if extension=='png' }} type="image/png" {{
+                                    <source srcset="{{ glide:url preset='swiper' }}" type="image/webp">
+                                    <source srcset=" {{ glide:url preset='swiper' }} " {{ if extension=='png' }} type="image/png" {{
                                         else }} type="image/jpeg" {{ /if }}>
                                     <img {{ if cover }} class="object-cover {{ class }}"
                                         style="object-position: {{ focus | background_position }}" {{ else }}
-                                        class="{{ class }}" {{ /if }} src="{{ glide:url preset='lg' }}" alt="{{ alt }}"
+                                        class="{{ class }}" {{ /if }} src="{{ glide:url preset='swiper' }}" alt="{{ alt }}"
                                         {{ if lazy }} loading="lazy" {{ /if }}>
                                     {{ /if }}
                                 </picture>
