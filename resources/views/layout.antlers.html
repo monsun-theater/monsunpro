@@ -19,7 +19,7 @@
     <link rel="mask-icon" href="/assets/site-setup/favicons/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
-
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 {{# Dev Bar Breakpoints // Attach to Body #}}
 {{# {{ environment == 'local' ? 'debug' : '' }} #}}
@@ -30,7 +30,7 @@
     {{ partial:layout/monsun_header }}
     <div class="bg-white dark:bg-black flex-grow">{{ template_content }}</div>
     {{ partial:layout/monsun_footer }}
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+   
     <script src="{{ mix src='/js/site.js' }}"></script>
     
 </body>
