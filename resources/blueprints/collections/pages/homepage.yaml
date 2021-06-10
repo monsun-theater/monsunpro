@@ -14,9 +14,18 @@ sections:
           display: Titel
           validate:
             - required
-          width: 66
+          width: 33
           instructions: Title
           antlers: false
+      -
+        handle: demnachst_verstecken
+        field:
+          display: 'Demnachst verstecken'
+          type: toggle
+          icon: toggle
+          instructions: 'Hide Upcoming performances field'
+          width: 33
+          listable: hidden
       -
         handle: spielzeit
         field:

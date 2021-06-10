@@ -2,7 +2,12 @@
 without having to worry about margins or paddings. #}}
 {{ partial:components/monsun_featured}}
 <main class="outer-grid fluid-container">
+    {{ if demnachst_verstecken}}
+    <div class="text-3xl text-black lg:text-4xl dark:text-white">Demnächst</div>
+    <div class="text-2xl text-black dark:text-white">Zur Zeit keine Vorstellungen.</div>
+    {{ else }}
     {{ partial:components/_monsun_feed_upcoming_perf}}
+    {{ /if }}
     {{ partial:components/_monsun_feed_news}}
     <!-- Spielplan -->
     <div class="text-3xl lg:text-4xl text-black dark:text-white">{{ spielzeit }}</div>
