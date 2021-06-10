@@ -64,8 +64,9 @@ page_builder:
                 type: link
                 attrs:
                   href: 'https://monsun.theater/veranstaltungen/wenn-wir-tanzen-summt-die-welt'
-                  target: null
                   rel: null
+                  target: null
+                  title: null
             text: 'WENN WIR TANZEN, SUMMT DIE WELT'
           -
             type: text
@@ -88,8 +89,9 @@ page_builder:
                 type: link
                 attrs:
                   href: 'https://monsun.theater/veranstaltungen/fly'
-                  target: null
                   rel: null
+                  target: null
+                  title: null
             text: FLY
           -
             type: text
@@ -106,8 +108,9 @@ page_builder:
                 type: link
                 attrs:
                   href: 'https://monsun.theater/veranstaltungen/paula'
-                  target: null
                   rel: null
+                  target: null
+                  title: null
             text: PAULA
           -
             type: text
@@ -120,6 +123,20 @@ page_builder:
             text: (Ausstattung)
           -
             type: hard_break
+            marks:
+              -
+                type: italic
+          -
+            type: text
+            text: 'WAHNSINN AUS HEIMWEH'
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: ' (Figuren & Regie)'
+          -
+            type: hard_break
           -
             type: text
             marks:
@@ -127,8 +144,9 @@ page_builder:
                 type: link
                 attrs:
                   href: 'https://monsun.theater/veranstaltungen/das-hirn-ist-ein-taubenschlag'
-                  target: null
                   rel: null
+                  target: null
+                  title: null
             text: 'DAS HIRN IST EIN TAUBENSCHLAG'
           -
             type: text
@@ -148,8 +166,9 @@ page_builder:
                 type: link
                 attrs:
                   href: 'https://monsun.theater/veranstaltungen/anastasia'
-                  target: null
                   rel: null
+                  target: null
+                  title: null
             text: 'ANASTASIA, WANN BEKOMMST DU DEINE JUWELEN ZURÜCK?'
           -
             type: text
@@ -192,5 +211,5 @@ page_builder:
     type: article
     enabled: true
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1620155452
+updated_at: 1622712183
 ---
