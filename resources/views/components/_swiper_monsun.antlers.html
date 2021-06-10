@@ -36,7 +36,7 @@
                                     <img {{ if cover }} class="object-cover {{ class }}"
                                         style="object-position: {{ focus | background_position }}" {{ else }}
                                         class="{{ class }}" {{ /if }} src="{{ glide:url preset='swiper' }}" alt="{{ alt }}"
-                                        {{ if lazy }} loading="lazy" {{ /if }}>
+                                        {{ if lazy }} loading="eager" {{ /if }}>
                                     {{ /if }}
                                 </picture>
                                 {{ /if }}
