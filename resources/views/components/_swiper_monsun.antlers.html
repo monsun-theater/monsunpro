@@ -7,7 +7,7 @@
             slidesPerView: 1,
             spaceBetween: 0,    
             observer: true,
-            observeParents: true,})"
+           })"
                 class="relative max-w-full mx-auto flex flex-row">
             <div class="absolute inset-y-0 left-0 z-10 flex items-center">
                 <button @click="swiper.slidePrev()"
@@ -35,7 +35,7 @@
                                     <source srcset="{{ glide:url preset='swiper' }}" type="image/webp">
                                     <source srcset=" {{ glide:url preset='swiper' }} " {{ if extension=='png' }} type="image/png" {{
                                         else }} type="image/jpeg" {{ /if }}>
-                                    <img class="block" src="{{ glide:url preset='swiper' }}" alt="{{ alt }}" loading="lazy">
+                                    <img class="object-cover" src="{{ glide:url preset='swiper' }}" alt="{{ alt }}" loading="lazy">
                                     {{ /if }}
                                 </picture>
                                 {{ /if }}
