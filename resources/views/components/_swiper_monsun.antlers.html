@@ -1,8 +1,9 @@
 {{if image_gallery_toggle }}
 <div class="lg:grid grid-cols-12">
     <div class="col-span-8 lg:col-start-5">
-        <div x-data="{swiper: null}" x-init="swiper = new Swiper($refs.container, {
+        <div x-data="{swiper: 1}" x-init="swiper = new Swiper($refs.container, {
             autoHeight: true,
+            lazy: true,
     loop: true,
     slidesPerView: 1,
     spaceBetween: 0,    
@@ -24,7 +25,7 @@
                     {{image_gallery}}
                     <div class="swiper-slide">
                         <div class="flex flex-col overflow-hidden">
-                            <div class="flex-shrink-0">
+                            <div class="flex-shrink-0 block">
                                 {{ if image_gallery }}
                                 <picture>
                                     {{ if extension == 'svg' || extension == 'gif' }}
