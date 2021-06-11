@@ -33,10 +33,7 @@
                                     <source srcset="{{ glide:url preset='swiper' }}" type="image/webp">
                                     <source srcset=" {{ glide:url preset='swiper' }} " {{ if extension=='png' }} type="image/png" {{
                                         else }} type="image/jpeg" {{ /if }}>
-                                    <img {{ if cover }} class="object-cover {{ class }}"
-                                        style="object-position: {{ focus | background_position }}" {{ else }}
-                                        class="{{ class }}" {{ /if }} src="{{ glide:url preset='swiper' }}" alt="{{ alt }}"
-                                        {{ if lazy }} loading="eager" {{ /if }}>
+                                    <img class="block" src="{{ glide:url preset='swiper' }}" alt="{{ alt }}" loading="lazy">
                                     {{ /if }}
                                 </picture>
                                 {{ /if }}
