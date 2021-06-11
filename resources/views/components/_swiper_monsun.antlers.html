@@ -3,12 +3,11 @@
     <div class="col-span-8 lg:col-start-5">
         <div x-data="{swiper: null}" x-init="swiper = new Swiper($refs.container, {
             autoHeight: true,
-            loop: true,
-            slidesPerView: 1,
-            spaceBetween: 0,    
-            observer: true,
-           })"
-                class="relative max-w-full mx-auto flex flex-row">
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 0,    
+    observer: true;
+  })" class="relative max-w-full mx-auto flex flex-row">
             <div class="absolute inset-y-0 left-0 z-10 flex items-center">
                 <button @click="swiper.slidePrev()"
                     class="bg-white opacity-40 -ml-2 lg:-ml-4 flex justify-center items-center w-10 h-10 rounded-full shadow focus:outline-none">
@@ -28,14 +27,14 @@
                         <div class="flex flex-col overflow-hidden">
                             <div class="flex-shrink-0">
                                 {{ if image_gallery }}
-                                <picture class="block">
+                                <picture>
                                     {{ if extension == 'svg' || extension == 'gif' }}
                                     <img src="{{ url }}" alt="{{ alt }}" />
                                     {{ else }}
                                     <source srcset="{{ glide:url preset='swiper' }}" type="image/webp">
                                     <source srcset=" {{ glide:url preset='swiper' }} " {{ if extension=='png' }} type="image/png" {{
                                         else }} type="image/jpeg" {{ /if }}>
-                                    <img class="object-cover" src="{{ glide:url preset='swiper' }}" alt="{{ alt }}" loading="lazy">
+                                    <img class="block" src="{{ glide:url preset='swiper' }}" alt="{{ alt }}" loading="lazy">
                                     {{ /if }}
                                 </picture>
                                 {{ /if }}
