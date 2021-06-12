@@ -20,21 +20,10 @@ sections:
       -
         handle: demnachst_verstecken
         field:
-          display: 'Demnachst verstecken'
+          display: 'Zur Zeit Keine Vorstellungen zeigen'
           type: toggle
           icon: toggle
-          instructions: 'Hide Upcoming performances field'
-          width: 33
-          listable: hidden
-      -
-        handle: spielzeit
-        field:
-          input_type: text
-          antlers: false
-          display: Spielzeit
-          type: text
-          icon: text
-          instructions: Season
+          instructions: 'Shows the message No performances and hides the upcoming dates'
           width: 33
           listable: hidden
       -
@@ -47,22 +36,50 @@ sections:
           listable: hidden
           width: 33
       -
-        handle: anzahl_eintraege_in_aktuelles
+        handle: aktuelles_section
         field:
-          display: 'Anzahl Einträge in Aktuelles'
-          type: integer
-          icon: integer
-          instructions: 'The amount of entries listed in News Section component.'
-          width: 33
+          display: Aktuelles
+          type: section
+          icon: section
           listable: hidden
       -
-        handle: anzahl_stuecke_in_spielzeit_component
+        handle: aktuelles_eintraege
         field:
-          display: 'Anzahl Stücke in Spielzeit'
-          type: integer
-          icon: integer
-          instructions: 'The amount of entries listed in Repertoire component.'
-          width: 33
+          mode: default
+          collections:
+            - aktuelles
+          display: 'Aktuelles Einträge'
+          type: entries
+          icon: entries
+          instructions: 'Choose the entries you want to show from Aktuelles collection'
+          listable: hidden
+      -
+        handle: spielzeit_section
+        field:
+          display: Spielzeit
+          type: section
+          icon: section
+          listable: hidden
+      -
+        handle: spielzeit
+        field:
+          input_type: text
+          antlers: false
+          display: Spielzeit
+          type: text
+          icon: text
+          instructions: Season
+          listable: hidden
+      -
+        handle: spielzeit_eintraege
+        field:
+          mode: default
+          collections:
+            - veranstaltungen
+          display: 'Spielzeit Einträge'
+          type: entries
+          icon: entries
+          instructions: 'Choose the entries you want to show from Veranstaltungen collection'
           listable: hidden
       -
         import: featured_section

@@ -1,5 +1,6 @@
-<!-- Fst 1 -->
-<div class="md:grid grid-cols-12 gap-4 items-baseline pb-6">
+
+<div class="md:grid grid-cols-12 gap-4 items-baseline">
+    {{ spielzeit_eintraege }}
     {{ if no_results }}
     <div class="text-2xl md:col-span-12 text-black dark:text-white">Zur Zeit keine Vorstellungen.</div>
     <div class="pt-9 md:col-span-12"><button aria-label="Zur Startseite"
@@ -21,7 +22,7 @@
 
         <div class="text-black sm:text-lg dark:text-white">{{ title }} </div>{{ /veranstaltungsoerter }}
     </div>
-    <div class="col-span-8">
+    <div class="col-span-8 pb-6">
         <a href=" {{ url }}">
             <div class="text-2xl font-bold sm:text-3xl leading-tight text-black dark:text-white">
                 {{ title }}</div>
@@ -45,5 +46,5 @@
             {{ /page_builder }}
             <span class="text-monsun font-bold">→</span>
         </a>
-    </div> {{ /if }}
+    </div> {{ /if }}{{ /spielzeit_eintraege }}
 </div>

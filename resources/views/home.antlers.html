@@ -11,14 +11,17 @@ without having to worry about margins or paddings. #}}
     {{ partial:components/_monsun_feed_news}}
     <!-- Spielplan -->
     <div class="text-3xl lg:text-4xl text-black dark:text-white">{{ spielzeit }}</div>
-    {{ collection:veranstaltungen limit="{anzahl_stuecke_in_spielzeit_component}" sort="date:desc"}}
-    {{ partial:components/_monsun_feed_programme }}
-    {{ /collection:veranstaltungen }}
-    <button aria-label="Unseres Repertoire Zeigen"
+      {{ partial:components/_monsun_feed_programme }}
+      <div class="md:grid grid-cols-12 gap-4 items-baseline">
+        <div class="col-span-4"></div>
+        <div class="col-span-8">
+
+      <button aria-label="Unseres Repertoire Zeigen"
         class="max-w-sm mx-auto sm:max-w-none flex justify-center text-black dark:text-white">
         <a href="/repertoire" class="flex items-center justify-center px-4 py-3 border-2 text-md font-bold tracking-wider uppercase shadow-sm
         hover:bg-monsun dark:hover:bg-monsun sm:px-8 focus-visible:ring-2 focus-visible:border-monsun">Zum Repertoire</a>
-    </button>
+    </button></div>
+</div>
     {{ page_builder scope="block" }}
     {{ partial src="page_builder/{type}" }}
     {{ /page_builder }}
