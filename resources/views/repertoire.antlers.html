@@ -46,6 +46,16 @@
         </div>{{ /posts }}
     
     </div>
+
+    <div class="md:grid grid-cols-12 gap-4 items-baseline">
+        <div class="col-span-4"></div>
+        <div class="col-span-8">
+        
+        <button aria-label="Zum Archiv gehen" class="max-w-sm mx-auto sm:max-w-none flex justify-center text-black dark:text-white ">
+        <a href="/" class="flex items-center justify-center px-4 py-3 border-2  text-md font-bold tracking-wider uppercase shadow-sm
+                      hover:bg-monsun dark:hover:bg-monsun sm:px-8">Zum Archiv</a>
+    </button></div>
+    </div>
         <div class="max-w-full mx-auto justify-center flex">
     {{ paginate }}
      <button class="flex-row items-center justify-center px-2 
@@ -63,3 +73,4 @@
  {{ /paginate }}
       {{ /if }} 
     {{ /collection:veranstaltungen }}
+</div>
