@@ -483,6 +483,14 @@ sections:
                 listable: hidden
                 width: 25
             -
+              handle: kartenlink_verstecken
+              field:
+                display: 'Ticketlink verstecken'
+                type: toggle
+                icon: toggle
+                instructions: 'Hide Ticketlink'
+                listable: hidden
+            -
               handle: ticket_url
               field:
                 display: Ticketlink
@@ -490,6 +498,8 @@ sections:
                 icon: earth
                 instructions: 'Ticket URL'
                 listable: hidden
+                unless:
+                  kartenlink_verstecken: 'equals true'
             -
               handle: additional_info_performance_toggle
               field:
@@ -542,6 +552,7 @@ sections:
                 icon: toggle
                 instructions: 'Show any additional info about streaming?'
                 listable: hidden
+                width: 50
             -
               handle: additional_streaming_info
               field:

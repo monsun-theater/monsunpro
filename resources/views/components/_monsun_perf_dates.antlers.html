@@ -31,8 +31,8 @@
                 {{ else }}
                 <button class="block tracking-wider text-center uppercase hover:text-monsun sm:text-lg"><a class="block"
                         href="{{ ticket_url }}">
-                        <div class="font-bold tracking-widest uppercase">{{if few_tickets_left}}Rest{{ /if }}Karten<span
-                                class="font-bold text-monsun">&nbsp;→</span>
+                        <div class="font-bold tracking-widest uppercase">{{if few_tickets_left}}Rest{{ /if }} {{ if kartenlink_verstecken }} {{ else }} Karten<span
+                                class="font-bold text-monsun">&nbsp;→</span>{{ /if }}
                         </div>
                     </a>
                 </button>

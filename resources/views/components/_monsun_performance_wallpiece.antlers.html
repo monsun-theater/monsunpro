@@ -70,7 +70,7 @@
                 class="block" href="{{ ticket_url }}">
                 <div class="pt-3 font-bold tracking-widest uppercase">
                     <!-- Few tickets left -->
-                    {{if few_tickets_left}}Rest{{ /if }}Karten<span class="font-bold text-monsun">&nbsp;→</span>
+                    {{if few_tickets_left}}Rest{{ /if }} {{ if kartenlink_verstecken }} {{ else }} Karten<span class="font-bold text-monsun">&nbsp;→</span> {{ /if }}
                 </div>
             </a>
         </button>
