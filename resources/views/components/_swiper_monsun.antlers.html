@@ -1,8 +1,8 @@
 {{if image_gallery_toggle }}
 <div class="lg:grid grid-cols-12">
     <div class="col-span-8 lg:col-start-5">
-        <div x-data="{swiper: 1}" x-init="swiper = new Swiper($refs.container, {
-            autoHeight: true,
+        <div x-data="{swiper: null}" x-init="swiper = new Swiper($refs.container, {
+            
             lazy: true,
             loop: true,
             slidesPerView: 1,
@@ -29,12 +29,15 @@
                                 {{ if image_gallery }}
                                 <picture>
                                     {{ if extension == 'svg' || extension == 'gif' }}
-                                    <img src="{{ url }}" alt="{{ alt }}" />
+                                    <img class="" src="{{ url }}" alt="{{ alt }}" />
                                     {{ else }}
-                                    <source srcset="{{ glide:url preset='swiper' }}" type="image/webp">
-                                    <source srcset=" {{ glide:url preset='swiper' }} " {{ if extension=='png' }} type="image/png" {{
-                                        else }} type="image/jpeg" {{ /if }}>
-                                    <img class="block" src="{{ glide:url preset='swiper' }}" alt="{{ alt }}">
+                                    <source srcset="{{ glide:url preset='lg' }}" type="image/webp">
+                                    <source srcset=" {{ glide:url preset='lg' }} " {{ if extension=='png' }}
+                                        type="image/png" {{ else }} type="image/jpeg" {{ /if }}>
+                                    <img {{ if cover }} class="object-cover {{ class }}"
+                                        style="object-position: {{ focus | background_position }}" {{ else }}
+                                        class="block" {{ /if }} src="{{ glide:url preset='lg' }}" alt="{{ alt }}" {{
+                                        if lazy }} loading="eager" {{ /if }}>
                                     {{ /if }}
                                 </picture>
                                 {{ /if }}

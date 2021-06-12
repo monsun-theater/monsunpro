@@ -32,7 +32,7 @@
                                     type="image/png" {{ else }} type="image/jpeg" {{ /if }}>
                                 <img {{ if cover }} class="object-cover {{ class }}"
                                     style="object-position: {{ focus | background_position }}" {{ else }}
-                                    class="{{ class }}" {{ /if }} src="{{ glide:url preset='lg' }}" alt="{{ alt }}" {{
+                                    class="block" {{ /if }} src="{{ glide:url preset='lg' }}" alt="{{ alt }}" {{
                                     if lazy }} loading="eager" {{ /if }}>
                                 {{ /if }}
                             </picture>
