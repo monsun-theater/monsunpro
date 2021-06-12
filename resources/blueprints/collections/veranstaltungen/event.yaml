@@ -712,6 +712,17 @@ sections:
           mode: select
           listable: hidden
           max_items: 0
+      -
+        handle: status
+        field:
+          type: terms
+          taxonomies:
+            - status
+          display: Status
+          mode: select
+          instructions: 'Choose where the production should be listed'
+          listable: hidden
+          max_items: 1
   seo:
     display: SEO
     fields:

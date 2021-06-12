@@ -4,6 +4,7 @@ layout: layout
 taxonomies:
   - kategorien
   - veranstaltungsoerter
+  - status
 revisions: false
 route: 'veranstaltungen/{slug}'
 date: true
