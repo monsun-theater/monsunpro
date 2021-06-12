@@ -16,6 +16,25 @@ sections:
           antlers: false
           instructions: Title
       -
+        handle: overlay_title_nutzen
+        field:
+          display: 'Overlay-Title nutzen'
+          type: toggle
+          icon: toggle
+          instructions: 'Use it if you want to format your title with break marks'
+          listable: hidden
+      -
+        handle: overlay_title
+        field:
+          antlers: false
+          display: 'Overlay Title'
+          type: textarea
+          icon: textarea
+          instructions: 'This field will allow you to format your title with break marks'
+          listable: hidden
+          if:
+            overlay_title_nutzen: 'equals true'
+      -
         handle: show_add_title
         field:
           display: 'Titelzusatz zeigen'
