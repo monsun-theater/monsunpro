@@ -720,7 +720,7 @@ sections:
             - status
           display: Status
           mode: select
-          instructions: 'Choose where the production should be listed'
+          instructions: 'Choose if the show is in current repertoire'
           listable: hidden
           max_items: 1
   seo:

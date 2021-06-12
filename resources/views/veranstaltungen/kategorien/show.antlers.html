@@ -1,8 +1,9 @@
 {{# Showing entries tagged with their respective Categories #}}
 <div class="fluid-container outer-grid">
     <div class="text-3xl text-black lg:text-4xl dark:text-white">{{ title }}</div>
-    {{ entries status:in="published" as="posts" sort="title:asc" limit="5" paginate="true"}}
+    {{ entries as="posts" sort="title:asc" limit="5" paginate="true"}}
     {{ posts }}
+     
     <div class="md:grid grid-cols-12 gap-4 items-baseline pb-6">
         {{ if no_results }}
         <div class="text-2xl col-span-12 text-black dark:text-white">Zur Zeit keine Vorstellungen
