@@ -11,9 +11,7 @@ preferences:
       columns:
         - date
         - title
-        - slug
-        - veranstaltungsoerter
-      after_save: continue_editing
+        - kategorien
     rollen:
       per_page: 25
     produktionen:

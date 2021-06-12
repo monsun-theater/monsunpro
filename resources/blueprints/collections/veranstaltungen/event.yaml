@@ -723,6 +723,14 @@ sections:
           instructions: 'Choose if the show is in current repertoire'
           listable: hidden
           max_items: 1
+      -
+        handle: in_kategorien_zeigen
+        field:
+          display: 'In Kategorien zeigen'
+          type: toggle
+          icon: toggle
+          instructions: 'Show the performance in Kategorien listings'
+          listable: hidden
   seo:
     display: SEO
     fields:
