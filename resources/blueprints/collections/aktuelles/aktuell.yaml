@@ -22,6 +22,17 @@ sections:
       -
         import: figure_one_size
       -
+        handle: video_link
+        field:
+          display: Video-Link
+          type: toggle
+          icon: toggle
+          instructions: 'Hides the image and adds a video player'
+          listable: hidden
+      -
+        import: video
+        prefix: akt_
+      -
         import: page_builder
   sidebar:
     display: Sidebar

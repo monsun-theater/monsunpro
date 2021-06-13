@@ -10,9 +10,26 @@
             <h2 class="text-xl sm:text-2xl font-bold leading-tight text-black dark:text-white">
                 {{ title }}</h2>
             <div class="sm:text-lg pb-2 text-black dark:text-white">{{ untertitel }}</div>
+            {{ if video_link }}
+            {{# A sizeable video rendered in a responsive container with an optional caption. #}}
+<div class="size-lg">
+    <div class="aspect-w-16 aspect-h-9">
+        <iframe class="absolute top-0 left-0 w-full h-full" width="100%" height="auto"
+            src="{{ akt_video_url | embed_url }}{{ if akt_do_not_track }}?dnt=1{{ /if }}" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </div>
+    {{ if akt_caption }}
+    <div class="mt-2 text-neutral-300 dark:text-neutral-600 text-xs text-center">
+        {{ akt_caption }}
+    </div>
+    {{ /if }}
+</div>
+            {{ else }}
             <figure class="pb-3">{{ partial:components/picture class="w-full"}}</figure>
             <div class="text-neutral-300 dark:text-neutral-600 text-xs text-center">© {{
                 image_credit }}</div>
+                {{ /if }}
         </div>
     </div>
     {{ page_builder scope="block" }}
