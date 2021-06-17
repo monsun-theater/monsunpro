@@ -8,8 +8,9 @@ preferences:
     veranstaltungen:
       columns:
         - title
-        - date
-        - subtitle
+        - status
+        - in_kategorien_zeigen
+        - kategorien
     aktuelles:
       columns:
         - title
