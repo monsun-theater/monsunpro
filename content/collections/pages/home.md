@@ -2,8 +2,8 @@
 id: home
 blueprint: homepage
 title: Startseite
-updated_by: 34d4dc92-ec1a-4900-9a81-ed8dd8606f23
-updated_at: 1623567568
+updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
+updated_at: 1624571521
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -29,31 +29,31 @@ hero_featured_sect:
         attr_title: 'Mehr lesen'
         attr_aria: 'Mehr über Filetstücke lesen'
     type: featured
-    enabled: true
+    enabled: false
     titelzusatz_zeigen: true
     subtitle: '- wem gehört das Land'
     overlay_color: neutral-300
   -
-    title: 'Die Orestie'
-    titelzusatz_zeigen: false
-    title_desc: 'Von Aischylos'
+    title: 'VERWEIGERUNG DER UMSTÄNDE HALBER'
+    titelzusatz_zeigen: true
     einfarbiger_hintergrund: false
-    featured_image: produktionen/die_orestie/tib_die_orestie_01_c_laura_thomas.jpg
+    featured_image: produktionen/backstage_festival/2021/verweigerung_der_umstaende_halber_01_c_marie-luise_otto.jpeg
     overlay_color: neutral-300
     buttons:
       -
         label: 'Mehr lesen'
         target_blank: false
         link_type: entry
-        entry: 876c3b71-60f6-4caf-9a97-2c266e83d428
+        entry: 14f0c4cb-cedd-4778-8f28-e237b77dedb3
         url: null
         email: null
         tel: null
         asset: null
         attr_title: 'Mehr lesen'
-        attr_aria: 'Mehr über DIE ORESTIE lesen'
+        attr_aria: 'Mehr über BACKSTAGE Festival lesen'
     type: featured
-    enabled: false
+    enabled: true
+    subtitle: 'BACKSTAGE Festival'
 anzahl_vorstellungen_in_demnaechst: 4
 anzahl_eintraege_in_aktuelles: 2
 anzahl_stuecke_in_spielzeit_component: 2
@@ -95,7 +95,7 @@ aktuelles_eintraege:
   - 021835a9-3a99-429a-ba5d-5ddb76351139
   - 8e5b8fa1-e642-47a5-a36c-8fd4ec3c3f6e
 spielzeit_eintraege:
+  - 14f0c4cb-cedd-4778-8f28-e237b77dedb3
   - c6ee169b-2221-4746-9f04-5ea08d0bcbe9
   - cdf42f89-6704-4ec1-8f26-fcfae3ded255
-  - 876c3b71-60f6-4caf-9a97-2c266e83d428
 ---
