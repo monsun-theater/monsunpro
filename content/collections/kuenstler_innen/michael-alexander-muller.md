@@ -1,8 +1,8 @@
 ---
 id: e6c03a3d-126d-48f3-b7df-26cd340bc2de
+blueprint: kuenstler_innen
 title: 'Michael Alexander Müller'
 hat_eigene_website_has_own_website: false
-kuenstler_artist_website_url_link: 'https://'
 biographie_eintragen_create_artist_s_biography: true
 page_builder:
   -
@@ -54,8 +54,9 @@ page_builder:
                 type: link
                 attrs:
                   href: 'https://monsun.theater/veranstaltungen/bruchlinien'
-                  target: null
                   rel: null
+                  target: null
+                  title: null
             text: BRUCHLINIEN
           -
             type: text
@@ -75,8 +76,9 @@ page_builder:
                 type: link
                 attrs:
                   href: 'https://monsun.theater/veranstaltungen/filetstuecke'
-                  target: null
                   rel: null
+                  target: null
+                  title: null
             text: 'FILETSTÜCKE – WEM GEHÖRT DAS LAND'
           -
             type: text
@@ -87,8 +89,33 @@ page_builder:
               -
                 type: italic
             text: (Text)
+          -
+            type: hard_break
+            marks:
+              -
+                type: italic
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'https://monsun.theater/veranstaltungen/verweigerung-der-umstaende-halber'
+                  rel: null
+                  target: null
+                  title: null
+            text: 'VERWEIGERUNG – DER UMSTÄNDE HALBER'
+          -
+            type: text
+            text: ' '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: (Leitung)
     type: article
     enabled: true
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1620155358
+updated_at: 1626361234
 ---
