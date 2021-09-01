@@ -1,8 +1,9 @@
 ---
 id: 230ec157-5076-45d0-8d68-597a5f3d0743
+blueprint: kuenstler_innen
 title: 'Francoise Hüsges'
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1620943287
+updated_at: 1630446185
 page_builder:
   -
     bard:
@@ -27,8 +28,9 @@ page_builder:
                 type: link
                 attrs:
                   href: 'http://www.monsun.theater/'
-                  target: _blank
                   rel: null
+                  target: _blank
+                  title: null
             text: monsun.theater
           -
             type: text
@@ -285,8 +287,9 @@ page_builder:
                 type: link
                 attrs:
                   href: 'https://monsun.theater/veranstaltungen/der-nussknacker'
-                  target: null
                   rel: null
+                  target: null
+                  title: null
             text: 'DER NUSSKNACKER'
           -
             type: text
@@ -306,8 +309,9 @@ page_builder:
                 type: link
                 attrs:
                   href: 'https://monsun.theater/veranstaltungen/why-not'
-                  target: null
                   rel: null
+                  target: null
+                  title: null
             text: 'WHY NOT?'
           -
             type: text
@@ -327,8 +331,9 @@ page_builder:
                 type: link
                 attrs:
                   href: 'https://monsun.theater/veranstaltungen/fly'
-                  target: null
                   rel: null
+                  target: null
+                  title: null
             text: FLY
           -
             type: text
@@ -359,8 +364,9 @@ page_builder:
                 type: link
                 attrs:
                   href: 'https://monsun.theater/veranstaltungen/das-lange-nachspiel-einer-kurzen-mitteilung'
-                  target: null
                   rel: null
+                  target: null
+                  title: null
             text: 'DAS LANGE NACHSPIEL EINER KURZEN MITTEILUNG'
           -
             type: text
@@ -380,8 +386,9 @@ page_builder:
                 type: link
                 attrs:
                   href: 'https://monsun.theater/veranstaltungen/das-lange-nachspiel-einer-kurzen-mitteilung'
-                  target: null
                   rel: null
+                  target: null
+                  title: null
             text: 'FABIAN ODER DER GANG VOR DIE HUNDE'
           -
             type: text
@@ -401,8 +408,9 @@ page_builder:
                 type: link
                 attrs:
                   href: 'https://monsun.theater/veranstaltungen/bruchlinien'
-                  target: null
                   rel: null
+                  target: null
+                  title: null
             text: BRUCHLINIEN
           -
             type: text
@@ -422,8 +430,9 @@ page_builder:
                 type: link
                 attrs:
                   href: 'https://monsun.theater/veranstaltungen/filetstuecke'
-                  target: null
                   rel: null
+                  target: null
+                  title: null
             text: 'FILETSTÜCKE – WEM GEHÖRT DAS LAND'
           -
             type: text
@@ -446,8 +455,9 @@ page_builder:
                 type: link
                 attrs:
                   href: 'https://monsun.theater/veranstaltungen/die-orestie'
-                  target: null
                   rel: null
+                  target: null
+                  title: null
             text: 'DIE ORESTIE'
           -
             type: text
@@ -467,8 +477,9 @@ page_builder:
                 type: link
                 attrs:
                   href: 'https://monsun.theater/veranstaltungen/hier-und-da-nah-und-fern'
-                  target: null
                   rel: null
+                  target: null
+                  title: null
             text: 'HIER UND DA - NAH UND FERN- WIR KOMMEN ÜBERALL HIN'
           -
             type: text
@@ -479,10 +490,31 @@ page_builder:
               -
                 type: italic
             text: (Leitung)
+          -
+            type: hard_break
+            marks:
+              -
+                type: italic
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'https://monsun.theater/veranstaltungen/verweigerung-der-umstaende-halber'
+                  rel: null
+                  target: null
+                  title: null
+            text: 'VERWEIGERUNG DER UMSTÄNDE HALBER'
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: ' (Bühne & Kamera & Bildregie)'
     type: article
     enabled: true
 kuenstler_artist_website_link: www.google.com
 hat_eigene_website_has_own_website: false
 biographie_eintragen_create_artist_s_biography: true
-kuenstler_artist_website_url_link: 'https://'
 ---

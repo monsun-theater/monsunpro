@@ -3,7 +3,7 @@ id: home
 blueprint: homepage
 title: Startseite
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1624571521
+updated_at: 1630243603
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -34,26 +34,49 @@ hero_featured_sect:
     subtitle: '- wem gehört das Land'
     overlay_color: neutral-300
   -
-    title: 'VERWEIGERUNG DER UMSTÄNDE HALBER'
+    title: 'HAUPTSACHE FREI #7'
     titelzusatz_zeigen: true
+    subtitle: 'Festival der freien darstellenden Künste'
+    title_desc: 'Kafkaeske Szenarien – Verwaltungsvorschriften über die Durchführung von Bauaufgaben der Freien und Hansestadt Hamburg (VV-Bau)'
     einfarbiger_hintergrund: false
-    featured_image: produktionen/backstage_festival/2021/verweigerung_der_umstaende_halber_01_c_marie-luise_otto.jpeg
+    featured_image: produktionen/hauptsache_frei/2021/hauptsache_frei_2021.jpg
     overlay_color: neutral-300
     buttons:
       -
         label: 'Mehr lesen'
         target_blank: false
         link_type: entry
-        entry: 14f0c4cb-cedd-4778-8f28-e237b77dedb3
+        entry: 67b3b35a-2ab9-4f53-a6fe-909675f19b6a
         url: null
         email: null
         tel: null
         asset: null
         attr_title: 'Mehr lesen'
-        attr_aria: 'Mehr über BACKSTAGE Festival lesen'
+        attr_aria: 'Mehr über Hauptsache Frei #7 lesen'
+    type: featured
+    enabled: false
+  -
+    title: Kopfstände
+    titelzusatz_zeigen: true
+    einfarbiger_hintergrund: false
+    featured_image: aktuelles/2021-08-29/monsun-under-construction-treppe.jpg
+    buttons:
+      -
+        label: VIDEO
+        target_blank: false
+        link_type: url
+        entry: null
+        url: 'https://vimeo.com/592222109'
+        email: null
+        tel: null
+        asset: null
+        attr_title: 'Kopfstände - Eine Baustellenpromenade'
+        attr_aria: 'Kopfstände - Eine Baustellenpromenade'
     type: featured
     enabled: true
-    subtitle: 'BACKSTAGE Festival'
+    subtitle: 'Eine Baustellenpromenade'
+    title_desc: 'Text: Michael Alexander Müller'
+    overlay_color: neutral-300
 anzahl_vorstellungen_in_demnaechst: 4
 anzahl_eintraege_in_aktuelles: 2
 anzahl_stuecke_in_spielzeit_component: 2
@@ -61,7 +84,7 @@ seo_title: Startseite
 seo_description: 'monsun.theater ist das älteste Off-Theater in Hamburg und besteht seit 1980. Es befindet sich im Stadtteil Ottensen.'
 og_title: monsun.theater
 og_description: 'Das Monsun-Theater (Eigenschreibweise: monsun.theater) ist das älteste Off-Theater in Hamburg und besteht seit 1980. Es befindet sich im Stadtteil Ottensen.'
-spielzeit: 'Spielzeit 2020-2021'
+spielzeit: 'Spielzeit 2021-2022'
 page_builder:
   -
     title: Newsletter
@@ -91,11 +114,8 @@ page_builder:
             text: .
 demnachst_verstecken: true
 aktuelles_eintraege:
-  - 2e837875-ea23-40dd-ba38-5be9f52925c2
-  - 021835a9-3a99-429a-ba5d-5ddb76351139
-  - 8e5b8fa1-e642-47a5-a36c-8fd4ec3c3f6e
+  - abdd4942-4417-4c6e-baeb-49b2f8fe56ac
 spielzeit_eintraege:
-  - 14f0c4cb-cedd-4778-8f28-e237b77dedb3
-  - c6ee169b-2221-4746-9f04-5ea08d0bcbe9
+  - 67b3b35a-2ab9-4f53-a6fe-909675f19b6a
   - cdf42f89-6704-4ec1-8f26-fcfae3ded255
 ---
