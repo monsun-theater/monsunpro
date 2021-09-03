@@ -70,7 +70,7 @@ page_builder:
         label: 'Close Up'
         target_blank: false
         link_type: entry
-        entry: d054e271-4fe1-4e95-95ab-b00718a0a464
+        entry: f6b4961c-6d48-4776-ae3b-4cd7dec742ef
         url: null
         email: null
         tel: null
@@ -83,7 +83,7 @@ page_builder:
         label: 'Die Zeitraffer'
         target_blank: false
         link_type: entry
-        entry: d054e271-4fe1-4e95-95ab-b00718a0a464
+        entry: a2298862-8def-4c48-8589-850df189f81b
         url: null
         email: null
         tel: null
@@ -96,7 +96,7 @@ page_builder:
         label: Upstream
         target_blank: false
         link_type: entry
-        entry: null
+        entry: 5ac2becc-5bb3-43c1-988d-d109fac94dd5
         url: null
         email: null
         tel: null
@@ -109,7 +109,7 @@ page_builder:
         label: Tarun
         target_blank: false
         link_type: entry
-        entry: null
+        entry: 5699ced4-d115-4ee6-97f0-4b7b4a4b0da5
         url: null
         email: null
         tel: null
@@ -122,7 +122,7 @@ page_builder:
         label: 'Cyborg Sunday'
         target_blank: false
         link_type: entry
-        entry: null
+        entry: f2272334-91ff-479f-83b9-2aa8043d8811
         url: null
         email: null
         tel: null
@@ -221,5 +221,5 @@ sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 template: default
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1630446773
+updated_at: 1630527168
 ---

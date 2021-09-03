@@ -3,7 +3,7 @@ id: home
 blueprint: homepage
 title: Startseite
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1630243603
+updated_at: 1630609029
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -77,7 +77,7 @@ hero_featured_sect:
     subtitle: 'Eine Baustellenpromenade'
     title_desc: 'Text: Michael Alexander Müller'
     overlay_color: neutral-300
-anzahl_vorstellungen_in_demnaechst: 4
+anzahl_vorstellungen_in_demnaechst: 3
 anzahl_eintraege_in_aktuelles: 2
 anzahl_stuecke_in_spielzeit_component: 2
 seo_title: Startseite
@@ -86,6 +86,18 @@ og_title: monsun.theater
 og_description: 'Das Monsun-Theater (Eigenschreibweise: monsun.theater) ist das älteste Off-Theater in Hamburg und besteht seit 1980. Es befindet sich im Stadtteil Ottensen.'
 spielzeit: 'Spielzeit 2021-2022'
 page_builder:
+  -
+    bard:
+      -
+        type: set
+        attrs:
+          values:
+            type: video
+            video_url: 'https://vimeo.com/592222109'
+            caption: 'Kopfstände – Eine Baustellenpromenade'
+            do_not_track: true
+    type: article
+    enabled: true
   -
     title: Newsletter
     text: 'Bleiben Sie im Kontakt mit dem monsun.theater! Einmal im Monat aktuelle Informationen zu unseren Veranstaltungen: Premieren, Festivals, Extra-Events und ein Blick hinter die Kulissen.'
@@ -112,7 +124,7 @@ page_builder:
           -
             type: text
             text: .
-demnachst_verstecken: true
+demnachst_verstecken: false
 aktuelles_eintraege:
   - abdd4942-4417-4c6e-baeb-49b2f8fe56ac
 spielzeit_eintraege:
