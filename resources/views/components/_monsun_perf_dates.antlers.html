@@ -13,9 +13,16 @@
                 <div>
                     {{ perf_date format_localized="%A"}}
                 </div>
+                
             </div>
             {{# Right-side component #}}
-            <div class="pb-3 text-xl text-black sm:col-span-5 dark:text-white">
+            <div class="pb-3 text-xl text-black sm:col-span-5 dark:text-white">{{if premiere_toggle}}
+                <button aria-label="Premieren Zeigen"
+                    class="p-2 text-xs font-bold tracking-widest bg-error-700 text-white uppercase sm:text-sm"><a
+                        href="/premieren">{{
+                        premiere_type }}</a>
+                </button>
+                {{ /if }}
                 <div>
                     {{ perf_date format_localized="%e. %B %Y"}} | {{ perf_date format="H:i"}} Uhr
                 </div>
