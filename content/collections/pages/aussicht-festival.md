@@ -1,6 +1,5 @@
 ---
 id: 8a8f549b-0be1-4e43-9ed4-3e6eb12d98b9
-published: false
 blueprint: page
 title: 'AUSSICHT Festival'
 cinema_monsun: false
@@ -153,7 +152,7 @@ page_builder:
         label: 'Reise zum Mars – Limited Space'
         target_blank: false
         link_type: entry
-        entry: null
+        entry: 2e8fa8c4-b462-44fa-874b-8694b97cc4ea
         url: null
         email: null
         tel: null
@@ -166,7 +165,7 @@ page_builder:
         label: Endspiel
         target_blank: false
         link_type: entry
-        entry: null
+        entry: e767eb49-2fcc-4c3f-9f22-eae1ba31eb40
         url: null
         email: null
         tel: null
@@ -179,7 +178,7 @@ page_builder:
         label: 'rauschen - schneller.höher.weiter.besser'
         target_blank: false
         link_type: entry
-        entry: null
+        entry: 72cf98b5-b346-471f-b5d9-4bf93959a464
         url: null
         email: null
         tel: null
@@ -192,7 +191,7 @@ page_builder:
         label: 'crying zone'
         target_blank: false
         link_type: entry
-        entry: null
+        entry: 4ce19a0c-ffec-4477-95bb-b5016d2d150a
         url: null
         email: null
         tel: null
@@ -205,13 +204,135 @@ page_builder:
         label: 'touch me'
         target_blank: false
         link_type: entry
-        entry: null
+        entry: 2cc753e7-a347-4e10-8e13-1f76f6751494
         url: null
         email: null
         tel: null
         asset: null
         attr_title: 'touch me'
         attr_aria: 'touch me'
+    type: link_blocks
+    enabled: true
+  -
+    title: 'AUSSICHT Festival #3'
+    link_blocks:
+      -
+        title: '28. August 2019 | 20:00 Uhr'
+        text: 'Edu O. (Salvador, Brasilien)'
+        label: 'Striptease Bicho'
+        target_blank: false
+        link_type: entry
+        entry: b5cf9ff3-86f5-481d-9286-8c5b7cacb307
+        url: null
+        email: null
+        tel: null
+        asset: null
+        attr_title: 'Striptease Bicho'
+        attr_aria: 'Striptease Bicho'
+      -
+        title: '28. August 2019 | 21:00 Uhr'
+        text: 'Marcos Abranches (São Paulo, Brasilien)'
+        label: 'canto dos malditos'
+        target_blank: false
+        link_type: entry
+        entry: 1f1e3928-6c00-424a-8181-941ae23a7709
+        url: null
+        email: null
+        tel: null
+        asset: null
+        attr_title: 'canto dos malditos'
+        attr_aria: 'canto dos malditos'
+      -
+        title: '29. August 2019 | 19:00 Uhr'
+        text: 'Dorisdean Kollektiv (Düsseldorf)'
+        label: 'I like to play'
+        target_blank: false
+        link_type: entry
+        entry: 1314b5d8-3470-4b32-a394-23f4fb23f6c0
+        url: null
+        email: null
+        tel: null
+        asset: null
+        attr_title: 'I like to play'
+        attr_aria: 'I like to play'
+      -
+        title: '29. August 2019 | 20:30 Uhr'
+        text: 'Akiles (Berlin, Deutschland & Irak)'
+        label: 'The Pain… The Pursuit…'
+        target_blank: false
+        link_type: entry
+        entry: 623a66da-4cfa-47ff-9853-6c1c6c0ae650
+        url: null
+        email: null
+        tel: null
+        asset: null
+        attr_title: 'The Pain… The Pursuit…'
+        attr_aria: 'The Pain… The Pursuit…'
+      -
+        title: '29. August 2019 | 22:00 Uhr'
+        text: 'Alina Belyagina (München, Deutschland & Russland)'
+        label: 'Pure. Image.'
+        target_blank: false
+        link_type: entry
+        entry: d9e7cc48-0265-4441-a599-c2152e36051c
+        url: null
+        email: null
+        tel: null
+        asset: null
+        attr_title: 'Pure. Image.'
+        attr_aria: 'Pure. Image.'
+      -
+        title: '30. August 2019 | 20:00 Uhr'
+        text: 'Nils Löfke (Kassel)'
+        label: 'And how it will live after I created it'
+        target_blank: false
+        link_type: entry
+        entry: 92f75ab2-c414-402b-bec3-4076648a9c32
+        url: null
+        email: null
+        tel: null
+        asset: null
+        attr_title: 'And how it will live after I created it'
+        attr_aria: 'And how it will live after I created it'
+      -
+        title: '30. August 2019 | 21:00 Uhr'
+        text: 'Renae Shadler & Roland Walter (Berlin, Deutschland & Australien)'
+        label: Skin
+        target_blank: false
+        link_type: entry
+        entry: 153457d7-2812-4aac-9eaf-bdcca26c747d
+        url: null
+        email: null
+        tel: null
+        asset: null
+        attr_title: Skin
+        attr_aria: Skin
+      -
+        title: '30. August 2019 | 22:00 Uhr'
+        text: 'systemrhizoma (Hildesheim)'
+        label: IN.FLUENCE
+        target_blank: false
+        link_type: entry
+        entry: 0d28b657-6620-4f9f-959c-2225b0fcf175
+        url: null
+        email: null
+        tel: null
+        asset: null
+        attr_title: IN.FLUENCE
+        attr_aria: IN.FLUENCE
+      -
+        title: '31. August 2019 | 20:00 Uhr'
+        text: 'Kornblum-Rettenmund (Hamburg & Berlin)'
+        label: 'Quest – Schüttgüter und Sternenstaub'
+        target_blank: false
+        link_type: entry
+        entry: 4221f956-f6c7-40c3-8a66-1757f8b56b1c
+        url: null
+        email: null
+        tel: null
+        asset: null
+        attr_title: 'Quest – Schüttgüter und Sternenstaub'
+        attr_aria: 'Quest – Schüttgüter und Sternenstaub'
     type: link_blocks
     enabled: true
 seo_noindex: false
@@ -221,5 +342,10 @@ sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 template: default
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1630527168
+updated_at: 1631008094
+seo_title: 'AUSSICHT Festival'
+seo_description: 'Hamburgs Mixed-Abled Festival'
+og_title: 'AUSSICHT Festival'
+og_description: 'Hamburgs Mixed-Abled Festival'
+og_image: produktionen/aussicht_festival/AusSicht-Festival-Logo-Rechteck.jpg
 ---
