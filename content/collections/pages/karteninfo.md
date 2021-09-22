@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1630582253
+updated_at: 1631985563
 page_builder:
   -
     bard:
@@ -259,6 +259,23 @@ page_builder:
             type: text
             text: 'Oder einfach gleich die passende Veranstaltung im monsun theater aussuchen und direkt online bei Reservix buchen.'
     type: article
+    enabled: true
+  -
+    title: Hygiene
+    text: 'Für unsere Vorstellung gilt vor Ort das 2G-Modell.'
+    buttons:
+      -
+        label: Hygienekonzept
+        target_blank: false
+        link_type: entry
+        entry: bcc3699a-8af0-48b7-82e0-e1ba94e9167f
+        url: null
+        email: null
+        tel: null
+        asset: null
+        attr_title: Hygiene
+        attr_aria: Hygienekonzept
+    type: call_to_action
     enabled: true
 monsun_alert: false
 template: default
