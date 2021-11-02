@@ -61,6 +61,20 @@ page_builder:
     type: article
     enabled: true
   -
+    bard:
+      -
+        type: set
+        attrs:
+          values:
+            type: video
+            video_url: 'https://vimeo.com/637965056'
+            caption: 'AUSSICHT Festival #1 (2017)'
+            do_not_track: true
+      -
+        type: paragraph
+    type: article
+    enabled: true
+  -
     title: 'AUSSICHT Festival #1'
     link_blocks:
       -
@@ -129,6 +143,20 @@ page_builder:
         attr_title: null
         attr_aria: null
     type: link_blocks
+    enabled: true
+  -
+    bard:
+      -
+        type: set
+        attrs:
+          values:
+            type: video
+            video_url: 'https://vimeo.com/637965225'
+            caption: 'AUSSICHT Festival #2 (2018)'
+            do_not_track: true
+      -
+        type: paragraph
+    type: article
     enabled: true
   -
     title: 'AUSSICHT Festival #2'
@@ -212,6 +240,20 @@ page_builder:
         attr_title: 'touch me'
         attr_aria: 'touch me'
     type: link_blocks
+    enabled: true
+  -
+    bard:
+      -
+        type: set
+        attrs:
+          values:
+            type: video
+            video_url: 'https://vimeo.com/352465733'
+            caption: 'AUSSICHT Festival #3 (2019)'
+            do_not_track: true
+      -
+        type: paragraph
+    type: article
     enabled: true
   -
     title: 'AUSSICHT Festival #3'
@@ -342,7 +384,7 @@ sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 template: default
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1631008094
+updated_at: 1634932379
 seo_title: 'AUSSICHT Festival'
 seo_description: 'Hamburgs Mixed-Abled Festival'
 og_title: 'AUSSICHT Festival'

@@ -3,7 +3,7 @@ id: home
 blueprint: homepage
 title: Startseite
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1631972981
+updated_at: 1634398505
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -54,6 +54,28 @@ hero_featured_sect:
     type: featured
     enabled: true
     featured_image: produktionen/bruchlinien/bruchlinien_featured_section_v2.jpg
+  -
+    title: 'Der Hals der Giraffe'
+    titelzusatz_zeigen: true
+    subtitle: 'Von Judith Schalansky'
+    title_desc: 'Bildungsroman in einer Fassung von Anita Augustin und Florian Fiedler'
+    einfarbiger_hintergrund: false
+    featured_image: produktionen/der_hals_der_giraffe/der_hals_der_giraffe_c_sabine_flunker_02.JPG
+    overlay_color: neutral-300
+    buttons:
+      -
+        label: 'Mehr lesen'
+        target_blank: false
+        link_type: entry
+        entry: 8640b6aa-afbb-45af-8a3f-f83158bfbe11
+        url: null
+        email: null
+        tel: null
+        asset: null
+        attr_title: 'Mehr lesen'
+        attr_aria: 'Mehr über die Veranstaltung „Der Hals der Giraffe“ lesen'
+    type: featured
+    enabled: false
 anzahl_vorstellungen_in_demnaechst: 3
 anzahl_eintraege_in_aktuelles: 2
 anzahl_stuecke_in_spielzeit_component: 2
@@ -91,7 +113,9 @@ page_builder:
             text: .
 demnachst_verstecken: false
 aktuelles_eintraege:
+  - ce0944be-4185-45a6-8e40-9a36d33effb4
   - a6a6ec24-8a9b-4ebf-ac36-6463fbdc6eb6
 spielzeit_eintraege:
   - cdf42f89-6704-4ec1-8f26-fcfae3ded255
+  - 8640b6aa-afbb-45af-8a3f-f83158bfbe11
 ---

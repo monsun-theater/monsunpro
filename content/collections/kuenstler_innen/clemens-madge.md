@@ -1,8 +1,8 @@
 ---
 id: e834ffc9-f737-4277-b74d-e9aabe51340c
+blueprint: kuenstler_innen
 title: 'Clemens Mädge'
 hat_eigene_website_has_own_website: false
-kuenstler_artist_website_url_link: 'https://'
 biographie_eintragen_create_artist_s_biography: true
 page_builder:
   -
@@ -33,8 +33,9 @@ page_builder:
                 type: link
                 attrs:
                   href: 'https://monsun.theater/kuenstler-innen/kathrin-mayr'
-                  target: null
                   rel: null
+                  target: null
+                  title: null
             text: 'Kathrin Mayr'
           -
             type: text
@@ -55,8 +56,9 @@ page_builder:
                 type: link
                 attrs:
                   href: 'https://monsun.theater/veranstaltungen/australischer-frost'
-                  target: null
                   rel: null
+                  target: null
+                  title: null
             text: 'AUSTRALISCHER FROST'
           -
             type: text
@@ -93,8 +95,9 @@ page_builder:
                 type: link
                 attrs:
                   href: 'https://monsun.theater/veranstaltungen/paula'
-                  target: null
                   rel: null
+                  target: null
+                  title: null
             text: PAULA
           -
             type: text
@@ -114,8 +117,9 @@ page_builder:
                 type: link
                 attrs:
                   href: 'https://monsun.theater/veranstaltungen/aufzeichnungen-aus-dem-kellerloch'
-                  target: null
                   rel: null
+                  target: null
+                  title: null
             text: 'AUFZEICHNUNGEN AUS DEM KELLERLOCH'
           -
             type: text
@@ -135,8 +139,9 @@ page_builder:
                 type: link
                 attrs:
                   href: 'https://monsun.theater/veranstaltungen/fabian-oder-der-gang-vor-die-hunde'
-                  target: null
                   rel: null
+                  target: null
+                  title: null
             text: 'FABIAN ODER DER GANG VOR DIE HUNDE'
           -
             type: text
@@ -156,8 +161,9 @@ page_builder:
                 type: link
                 attrs:
                   href: 'https://monsun.theater/veranstaltungen/der-matel-die-nase-wahnsinn'
-                  target: null
                   rel: null
+                  target: null
+                  title: null
             text: 'DER MANTEL. DIE NASE. DER WAHNSINN.'
           -
             type: text
@@ -168,8 +174,33 @@ page_builder:
               -
                 type: italic
             text: '(Textfassung & Regie)'
+          -
+            type: hard_break
+            marks:
+              -
+                type: italic
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::8640b6aa-afbb-45af-8a3f-f83158bfbe11'
+                  rel: null
+                  target: null
+                  title: null
+            text: 'DER HALS DER GIRAFFE'
+          -
+            type: text
+            text: ' '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: (Sounddesign)
     type: article
     enabled: true
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1620155241
+updated_at: 1634478731
 ---

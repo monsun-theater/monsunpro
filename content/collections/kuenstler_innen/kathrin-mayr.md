@@ -1,8 +1,8 @@
 ---
 id: e464194a-4194-4f91-af1f-baddf66033a8
+blueprint: kuenstler_innen
 title: 'Kathrin Mayr'
 hat_eigene_website_has_own_website: false
-kuenstler_artist_website_url_link: 'https://'
 biographie_eintragen_create_artist_s_biography: true
 page_builder:
   -
@@ -40,9 +40,10 @@ page_builder:
               -
                 type: link
                 attrs:
-                  href: 'https://monsun.theater/kuenstler-innen/clemens-madge'
-                  target: null
+                  href: 'statamic://entry::e834ffc9-f737-4277-b74d-e9aabe51340c'
                   rel: null
+                  target: null
+                  title: null
             text: 'Clemens Mädge'
           -
             type: text
@@ -56,9 +57,10 @@ page_builder:
               -
                 type: link
                 attrs:
-                  href: 'https://monsun.theater/veranstaltungen/australischer-frost'
-                  target: null
+                  href: 'statamic://entry::ebce7502-f030-4872-a7ac-757e990f99ed'
                   rel: null
+                  target: null
+                  title: null
             text: 'AUSTRALISCHER FROST'
           -
             type: text
@@ -95,8 +97,9 @@ page_builder:
                 type: link
                 attrs:
                   href: 'https://monsun.theater/veranstaltungen/paula'
-                  target: null
                   rel: null
+                  target: null
+                  title: null
             text: PAULA
           -
             type: text
@@ -116,8 +119,9 @@ page_builder:
                 type: link
                 attrs:
                   href: 'https://monsun.theater/veranstaltungen/fabian-oder-der-gang-vor-die-hunde'
-                  target: null
                   rel: null
+                  target: null
+                  title: null
             text: 'FABIAN ODER DER GANG VOR DIE HUNDE'
           -
             type: text
@@ -137,8 +141,9 @@ page_builder:
                 type: link
                 attrs:
                   href: 'https://monsun.theater/veranstaltungen/die-orestie'
-                  target: null
                   rel: null
+                  target: null
+                  title: null
             text: 'DIE ORESTIE'
           -
             type: text
@@ -146,8 +151,33 @@ page_builder:
               -
                 type: italic
             text: ' (Regie)'
+          -
+            type: hard_break
+            marks:
+              -
+                type: italic
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::8640b6aa-afbb-45af-8a3f-f83158bfbe11'
+                  rel: null
+                  target: null
+                  title: null
+            text: 'DER HALS DER GIRAFFE'
+          -
+            type: text
+            text: ' '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: (Regie)
     type: article
     enabled: true
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1620155298
+updated_at: 1634478879
 ---

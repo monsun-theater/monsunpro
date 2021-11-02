@@ -1,5 +1,6 @@
 ---
 id: f9e72c61-93b9-4eb5-b2a8-c7b80202fc1f
+blueprint: page
 title: 'Künstler:innen'
 seo_noindex: false
 seo_nofollow: false
@@ -7,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1622712711
+updated_at: 1634847395
 template: default
 cinema_monsun: false
 do_not_track_toggle: false
@@ -17,6 +18,12 @@ page_builder:
     collection:
       - 3a9d35dd-3fb1-4045-a101-1eec603d300a
       - 0e810994-4499-46e6-ba2c-ce31e765fe50
+    type: collection
+    enabled: true
+  -
+    title: F
+    collection:
+      - 2d00ee94-9aba-405e-9928-2c6bc53aabad
     type: collection
     enabled: true
   -
@@ -35,6 +42,7 @@ page_builder:
   -
     title: K
     collection:
+      - 426a85fd-c91d-4995-a293-81b078fca1f0
       - 81fab807-4f32-46bd-ba79-c5e313806612
     type: collection
     enabled: true
@@ -74,6 +82,7 @@ page_builder:
       - 621b9232-8742-408e-87b1-8f74ba9dcf0c
       - 1aec10b8-4b2b-4e5b-9f4c-6f009a61c3a5
       - 3b147b53-5d93-45c1-82c0-c2286a4bc7fa
+      - c1f10b95-63aa-4bfc-b71c-c5003a623a41
       - 605d1fff-6e51-4810-8b7c-9abdb2b7de9d
     type: collection
     enabled: true
@@ -89,6 +98,7 @@ page_builder:
     collection:
       - 5a69cdb9-fc24-49ed-9a5d-06086c2c6250
       - ec61f759-3537-4312-8c08-554b46c10f81
+      - 6aa58954-b0e2-468a-a71a-e16c26a51ecc
       - 604b43e0-b5ff-42fe-9b32-54c805b306ce
       - f4a3deb5-88e1-4818-b926-4932738888b5
     type: collection

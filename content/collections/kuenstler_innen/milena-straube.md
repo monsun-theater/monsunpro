@@ -1,12 +1,20 @@
 ---
 id: 3b147b53-5d93-45c1-82c0-c2286a4bc7fa
+blueprint: kuenstler_innen
 title: 'Milena Straube'
 hat_eigene_website_has_own_website: false
-kuenstler_artist_website_url_link: 'https://'
 biographie_eintragen_create_artist_s_biography: true
 page_builder:
   -
     bard:
+      -
+        type: set
+        attrs:
+          values:
+            type: figure
+            image: kuenstler-innen/milena_straube_c_chloe_desnoyers.jpg
+            size: md
+            caption: 'Chloe Desnoyers'
       -
         type: paragraph
         content:
@@ -53,8 +61,9 @@ page_builder:
                 type: link
                 attrs:
                   href: 'https://monsun.theater/veranstaltungen/wenn-wir-tanzen-summt-die-welt'
-                  target: null
                   rel: null
+                  target: null
+                  title: null
             text: 'WENN WIR TANZEN, SUMMT DIE WELT'
           -
             type: text
@@ -82,5 +91,5 @@ page_builder:
     type: article
     enabled: true
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1621528342
+updated_at: 1632651319
 ---

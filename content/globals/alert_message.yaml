@@ -1,4 +1,4 @@
 title: 'Alert message'
 data:
   monsun_alert_msg: false
-  alert_nachricht_text: 'Alle Vorstellungen abgesagt. Leider können wir im Moment weder spielen noch den Zeitpunkt voraussagen, an dem wir den Betrieb in irgendeiner Form wieder aufnehmen dürfen.'
+  alert_nachricht_text: 'Achtung angeordneter Baustopp: Für die kommenden Vorstellungen in dieser Spielzeit gehen wir kurzfristig auf die Suche nach anderen Spielorten.'
