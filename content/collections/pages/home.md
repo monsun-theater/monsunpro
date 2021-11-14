@@ -3,7 +3,7 @@ id: home
 blueprint: homepage
 title: Startseite
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1634398505
+updated_at: 1636638297
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -53,7 +53,7 @@ hero_featured_sect:
         attr_aria: 'Mehr über Bruchlinien lesen'
     type: featured
     enabled: true
-    featured_image: produktionen/bruchlinien/bruchlinien_featured_section_v2.jpg
+    featured_image: produktionen/bruchlinien/bruchlinien_2021_16_c_g2_baraniak.jpg
   -
     title: 'Der Hals der Giraffe'
     titelzusatz_zeigen: true
