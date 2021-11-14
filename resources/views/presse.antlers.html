@@ -1,5 +1,12 @@
+<main>
+    {{ if cinema_monsun}}
+    {{ partial:components/cinema_monsun}} {{ /if }}
+    {{ partial:components/monsun_featured}}
 <article class="outer-grid fluid-container">
     {{ partial src="typography/h2" :content="title" class="dark:text-white"}}
+        {{ page_builder scope="block" }}
+        {{ partial src="page_builder/{type}" }}
+        {{ /page_builder }}
     <section class=" grid grid-cols-12 gap-y-6">
         <div class="col-span-12 md:col-span-8 md:col-start-5">
             {{ collection:veranstaltungen sort="title" status:in="published|draft" }}
@@ -32,3 +39,4 @@
         </div>
     </section>
 </article>
+</main>

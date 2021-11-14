@@ -8,32 +8,21 @@ seo_nofollow: false
 seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
-updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1634397963
+updated_by: 34d4dc92-ec1a-4900-9a81-ed8dd8606f23
+updated_at: 1636887195
 template: presse
 cinema_monsun: false
 do_not_track_toggle: true
 monsun_video: 'https://vimeo.com/592222109'
 hero_featured_sect:
   -
-    title: Test
+    title: 'Hello Presse!'
     titelzusatz_zeigen: true
-    subtitle: Zusatztest
-    einfarbiger_hintergrund: false
-    buttons:
-      -
-        label: Asset
-        target_blank: false
-        link_type: asset
-        entry: null
-        url: null
-        email: null
-        tel: null
-        asset: produktionen/backstage_festival/2021/verweigerung_der_umstaende_halber_social_media.jpg
-        attr_title: null
-        attr_aria: null
+    subtitle: 'Hallo noch Mal!'
+    einfarbiger_hintergrund: true
     type: featured
-    enabled: false
+    enabled: true
+    title_desc: 'Herzlich willkommen!'
 page_builder:
   -
     bard:
@@ -42,7 +31,7 @@ page_builder:
         content:
           -
             type: text
-            text: 'Page Builder'
+            text: 'Browsen Sie durch die Pressematerialien unserer aktuellen Produktionen.'
     type: article
-    enabled: false
+    enabled: true
 ---
