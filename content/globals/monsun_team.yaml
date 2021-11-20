@@ -162,12 +162,15 @@ data:
             -
               type: text
               text: 'Steuernummer 41/101/01029'
-        -
-          type: paragraph
-          content:
+            -
+              type: hard_break
+            -
+              type: hard_break
             -
               type: text
               text: 'Alle Texte und Bilder sind urheberrechtlich geschützt und dürfen ohne ausdrückliche Genehmigung nicht reproduziert, wiederverwendet oder für gewerbliche Zwecke benutzt werden.'
+        -
+          type: paragraph
         -
           type: heading
           attrs:
@@ -244,9 +247,3 @@ data:
               text: 'Sollten wir versehentlich gegen irgendwelche Copyrights verstoßen haben, benachrichtigen Sie uns bitte umgehend per E-Mail.'
       type: neues_mitgleid
       enabled: true
-  zusatzinfo:
-    -
-      type: paragraph
-      content:
-        -
-          type: hard_break

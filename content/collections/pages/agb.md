@@ -1,4 +1,6 @@
 ---
+id: d8ec837a-baf8-43fb-9736-11eb4f72dfc7
+blueprint: page
 title: AGB
 monsun_alert: false
 seo_noindex: false
@@ -6,8 +8,8 @@ seo_nofollow: false
 seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
-updated_by: 34d4dc92-ec1a-4900-9a81-ed8dd8606f23
-updated_at: 1615743897
+updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
+updated_at: 1637171645
 template: default
 cinema_monsun: false
 do_not_track_toggle: false
@@ -151,8 +153,6 @@ page_builder:
       -
         type: paragraph
         content:
-          -
-            type: hard_break
           -
             type: text
             text: '(4) Gutscheine sind nach dem Ablauf der Frist nicht mehr einlösbar. Umtausch, Rücknahme oder Barauszahlung von Gutscheinen sind ausgeschlossen.'
@@ -336,5 +336,4 @@ page_builder:
             text: 'Sollte eine Bestimmung dieser Allgemeinen Geschäftsbedingungen unwirksam sein, so berührt dies die Rechtswirksamkeit der übrigen Geschäftsbedingungen nicht.'
     type: article
     enabled: true
-id: d8ec837a-baf8-43fb-9736-11eb4f72dfc7
 ---
