@@ -199,8 +199,33 @@ page_builder:
               -
                 type: italic
             text: (Sounddesign)
+          -
+            type: hard_break
+            marks:
+              -
+                type: italic
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::32af60bf-4d60-4de5-9e91-bc36ac8a4a14'
+                  rel: null
+                  target: null
+                  title: null
+            text: 'UMKÄMPFTE ZONE'
+          -
+            type: text
+            text: ' '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: '(Text & Dramaturgie & Musik)'
     type: article
     enabled: true
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1634478731
+updated_at: 1638552518
 ---

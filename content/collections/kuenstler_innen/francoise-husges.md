@@ -3,7 +3,7 @@ id: 230ec157-5076-45d0-8d68-597a5f3d0743
 blueprint: kuenstler_innen
 title: 'Francoise Hüsges'
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1630446185
+updated_at: 1638893498
 page_builder:
   -
     bard:
@@ -512,6 +512,53 @@ page_builder:
               -
                 type: italic
             text: ' (Bühne & Kamera & Bildregie)'
+          -
+            type: hard_break
+            marks:
+              -
+                type: italic
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::8640b6aa-afbb-45af-8a3f-f83158bfbe11'
+                  rel: null
+                  target: null
+                  title: null
+            text: 'DER HALS DER GIRAFFE'
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: ' (Bildregie)'
+          -
+            type: hard_break
+            marks:
+              -
+                type: italic
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::32af60bf-4d60-4de5-9e91-bc36ac8a4a14'
+                  rel: null
+                  target: null
+                  title: null
+            text: 'UMKÄMPFTE ZONE'
+          -
+            type: text
+            text: ' '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: '(Bühne & Produktionsleitung)'
     type: article
     enabled: true
 kuenstler_artist_website_link: www.google.com

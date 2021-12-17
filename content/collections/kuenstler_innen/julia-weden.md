@@ -63,7 +63,18 @@ page_builder:
                 type: italic
           -
             type: text
-            text: 'UMKÄMPFTE ZONE '
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::32af60bf-4d60-4de5-9e91-bc36ac8a4a14'
+                  rel: null
+                  target: null
+                  title: null
+            text: 'UMKÄMPFTE ZONE'
+          -
+            type: text
+            text: ' '
           -
             type: text
             marks:
@@ -121,5 +132,5 @@ page_builder:
     type: article
     enabled: true
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1634478659
+updated_at: 1638552548
 ---
