@@ -9,7 +9,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1638550280
+updated_at: 1639922348
 cinema_monsun: false
 do_not_track_toggle: false
 page_builder:
@@ -52,7 +52,7 @@ page_builder:
                 content:
                   -
                     type: text
-                    text: 'Vorlage eines Impf-/Genesungsnachweises (in Verbindung mit einem Lichtbildausweis)'
+                    text: 'Zutritt zum Theater nur mit Impf- oder Genesenenzertifikat in Verbindung mit einem gültigen Ausweisdokument und aktuellem negativen Testnachweis einer offiziellen Teststelle, nicht älter als 24 Stunden.'
           -
             type: list_item
             content:
@@ -61,7 +61,7 @@ page_builder:
                 content:
                   -
                     type: text
-                    text: 'Das zusätzliche Tragen einer FFP2- oder OP-Maske im Theater und am Platz ist verpflichtend.'
+                    text: 'Das zusätzliche Tragen einer FFP2-Maske im Theater und am Platz ist verpflichtend.'
           -
             type: list_item
             content:
