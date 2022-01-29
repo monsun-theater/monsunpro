@@ -8,11 +8,17 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1638893268
+updated_at: 1642775035
 template: default
 cinema_monsun: false
 do_not_track_toggle: false
 page_builder:
+  -
+    title: A
+    collection:
+      - b4b6b93e-7c86-4b83-b97b-5ba70ec82c47
+    type: collection
+    enabled: true
   -
     title: B
     collection:

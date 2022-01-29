@@ -3,7 +3,7 @@ id: home
 blueprint: homepage
 title: Startseite
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1640449542
+updated_at: 1642168153
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -12,27 +12,26 @@ sitemap_priority: 0.5
 template: home
 hero_featured_sect:
   -
-    featured_image: produktionen/filestuecke/filetstuecke_01_c_g2_baraniak_web.jpg
+    featured_image: aktuelles/2021-12-25/2021-12-25-gaussstrasse.jpeg
     einfarbiger_hintergrund: false
-    title: FILETSTÜCKE
-    title_desc: 'Von Michael Alexander Müller'
+    title: 'monsun.theater Gaußstraße'
     buttons:
       -
         label: 'Mehr lesen'
         target_blank: false
         link_type: entry
-        entry: c6ee169b-2221-4746-9f04-5ea08d0bcbe9
+        entry: a4f277d9-5382-4a3e-a897-6e68ba4bbfb9
         url: null
         email: null
         tel: null
         asset: null
         attr_title: 'Mehr lesen'
-        attr_aria: 'Mehr über Filetstücke lesen'
+        attr_aria: 'Mehr über monsun.theater Gaußstraße'
     type: featured
-    enabled: false
+    enabled: true
     titelzusatz_zeigen: true
-    subtitle: '- wem gehört das Land'
-    overlay_color: neutral-300
+    subtitle: 'Neuer Spielort'
+    overlay_color: neutral-100
   -
     title: BRUCHLINIEN
     titelzusatz_zeigen: true
@@ -60,8 +59,8 @@ hero_featured_sect:
     subtitle: 'Von Judith Schalansky'
     title_desc: 'Von Judith Schalansky'
     einfarbiger_hintergrund: false
-    featured_image: produktionen/der_hals_der_giraffe/der_hals_der_giraffe_02_c_g2_baraniak.jpg
-    overlay_color: neutral-100
+    featured_image: produktionen/der_hals_der_giraffe/der_hals_der_giraffe_30_c_g2_baraniak.jpg
+    overlay_color: neutral-300
     buttons:
       -
         label: 'Mehr lesen'
@@ -75,7 +74,7 @@ hero_featured_sect:
         attr_title: 'Mehr lesen'
         attr_aria: 'Mehr über die Veranstaltung „Der Hals der Giraffe“ lesen'
     type: featured
-    enabled: true
+    enabled: false
 anzahl_vorstellungen_in_demnaechst: 4
 anzahl_eintraege_in_aktuelles: 2
 anzahl_stuecke_in_spielzeit_component: 2
@@ -113,7 +112,8 @@ page_builder:
             text: .
 demnachst_verstecken: false
 aktuelles_eintraege:
-  - a4f277d9-5382-4a3e-a897-6e68ba4bbfb9
+  - de6423fa-872f-435d-9ad8-0d78fde166ab
+  - 219f3ed0-b653-4aeb-9f3a-82e0cebd653c
   - 7418558b-be5b-41e4-9577-f4976765ecc3
 spielzeit_eintraege:
   - 8640b6aa-afbb-45af-8a3f-f83158bfbe11

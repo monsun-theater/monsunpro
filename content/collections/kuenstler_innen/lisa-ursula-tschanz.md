@@ -1,8 +1,8 @@
 ---
 id: c7443a57-6ebf-4bd6-a245-a9e47623412e
+blueprint: kuenstler_innen
 title: 'Lisa Ursula Tschanz'
 hat_eigene_website_has_own_website: false
-kuenstler_artist_website_url_link: 'https://'
 biographie_eintragen_create_artist_s_biography: true
 page_builder:
   -
@@ -61,28 +61,6 @@ page_builder:
             text: ' (Spiel)'
           -
             type: hard_break
-          -
-            type: text
-            marks:
-              -
-                type: link
-                attrs:
-                  href: 'https://monsun.theater/veranstaltungen/das-hirn-ist-ein-taubenschlag'
-                  rel: null
-                  target: null
-                  title: null
-            text: 'DAS HIRN IST EIN TAUBENSCHLAG'
-          -
-            type: text
-            text: ' '
-          -
-            type: text
-            marks:
-              -
-                type: italic
-            text: '(Figuren & Kostüm & Regie)'
-          -
-            type: hard_break
             marks:
               -
                 type: italic
@@ -128,5 +106,5 @@ page_builder:
     type: article
     enabled: true
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1622712669
+updated_at: 1641930747
 ---
