@@ -3,7 +3,7 @@ id: home
 blueprint: homepage
 title: Startseite
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1642168153
+updated_at: 1644509729
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -12,26 +12,25 @@ sitemap_priority: 0.5
 template: home
 hero_featured_sect:
   -
-    featured_image: aktuelles/2021-12-25/2021-12-25-gaussstrasse.jpeg
+    featured_image: produktionen/umkaempfte_zone/umkaempfte_zone_02_c_g2_baraniak.jpg
     einfarbiger_hintergrund: false
-    title: 'monsun.theater Gaußstraße'
+    title: 'UMKÄMPFTE ZONE'
     buttons:
       -
         label: 'Mehr lesen'
         target_blank: false
         link_type: entry
-        entry: a4f277d9-5382-4a3e-a897-6e68ba4bbfb9
+        entry: 32af60bf-4d60-4de5-9e91-bc36ac8a4a14
         url: null
         email: null
         tel: null
         asset: null
         attr_title: 'Mehr lesen'
-        attr_aria: 'Mehr über monsun.theater Gaußstraße'
+        attr_aria: 'Mehr über Umkämpfte Zone lesen'
     type: featured
     enabled: true
-    titelzusatz_zeigen: true
-    subtitle: 'Neuer Spielort'
-    overlay_color: neutral-100
+    titelzusatz_zeigen: false
+    overlay_color: neutral-300
   -
     title: BRUCHLINIEN
     titelzusatz_zeigen: true
@@ -116,6 +115,6 @@ aktuelles_eintraege:
   - 219f3ed0-b653-4aeb-9f3a-82e0cebd653c
   - 7418558b-be5b-41e4-9577-f4976765ecc3
 spielzeit_eintraege:
+  - 32af60bf-4d60-4de5-9e91-bc36ac8a4a14
   - 8640b6aa-afbb-45af-8a3f-f83158bfbe11
-  - cdf42f89-6704-4ec1-8f26-fcfae3ded255
 ---

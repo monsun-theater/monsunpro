@@ -223,9 +223,9 @@ page_builder:
             marks:
               -
                 type: italic
-            text: '(Text & Dramaturgie & Musik)'
+            text: '(Text & Dramaturgie & Sounddesign)'
     type: article
     enabled: true
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1638552518
+updated_at: 1644236081
 ---

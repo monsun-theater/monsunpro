@@ -43,9 +43,9 @@ page_builder:
             marks:
               -
                 type: italic
-            text: '(Spiel & Musik)'
+            text: '(Spiel & Schlagzeug)'
     type: article
     enabled: true
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1638952748
+updated_at: 1644236061
 ---
