@@ -9,7 +9,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1641472095
+updated_at: 1645092301
 cinema_monsun: false
 do_not_track_toggle: false
 page_builder:
@@ -20,7 +20,6 @@ page_builder:
         attrs:
           values:
             type: figure
-            image: aktuelles/2021-12-03/2g--.jpg
             size: xl
       -
         type: heading
@@ -35,7 +34,7 @@ page_builder:
         content:
           -
             type: text
-            text: 'Für unsere Veranstaltungen gilt das 2G++ Modell. '
+            text: 'Für unsere Veranstaltungen gilt das 2G+ Modell. '
           -
             type: hard_break
           -
@@ -52,7 +51,7 @@ page_builder:
                 content:
                   -
                     type: text
-                    text: 'Zutritt zum Theater nur mit Impf- oder Genesenenzertifikat in Verbindung mit einem gültigen Ausweisdokument und aktuellem negativen Testnachweis einer offiziellen Teststelle, nicht älter als 24 Stunden. Das gilt auch für bereits Geboosterte.'
+                    text: 'Zutritt zum Theater nur mit Impf- oder Genesenenzertifikat in Verbindung mit einem gültigen Ausweisdokument.'
           -
             type: list_item
             content:
@@ -71,15 +70,6 @@ page_builder:
                   -
                     type: text
                     text: 'kein Besuch bei Krankheitssymptomen'
-          -
-            type: list_item
-            content:
-              -
-                type: paragraph
-                content:
-                  -
-                    type: text
-                    text: 'Hinterlassen der Kontaktdaten'
       -
         type: paragraph
         content:

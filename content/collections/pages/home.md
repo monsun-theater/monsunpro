@@ -3,7 +3,7 @@ id: home
 blueprint: homepage
 title: Startseite
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1644509729
+updated_at: 1646227198
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -12,7 +12,7 @@ sitemap_priority: 0.5
 template: home
 hero_featured_sect:
   -
-    featured_image: produktionen/umkaempfte_zone/umkaempfte_zone_02_c_g2_baraniak.jpg
+    featured_image: produktionen/umkaempfte_zone/umkaempfte_zone_28_c_g2_baraniak.jpg
     einfarbiger_hintergrund: false
     title: 'UMKÄMPFTE ZONE'
     buttons:
@@ -28,30 +28,29 @@ hero_featured_sect:
         attr_title: 'Mehr lesen'
         attr_aria: 'Mehr über Umkämpfte Zone lesen'
     type: featured
-    enabled: true
+    enabled: false
     titelzusatz_zeigen: false
-    overlay_color: neutral-300
   -
-    title: BRUCHLINIEN
-    titelzusatz_zeigen: true
-    subtitle: 'Von Michael Alexander Müller'
-    title_desc: 'HAMBURG PREMIERE'
+    title: 'monsun.theater Gaußstraße'
+    titelzusatz_zeigen: false
+    title_desc: 'Wegen der Baustelle in der Friedensallee sind wir in die Gaußstraße umgezogen.'
     einfarbiger_hintergrund: false
     buttons:
       -
-        label: 'Mehr lesen'
+        label: 'Google Maps'
         target_blank: false
-        link_type: entry
+        link_type: url
         entry: cdf42f89-6704-4ec1-8f26-fcfae3ded255
-        url: null
+        url: 'https://www.google.de/maps/place/monsun.theater+Gaußstraße/@53.5585424,9.9273627,17z/data=!3m1!4b1!4m5!3m4!1s0x47b185f1889529e3:0x4f2676390d226b00!8m2!3d53.5585461!4d9.929619'
         email: null
         tel: null
         asset: null
-        attr_title: 'Mehr lesen'
-        attr_aria: 'Mehr über Bruchlinien lesen'
+        attr_title: 'monsun.theater Gaußstraße'
+        attr_aria: 'Wo finden man uns'
     type: featured
-    enabled: false
-    featured_image: produktionen/bruchlinien/bruchlinien_2021_16_c_g2_baraniak.jpg
+    enabled: true
+    featured_image: aktuelles/2022-02-19/IMG_5019.jpg
+    overlay_color: neutral-300
   -
     title: 'Der Hals der Giraffe'
     titelzusatz_zeigen: false
@@ -111,9 +110,8 @@ page_builder:
             text: .
 demnachst_verstecken: false
 aktuelles_eintraege:
-  - de6423fa-872f-435d-9ad8-0d78fde166ab
+  - 6fedf1ab-371e-4b15-834a-f98180705db4
   - 219f3ed0-b653-4aeb-9f3a-82e0cebd653c
-  - 7418558b-be5b-41e4-9577-f4976765ecc3
 spielzeit_eintraege:
   - 32af60bf-4d60-4de5-9e91-bc36ac8a4a14
   - 8640b6aa-afbb-45af-8a3f-f83158bfbe11
