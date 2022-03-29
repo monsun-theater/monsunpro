@@ -9,7 +9,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1645092301
+updated_at: 1647783523
 cinema_monsun: false
 do_not_track_toggle: false
 page_builder:
@@ -34,7 +34,7 @@ page_builder:
         content:
           -
             type: text
-            text: 'Für unsere Veranstaltungen gilt das 2G+ Modell. '
+            text: 'Für unsere Veranstaltungen gilt das 2G Modell (+FFP2-Maske). '
           -
             type: hard_break
           -

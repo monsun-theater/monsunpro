@@ -1,8 +1,8 @@
 ---
 id: f4a3deb5-88e1-4818-b926-4932738888b5
+blueprint: kuenstler_innen
 title: 'Urs Fabian Winiger'
 hat_eigene_website_has_own_website: false
-kuenstler_artist_website_url_link: 'https://'
 biographie_eintragen_create_artist_s_biography: true
 page_builder:
   -
@@ -31,8 +31,9 @@ page_builder:
                 type: link
                 attrs:
                   href: 'https://monsun.theater/veranstaltungen/das-lange-nachspiel-einer-kurzen-mitteilung'
-                  target: null
                   rel: null
+                  target: null
+                  title: null
             text: 'DAS LANGE NACHSPIEL EINER KURZEN MITTEILUNG'
           -
             type: text
@@ -55,8 +56,9 @@ page_builder:
                 type: link
                 attrs:
                   href: 'https://monsun.theater/veranstaltungen/bruchlinien'
-                  target: null
                   rel: null
+                  target: null
+                  title: null
             text: BRUCHLINIEN
           -
             type: text
@@ -67,6 +69,28 @@ page_builder:
               -
                 type: italic
             text: (Spiel)
+          -
+            type: hard_break
+            marks:
+              -
+                type: italic
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::12851f35-1246-4536-9f1c-c31e620a4ebe'
+                  rel: null
+                  target: null
+                  title: null
+            text: 'HALT MICH AUF'
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: ' (Spiel)'
       -
         type: set
         attrs:
@@ -87,5 +111,5 @@ page_builder:
     type: article
     enabled: true
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1620768160
+updated_at: 1647785222
 ---

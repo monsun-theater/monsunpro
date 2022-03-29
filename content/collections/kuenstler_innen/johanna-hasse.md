@@ -137,8 +137,30 @@ page_builder:
               -
                 type: italic
             text: '(Konzept & Raum & Regie)'
+          -
+            type: hard_break
+            marks:
+              -
+                type: italic
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::12851f35-1246-4536-9f1c-c31e620a4ebe'
+                  rel: null
+                  target: null
+                  title: null
+            text: 'HALT MICH AUF'
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: ' (Konzept & Regie)'
     type: article
     enabled: true
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1634406358
+updated_at: 1647785178
 ---
