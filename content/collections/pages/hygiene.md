@@ -9,7 +9,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1647783523
+updated_at: 1649776285
 cinema_monsun: false
 do_not_track_toggle: false
 page_builder:
@@ -34,7 +34,7 @@ page_builder:
         content:
           -
             type: text
-            text: 'Für unsere Veranstaltungen gilt das 2G Modell (+FFP2-Maske). '
+            text: 'Für unsere Veranstaltungen gilt: Zutritt nur mit FFP2-Maske'
           -
             type: hard_break
           -
@@ -51,7 +51,7 @@ page_builder:
                 content:
                   -
                     type: text
-                    text: 'Zutritt zum Theater nur mit Impf- oder Genesenenzertifikat in Verbindung mit einem gültigen Ausweisdokument.'
+                    text: 'Das Tragen einer FFP2-Maske im Theater und am Platz ist verpflichtend.'
           -
             type: list_item
             content:
@@ -60,7 +60,7 @@ page_builder:
                 content:
                   -
                     type: text
-                    text: 'Das zusätzliche Tragen einer FFP2-Maske im Theater und am Platz ist verpflichtend.'
+                    text: 'Kein Besuch bei Krankheitssymptomen.'
           -
             type: list_item
             content:
@@ -69,13 +69,7 @@ page_builder:
                 content:
                   -
                     type: text
-                    text: 'kein Besuch bei Krankheitssymptomen'
-      -
-        type: paragraph
-        content:
-          -
-            type: text
-            text: 'Um einen reibungslosen Einlass zu gewährleisten, empfehlen wir allen Zuschauer:innen eine halbe Stunde vor Vorstellungsbeginn vor Ort zu sein.'
+                    text: 'Weitergehende Zutrittsbeschränkungen nach 2G oder 3G-Modell gibt es nicht.'
       -
         type: heading
         attrs:

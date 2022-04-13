@@ -3,7 +3,7 @@ id: home
 blueprint: homepage
 title: Startseite
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1646227198
+updated_at: 1649778076
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -28,7 +28,7 @@ hero_featured_sect:
         attr_title: 'Mehr lesen'
         attr_aria: 'Mehr über Umkämpfte Zone lesen'
     type: featured
-    enabled: false
+    enabled: true
     titelzusatz_zeigen: false
   -
     title: 'monsun.theater Gaußstraße'
@@ -48,7 +48,7 @@ hero_featured_sect:
         attr_title: 'monsun.theater Gaußstraße'
         attr_aria: 'Wo finden man uns'
     type: featured
-    enabled: true
+    enabled: false
     featured_image: aktuelles/2022-02-19/IMG_5019.jpg
     overlay_color: neutral-300
   -
@@ -110,9 +110,9 @@ page_builder:
             text: .
 demnachst_verstecken: false
 aktuelles_eintraege:
+  - 24741eb8-ac1f-44dc-94b9-4e7d1cbe3ca8
   - 6fedf1ab-371e-4b15-834a-f98180705db4
-  - 219f3ed0-b653-4aeb-9f3a-82e0cebd653c
 spielzeit_eintraege:
   - 32af60bf-4d60-4de5-9e91-bc36ac8a4a14
-  - 8640b6aa-afbb-45af-8a3f-f83158bfbe11
+  - 12851f35-1246-4536-9f1c-c31e620a4ebe
 ---
