@@ -17,7 +17,7 @@ data:
       enabled: true
       rolle: 'Geschäftsführung & Theaterleitung'
     -
-      name: 'Ole Schmetzer'
+      name: 'Kianosh Kinz & Ole Schmetzer'
       role_list:
         - Technik
       e-mail-adresse:
@@ -49,7 +49,7 @@ data:
       extra_info_toggle: false
       type: neues_mitgleid
       enabled: true
-      name: 'Jenny Schmidt'
+      name: 'Verena Gerjets'
       rolle: 'Presse, Öffentlichkeitsarbeit, Kommunikation'
     -
       name: Reservix

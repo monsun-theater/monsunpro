@@ -1,5 +1,6 @@
 ---
 id: 78a4fa9b-1bc1-418e-91f4-859095e18045
+blueprint: kuenstler_innen
 title: 'Cora Sachs'
 hat_eigene_website_has_own_website: false
 kuenstler_artist_website_url_link: 'https://www.corasachs.com'
@@ -179,6 +180,31 @@ page_builder:
               -
                 type: italic
             text: '(Figuren & Regie)'
+          -
+            type: hard_break
+            marks:
+              -
+                type: italic
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::f6632b2a-4dd3-4c98-8825-ef399dd2ac33'
+                  rel: null
+                  target: null
+                  title: null
+            text: 'VON STRUMPFHOSENALIENS UND PULLOVERTIERCHEN'
+          -
+            type: text
+            text: ' '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: '(Regie & Kostüm & Figuren)'
       -
         type: set
         attrs:
@@ -211,5 +237,5 @@ page_builder:
     type: article
     enabled: true
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1622712183
+updated_at: 1650217560
 ---
