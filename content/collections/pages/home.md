@@ -3,7 +3,7 @@ id: home
 blueprint: homepage
 title: Startseite
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1649944572
+updated_at: 1650577947
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -73,7 +73,7 @@ hero_featured_sect:
         attr_aria: 'Mehr über die Veranstaltung „Der Hals der Giraffe“ lesen'
     type: featured
     enabled: false
-anzahl_vorstellungen_in_demnaechst: 4
+anzahl_vorstellungen_in_demnaechst: 5
 anzahl_eintraege_in_aktuelles: 2
 anzahl_stuecke_in_spielzeit_component: 2
 seo_title: Startseite
@@ -114,6 +114,7 @@ aktuelles_eintraege:
   - 6fedf1ab-371e-4b15-834a-f98180705db4
 spielzeit_eintraege:
   - 32af60bf-4d60-4de5-9e91-bc36ac8a4a14
+  - ad60f770-790d-47fd-9b0f-d525bf0bf74a
   - 12851f35-1246-4536-9f1c-c31e620a4ebe
   - f6632b2a-4dd3-4c98-8825-ef399dd2ac33
 ---
