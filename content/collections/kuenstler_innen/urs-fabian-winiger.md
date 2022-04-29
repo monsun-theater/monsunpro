@@ -20,7 +20,7 @@ page_builder:
         content:
           -
             type: text
-            text: "Geboren in München, aufgewachsen im Allgäu. Fussball und Schulchor, Kleinkunstbühne. Ein Jahr in New York, dann Zivildienst mit Obdachlosen. Ernst Busch Hochschule für Schauspielkunst Berlin. Festengagements, u.a. bei Armin Petras und Dagmar Schlingmann. Hörspiele, Studentenfilme, Krimifernsehen. Meistens Täter oder hauptverdächtig, mindestens. Neulich sogar ein Auftritt in einem Hollywood-Horror-Kino-Blockbuster. Ensembletheater in Berlin, München, der Schweiz. Hoffentlich bald wieder am\_monsun.theater Hamburg, an der\_Vagantenbühne Berlin, am Theater Unterm Dach Berlin, Hebbel am Ufer, Heimathafen Neukölln. Musizieren. Fussball und Snowboarden. Farbe(n) bekennen. Medium sein..."
+            text: "Geboren in München, aufgewachsen im Allgäu. Fussball und Schulchor, Kleinkunstbühne. Ein Jahr in New York, dann Zivildienst mit Obdachlosen. Ernst Busch Hochschule für Schauspielkunst Berlin. Festengagements, u.a. bei Armin Petras und Dagmar Schlingmann. Hörspiele, Studentenfilme, Krimifernsehen. Meistens Täter oder hauptverdächtig, mindestens. Neulich sogar ein Auftritt in einem Hollywood-Horror-Kino-Blockbuster. Ensembletheater in Berlin, München, der Schweiz. Hoffentlich bald wieder am\_monsun.theater Hamburg, an der\_Vagantenbühne Berlin, am Theater Unterm Dach Berlin, Hebbel am Ufer, Heimathafen Neukölln. Familie. Musizieren. Fussball und Snowboarden. Farbe(n) bekennen. Medium sein..."
       -
         type: paragraph
         content:
@@ -111,5 +111,5 @@ page_builder:
     type: article
     enabled: true
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1650625406
+updated_at: 1650800796
 ---

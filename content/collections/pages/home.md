@@ -3,7 +3,7 @@ id: home
 blueprint: homepage
 title: Startseite
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1650577947
+updated_at: 1651156053
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -28,7 +28,7 @@ hero_featured_sect:
         attr_title: 'Mehr lesen'
         attr_aria: 'Mehr über Umkämpfte Zone lesen'
     type: featured
-    enabled: true
+    enabled: false
     titelzusatz_zeigen: false
   -
     title: 'monsun.theater Gaußstraße'
@@ -52,28 +52,27 @@ hero_featured_sect:
     featured_image: aktuelles/2022-02-19/IMG_5019.jpg
     overlay_color: neutral-300
   -
-    title: 'Der Hals der Giraffe'
+    title: 'HALT MICH AUF'
     titelzusatz_zeigen: false
     subtitle: 'Von Judith Schalansky'
-    title_desc: 'Von Judith Schalansky'
+    title_desc: 'Von Annika Henrich'
     einfarbiger_hintergrund: false
-    featured_image: produktionen/der_hals_der_giraffe/der_hals_der_giraffe_30_c_g2_baraniak.jpg
-    overlay_color: neutral-300
+    featured_image: produktionen/halt_mich_auf/halt_mich_auf_24_c_isa_zappe.jpg
     buttons:
       -
         label: 'Mehr lesen'
         target_blank: false
         link_type: entry
-        entry: 8640b6aa-afbb-45af-8a3f-f83158bfbe11
+        entry: 12851f35-1246-4536-9f1c-c31e620a4ebe
         url: null
         email: null
         tel: null
         asset: null
         attr_title: 'Mehr lesen'
-        attr_aria: 'Mehr über die Veranstaltung „Der Hals der Giraffe“ lesen'
+        attr_aria: 'Mehr über die Veranstaltung „Halt mich auf“ lesen'
     type: featured
-    enabled: false
-anzahl_vorstellungen_in_demnaechst: 5
+    enabled: true
+anzahl_vorstellungen_in_demnaechst: 4
 anzahl_eintraege_in_aktuelles: 2
 anzahl_stuecke_in_spielzeit_component: 2
 seo_title: Startseite
@@ -113,7 +112,6 @@ aktuelles_eintraege:
   - 24741eb8-ac1f-44dc-94b9-4e7d1cbe3ca8
   - 6fedf1ab-371e-4b15-834a-f98180705db4
 spielzeit_eintraege:
-  - 32af60bf-4d60-4de5-9e91-bc36ac8a4a14
   - ad60f770-790d-47fd-9b0f-d525bf0bf74a
   - 12851f35-1246-4536-9f1c-c31e620a4ebe
   - f6632b2a-4dd3-4c98-8825-ef399dd2ac33

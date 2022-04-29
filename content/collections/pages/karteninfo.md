@@ -8,8 +8,26 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1631985563
+updated_at: 1650793266
 page_builder:
+  -
+    title: 'KARTEN KAUFEN'
+    link_blocks:
+      -
+        title: 'ONLINE TICKETS'
+        text: 'Bestellen Sie hier direkt Karten für Ihren Besuch im monsun.theater.'
+        label: Webshop
+        target_blank: false
+        link_type: url
+        entry: null
+        url: 'http://shop.reservix.de/off/login_check.php?id=7c421e5247cdb753ed6fbe41b702d162cac7d0950fb25ed26535ce922a436d32&vID=7337'
+        email: null
+        tel: null
+        asset: null
+        attr_title: null
+        attr_aria: null
+    type: link_blocks
+    enabled: true
   -
     bard:
       -
@@ -82,6 +100,76 @@ page_builder:
           -
             type: text
             text: '10,00 € Normalpreis'
+          -
+            type: hard_break
+          -
+            type: text
+            text: '8,00 € Ermäßigt*'
+          -
+            type: hard_break
+          -
+            type: text
+            text: '18,00 € Unterstützer:innen'
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: "\_* mit Nachweis: Schüler, Studenten, Erwerbslose, Personen mit Behinderung"
+      -
+        type: heading
+        attrs:
+          level: 3
+        content:
+          -
+            type: text
+            text: 'TICKETPREISE '
+          -
+            type: hard_break
+          -
+            type: text
+            text: monsun.kinder
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: '12,00 € Normalpreis'
+          -
+            type: hard_break
+          -
+            type: text
+            text: '8,00 € Ermäßigt*'
+          -
+            type: hard_break
+          -
+            type: text
+            text: '18,00 € Unterstützer:innen'
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: "\_* mit Nachweis: Schüler, Studenten, Erwerbslose, Personen mit Behinderung"
+      -
+        type: heading
+        attrs:
+          level: 3
+        content:
+          -
+            type: text
+            text: 'TICKETPREISE '
+          -
+            type: hard_break
+          -
+            type: text
+            text: monsun.jugend
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: '12,00 € Normalpreis'
           -
             type: hard_break
           -
@@ -262,7 +350,7 @@ page_builder:
     enabled: true
   -
     title: Hygiene
-    text: 'Für unsere Vorstellung gilt vor Ort das 2G-Modell.'
+    text: 'Für unsere Vorstellung gilt: Tragen einer FFP2-Maske'
     buttons:
       -
         label: Hygienekonzept

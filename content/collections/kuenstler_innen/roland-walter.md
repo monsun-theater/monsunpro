@@ -1,8 +1,8 @@
 ---
 id: 5a69cdb9-fc24-49ed-9a5d-06086c2c6250
+blueprint: kuenstler_innen
 title: 'Roland Walter'
 hat_eigene_website_has_own_website: false
-kuenstler_artist_website_url_link: 'https://'
 biographie_eintragen_create_artist_s_biography: true
 page_builder:
   -
@@ -37,8 +37,9 @@ page_builder:
                 type: link
                 attrs:
                   href: 'https://monsun.theater/veranstaltungen/why-not'
-                  target: null
                   rel: null
+                  target: null
+                  title: null
             text: 'WHY NOT?'
           -
             type: text
@@ -103,8 +104,9 @@ page_builder:
                 type: link
                 attrs:
                   href: 'https://monsun.theater/veranstaltungen/fly'
-                  target: null
                   rel: null
+                  target: null
+                  title: null
             text: FLY
           -
             type: text
@@ -119,6 +121,14 @@ page_builder:
                 type: italic
           -
             type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::153457d7-2812-4aac-9eaf-bdcca26c747d'
+                  rel: null
+                  target: null
+                  title: null
             text: SKIN
           -
             type: text
@@ -154,5 +164,5 @@ page_builder:
     type: article
     enabled: true
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1621544044
+updated_at: 1650793590
 ---

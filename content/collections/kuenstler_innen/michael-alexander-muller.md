@@ -114,8 +114,33 @@ page_builder:
               -
                 type: italic
             text: (Leitung)
+          -
+            type: hard_break
+            marks:
+              -
+                type: italic
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::ad60f770-790d-47fd-9b0f-d525bf0bf74a'
+                  rel: null
+                  target: null
+                  title: null
+            text: 'LEONCE UND LENA'
+          -
+            type: text
+            text: ' '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: '(Dramaturgie & Regie)'
     type: article
     enabled: true
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1626361234
+updated_at: 1650705214
 ---
