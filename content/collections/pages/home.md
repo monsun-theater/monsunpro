@@ -3,7 +3,7 @@ id: home
 blueprint: homepage
 title: Startseite
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1651156053
+updated_at: 1653829891
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -46,33 +46,74 @@ hero_featured_sect:
         tel: null
         asset: null
         attr_title: 'monsun.theater Gaußstraße'
-        attr_aria: 'Wo finden man uns'
+        attr_aria: 'Wo findet man uns'
     type: featured
     enabled: false
     featured_image: aktuelles/2022-02-19/IMG_5019.jpg
     overlay_color: neutral-300
   -
-    title: 'HALT MICH AUF'
+    title: 'Von Strumpfhosenaliens und Pullovertierchen'
     titelzusatz_zeigen: false
     subtitle: 'Von Judith Schalansky'
-    title_desc: 'Von Annika Henrich'
+    title_desc: 'Für kleine und große Kinder ab 3 Jahren'
     einfarbiger_hintergrund: false
-    featured_image: produktionen/halt_mich_auf/halt_mich_auf_24_c_isa_zappe.jpg
+    featured_image: produktionen/von_strumpfhosenaliens_und_pullovertierchen/von_strumpfhosenaliens_und_pullovertierchen_16_c_g2_baraniak.jpg
     buttons:
       -
         label: 'Mehr lesen'
         target_blank: false
         link_type: entry
-        entry: 12851f35-1246-4536-9f1c-c31e620a4ebe
+        entry: f6632b2a-4dd3-4c98-8825-ef399dd2ac33
         url: null
         email: null
         tel: null
         asset: null
         attr_title: 'Mehr lesen'
-        attr_aria: 'Mehr über die Veranstaltung „Halt mich auf“ lesen'
+        attr_aria: 'Mehr über die Veranstaltung „Von Strumpfhosenaliens und Pullovertierchen“ lesen'
+    type: featured
+    enabled: false
+  -
+    title: 'Wir wollen eine andere Welt'
+    titelzusatz_zeigen: false
+    title_desc: 'Festival der jungen Künste'
+    einfarbiger_hintergrund: false
+    featured_image: produktionen/wir_wollen_eine_andere_welt/wir_wollen_eine_andere_welt_c_hans_stuetzer.jpg
     type: featured
     enabled: true
-anzahl_vorstellungen_in_demnaechst: 4
+    buttons:
+      -
+        label: 'Mehr lesen'
+        target_blank: false
+        link_type: entry
+        entry: 7daffdd6-eafb-4504-a7ad-cdc4dd726ab7
+        url: null
+        email: null
+        tel: null
+        asset: null
+        attr_title: 'Mehr lesen'
+        attr_aria: 'Mehr über WIR WOLLEN EINE ANDERE WELT lesen'
+    overlay_color: neutral-300
+  -
+    title: 'Where does the hate come from?'
+    titelzusatz_zeigen: false
+    title_desc: 'Ein Trialog der Ästhetik zwischen Sderot, Rahat und Wilhelmsburg'
+    einfarbiger_hintergrund: false
+    featured_image: produktionen/where_does_hate_come_from/where_does_hate_come_from_02.jpg
+    buttons:
+      -
+        label: 'Mehr lesen'
+        target_blank: false
+        link_type: entry
+        entry: 14872171-f1ba-4f31-ac5d-7b8eb4bb631b
+        url: null
+        email: null
+        tel: null
+        asset: null
+        attr_title: 'Mehr lesen'
+        attr_aria: 'Mehr über WHERE DOES THE HATE COME FROM? lesen'
+    type: featured
+    enabled: true
+anzahl_vorstellungen_in_demnaechst: 3
 anzahl_eintraege_in_aktuelles: 2
 anzahl_stuecke_in_spielzeit_component: 2
 seo_title: Startseite
@@ -109,10 +150,12 @@ page_builder:
             text: .
 demnachst_verstecken: false
 aktuelles_eintraege:
+  - aeee4605-3c30-4c89-956e-71fe5d287d5c
   - 24741eb8-ac1f-44dc-94b9-4e7d1cbe3ca8
-  - 6fedf1ab-371e-4b15-834a-f98180705db4
 spielzeit_eintraege:
-  - ad60f770-790d-47fd-9b0f-d525bf0bf74a
-  - 12851f35-1246-4536-9f1c-c31e620a4ebe
-  - f6632b2a-4dd3-4c98-8825-ef399dd2ac33
+  - 7daffdd6-eafb-4504-a7ad-cdc4dd726ab7
+  - 14872171-f1ba-4f31-ac5d-7b8eb4bb631b
+  - a271ac28-988e-4dee-b0f1-472e96d08314
+  - 31d9807e-25f2-46b8-b36c-90c09b01577e
+  - bc78716f-8c31-4563-b07a-49af329d151b
 ---

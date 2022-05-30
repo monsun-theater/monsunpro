@@ -1,4 +1,4 @@
 title: 'Alert message'
 data:
-  monsun_alert_msg: false
-  alert_nachricht_text: 'Für unsere kommenden Veranstaltungen gilt vor Ort 2G & FFP2-Maske | Ein tagesaktueller negativer Test wird nicht benötigt.'
+  monsun_alert_msg: true
+  alert_nachricht_text: 'ACHTUNG: Alle Vorstellung des monsun.theaters finden zur Zeit in der Gaußstraße 149 statt!'
