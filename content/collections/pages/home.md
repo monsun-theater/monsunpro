@@ -3,7 +3,7 @@ id: home
 blueprint: homepage
 title: Startseite
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1653829891
+updated_at: 1654423986
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -73,26 +73,11 @@ hero_featured_sect:
     type: featured
     enabled: false
   -
-    title: 'Wir wollen eine andere Welt'
     titelzusatz_zeigen: false
-    title_desc: 'Festival der jungen Künste'
     einfarbiger_hintergrund: false
-    featured_image: produktionen/wir_wollen_eine_andere_welt/wir_wollen_eine_andere_welt_c_hans_stuetzer.jpg
+    featured_image: produktionen/ggf/grenzgaenge_03.jpg
     type: featured
     enabled: true
-    buttons:
-      -
-        label: 'Mehr lesen'
-        target_blank: false
-        link_type: entry
-        entry: 7daffdd6-eafb-4504-a7ad-cdc4dd726ab7
-        url: null
-        email: null
-        tel: null
-        asset: null
-        attr_title: 'Mehr lesen'
-        attr_aria: 'Mehr über WIR WOLLEN EINE ANDERE WELT lesen'
-    overlay_color: neutral-300
   -
     title: 'Where does the hate come from?'
     titelzusatz_zeigen: false
@@ -112,7 +97,7 @@ hero_featured_sect:
         attr_title: 'Mehr lesen'
         attr_aria: 'Mehr über WHERE DOES THE HATE COME FROM? lesen'
     type: featured
-    enabled: true
+    enabled: false
 anzahl_vorstellungen_in_demnaechst: 3
 anzahl_eintraege_in_aktuelles: 2
 anzahl_stuecke_in_spielzeit_component: 2
@@ -153,8 +138,6 @@ aktuelles_eintraege:
   - aeee4605-3c30-4c89-956e-71fe5d287d5c
   - 24741eb8-ac1f-44dc-94b9-4e7d1cbe3ca8
 spielzeit_eintraege:
-  - 7daffdd6-eafb-4504-a7ad-cdc4dd726ab7
-  - 14872171-f1ba-4f31-ac5d-7b8eb4bb631b
   - a271ac28-988e-4dee-b0f1-472e96d08314
   - 31d9807e-25f2-46b8-b36c-90c09b01577e
   - bc78716f-8c31-4563-b07a-49af329d151b
