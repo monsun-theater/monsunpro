@@ -1,4 +1,4 @@
 title: 'Alert message'
 data:
-  monsun_alert_msg: true
-  alert_nachricht_text: 'ACHTUNG: Alle Vorstellung des monsun.theaters finden zur Zeit in der Gaußstraße 149 statt!'
+  monsun_alert_msg: false
+  alert_nachricht_text: 'Aufgrund einer Corona-Erkrankung im Schauspieler:innenensemble wird die Vorstellung “MARTHA“ verlegt. Neuer Termin: 29.06.2022 | 20:00 Uhr in den Hamburger Kammerspielen.'

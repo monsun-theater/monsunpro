@@ -3,7 +3,7 @@ id: home
 blueprint: homepage
 title: Startseite
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1654423986
+updated_at: 1657040491
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -52,53 +52,15 @@ hero_featured_sect:
     featured_image: aktuelles/2022-02-19/IMG_5019.jpg
     overlay_color: neutral-300
   -
-    title: 'Von Strumpfhosenaliens und Pullovertierchen'
-    titelzusatz_zeigen: false
-    subtitle: 'Von Judith Schalansky'
-    title_desc: 'Für kleine und große Kinder ab 3 Jahren'
-    einfarbiger_hintergrund: false
-    featured_image: produktionen/von_strumpfhosenaliens_und_pullovertierchen/von_strumpfhosenaliens_und_pullovertierchen_16_c_g2_baraniak.jpg
-    buttons:
-      -
-        label: 'Mehr lesen'
-        target_blank: false
-        link_type: entry
-        entry: f6632b2a-4dd3-4c98-8825-ef399dd2ac33
-        url: null
-        email: null
-        tel: null
-        asset: null
-        attr_title: 'Mehr lesen'
-        attr_aria: 'Mehr über die Veranstaltung „Von Strumpfhosenaliens und Pullovertierchen“ lesen'
-    type: featured
-    enabled: false
-  -
     titelzusatz_zeigen: false
     einfarbiger_hintergrund: false
-    featured_image: produktionen/ggf/grenzgaenge_03.jpg
+    featured_image: aktuelles/2022-07-05/sommerpause.jpg
     type: featured
     enabled: true
-  -
-    title: 'Where does the hate come from?'
-    titelzusatz_zeigen: false
-    title_desc: 'Ein Trialog der Ästhetik zwischen Sderot, Rahat und Wilhelmsburg'
-    einfarbiger_hintergrund: false
-    featured_image: produktionen/where_does_hate_come_from/where_does_hate_come_from_02.jpg
-    buttons:
-      -
-        label: 'Mehr lesen'
-        target_blank: false
-        link_type: entry
-        entry: 14872171-f1ba-4f31-ac5d-7b8eb4bb631b
-        url: null
-        email: null
-        tel: null
-        asset: null
-        attr_title: 'Mehr lesen'
-        attr_aria: 'Mehr über WHERE DOES THE HATE COME FROM? lesen'
-    type: featured
-    enabled: false
-anzahl_vorstellungen_in_demnaechst: 3
+    title: SOMMERPAUSE
+    title_desc: '5. Juli – 15. August'
+    overlay_color: neutral-300
+anzahl_vorstellungen_in_demnaechst: 0
 anzahl_eintraege_in_aktuelles: 2
 anzahl_stuecke_in_spielzeit_component: 2
 seo_title: Startseite
@@ -133,12 +95,12 @@ page_builder:
           -
             type: text
             text: .
-demnachst_verstecken: false
+demnachst_verstecken: true
 aktuelles_eintraege:
-  - aeee4605-3c30-4c89-956e-71fe5d287d5c
-  - 24741eb8-ac1f-44dc-94b9-4e7d1cbe3ca8
+  - 168d27a2-a62d-433a-b9f0-50e8e756fe30
 spielzeit_eintraege:
-  - a271ac28-988e-4dee-b0f1-472e96d08314
-  - 31d9807e-25f2-46b8-b36c-90c09b01577e
-  - bc78716f-8c31-4563-b07a-49af329d151b
+  - 32af60bf-4d60-4de5-9e91-bc36ac8a4a14
+  - 8640b6aa-afbb-45af-8a3f-f83158bfbe11
+  - 12851f35-1246-4536-9f1c-c31e620a4ebe
+  - f6632b2a-4dd3-4c98-8825-ef399dd2ac33
 ---
