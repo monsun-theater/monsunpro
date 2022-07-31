@@ -136,6 +136,42 @@ page_builder:
               -
                 type: italic
             text: ' (Performance)'
+          -
+            type: hard_break
+            marks:
+              -
+                type: italic
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::e39b05c3-91d7-472a-aaaa-63d4942953d3'
+                  rel: null
+                  target: null
+                  title: null
+            text: ROLAND
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: ' (Performance)'
+          -
+            type: hard_break
+            marks:
+              -
+                type: italic
+          -
+            type: text
+            text: 'THEATERNACHT HAMBURG 2022'
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: ' (Performance)'
       -
         type: set
         attrs:
@@ -153,16 +189,8 @@ page_builder:
                 asset: null
                 attr_title: 'Website Roland Walter'
                 attr_aria: null
-      -
-        type: paragraph
-        content:
-          -
-            type: hard_break
-            marks:
-              -
-                type: italic
     type: article
     enabled: true
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1650793590
+updated_at: 1658874287
 ---

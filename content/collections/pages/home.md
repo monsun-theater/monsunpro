@@ -3,7 +3,7 @@ id: home
 blueprint: homepage
 title: Startseite
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1657040491
+updated_at: 1657048046
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -58,7 +58,7 @@ hero_featured_sect:
     type: featured
     enabled: true
     title: SOMMERPAUSE
-    title_desc: '5. Juli – 15. August'
+    title_desc: '6. Juli – 21. August'
     overlay_color: neutral-300
 anzahl_vorstellungen_in_demnaechst: 0
 anzahl_eintraege_in_aktuelles: 2

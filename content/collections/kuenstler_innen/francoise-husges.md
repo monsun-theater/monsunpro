@@ -3,7 +3,7 @@ id: 230ec157-5076-45d0-8d68-597a5f3d0743
 blueprint: kuenstler_innen
 title: 'Francoise Hüsges'
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1647785193
+updated_at: 1658874556
 page_builder:
   -
     bard:
@@ -558,7 +558,7 @@ page_builder:
             marks:
               -
                 type: italic
-            text: '(Bühne & Produktionsleitung)'
+            text: '(Bühne & Produktionsleitung & Bildregie)'
           -
             type: hard_break
             marks:
@@ -581,6 +581,28 @@ page_builder:
               -
                 type: italic
             text: ' (Konzept & Ausstattung)'
+          -
+            type: hard_break
+            marks:
+              -
+                type: italic
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::e39b05c3-91d7-472a-aaaa-63d4942953d3'
+                  rel: null
+                  target: null
+                  title: null
+            text: ROLAND
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: ' (Konzept & Regie)'
     type: article
     enabled: true
 kuenstler_artist_website_link: www.google.com
