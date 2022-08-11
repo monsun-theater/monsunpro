@@ -165,6 +165,14 @@ page_builder:
                 type: italic
           -
             type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::bfd63fcc-deef-4f1c-bc4b-3b9315809f8c'
+                  rel: null
+                  target: null
+                  title: null
             text: 'THEATERNACHT HAMBURG 2022'
           -
             type: text
@@ -192,5 +200,5 @@ page_builder:
     type: article
     enabled: true
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1658874287
+updated_at: 1659534286
 ---

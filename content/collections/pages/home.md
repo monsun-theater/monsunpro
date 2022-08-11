@@ -3,7 +3,7 @@ id: home
 blueprint: homepage
 title: Startseite
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1657048046
+updated_at: 1659768198
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -56,18 +56,38 @@ hero_featured_sect:
     einfarbiger_hintergrund: false
     featured_image: aktuelles/2022-07-05/sommerpause.jpg
     type: featured
-    enabled: true
+    enabled: false
     title: SOMMERPAUSE
     title_desc: '6. Juli – 21. August'
     overlay_color: neutral-300
-anzahl_vorstellungen_in_demnaechst: 0
+  -
+    title: 'Spielzeit 22|23'
+    titelzusatz_zeigen: true
+    title_desc: 'ab 07. September 2022'
+    einfarbiger_hintergrund: false
+    featured_image: produktionen/aussicht_festival/aussicht_festival_2022_cover2.jpg
+    buttons:
+      -
+        label: 'AUSSICHT Festival'
+        target_blank: false
+        link_type: entry
+        entry: 8a8f549b-0be1-4e43-9ed4-3e6eb12d98b9
+        url: null
+        email: null
+        tel: null
+        asset: null
+        attr_title: 'Mehr lesen'
+        attr_aria: 'Mehr über das Aussicht Festival lesen'
+    type: featured
+    enabled: true
+anzahl_vorstellungen_in_demnaechst: 8
 anzahl_eintraege_in_aktuelles: 2
 anzahl_stuecke_in_spielzeit_component: 2
 seo_title: Startseite
 seo_description: 'monsun.theater ist das älteste Off-Theater in Hamburg und besteht seit 1980. Es befindet sich im Stadtteil Ottensen.'
 og_title: monsun.theater
 og_description: 'Das Monsun-Theater (Eigenschreibweise: monsun.theater) ist das älteste Off-Theater in Hamburg und besteht seit 1980. Es befindet sich im Stadtteil Ottensen.'
-spielzeit: 'Spielzeit 2021-2022'
+spielzeit: 'Spielzeit 2022-2023'
 page_builder:
   -
     title: Newsletter
@@ -95,12 +115,16 @@ page_builder:
           -
             type: text
             text: .
-demnachst_verstecken: true
+demnachst_verstecken: false
 aktuelles_eintraege:
-  - 168d27a2-a62d-433a-b9f0-50e8e756fe30
+  - ee11aa78-e99a-4a67-b87d-67b61a9c4963
 spielzeit_eintraege:
+  - c20b41ce-02f3-4aae-be0b-e76506b60d88
+  - e39b05c3-91d7-472a-aaaa-63d4942953d3
+  - b8cf3ff0-6613-4ed9-95be-0d320f5b6c2d
+  - 96fe455e-19eb-4428-9095-ab94ac485518
+  - 31d9807e-25f2-46b8-b36c-90c09b01577e
+  - 7d64f06d-4441-4755-a61f-a7ea44487e45
   - 32af60bf-4d60-4de5-9e91-bc36ac8a4a14
   - 8640b6aa-afbb-45af-8a3f-f83158bfbe11
-  - 12851f35-1246-4536-9f1c-c31e620a4ebe
-  - f6632b2a-4dd3-4c98-8825-ef399dd2ac33
 ---

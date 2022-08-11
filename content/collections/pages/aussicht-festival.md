@@ -28,7 +28,7 @@ page_builder:
         content:
           -
             type: text
-            text: 'AUTHENTISCH – KREATIV – GRENZEN ÜBERWINDEND'
+            text: 'AUTHENTISCH – KREATIV – GRENZÜBERWINDEND'
       -
         type: paragraph
         content:
@@ -40,65 +40,179 @@ page_builder:
         content:
           -
             type: text
-            text: 'Für die inzwischen drei Ausgaben des Festivals haben sich weltweit Produktionen beworben, die mit ihren Konzepten neue Aussichten für die Kulturlandschaft kreieren. Das AUSSICHT-Festival fungiert somit als Ort des künstlerischen Austausches und als Plattform für performative und authentische Ereignisse. Aus Sicht des Anderen kommt es hierbei zur Verwebung von Kunst und Wirklichkeit, vom Möglichen und Unmöglichen.'
-          -
-            type: hard_break
-          -
-            type: text
-            text: 'In Form eines Workshops mit allen teilnehmenden Künstlern, wird eine performative Botschaft innerhalb des Festivals geschaffen, zu der das monsun.theater am Festivalende einlädt.'
+            text: 'Für die inzwischen vier Ausgaben des Festivals haben sich weltweit Produktionen beworben, die mit ihren Konzepten neue Aussichten für die Kulturlandschaft kreieren. Das AUSSICHT Festival fungiert somit als Ort des künstlerischen Austausches und als Plattform für performative und authentische Ereignisse. Aus Sicht des Anderen kommt es hierbei zur Verwebung von Kunst und Wirklichkeit, vom Möglichen und Unmöglichen.'
       -
         type: paragraph
         content:
           -
             type: text
-            text: 'Wir freuen uns als noch nicht barriefreies Theater auf die Herausforderungen, die uns während des Festivals begegnen. Bitte sprechen Sie uns an, damit wir für alle Besucher passende Lösungen finden können.'
+            text: 'Mit dem AUSSICHT Festival eröffnet das monsun.theater am 07.09. um 18:00 Uhr seine Spielzeit 2022/23.'
       -
         type: paragraph
         content:
           -
             type: text
-            text: 'Das Festival wird gefördert durch die Behörde für Kultur und Medien Hamburg und die Claussen-Simon-Stiftung.'
+            text: 'Das Festival wird gefördert durch die Behörde für Kultur und Medien Hamburg.'
+      -
+        type: set
+        attrs:
+          values:
+            type: buttons
+            buttons:
+              -
+                label: 'Download Programm PDF'
+                target_blank: true
+                link_type: asset
+                entry: null
+                url: null
+                email: null
+                tel: null
+                asset: produktionen/aussicht_festival/presse/2022_Aussicht-Festival-Programm-Web.pdf
+                attr_title: 'Programm AUSSICHT Festival 2022 als PDF downloaden'
+                attr_aria: 'Programm AUSSICHT Festival 2022 als PDF downloaden'
+      -
+        type: set
+        attrs:
+          values:
+            type: small_picture
+            image: produktionen/aussicht_festival/presse/2022_Aussicht-Festival-Programm-Web_Cover.jpg
+            zusatzinfo_zeigen: false
+      -
+        type: paragraph
     type: article
     enabled: true
   -
-    title: '13. August 2022 | 20:00 Uhr'
-    image: produktionen/aussicht_festival/test.jpg
-    text: 'QUEST langer Titel'
-    description: 'Mit Roland Walter'
-    buttons:
+    bard:
       -
-        label: 'Hier geht''s Lang'
-        target_blank: false
-        link_type: entry
-        entry: de6423fa-872f-435d-9ad8-0d78fde166ab
-        url: null
-        email: null
-        tel: null
-        asset: null
-        attr_title: null
-        attr_aria: null
-      -
-        label: '2. Stück'
-        target_blank: false
-        link_type: entry
-        entry: fc569cc5-41a3-4cbd-b3af-0b652f40680b
-        url: null
-        email: null
-        tel: null
-        asset: null
-        attr_title: null
-        attr_aria: null
-    type: call_to_action
-    enabled: false
+        type: set
+        attrs:
+          values:
+            type: figure
+            image: produktionen/aussicht_festival/04_trenner.jpg
+            size: md
+    type: article
+    enabled: true
   -
-    title: 'und #2'
-    image: produktionen/aussicht_festival/test.jpg
-    text: sfsdf
-    description: adsfafd
-    type: call_to_action
-    enabled: false
+    title: 'AUSSICHT Festival #4'
+    link_blocks:
+      -
+        title: '07. September 2022 | 18:00 Uhr'
+        text: |-
+          Die Blindgänger [München]
+          Linda Lou Dierich-Matzke
+          Roland Walter
+        label: 'AUSSICHT Festival #4 –Eröffnung'
+        target_blank: false
+        link_type: entry
+        entry: 0c277ff3-f414-4a67-92c8-e766e6131e56
+        url: null
+        email: null
+        tel: null
+        asset: null
+        attr_title: 'Eröffnung AUSSICHT Festival'
+        attr_aria: 'Eröffnung AUSSICHT Festival'
+      -
+        title: '07. September 2022 | 19:30 Uhr'
+        text: 'Eisenhans Theaterprojekt [Hamburg]'
+        label: Familiengeschichten
+        target_blank: false
+        link_type: entry
+        entry: c20b41ce-02f3-4aae-be0b-e76506b60d88
+        url: null
+        email: null
+        tel: null
+        asset: null
+        attr_title: Familiengeschichten
+        attr_aria: Familiengeschichten
+      -
+        title: '07. September 2022 | 21:00 Uhr'
+        text: 'monsun.theater [Hamburg]'
+        label: RoLand
+        target_blank: false
+        link_type: entry
+        entry: e39b05c3-91d7-472a-aaaa-63d4942953d3
+        url: null
+        email: null
+        tel: null
+        asset: null
+        attr_title: RoLand
+        attr_aria: RoLand
+      -
+        title: '08. September 2022 | 17:00 Uhr'
+        text: 'Eisenhans Theaterprojekt [Hamburg]'
+        label: 'Pippi Langstrumpf, nur anders'
+        target_blank: false
+        link_type: entry
+        entry: b8cf3ff0-6613-4ed9-95be-0d320f5b6c2d
+        url: null
+        email: null
+        tel: null
+        asset: null
+        attr_title: 'Pippi Langstrumpf, nur anders'
+        attr_aria: 'Pippi Langstrumpf, nur anders'
+      -
+        title: '08. September 2022 | 20:30 Uhr'
+        text: 'Blaumeier-Atelier [Bremen]'
+        label: 'Magic Mountain & Schneewittchen all inclusive'
+        target_blank: false
+        link_type: entry
+        entry: 96fe455e-19eb-4428-9095-ab94ac485518
+        url: null
+        email: null
+        tel: null
+        asset: null
+        attr_title: 'Magic Mountain & Schneewittchen all inclusive'
+        attr_aria: 'Magic Mountain & Schneewittchen all inclusive'
+      -
+        title: '09. September 2022 | 19:00 Uhr'
+        text: 'Linda Lou Dierich-Matzke [Hamburg]'
+        label: 'Rooooooooooooooooooolling in the Deep'
+        target_blank: false
+        link_type: entry
+        entry: 31d9807e-25f2-46b8-b36c-90c09b01577e
+        url: null
+        email: null
+        tel: null
+        asset: null
+        attr_title: 'Rooooooooooooooooooolling in the Deep'
+        attr_aria: 'Rooooooooooooooooooolling in the Deep'
+      -
+        title: '09. September 2022 | 20:30 Uhr (PREMIERE)'
+        text: 'SZENE 2WEI [Lahr / Schwarzwald]'
+        label: 'Herz Emoji // The Luck and Lack of Love'
+        target_blank: false
+        link_type: entry
+        entry: 7d64f06d-4441-4755-a61f-a7ea44487e45
+        url: null
+        email: null
+        tel: null
+        asset: null
+        attr_title: 'Herz Emoji // The Luck and Lack of Love'
+        attr_aria: 'Herz Emoji // The Luck and Lack of Love'
+      -
+        title: '10. September 2022 | 18:00 Uhr - 23:30 Uhr'
+        text: 'Highlights aus dem Festivalprogramm im Rahmen der Theaternacht Hamburg'
+        label: 'Theaternacht Hamburg'
+        target_blank: false
+        link_type: entry
+        entry: bfd63fcc-deef-4f1c-bc4b-3b9315809f8c
+        url: null
+        email: null
+        tel: null
+        asset: null
+        attr_title: 'Theaternacht Hamburg'
+        attr_aria: 'Theaternacht Hamburg'
+    type: link_blocks
+    enabled: true
   -
     bard:
+      -
+        type: set
+        attrs:
+          values:
+            type: figure
+            image: produktionen/aussicht_festival/03_trenner.jpg
+            size: md
       -
         type: set
         attrs:
@@ -116,7 +230,7 @@ page_builder:
     link_blocks:
       -
         title: '28. August 2019 | 20:00 Uhr'
-        text: 'Edu O. (Salvador, Brasilien)'
+        text: 'Edu O. [Salvador, Brasilien]'
         label: 'Striptease Bicho'
         target_blank: false
         link_type: entry
@@ -129,7 +243,7 @@ page_builder:
         attr_aria: 'Striptease Bicho'
       -
         title: '28. August 2019 | 21:00 Uhr'
-        text: 'Marcos Abranches (São Paulo, Brasilien)'
+        text: 'Marcos Abranches [São Paulo, Brasilien]'
         label: 'canto dos malditos'
         target_blank: false
         link_type: entry
@@ -142,7 +256,7 @@ page_builder:
         attr_aria: 'canto dos malditos'
       -
         title: '29. August 2019 | 19:00 Uhr'
-        text: 'Dorisdean Kollektiv (Düsseldorf)'
+        text: 'Dorisdean Kollektiv [Düsseldorf]'
         label: 'I like to play'
         target_blank: false
         link_type: entry
@@ -155,7 +269,7 @@ page_builder:
         attr_aria: 'I like to play'
       -
         title: '29. August 2019 | 20:30 Uhr'
-        text: 'Akiles (Berlin, Deutschland & Irak)'
+        text: 'Akiles [Berlin, Deutschland & Irak]'
         label: 'The Pain… The Pursuit…'
         target_blank: false
         link_type: entry
@@ -168,7 +282,7 @@ page_builder:
         attr_aria: 'The Pain… The Pursuit…'
       -
         title: '29. August 2019 | 22:00 Uhr'
-        text: 'Alina Belyagina (München, Deutschland & Russland)'
+        text: 'Alina Belyagina [München, Deutschland & Russland]'
         label: 'Pure. Image.'
         target_blank: false
         link_type: entry
@@ -181,7 +295,7 @@ page_builder:
         attr_aria: 'Pure. Image.'
       -
         title: '30. August 2019 | 20:00 Uhr'
-        text: 'Nils Löfke (Kassel)'
+        text: 'Nils Löfke [Kassel]'
         label: 'And how it will live after I created it'
         target_blank: false
         link_type: entry
@@ -194,7 +308,7 @@ page_builder:
         attr_aria: 'And how it will live after I created it'
       -
         title: '30. August 2019 | 21:00 Uhr'
-        text: 'Renae Shadler & Roland Walter (Berlin, Deutschland & Australien)'
+        text: 'Renae Shadler & Roland Walter [Berlin, Deutschland & Australien]'
         label: Skin
         target_blank: false
         link_type: entry
@@ -207,7 +321,7 @@ page_builder:
         attr_aria: Skin
       -
         title: '30. August 2019 | 22:00 Uhr'
-        text: 'systemrhizoma (Hildesheim)'
+        text: 'systemrhizoma [Hildesheim]'
         label: IN.FLUENCE
         target_blank: false
         link_type: entry
@@ -220,7 +334,7 @@ page_builder:
         attr_aria: IN.FLUENCE
       -
         title: '31. August 2019 | 20:00 Uhr'
-        text: 'Kornblum-Rettenmund (Hamburg & Berlin)'
+        text: 'Kornblum-Rettenmund [Hamburg & Berlin]'
         label: 'Quest – Schüttgüter und Sternenstaub'
         target_blank: false
         link_type: entry
@@ -239,6 +353,13 @@ page_builder:
         type: set
         attrs:
           values:
+            type: figure
+            image: produktionen/aussicht_festival/02_trenner.jpg
+            size: md
+      -
+        type: set
+        attrs:
+          values:
             type: video
             video_url: 'https://vimeo.com/637965225'
             caption: 'AUSSICHT Festival #2 (2018)'
@@ -252,7 +373,7 @@ page_builder:
     link_blocks:
       -
         title: '29. August 2018 | 20:00 Uhr'
-        text: 'monsun.theater (Hamburg)'
+        text: 'monsun.theater [Hamburg]'
         label: FLY
         target_blank: false
         link_type: entry
@@ -265,7 +386,7 @@ page_builder:
         attr_aria: FLY
       -
         title: '30. August 2018 | 17:30 Uhr'
-        text: 'Minotauros Kompanie (Hamburg)'
+        text: 'Minotauros Kompanie [Hamburg]'
         label: 'Reise zum Mars – Limited Space'
         target_blank: false
         link_type: entry
@@ -278,7 +399,7 @@ page_builder:
         attr_aria: 'Reise zum Mars – Limited Space'
       -
         title: '30. August 2018 | 21:30 Uhr'
-        text: 'Klabauter Theater (Hamburg)'
+        text: 'Klabauter Theater [Hamburg]'
         label: Endspiel
         target_blank: false
         link_type: entry
@@ -291,7 +412,7 @@ page_builder:
         attr_aria: Endspiel
       -
         title: '31. August 2018 | 17:30 Uhr'
-        text: 'Blaumeier Atelier (Bremen)'
+        text: 'Blaumeier Atelier [Bremen]'
         label: 'rauschen - schneller.höher.weiter.besser'
         target_blank: false
         link_type: entry
@@ -304,7 +425,7 @@ page_builder:
         attr_aria: 'rauschen - schneller.höher.weiter.besser'
       -
         title: '31. August 2018 | 21:00 Uhr'
-        text: 'Zofia Komasa (Warschau)'
+        text: 'Zofia Komasa [Warschau]'
         label: 'crying zone'
         target_blank: false
         link_type: entry
@@ -317,7 +438,7 @@ page_builder:
         attr_aria: 'crying zone'
       -
         title: '1. September 2018 | 21:00 Uhr'
-        text: 'Tanzbar (Bremen)'
+        text: 'Tanzbar [Bremen]'
         label: 'touch me'
         target_blank: false
         link_type: entry
@@ -336,6 +457,13 @@ page_builder:
         type: set
         attrs:
           values:
+            type: figure
+            image: produktionen/aussicht_festival/01_trenner.jpg
+            size: md
+      -
+        type: set
+        attrs:
+          values:
             type: video
             video_url: 'https://vimeo.com/637965056'
             caption: 'AUSSICHT Festival #1 (2017)'
@@ -348,8 +476,8 @@ page_builder:
     title: 'AUSSICHT Festival #1'
     link_blocks:
       -
-        title: '12. Juli 2016 | 20:30 Uhr'
-        text: 'Die Blindgänger (München)'
+        title: '12. Juli 2017 | 20:30 Uhr'
+        text: 'Die Blindgänger [München]'
         label: 'Close Up'
         target_blank: false
         link_type: entry
@@ -361,8 +489,8 @@ page_builder:
         attr_title: 'Close Up'
         attr_aria: 'Close Up'
       -
-        title: '13. Juli 2016 | 21:00 Uhr'
-        text: 'Klabauter Theater (Hamburg)'
+        title: '13. Juli 2017 | 21:00 Uhr'
+        text: 'Klabauter Theater [Hamburg]'
         label: 'Die Zeitraffer'
         target_blank: false
         link_type: entry
@@ -374,8 +502,8 @@ page_builder:
         attr_title: 'Die Zeitraffer'
         attr_aria: 'Die Zeitraffer'
       -
-        title: '14. Juli 2016 | 18:00 Uhr'
-        text: 'Multifil Identity (Dresden)'
+        title: '14. Juli 2017 | 18:00 Uhr'
+        text: 'Multifil Identity [Dresden]'
         label: Upstream
         target_blank: false
         link_type: entry
@@ -387,8 +515,8 @@ page_builder:
         attr_title: null
         attr_aria: null
       -
-        title: '14. Juli 2016 | 21:00 Uhr'
-        text: 'SZENE 2WEI (Lahr)'
+        title: '14. Juli 2017 | 21:00 Uhr'
+        text: 'SZENE 2WEI [Lahr / Schwarzwald]'
         label: Tarun
         target_blank: false
         link_type: entry
@@ -400,8 +528,8 @@ page_builder:
         attr_title: null
         attr_aria: null
       -
-        title: '15. Juli 2016 | 19:00 Uhr'
-        text: 'Barco (Stockholm)'
+        title: '15. Juli 2017 | 19:00 Uhr'
+        text: 'Barco [Stockholm]'
         label: 'Cyborg Sunday'
         target_blank: false
         link_type: entry
@@ -421,7 +549,7 @@ sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 template: default
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1658919352
+updated_at: 1659710898
 seo_title: 'AUSSICHT Festival'
 seo_description: 'Hamburgs Mixed-Abled Festival'
 og_title: 'AUSSICHT Festival'
@@ -430,29 +558,121 @@ og_image: produktionen/aussicht_festival/AusSicht-Festival-Logo-Rechteck.jpg
 monsun_video: 'https://vimeo.com/352465733'
 hero_featured_sect:
   -
-    title: 'Titel Featured'
     titelzusatz_zeigen: false
-    title_desc: zus
     einfarbiger_hintergrund: false
-    featured_image: produktionen/aussicht_festival/2022/herz_emoji_the_luck_and_lack_of_love/herz_emoji_the_luck_and_lack_of_love_szene2wei_06_c_simon_wachter.jpg
-    overlay_color: neutral-300
+    featured_image: produktionen/aussicht_festival/2022/familiengeschichten/familiengeschichten_eisenhans_08_c_fabian_hammerl.jpg
+    overlay_color: neutral-200
+    type: featured
+    enabled: true
+    title: Familiengeschichten
     buttons:
       -
-        label: 'hier gehts Land'
+        label: 'Mehr lesen'
         target_blank: false
         link_type: entry
-        entry: 8cc9b4a9-42f9-410a-b847-010d2fd44814
+        entry: c20b41ce-02f3-4aae-be0b-e76506b60d88
         url: null
         email: null
         tel: null
         asset: null
-        attr_title: null
-        attr_aria: null
-    type: featured
-    enabled: false
+        attr_title: 'Mehr lesen'
+        attr_aria: 'Mehr über Familiengeschichten lesen'
   -
     titelzusatz_zeigen: false
     einfarbiger_hintergrund: false
     type: featured
-    enabled: false
+    enabled: true
+    title: RoLand
+    featured_image: produktionen/aussicht_festival/2022/roland/roland_01_c_breit.jpg
+    buttons:
+      -
+        label: 'Mehr lesen'
+        target_blank: false
+        link_type: entry
+        entry: e39b05c3-91d7-472a-aaaa-63d4942953d3
+        url: null
+        email: null
+        tel: null
+        asset: null
+        attr_title: 'Mehr lesen'
+        attr_aria: 'Mehr über RoLand lesen'
+  -
+    title: 'Pippi Langstrumpf, nur anders'
+    titelzusatz_zeigen: false
+    einfarbiger_hintergrund: false
+    featured_image: produktionen/ggf/ggf_eisenhans_pippi_langstrumpf_c_thalia_theater.jpg
+    overlay_color: neutral-300
+    buttons:
+      -
+        label: 'Mehr lesen'
+        target_blank: false
+        link_type: entry
+        entry: b8cf3ff0-6613-4ed9-95be-0d320f5b6c2d
+        url: null
+        email: null
+        tel: null
+        asset: null
+        attr_title: 'Mehr lesen'
+        attr_aria: 'Mehr über Pippi, nur anders lesen'
+    type: featured
+    enabled: true
+  -
+    title: 'Magic Mountain & Schneewittchen all inclusive'
+    titelzusatz_zeigen: false
+    einfarbiger_hintergrund: false
+    featured_image: produktionen/aussicht_festival/2022/schneewittchen_all_inklusive/schneewittchen_all_inclusive_blaumeier_atelier_06_c_marianne_menke.jpg
+    buttons:
+      -
+        label: 'Mehr lesen'
+        target_blank: false
+        link_type: entry
+        entry: 96fe455e-19eb-4428-9095-ab94ac485518
+        url: null
+        email: null
+        tel: null
+        asset: null
+        attr_title: 'Mehr lesen'
+        attr_aria: 'Mehr über Magic Mountain & Schneewittchen all inclusive lesen'
+    type: featured
+    enabled: true
+  -
+    title: 'Rooooooooooooooooooolling in the Deep'
+    titelzusatz_zeigen: false
+    einfarbiger_hintergrund: false
+    featured_image: produktionen/hauptsache_frei/2022/rooooooooooooooooooolling_in_the_deep/rooooooooooooooooooolling_in_the_deep_01_c_emma_szabo.jpg
+    buttons:
+      -
+        label: 'Mehr lesen'
+        target_blank: false
+        link_type: entry
+        entry: 31d9807e-25f2-46b8-b36c-90c09b01577e
+        url: null
+        email: null
+        tel: null
+        asset: null
+        attr_title: 'Mehr lesen'
+        attr_aria: 'Mehr über Rooooooooooooooooooolling in the Deep lesen'
+    type: featured
+    enabled: true
+  -
+    title: 'Herz Emoji // The Luck and Lack of Love'
+    titelzusatz_zeigen: false
+    title_desc: PREMIERE
+    einfarbiger_hintergrund: false
+    featured_image: produktionen/aussicht_festival/2022/herz_emoji_the_luck_and_lack_of_love/herz_emoji_the_luck_and_lack_of_love_szene2wei_04_c_simon_wachter.jpg
+    overlay_color: neutral-300
+    buttons:
+      -
+        label: 'Mehr lesen'
+        target_blank: false
+        link_type: entry
+        entry: 7d64f06d-4441-4755-a61f-a7ea44487e45
+        url: null
+        email: null
+        tel: null
+        asset: null
+        attr_title: 'Mehr lesen'
+        attr_aria: 'Mehr über Herz Emoji // The Luck and Lack of Love lesen'
+    type: featured
+    enabled: true
 ---
