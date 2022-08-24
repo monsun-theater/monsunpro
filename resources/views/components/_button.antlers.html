@@ -1,6 +1,6 @@
 {{# A single button. Faux is used when a button is displayed inside a link (for example in link blocks). #}}
 <{{ tag or 'a' }} {{ attribute }}
-    class="font-bold align-center tracking-widest uppercase pt-3 leading-none select-none whitespace-nowrap text-md hover:text-monsun dark:text-white dark:hover:text-monsun"
+    class="font-bold align-center break-words tracking-widest uppercase pt-3 leading-none select-none text-md hover:text-monsun dark:text-white dark:hover:text-monsun"
     {{ unless faux }} {{ partial:components/button_attributes }} {{ /unless }}>
     {{ label }} <span class="text-monsun font-bold">&nbsp;→</span>
 </{{ tag or 'a' }}>
