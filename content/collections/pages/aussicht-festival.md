@@ -2,7 +2,7 @@
 id: 8a8f549b-0be1-4e43-9ed4-3e6eb12d98b9
 blueprint: page
 title: 'AUSSICHT Festival'
-cinema_monsun: false
+cinema_monsun: true
 do_not_track_toggle: true
 page_builder:
   -
@@ -77,8 +77,6 @@ page_builder:
             type: small_picture
             image: produktionen/aussicht_festival/presse/2022_Aussicht-Festival-Programm-Web_Cover.jpg
             zusatzinfo_zeigen: false
-      -
-        type: paragraph
     type: article
     enabled: true
   -
@@ -88,8 +86,67 @@ page_builder:
         attrs:
           values:
             type: figure
+            image: produktionen/aussicht_festival/2022/workshop_team_2022.jpg
+            size: md
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'HERZ EMOJI - DER WORKSHOP'
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Passend zu dem Tanzstück '
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::7d64f06d-4441-4755-a61f-a7ea44487e45'
+                  rel: null
+                  target: null
+                  title: null
+            text: 'Herz Emoji // The Luck and Lack of Love'
+          -
+            type: text
+            text: " widmet sich dieser Workshop dem Thema der Liebe.\_"
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Durch Spiele, unsere Sinneswahrnehmung und Tanzimprovisation erforschen wir die Bedeutung der Liebe zu uns selbst ebenso wie die Bedeutung von Konflikt und Verbundenheit miteinander. Ziel des Workshops ist es, einen Ort der Begegnung und ein künstlerisches Entfalten zu ermöglichen. Wir möchten Einblicke in das Stück, die Kompanie und nicht zuletzt in jedermanns eigenes Selbst verschaffen, Kennenlernen begünstigen, gemeinsam tanzen und dabei Spaß haben.'
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Dieser Workshop im Rahmen des AUSSICHT Festivals ist für alle Menschen, für erfahrene und weniger erfahrene Tänzer*innen, für Menschen mit und ohne Beeinträchtigung offen.'
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: "Workshop Team: Jörg Beese und Sonja Pfennigbauer\_"
+      -
+        type: set
+        attrs:
+          values:
+            type: figure
             image: produktionen/aussicht_festival/04_trenner.jpg
             size: md
+      -
+        type: set
+        attrs:
+          values:
+            type: video
+            video_url: 'https://vimeo.com/742298759'
+            caption: 'AUSSICHT Festival #4 (2022)'
+            do_not_track: true
     type: article
     enabled: true
   -
@@ -166,7 +223,7 @@ page_builder:
       -
         title: '09. September 2022 | 19:00 Uhr'
         text: 'Linda Lou Dierich-Matzke [Hamburg]'
-        label: 'Rooooooooooooooooooolling in the Deep'
+        label: 'Rooooooooooooooooooolling in the Deep?'
         target_blank: false
         link_type: entry
         entry: 31d9807e-25f2-46b8-b36c-90c09b01577e
@@ -549,13 +606,13 @@ sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 template: default
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1659710898
+updated_at: 1661267221
 seo_title: 'AUSSICHT Festival'
 seo_description: 'Hamburgs Mixed-Abled Festival'
 og_title: 'AUSSICHT Festival'
 og_description: 'Hamburgs Mixed-Abled Festival'
 og_image: produktionen/aussicht_festival/AusSicht-Festival-Logo-Rechteck.jpg
-monsun_video: 'https://vimeo.com/352465733'
+monsun_video: 'https://vimeo.com/742298759'
 hero_featured_sect:
   -
     titelzusatz_zeigen: false
@@ -636,7 +693,7 @@ hero_featured_sect:
     type: featured
     enabled: true
   -
-    title: 'Rooooooooooooooooooolling in the Deep'
+    title: 'Rooooooooooooooooooolling in the Deep?'
     titelzusatz_zeigen: false
     einfarbiger_hintergrund: false
     featured_image: produktionen/hauptsache_frei/2022/rooooooooooooooooooolling_in_the_deep/rooooooooooooooooooolling_in_the_deep_01_c_emma_szabo.jpg

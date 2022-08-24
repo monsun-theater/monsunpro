@@ -16,6 +16,12 @@ data:
       type: neues_mitgleid
       enabled: true
       rolle: 'Geschäftsführung & Theaterleitung'
+      telefonnummer:
+        -
+          nummer: '+49403903148'
+          extra_info_telefon: false
+          type: telefonnummer
+          enabled: false
     -
       name: 'Kianosh Kinz'
       role_list:
@@ -29,7 +35,31 @@ data:
       extra_info_toggle: false
       type: neues_mitgleid
       enabled: true
-      rolle: 'Technische Leitung'
+      rolle: Technik
+      telefonnummer:
+        -
+          nummer: '+49403903148'
+          extra_info_telefon: false
+          type: telefonnummer
+          enabled: false
+    -
+      name: 'Tim Passgang'
+      rolle: Technik
+      e-mail-adresse:
+        -
+          e-mail: technik@monsun.theater
+          extra_info_email: false
+          type: neue_e-mail-adresse
+          enabled: true
+      telefonnummer:
+        -
+          nummer: '+49403903148'
+          extra_info_telefon: false
+          type: telefonnummer
+          enabled: false
+      extra_info_toggle: false
+      type: neues_mitgleid
+      enabled: true
     -
       role_list:
         - Presse
@@ -46,6 +76,12 @@ data:
       enabled: true
       name: 'Clara Weise'
       rolle: FSJ-Kultur
+      telefonnummer:
+        -
+          nummer: '+49403903148'
+          extra_info_telefon: false
+          type: telefonnummer
+          enabled: false
     -
       name: 'Emmi Spieler'
       rolle: FSJ-Kultur
@@ -58,6 +94,12 @@ data:
       extra_info_toggle: false
       type: neues_mitgleid
       enabled: true
+      telefonnummer:
+        -
+          nummer: '+49403903148'
+          extra_info_telefon: false
+          type: telefonnummer
+          enabled: false
     -
       name: Reservix
       role_list:
