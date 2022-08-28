@@ -9,7 +9,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1649776285
+updated_at: 1661542750
 cinema_monsun: false
 do_not_track_toggle: false
 page_builder:
@@ -83,7 +83,7 @@ page_builder:
         content:
           -
             type: text
-            text: 'Zur Zeit bieten wir alle Vorstellung zeitgleich im Livestream an! Mit einem „Online-Ticket“ erhalten Sie via Zoom-Plattform Zugang von Zuhause aus. Unser Ziel dabei ist es, einen gemeinsamen erlebten Theaterabend für das digitale und analoge Publikum zu schaffen.'
+            text: 'Zur Zeit bieten wir viele Vorstellung zeitgleich im Livestream an! Mit einem „Online-Ticket“ erhalten Sie via Zoom-Plattform Zugang von Zuhause aus. Unser Ziel dabei ist es, einen gemeinsamen erlebten Theaterabend für das digitale und analoge Publikum zu schaffen.'
     type: article
     enabled: true
   -
