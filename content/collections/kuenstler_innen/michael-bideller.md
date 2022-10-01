@@ -1,8 +1,8 @@
 ---
 id: 0e810994-4499-46e6-ba2c-ce31e765fe50
+blueprint: kuenstler_innen
 title: 'Michael Bideller'
 hat_eigene_website_has_own_website: false
-kuenstler_artist_website_url_link: 'https://'
 biographie_eintragen_create_artist_s_biography: true
 page_builder:
   -
@@ -31,9 +31,35 @@ page_builder:
                 type: link
                 attrs:
                   href: 'https://monsun.theater/veranstaltungen/kein-schiff-wird-kommen'
-                  target: null
                   rel: null
+                  target: null
+                  title: null
             text: 'KEIN SCHIFF WIRD KOMMEN'
+          -
+            type: text
+            text: ' '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: (Spiel)
+          -
+            type: hard_break
+            marks:
+              -
+                type: italic
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::c53a40b8-e334-4e17-bc9c-2c8b7c687da5'
+                  rel: null
+                  target: null
+                  title: null
+            text: 'DAS BELLEN DER HUNDE'
           -
             type: text
             text: ' '
@@ -65,5 +91,5 @@ page_builder:
     type: article
     enabled: true
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1619884897
+updated_at: 1664013454
 ---

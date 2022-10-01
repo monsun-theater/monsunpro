@@ -174,8 +174,33 @@ page_builder:
               -
                 type: italic
             text: '(Kostüm & Maske)'
+          -
+            type: hard_break
+            marks:
+              -
+                type: italic
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::c53a40b8-e334-4e17-bc9c-2c8b7c687da5'
+                  rel: null
+                  target: null
+                  title: null
+            text: 'DAS BELLEN DER HUNDE'
+          -
+            type: text
+            text: ' '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: '(Bühne & Kostüm)'
     type: article
     enabled: true
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1650705242
+updated_at: 1664013539
 ---

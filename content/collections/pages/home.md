@@ -3,7 +3,7 @@ id: home
 blueprint: homepage
 title: Startseite
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1659768198
+updated_at: 1664360540
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -12,7 +12,28 @@ sitemap_priority: 0.5
 template: home
 hero_featured_sect:
   -
-    featured_image: produktionen/umkaempfte_zone/umkaempfte_zone_28_c_g2_baraniak.jpg
+    titelzusatz_zeigen: true
+    einfarbiger_hintergrund: false
+    featured_image: produktionen/backstage_festival/2022/backstage_cover.jpg
+    type: featured
+    enabled: true
+    title: 'BACKSTAGE Festival'
+    title_desc: '15.–30. September 2022'
+    subtitle: '»Die Welt und ICH!«'
+    buttons:
+      -
+        label: TICKETS
+        target_blank: true
+        link_type: url
+        entry: null
+        url: 'https://monsuntheater.reservix.de/'
+        email: null
+        tel: null
+        asset: null
+        attr_title: 'Ticket kaufen'
+        attr_aria: 'Ticket kaufen'
+  -
+    featured_image: produktionen/umkaempfte_zone/umkaempfte_zone_10b_c_g2_baraniak.jpg
     einfarbiger_hintergrund: false
     title: 'UMKÄMPFTE ZONE'
     buttons:
@@ -28,59 +49,30 @@ hero_featured_sect:
         attr_title: 'Mehr lesen'
         attr_aria: 'Mehr über Umkämpfte Zone lesen'
     type: featured
-    enabled: false
-    titelzusatz_zeigen: false
-  -
-    title: 'monsun.theater Gaußstraße'
-    titelzusatz_zeigen: false
-    title_desc: 'Wegen der Baustelle in der Friedensallee sind wir in die Gaußstraße umgezogen.'
-    einfarbiger_hintergrund: false
-    buttons:
-      -
-        label: 'Google Maps'
-        target_blank: false
-        link_type: url
-        entry: cdf42f89-6704-4ec1-8f26-fcfae3ded255
-        url: 'https://www.google.de/maps/place/monsun.theater+Gaußstraße/@53.5585424,9.9273627,17z/data=!3m1!4b1!4m5!3m4!1s0x47b185f1889529e3:0x4f2676390d226b00!8m2!3d53.5585461!4d9.929619'
-        email: null
-        tel: null
-        asset: null
-        attr_title: 'monsun.theater Gaußstraße'
-        attr_aria: 'Wo findet man uns'
-    type: featured
-    enabled: false
-    featured_image: aktuelles/2022-02-19/IMG_5019.jpg
-    overlay_color: neutral-300
-  -
-    titelzusatz_zeigen: false
-    einfarbiger_hintergrund: false
-    featured_image: aktuelles/2022-07-05/sommerpause.jpg
-    type: featured
-    enabled: false
-    title: SOMMERPAUSE
-    title_desc: '6. Juli – 21. August'
-    overlay_color: neutral-300
-  -
-    title: 'Spielzeit 22|23'
+    enabled: true
     titelzusatz_zeigen: true
-    title_desc: 'ab 07. September 2022'
+    subtitle: 'Von Clemens Mädge'
+  -
+    title: 'Der Hals der Giraffe'
+    titelzusatz_zeigen: false
     einfarbiger_hintergrund: false
-    featured_image: produktionen/aussicht_festival/aussicht_festival_2022_cover2.jpg
+    featured_image: produktionen/der_hals_der_giraffe/der_hals_der_giraffe_48_c_g2_baraniak.jpg
+    overlay_color: neutral-200
     buttons:
       -
-        label: 'AUSSICHT Festival'
+        label: 'Mehr lesen'
         target_blank: false
         link_type: entry
-        entry: 8a8f549b-0be1-4e43-9ed4-3e6eb12d98b9
+        entry: null
         url: null
         email: null
         tel: null
         asset: null
         attr_title: 'Mehr lesen'
-        attr_aria: 'Mehr über das Aussicht Festival lesen'
+        attr_aria: 'Mehr über „Der Hals der Giraffe“ lesen'
     type: featured
     enabled: true
-anzahl_vorstellungen_in_demnaechst: 8
+anzahl_vorstellungen_in_demnaechst: 5
 anzahl_eintraege_in_aktuelles: 2
 anzahl_stuecke_in_spielzeit_component: 2
 seo_title: Startseite
@@ -117,14 +109,10 @@ page_builder:
             text: .
 demnachst_verstecken: false
 aktuelles_eintraege:
-  - ee11aa78-e99a-4a67-b87d-67b61a9c4963
+  - f56abf85-059b-4146-9f49-1f4fd051b9a4
 spielzeit_eintraege:
-  - c20b41ce-02f3-4aae-be0b-e76506b60d88
-  - e39b05c3-91d7-472a-aaaa-63d4942953d3
-  - b8cf3ff0-6613-4ed9-95be-0d320f5b6c2d
-  - 96fe455e-19eb-4428-9095-ab94ac485518
-  - 31d9807e-25f2-46b8-b36c-90c09b01577e
-  - 7d64f06d-4441-4755-a61f-a7ea44487e45
+  - 3bf16166-346f-4ee1-83ad-91afe0737f99
   - 32af60bf-4d60-4de5-9e91-bc36ac8a4a14
   - 8640b6aa-afbb-45af-8a3f-f83158bfbe11
+  - 48154ad4-1764-449a-a007-7b1f106f38ee
 ---

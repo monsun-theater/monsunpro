@@ -32,7 +32,18 @@ page_builder:
         content:
           -
             type: text
-            text: 'BACKSTAGE FESTIVAL '
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::4cf2bb20-1dff-43d5-9f8c-4f4649291e8c'
+                  rel: null
+                  target: null
+                  title: null
+            text: 'BACKSTAGE FESTIVAL'
+          -
+            type: text
+            text: ' '
           -
             type: text
             marks:
@@ -140,7 +151,43 @@ page_builder:
                 type: italic
           -
             type: text
-            text: 'DAS BELLEN DER HUNDE '
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::f2cc8d79-4bc3-40f8-b57d-60441cbb4fa4'
+                  rel: null
+                  target: null
+                  title: null
+            text: 'BLENDPROTOKOLLE 2044 A.D.'
+          -
+            type: text
+            text: ' '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: '(Textbearbeitung & Leitung)'
+          -
+            type: hard_break
+            marks:
+              -
+                type: italic
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::c53a40b8-e334-4e17-bc9c-2c8b7c687da5'
+                  rel: null
+                  target: null
+                  title: null
+            text: 'DAS BELLEN DER HUNDE'
+          -
+            type: text
+            text: ' '
           -
             type: text
             marks:
@@ -150,5 +197,5 @@ page_builder:
     type: article
     enabled: true
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1658874844
+updated_at: 1664195508
 ---

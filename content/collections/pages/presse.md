@@ -9,21 +9,20 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1659727189
+updated_at: 1663261326
 template: presse
 cinema_monsun: false
 do_not_track_toggle: true
 monsun_video: 'https://vimeo.com/592222109'
 hero_featured_sect:
   -
-    title: 'Spielzeiteröffnung 2022|23'
-    titelzusatz_zeigen: true
+    title: 'BACKSTAGE Festival'
+    titelzusatz_zeigen: false
     einfarbiger_hintergrund: false
     type: featured
     enabled: true
-    title_desc: 'Hamburgs Mixed-Abled Festival'
-    featured_image: produktionen/aussicht_festival/aussicht_festival_2022_cover2.jpg
-    subtitle: 'AUSSICHT Festival'
+    title_desc: '»Die Welt und ICH!«'
+    featured_image: produktionen/backstage_festival/2022/backstage_cover.jpg
 page_builder:
   -
     bard:
@@ -86,7 +85,7 @@ page_builder:
                 url: null
                 email: null
                 tel: null
-                asset: produktionen/aussicht_festival/presse/AUSSICHT-FESTIVAL--4_07.---10.-September-2022_Pressemitteilung_monsun.theater.pdf
+                asset: null
                 attr_title: 'Pressemitteilung AUSSICHT Festival (PDF)'
                 attr_aria: 'Pressemitteilung AUSSICHT Festival PDF-Download'
               -
@@ -100,6 +99,14 @@ page_builder:
                 asset: produktionen/aussicht_festival/AusSicht-Festival-Logo-Rechteck.jpg
                 attr_title: 'Logo AUSSICHT Festival (JPG)'
                 attr_aria: 'Logo AUSSICHT Festival JPG-Download'
+      -
+        type: set
+        attrs:
+          values:
+            type: video
+            video_url: 'https://vimeo.com/746338733'
+            caption: 'BACKSTAGE Festival 2022 »Die Welt und ICH«'
+            do_not_track: true
       -
         type: paragraph
       -

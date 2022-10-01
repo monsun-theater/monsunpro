@@ -231,11 +231,11 @@ page_builder:
                 tel: null
                 asset: null
                 attr_title: 'Website Cora Sachs'
-                attr_aria: null
+                attr_aria: 'Website Cora Sachs'
       -
         type: paragraph
     type: article
     enabled: true
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1650217560
+updated_at: 1664176402
 ---

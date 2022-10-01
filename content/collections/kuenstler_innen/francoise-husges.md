@@ -3,7 +3,7 @@ id: 230ec157-5076-45d0-8d68-597a5f3d0743
 blueprint: kuenstler_innen
 title: 'Francoise Hüsges'
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1658874556
+updated_at: 1664196113
 page_builder:
   -
     bard:
@@ -597,6 +597,78 @@ page_builder:
                   target: null
                   title: null
             text: ROLAND
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: ' (Konzept & Regie)'
+          -
+            type: hard_break
+            marks:
+              -
+                type: italic
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::f2cc8d79-4bc3-40f8-b57d-60441cbb4fa4'
+                  rel: null
+                  target: null
+                  title: null
+            text: 'BLENDPROTOKOLLE 2044 A.D.'
+          -
+            type: text
+            text: ' '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: (Bühne)
+          -
+            type: hard_break
+            marks:
+              -
+                type: italic
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::3bf16166-346f-4ee1-83ad-91afe0737f99'
+                  rel: null
+                  target: null
+                  title: null
+            text: WIR/KL/ICH/KEITEN
+          -
+            type: text
+            text: ' '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: (Performance)
+          -
+            type: hard_break
+            marks:
+              -
+                type: italic
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::c53a40b8-e334-4e17-bc9c-2c8b7c687da5'
+                  rel: null
+                  target: null
+                  title: null
+            text: 'DAS BELLEN DER HUNDE'
           -
             type: text
             marks:

@@ -9,7 +9,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1661542750
+updated_at: 1664032989
 cinema_monsun: false
 do_not_track_toggle: false
 page_builder:
@@ -34,12 +34,7 @@ page_builder:
         content:
           -
             type: text
-            text: 'Für unsere Veranstaltungen gilt: Zutritt nur mit FFP2-Maske'
-          -
-            type: hard_break
-          -
-            type: text
-            text: 'Für Theaterbesucher:innen gelten aktuell folgende Regelungen:'
+            text: 'Für Theaterbesucher:innen vor Ort im monsun.theater gelten aktuell folgende Regelungen:'
       -
         type: bullet_list
         content:
@@ -51,7 +46,7 @@ page_builder:
                 content:
                   -
                     type: text
-                    text: 'Das Tragen einer FFP2-Maske im Theater und am Platz ist verpflichtend.'
+                    text: 'Das Tragen einer FFP-2-Maske oder medizinischen Maske im Theater ist zum Eigenschutz und zum Schutz unseres technischen und künstlerischen Personals dringend empfohlen.'
           -
             type: list_item
             content:
