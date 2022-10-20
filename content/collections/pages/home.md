@@ -3,7 +3,7 @@ id: home
 blueprint: homepage
 title: Startseite
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1664360540
+updated_at: 1666086341
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -12,67 +12,27 @@ sitemap_priority: 0.5
 template: home
 hero_featured_sect:
   -
-    titelzusatz_zeigen: true
+    featured_image: produktionen/gala_der_preistraeger_innnen_solotanz/gala_der_preistraegerinnen_solotanz_social_media_c_jo_grabowski.jpg
     einfarbiger_hintergrund: false
-    featured_image: produktionen/backstage_festival/2022/backstage_cover.jpg
-    type: featured
-    enabled: true
-    title: 'BACKSTAGE Festival'
-    title_desc: '15.–30. September 2022'
-    subtitle: '»Die Welt und ICH!«'
-    buttons:
-      -
-        label: TICKETS
-        target_blank: true
-        link_type: url
-        entry: null
-        url: 'https://monsuntheater.reservix.de/'
-        email: null
-        tel: null
-        asset: null
-        attr_title: 'Ticket kaufen'
-        attr_aria: 'Ticket kaufen'
-  -
-    featured_image: produktionen/umkaempfte_zone/umkaempfte_zone_10b_c_g2_baraniak.jpg
-    einfarbiger_hintergrund: false
-    title: 'UMKÄMPFTE ZONE'
+    title: 'Gala der Preisträger:innen'
     buttons:
       -
         label: 'Mehr lesen'
         target_blank: false
         link_type: entry
-        entry: 32af60bf-4d60-4de5-9e91-bc36ac8a4a14
+        entry: 48154ad4-1764-449a-a007-7b1f106f38ee
         url: null
         email: null
         tel: null
         asset: null
         attr_title: 'Mehr lesen'
-        attr_aria: 'Mehr über Umkämpfte Zone lesen'
+        attr_aria: 'Mehr über das 26. Internationales Solo-Tanz-Theater-Festival aus Stuttgart lesen'
     type: featured
     enabled: true
     titelzusatz_zeigen: true
-    subtitle: 'Von Clemens Mädge'
-  -
-    title: 'Der Hals der Giraffe'
-    titelzusatz_zeigen: false
-    einfarbiger_hintergrund: false
-    featured_image: produktionen/der_hals_der_giraffe/der_hals_der_giraffe_48_c_g2_baraniak.jpg
-    overlay_color: neutral-200
-    buttons:
-      -
-        label: 'Mehr lesen'
-        target_blank: false
-        link_type: entry
-        entry: null
-        url: null
-        email: null
-        tel: null
-        asset: null
-        attr_title: 'Mehr lesen'
-        attr_aria: 'Mehr über „Der Hals der Giraffe“ lesen'
-    type: featured
-    enabled: true
-anzahl_vorstellungen_in_demnaechst: 5
+    subtitle: '26. Internationales Solo-Tanz-Theater-Festival Stuttgart'
+    overlay_color: neutral-300
+anzahl_vorstellungen_in_demnaechst: 3
 anzahl_eintraege_in_aktuelles: 2
 anzahl_stuecke_in_spielzeit_component: 2
 seo_title: Startseite
@@ -111,8 +71,8 @@ demnachst_verstecken: false
 aktuelles_eintraege:
   - f56abf85-059b-4146-9f49-1f4fd051b9a4
 spielzeit_eintraege:
-  - 3bf16166-346f-4ee1-83ad-91afe0737f99
-  - 32af60bf-4d60-4de5-9e91-bc36ac8a4a14
-  - 8640b6aa-afbb-45af-8a3f-f83158bfbe11
+  - fa1ed0d1-8780-4344-9a02-fc0d0b3d1a35
+  - 277a12ec-2718-4e8d-82a1-7d0749ff0b3c
   - 48154ad4-1764-449a-a007-7b1f106f38ee
+  - c53a40b8-e334-4e17-bc9c-2c8b7c687da5
 ---

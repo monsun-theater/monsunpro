@@ -1,4 +1,4 @@
 title: 'Alert message'
 data:
-  monsun_alert_msg: false
-  alert_nachricht_text: 'Nur für kurze Zeit ––– Der BACKSTAGE-Festivalpass ––– 12,-€ für 12 Vorstellungen ––– jetzt im Ticketshop'
+  monsun_alert_msg: true
+  alert_nachricht_text: 'Aufgrund einer Erkrankung im Produktionsteam müssen die Vorstellung „Der Hals der Giraffe“ vom 09.-11. November leider entfallen.'

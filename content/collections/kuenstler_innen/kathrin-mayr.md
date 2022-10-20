@@ -201,8 +201,16 @@ page_builder:
               -
                 type: italic
             text: (Regie)
+      -
+        type: set
+        attrs:
+          values:
+            type: video
+            video_url: 'https://vimeo.com/484838787'
+            caption: 'Theaterpreis Hamburg 2020 »Rolf Mares« für Kathrin Mayr & Clemens Mädge'
+            do_not_track: true
     type: article
     enabled: true
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1638552483
+updated_at: 1665006532
 ---

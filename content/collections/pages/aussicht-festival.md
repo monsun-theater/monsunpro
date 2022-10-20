@@ -2,7 +2,7 @@
 id: 8a8f549b-0be1-4e43-9ed4-3e6eb12d98b9
 blueprint: page
 title: 'AUSSICHT Festival'
-cinema_monsun: true
+cinema_monsun: false
 do_not_track_toggle: true
 page_builder:
   -
@@ -606,130 +606,11 @@ sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 template: default
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1661267221
+updated_at: 1665008499
 seo_title: 'AUSSICHT Festival'
 seo_description: 'Hamburgs Mixed-Abled Festival'
 og_title: 'AUSSICHT Festival'
 og_description: 'Hamburgs Mixed-Abled Festival'
 og_image: produktionen/aussicht_festival/AusSicht-Festival-Logo-Rechteck.jpg
 monsun_video: 'https://vimeo.com/742298759'
-hero_featured_sect:
-  -
-    titelzusatz_zeigen: false
-    einfarbiger_hintergrund: false
-    featured_image: produktionen/aussicht_festival/2022/familiengeschichten/familiengeschichten_eisenhans_08_c_fabian_hammerl.jpg
-    overlay_color: neutral-200
-    type: featured
-    enabled: true
-    title: Familiengeschichten
-    buttons:
-      -
-        label: 'Mehr lesen'
-        target_blank: false
-        link_type: entry
-        entry: c20b41ce-02f3-4aae-be0b-e76506b60d88
-        url: null
-        email: null
-        tel: null
-        asset: null
-        attr_title: 'Mehr lesen'
-        attr_aria: 'Mehr über Familiengeschichten lesen'
-  -
-    titelzusatz_zeigen: false
-    einfarbiger_hintergrund: false
-    type: featured
-    enabled: true
-    title: RoLand
-    featured_image: produktionen/aussicht_festival/2022/roland/roland_01_c_breit.jpg
-    buttons:
-      -
-        label: 'Mehr lesen'
-        target_blank: false
-        link_type: entry
-        entry: e39b05c3-91d7-472a-aaaa-63d4942953d3
-        url: null
-        email: null
-        tel: null
-        asset: null
-        attr_title: 'Mehr lesen'
-        attr_aria: 'Mehr über RoLand lesen'
-  -
-    title: 'Pippi Langstrumpf, nur anders'
-    titelzusatz_zeigen: false
-    einfarbiger_hintergrund: false
-    featured_image: produktionen/ggf/ggf_eisenhans_pippi_langstrumpf_c_thalia_theater.jpg
-    overlay_color: neutral-300
-    buttons:
-      -
-        label: 'Mehr lesen'
-        target_blank: false
-        link_type: entry
-        entry: b8cf3ff0-6613-4ed9-95be-0d320f5b6c2d
-        url: null
-        email: null
-        tel: null
-        asset: null
-        attr_title: 'Mehr lesen'
-        attr_aria: 'Mehr über Pippi, nur anders lesen'
-    type: featured
-    enabled: true
-  -
-    title: 'Magic Mountain & Schneewittchen all inclusive'
-    titelzusatz_zeigen: false
-    einfarbiger_hintergrund: false
-    featured_image: produktionen/aussicht_festival/2022/schneewittchen_all_inklusive/schneewittchen_all_inclusive_blaumeier_atelier_06_c_marianne_menke.jpg
-    buttons:
-      -
-        label: 'Mehr lesen'
-        target_blank: false
-        link_type: entry
-        entry: 96fe455e-19eb-4428-9095-ab94ac485518
-        url: null
-        email: null
-        tel: null
-        asset: null
-        attr_title: 'Mehr lesen'
-        attr_aria: 'Mehr über Magic Mountain & Schneewittchen all inclusive lesen'
-    type: featured
-    enabled: true
-  -
-    title: 'Rooooooooooooooooooolling in the Deep?'
-    titelzusatz_zeigen: false
-    einfarbiger_hintergrund: false
-    featured_image: produktionen/hauptsache_frei/2022/rooooooooooooooooooolling_in_the_deep/rooooooooooooooooooolling_in_the_deep_01_c_emma_szabo.jpg
-    buttons:
-      -
-        label: 'Mehr lesen'
-        target_blank: false
-        link_type: entry
-        entry: 31d9807e-25f2-46b8-b36c-90c09b01577e
-        url: null
-        email: null
-        tel: null
-        asset: null
-        attr_title: 'Mehr lesen'
-        attr_aria: 'Mehr über Rooooooooooooooooooolling in the Deep lesen'
-    type: featured
-    enabled: true
-  -
-    title: 'Herz Emoji // The Luck and Lack of Love'
-    titelzusatz_zeigen: false
-    title_desc: PREMIERE
-    einfarbiger_hintergrund: false
-    featured_image: produktionen/aussicht_festival/2022/herz_emoji_the_luck_and_lack_of_love/herz_emoji_the_luck_and_lack_of_love_szene2wei_04_c_simon_wachter.jpg
-    overlay_color: neutral-300
-    buttons:
-      -
-        label: 'Mehr lesen'
-        target_blank: false
-        link_type: entry
-        entry: 7d64f06d-4441-4755-a61f-a7ea44487e45
-        url: null
-        email: null
-        tel: null
-        asset: null
-        attr_title: 'Mehr lesen'
-        attr_aria: 'Mehr über Herz Emoji // The Luck and Lack of Love lesen'
-    type: featured
-    enabled: true
 ---
