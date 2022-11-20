@@ -3,7 +3,7 @@ id: home
 blueprint: homepage
 title: Startseite
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1667576283
+updated_at: 1668679513
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -32,6 +32,27 @@ hero_featured_sect:
     titelzusatz_zeigen: true
     subtitle: '26. Internationales Solo-Tanz-Theater-Festival Stuttgart'
     overlay_color: neutral-300
+  -
+    title: 'Das Bellen der Hunde'
+    titelzusatz_zeigen: true
+    subtitle: 'von Michael Alexander Müller'
+    einfarbiger_hintergrund: false
+    featured_image: produktionen/das_bellen_der_hunde/das_bellen_der_hunde_07_c_g2_baraniak.jpg
+    buttons:
+      -
+        label: 'Mehr lesen'
+        target_blank: false
+        link_type: entry
+        entry: c53a40b8-e334-4e17-bc9c-2c8b7c687da5
+        url: null
+        email: null
+        tel: null
+        asset: null
+        attr_title: 'Mehr lesen'
+        attr_aria: 'Mehr über „Das Bellen der Hunde“ lesen'
+    type: featured
+    enabled: true
+    overlay_color: neutral-100
 anzahl_vorstellungen_in_demnaechst: 3
 anzahl_eintraege_in_aktuelles: 2
 anzahl_stuecke_in_spielzeit_component: 2
