@@ -20,13 +20,55 @@ page_builder:
         content:
           -
             type: text
-            text: "Michael Alexander Müller ist am Deutschen SchauSpielHaus in Hamburg als Leitung der Education Projekte und Autor tätig. Er erhielt für seine sozial-politisch engagierten Stücke eine Reihe von Auszeichnungen, u.a. den Mülheimer KinderStückePreis, den Autorenpreis \"Nah dran\" und das „Stipendium zum Deutschen Kindertheaterpreis\" des kjtz Frankfurt. Seit 2018 ist er mit dem BACKSTAGE FESTIVAL regelmäßig im monsun.theater zu Gast.\_"
+            text: "Michael Alexander Müller ist am Deutschen SchauSpielHaus in Hamburg als Leitung der Education Projekte und Autor tätig. Er erhält für seine sozial-politisch engagierten Stücke eine Reihe von Auszeichnungen, u.a. den Mülheimer KinderStückePreis, den Autorenpreis „Nah dran“ und das „Stipendium zum Deutschen Kindertheaterpreis\" des kjtz Frankfurt. Seit 2018 ist er mit dem BACKSTAGE FESTIVAL regelmäßig im monsun.theater zu Gast.\_"
       -
         type: paragraph
         content:
           -
             type: text
-            text: 'Als Autor schreibt er 2020 für das monsun.theater und das Theater unterm Dach Berlin BRUCHLINIEN - eine einfühlsame Berichterstattung zum Thema „Missbrauch“. Die zweite Zusammenarbeit mit dem Team Johanna Hasse & Francoise Hüsges wird eine simultane Hybridproduktion des monsun.theaters gemeinsam mit der Vaganten Bühne Berlin: FILETSTÜCKE – WEM GEHÖRT DAS LAND hat 2021 Premiere.'
+            text: 'Als Autor schreibt er 2020 für das monsun.theater und das Theater unterm Dach Berlin '
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::cdf42f89-6704-4ec1-8f26-fcfae3ded255'
+                  rel: null
+                  target: null
+                  title: null
+            text: BRUCHLINIEN
+          -
+            type: text
+            text: ' - eine einfühlsame Berichterstattung zum Thema „Missbrauch“. Die zweite Zusammenarbeit mit dem Team Johanna Hasse & Francoise Hüsges ist 2021 eine simultane Hybridproduktion des monsun.theaters gemeinsam mit der Vaganten Bühne Berlin: '
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::c6ee169b-2221-4746-9f04-5ea08d0bcbe9'
+                  rel: null
+                  target: null
+                  title: null
+            text: 'FILETSTÜCKE – WEM GEHÖRT DAS LAND'
+          -
+            type: text
+            text: '. Aktuell steht sein neues Stück '
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::c53a40b8-e334-4e17-bc9c-2c8b7c687da5'
+                  rel: null
+                  target: null
+                  title: null
+            text: 'DAS BELLEN DER HUNDE'
+          -
+            type: text
+            text: ' auf dem Programm.'
       -
         type: paragraph
         content:
@@ -197,5 +239,5 @@ page_builder:
     type: article
     enabled: true
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1664195508
+updated_at: 1669810043
 ---

@@ -3,7 +3,7 @@ id: 230ec157-5076-45d0-8d68-597a5f3d0743
 blueprint: kuenstler_innen
 title: 'Francoise Hüsges'
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1664196113
+updated_at: 1669071435
 page_builder:
   -
     bard:
@@ -12,9 +12,9 @@ page_builder:
         attrs:
           values:
             type: figure
-            image: kuenstler-innen/Francoise_Huesges_c_Altona_Magazin.jpg
+            image: kuenstler-innen/francoise_huesges_2022_02_c_g2-baraniak.jpg
             size: md
-            caption: 'Altona Magazin'
+            caption: 'G2 Baraniak'
       -
         type: paragraph
         content:
@@ -34,7 +34,49 @@ page_builder:
             text: monsun.theater
           -
             type: text
-            text: "\_in Hamburg. Ihr künstlerischer Fokus liegt im Erforschen neuer Ästhetiken sowie in der Zusammenarbeit, dem digitalen Austausch und der Vernetzung mit anderen Ländern. Ihre grenzüberschreitende Arbeitsweise zeigt sich u.a. in der Inszenierung #MOMENT!, in der zwei Bühnen in Hamburg und Toulouse digital vernetzt werden. Außerdem entwickelt sie neue Akzente für die Bühne per Live-Stream. 2017 gründete und etablierte sie außerdem das Hamburger AUSSICHT Festival – eine Plattform für Künstler:innen mit und ohne Behinderung. Neben der Theaterleitung entstehen weiterhin Arbeiten im Bereich der Regie und Bühne für die regionale und überregionale freie Szene."
+            text: "\_in Hamburg. Ihr künstlerischer Fokus liegt im Erforschen neuer Ästhetiken sowie in der internationalen Zusammenarbeit, dem digitalen Austausch und der Vernetzung mit anderen Ländern. Ihre grenzüberschreitende Arbeitsweise zeigt sich u.a. in der Inszenierung #MOMENT!, in der zwei Bühnen in Hamburg und Toulouse digital vernetzt werden. Außerdem entwickelt sie neue Digital- und Hybridformate für die Bühne und per Live-Stream. 2017 gründet und etabliert sie außerdem das Hamburger AUSSICHT Festival – eine Plattform für Künstler:innen mit und ohne Behinderung. Neben der Theaterleitung entstehen weiterhin Arbeiten im Bereich der Regie und Bühne für die regionale und überregionale freie Szene."
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: '2022 erhält Francoise Hüsges den '
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'https://theaterpreis-hamburg.org'
+                  rel: null
+                  target: null
+                  title: null
+            text: 'Theaterpreis Hamburg »Rolf Mares«'
+          -
+            type: text
+            text: ' in der Kategorie »'
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::4f100bf4-619c-4ee9-858c-fd72e81e0054'
+                  rel: null
+                  target: null
+                  title: null
+            text: 'Sonderpreis für die Leitung des monsun.theater'
+          -
+            type: text
+            text: «.
+      -
+        type: set
+        attrs:
+          values:
+            type: video
+            video_url: 'https://vimeo.com/773546857'
+            caption: 'Theaterpreis Hamburg 2022 für Francoise Hüsges'
+            do_not_track: true
       -
         type: paragraph
         content:

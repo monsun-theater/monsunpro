@@ -3,7 +3,7 @@ id: home
 blueprint: homepage
 title: Startseite
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1668679513
+updated_at: 1669536251
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -28,9 +28,30 @@ hero_featured_sect:
         attr_title: 'Mehr lesen'
         attr_aria: 'Mehr über das 26. Internationales Solo-Tanz-Theater-Festival aus Stuttgart lesen'
     type: featured
-    enabled: true
+    enabled: false
     titelzusatz_zeigen: true
     subtitle: '26. Internationales Solo-Tanz-Theater-Festival Stuttgart'
+    overlay_color: neutral-300
+  -
+    title: 'Theaterpreis Hamburg 2022'
+    titelzusatz_zeigen: false
+    title_desc: 'für Francoise Hüsges in der Kategorie Sonderpreis'
+    einfarbiger_hintergrund: false
+    featured_image: aktuelles/2022-11-21/Preisverleihung.jpg
+    buttons:
+      -
+        label: 'Mehr lesen'
+        target_blank: false
+        link_type: entry
+        entry: 4f100bf4-619c-4ee9-858c-fd72e81e0054
+        url: null
+        email: null
+        tel: null
+        asset: null
+        attr_title: 'Mehr lesen'
+        attr_aria: 'Mehr über die Preisverleihung lesen'
+    type: featured
+    enabled: false
     overlay_color: neutral-300
   -
     title: 'Das Bellen der Hunde'
@@ -90,9 +111,8 @@ page_builder:
             text: .
 demnachst_verstecken: false
 aktuelles_eintraege:
+  - 4f100bf4-619c-4ee9-858c-fd72e81e0054
   - f56abf85-059b-4146-9f49-1f4fd051b9a4
 spielzeit_eintraege:
-  - 277a12ec-2718-4e8d-82a1-7d0749ff0b3c
-  - 48154ad4-1764-449a-a007-7b1f106f38ee
   - c53a40b8-e334-4e17-bc9c-2c8b7c687da5
 ---
