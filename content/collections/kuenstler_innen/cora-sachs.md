@@ -205,6 +205,31 @@ page_builder:
               -
                 type: italic
             text: '(Regie & Kostüm & Figuren)'
+          -
+            type: hard_break
+            marks:
+              -
+                type: italic
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::82ca7f0f-d5d4-4e21-9d07-b75f6e1b930b'
+                  rel: null
+                  target: null
+                  title: null
+            text: 'ANATOMIE DER GUTEN HOFFNUNG – TEIL 1'
+          -
+            type: text
+            text: "\_"
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: '(Regie & Kostüm & Figuren)'
       -
         type: set
         attrs:
@@ -237,5 +262,5 @@ page_builder:
     type: article
     enabled: true
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1664176402
+updated_at: 1671031936
 ---

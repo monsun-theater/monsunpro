@@ -3,7 +3,7 @@ id: home
 blueprint: homepage
 title: Startseite
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1669536251
+updated_at: 1671057167
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -54,11 +54,11 @@ hero_featured_sect:
     enabled: false
     overlay_color: neutral-300
   -
-    title: 'Das Bellen der Hunde'
+    title: 'Das Bellen<br>der Hunde'
     titelzusatz_zeigen: true
     subtitle: 'von Michael Alexander Müller'
     einfarbiger_hintergrund: false
-    featured_image: produktionen/das_bellen_der_hunde/das_bellen_der_hunde_07_c_g2_baraniak.jpg
+    featured_image: produktionen/das_bellen_der_hunde/das_bellen_der_hunde_35_c_g2_baraniak.jpg
     buttons:
       -
         label: 'Mehr lesen'
@@ -73,7 +73,7 @@ hero_featured_sect:
         attr_aria: 'Mehr über „Das Bellen der Hunde“ lesen'
     type: featured
     enabled: true
-    overlay_color: neutral-100
+    overlay_color: neutral-300
 anzahl_vorstellungen_in_demnaechst: 3
 anzahl_eintraege_in_aktuelles: 2
 anzahl_stuecke_in_spielzeit_component: 2
@@ -112,7 +112,7 @@ page_builder:
 demnachst_verstecken: false
 aktuelles_eintraege:
   - 4f100bf4-619c-4ee9-858c-fd72e81e0054
-  - f56abf85-059b-4146-9f49-1f4fd051b9a4
 spielzeit_eintraege:
   - c53a40b8-e334-4e17-bc9c-2c8b7c687da5
+  - 82ca7f0f-d5d4-4e21-9d07-b75f6e1b930b
 ---
