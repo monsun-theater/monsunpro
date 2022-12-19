@@ -3,7 +3,7 @@ id: home
 blueprint: homepage
 title: Startseite
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1671057167
+updated_at: 1671317660
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -74,7 +74,7 @@ hero_featured_sect:
     type: featured
     enabled: true
     overlay_color: neutral-300
-anzahl_vorstellungen_in_demnaechst: 3
+anzahl_vorstellungen_in_demnaechst: 4
 anzahl_eintraege_in_aktuelles: 2
 anzahl_stuecke_in_spielzeit_component: 2
 seo_title: Startseite
@@ -111,6 +111,7 @@ page_builder:
             text: .
 demnachst_verstecken: false
 aktuelles_eintraege:
+  - 28d83c7c-2966-4907-97b5-73b89ad84d3f
   - 4f100bf4-619c-4ee9-858c-fd72e81e0054
 spielzeit_eintraege:
   - c53a40b8-e334-4e17-bc9c-2c8b7c687da5
