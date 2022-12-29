@@ -3,7 +3,7 @@ id: home
 blueprint: homepage
 title: Startseite
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1671317660
+updated_at: 1672155404
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -11,48 +11,6 @@ sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 template: home
 hero_featured_sect:
-  -
-    featured_image: produktionen/gala_der_preistraeger_innnen_solotanz/gala_der_preistraegerinnen_solotanz_social_media_c_jo_grabowski.jpg
-    einfarbiger_hintergrund: false
-    title: 'Gala der Preisträger:innen'
-    buttons:
-      -
-        label: 'Mehr lesen'
-        target_blank: false
-        link_type: entry
-        entry: 48154ad4-1764-449a-a007-7b1f106f38ee
-        url: null
-        email: null
-        tel: null
-        asset: null
-        attr_title: 'Mehr lesen'
-        attr_aria: 'Mehr über das 26. Internationales Solo-Tanz-Theater-Festival aus Stuttgart lesen'
-    type: featured
-    enabled: false
-    titelzusatz_zeigen: true
-    subtitle: '26. Internationales Solo-Tanz-Theater-Festival Stuttgart'
-    overlay_color: neutral-300
-  -
-    title: 'Theaterpreis Hamburg 2022'
-    titelzusatz_zeigen: false
-    title_desc: 'für Francoise Hüsges in der Kategorie Sonderpreis'
-    einfarbiger_hintergrund: false
-    featured_image: aktuelles/2022-11-21/Preisverleihung.jpg
-    buttons:
-      -
-        label: 'Mehr lesen'
-        target_blank: false
-        link_type: entry
-        entry: 4f100bf4-619c-4ee9-858c-fd72e81e0054
-        url: null
-        email: null
-        tel: null
-        asset: null
-        attr_title: 'Mehr lesen'
-        attr_aria: 'Mehr über die Preisverleihung lesen'
-    type: featured
-    enabled: false
-    overlay_color: neutral-300
   -
     title: 'Das Bellen<br>der Hunde'
     titelzusatz_zeigen: true
@@ -74,7 +32,7 @@ hero_featured_sect:
     type: featured
     enabled: true
     overlay_color: neutral-300
-anzahl_vorstellungen_in_demnaechst: 4
+anzahl_vorstellungen_in_demnaechst: 7
 anzahl_eintraege_in_aktuelles: 2
 anzahl_stuecke_in_spielzeit_component: 2
 seo_title: Startseite
@@ -115,5 +73,7 @@ aktuelles_eintraege:
   - 4f100bf4-619c-4ee9-858c-fd72e81e0054
 spielzeit_eintraege:
   - c53a40b8-e334-4e17-bc9c-2c8b7c687da5
+  - e4212489-2476-45d4-8d56-6d5a0921c6e0
+  - 7d64f06d-4441-4755-a61f-a7ea44487e45
   - 82ca7f0f-d5d4-4e21-9d07-b75f6e1b930b
 ---
