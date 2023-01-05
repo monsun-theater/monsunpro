@@ -23,6 +23,52 @@ data:
           type: telefonnummer
           enabled: false
     -
+      name: 'Amelie Möller'
+      rolle: 'Presse & Kommunikation'
+      e-mail-adresse:
+        -
+          e-mail: info@monsun.theater
+          extra_info_email: false
+          type: neue_e-mail-adresse
+          enabled: true
+        -
+          e-mail: presse@monsun.theater
+          extra_info_email: false
+          type: neue_e-mail-adresse
+          enabled: true
+      telefonnummer:
+        -
+          nummer: '+49403903148'
+          extra_info_telefon: false
+          type: telefonnummer
+          enabled: true
+      extra_info_toggle: false
+      type: neues_mitgleid
+      enabled: true
+    -
+      name: 'Meike Krämer'
+      rolle: 'Presse & Kommunikation'
+      e-mail-adresse:
+        -
+          e-mail: info@monsun.theater
+          extra_info_email: false
+          type: neue_e-mail-adresse
+          enabled: true
+        -
+          e-mail: presse@monsun.theater
+          extra_info_email: false
+          type: neue_e-mail-adresse
+          enabled: true
+      telefonnummer:
+        -
+          nummer: '+49403903148'
+          extra_info_telefon: false
+          type: telefonnummer
+          enabled: true
+      extra_info_toggle: false
+      type: neues_mitgleid
+      enabled: true
+    -
       name: 'Kianosh Kinz'
       role_list:
         - Technik
@@ -44,6 +90,24 @@ data:
           enabled: false
     -
       name: 'Tim Passgang'
+      rolle: Technik
+      e-mail-adresse:
+        -
+          e-mail: technik@monsun.theater
+          extra_info_email: false
+          type: neue_e-mail-adresse
+          enabled: true
+      telefonnummer:
+        -
+          nummer: '+49403903148'
+          extra_info_telefon: false
+          type: telefonnummer
+          enabled: false
+      extra_info_toggle: false
+      type: neues_mitgleid
+      enabled: true
+    -
+      name: 'Katharina Theßeling'
       rolle: Technik
       e-mail-adresse:
         -
