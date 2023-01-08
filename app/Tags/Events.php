@@ -18,7 +18,7 @@ class Events extends CollectionTag
         );
     }
 
-    /**
+    /**updated
      * @return string|array
      */
     public function pastPerformances()
