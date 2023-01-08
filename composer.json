@@ -9,7 +9,7 @@
     ],
     "type": "project",
     "require": {
-        "php": "^8.0",
+        "php": "^7.3",
         "edalzell/forma": "1.0",
         "fideloper/proxy": "^4.2",
         "fruitcake/laravel-cors": "^2.0",
