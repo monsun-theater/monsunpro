@@ -21,10 +21,15 @@ class Events extends CollectionTag
     /**
      * @return string|array
      */
-    public function future()
+    public function pastPerformances()
     {
-        return $this->outputDates($this->getDates());
+    return $this->outputDates($this->getDates('pastPerformances'));
     }
+
+public function future()
+{
+    return $this->outputDates($this->getDates('future'));
+}
 
     public function premieres()
     {
@@ -57,24 +62,32 @@ class Events extends CollectionTag
         return $this->getDates()->count();
     }
 
-    private function getDates(): Collection
+    private function getDates(string $type = 'future'): Collection
     {
-        $this->params->put('from', 'veranstaltungen');
-        $limit = $this->params->pull('limit');
+    $this->params->put('from', 'veranstaltungen');
+    $limit = $this->params->pull('limit');
 
-        $events = parent::index();
+    $events = parent::index();
 
-        if ($as = $this->params->get('as')) {
-            $events = $events[$as];
-        }
-
-        return $events
-            ->flatMap(fn (Entry $event) => collect($event->get('performance_dates'))
-                ->map(fn (array $date) => array_merge($event->toAugmentedArray(), $date))
-            )->filter(fn (array $event) => Carbon::parse(Arr::get($event, 'perf_date')) > now())
-            ->sortBy(fn (array $event) => Carbon::parse(Arr::get($event, 'perf_date')))
-            ->take($limit);
+    if ($as = $this->params->get('as')) {
+        $events = $events[$as];
     }
+
+    $dates = $events
+        ->flatMap(fn (Entry $event) => collect($event->get('performance_dates'))
+            ->map(fn (array $date) => array_merge($event->toAugmentedArray(), $date))
+        )
+        ->sortBy(fn (array $event) => Carbon::parse(Arr::get($event, 'perf_date')));
+
+    if ($type === 'pastPerformances') {
+        $dates = $dates->filter(fn (array $event) => Carbon::parse(Arr::get($event, 'perf_date')) <= now());
+    } elseif ($type === 'future') {
+        $dates = $dates->filter(fn (array $event) => Carbon::parse(Arr::get($event, 'perf_date')) > now());
+    }
+
+    return $dates->take($limit);
+    }
+
 
     private function outputDates(Collection $dates): array
     {

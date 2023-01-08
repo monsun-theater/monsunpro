@@ -1,43 +1,61 @@
 <!-- Aktuelles -->
-<div class="pt-3 text-3xl lg:text-4xl text-black dark:text-white">Aktuelles</div>
+<div class="pt-3 text-3xl lg:text-4xl text-black dark:text-white">
+    Aktuelles
+</div>
 {{ aktuelles_eintraege }}
 <div class="md:grid grid-cols-12 gap-4 items-baseline pb-3">
     <div class="col-span-4">
-        <div class="sm:text-lg text-black dark:text-white">{{ date format_localized="%A, %e. %B %Y" }}</div>
+        <div class="sm:text-lg text-black dark:text-white">
+            {{ date iso_format="dddd, Do MMMM YYYY" }}
+        </div>
     </div>
-    <div class="col-span-8"><a href="{{ url }}">
-            <div class="text-2xl sm:text-3xl font-bold leading-tight text-black dark:text-white">
-                {{ title }}</div>
-            <div class="sm:text-lg pb-2 text-black dark:text-white">{{ untertitel }}</div></a>
-            
-            {{ if video_link }}
-            {{# A sizeable video rendered in a responsive container with an optional caption. #}}
-<div class="size-lg pb-3">
-    <div class="aspect-w-16 aspect-h-9">
-        <iframe class="absolute top-0 left-0 w-full h-full" width="100%" height="auto"
-            src="{{ akt_video_url | embed_url }}{{ if akt_do_not_track }}?dnt=1{{ /if }}" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-    </div>
-</div>
-            {{ else }}
-            <a href="{{ url }}"> <figure class="pb-3">{{ partial:components/picture class="w-full"}}</figure></a>
+    <div class="col-span-8">
+        <a href="{{ url }}">
+            <div
+                class="text-2xl sm:text-3xl font-bold leading-tight text-black dark:text-white"
+            >
+                {{ title }}
+            </div>
+            <div class="sm:text-lg pb-2 text-black dark:text-white">
+                {{ untertitel }}
+            </div></a
+        >
+
+        {{ if video_link }} {{# A sizeable video rendered in a responsive
+        container with an optional caption. #}}
+        <div class="size-lg pb-3">
+            <div class="aspect-w-16 aspect-h-9">
+                <iframe
+                    class="absolute top-0 left-0 w-full h-full"
+                    width="100%"
+                    height="auto"
+                    src="{{ akt_video_url | embed_url }}{{ if akt_do_not_track }}?dnt=1{{ /if }}"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                ></iframe>
+            </div>
+        </div>
+        {{ else }}
+        <a href="{{ url }}">
+            <figure class="pb-3">
+                {{ partial:components/picture class="w-full"}}
+            </figure></a
+        >
         {{ /if }}
-        <a href=" {{ url }}"
-            class="italic text-sm sm:text-base text-black dark:text-white hover:text-monsun dark:hover:text-monsun">
-            {{ page_builder limit="1" }}
-            {{ if bard }}
-            {{ bard where="type:text" limit="1" }}
-            {{ text | strip_tags | safe_truncate:300:... }}
-            {{ /bard }}
-            {{# Or a field called `text`. #}}
-            {{ elseif text }}
-            {{ text safe_truncate="180|..." }}
-            {{ /if }}
-            {{ /page_builder }}<span class="text-monsun font-bold">→</span>
+        <a
+            href=" {{ url }}"
+            class="italic text-sm sm:text-base text-black dark:text-white hover:text-monsun dark:hover:text-monsun"
+        >
+            {{ page_builder limit="1" }} {{ if bard }} {{ bard where="type:text"
+            limit="1" }} {{ text | strip_tags | safe_truncate:300:... }} {{
+            /bard }} {{# Or a field called `text`. #}} {{ elseif text }} {{ text
+            safe_truncate="180|..." }} {{ /if }} {{ /page_builder }}<span
+                class="text-monsun font-bold"
+                >→</span
+            >
         </a>
     </div>
     <span class="pb-6"></span>
-
 </div>
 {{ /aktuelles_eintraege }}

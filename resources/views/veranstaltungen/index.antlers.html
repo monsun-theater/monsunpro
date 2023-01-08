@@ -1,24 +1,28 @@
 <div class="outer-grid fluid-container">
     <!-- Month's name -->
-    {{ events:future group_by_format="M-Y" }}
-    {{ if no_results }}
+    {{ events:future group_by_format="M-Y" }} {{ if no_results }}
     <!-- message 'No Events'  -->
     <div class="text-3xl text-black lg:text-4xl dark:text-white">Spielplan</div>
-    <div class="text-2xl text-black dark:text-white pb-9">Zur Zeit keine Vorstellungen.</div>
+    <div class="text-2xl text-black dark:text-white pb-9">
+        Zur Zeit keine Vorstellungen.
+    </div>
     {{ else }}
     <div class="text-3xl text-black lg:text-4xl dark:text-white">Spielplan</div>
     {{ date_groups }}
-    <div class="text-2xl text-black lg:text-3xl dark:text-white">{{ date_group format_localized="%B %G" }}
+    <div class="text-2xl text-black lg:text-3xl dark:text-white">
+        {{ date_group iso_format="MMMM YYYY" }}
     </div>
-    {{ entries }}
-    {{ partial:components/monsun_performance_wallpiece}}
-    {{ /entries }}
-    {{ /date_groups }}
-    {{ /if }}
-    {{ /events:future }}
-    <button aria-label="Zur Startseite"
-        class="max-w-sm mx-auto sm:max-w-none flex justify-center text-black dark:text-white">
-        <a href="/" class="flex items-center justify-center px-4 py-3 border-2 text-md font-bold tracking-wider uppercase shadow-sm
-                              hover:bg-monsun dark:hover:bg-monsun sm:px-8">Zur Startseite</a>
+    {{ entries }} {{ partial:components/monsun_performance_wallpiece}} {{
+    /entries }} {{ /date_groups }} {{ /if }} {{ /events:future }}
+    <button
+        aria-label="Zur Startseite"
+        class="max-w-sm mx-auto sm:max-w-none flex justify-center text-black dark:text-white"
+    >
+        <a
+            href="/"
+            class="flex items-center justify-center px-4 py-3 border-2 text-md font-bold tracking-wider uppercase shadow-sm
+                              hover:bg-monsun dark:hover:bg-monsun sm:px-8"
+            >Zur Startseite</a
+        >
     </button>
 </div>

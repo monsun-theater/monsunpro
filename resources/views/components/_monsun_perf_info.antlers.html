@@ -6,7 +6,7 @@
         {{ /if }} #}}
         {{ if urauffuehrung_zeigen }}<div class="text-sm text-black dark:text-white"> <span
                 class="font-bold ">Premiere:&nbsp</span>
-            {{ premiere_date format_localized="%A, %e. %B %Y" }} | {{ premiere_date format_localized="%H:%M" }} Uhr
+            {{ premiere_date iso_format="dddd, Do MMMM YYYY" }} | {{ premiere_date iso_format="H:mm" }} Uhr
         </div>
         {{ /if }}
         {{ if dauer_zeigen }} <div class="text-sm text-black dark:text-white"><span

@@ -1,11 +1,33 @@
-<main class="outer-grid fluid-container"> 
-    {{ collection:veranstaltungen sort="title:asc"}}
-    <div class="bg-darkWhite dark:bg-darkGray p-3">
-
-<div class="text-2xl text-black lg:text-3xl dark:text-white">{{ title }}</div>
-{{performance_dates}}
-<div class="text-lg text-black lg:text-xl dark:text-white">{{ perf_date }}<br></div>
-{{/performance_dates}}
+<div class="outer-grid fluid-container">
+    <!-- Month's name -->
+    {{ events:pastPerformances from="Veranstaltungen" group_by_format="M-Y"
+    status="*" }} {{ if no_results }}
+    <!-- message 'No Events'  -->
+    <div class="text-3xl text-black lg:text-4xl dark:text-white">
+        Vergangene
+    </div>
+    <div class="text-2xl text-black dark:text-white pb-9">
+        Zur Zeit keine Vorstellungen.
+    </div>
+    {{ else }}
+    <div class="text-3xl text-black lg:text-4xl dark:text-white">
+        Vergangene
+    </div>
+    {{ date_groups }}
+    <div class="text-2xl text-black lg:text-3xl dark:text-white">
+        {{ date_group iso_format="MMMM YYYY" }}
+    </div>
+    {{ entries }} {{ partial:components/monsun_pastperformance_wallpiece}} {{
+    /entries }} {{ /date_groups }} {{ /if }} {{ /events:pastPerformances }}
+    <button
+        aria-label="Zur Startseite"
+        class="max-w-sm mx-auto sm:max-w-none flex justify-center text-black dark:text-white"
+    >
+        <a
+            href="/"
+            class="flex items-center justify-center px-4 py-3 border-2 text-md font-bold tracking-wider uppercase shadow-sm
+                              hover:bg-monsun dark:hover:bg-monsun sm:px-8"
+            >Zur Startseite</a
+        >
+    </button>
 </div>
-{{ /collection:veranstaltungen }}
-</main>
