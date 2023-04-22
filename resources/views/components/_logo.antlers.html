@@ -1,4 +1,13 @@
 {{# Site logo with width attribute. #}}
 <a aria-label="Logo {{ config:app:name }}" href="{{ site:url }}">
-    <img src="/assets/site-setup/logos/monsun-logo-wordmark.svg" alt="{{ config:app:name }}" />
+    <picture>
+        <source
+            srcset="/assets/site-setup/logos/monsun-logo-wordmark.svg"
+            media="(prefers-color-scheme: dark)"
+        />
+        <img
+            src="/assets/site-setup/logos/monsun-logo-wordmark-black-text.svg"
+            alt="{{ config:app:name }}"
+        />
+    </picture>
 </a>
