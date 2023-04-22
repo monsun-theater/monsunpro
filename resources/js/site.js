@@ -1,3 +1,1 @@
-import 'alpinejs';
-import 'focus-visible';
-import 'Modernizr';
+import "focus-visible";

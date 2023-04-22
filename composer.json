@@ -9,17 +9,17 @@
     ],
     "type": "project",
     "require": {
-        "php": "^7.3",
-        "edalzell/forma": "1.0",
+        "php": "^8.0",
+        "edalzell/forma": "^1.2",
         "fideloper/proxy": "^4.2",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",
-        "jonassiewertsen/statamic-external-link": "1.4.1",
+        "jonassiewertsen/statamic-external-link": "^1.5",
         "laravel/framework": "^8.0",
         "laravel/tinker": "^2.0",
         "pixelfear/composer-dist-plugin": "^0.1",
-        "silentz/mailchimp": "2.5.7",
-        "statamic/cms": "3.2.*"
+        "silentz/mailchimp": "^2.5",
+        "statamic/cms": "^3.4"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.5",
@@ -27,12 +27,15 @@
         "fzaninotto/faker": "^1.9.1",
         "mockery/mockery": "^1.3.1",
         "nunomaduro/collision": "^5.0",
-        "phpunit/phpunit": "^9.3"
+        "phpunit/phpunit": "^10"
     },
     "config": {
         "optimize-autoloader": true,
         "preferred-install": "dist",
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "pixelfear/composer-dist-plugin": true
+        }
     },
     "extra": {
         "laravel": {

@@ -26,6 +26,14 @@ page_builder:
         content:
           -
             type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::65aefd95-aedc-4377-9fbb-e842ec4cf256'
+                  rel: null
+                  target: null
+                  title: null
             text: 'WAHNSINN AUS HEIMWEH'
           -
             type: text
@@ -105,8 +113,58 @@ page_builder:
               -
                 type: italic
             text: (Spiel)
+          -
+            type: hard_break
+            marks:
+              -
+                type: italic
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::81124f83-4226-456b-b267-41bc526ecfef'
+                  rel: null
+                  target: null
+                  title: null
+            text: 'ANATOMIE DER GUTEN HOFFNUNG – TEIL 2'
+          -
+            type: text
+            text: "\_"
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: (Spiel)
+          -
+            type: hard_break
+            marks:
+              -
+                type: italic
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::2035a78b-61c6-468d-849c-1c5ba02e092b'
+                  rel: null
+                  target: null
+                  title: null
+            text: 'ANATOMIE DER GUTEN HOFFNUNG – TEIL 3'
+          -
+            type: text
+            text: "\_"
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: (Spiel)
     type: article
     enabled: true
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1671031823
+updated_at: 1679575934
 ---

@@ -36,6 +36,31 @@ page_builder:
               -
                 type: link
                 attrs:
+                  href: /veranstaltungen/wir-sind-in-die-welt-gevoegelt-aber-koennen-nicht-fliegen-teil-ii
+                  rel: null
+                  target: null
+                  title: null
+            text: 'WIR SIND IN DIE WELT GEVÖGELT, ABER KÖNNEN NICHT FLIEGEN - Teil II'
+          -
+            type: text
+            text: "\_"
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: (Schnitt)
+          -
+            type: hard_break
+            marks:
+              -
+                type: italic
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
                   href: 'https://monsun.theater/veranstaltungen/wenn-wir-tanzen-summt-die-welt'
                   rel: null
                   target: null
@@ -49,7 +74,7 @@ page_builder:
             marks:
               -
                 type: italic
-            text: '(Video & Live Visuals)'
+            text: '(Video & Live-Visuals)'
           -
             type: hard_break
           -
@@ -71,7 +96,7 @@ page_builder:
             marks:
               -
                 type: italic
-            text: '(Video & Live Visuals)'
+            text: '(Video & Live-Visuals)'
           -
             type: hard_break
             marks:
@@ -96,16 +121,19 @@ page_builder:
             marks:
               -
                 type: italic
-            text: '(Video & Live Visuals)'
+            text: '(Video & Live-Visuals)'
           -
             type: hard_break
+            marks:
+              -
+                type: italic
           -
             type: text
             marks:
               -
                 type: link
                 attrs:
-                  href: 'https://monsun.theater/veranstaltungen/bruchlinien'
+                  href: 'statamic://entry::d9305f9c-af1b-44c6-9a1b-f3a596f61b3a'
                   rel: null
                   target: null
                   title: null
@@ -118,7 +146,32 @@ page_builder:
             marks:
               -
                 type: italic
-            text: '(Video & Live Visuals)'
+            text: '(Video & Live-Visuals)'
+          -
+            type: hard_break
+            marks:
+              -
+                type: italic
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::cdf42f89-6704-4ec1-8f26-fcfae3ded255'
+                  rel: null
+                  target: null
+                  title: null
+            text: 'BRUCHLINIEN – ORT DES GESCHEHENS: EINE WOHNUNG'
+          -
+            type: text
+            text: ' '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: '(Video & Live-Visuals)'
           -
             type: hard_break
             marks:
@@ -143,7 +196,7 @@ page_builder:
             marks:
               -
                 type: italic
-            text: '(Video & Live Visuals)'
+            text: '(Video & Live-Visuals)'
           -
             type: hard_break
             marks:
@@ -168,7 +221,7 @@ page_builder:
             marks:
               -
                 type: italic
-            text: '(Live Visuals)'
+            text: (Live-Visuals)
           -
             type: hard_break
             marks:
@@ -193,7 +246,7 @@ page_builder:
             marks:
               -
                 type: italic
-            text: '(Live Visuals & Animation)'
+            text: '(Live-Visuals & Animation)'
           -
             type: hard_break
             marks:
@@ -218,9 +271,59 @@ page_builder:
             marks:
               -
                 type: italic
-            text: '(Live Visuals & Animation)'
+            text: '(Live-Visuals & Animation)'
+          -
+            type: hard_break
+            marks:
+              -
+                type: italic
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::81124f83-4226-456b-b267-41bc526ecfef'
+                  rel: null
+                  target: null
+                  title: null
+            text: 'ANATOMIE DER GUTEN HOFFNUNG – TEIL 2'
+          -
+            type: text
+            text: "\_"
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: '(Live-Visuals & Animation)'
+          -
+            type: hard_break
+            marks:
+              -
+                type: italic
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::2035a78b-61c6-468d-849c-1c5ba02e092b'
+                  rel: null
+                  target: null
+                  title: null
+            text: 'ANATOMIE DER GUTEN HOFFNUNG – TEIL 3'
+          -
+            type: text
+            text: "\_"
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: '(Live-Visuals & Animation)'
     type: article
     enabled: true
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1671031911
+updated_at: 1680005544
 ---

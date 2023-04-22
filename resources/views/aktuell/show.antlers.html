@@ -19,7 +19,7 @@
             {{ if video_link }} {{# A sizeable video rendered in a responsive
             container with an optional caption. #}}
             <div class="size-lg">
-                <div class="aspect-w-16 aspect-h-9">
+                <div class="relative aspect-video">
                     <iframe
                         class="absolute top-0 left-0 w-full h-full"
                         width="100%"
@@ -58,10 +58,10 @@
             {{ collection:previous in="blog" as="posts" limit="2"
             sort="date:asc" }} {{ if no_results }} {{ /if }} {{ posts }}
             <button
-                class=" text-black dark:text-white pt-3 font-bold tracking-widest uppercase leading-none select-none whitespace-normal text-lg hover:text-monsun dark:hover:text-monsun"
+                class="text-black dark:text-white pt-3 font-bold tracking-widest uppercase leading-none select-none whitespace-normal text-lg hover:text-monsun dark:hover:text-monsun"
             >
                 <a href="{{ url }}"
-                    ><span class="text-monsun font-bold ">←</span> {{ title }}
+                    ><span class="text-monsun font-bold">←</span> {{ title }}
                 </a>
             </button>
             {{ /posts }} {{ /collection:previous }} {{ collection:next

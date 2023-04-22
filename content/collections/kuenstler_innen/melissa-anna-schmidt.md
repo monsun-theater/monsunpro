@@ -1,8 +1,8 @@
 ---
 id: 621b9232-8742-408e-87b1-8f74ba9dcf0c
+blueprint: kuenstler_innen
 title: 'Melissa Anna Schmidt'
 hat_eigene_website_has_own_website: false
-kuenstler_artist_website_url_link: 'https://'
 biographie_eintragen_create_artist_s_biography: true
 page_builder:
   -
@@ -53,8 +53,9 @@ page_builder:
                 type: link
                 attrs:
                   href: 'https://monsun.theater/veranstaltungen/das-lange-nachspiel-einer-kurzen-mitteilung'
-                  target: null
                   rel: null
+                  target: null
+                  title: null
             text: 'DAS LANGE NACHSPIEL EINER KURZEN MITTEILUNG'
           -
             type: text
@@ -70,18 +71,47 @@ page_builder:
               -
                 type: link
                 attrs:
-                  href: 'https://monsun.theater/veranstaltungen/bruchlinien'
-                  target: null
+                  href: 'statamic://entry::d9305f9c-af1b-44c6-9a1b-f3a596f61b3a'
                   rel: null
+                  target: null
+                  title: null
             text: BRUCHLINIEN
+          -
+            type: text
+            text: ' '
           -
             type: text
             marks:
               -
                 type: italic
-            text: ' (Spiel)'
+            text: (Spiel)
+          -
+            type: hard_break
+            marks:
+              -
+                type: italic
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::cdf42f89-6704-4ec1-8f26-fcfae3ded255'
+                  rel: null
+                  target: null
+                  title: null
+            text: 'BRUCHLINIEN – ORT DES GESCHEHENS: EINE WOHNUNG'
+          -
+            type: text
+            text: ' '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: (Spiel)
     type: article
     enabled: true
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1620148898
+updated_at: 1675690625
 ---

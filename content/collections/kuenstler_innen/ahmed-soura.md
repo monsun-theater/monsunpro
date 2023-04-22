@@ -1,8 +1,8 @@
 ---
 id: 605d1fff-6e51-4810-8b7c-9abdb2b7de9d
+blueprint: kuenstler_innen
 title: 'Ahmed Soura'
 hat_eigene_website_has_own_website: false
-kuenstler_artist_website_url_link: 'https://'
 biographie_eintragen_create_artist_s_biography: true
 page_builder:
   -
@@ -31,6 +31,14 @@ page_builder:
         content:
           -
             type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::6e78c2eb-a566-469c-b5b9-b517672b844c'
+                  rel: null
+                  target: null
+                  title: null
             text: HAUPTROLLE
           -
             type: text
@@ -47,8 +55,9 @@ page_builder:
                 type: link
                 attrs:
                   href: 'https://monsun.theater/veranstaltungen/why-not'
-                  target: null
                   rel: null
+                  target: null
+                  title: null
             text: 'WHY NOT?'
           -
             type: text
@@ -68,8 +77,9 @@ page_builder:
                 type: link
                 attrs:
                   href: 'https://monsun.theater/veranstaltungen/der-nussknacker'
-                  target: null
                   rel: null
+                  target: null
+                  title: null
             text: 'DER NUSSKNACKER'
           -
             type: text
@@ -79,6 +89,31 @@ page_builder:
             text: ' (Tanz & Choreografie)'
           -
             type: hard_break
+            marks:
+              -
+                type: italic
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::61bbc0a3-5ac0-4a3a-8aac-f95834419f12'
+                  rel: null
+                  target: null
+                  title: null
+            text: '#MOMENT!'
+          -
+            type: text
+            text: ' '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: '(Choreografische Beratung)'
+          -
+            type: hard_break
           -
             type: text
             marks:
@@ -86,8 +121,9 @@ page_builder:
                 type: link
                 attrs:
                   href: 'https://monsun.theater/veranstaltungen/fly'
-                  target: null
                   rel: null
+                  target: null
+                  title: null
             text: FLY
           -
             type: text
@@ -126,5 +162,5 @@ page_builder:
     type: article
     enabled: true
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1619973229
+updated_at: 1675325114
 ---

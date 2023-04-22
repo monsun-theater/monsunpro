@@ -9,7 +9,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1672661270
+updated_at: 1674486137
 template: presse
 cinema_monsun: true
 do_not_track_toggle: true
@@ -115,7 +115,9 @@ page_builder:
     enabled: true
   -
     title: Pressekontakt
-    text: 'Für weitere Anfragen schreiben Sie uns gerne eine Mail.'
+    text: |-
+      Für weitere Anfragen schreiben Sie uns gerne eine Mail.
+      Ansprechpartnerinnen: Amelie Möller & Meike Krämer
     buttons:
       -
         label: 'Mail Presse'

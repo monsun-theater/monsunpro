@@ -1,9 +1,12 @@
-{{# The sites header rendered on each page. #}}
-{{ if monsun_alert_msg }} {{ partial:components/monsun_alert}} {{ /if}}
-<header class="bg-black">
+{{# The sites header rendered on each page. #}} {{ if monsun_alert_msg }} {{
+partial:components/monsun_alert}} {{ /if}}
+<header class="bg-white dark:bg-black">
     <div class="pt-2 px-3">
-        {{# Make partials you want to use for the header or use and edit premade examples like the following ones. #}}
-        <div class="block max-w-xs mx-auto sm:hidden px-8">{{ partial:components/logo }}</div>
+        {{# Make partials you want to use for the header or use and edit premade
+        examples like the following ones. #}}
+        <div class="block max-w-xs mx-auto sm:hidden px-8">
+            {{ partial:components/logo }}
+        </div>
         {{ partial:navigation/monsun_main }}
     </div>
 </header>

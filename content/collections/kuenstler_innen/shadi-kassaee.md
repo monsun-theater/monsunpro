@@ -48,6 +48,28 @@ page_builder:
               -
                 type: link
                 attrs:
+                  href: 'statamic://entry::61bbc0a3-5ac0-4a3a-8aac-f95834419f12'
+                  rel: null
+                  target: null
+                  title: null
+            text: '#MOMENT!'
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: ' (Klavier)'
+          -
+            type: hard_break
+            marks:
+              -
+                type: italic
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
                   href: 'statamic://entry::c53a40b8-e334-4e17-bc9c-2c8b7c687da5'
                   rel: null
                   target: null
@@ -84,5 +106,5 @@ page_builder:
     type: article
     enabled: true
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1664184387
+updated_at: 1675261065
 ---

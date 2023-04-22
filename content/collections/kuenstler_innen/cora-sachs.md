@@ -32,24 +32,74 @@ page_builder:
         content:
           -
             type: text
-            text: 'Für ihre Inszenierung WENN WIR TANZEN, SUMMT DIE WELT im monsun.theater wird Cora Sachs mit dem Theaterpreis Hamburg „Rolf Mares“ 2018 ausgezeichnet. 2019 folgt der nächste Theaterpreis Hamburg für die Produktion DAS HIRN IST EIN TAUBENSCHLAG in der Kategorie „Herausragende Komposition & Musik“.'
+            text: 'Für ihre Inszenierung '
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::6ae66acd-254a-43cd-bfa4-139de32b6a75'
+                  rel: null
+                  target: null
+                  title: null
+            text: 'WENN WIR TANZEN, SUMMT DIE WELT'
+          -
+            type: text
+            text: ' im monsun.theater wird Cora Sachs mit dem Theaterpreis Hamburg „Rolf Mares“ 2018 ausgezeichnet. 2019 folgt der nächste Theaterpreis Hamburg für die Produktion '
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::435f8ddd-2b45-4a0f-9089-79078f92bed4'
+                  rel: null
+                  target: null
+                  title: null
+            text: 'DAS HIRN IST EIN TAUBENSCHLAG'
+          -
+            type: text
+            text: ' in der Kategorie „Herausragende Komposition & Musik“.'
       -
         type: paragraph
         content:
           -
             type: text
-            text: 'WIR SIND IN DIE WELT GEVÖGELT, ABER KÖNNEN NICHT FLIEGEN - Teil II '
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::3f4d0ced-6e9b-4bbc-a73a-250a7e3fddcb'
+                  rel: null
+                  target: null
+                  title: null
+            text: 'WIR SIND IN DIE WELT GEVÖGELT, ABER KÖNNEN NICHT FLIEGEN - Teil II'
+          -
+            type: text
+            text: ' '
           -
             type: text
             marks:
               -
                 type: italic
-            text: '(Figuren & Regie)'
+            text: '(Regie & Figuren)'
           -
             type: hard_break
           -
             type: text
-            text: 'BROKEN HEART '
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::5adf536e-5125-460f-9ba2-c28eaeeef93e'
+                  rel: null
+                  target: null
+                  title: null
+            text: 'BROKEN HEART'
+          -
+            type: text
+            text: ' '
           -
             type: text
             marks:
@@ -129,6 +179,14 @@ page_builder:
                 type: italic
           -
             type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::65aefd95-aedc-4377-9fbb-e842ec4cf256'
+                  rel: null
+                  target: null
+                  title: null
             text: 'WAHNSINN AUS HEIMWEH'
           -
             type: text
@@ -230,6 +288,56 @@ page_builder:
               -
                 type: italic
             text: '(Regie & Kostüm & Figuren)'
+          -
+            type: hard_break
+            marks:
+              -
+                type: italic
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::81124f83-4226-456b-b267-41bc526ecfef'
+                  rel: null
+                  target: null
+                  title: null
+            text: 'ANATOMIE DER GUTEN HOFFNUNG – TEIL 2'
+          -
+            type: text
+            text: "\_"
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: '(Regie & Kostüm & Figuren)'
+          -
+            type: hard_break
+            marks:
+              -
+                type: italic
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::2035a78b-61c6-468d-849c-1c5ba02e092b'
+                  rel: null
+                  target: null
+                  title: null
+            text: 'ANATOMIE DER GUTEN HOFFNUNG – TEIL 3'
+          -
+            type: text
+            text: "\_"
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: '(Regie & Kostüm & Figuren)'
       -
         type: set
         attrs:
@@ -257,10 +365,8 @@ page_builder:
                 asset: null
                 attr_title: 'Website Cora Sachs'
                 attr_aria: 'Website Cora Sachs'
-      -
-        type: paragraph
     type: article
     enabled: true
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1671031936
+updated_at: 1679575754
 ---

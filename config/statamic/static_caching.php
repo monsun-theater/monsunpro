@@ -30,7 +30,7 @@ return [
 
         'half' => [
             'driver' => 'application',
-            'expiry' => null,
+            'expiry' => 5,
         ],
 
         'full' => [
@@ -56,6 +56,7 @@ return [
         '/nebeneingang',
         '/presse',
         '/password',
+        '/spielplan',
     ],
 
     /*

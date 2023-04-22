@@ -36,6 +36,31 @@ page_builder:
               -
                 type: link
                 attrs:
+                  href: 'statamic://entry::3f4d0ced-6e9b-4bbc-a73a-250a7e3fddcb'
+                  rel: null
+                  target: null
+                  title: null
+            text: 'WIR SIND IN DIE WELT GEVÖGELT, ABER KÖNNEN NICHT FLIEGEN - Teil II'
+          -
+            type: text
+            text: ' '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: (Bühne)
+          -
+            type: hard_break
+            marks:
+              -
+                type: italic
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
                   href: 'https://monsun.theater/veranstaltungen/wenn-wir-tanzen-summt-die-welt'
                   rel: null
                   target: null
@@ -119,8 +144,58 @@ page_builder:
               -
                 type: italic
             text: (Bühnenraum)
+          -
+            type: hard_break
+            marks:
+              -
+                type: italic
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::81124f83-4226-456b-b267-41bc526ecfef'
+                  rel: null
+                  target: null
+                  title: null
+            text: 'ANATOMIE DER GUTEN HOFFNUNG – TEIL 2'
+          -
+            type: text
+            text: "\_"
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: (Bühnenraum)
+          -
+            type: hard_break
+            marks:
+              -
+                type: italic
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::2035a78b-61c6-468d-849c-1c5ba02e092b'
+                  rel: null
+                  target: null
+                  title: null
+            text: 'ANATOMIE DER GUTEN HOFFNUNG – TEIL 3'
+          -
+            type: text
+            text: "\_"
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: (Bühnenraum)
     type: article
     enabled: true
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1671031875
+updated_at: 1679576005
 ---
