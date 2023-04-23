@@ -29,9 +29,6 @@ preferences:
         - title
         - slug
         - kategorie_farbe
-  assets:
-    assets:
-      mode: table
   forms:
     newsletter:
       columns:
@@ -46,3 +43,6 @@ preferences:
     -
       name: 'Startseite ‹ Seiten ‹ Collections'
       url: collections/pages/entries/home/home
+  assets:
+    assets:
+      mode: grid
