@@ -3,7 +3,7 @@ id: home
 blueprint: homepage
 title: Startseite
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1681746613
+updated_at: 1682261347
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -12,6 +12,7 @@ sitemap_priority: 0.5
 template: home
 hero_featured_sect:
   -
+    id: JK5EJIkt
     title: 'Anatomie der guten Hoffnung – Teil 2'
     titelzusatz_zeigen: true
     subtitle: 'LEBENDIGE PHANTOME'
@@ -19,14 +20,11 @@ hero_featured_sect:
     featured_image: produktionen/anatomie_der_guten_hoffnung/teil_2/anatomie_der_guten_hoffnung_teil2_23_c_g2_baraniak.jpg
     buttons:
       -
+        id: oX9twXvt
         label: 'Mehr lesen'
         target_blank: false
         link_type: entry
         entry: 81124f83-4226-456b-b267-41bc526ecfef
-        url: null
-        email: null
-        tel: null
-        asset: null
         attr_title: 'Mehr lesen'
         attr_aria: 'Mehr über „Anatomie der guten Hoffnung – Teil 2“ lesen'
     type: featured
@@ -34,6 +32,7 @@ hero_featured_sect:
     overlay_color: neutral-100
     title_desc: 'PREMIERE verschoben auf den 4. Mai 2023!'
   -
+    id: 2x5wQfLY
     title: Lordess
     titelzusatz_zeigen: false
     title_desc: 'Von THE GARDEN // performing arts'
@@ -42,48 +41,33 @@ hero_featured_sect:
     overlay_color: neutral-300
     buttons:
       -
+        id: kV3XVgBq
         label: 'Mehr lesen'
         target_blank: false
         link_type: entry
         entry: e41a6668-34a9-4fa4-92f9-636e76d27b9b
-        url: null
-        email: null
-        tel: null
-        asset: null
         attr_title: 'Mehr lesen'
         attr_aria: 'Mehr über „Lordess“ lesen'
     type: featured
     enabled: false
   -
+    id: UTt87PhN
     title: 'KRASS Kultur Crash Festival'
     titelzusatz_zeigen: false
     einfarbiger_hintergrund: false
-    featured_image: produktionen/krass_festival/2023/Krass-Kultur-Crash-Festival-2023.jpg
+    featured_image: produktionen/krass_festival/2023/tikke_tikke_raks_solo_14_c_mario_ilic.jpg
     buttons:
       -
-        label: 'Roma City Hamburg'
-        target_blank: false
-        link_type: entry
-        entry: 42d4bc58-0251-4462-8704-a8a262925560
-        url: null
-        email: null
-        tel: null
-        asset: null
-        attr_title: 'Roma City Hamburg'
-        attr_aria: 'Mehr über „Roma City Hamburg“ lesen'
-      -
-        label: 'Tikke Tikke / piece to piece Raks Solo'
+        id: vL2DVYe1
+        label: 'Tikke Tikke / piece to piece & Raks Solo'
         target_blank: false
         link_type: entry
         entry: 2eb5e5b5-9b16-4c69-910f-e5a6bc80197b
-        url: null
-        email: null
-        tel: null
-        asset: null
-        attr_title: 'Tikke Tikke / piece to piece Raks Solo'
-        attr_aria: 'Mehr über „Tikke Tikke / piece to piece Raks Solo“ lesen'
+        attr_title: 'Tikke Tikke / piece to piece & Raks Solo'
+        attr_aria: 'Mehr über „Tikke Tikke / piece to piece & Raks Solo“ lesen'
     type: featured
     enabled: true
+    overlay_color: neutral-400
 anzahl_vorstellungen_in_demnaechst: 4
 anzahl_eintraege_in_aktuelles: 2
 anzahl_stuecke_in_spielzeit_component: 2
@@ -94,6 +78,7 @@ og_description: 'Das Monsun-Theater (Eigenschreibweise: monsun.theater) ist das 
 spielzeit: 'Spielzeit 2022-2023'
 page_builder:
   -
+    id: bNPrLafc
     title: Newsletter
     text: 'Bleiben Sie im Kontakt mit dem monsun.theater! Einmal im Monat aktuelle Informationen zu unseren Veranstaltungen: Premieren, Festivals, Extra-Events und ein Blick hinter die Kulissen.'
     form: contact
