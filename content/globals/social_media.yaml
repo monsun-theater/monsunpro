@@ -2,6 +2,7 @@ title: 'Social media'
 data:
   social_media:
     -
+      id: yvJb7KMj
       url: monsuntheater
       prefix: 'https://www.facebook.com/'
       type: facebook
@@ -9,6 +10,7 @@ data:
       social_icon:
         - site-setup/social-media-icons/icon-facebook.svg
     -
+      id: 3h2EXqul
       url: monsun.theater/
       prefix: 'https://www.instagram.com/'
       type: instagram
@@ -16,6 +18,7 @@ data:
       social_icon:
         - site-setup/social-media-icons/icon-instagram.svg
     -
+      id: 9dW2ddrd
       url: channel/UCzHWAr2bLp8W0YfOVlVXSWg
       prefix: 'https://www.youtube.com/'
       type: youtube
@@ -23,6 +26,7 @@ data:
       social_icon:
         - site-setup/social-media-icons/icon-youtube.svg
     -
+      id: UHlUNIMO
       url: monsuntheater
       prefix: 'https://www.vimeo.com/'
       type: vimeo
@@ -30,6 +34,7 @@ data:
       social_icon:
         - site-setup/social-media-icons/icon-vimeo.svg
     -
+      id: HT81Dc96
       url: monsun_theater
       prefix: 'https://www.twitter.com/'
       type: twitter

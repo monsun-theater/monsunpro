@@ -8,40 +8,35 @@
                 <div class="text-lg text-black dark:text-white">
                     {{ config:app:name }}
                 </div>
-                {{ kontaktdaten }}
                 <div class="text-lg text-black dark:text-white">
-                    {{ strasse }} {{ hausnummer }}
+                    {{ kontaktdaten:strasse }} {{ kontaktdaten:hausnummer }}
                 </div>
                 <div class="text-lg text-black dark:text-white">
-                    {{ postleitzahl }} {{ wohnort}}
+                    {{ kontaktdaten:postleitzahl }} {{ kontaktdaten:wohnort }}
                 </div>
                 <div>
                     <a
                         class="text-lg text-black dark:text-white"
-                        href="tel:{{ telefonnummer }}"
-                        >Tel: {{ telefonnummer }}</a
-                    >
-                </div>
-                <div class="text-lg text-black dark:text-white">
-                    Fax: {{ fax }}
-                </div>
-                <div>
-                    <a
-                        class="text-lg text-black dark:text-white font-bold"
-                        href="{{ website }}"
-                    >
-                        {{ website }}</a
+                        href="tel:{{ kontaktdaten:telefonnummer }}"
+                        >Tel: {{ kontaktdaten:telefonnummer }}</a
                     >
                 </div>
                 <div>
                     <a
                         class="text-lg text-black dark:text-white font-bold"
-                        href=" mailto:{{ e-mail-adresse | obfuscate_email }}"
+                        href="{{ kontaktdaten:website }}"
                     >
-                        {{e-mail-adresse | obfuscate_email }}</a
+                        {{ kontaktdaten:website }}</a
                     >
                 </div>
-                {{ /kontaktdaten }}
+                <div>
+                    <a
+                        class="text-lg text-black dark:text-white font-bold"
+                        href="mailto:{{ kontaktdaten:mailadresse | obfuscate_email }}"
+                    >
+                        {{ kontaktdaten:mailadresse | obfuscate_email }}</a
+                    >
+                </div>
             </div>
             {{ monsun_team }} {{mitglieder}}
             <div class="pb-12">
@@ -53,18 +48,17 @@
                 <div class="text-lg text-black dark:text-white font-medium">
                     {{name}}
                 </div>
-
-                {{ e-mail-adresse }}
+                {{ mailadresse }}
                 <div class="text-lg text-black dark:text-white">
                     <a
                         class="text-lg font-bold text-black dark:text-white hover:text-monsun dark:hover:text-monsun"
-                        href=" mailto:{{ e-mail | obfuscate_email }}"
-                        >{{e-mail | obfuscate_email }}</a
-                    >{{ if extra_info_toggle }} {{ info }} {{ /if }}
+                        href="mailto:{{ e-mail | obfuscate_email }}"
+                        >{{ e-mail | obfuscate_email }}</a
+                    >
                 </div>
-                {{ /e-mail-adresse }} {{ telefonnummer }}
+                {{ /mailadresse }} {{ telefonnummer }}
                 <div class="text-lg text-black dark:text-white">
-                    <a href="tel:{{ nummer }}">{{ nummer }} </a>{{ if
+                    <a href="tel:{{ nummer }}">Tel: {{ nummer }} </a>{{ if
                     extra_info_telefon}} {{ info }} {{ /if }}
                 </div>
                 {{ /telefonnummer }}
@@ -75,6 +69,4 @@
             {{/mitglieder}} {{ /monsun_team }}
         </div>
     </div>
-    {{ page_builder scope="block" }} {{ partial src="page_builder/{type}" }} {{
-    /page_builder }}
 </main>
