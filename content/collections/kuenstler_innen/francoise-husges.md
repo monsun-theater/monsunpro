@@ -2,14 +2,16 @@
 id: 230ec157-5076-45d0-8d68-597a5f3d0743
 blueprint: kuenstler_innen
 title: 'Francoise Hüsges'
-updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1679576233
+updated_by: 34d4dc92-ec1a-4900-9a81-ed8dd8606f23
+updated_at: 1682245295
 page_builder:
   -
+    id: 4qZc6Zgz
     bard:
       -
         type: set
         attrs:
+          id: AM1KzalH
           values:
             type: figure
             image: kuenstler-innen/francoise_huesges_2022_02_c_g2-baraniak.jpg
@@ -72,6 +74,7 @@ page_builder:
       -
         type: set
         attrs:
+          id: dQwLYX27
           values:
             type: video
             video_url: 'https://vimeo.com/773546857'
@@ -101,7 +104,7 @@ page_builder:
                 type: italic
             text: '(Bühne & Regie)'
           -
-            type: hard_break
+            type: hardBreak
           -
             type: text
             marks:
@@ -123,7 +126,7 @@ page_builder:
                 type: italic
             text: '(Bühne & Regie)'
           -
-            type: hard_break
+            type: hardBreak
           -
             type: text
             marks:
@@ -145,7 +148,7 @@ page_builder:
                 type: italic
             text: '(Bühne & Regie)'
           -
-            type: hard_break
+            type: hardBreak
           -
             type: text
             marks:
@@ -167,7 +170,7 @@ page_builder:
                 type: italic
             text: '(Bühne & Regie)'
           -
-            type: hard_break
+            type: hardBreak
           -
             type: text
             marks:
@@ -189,7 +192,7 @@ page_builder:
                 type: italic
             text: '(Bühne & Regie)'
           -
-            type: hard_break
+            type: hardBreak
           -
             type: text
             marks:
@@ -211,7 +214,7 @@ page_builder:
                 type: italic
             text: '(Bühne & Regie)'
           -
-            type: hard_break
+            type: hardBreak
           -
             type: text
             marks:
@@ -233,7 +236,7 @@ page_builder:
                 type: italic
             text: '(Bühne & Regie)'
           -
-            type: hard_break
+            type: hardBreak
           -
             type: text
             marks:
@@ -255,7 +258,7 @@ page_builder:
                 type: italic
             text: '(Bühne & Regie)'
           -
-            type: hard_break
+            type: hardBreak
           -
             type: text
             marks:
@@ -277,7 +280,7 @@ page_builder:
                 type: italic
             text: '(Bühne & Regie)'
           -
-            type: hard_break
+            type: hardBreak
           -
             type: text
             marks:
@@ -299,7 +302,7 @@ page_builder:
                 type: italic
             text: '(Bühne & Regie)'
           -
-            type: hard_break
+            type: hardBreak
             marks:
               -
                 type: italic
@@ -321,7 +324,7 @@ page_builder:
                 type: italic
             text: ' (Bühne)'
           -
-            type: hard_break
+            type: hardBreak
           -
             type: text
             marks:
@@ -343,7 +346,7 @@ page_builder:
                 type: italic
             text: '(Bühne & Regie)'
           -
-            type: hard_break
+            type: hardBreak
             marks:
               -
                 type: italic
@@ -368,7 +371,7 @@ page_builder:
                 type: italic
             text: '(Bühne & Regie)'
           -
-            type: hard_break
+            type: hardBreak
           -
             type: text
             marks:
@@ -390,7 +393,7 @@ page_builder:
                 type: italic
             text: '(Bühne & Regie)'
           -
-            type: hard_break
+            type: hardBreak
           -
             type: text
             marks:
@@ -412,7 +415,7 @@ page_builder:
                 type: italic
             text: '(Bühne & Regie)'
           -
-            type: hard_break
+            type: hardBreak
             marks:
               -
                 type: italic
@@ -437,7 +440,7 @@ page_builder:
                 type: italic
             text: '(Bühne & Regie)'
           -
-            type: hard_break
+            type: hardBreak
           -
             type: text
             marks:
@@ -459,7 +462,7 @@ page_builder:
                 type: italic
             text: '(Bühne & Regie)'
           -
-            type: hard_break
+            type: hardBreak
           -
             type: text
             marks:
@@ -481,7 +484,7 @@ page_builder:
                 type: italic
             text: '(Bühne & Regie)'
           -
-            type: hard_break
+            type: hardBreak
           -
             type: text
             marks:
@@ -503,7 +506,7 @@ page_builder:
                 type: italic
             text: (Regie)
           -
-            type: hard_break
+            type: hardBreak
             marks:
               -
                 type: italic
@@ -528,7 +531,7 @@ page_builder:
                 type: italic
             text: '(Bühne & Regie)'
           -
-            type: hard_break
+            type: hardBreak
           -
             type: text
             marks:
@@ -550,7 +553,7 @@ page_builder:
                 type: italic
             text: (Leitung)
           -
-            type: hard_break
+            type: hardBreak
           -
             type: text
             marks:
@@ -572,7 +575,7 @@ page_builder:
                 type: italic
             text: '(Bühne & Regie)'
           -
-            type: hard_break
+            type: hardBreak
           -
             type: text
             marks:
@@ -594,7 +597,7 @@ page_builder:
                 type: italic
             text: '(Bühne & Regie)'
           -
-            type: hard_break
+            type: hardBreak
             marks:
               -
                 type: italic
@@ -619,7 +622,7 @@ page_builder:
                 type: italic
             text: '(Bühne & Regie)'
           -
-            type: hard_break
+            type: hardBreak
             marks:
               -
                 type: italic
@@ -644,7 +647,7 @@ page_builder:
                 type: italic
             text: '(Bühne & Dramaturgie)'
           -
-            type: hard_break
+            type: hardBreak
             marks:
               -
                 type: italic
@@ -669,7 +672,7 @@ page_builder:
                 type: italic
             text: (Ausstattung)
           -
-            type: hard_break
+            type: hardBreak
           -
             type: text
             marks:
@@ -691,7 +694,7 @@ page_builder:
                 type: italic
             text: (Regie)
           -
-            type: hard_break
+            type: hardBreak
           -
             type: text
             marks:
@@ -713,7 +716,7 @@ page_builder:
                 type: italic
             text: (Regie)
           -
-            type: hard_break
+            type: hardBreak
           -
             type: text
             marks:
@@ -735,7 +738,7 @@ page_builder:
                 type: italic
             text: (Regie)
           -
-            type: hard_break
+            type: hardBreak
           -
             type: text
             marks:
@@ -757,7 +760,7 @@ page_builder:
                 type: italic
             text: (Bühne)
           -
-            type: hard_break
+            type: hardBreak
           -
             type: text
             marks:
@@ -779,7 +782,7 @@ page_builder:
                 type: italic
             text: '(Konzept & Ausstattung)'
           -
-            type: hard_break
+            type: hardBreak
             marks:
               -
                 type: italic
@@ -804,7 +807,7 @@ page_builder:
                 type: italic
             text: (Streaming)
           -
-            type: hard_break
+            type: hardBreak
           -
             type: text
             marks:
@@ -826,7 +829,7 @@ page_builder:
                 type: italic
             text: '(Konzept & Raum & Regie)'
           -
-            type: hard_break
+            type: hardBreak
             marks:
               -
                 type: italic
@@ -848,7 +851,7 @@ page_builder:
                 type: italic
             text: ' (Bildregie)'
           -
-            type: hard_break
+            type: hardBreak
             marks:
               -
                 type: italic
@@ -873,7 +876,7 @@ page_builder:
                 type: italic
             text: (Leitung)
           -
-            type: hard_break
+            type: hardBreak
             marks:
               -
                 type: italic
@@ -895,7 +898,7 @@ page_builder:
                 type: italic
             text: ' (Bühne & Kamera & Bildregie)'
           -
-            type: hard_break
+            type: hardBreak
             marks:
               -
                 type: italic
@@ -920,7 +923,7 @@ page_builder:
                 type: italic
             text: '(Konzept & Ausstattung)'
           -
-            type: hard_break
+            type: hardBreak
             marks:
               -
                 type: italic
@@ -942,7 +945,7 @@ page_builder:
                 type: italic
             text: ' (Bildregie)'
           -
-            type: hard_break
+            type: hardBreak
             marks:
               -
                 type: italic
@@ -967,7 +970,7 @@ page_builder:
                 type: italic
             text: '(Bühne & Produktionsleitung & Bildregie)'
           -
-            type: hard_break
+            type: hardBreak
             marks:
               -
                 type: italic
@@ -989,7 +992,7 @@ page_builder:
                 type: italic
             text: ' (Konzept & Ausstattung)'
           -
-            type: hard_break
+            type: hardBreak
             marks:
               -
                 type: italic
@@ -1011,7 +1014,7 @@ page_builder:
                 type: italic
             text: ' (Konzept & Regie)'
           -
-            type: hard_break
+            type: hardBreak
             marks:
               -
                 type: italic
@@ -1036,7 +1039,7 @@ page_builder:
                 type: italic
             text: (Bühne)
           -
-            type: hard_break
+            type: hardBreak
             marks:
               -
                 type: italic
@@ -1061,7 +1064,7 @@ page_builder:
                 type: italic
             text: (Performance)
           -
-            type: hard_break
+            type: hardBreak
             marks:
               -
                 type: italic
@@ -1083,7 +1086,7 @@ page_builder:
                 type: italic
             text: ' (Konzept & Streaming & Regie)'
           -
-            type: hard_break
+            type: hardBreak
             marks:
               -
                 type: italic
@@ -1105,7 +1108,7 @@ page_builder:
                 type: italic
             text: ' (Streaming)'
           -
-            type: hard_break
+            type: hardBreak
             marks:
               -
                 type: italic
@@ -1127,7 +1130,7 @@ page_builder:
                 type: italic
             text: ' (Streaming & Produktionsleitung)'
           -
-            type: hard_break
+            type: hardBreak
             marks:
               -
                 type: italic
