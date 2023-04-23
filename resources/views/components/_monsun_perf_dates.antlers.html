@@ -32,14 +32,33 @@
                 <!-- Tickets sold out -->
                 {{ if sold_out}}
                 <div
-                    class="font-bold tracking-widest uppercase dark:text-white sm:text-lg"
+                    class="font-bold tracking-widest uppercase text-black dark:text-white sm:text-lg"
                 >
                     Ausverkauft!
                 </div>
+
+                {{ if monsun_digital }}
+                <button
+                    class="block tracking-wider text-center uppercase hover:text-monsun sm:text-lg"
+                >
+                    <a class="block" href="{{ streaming }}">
+                        <div class="font-bold tracking-widest uppercase">
+                            streaming<span class="font-bold text-monsun"
+                                >&nbsp;→</span
+                            >
+                        </div>
+                    </a>
+                </button>
+                {{ if streaming_info}}
+                <div class="text-sm text-black dark:text-white">
+                    {{ additional_streaming_info }}
+                </div>
+                {{ /if }} {{ /if }}
+
                 <!-- Event cancelled -->
                 {{ elseif cancelled }}
                 <div
-                    class="font-bold tracking-widest uppercase dark:text-white sm:text-lg"
+                    class="font-bold tracking-widest uppercase text-black dark:text-white sm:text-lg"
                 >
                     Abgesagt
                 </div>
@@ -59,7 +78,7 @@
                     </a>
                 </button>
                 {{ if additional_info_performance_toggle}}
-                <div class="text-sm dark:text-white">
+                <div class="text-sm text-black dark:text-white">
                     {{ additional_info_performance }}
                 </div>
                 {{ /if }} {{# monsun.digital #}} {{ if monsun_digital }}
@@ -75,7 +94,7 @@
                     </a>
                 </button>
                 {{ if streaming_info}}
-                <div class="text-sm dark:text-white">
+                <div class="text-sm text-black dark:text-white">
                     {{ additional_streaming_info }}
                 </div>
                 {{ /if }} {{ /if }}{{ /if }}
