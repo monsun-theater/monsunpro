@@ -3,7 +3,7 @@ id: home
 blueprint: homepage
 title: Startseite
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1682261347
+updated_at: 1682275817
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -11,26 +11,6 @@ sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 template: home
 hero_featured_sect:
-  -
-    id: JK5EJIkt
-    title: 'Anatomie der guten Hoffnung – Teil 2'
-    titelzusatz_zeigen: true
-    subtitle: 'LEBENDIGE PHANTOME'
-    einfarbiger_hintergrund: false
-    featured_image: produktionen/anatomie_der_guten_hoffnung/teil_2/anatomie_der_guten_hoffnung_teil2_23_c_g2_baraniak.jpg
-    buttons:
-      -
-        id: oX9twXvt
-        label: 'Mehr lesen'
-        target_blank: false
-        link_type: entry
-        entry: 81124f83-4226-456b-b267-41bc526ecfef
-        attr_title: 'Mehr lesen'
-        attr_aria: 'Mehr über „Anatomie der guten Hoffnung – Teil 2“ lesen'
-    type: featured
-    enabled: false
-    overlay_color: neutral-100
-    title_desc: 'PREMIERE verschoben auf den 4. Mai 2023!'
   -
     id: 2x5wQfLY
     title: Lordess
@@ -49,7 +29,27 @@ hero_featured_sect:
         attr_title: 'Mehr lesen'
         attr_aria: 'Mehr über „Lordess“ lesen'
     type: featured
-    enabled: false
+    enabled: true
+  -
+    id: JK5EJIkt
+    title: 'Anatomie der guten Hoffnung – Teil 2'
+    titelzusatz_zeigen: true
+    subtitle: 'LEBENDIGE PHANTOME'
+    einfarbiger_hintergrund: false
+    featured_image: produktionen/anatomie_der_guten_hoffnung/teil_2/anatomie_der_guten_hoffnung_teil2_33_c_g2_baraniak.jpg
+    buttons:
+      -
+        id: oX9twXvt
+        label: 'Mehr lesen'
+        target_blank: false
+        link_type: entry
+        entry: 81124f83-4226-456b-b267-41bc526ecfef
+        attr_title: 'Mehr lesen'
+        attr_aria: 'Mehr über „Anatomie der guten Hoffnung – Teil 2“ lesen'
+    type: featured
+    enabled: true
+    overlay_color: neutral-300
+    title_desc: 'Uraufführung am 4. Mai 2023'
   -
     id: UTt87PhN
     title: 'KRASS Kultur Crash Festival'
@@ -66,7 +66,7 @@ hero_featured_sect:
         attr_title: 'Tikke Tikke / piece to piece & Raks Solo'
         attr_aria: 'Mehr über „Tikke Tikke / piece to piece & Raks Solo“ lesen'
     type: featured
-    enabled: true
+    enabled: false
     overlay_color: neutral-400
 anzahl_vorstellungen_in_demnaechst: 4
 anzahl_eintraege_in_aktuelles: 2
@@ -110,8 +110,8 @@ aktuelles_eintraege:
   - 28d83c7c-2966-4907-97b5-73b89ad84d3f
   - 4f100bf4-619c-4ee9-858c-fd72e81e0054
 spielzeit_eintraege:
-  - 42d4bc58-0251-4462-8704-a8a262925560
-  - 2eb5e5b5-9b16-4c69-910f-e5a6bc80197b
+  - dd3fb7ee-3696-4906-a60e-0280729ee466
+  - acfe8fbe-6028-4abc-ae77-8d89e9d58363
   - e41a6668-34a9-4fa4-92f9-636e76d27b9b
   - 81124f83-4226-456b-b267-41bc526ecfef
   - 54acba84-bdbf-4180-b2db-7dbe7340a7a4
