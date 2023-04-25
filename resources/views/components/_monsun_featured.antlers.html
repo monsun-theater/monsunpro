@@ -5,9 +5,8 @@
         <div class="relative shadow-xl overflow-hidden">
             <div class="absolute inset-0">
                 {{ partial:components/picture image="{{featured_image}}" class="h-full w-full object-cover" }}
-                <div class="absolute inset-0 {{ if einfarbiger_hintergrund}} bg-white dark:bg-black {{ else
-                    }}bg-{{overlay_color}}" style="mix-blend-mode: multiply;{{ /if}}"></div>
-            </div>
+                <div class="absolute inset-0 {{ if einfarbiger_hintergrund }} bg-white dark:bg-black {{ elseif darken_overlay }} mix-blend-multiply bg-neutral-400 {{ /if }}"></div>
+            </div>            
             <div class="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
                 <h2 class="text-center text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
                     <span

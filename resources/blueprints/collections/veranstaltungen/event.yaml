@@ -292,34 +292,6 @@ sections:
       -
         import: figure_one_size
       -
-        handle: overlay_color
-        field:
-          placeholder: 'neutral-300 (default)'
-          options:
-            bg-neutral-100: 'neutral-100 (lightest)'
-            bg-neutral-200: neutral-200
-            bg-neutral-300: 'neutral-300 (default)'
-            bg-neutral-400: neutral-400
-            bg-neutral-500: neutral-500
-            bg-neutral-600: neutral-600
-            bg-neutral-700: 'neutral-700 (darkest)'
-            '': null
-          multiple: false
-          max_items: 1
-          clearable: true
-          searchable: true
-          taggable: false
-          push_tags: false
-          cast_booleans: false
-          display: 'Mix Farbe wählen'
-          type: select
-          icon: select
-          instructions: 'The white text displayed on the image must have sufficient contrast to the background. Choose the overlay that works best for your particular image.'
-          listable: hidden
-          width: 50
-          instructions_position: above
-          visibility: visible
-      -
         import: page_builder
       -
         handle: image_gallery_toggle
@@ -341,7 +313,6 @@ sections:
           type: assets
           icon: assets
           listable: hidden
-          width: 66
           if:
             image_gallery_toggle: 'equals true'
       -
@@ -353,10 +324,22 @@ sections:
           type: text
           icon: text
           instructions: 'Image Copyright Info'
-          width: 33
+          width: 50
           listable: hidden
           if:
             image_gallery_toggle: 'equals true'
+      -
+        handle: darken_overlay
+        field:
+          default: false
+          display: 'Abdunklung der Fotos'
+          type: toggle
+          icon: toggle
+          instructions: 'Darkens the image in the background'
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          width: 50
       -
         handle: perf_section
         field:
