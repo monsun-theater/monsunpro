@@ -3,7 +3,7 @@ id: home
 blueprint: homepage
 title: Startseite
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1682881407
+updated_at: 1683152423
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -17,7 +17,7 @@ hero_featured_sect:
     titelzusatz_zeigen: true
     subtitle: 'LEBENDIGE PHANTOME'
     einfarbiger_hintergrund: false
-    featured_image: produktionen/anatomie_der_guten_hoffnung/teil_2/anatomie_der_guten_hoffnung_teil2_33_c_g2_baraniak.jpg
+    featured_image: produktionen/anatomie_der_guten_hoffnung/teil_2/anatomie_der_guten_hoffnung_teil2_129_c_g2_baraniak.jpg
     buttons:
       -
         id: oX9twXvt
@@ -30,7 +30,7 @@ hero_featured_sect:
     type: featured
     enabled: true
     darken_overlay: true
-    title_desc: 'Uraufführung am 4. Mai 2023'
+    title_desc: 'Uraufführung am 4. Mai 2023 – AUSVERKAUFT!'
 anzahl_vorstellungen_in_demnaechst: 4
 anzahl_eintraege_in_aktuelles: 2
 anzahl_stuecke_in_spielzeit_component: 2
@@ -75,4 +75,5 @@ aktuelles_eintraege:
 spielzeit_eintraege:
   - 81124f83-4226-456b-b267-41bc526ecfef
   - 54acba84-bdbf-4180-b2db-7dbe7340a7a4
+  - 4e34cf71-76fa-416e-aefc-97f26f4279ee
 ---
