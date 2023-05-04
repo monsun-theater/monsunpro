@@ -20,3 +20,15 @@ caption. #}}
     </div>
     {{ /if }}
 </div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        if (!window.playerScriptLoaded) {
+            var script = document.createElement("script");
+            script.src = "https://f.vimeocdn.com/p/4.23.15/js/player.module.js";
+            script.async = true;
+            document.body.appendChild(script);
+            window.playerScriptLoaded = true;
+        }
+    });
+</script>
