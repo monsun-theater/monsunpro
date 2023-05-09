@@ -3,14 +3,12 @@ caption. #}}
 <div class="size-lg">
     <div class="relative aspect-video">
         <iframe
-            id="vimeo-video-{{ video_id }}"
             class="absolute top-0 left-0 w-full h-full"
             width="100%"
             height="auto"
             src="{{ video_url | embed_url }}{{ if do_not_track }}?dnt=1{{ /if }}"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            title="Vimeo Video Player - {{ video_id }}"
             allowfullscreen
         ></iframe>
     </div>
