@@ -1,49 +1,71 @@
-<div class="text-3xl lg:text-4xl text-black dark:text-white pt-3">Newsletter abonnieren</div>
+<div class="text-3xl lg:text-4xl text-black dark:text-white pt-3">
+    Newsletter abonnieren
+</div>
 <div class="md:grid grid-cols-12 gap-4 items-baseline">
     <div class="col-span-4">
-        <div class="sm:text-lg text-black dark:text-white">Bleiben Sie im Kontakt mit monsun.theater!</div>
+        <div class="sm:text-lg text-black dark:text-white">
+            Bleiben Sie im Kontakt mit monsun.theater!
+        </div>
     </div>
     <div class="col-span-8 sm:text-lg py-3 md:py-0">
         <div class="text-xl font-bold leading-tight md:leading-normal pb-3">
-            {{# Create the selected form and reference Alpine data in `sending()`. Prevent form from submitting with
-            POST as
-            we will submit with AJAX. #}}
-            {{ form:newsletter id="form"
-            x-ref="form"
-            x-data="sending()"
-            @submit.prevent="sendForm()"
-            }}
-         {{# Honeypot spam protection. #}}
-         <div class="hidden">
-            <label class="font-bold" for="fax">{{ trans:strings.form_honeypot }} <sup
-                    class="text-notice-400">*</sup></label>
-            <input class="form-input w-full" id="fax" type="fax" name="fax" tabindex="-1" autocomplete="off" />
-        </div>
+            {{# Create the selected form and reference Alpine data in
+            `sending()`. Prevent form from submitting with POST as we will
+            submit with AJAX. #}} {{ form:newsletter id="form" x-ref="form"
+            x-data="sending()" @submit.prevent="sendForm()" }} {{# Honeypot spam
+            protection. #}}
+            <div class="hidden">
+                <label class="font-bold" for="fax"
+                    >{{ trans:strings.form_honeypot }}
+                    <sup class="text-notice-400">*</sup></label
+                >
+                <input
+                    class="form-input w-full"
+                    id="fax"
+                    type="fax"
+                    name="fax"
+                    tabindex="-1"
+                    autocomplete="off"
+                />
+            </div>
             {{ fields }}
             <div class="pb-3">
-                {{# Labels are hidden by default but visible while an error message shows up #}}
-                <label class="dark:text-white text-sm font-normal" for="{{ handle }}">{{ trans key="{display}" }} {{ if validate |
-                    contains:required }}<sup class="text-notice-400">*</sup>{{ /if }}</label>
-                {{# Load notification when there is a validation error with the name field. #}}
+                {{# Labels are hidden by default but visible while an error
+                message shows up #}}
+                <label
+                    class="text-black dark:text-white text-sm font-normal"
+                    for="{{ handle }}"
+                    >{{ trans key="{display}" }} {{ if validate |
+                    contains:required }}<sup class="text-notice-400">*</sup>{{
+                    /if }}</label
+                >
+                {{# Load notification when there is a validation error with the
+                name field. #}}
                 <template x-if="errors.{{ handle }}">
-                    {{ partial src="components/notification" type="error" attribute="x-text='errors.{handle}'" }}
+                    {{ partial src="components/notification" type="error"
+                    attribute="x-text='errors.{handle}'" }}
                 </template>
                 {{ field }}
             </div>
-            {{ /fields }}
-            
-         {{# Pulse button and disable upon sending. #}}
-         <div class="text-black dark:text-white uppercase tracking-wider hover:text-monsun dark:hover:text-monsun sm:text-lg">
-            {{ partial:components/button tag="button" label="{ trans:strings.form_send }" attribute='x-bind:disabled="sending" x-bind:class="&#123;&#39;opacity-25 cursor-default&#39;: sending&#125;"' }}
-        </div>
-        <template x-if="success">
-            {{ partial src="components/notification" type="success" class="md:col-span-12" content="{trans:strings.form_success}" }}
-        </template>
-            {{ /form:newsletter }}   {{# Load dynamic token JS to dynamically fetch and refresh a CSRF token. #}}
-            {{ dynamic_token }}
+            {{ /fields }} {{# Pulse button and disable upon sending. #}}
+            <div
+                class="text-black dark:text-white uppercase tracking-wider hover:text-monsun dark:hover:text-monsun sm:text-lg"
+            >
+                {{ partial:components/button tag="button" label="{
+                trans:strings.form_send }" attribute='x-bind:disabled="sending"
+                x-bind:class="&#123;&#39;opacity-25 cursor-default&#39;:
+                sending&#125;"' }}
+            </div>
+            <template x-if="success">
+                {{ partial src="components/notification" type="success"
+                class="md:col-span-12" content="{trans:strings.form_success}" }}
+            </template>
+            {{ /form:newsletter }} {{# Load dynamic token JS to dynamically
+            fetch and refresh a CSRF token. #}} {{ dynamic_token }}
         </div>
     </div>
-    {{# The form script handling validation and submission via AJAX with `fetch()`. #}}
+    {{# The form script handling validation and submission via AJAX with
+    `fetch()`. #}}
     <script>
         function sending() {
             return {
@@ -55,17 +77,16 @@
                     this.sending = true;
                     fetch(this.$refs.form.action, {
                         headers: {
-                            'X-Requested-With': 'XMLHttpRequest'
+                            "X-Requested-With": "XMLHttpRequest",
                         },
-                        method: 'POST',
-                        body: new FormData(this.$refs.form)
+                        method: "POST",
+                        body: new FormData(this.$refs.form),
                     })
-                        .then(res => res.json())
-                        .then(json => {
-
+                        .then((res) => res.json())
+                        .then((json) => {
                             var t = this; // re-assign this
 
-                            if (json['success']) {
+                            if (json["success"]) {
                                 t.errors = [];
                                 t.success = true;
                                 t.error = false;
@@ -76,20 +97,20 @@
                                     t.success = false; // to hide the success message
                                 }, 4500);
                             }
-                            if (json['error']) {
+                            if (json["error"]) {
                                 t.sending = false;
                                 t.error = true;
                                 t.success = false;
-                                t.errors = json['error'];
+                                t.errors = json["error"];
                             }
                         })
-                        .catch(err => {
-                            err.text().then(errorMessage => {
-                                this.sending = false
-                            })
-                        })
-                }
-            }
+                        .catch((err) => {
+                            err.text().then((errorMessage) => {
+                                this.sending = false;
+                            });
+                        });
+                },
+            };
         }
     </script>
 </div>

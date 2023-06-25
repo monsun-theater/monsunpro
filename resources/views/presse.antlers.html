@@ -1,42 +1,58 @@
 <main>
-    {{ if cinema_monsun}}
-    {{ partial:components/cinema_monsun}} {{ /if }}
-    {{ partial:components/monsun_featured}}
-<article class="outer-grid fluid-container">
-    {{ partial src="typography/h2" :content="title" class="dark:text-white"}}
-        {{ page_builder scope="block" }}
-        {{ partial src="page_builder/{type}" }}
-        {{ /page_builder }}
-    <section class=" grid grid-cols-12 gap-y-6">
-        <div class="col-span-12 md:col-span-8 md:col-start-5">
-            {{ collection:veranstaltungen sort="title" status:in="published|draft" }}
-            {{ if in_presse_zeigen}}
-            <a href={{ url }}>{{ partial src="typography/h3" :content="title" class="text-2xl dark:text-white
-                pb-3"}}</a>
-            <div class="pb-12">
-                <div class="pb-3">{{ bildmaterial }} <a
-                        class="text-black text-xl dark:text-white hover:text-monsun dark:hover:text-monsun"
-                        href="{{ url }}">Bildmaterial
-                        ({{ extension }}, {{size}})<span class="text-monsun font-bold"> →</span> </a>{{
-                    /bildmaterial }}
+    {{ if cinema_monsun}} {{ partial:components/cinema_monsun}} {{ /if }} {{
+    partial:components/monsun_featured}}
+    <article class="outer-grid fluid-container">
+        {{ partial src="typography/h2" :content="title" class="text-black
+        dark:text-white"}} {{ page_builder scope="block" }} {{ partial
+        src="page_builder/{type}" }} {{ /page_builder }}
+        <section class="grid grid-cols-12 gap-y-6">
+            <div class="col-span-12 md:col-span-8 md:col-start-5">
+                {{ collection:veranstaltungen sort="title"
+                status:in="published|draft" }} {{ if in_presse_zeigen}}
+                <a href="{{" url }}
+                    >{{ partial src="typography/h3" :content="title"
+                    class="text-black text-2xl dark:text-white pb-3"}}</a
+                >
+                <div class="pb-12">
+                    <div class="pb-3">
+                        {{ bildmaterial }}
+                        <a
+                            class="text-black text-xl dark:text-white hover:text-monsun dark:hover:text-monsun"
+                            href="{{ url }}"
+                            >Bildmaterial ({{ extension }}, {{size}})<span
+                                class="text-monsun font-bold"
+                            >
+                                →</span
+                            > </a
+                        >{{ /bildmaterial }}
+                    </div>
+                    <div class="pb-3">
+                        {{ pressemitteilung }}
+                        <a
+                            class="text-black text-xl dark:text-white hover:text-monsun dark:hover:text-monsun"
+                            href="{{ url }}"
+                            >Pressemitteilung ({{ extension }}, {{size}})<span
+                                class="text-monsun font-bold"
+                            >
+                                →</span
+                            > </a
+                        >{{ /pressemitteilung }}
+                    </div>
+                    <div class="pb-3">
+                        {{ pressestimmen }}
+                        <a
+                            class="text-black text-xl dark:text-white hover:text-monsun dark:hover:text-monsun"
+                            href="{{ url }}"
+                            >Pressestimmen ({{ extension }}, {{size}})<span
+                                class="text-monsun font-bold"
+                            >
+                                →</span
+                            > </a
+                        >{{ /pressestimmen }}
+                    </div>
+                    {{ /if }} {{ /collection:veranstaltungen}}
                 </div>
-                <div class="pb-3">{{ pressemitteilung }} <a
-                        class="text-black text-xl dark:text-white  hover:text-monsun dark:hover:text-monsun"
-                        href="{{ url }}">Pressemitteilung
-                        ({{ extension }}, {{size}})<span class="text-monsun font-bold"> →</span> </a>{{
-                    /pressemitteilung }}
-                </div>
-                <div class="pb-3">{{ pressestimmen }} <a
-                        class="text-black text-xl dark:text-white hover:text-monsun dark:hover:text-monsun"
-                        href="{{ url }}">Pressestimmen
-                        ({{ extension }}, {{size}})<span class="text-monsun font-bold">
-                            →</span> </a>{{
-                    /pressestimmen }}
-                </div> {{ /if }}
-                {{ /collection:veranstaltungen}}
-
             </div>
-        </div>
-    </section>
-</article>
+        </section>
+    </article>
 </main>
