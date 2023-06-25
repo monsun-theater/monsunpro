@@ -7,6 +7,7 @@ caption. #}}
             width="100%"
             height="auto"
             src="{{ video_url | embed_url }}{{ if do_not_track }}?dnt=1{{ /if }}"
+            loading="lazy"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
