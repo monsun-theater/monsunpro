@@ -2,8 +2,8 @@
 id: home
 blueprint: homepage
 title: Startseite
-updated_by: 34d4dc92-ec1a-4900-9a81-ed8dd8606f23
-updated_at: 1687272206
+updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
+updated_at: 1691927897
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -13,24 +13,24 @@ template: home
 hero_featured_sect:
   -
     id: JK5EJIkt
-    title: 'Anatomie der guten Hoffnung'
     titelzusatz_zeigen: true
-    subtitle: 'EIN FEST!'
     einfarbiger_hintergrund: false
-    featured_image: produktionen/anatomie_der_guten_hoffnung/teil_3/anatomie_der_guten_hoffnung_teil3_67_c_g2_baraniak.jpg
-    buttons:
-      -
-        id: oX9twXvt
-        label: 'Mehr lesen'
-        target_blank: false
-        link_type: entry
-        entry: cc9941b3-e548-4cd2-92cc-116183cafbb7
-        attr_title: 'Mehr lesen'
-        attr_aria: 'Mehr über „Anatomie der guten Hoffnung – Teil 3“ lesen'
+    featured_image: produktionen/aussicht_festival/2023/no_name/no_name_das_muxical_01_c_simon_wachter.jpg
     type: featured
     enabled: true
     darken_overlay: true
-    title_desc: 'Die Gesamttrilogie'
+    overlay_color: neutral-300
+    title: 'AUSSICHT Festival'
+    subtitle: '6. - 9. September 2023'
+    buttons:
+      -
+        id: ll452yxm
+        label: 'Mehr lesen'
+        target_blank: false
+        link_type: entry
+        entry: 8a8f549b-0be1-4e43-9ed4-3e6eb12d98b9
+        attr_title: 'Mehr lesen'
+        attr_aria: 'Mehr über das AUSSICHT Festival lesen'
 anzahl_vorstellungen_in_demnaechst: 4
 anzahl_eintraege_in_aktuelles: 2
 anzahl_stuecke_in_spielzeit_component: 2
@@ -38,7 +38,7 @@ seo_title: Startseite
 seo_description: 'monsun.theater ist das älteste Off-Theater in Hamburg und besteht seit 1980. Es befindet sich im Stadtteil Ottensen.'
 og_title: monsun.theater
 og_description: 'Das Monsun-Theater (Eigenschreibweise: monsun.theater) ist das älteste Off-Theater in Hamburg und besteht seit 1980. Es befindet sich im Stadtteil Ottensen.'
-spielzeit: 'Spielzeit 2022-2023'
+spielzeit: 'Spielzeit 2023-2024'
 page_builder:
   -
     id: bNPrLafc
@@ -70,13 +70,16 @@ page_builder:
             text: .
 demnachst_verstecken: false
 aktuelles_eintraege:
+  - f6b6f60d-b011-46a7-a919-02a3590256fd
   - ad39757e-66b1-4091-a10d-b1267331d92d
-  - 28d83c7c-2966-4907-97b5-73b89ad84d3f
 spielzeit_eintraege:
-  - cc9941b3-e548-4cd2-92cc-116183cafbb7
-  - 82ca7f0f-d5d4-4e21-9d07-b75f6e1b930b
-  - 81124f83-4226-456b-b267-41bc526ecfef
-  - b5184fc5-708e-40a2-bbc4-3c708dc7e237
-  - bdff1255-1ea3-460e-901f-bdb676d72a5d
-  - ebf0067f-7fbc-4551-b067-39558b9160a5
+  - 293e9a8f-6822-4c32-a14a-7cab7ab34014
+  - e2920504-4fdf-4a1e-9838-6f9d211aa752
+  - 1be3b084-b123-4d16-8b65-5f105f404c02
+  - 2877a4ce-0dc9-4b91-814a-ce5238918f26
+  - e32c60a6-a0a8-4f57-9b41-d0d23ae6d778
+  - d4a5a747-1858-45c7-9c0f-6e25969dbdcf
+  - cd673d86-058e-43f0-98c8-7f01eb04526d
+  - 88318169-cad6-4a1a-a904-dfc077ba4517
+  - e41a6668-34a9-4fa4-92f9-636e76d27b9b
 ---
