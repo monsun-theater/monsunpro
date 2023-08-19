@@ -19,7 +19,7 @@ return [
             'name' => config('app.name'),
             'locale' => 'de_DE.utf8',
             'url' => '/',
-        ]
+        ],
 
-    ]
+    ],
 ];
