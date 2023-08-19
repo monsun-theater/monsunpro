@@ -10,10 +10,8 @@ class DynamicToken extends Tags
      * The {{ dynamic_token }} tag.
      * Inserts JS which will add tokens to all forms that have an input with `name="_token"`.
      * Refresh the token every 15 minutes.
-     *
-     * @return string
      */
-    public function index()
+    public function index(): string
     {
         $route = '/!/DynamicToken/refresh';
         $selector = 'form input[name="_token"]';
