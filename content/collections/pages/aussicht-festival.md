@@ -68,7 +68,6 @@ page_builder:
         type: set
         attrs:
           id: KFYGEoFA
-          enabled: false
           values:
             type: buttons
             buttons:
@@ -77,17 +76,16 @@ page_builder:
                 label: 'Download Programm PDF'
                 target_blank: true
                 link_type: asset
-                asset: produktionen/aussicht_festival/presse/2022_Aussicht-Festival-Programm-Web.pdf
-                attr_title: 'Programm AUSSICHT Festival 2022 als PDF downloaden'
-                attr_aria: 'Programm AUSSICHT Festival 2022 als PDF downloaden'
+                asset: produktionen/aussicht_festival/presse/aussicht-festival-programm-2023.pdf
+                attr_title: 'Programm AUSSICHT Festival 2023 als PDF downloaden'
+                attr_aria: 'Programm AUSSICHT Festival 2023 als PDF downloaden'
       -
         type: set
         attrs:
           id: GGSblFjI
-          enabled: false
           values:
             type: small_picture
-            image: produktionen/aussicht_festival/presse/2022_Aussicht-Festival-Programm-Web_Cover.jpg
+            image: produktionen/aussicht_festival/presse/aussicht-cover.jpg
             zusatzinfo_zeigen: false
     type: article
     enabled: true
@@ -585,7 +583,7 @@ sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 template: default
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1691517564
+updated_at: 1692289194
 seo_title: 'AUSSICHT Festival'
 seo_description: 'Hamburgs Mixed-Abled Festival'
 og_title: 'AUSSICHT Festival'
