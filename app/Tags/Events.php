@@ -57,7 +57,7 @@ class Events extends CollectionTag
         );
     }
 
-    public function count()
+    public function count(): int
     {
         return $this->getDates()->count();
     }
