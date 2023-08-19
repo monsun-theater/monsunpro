@@ -38,25 +38,25 @@ return [
     */
 
     'widgets' => [
-         //'getting_started',
+        //'getting_started',
         [
             'type' => 'collection',
             'collection' => 'veranstaltungen',
             'limit' => 10,
-            'width' => 100
+            'width' => 100,
         ],
         [
             'type' => 'collection',
             'collection' => 'aktuelles',
             'limit' => 10,
-            'width' => 100
+            'width' => 100,
         ],
         [
             'type' => 'collection',
             'collection' => 'pages',
             'limit' => 10,
             'width' => 100,
-            'sort' => 'title:desc'
+            'sort' => 'title:desc',
 
         ],
         [
@@ -64,7 +64,7 @@ return [
             'form' => 'contact', // name of your form
             'fields' => ['email'], // the fields you want to display in the widget
             'width' => 100,
-            'limit' => 10
+            'limit' => 10,
         ],
     ],
 
@@ -102,7 +102,7 @@ return [
 
     'link_to_docs' => false,
 
-         /*
+    /*
     |--------------------------------------------------------------------------
     | Login Theme
     |--------------------------------------------------------------------------
@@ -129,12 +129,11 @@ return [
 
     'custom_logo_url' => [
         'nav' => env('STATAMIC_CUSTOM_LOGO_NAV_URL', null),
-        'outside' => env('STATAMIC_CUSTOM_LOGO_OUTSIDE_URL', null)
+        'outside' => env('STATAMIC_CUSTOM_LOGO_OUTSIDE_URL', null),
     ],
 
     'custom_favicon_url' => env('STATAMIC_CUSTOM_FAVICON_URL', null),
 
     'custom_css_url' => env('STATAMIC_CUSTOM_CSS_URL', null),
-
 
 ];
