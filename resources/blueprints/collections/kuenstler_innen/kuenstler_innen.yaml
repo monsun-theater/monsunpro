@@ -1,69 +1,72 @@
 title: 'Künstler*innen'
-sections:
+tabs:
   main:
     display: Main
-    fields:
+    sections:
       -
-        handle: title
-        field:
-          type: text
-          required: true
-          validate:
-            - required
-      -
-        handle: kuenstler_innens_eigene_website
-        field:
-          display: 'Künstler*innens Website'
-          type: section
-          icon: section
-          listable: hidden
-          instructions: 'Artist''s own Homepage'
-      -
-        handle: hat_eigene_website_has_own_website
-        field:
-          display: 'Künstler*innen hat eine eigene Website?'
-          type: toggle
-          icon: toggle
-          width: 50
-          listable: hidden
-          instructions: 'Has the Artist own Website?'
-      -
-        handle: kuenstler_artist_website_url_link
-        field:
-          display: 'Website Link'
-          type: external_link
-          icon: earth
-          listable: hidden
-          instructions: 'Artist''s Website URL'
-          if:
-            hat_eigene_website_has_own_website: 'equals true'
-      -
-        handle: biographie_biography
-        field:
-          display: Biographie
-          type: section
-          icon: section
-          listable: hidden
-          instructions: Biography
-      -
-        handle: biographie_eintragen_create_artist_s_biography
-        field:
-          display: 'Biographie zeigen'
-          type: toggle
-          icon: toggle
-          listable: hidden
-          instructions: 'Show Artist''s Biography'
-      -
-        import: page_builder
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+          -
+            handle: kuenstler_innens_eigene_website
+            field:
+              display: 'Künstler*innens Website'
+              type: section
+              icon: section
+              listable: hidden
+              instructions: "Artist's own Homepage"
+          -
+            handle: hat_eigene_website_has_own_website
+            field:
+              display: 'Künstler*innen hat eine eigene Website?'
+              type: toggle
+              icon: toggle
+              width: 50
+              listable: hidden
+              instructions: 'Has the Artist own Website?'
+          -
+            handle: kuenstler_artist_website_url_link
+            field:
+              display: 'Website Link'
+              type: external_link
+              icon: earth
+              listable: hidden
+              instructions: "Artist's Website URL"
+              if:
+                hat_eigene_website_has_own_website: 'equals true'
+          -
+            handle: biographie_biography
+            field:
+              display: Biographie
+              type: section
+              icon: section
+              listable: hidden
+              instructions: Biography
+          -
+            handle: biographie_eintragen_create_artist_s_biography
+            field:
+              display: 'Biographie zeigen'
+              type: toggle
+              icon: toggle
+              listable: hidden
+              instructions: "Show Artist's Biography"
+          -
+            import: page_builder
   sidebar:
     display: Sidebar
-    fields:
+    sections:
       -
-        handle: slug
-        field:
-          type: slug
-          required: true
-          localizable: true
-          validate:
-            - required
-            - 'unique_entry_value:{collection},{id},{site}'
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate:
+                - required
+                - 'unique_entry_value:{collection},{id},{site}'

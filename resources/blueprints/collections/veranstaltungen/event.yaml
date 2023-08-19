@@ -1,719 +1,730 @@
 title: Event
-sections:
+tabs:
   main:
     display: Main
-    fields:
+    sections:
       -
-        handle: title
-        field:
-          type: text
-          required: true
-          validate:
-            - required
-          display: Titel
-          listable: hidden
-          input_type: text
-          antlers: false
-          instructions: Title
-      -
-        handle: overlay_title_nutzen
-        field:
-          display: 'Overlay-Title nutzen'
-          type: toggle
-          icon: toggle
-          instructions: 'Use it if you want to format your title with break marks'
-          listable: hidden
-      -
-        handle: overlay_title
-        field:
-          antlers: false
-          display: 'Overlay Title'
-          type: textarea
-          icon: textarea
-          instructions: 'This field will allow you to format your title with break marks'
-          listable: hidden
-          if:
-            overlay_title_nutzen: 'equals true'
-      -
-        handle: show_add_title
-        field:
-          display: 'Titelzusatz zeigen'
-          type: toggle
-          icon: toggle
-          instructions: 'Show additional title'
-          listable: hidden
-          width: 25
-      -
-        handle: additional_title
-        field:
-          input_type: text
-          antlers: false
-          display: Titelzusatz
-          type: text
-          icon: text
-          listable: hidden
-          instructions: 'Additional title'
-          if:
-            show_add_title: 'equals true'
-          width: 75
-      -
-        handle: subtitle
-        field:
-          input_type: text
-          antlers: false
-          display: Untertitel
-          type: text
-          icon: text
-          listable: hidden
-          instructions: Subtitle
-          instructions_position: above
-          visibility: visible
-      -
-        handle: additional_info
-        field:
-          input_type: text
-          antlers: false
-          display: Zusatzinfo
-          type: text
-          icon: text
-          listable: hidden
-          instructions: 'Additional info'
-      -
-        handle: general_info_section
-        field:
-          display: 'Überblick / General info'
-          type: section
-          icon: section
-          listable: hidden
-      -
-        handle: ticket_price_profile
-        field:
-          max_items: 1
-          mode: select
-          taxonomies:
-            - preisprofil
-          display: Preisprofil
-          type: terms
-          icon: taxonomy
-          instructions: 'Ticket Price'
-          listable: hidden
-      -
-        handle: urauffuehrung_zeigen
-        field:
-          display: Uraufführung
-          type: toggle
-          icon: toggle
-          instructions: 'Show Premiere Field'
-          listable: hidden
-      -
-        handle: premiere_date
-        field:
-          mode: single
-          time_enabled: true
-          time_required: true
-          earliest_date: '1900-01-01'
-          full_width: false
-          inline: false
-          columns: 1
-          rows: 1
-          display: Uraufführung
-          type: date
-          icon: date
-          instructions: Premiere
-          listable: hidden
-          if:
-            urauffuehrung_zeigen: 'equals true'
-      -
-        handle: dauer_zeigen
-        field:
-          display: Dauer
-          type: toggle
-          icon: toggle
-          instructions: 'Show Duration Field'
-          width: 25
-          listable: hidden
-      -
-        handle: duration
-        field:
-          display: Dauer
-          type: time
-          icon: time
-          width: 25
-          listable: hidden
-          instructions: Duration
-          if:
-            dauer_zeigen: 'equals true'
-      -
-        handle: pause_zeigen
-        field:
-          display: Pause
-          type: toggle
-          icon: toggle
-          instructions: 'Show Pause Field'
-          width: 25
-          listable: hidden
-      -
-        handle: intermission
-        field:
-          options:
-            'keine Pause': 'keine Pause'
-            'eine Pause': 'eine Pause'
-          multiple: false
-          max_items: 1
-          clearable: false
-          searchable: true
-          taggable: true
-          push_tags: false
-          cast_booleans: false
-          display: Pause
-          type: select
-          icon: select
-          width: 25
-          listable: hidden
-          instructions: Intermission
-          if:
-            pause_zeigen: 'equals true'
-      -
-        handle: from_to_toggle
-        field:
-          display: 'Von - Bis (Alter)'
-          type: toggle
-          icon: toggle
-          listable: hidden
-          instructions: 'Show From - To (Age)'
-      -
-        handle: from_to
-        field:
-          input_type: text
-          antlers: false
-          display: 'Von - Bis (Alter)'
-          type: text
-          icon: text
-          instructions: 'From - To (Age)'
-          listable: hidden
-          if:
-            from_to_toggle: 'equals true'
-      -
-        handle: extra_info_zeigen
-        field:
-          display: 'Extra-Info zeigen'
-          type: toggle
-          icon: toggle
-          instructions: 'Show Custom Info Section'
-          listable: hidden
-      -
-        handle: extra_info_section_grid
-        field:
-          fields:
-            -
-              handle: bezeichnung
-              field:
-                input_type: text
-                antlers: false
-                display: Bezeichnung
-                type: text
-                icon: text
-                instructions: Label
-                listable: hidden
-                width: 50
-            -
-              handle: beschreibung
-              field:
-                input_type: text
-                antlers: false
-                display: Beschreibung
-                type: text
-                icon: text
-                instructions: Description
-                listable: hidden
-                width: 50
-          mode: table
-          add_row: '+ Info / Add Info'
-          reorderable: true
-          display: Extra-Info
-          type: grid
-          icon: grid
-          instructions: 'Add Custom Info'
-          listable: hidden
-          if:
-            extra_info_zeigen: 'equals true'
-      -
-        handle: besetzung
-        field:
-          display: Besetzung
-          type: section
-          icon: section
-          instructions: 'Cast and crew'
-          listable: hidden
-      -
-        handle: credits
-        field:
-          fields:
-            -
-              handle: role
-              field:
-                mode: select
-                collections:
-                  - rollen
-                display: Rolle
-                type: entries
-                icon: entries
-                instructions: Role
-                listable: hidden
-                width: 50
-            -
-              handle: performer
-              field:
-                mode: select
-                collections:
-                  - kuenstler_innen
-                display: 'Künstler:innen'
-                type: entries
-                icon: entries
-                instructions: Performer
-                listable: hidden
-                width: 50
-          mode: stacked
-          add_row: '+ Funktion / + Role'
-          reorderable: true
-          display: Credits
-          type: grid
-          icon: grid
-          instructions: Credits
-          listable: hidden
-      -
-        handle: content
-        field:
-          display: Content
-          type: section
-          icon: section
-          instructions: 'Site content'
-          listable: hidden
-      -
-        import: figure_one_size
-      -
-        import: page_builder
-      -
-        handle: image_gallery_toggle
-        field:
-          display: 'Image gallery'
-          type: toggle
-          icon: toggle
-          instructions: 'Show image gallery'
-          listable: hidden
-      -
-        handle: image_gallery
-        field:
-          mode: grid
-          container: assets
-          folder: produktionen
-          restrict: false
-          allow_uploads: true
-          display: 'Image gallery'
-          type: assets
-          icon: assets
-          listable: hidden
-          if:
-            image_gallery_toggle: 'equals true'
-      -
-        handle: image_credits
-        field:
-          input_type: text
-          antlers: false
-          display: 'Image credits'
-          type: text
-          icon: text
-          instructions: 'Image Copyright Info'
-          width: 50
-          listable: hidden
-          if:
-            image_gallery_toggle: 'equals true'
-      -
-        handle: darken_overlay
-        field:
-          default: false
-          display: 'Abdunklung der Fotos'
-          type: toggle
-          icon: toggle
-          instructions: 'Darkens the image in the background'
-          listable: hidden
-          instructions_position: above
-          visibility: visible
-          width: 50
-      -
-        handle: perf_section
-        field:
-          display: Veranstaltungen
-          type: section
-          icon: section
-          instructions: Performances
-          listable: hidden
-      -
-        handle: performance_dates
-        field:
-          fields:
-            -
-              handle: perf_date
-              field:
-                mode: single
-                time_enabled: true
-                time_required: true
-                earliest_date: '1900-01-01'
-                full_width: false
-                inline: false
-                columns: 1
-                rows: 1
-                display: Datum
-                type: date
-                icon: date
-                instructions: Date
-                listable: hidden
-                width: 50
-            -
-              handle: special_event_toggle
-              field:
-                display: Special-Event
-                type: toggle
-                icon: toggle
-                instructions: 'Extra Event'
-                width: 25
-                listable: hidden
-            -
-              handle: special_event_title
-              field:
-                input_type: text
-                antlers: false
-                display: Special-Event-Titel
-                type: text
-                icon: text
-                instructions: 'Extra Event Caption'
-                width: 66
-                listable: hidden
-                if:
-                  special_event_toggle: 'equals true'
-            -
-              handle: premiere_toggle
-              field:
-                display: Premiere
-                type: toggle
-                icon: toggle
-                instructions: Premiere
-                listable: hidden
-                width: 25
-            -
-              handle: premiere_type
-              field:
-                options:
-                  Premiere: Premiere
-                  Uraufführung: Uraufführung
-                  'Hamburg Premiere': 'Hamburg Premiere'
-                  'Deutschland Premiere': 'Deutschland Premiere'
-                  Wiederaufnahme: Wiederaufnahme
-                multiple: false
-                max_items: 1
-                clearable: true
-                searchable: true
-                taggable: true
-                push_tags: true
-                cast_booleans: false
-                display: 'Was für eine Premiere?'
-                type: select
-                icon: select
-                instructions: 'Premiere Type'
-                listable: hidden
-                width: 50
-                if:
-                  premiere_toggle: 'equals true'
-            -
-              handle: tickets_section
-              field:
-                display: Tickets
-                type: section
-                icon: section
-                listable: hidden
-            -
-              handle: few_tickets_left
-              field:
-                display: Restkarten
-                type: toggle
-                icon: toggle
-                instructions: 'Few tickets left'
-                width: 25
-                listable: hidden
-            -
-              handle: sold_out
-              field:
-                display: Ausverkauft
-                type: toggle
-                icon: toggle
-                instructions: 'Sold out'
-                width: 25
-                listable: hidden
-            -
-              handle: cancelled
-              field:
-                display: Abgesagt
-                type: toggle
-                icon: toggle
-                instructions: Cancelled
-                listable: hidden
-                width: 25
-            -
-              handle: last_performance
-              field:
-                display: 'Zum Letzten Mal'
-                type: toggle
-                icon: toggle
-                instructions: 'Last Performance'
-                listable: hidden
-                width: 25
-            -
-              handle: kartenlink_verstecken
-              field:
-                display: 'Ticketlink verstecken'
-                type: toggle
-                icon: toggle
-                instructions: 'Hide Ticketlink'
-                listable: hidden
-            -
-              handle: ticket_url
-              field:
-                display: Ticketlink
-                type: external_link
-                icon: earth
-                instructions: 'Ticket URL'
-                listable: hidden
-                unless:
-                  kartenlink_verstecken: 'equals true'
-            -
-              handle: additional_info_performance_toggle
-              field:
-                display: 'Termininfo anzeigen'
-                type: toggle
-                icon: toggle
-                instructions: 'Show any additional info about this particular performance.'
-                listable: hidden
-            -
-              handle: additional_info_performance
-              field:
-                antlers: false
-                display: Termininfo
-                type: textarea
-                icon: textarea
-                instructions: 'Any additional info for this particular performance, e.g. change in the cast.'
-                listable: hidden
-                if:
-                  additional_info_performance_toggle: 'equals true'
-            -
-              handle: monsun_digital_section
-              field:
-                display: monsun.digital
-                type: section
-                icon: section
-                listable: hidden
-                instructions: 'Online performance'
-            -
-              handle: monsun_digital
-              field:
-                display: monsun.digital
-                type: toggle
-                icon: toggle
-                listable: hidden
-            -
-              handle: streaming
-              field:
-                display: Streaming-Link
-                type: external_link
-                icon: earth
-                instructions: 'Streaming URL'
-                listable: hidden
-                if:
-                  monsun_digital: 'equals true'
-            -
-              handle: streaming_info
-              field:
-                display: 'Streaming-Info anzeigen'
-                type: toggle
-                icon: toggle
-                instructions: 'Show any additional info about streaming?'
-                listable: hidden
-                width: 50
-            -
-              handle: additional_streaming_info
-              field:
-                antlers: false
-                display: 'Streaming Info'
-                type: textarea
-                icon: textarea
-                instructions: 'Information about streaming'
-                listable: hidden
-                if:
-                  streaming_info: 'equals true'
-          mode: stacked
-          reorderable: false
-          display: Termine
-          type: grid
-          icon: grid
-          instructions: 'Performance Dates'
-          listable: hidden
-          add_row: '+ Vorstellung / + Performance'
-      -
-        handle: presse_section
-        field:
-          display: Presse
-          type: section
-          icon: section
-          instructions: Pressroom
-          listable: hidden
-      -
-        handle: in_presse_zeigen
-        field:
-          display: 'In Presse zeigen'
-          type: toggle
-          icon: toggle
-          instructions: 'Show this production in Pressroom listing'
-          listable: hidden
-      -
-        handle: bildmaterial
-        field:
-          mode: grid
-          container: assets
-          folder: produktionen
-          restrict: false
-          allow_uploads: true
-          display: Bildmaterial
-          type: assets
-          icon: assets
-          instructions: Imagery
-          listable: hidden
-      -
-        handle: pressemitteilung
-        field:
-          mode: grid
-          container: assets
-          folder: produktionen
-          restrict: false
-          allow_uploads: true
-          display: Pressemitteilung
-          type: assets
-          icon: assets
-          instructions: 'Press Release'
-          listable: hidden
-      -
-        handle: pressestimmen
-        field:
-          mode: grid
-          container: assets
-          folder: produktionen
-          restrict: false
-          allow_uploads: true
-          display: Pressestimmen
-          type: assets
-          icon: assets
-          instructions: 'Press Reports'
-          listable: hidden
-      -
-        handle: zusatsinfo_zeigen_presse
-        field:
-          display: 'Zusatzinfo zeigen'
-          type: toggle
-          icon: toggle
-          instructions: 'Show additional info'
-          listable: hidden
-      -
-        handle: zusatsinfo_presse
-        field:
-          always_show_set_button: false
-          buttons:
-            - italic
-            - unorderedlist
-            - orderedlist
-            - removeformat
-            - anchor
-          save_html: false
-          toolbar_mode: fixed
-          link_noopener: false
-          link_noreferrer: false
-          target_blank: true
-          reading_time: false
-          fullscreen: true
-          allow_source: true
-          display: Zusatzinfo
-          type: bard
-          icon: bard
-          instructions: 'Additional info'
-          listable: hidden
-          if:
-            zusatsinfo_zeigen_presse: 'equals true'
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+              display: Titel
+              listable: hidden
+              input_type: text
+              antlers: false
+              instructions: Title
+          -
+            handle: overlay_title_nutzen
+            field:
+              display: 'Overlay-Title nutzen'
+              type: toggle
+              icon: toggle
+              instructions: 'Use it if you want to format your title with break marks'
+              listable: hidden
+          -
+            handle: overlay_title
+            field:
+              antlers: false
+              display: 'Overlay Title'
+              type: textarea
+              icon: textarea
+              instructions: 'This field will allow you to format your title with break marks'
+              listable: hidden
+              if:
+                overlay_title_nutzen: 'equals true'
+          -
+            handle: show_add_title
+            field:
+              display: 'Titelzusatz zeigen'
+              type: toggle
+              icon: toggle
+              instructions: 'Show additional title'
+              listable: hidden
+              width: 25
+          -
+            handle: additional_title
+            field:
+              input_type: text
+              antlers: false
+              display: Titelzusatz
+              type: text
+              icon: text
+              listable: hidden
+              instructions: 'Additional title'
+              if:
+                show_add_title: 'equals true'
+              width: 75
+          -
+            handle: subtitle
+            field:
+              input_type: text
+              antlers: false
+              display: Untertitel
+              type: text
+              icon: text
+              listable: hidden
+              instructions: Subtitle
+              instructions_position: above
+              visibility: visible
+          -
+            handle: additional_info
+            field:
+              input_type: text
+              antlers: false
+              display: Zusatzinfo
+              type: text
+              icon: text
+              listable: hidden
+              instructions: 'Additional info'
+          -
+            handle: general_info_section
+            field:
+              display: 'Überblick / General info'
+              type: section
+              icon: section
+              listable: hidden
+          -
+            handle: ticket_price_profile
+            field:
+              max_items: 1
+              mode: select
+              taxonomies:
+                - preisprofil
+              display: Preisprofil
+              type: terms
+              icon: taxonomy
+              instructions: 'Ticket Price'
+              listable: hidden
+          -
+            handle: urauffuehrung_zeigen
+            field:
+              display: Uraufführung
+              type: toggle
+              icon: toggle
+              instructions: 'Show Premiere Field'
+              listable: hidden
+          -
+            handle: premiere_date
+            field:
+              mode: single
+              time_enabled: true
+              time_required: true
+              earliest_date: '1900-01-01'
+              full_width: false
+              inline: false
+              columns: 1
+              rows: 1
+              display: Uraufführung
+              type: date
+              icon: date
+              instructions: Premiere
+              listable: hidden
+              if:
+                urauffuehrung_zeigen: 'equals true'
+          -
+            handle: dauer_zeigen
+            field:
+              display: Dauer
+              type: toggle
+              icon: toggle
+              instructions: 'Show Duration Field'
+              width: 25
+              listable: hidden
+          -
+            handle: duration
+            field:
+              display: Dauer
+              type: time
+              icon: time
+              width: 25
+              listable: hidden
+              instructions: Duration
+              if:
+                dauer_zeigen: 'equals true'
+          -
+            handle: pause_zeigen
+            field:
+              display: Pause
+              type: toggle
+              icon: toggle
+              instructions: 'Show Pause Field'
+              width: 25
+              listable: hidden
+          -
+            handle: intermission
+            field:
+              options:
+                'keine Pause': 'keine Pause'
+                'eine Pause': 'eine Pause'
+                'zwei Pausen': 'zwei Pausen'
+              multiple: false
+              max_items: 1
+              clearable: false
+              searchable: true
+              taggable: true
+              push_tags: false
+              cast_booleans: false
+              display: Pause
+              type: select
+              icon: select
+              width: 25
+              listable: hidden
+              instructions: Intermission
+              if:
+                pause_zeigen: 'equals true'
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+          -
+            handle: from_to_toggle
+            field:
+              display: 'Von - Bis (Alter)'
+              type: toggle
+              icon: toggle
+              listable: hidden
+              instructions: 'Show From - To (Age)'
+          -
+            handle: from_to
+            field:
+              input_type: text
+              antlers: false
+              display: 'Von - Bis (Alter)'
+              type: text
+              icon: text
+              instructions: 'From - To (Age)'
+              listable: hidden
+              if:
+                from_to_toggle: 'equals true'
+          -
+            handle: extra_info_zeigen
+            field:
+              display: 'Extra-Info zeigen'
+              type: toggle
+              icon: toggle
+              instructions: 'Show Custom Info Section'
+              listable: hidden
+          -
+            handle: extra_info_section_grid
+            field:
+              fields:
+                -
+                  handle: bezeichnung
+                  field:
+                    input_type: text
+                    antlers: false
+                    display: Bezeichnung
+                    type: text
+                    icon: text
+                    instructions: Label
+                    listable: hidden
+                    width: 50
+                -
+                  handle: beschreibung
+                  field:
+                    input_type: text
+                    antlers: false
+                    display: Beschreibung
+                    type: text
+                    icon: text
+                    instructions: Description
+                    listable: hidden
+                    width: 50
+              mode: table
+              add_row: '+ Info / Add Info'
+              reorderable: true
+              display: Extra-Info
+              type: grid
+              icon: grid
+              instructions: 'Add Custom Info'
+              listable: hidden
+              if:
+                extra_info_zeigen: 'equals true'
+          -
+            handle: besetzung
+            field:
+              display: Besetzung
+              type: section
+              icon: section
+              instructions: 'Cast and crew'
+              listable: hidden
+          -
+            handle: credits
+            field:
+              fields:
+                -
+                  handle: role
+                  field:
+                    mode: select
+                    collections:
+                      - rollen
+                    display: Rolle
+                    type: entries
+                    icon: entries
+                    instructions: Role
+                    listable: hidden
+                    width: 50
+                -
+                  handle: performer
+                  field:
+                    mode: select
+                    collections:
+                      - kuenstler_innen
+                    display: 'Künstler:innen'
+                    type: entries
+                    icon: entries
+                    instructions: Performer
+                    listable: hidden
+                    width: 50
+              mode: stacked
+              add_row: '+ Funktion / + Role'
+              reorderable: true
+              display: Credits
+              type: grid
+              icon: grid
+              instructions: Credits
+              listable: hidden
+          -
+            handle: content
+            field:
+              display: Content
+              type: section
+              icon: section
+              instructions: 'Site content'
+              listable: hidden
+          -
+            import: figure_one_size
+          -
+            import: page_builder
+          -
+            handle: image_gallery_toggle
+            field:
+              display: 'Image gallery'
+              type: toggle
+              icon: toggle
+              instructions: 'Show image gallery'
+              listable: hidden
+          -
+            handle: image_gallery
+            field:
+              mode: grid
+              container: assets
+              folder: produktionen
+              restrict: false
+              allow_uploads: true
+              display: 'Image gallery'
+              type: assets
+              icon: assets
+              listable: hidden
+              if:
+                image_gallery_toggle: 'equals true'
+          -
+            handle: image_credits
+            field:
+              input_type: text
+              antlers: false
+              display: 'Image credits'
+              type: text
+              icon: text
+              instructions: 'Image Copyright Info'
+              width: 50
+              listable: hidden
+              if:
+                image_gallery_toggle: 'equals true'
+          -
+            handle: darken_overlay
+            field:
+              default: false
+              display: 'Abdunklung der Fotos'
+              type: toggle
+              icon: toggle
+              instructions: 'Darkens the image in the background'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              width: 50
+          -
+            handle: perf_section
+            field:
+              display: Veranstaltungen
+              type: section
+              icon: section
+              instructions: Performances
+              listable: hidden
+          -
+            handle: performance_dates
+            field:
+              fields:
+                -
+                  handle: perf_date
+                  field:
+                    mode: single
+                    time_enabled: true
+                    time_required: true
+                    earliest_date: '1900-01-01'
+                    full_width: false
+                    inline: false
+                    columns: 1
+                    rows: 1
+                    display: Datum
+                    type: date
+                    icon: date
+                    instructions: Date
+                    listable: hidden
+                    width: 50
+                -
+                  handle: special_event_toggle
+                  field:
+                    display: Special-Event
+                    type: toggle
+                    icon: toggle
+                    instructions: 'Extra Event'
+                    width: 25
+                    listable: hidden
+                -
+                  handle: special_event_title
+                  field:
+                    input_type: text
+                    antlers: false
+                    display: Special-Event-Titel
+                    type: text
+                    icon: text
+                    instructions: 'Extra Event Caption'
+                    width: 66
+                    listable: hidden
+                    if:
+                      special_event_toggle: 'equals true'
+                -
+                  handle: premiere_toggle
+                  field:
+                    display: Premiere
+                    type: toggle
+                    icon: toggle
+                    instructions: Premiere
+                    listable: hidden
+                    width: 25
+                -
+                  handle: premiere_type
+                  field:
+                    options:
+                      Premiere: Premiere
+                      Uraufführung: Uraufführung
+                      'Hamburg Premiere': 'Hamburg Premiere'
+                      'Deutschland Premiere': 'Deutschland Premiere'
+                      Wiederaufnahme: Wiederaufnahme
+                    multiple: false
+                    max_items: 1
+                    clearable: true
+                    searchable: true
+                    taggable: true
+                    push_tags: true
+                    cast_booleans: false
+                    display: 'Was für eine Premiere?'
+                    type: select
+                    icon: select
+                    instructions: 'Premiere Type'
+                    listable: hidden
+                    width: 50
+                    if:
+                      premiere_toggle: 'equals true'
+                -
+                  handle: tickets_section
+                  field:
+                    display: Tickets
+                    type: section
+                    icon: section
+                    listable: hidden
+                -
+                  handle: few_tickets_left
+                  field:
+                    display: Restkarten
+                    type: toggle
+                    icon: toggle
+                    instructions: 'Few tickets left'
+                    width: 25
+                    listable: hidden
+                -
+                  handle: sold_out
+                  field:
+                    display: Ausverkauft
+                    type: toggle
+                    icon: toggle
+                    instructions: 'Sold out'
+                    width: 25
+                    listable: hidden
+                -
+                  handle: cancelled
+                  field:
+                    display: Abgesagt
+                    type: toggle
+                    icon: toggle
+                    instructions: Cancelled
+                    listable: hidden
+                    width: 25
+                -
+                  handle: last_performance
+                  field:
+                    display: 'Zum Letzten Mal'
+                    type: toggle
+                    icon: toggle
+                    instructions: 'Last Performance'
+                    listable: hidden
+                    width: 25
+                -
+                  handle: kartenlink_verstecken
+                  field:
+                    display: 'Ticketlink verstecken'
+                    type: toggle
+                    icon: toggle
+                    instructions: 'Hide Ticketlink'
+                    listable: hidden
+                -
+                  handle: ticket_url
+                  field:
+                    display: Ticketlink
+                    type: external_link
+                    icon: earth
+                    instructions: 'Ticket URL'
+                    listable: hidden
+                    unless:
+                      kartenlink_verstecken: 'equals true'
+                -
+                  handle: additional_info_performance_toggle
+                  field:
+                    display: 'Termininfo anzeigen'
+                    type: toggle
+                    icon: toggle
+                    instructions: 'Show any additional info about this particular performance.'
+                    listable: hidden
+                -
+                  handle: additional_info_performance
+                  field:
+                    antlers: false
+                    display: Termininfo
+                    type: textarea
+                    icon: textarea
+                    instructions: 'Any additional info for this particular performance, e.g. change in the cast.'
+                    listable: hidden
+                    if:
+                      additional_info_performance_toggle: 'equals true'
+                -
+                  handle: monsun_digital_section
+                  field:
+                    display: monsun.digital
+                    type: section
+                    icon: section
+                    listable: hidden
+                    instructions: 'Online performance'
+                -
+                  handle: monsun_digital
+                  field:
+                    display: monsun.digital
+                    type: toggle
+                    icon: toggle
+                    listable: hidden
+                -
+                  handle: streaming
+                  field:
+                    display: Streaming-Link
+                    type: external_link
+                    icon: earth
+                    instructions: 'Streaming URL'
+                    listable: hidden
+                    if:
+                      monsun_digital: 'equals true'
+                -
+                  handle: streaming_info
+                  field:
+                    display: 'Streaming-Info anzeigen'
+                    type: toggle
+                    icon: toggle
+                    instructions: 'Show any additional info about streaming?'
+                    listable: hidden
+                    width: 50
+                -
+                  handle: additional_streaming_info
+                  field:
+                    antlers: false
+                    display: 'Streaming Info'
+                    type: textarea
+                    icon: textarea
+                    instructions: 'Information about streaming'
+                    listable: hidden
+                    if:
+                      streaming_info: 'equals true'
+              mode: stacked
+              reorderable: false
+              display: Termine
+              type: grid
+              icon: grid
+              instructions: 'Performance Dates'
+              listable: hidden
+              add_row: '+ Vorstellung / + Performance'
+          -
+            handle: presse_section
+            field:
+              display: Presse
+              type: section
+              icon: section
+              instructions: Pressroom
+              listable: hidden
+          -
+            handle: in_presse_zeigen
+            field:
+              display: 'In Presse zeigen'
+              type: toggle
+              icon: toggle
+              instructions: 'Show this production in Pressroom listing'
+              listable: hidden
+          -
+            handle: bildmaterial
+            field:
+              mode: grid
+              container: assets
+              folder: produktionen
+              restrict: false
+              allow_uploads: true
+              display: Bildmaterial
+              type: assets
+              icon: assets
+              instructions: Imagery
+              listable: hidden
+          -
+            handle: pressemitteilung
+            field:
+              mode: grid
+              container: assets
+              folder: produktionen
+              restrict: false
+              allow_uploads: true
+              display: Pressemitteilung
+              type: assets
+              icon: assets
+              instructions: 'Press Release'
+              listable: hidden
+          -
+            handle: pressestimmen
+            field:
+              mode: grid
+              container: assets
+              folder: produktionen
+              restrict: false
+              allow_uploads: true
+              display: Pressestimmen
+              type: assets
+              icon: assets
+              instructions: 'Press Reports'
+              listable: hidden
+          -
+            handle: zusatsinfo_zeigen_presse
+            field:
+              display: 'Zusatzinfo zeigen'
+              type: toggle
+              icon: toggle
+              instructions: 'Show additional info'
+              listable: hidden
+          -
+            handle: zusatsinfo_presse
+            field:
+              always_show_set_button: false
+              buttons:
+                - italic
+                - unorderedlist
+                - orderedlist
+                - removeformat
+                - anchor
+              save_html: false
+              toolbar_mode: fixed
+              link_noopener: false
+              link_noreferrer: false
+              target_blank: true
+              reading_time: false
+              fullscreen: true
+              allow_source: true
+              display: Zusatzinfo
+              type: bard
+              icon: bard
+              instructions: 'Additional info'
+              listable: hidden
+              if:
+                zusatsinfo_zeigen_presse: 'equals true'
   sidebar:
     display: Sidebar
-    fields:
+    sections:
       -
-        handle: slug
-        field:
-          type: slug
-          localizable: true
-          validate:
-            - required
-            - 'unique_entry_value:{collection},{id},{site}'
-      -
-        handle: date
-        field:
-          type: date
-          required: true
-          validate:
-            - required
-      -
-        handle: parent
-        field:
-          type: entries
-          collections:
-            - veranstaltungen
-          max_items: 1
-          listable: false
-          localizable: true
-          mode: default
-      -
-        handle: kategorien
-        field:
-          type: terms
-          taxonomies:
-            - kategorien
-          display: Kategorien
-          mode: select
-          listable: hidden
-          max_items: 1
-      -
-        handle: veranstaltungsoerter
-        field:
-          type: terms
-          taxonomies:
-            - veranstaltungsoerter
-          display: Veranstaltungsort
-          mode: select
-          listable: hidden
-          max_items: 0
-      -
-        handle: status
-        field:
-          type: terms
-          taxonomies:
-            - status
-          display: Status
-          mode: select
-          instructions: 'Choose if the show is in current repertoire'
-          listable: hidden
-          max_items: 1
-      -
-        handle: in_kategorien_zeigen
-        field:
-          display: 'In Kategorien zeigen'
-          type: toggle
-          icon: toggle
-          instructions: 'Show the performance in Kategorien listings'
-          listable: hidden
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate:
+                - required
+                - 'unique_entry_value:{collection},{id},{site}'
+          -
+            handle: date
+            field:
+              type: date
+              required: true
+              default: now
+              validate:
+                - required
+          -
+            handle: parent
+            field:
+              type: entries
+              collections:
+                - veranstaltungen
+              max_items: 1
+              listable: false
+              localizable: true
+              mode: default
+          -
+            handle: kategorien
+            field:
+              type: terms
+              taxonomies:
+                - kategorien
+              display: Kategorien
+              mode: select
+              listable: hidden
+              max_items: 1
+          -
+            handle: veranstaltungsoerter
+            field:
+              type: terms
+              taxonomies:
+                - veranstaltungsoerter
+              display: Veranstaltungsort
+              mode: select
+              listable: hidden
+              max_items: 0
+          -
+            handle: status
+            field:
+              type: terms
+              taxonomies:
+                - status
+              display: Status
+              mode: select
+              instructions: 'Choose if the show is in current repertoire'
+              listable: hidden
+              max_items: 1
+          -
+            handle: in_kategorien_zeigen
+            field:
+              display: 'In Kategorien zeigen'
+              type: toggle
+              icon: toggle
+              instructions: 'Show the performance in Kategorien listings'
+              listable: hidden
   seo:
     display: SEO
-    fields:
+    sections:
       -
-        import: seo
+        fields:
+          -
+            import: seo
