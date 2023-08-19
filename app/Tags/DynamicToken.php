@@ -13,7 +13,7 @@ class DynamicToken extends Tags
      *
      * @return string
      */
-    public function index()
+    public function index(): string
     {
         $route = '/!/DynamicToken/refresh';
         $selector = 'form input[name="_token"]';
