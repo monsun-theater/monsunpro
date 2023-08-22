@@ -169,7 +169,7 @@ page_builder:
         attr_aria: 'No Name* das Muxical'
       -
         id: lktduio7
-        title: '11. September 2022 | 17:00 Uhr - 23:50 Uhr'
+        title: '11. September 2022 | 17:00 Uhr - 00:30 Uhr'
         text: 'Highlights aus dem Festivalprogramm im Rahmen der Theaternacht Hamburg'
         label: 'Theaternacht Hamburg'
         target_blank: false
@@ -583,7 +583,7 @@ sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 template: default
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1692289194
+updated_at: 1692724158
 seo_title: 'AUSSICHT Festival'
 seo_description: 'Hamburgs Mixed-Abled Festival'
 og_title: 'AUSSICHT Festival'
