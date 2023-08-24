@@ -4,7 +4,7 @@
     <div class="max-w-full mx-auto">
         <div class="relative shadow-xl overflow-hidden">
             <div class="absolute inset-0">
-                {{ partial:components/picture image="{{featured_image}}" class="h-full w-full object-cover" lazy="true" }}
+                {{ partial:components/picture image="{{featured_image}}" class="h-full w-full object-cover" }}
                 <div class="absolute inset-0 {{ if einfarbiger_hintergrund }} bg-white dark:bg-black {{ elseif darken_overlay }} mix-blend-multiply bg-neutral-300 {{ /if }}"></div>
             </div>            
             <div class="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">

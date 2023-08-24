@@ -54,39 +54,14 @@
             {{ template_content }}
         </div>
         {{ partial:layout/monsun_footer }}
-        <script src="{{ mix src='/js/site.js' }}" defer></script>
         <script
             defer
             src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
         ></script>
-        <script>
-            // Check if the browser supports the 'loading' attribute
-            if (!("loading" in HTMLIFrameElement.prototype)) {
-                // If not, use JavaScript to lazy load the iframe
-                const iframes = document.querySelectorAll("iframe[data-src]");
-                const loadIframe = (iframe) => {
-                    iframe.setAttribute("src", iframe.getAttribute("data-src"));
-                    iframe.removeAttribute("data-src");
-                };
-
-                if ("IntersectionObserver" in window) {
-                    const observer = new IntersectionObserver((entries) => {
-                        entries.forEach((entry) => {
-                            if (entry.isIntersecting) {
-                                loadIframe(entry.target);
-                                observer.unobserve(entry.target);
-                            }
-                        });
-                    });
-
-                    iframes.forEach((iframe) => {
-                        observer.observe(iframe);
-                    });
-                } else {
-                    // If IntersectionObserver isn't supported, load all iframes immediately
-                    iframes.forEach(loadIframe);
-                }
-            }
-        </script>
+        <script src="{{ mix src='/js/site.js' }}" defer></script>
+        <script
+            type="module"
+            src="https://cdn.jsdelivr.net/npm/@slightlyoff/lite-vimeo@0.1.1/lite-vimeo.js"
+        ></script>
     </body>
 </html>
