@@ -1,9 +1,9 @@
-{{# A sizeable image rendered in a figure tag with optional caption. #}}
 <figure class="size-{{ size }} my-4">
-    {{ partial:components/picture :image="image" class="w-full" cover="false" {{
-    switch( (size == 'sm') => '(min-width: 768px) 35vw, 90vw', (size == 'md') =>
-    '(min-width: 768px) 55vw, 90vw', (size == 'lg') => '(min-width: 768px) 75vw,
-    90vw', (size == 'xl') => '90vw', () => '100vw' ) }} }} {{ if caption }}
+    {{ partial:components/picture :image="image" class="w-full" cover="false"
+    sizes="{{ switch( (size == 'sm') => '(min-width: 768px) 35vw, 90vw', (size
+    == 'md') => '(min-width: 768px) 55vw, 90vw', (size == 'lg') => '(min-width:
+    768px) 75vw, 90vw', (size == 'xl') => '90vw', () => '100vw' ) }}" }} {{ if
+    caption }}
     <figcaption
         class="text-neutral-300 dark:text-neutral-600 text-xs text-center"
     >
