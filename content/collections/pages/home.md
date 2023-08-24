@@ -3,7 +3,7 @@ id: home
 blueprint: homepage
 title: Startseite
 updated_by: 34d4dc92-ec1a-4900-9a81-ed8dd8606f23
-updated_at: 1692729081
+updated_at: 1692895078
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -46,7 +46,7 @@ page_builder:
     text: 'Bleiben Sie im Kontakt mit dem monsun.theater! Einmal im Monat aktuelle Informationen zu unseren Veranstaltungen: Premieren, Festivals, Extra-Events und ein Blick hinter die Kulissen.'
     form: contact
     type: form
-    enabled: true
+    enabled: false
     zusatsinfo_forms:
       -
         type: paragraph
