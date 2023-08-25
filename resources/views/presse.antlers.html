@@ -9,11 +9,13 @@
             <div class="col-span-12 md:col-span-8 md:col-start-5">
                 {{ collection:veranstaltungen sort="title"
                 status:in="published|draft" }} {{ if in_presse_zeigen}}
-                <a href="{{" url }}
+                <a href="{{ url }}"
                     >{{ partial src="typography/h3" :content="title"
-                    class="text-black text-2xl dark:text-white pb-3"}}</a
+                    class="text-black text-4xl dark:text-white pt-6 pb-3
+                    uppercase"}}</a
                 >
                 <div class="pb-12">
+                    {{ if bildmaterial }}
                     <div class="pb-3">
                         {{ bildmaterial }}
                         <a
@@ -26,6 +28,7 @@
                             > </a
                         >{{ /bildmaterial }}
                     </div>
+                    {{ /if }}{{ if pressemitteilung }}
                     <div class="pb-3">
                         {{ pressemitteilung }}
                         <a
@@ -38,6 +41,7 @@
                             > </a
                         >{{ /pressemitteilung }}
                     </div>
+                    {{ /if }} {{ if pressestimmen }}
                     <div class="pb-3">
                         {{ pressestimmen }}
                         <a
@@ -50,7 +54,7 @@
                             > </a
                         >{{ /pressestimmen }}
                     </div>
-                    {{ /if }} {{ /collection:veranstaltungen}}
+                    {{ /if }} {{ /if }} {{ /collection:veranstaltungen}}
                 </div>
             </div>
         </section>
