@@ -6,10 +6,12 @@ hat_eigene_website_has_own_website: false
 biographie_eintragen_create_artist_s_biography: true
 page_builder:
   -
+    id: VHvXTu17
     bard:
       -
         type: set
         attrs:
+          id: nHfCQr7r
           values:
             type: figure
             image: kuenstler-innen/michael_alexander_mueller.jpg
@@ -93,7 +95,7 @@ page_builder:
                 type: italic
             text: (Leitung)
           -
-            type: hard_break
+            type: hardBreak
           -
             type: text
             marks:
@@ -115,7 +117,7 @@ page_builder:
                 type: italic
             text: (Text)
           -
-            type: hard_break
+            type: hardBreak
             marks:
               -
                 type: italic
@@ -140,7 +142,7 @@ page_builder:
                 type: italic
             text: (Text)
           -
-            type: hard_break
+            type: hardBreak
           -
             type: text
             marks:
@@ -162,7 +164,7 @@ page_builder:
                 type: italic
             text: (Text)
           -
-            type: hard_break
+            type: hardBreak
             marks:
               -
                 type: italic
@@ -187,7 +189,7 @@ page_builder:
                 type: italic
             text: (Leitung)
           -
-            type: hard_break
+            type: hardBreak
             marks:
               -
                 type: italic
@@ -212,7 +214,7 @@ page_builder:
                 type: italic
             text: '(Dramaturgie & Regie)'
           -
-            type: hard_break
+            type: hardBreak
             marks:
               -
                 type: italic
@@ -237,7 +239,7 @@ page_builder:
                 type: italic
             text: '(Textbearbeitung & Leitung)'
           -
-            type: hard_break
+            type: hardBreak
             marks:
               -
                 type: italic
@@ -261,8 +263,52 @@ page_builder:
               -
                 type: italic
             text: (Text)
+          -
+            type: hardBreak
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::f2cc8d79-4bc3-40f8-b57d-60441cbb4fa4'
+                  rel: null
+                  target: null
+                  title: null
+            text: 'BLENDPROTOKOLLE 2044 A.D.'
+          -
+            type: text
+            text: ' '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: '(Textbearbeitung & Leitung)'
+          -
+            type: hardBreak
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::b035bb4f-3dac-461d-bc91-b71d98e244b2'
+                  rel: null
+                  target: null
+                  title: null
+            text: 'DIESE COLA SCHMECKT NACH ZUKUNFT'
+          -
+            type: text
+            text: ' '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: '(Text & Kostüm & Leitung)'
     type: article
     enabled: true
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1675253570
+updated_at: 1693556830
 ---

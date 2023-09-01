@@ -119,14 +119,14 @@ page_builder:
     link_blocks:
       -
         id: Mjw64G3y
-        title: '06. September 2023 | 19:00 Uhr'
+        title: '06. September 2023 | 19:30 Uhr'
         text: 'Mit Künstler:innen des diesjährigen AUSSICHT Festivals [Hamburg, Berlin, Lahr, Stockholm]'
-        label: 'AUSSICHT Festival #5 – Eröffnungsgala'
+        label: 'AUSSICHT Festival #5 – Eröffnung'
         target_blank: false
         link_type: entry
         entry: 293e9a8f-6822-4c32-a14a-7cab7ab34014
-        attr_title: 'AUSSICHT Festival #5 –Eröffnungsgala'
-        attr_aria: 'AUSSICHT Festival #5 –Eröffnungsgala'
+        attr_title: 'AUSSICHT Festival #5 –Eröffnung'
+        attr_aria: 'AUSSICHT Festival #5 –Eröffnung'
       -
         id: ll2ls9gg
         title: '06. September 2023 | 21:00 Uhr'
@@ -583,7 +583,7 @@ sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 template: default
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1692724158
+updated_at: 1693322670
 seo_title: 'AUSSICHT Festival'
 seo_description: 'Hamburgs Mixed-Abled Festival'
 og_title: 'AUSSICHT Festival'

@@ -2,8 +2,8 @@
 id: 230ec157-5076-45d0-8d68-597a5f3d0743
 blueprint: kuenstler_innen
 title: 'Francoise Hüsges'
-updated_by: 34d4dc92-ec1a-4900-9a81-ed8dd8606f23
-updated_at: 1682245295
+updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
+updated_at: 1693556364
 page_builder:
   -
     id: 4qZc6Zgz
@@ -1151,6 +1151,72 @@ page_builder:
               -
                 type: italic
             text: ' (Streaming & Produktionsleitung)'
+          -
+            type: hardBreak
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::88318169-cad6-4a1a-a904-dfc077ba4517'
+                  rel: null
+                  target: null
+                  title: null
+            text: 'ROLAND MEETS BEETHOVEN'
+          -
+            type: text
+            text: ' '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: '(Konzept & Dramaturgie)'
+          -
+            type: hardBreak
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::9da6a61c-37bd-4d4c-b0d5-24a31a1fd1c6'
+                  rel: null
+                  target: null
+                  title: null
+            text: 'UNKONKRET IN DUISBURG STEHEN'
+          -
+            type: text
+            text: ' '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: (Performance)
+          -
+            type: hardBreak
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::b035bb4f-3dac-461d-bc91-b71d98e244b2'
+                  rel: null
+                  target: null
+                  title: null
+            text: 'DIESE COLA SCHMECKT NACH ZUKUNFT'
+          -
+            type: text
+            text: ' '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: '(Bühne & Kostüm)'
     type: article
     enabled: true
 kuenstler_artist_website_link: www.google.com

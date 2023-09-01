@@ -6,10 +6,12 @@ hat_eigene_website_has_own_website: false
 biographie_eintragen_create_artist_s_biography: true
 page_builder:
   -
+    id: hn7BKeBZ
     bard:
       -
         type: set
         attrs:
+          id: bkkwCuc8
           values:
             type: figure
             image: kuenstler-innen/shadi_kassaee.jpg
@@ -60,7 +62,7 @@ page_builder:
                 type: italic
             text: ' (Klavier)'
           -
-            type: hard_break
+            type: hardBreak
             marks:
               -
                 type: italic
@@ -84,21 +86,41 @@ page_builder:
               -
                 type: italic
             text: '(Live Komposition & Sounddesign)'
+          -
+            type: hardBreak
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::e2920504-4fdf-4a1e-9838-6f9d211aa752'
+                  rel: null
+                  target: null
+                  title: null
+            text: ZAHÅK
+          -
+            type: text
+            text: ' '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: '(Elektronik & Komposition)'
       -
         type: set
         attrs:
+          id: 9dVYbvVu
           values:
             type: buttons
             buttons:
               -
+                id: 2ggtrvQQ
                 label: 'Website Shadi Kassaee'
                 target_blank: true
                 link_type: url
-                entry: null
                 url: 'https://shadi-kassaee.jimdofree.com/'
-                email: null
-                tel: null
-                asset: null
                 attr_title: 'Website Shadi Kassaee'
                 attr_aria: 'Website Shadi Kassaee'
       -
@@ -106,5 +128,5 @@ page_builder:
     type: article
     enabled: true
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1675261065
+updated_at: 1693556673
 ---
