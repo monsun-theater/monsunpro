@@ -2,7 +2,7 @@
 id: 8a8f549b-0be1-4e43-9ed4-3e6eb12d98b9
 blueprint: page
 title: 'AUSSICHT Festival'
-cinema_monsun: false
+cinema_monsun: true
 page_builder:
   -
     id: bFzMcf3b
@@ -583,10 +583,12 @@ sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 template: default
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1693322670
+updated_at: 1693929667
 seo_title: 'AUSSICHT Festival'
 seo_description: 'Hamburgs Mixed-Abled Festival'
 og_title: 'AUSSICHT Festival'
 og_description: 'Hamburgs Mixed-Abled Festival'
 og_image: produktionen/aussicht_festival/AusSicht-Festival-Logo-Rechteck.jpg
+do_not_track_toggle: false
+monsun_video: 'https://vimeo.com/861302333'
 ---

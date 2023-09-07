@@ -2,8 +2,8 @@
 id: home
 blueprint: homepage
 title: Startseite
-updated_by: 34d4dc92-ec1a-4900-9a81-ed8dd8606f23
-updated_at: 1692901129
+updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
+updated_at: 1693930484
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -31,7 +31,7 @@ hero_featured_sect:
         entry: 8a8f549b-0be1-4e43-9ed4-3e6eb12d98b9
         attr_title: 'Mehr lesen'
         attr_aria: 'Mehr über das AUSSICHT Festival lesen'
-anzahl_vorstellungen_in_demnaechst: 4
+anzahl_vorstellungen_in_demnaechst: 6
 anzahl_eintraege_in_aktuelles: 2
 anzahl_stuecke_in_spielzeit_component: 2
 seo_title: Startseite
@@ -70,8 +70,7 @@ page_builder:
             text: .
 demnachst_verstecken: false
 aktuelles_eintraege:
-  - f6b6f60d-b011-46a7-a919-02a3590256fd
-  - ad39757e-66b1-4091-a10d-b1267331d92d
+  - a107af7e-d13d-4e7a-aeee-586850573c0f
 spielzeit_eintraege:
   - 293e9a8f-6822-4c32-a14a-7cab7ab34014
   - e2920504-4fdf-4a1e-9838-6f9d211aa752
