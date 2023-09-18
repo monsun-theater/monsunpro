@@ -6,10 +6,12 @@ hat_eigene_website_has_own_website: false
 biographie_eintragen_create_artist_s_biography: true
 page_builder:
   -
+    id: WPK980bg
     bard:
       -
         type: set
         attrs:
+          id: Yp4ezI6M
           values:
             type: figure
             image: kuenstler-innen/kathrine_altaparmakov_c_grigorios_yfantis.jpg
@@ -20,7 +22,7 @@ page_builder:
         content:
           -
             type: text
-            text: 'Kathrine Altaparmakov studiert Freie Kunst und Bühnenraum an der Hochschule für Bildende Künste in Hamburg sowie Szenografie an der Danish National School of Performing Arts in Kopenhagen. Nach dem Diplom arbeitet sie am Thalia Theater, am Deutschen Schauspielhaus Hamburg und am Theater Bremen als Bühnen- und Kostümbildassistentin u.a. mit Florian Lösche, Stéphane Laimé, Alex Eales, Duri Bischoff, Ene-Liis Semper und Peter Baur. Währenddessen entwickelt sie eigene Arbeiten und Raumkonzepte. Als freischaffende Bühnen- und Kostümbildnerin ist sie sowohl im Stadt- und Staatstheater als auch in der Freien Szene tätig. Projekte führen sie u.a. an das Junge Schauspielhaus Düsseldorf, monsun.theater Hamburg, Theater Münster, Junges Schauspielhaus Bochum, Theater Konstanz oder Staatstheater Hannover. Beim Theater der Welt 2017 ist sie als künstlerische Mitarbeiterin des Ausstattungsduos ''Georg & Paul'' (Eva-Maria Henschkowski und Lolita Hindenberg) für die Gestaltung des Zentrums „Haven“ im Hamburger Baakenhafen verantwortlich, und für das Hauptsache Frei Festival entwirft sie ein mobiles Festivalzentrum. '
+            text: "Kathrine Altaparmakov studiert Freie Kunst und Bühnenraum an der Hochschule für Bildende Künste in Hamburg sowie Szenografie an der Danish National School of Performing Arts in Kopenhagen. Nach dem Diplom arbeitet sie am Thalia Theater, am Deutschen Schauspielhaus Hamburg und am Theater Bremen als Bühnen- und Kostümbildassistentin u.a. mit Florian Lösche, Stéphane Laimé, Alex Eales, Duri Bischoff, Ene-Liis Semper und Peter Baur. Währenddessen entwickelt sie eigene Arbeiten und Raumkonzepte. Als freischaffende Bühnen- und Kostümbildnerin ist sie sowohl im Stadt- und Staatstheater als auch in der Freien Szene tätig. Projekte führen sie u.a. an das Junge Schauspielhaus Düsseldorf, monsun.theater Hamburg, Theater Münster, Junges Schauspielhaus Bochum, Theater Konstanz oder Staatstheater Hannover. Beim Theater der Welt 2017 ist sie als künstlerische Mitarbeiterin des Ausstattungsduos 'Georg & Paul' (Eva-Maria Henschkowski und Lolita Hindenberg) für die Gestaltung des Zentrums „Haven“ im Hamburger Baakenhafen verantwortlich, und für das Hauptsache Frei Festival entwirft sie ein mobiles Festivalzentrum. "
       -
         type: paragraph
         content:
@@ -51,7 +53,7 @@ page_builder:
                 type: italic
             text: (Bühne)
           -
-            type: hard_break
+            type: hardBreak
             marks:
               -
                 type: italic
@@ -76,7 +78,7 @@ page_builder:
                 type: italic
             text: (Bühne)
           -
-            type: hard_break
+            type: hardBreak
           -
             type: text
             marks:
@@ -98,7 +100,7 @@ page_builder:
                 type: italic
             text: '(Bühne & Raum & Licht)'
           -
-            type: hard_break
+            type: hardBreak
           -
             type: text
             marks:
@@ -120,7 +122,7 @@ page_builder:
                 type: italic
             text: '(Bühne & Licht)'
           -
-            type: hard_break
+            type: hardBreak
             marks:
               -
                 type: italic
@@ -145,7 +147,7 @@ page_builder:
                 type: italic
             text: (Bühnenraum)
           -
-            type: hard_break
+            type: hardBreak
             marks:
               -
                 type: italic
@@ -170,7 +172,7 @@ page_builder:
                 type: italic
             text: (Bühnenraum)
           -
-            type: hard_break
+            type: hardBreak
             marks:
               -
                 type: italic
@@ -194,8 +196,30 @@ page_builder:
               -
                 type: italic
             text: (Bühnenraum)
+          -
+            type: hardBreak
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::4a2ebb10-e8a4-4434-bb83-4dc53b387e2a'
+                  rel: null
+                  target: null
+                  title: null
+            text: 'ROST UND STAUB'
+          -
+            type: text
+            text: "\_"
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: (Bühnenraum)
     type: article
     enabled: true
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1679576005
+updated_at: 1694642152
 ---

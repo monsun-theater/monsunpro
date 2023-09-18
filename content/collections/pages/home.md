@@ -3,7 +3,7 @@ id: home
 blueprint: homepage
 title: Startseite
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1693930484
+updated_at: 1694447672
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -15,22 +15,22 @@ hero_featured_sect:
     id: JK5EJIkt
     titelzusatz_zeigen: true
     einfarbiger_hintergrund: false
-    featured_image: produktionen/aussicht_festival/2023/no_name/no_name_das_muxical_01_c_simon_wachter.jpg
+    featured_image: produktionen/backstage_festival/2023/unkonkret_in_duisburg_stehen/unkonkret_in_duisburg_stehen_32_c_g2_baraniak.jpg
     type: featured
     enabled: true
     darken_overlay: true
     overlay_color: neutral-300
-    title: 'AUSSICHT Festival'
-    subtitle: '6. - 9. September 2023'
+    title: 'BACKSTAGE Festival'
+    subtitle: '16. - 29. September 2023'
     buttons:
       -
         id: ll452yxm
         label: 'Mehr lesen'
         target_blank: false
         link_type: entry
-        entry: 8a8f549b-0be1-4e43-9ed4-3e6eb12d98b9
+        entry: 4cf2bb20-1dff-43d5-9f8c-4f4649291e8c
         attr_title: 'Mehr lesen'
-        attr_aria: 'Mehr über das AUSSICHT Festival lesen'
+        attr_aria: 'Mehr über das BACKSTAGE Festival lesen'
 anzahl_vorstellungen_in_demnaechst: 6
 anzahl_eintraege_in_aktuelles: 2
 anzahl_stuecke_in_spielzeit_component: 2
@@ -70,15 +70,12 @@ page_builder:
             text: .
 demnachst_verstecken: false
 aktuelles_eintraege:
+  - 8f42981a-f370-4812-a602-85c37606cd89
   - a107af7e-d13d-4e7a-aeee-586850573c0f
 spielzeit_eintraege:
-  - 293e9a8f-6822-4c32-a14a-7cab7ab34014
-  - e2920504-4fdf-4a1e-9838-6f9d211aa752
-  - 1be3b084-b123-4d16-8b65-5f105f404c02
-  - 2877a4ce-0dc9-4b91-814a-ce5238918f26
-  - e32c60a6-a0a8-4f57-9b41-d0d23ae6d778
-  - d4a5a747-1858-45c7-9c0f-6e25969dbdcf
-  - cd673d86-058e-43f0-98c8-7f01eb04526d
-  - 88318169-cad6-4a1a-a904-dfc077ba4517
-  - e41a6668-34a9-4fa4-92f9-636e76d27b9b
+  - 117cbaf9-a829-4488-919f-7367630a2d6c
+  - 504e9812-d512-4fec-a9b5-05af0d56d74c
+  - 9da6a61c-37bd-4d4c-b0d5-24a31a1fd1c6
+  - b035bb4f-3dac-461d-bc91-b71d98e244b2
+  - 40e29bab-2ed1-4fbe-8462-85bb6795012b
 ---

@@ -6,10 +6,12 @@ hat_eigene_website_has_own_website: false
 biographie_eintragen_create_artist_s_biography: true
 page_builder:
   -
+    id: sXCnHou8
     bard:
       -
         type: set
         attrs:
+          id: 23Aso4nf
           values:
             type: figure
             image: kuenstler-innen/mara_wild_c_marie_seeberger.jpg
@@ -51,7 +53,7 @@ page_builder:
                 type: italic
             text: (Schnitt)
           -
-            type: hard_break
+            type: hardBreak
             marks:
               -
                 type: italic
@@ -76,7 +78,7 @@ page_builder:
                 type: italic
             text: '(Video & Live-Visuals)'
           -
-            type: hard_break
+            type: hardBreak
           -
             type: text
             marks:
@@ -98,7 +100,7 @@ page_builder:
                 type: italic
             text: '(Video & Live-Visuals)'
           -
-            type: hard_break
+            type: hardBreak
             marks:
               -
                 type: italic
@@ -123,7 +125,7 @@ page_builder:
                 type: italic
             text: '(Video & Live-Visuals)'
           -
-            type: hard_break
+            type: hardBreak
             marks:
               -
                 type: italic
@@ -148,7 +150,7 @@ page_builder:
                 type: italic
             text: '(Video & Live-Visuals)'
           -
-            type: hard_break
+            type: hardBreak
             marks:
               -
                 type: italic
@@ -173,7 +175,7 @@ page_builder:
                 type: italic
             text: '(Video & Live-Visuals)'
           -
-            type: hard_break
+            type: hardBreak
             marks:
               -
                 type: italic
@@ -198,7 +200,7 @@ page_builder:
                 type: italic
             text: '(Video & Live-Visuals)'
           -
-            type: hard_break
+            type: hardBreak
             marks:
               -
                 type: italic
@@ -223,7 +225,7 @@ page_builder:
                 type: italic
             text: (Live-Visuals)
           -
-            type: hard_break
+            type: hardBreak
             marks:
               -
                 type: italic
@@ -248,7 +250,7 @@ page_builder:
                 type: italic
             text: '(Live-Visuals & Animation)'
           -
-            type: hard_break
+            type: hardBreak
             marks:
               -
                 type: italic
@@ -273,7 +275,7 @@ page_builder:
                 type: italic
             text: '(Live-Visuals & Animation)'
           -
-            type: hard_break
+            type: hardBreak
             marks:
               -
                 type: italic
@@ -298,7 +300,7 @@ page_builder:
                 type: italic
             text: '(Live-Visuals & Animation)'
           -
-            type: hard_break
+            type: hardBreak
             marks:
               -
                 type: italic
@@ -322,8 +324,30 @@ page_builder:
               -
                 type: italic
             text: '(Live-Visuals & Animation)'
+          -
+            type: hardBreak
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::4a2ebb10-e8a4-4434-bb83-4dc53b387e2a'
+                  rel: null
+                  target: null
+                  title: null
+            text: 'ROST UND STAUB'
+          -
+            type: text
+            text: "\_"
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: (Live-Visuals)
     type: article
     enabled: true
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1680005544
+updated_at: 1694642181
 ---

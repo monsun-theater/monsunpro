@@ -6,10 +6,12 @@ hat_eigene_website_has_own_website: false
 biographie_eintragen_create_artist_s_biography: true
 page_builder:
   -
+    id: 2AG0zXS5
     bard:
       -
         type: set
         attrs:
+          id: ag805Mps
           values:
             type: figure
             image: kuenstler-innen/pablo_konrad_c_urban_ruths.JPG
@@ -42,7 +44,7 @@ page_builder:
                 type: italic
             text: "\_(Spiel)"
           -
-            type: hard_break
+            type: hardBreak
           -
             type: text
             marks:
@@ -64,7 +66,7 @@ page_builder:
                 type: italic
             text: (Spiel)
           -
-            type: hard_break
+            type: hardBreak
             marks:
               -
                 type: italic
@@ -89,7 +91,7 @@ page_builder:
                 type: italic
             text: (Spiel)
           -
-            type: hard_break
+            type: hardBreak
             marks:
               -
                 type: italic
@@ -114,7 +116,7 @@ page_builder:
                 type: italic
             text: (Spiel)
           -
-            type: hard_break
+            type: hardBreak
             marks:
               -
                 type: italic
@@ -139,7 +141,7 @@ page_builder:
                 type: italic
             text: (Spiel)
           -
-            type: hard_break
+            type: hardBreak
             marks:
               -
                 type: italic
@@ -163,8 +165,30 @@ page_builder:
               -
                 type: italic
             text: (Spiel)
+          -
+            type: hardBreak
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::4a2ebb10-e8a4-4434-bb83-4dc53b387e2a'
+                  rel: null
+                  target: null
+                  title: null
+            text: 'ROST UND STAUB'
+          -
+            type: text
+            text: "\_"
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: (Spiel)
     type: article
     enabled: true
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1679575934
+updated_at: 1694642210
 ---
