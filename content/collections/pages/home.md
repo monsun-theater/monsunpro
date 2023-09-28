@@ -3,7 +3,7 @@ id: home
 blueprint: homepage
 title: Startseite
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1694447672
+updated_at: 1695479225
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -73,9 +73,8 @@ aktuelles_eintraege:
   - 8f42981a-f370-4812-a602-85c37606cd89
   - a107af7e-d13d-4e7a-aeee-586850573c0f
 spielzeit_eintraege:
-  - 117cbaf9-a829-4488-919f-7367630a2d6c
-  - 504e9812-d512-4fec-a9b5-05af0d56d74c
   - 9da6a61c-37bd-4d4c-b0d5-24a31a1fd1c6
   - b035bb4f-3dac-461d-bc91-b71d98e244b2
   - 40e29bab-2ed1-4fbe-8462-85bb6795012b
+  - 4a2ebb10-e8a4-4434-bb83-4dc53b387e2a
 ---
