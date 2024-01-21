@@ -38,6 +38,6 @@ data:
       url: monsun_theater
       prefix: 'https://www.twitter.com/'
       type: twitter
-      enabled: true
+      enabled: false
       social_icon:
-        - site-setup/social-media-icons/icon-twitter.svg
+        - site-setup/social-media-icons/icon-threads.svg

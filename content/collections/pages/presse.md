@@ -9,7 +9,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1692987232
+updated_at: 1698066623
 template: presse
 cinema_monsun: true
 do_not_track_toggle: true
@@ -67,7 +67,7 @@ hero_featured_sect:
         attr_title: 'Download PDF'
         attr_aria: 'Download PDF'
     type: featured
-    enabled: true
+    enabled: false
 page_builder:
   -
     id: llqw2u4v
@@ -92,7 +92,7 @@ page_builder:
         attr_title: 'Download Pressemitteilung PDF'
         attr_aria: 'Download Pressemitteilung PDF'
     type: call_to_action
-    enabled: true
+    enabled: false
   -
     id: nI545NWh
     bard:

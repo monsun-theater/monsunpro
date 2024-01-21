@@ -1,0 +1,9 @@
+---
+id: ccf65e3b-715f-4e55-9121-0f3b26833209
+blueprint: kuenstler_innen
+title: 'Jasmina Stefanović'
+hat_eigene_website_has_own_website: false
+biographie_eintragen_create_artist_s_biography: false
+updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
+updated_at: 1700497988
+---

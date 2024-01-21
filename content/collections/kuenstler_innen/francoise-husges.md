@@ -3,7 +3,7 @@ id: 230ec157-5076-45d0-8d68-597a5f3d0743
 blueprint: kuenstler_innen
 title: 'Francoise Hüsges'
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1693556364
+updated_at: 1705004484
 page_builder:
   -
     id: 4qZc6Zgz
@@ -1217,6 +1217,41 @@ page_builder:
               -
                 type: italic
             text: '(Bühne & Kostüm)'
+          -
+            type: hardBreak
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::45191248-12a8-4ea5-ac8e-8899b3a507c4'
+                  rel: null
+                  target: null
+                  title: null
+            text: 'GESCHLOSSENE GESELLSCHAFT'
+          -
+            type: text
+            text: ' '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: (Bühne)
+          -
+            type: hardBreak
+          -
+            type: text
+            text: 'FLIEG, PRINZ PROPELL, FLIEG! '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: '(Bühne & Regie)'
+          -
+            type: hardBreak
     type: article
     enabled: true
 kuenstler_artist_website_link: www.google.com

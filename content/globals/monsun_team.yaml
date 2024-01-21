@@ -85,7 +85,7 @@ data:
           enabled: true
       extra_info_toggle: false
       type: neues_mitgleid
-      enabled: true
+      enabled: false
     -
       id: lgt5ry8c
       name: 'Katharina Theßeling'
@@ -118,7 +118,7 @@ data:
           enabled: true
       extra_info_toggle: false
       type: neues_mitgleid
-      enabled: true
+      enabled: false
     -
       id: lgt5uqhz
       name: 'Emmi Spieler'
@@ -131,7 +131,7 @@ data:
           enabled: true
       extra_info_toggle: false
       type: neues_mitgleid
-      enabled: true
+      enabled: false
     -
       id: lgt5v8gg
       extra_info_toggle: false
