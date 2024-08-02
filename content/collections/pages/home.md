@@ -3,7 +3,7 @@ id: home
 blueprint: homepage
 title: Startseite
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1705435595
+updated_at: 1721218052
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -13,99 +13,41 @@ template: home
 hero_featured_sect:
   -
     id: JK5EJIkt
-    titelzusatz_zeigen: true
-    einfarbiger_hintergrund: false
-    featured_image: produktionen/anatomie_der_guten_hoffnung/teil_3/anatomie_der_guten_hoffnung_teil3_48_c_g2_baraniak.jpg
-    type: featured
-    enabled: false
-    darken_overlay: true
-    overlay_color: neutral-300
-    title: 'Anatomie der guten Hoffnung'
-    subtitle: 'READY TO POP'
-    title_desc: ABGESAGT
-  -
-    id: lpfwp4hp
-    title: raincatchers
     titelzusatz_zeigen: false
     einfarbiger_hintergrund: false
-    featured_image: produktionen/raincatchers/raincatchers_szene2wei_04_c_simon_wachter.jpg
+    type: featured
+    enabled: false
+    darken_overlay: false
+    overlay_color: neutral-300
+    title: '*** SOMMERPAUSE +++'
+    featured_image: spielstaette/monsun.gaussstrasse_04.jpg
+  -
+    id: lyolnf6m
+    title: 'AUSSICHT Festival #6'
+    titelzusatz_zeigen: true
+    subtitle: 'Hamburgs Mixed-Abled Festival'
+    einfarbiger_hintergrund: false
     darken_overlay: true
     buttons:
       -
-        id: lpfwqzrs
-        label: 'Ticket buchen'
+        id: lyolo6cy
+        label: 'MEHR LESEN'
         target_blank: false
-        link_type: url
-        url: 'https://shop.reservix.de/?id=8feeeafb19071a27b13d5083379d95183e9ab490f2f135faf80b2fecfc1ba00f2aba7ad8945f4a4292549eb86feddc1b&vID=7337&eventGrpID=456850'
-        attr_title: 'Ticket buchen'
-        attr_aria: 'Ticket buchen'
+        link_type: entry
+        entry: 8a8f549b-0be1-4e43-9ed4-3e6eb12d98b9
+        attr_title: 'MEHR LESEN'
+        attr_aria: 'MEHR ÜBER DAS AUSSICHT FESTIVAL LESEN'
     type: featured
     enabled: true
-    title_desc: 'SZENE 2WEI'
-  -
-    id: lq8cax99
-    title: 'Wie weiter 2024?'
-    titelzusatz_zeigen: false
-    einfarbiger_hintergrund: false
-    featured_image: aktuelles/2023-12-16/raincatchers_01_c_simon_wachter.jpg
-    darken_overlay: false
-    buttons:
-      -
-        id: lq8cnw8f
-        label: 'NDR Hamburg Journal vom 16.12.2023'
-        target_blank: false
-        link_type: entry
-        entry: 3a544477-52be-45d2-85b0-d560a51dddb2
-      -
-        id: lq8crx67
-        label: Raincatchers
-        target_blank: false
-        link_type: entry
-        entry: 195948ed-884b-47ca-ad28-dffe66db90ae
-        attr_title: Raincatchers
-        attr_aria: 'Mehr über „Raincatchers“ lesen'
-      -
-        id: lq8ctehl
-        label: 'Die vierte Wand'
-        target_blank: false
-        link_type: entry
-        entry: e6bf9572-767e-4a42-b3a5-eed3e34d37c2
-        attr_title: 'Die vierte Wand'
-        attr_aria: 'Mehr über „Die vierte Wand“ lesen'
-      -
-        id: lqdy1oij
-        label: 'Anatomie der guten Hoffnung – Teil 3 – READY TO POP'
-        target_blank: false
-        link_type: entry
-        entry: b5184fc5-708e-40a2-bbc4-3c708dc7e237
-        attr_title: 'Anatomie der guten Hoffnung – Teil 3 – READY TO POP'
-        attr_aria: 'Mehr über „Anatomie der guten Hoffnung – Teil 3 – READY TO POP“ lesen'
-      -
-        id: lq8cucm3
-        label: 'IN:KON:SIS:TEN:ZEN.'
-        target_blank: false
-        link_type: entry
-        entry: 26135fbe-21d1-4d02-aa19-4f031ac984a9
-        attr_title: 'IN:KON:SIS:TEN:ZEN.'
-        attr_aria: 'Mehr über „IN:KON:SIS:TEN:ZEN.“ lesen'
-      -
-        id: lq8cvc2s
-        label: Mosaik
-        target_blank: false
-        link_type: entry
-        entry: 0051b85c-afab-40b0-85c9-d869c180404b
-        attr_title: Mosaik
-        attr_aria: 'Mehr über „Mosaik“ lesen'
-    type: featured
-    enabled: false
-anzahl_vorstellungen_in_demnaechst: 5
+    featured_image: produktionen/aussicht_festival/2024/cover_aussicht_2024.jpg
+anzahl_vorstellungen_in_demnaechst: 4
 anzahl_eintraege_in_aktuelles: 2
 anzahl_stuecke_in_spielzeit_component: 2
 seo_title: Startseite
 seo_description: 'monsun.theater ist das älteste Off-Theater in Hamburg und besteht seit 1980. Es befindet sich im Stadtteil Ottensen.'
 og_title: monsun.theater
 og_description: 'Das Monsun-Theater (Eigenschreibweise: monsun.theater) ist das älteste Off-Theater in Hamburg und besteht seit 1980. Es befindet sich im Stadtteil Ottensen.'
-spielzeit: 'Spielzeit 2023-2024'
+spielzeit: 'Spielzeit 2024-2025'
 page_builder:
   -
     id: bNPrLafc
@@ -113,7 +55,7 @@ page_builder:
     text: 'Bleiben Sie im Kontakt mit dem monsun.theater! Einmal im Monat aktuelle Informationen zu unseren Veranstaltungen: Premieren, Festivals, Extra-Events und ein Blick hinter die Kulissen.'
     form: contact
     type: form
-    enabled: false
+    enabled: true
     zusatsinfo_forms:
       -
         type: paragraph
@@ -137,11 +79,10 @@ page_builder:
             text: .
 demnachst_verstecken: false
 aktuelles_eintraege:
-  - 3a544477-52be-45d2-85b0-d560a51dddb2
+  - 0596eff2-72ce-4e7b-9f4a-481361e4534c
 spielzeit_eintraege:
+  - 2cab0e31-9739-4f02-8045-4a493313426f
   - 195948ed-884b-47ca-ad28-dffe66db90ae
-  - e6bf9572-767e-4a42-b3a5-eed3e34d37c2
-  - b5184fc5-708e-40a2-bbc4-3c708dc7e237
-  - 26135fbe-21d1-4d02-aa19-4f031ac984a9
-  - 0051b85c-afab-40b0-85c9-d869c180404b
+  - a377d029-aa60-41df-91eb-14aa6b07525c
+  - 365d60d8-adc8-41b0-a265-480da44ecb50
 ---

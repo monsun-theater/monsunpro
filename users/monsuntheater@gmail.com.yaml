@@ -21,3 +21,8 @@ preferences:
   assets:
     assets:
       per_page: 50
+  taxonomies:
+    kategorien:
+      filters:
+        musiktheater:
+          display: Musiktheater

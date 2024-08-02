@@ -68,6 +68,7 @@ page_builder:
         type: set
         attrs:
           id: KFYGEoFA
+          enabled: false
           values:
             type: buttons
             buttons:
@@ -83,11 +84,100 @@ page_builder:
         type: set
         attrs:
           id: GGSblFjI
+          enabled: false
           values:
             type: small_picture
             image: produktionen/aussicht_festival/presse/aussicht-cover.jpg
             zusatzinfo_zeigen: false
     type: article
+    enabled: true
+  -
+    id: lyn3n3dl
+    bard:
+      -
+        type: set
+        attrs:
+          id: lyn3n8fn
+          values:
+            type: figure
+            image: produktionen/aussicht_festival/06_trenner.jpg
+            size: md
+      -
+        type: set
+        attrs:
+          id: lyn3nx5m
+          enabled: false
+          values:
+            type: video
+            caption: 'AUSSICHT Festival #6 (2024)'
+            do_not_track: true
+    type: article
+    enabled: true
+  -
+    id: lyokum51
+    title: 'AUSSICHT Festival #6'
+    link_blocks:
+      -
+        id: iTauVAmK
+        title: '12. September 2024 | 19:00 Uhr'
+        text: 'Mit Künstler:innen des diesjährigen AUSSICHT Festivals [Hamburg, Berlin, Lahr]'
+        label: 'AUSSICHT Festival #6 – Eröffnung | Voll Normal'
+        target_blank: false
+        link_type: entry
+        entry: 2cab0e31-9739-4f02-8045-4a493313426f
+        attr_title: 'AUSSICHT Festival #6 – Eröffnung | Voll Normal'
+        attr_aria: 'AUSSICHT Festival #6 – Eröffnung | Voll Normal'
+      -
+        id: lyol6osm
+        title: '12. September 2024 | 21:00 Uhr'
+        text: 'SZENE 2WEI [Lahr]'
+        label: raincatchers
+        target_blank: false
+        link_type: entry
+        entry: 195948ed-884b-47ca-ad28-dffe66db90ae
+        attr_title: raincatchers
+        attr_aria: raincatchers
+      -
+        id: lyol7s5v
+        title: '13. September 2024 | 19:00 Uhr'
+        text: 'Eisenhans Theaterprojekt [Hamburg]'
+        label: 'Ein Mensch unserer Zeit'
+        target_blank: false
+        link_type: entry
+        entry: a377d029-aa60-41df-91eb-14aa6b07525c
+        attr_title: 'Ein Mensch unserer Zeit'
+        attr_aria: 'Ein Mensch unserer Zeit'
+      -
+        id: lyol8x44
+        title: '13. September 2024 | 20:30 Uhr'
+        text: 'echo.urban GbR [Hamburg]'
+        label: 'record-o-mat on stage'
+        target_blank: false
+        link_type: entry
+        entry: 365d60d8-adc8-41b0-a265-480da44ecb50
+        attr_title: 'record-o-mat on stage'
+        attr_aria: 'record-o-mat on stage'
+      -
+        id: lyolaywb
+        title: '14. September 2024 | 19:00 Uhr'
+        text: 'SZENE 2WEI [Lahr]'
+        label: raincatchers
+        target_blank: false
+        link_type: entry
+        entry: 195948ed-884b-47ca-ad28-dffe66db90ae
+        attr_title: raincatchers
+        attr_aria: raincatchers
+      -
+        id: lyolc6m7
+        title: '14. September 2024 | 20:00 Uhr'
+        text: 'Eisenhans Theaterprojekt [Hamburg]'
+        label: 'Ein Mensch unserer Zeit'
+        target_blank: false
+        link_type: entry
+        entry: a377d029-aa60-41df-91eb-14aa6b07525c
+        attr_title: 'Ein Mensch unserer Zeit'
+        attr_aria: 'Ein Mensch unserer Zeit'
+    type: link_blocks
     enabled: true
   -
     id: lksrni45
@@ -583,7 +673,7 @@ sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 template: default
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1705154689
+updated_at: 1721145281
 seo_title: 'AUSSICHT Festival'
 seo_description: 'Hamburgs Mixed-Abled Festival'
 og_title: 'AUSSICHT Festival'

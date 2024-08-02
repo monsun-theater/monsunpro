@@ -6,10 +6,12 @@ hat_eigene_website_has_own_website: false
 biographie_eintragen_create_artist_s_biography: true
 page_builder:
   -
+    id: oynnY5hR
     bard:
       -
         type: set
         attrs:
+          id: VmshWmSX
           values:
             type: figure
             image: kuenstler-innen/maire-louise-otto.jpg
@@ -38,13 +40,13 @@ page_builder:
         content:
           -
             type: text
-            text: "Erste eigene Arbeiten entstehen am DNT Weimar für die Produktion „Glück“\_(Regie: Jan Neumann) und „Deutsche Märchen“\_in einer Einrichtung von Hasko Weber."
+            text: "Erste eigene Arbeiten entstehen am DNT Weimar für die Produktion „Glück“ (Regie: Jan Neumann) und „Deutsche Märchen“\_in einer Einrichtung von Hasko Weber."
       -
         type: paragraph
         content:
           -
             type: text
-            text: "\_Am Schauspielhaus Hamburg entwirft sie diverse Kostümbilder für Backstage Produktionen unter der Regie von Michael Müller. Am monsun.theater Hamburg entwickelte sie das Maskenbild für die Produktion „Fabian oder der Gang vor die Hunde‘“ (Regie: Kathrin Mayr), sowie das Kostümbild für „Filetstücke - wem gehört das Land“\_(Regie: Johanna Hasse/ Francoise Hüsges).\_"
+            text: "Am Schauspielhaus Hamburg entwirft sie diverse Kostümbilder für Backstage Produktionen unter der Regie von Michael Müller. Am monsun.theater Hamburg entwickelte sie das Maskenbild für die Produktion „Fabian oder der Gang vor die Hunde‘“ (Regie: Kathrin Mayr), sowie das Kostümbild für „Filetstücke - wem gehört das Land“\_(Regie: Johanna Hasse/ Francoise Hüsges).\_"
       -
         type: paragraph
         content:
@@ -78,7 +80,7 @@ page_builder:
                 type: italic
             text: ' (Maske)'
           -
-            type: hard_break
+            type: hardBreak
             marks:
               -
                 type: italic
@@ -103,7 +105,7 @@ page_builder:
                 type: italic
             text: (Kostüm)
           -
-            type: hard_break
+            type: hardBreak
             marks:
               -
                 type: italic
@@ -125,7 +127,7 @@ page_builder:
                 type: italic
             text: ' (Kostüm)'
           -
-            type: hard_break
+            type: hardBreak
             marks:
               -
                 type: italic
@@ -150,7 +152,7 @@ page_builder:
                 type: italic
             text: (Kostüm)
           -
-            type: hard_break
+            type: hardBreak
             marks:
               -
                 type: italic
@@ -175,7 +177,7 @@ page_builder:
                 type: italic
             text: '(Kostüm & Maske)'
           -
-            type: hard_break
+            type: hardBreak
             marks:
               -
                 type: italic
@@ -199,8 +201,52 @@ page_builder:
               -
                 type: italic
             text: '(Bühne & Kostüm)'
+          -
+            type: hardBreak
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::713d8754-1008-4cb3-ae31-4469a5028ec6'
+                  rel: null
+                  target: null
+                  title: null
+            text: 'FLIEG, PRINZ PROPELL, FLIEG!'
+          -
+            type: text
+            text: ' '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: (Ausstattung)
+          -
+            type: hardBreak
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::e67da234-fe09-4a55-a00b-457a645c7489'
+                  rel: null
+                  target: null
+                  title: null
+            text: 'GOLDENE TAGE, ABER BITTE NUR FÜR MICH...'
+          -
+            type: text
+            text: ' '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: (Kostüm)
     type: article
     enabled: true
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1664013539
+updated_at: 1717745580
 ---

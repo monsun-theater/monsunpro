@@ -56,7 +56,7 @@ page_builder:
             text: 'FILETSTÜCKE – WEM GEHÖRT DAS LAND'
           -
             type: text
-            text: '. Aktuell steht sein neues Stück '
+            text: '. In der Spielzeit 22|23 steht '
           -
             type: text
             marks:
@@ -70,7 +70,21 @@ page_builder:
             text: 'DAS BELLEN DER HUNDE'
           -
             type: text
-            text: ' auf dem Programm.'
+            text: ' auf dem Programm und ein Jahr später folgt '
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::713d8754-1008-4cb3-ae31-4469a5028ec6'
+                  rel: null
+                  target: null
+                  title: null
+            text: 'FLIEG, PRINZ PROPELL, FLIEG!'
+          -
+            type: text
+            text: .
       -
         type: paragraph
         content:
@@ -271,28 +285,6 @@ page_builder:
               -
                 type: link
                 attrs:
-                  href: 'statamic://entry::f2cc8d79-4bc3-40f8-b57d-60441cbb4fa4'
-                  rel: null
-                  target: null
-                  title: null
-            text: 'BLENDPROTOKOLLE 2044 A.D.'
-          -
-            type: text
-            text: ' '
-          -
-            type: text
-            marks:
-              -
-                type: italic
-            text: '(Textbearbeitung & Leitung)'
-          -
-            type: hardBreak
-          -
-            type: text
-            marks:
-              -
-                type: link
-                attrs:
                   href: 'statamic://entry::b035bb4f-3dac-461d-bc91-b71d98e244b2'
                   rel: null
                   target: null
@@ -307,8 +299,52 @@ page_builder:
               -
                 type: italic
             text: '(Text & Kostüm & Leitung)'
+          -
+            type: hardBreak
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::713d8754-1008-4cb3-ae31-4469a5028ec6'
+                  rel: null
+                  target: null
+                  title: null
+            text: 'FLIEG, PRINZ PROPELL, FLIEG!'
+          -
+            type: text
+            text: ' '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: (Text)
+          -
+            type: hardBreak
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::e67da234-fe09-4a55-a00b-457a645c7489'
+                  rel: null
+                  target: null
+                  title: null
+            text: 'WAS KANN ICH FÜR SIE TUN?'
+          -
+            type: text
+            text: ' '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: (Leitung)
     type: article
     enabled: true
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1693556830
+updated_at: 1717745825
 ---

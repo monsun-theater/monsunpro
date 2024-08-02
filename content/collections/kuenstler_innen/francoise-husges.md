@@ -3,7 +3,7 @@ id: 230ec157-5076-45d0-8d68-597a5f3d0743
 blueprint: kuenstler_innen
 title: 'Francoise Hüsges'
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1705004484
+updated_at: 1716126133
 page_builder:
   -
     id: 4qZc6Zgz
@@ -1243,7 +1243,62 @@ page_builder:
             type: hardBreak
           -
             type: text
-            text: 'FLIEG, PRINZ PROPELL, FLIEG! '
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::6d9a570c-5128-406e-887f-dc80190c2185'
+                  rel: null
+                  target: null
+                  title: null
+            text: 'EINE GESCHICHTE ÜBER DIE LIEBE'
+          -
+            type: text
+            text: ' '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: (Leitung)
+          -
+            type: hardBreak
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::204f97c9-bf3d-4c78-844c-e5a2376dbde2'
+                  rel: null
+                  target: null
+                  title: null
+            text: 'EINE GESCHICHTE ÜBER DIE FREUNDSCHAFT'
+          -
+            type: text
+            text: ' '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: (Leitung)
+          -
+            type: hardBreak
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::713d8754-1008-4cb3-ae31-4469a5028ec6'
+                  rel: null
+                  target: null
+                  title: null
+            text: 'FLIEG, PRINZ PROPELL, FLIEG!'
+          -
+            type: text
+            text: ' '
           -
             type: text
             marks:
@@ -1252,6 +1307,81 @@ page_builder:
             text: '(Bühne & Regie)'
           -
             type: hardBreak
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::20e3ab19-d943-4d4c-a26a-fce255a2f663'
+                  rel: null
+                  target: null
+                  title: null
+            text: 'EINE GESCHICHTE ÜBER DIE FREIHEIT'
+          -
+            type: text
+            text: ' '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: (Leitung)
+          -
+            type: hardBreak
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::e67da234-fe09-4a55-a00b-457a645c7489'
+                  rel: null
+                  target: null
+                  title: null
+            text: 'GOLDENE TAGE, ABER BITTE NUR FÜR MICH...'
+          -
+            type: text
+            text: ' '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: '(Produktionsleitung & Bühne & Tanz)'
+          -
+            type: hardBreak
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::e67da234-fe09-4a55-a00b-457a645c7489'
+                  rel: null
+                  target: null
+                  title: null
+            text: 'WAS KANN ICH FÜR SIE TUN?'
+          -
+            type: text
+            text: ' '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: (Bühne)
+          -
+            type: hardBreak
+          -
+            type: text
+            text: 'FÜSSE IM HIMMEL '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: '(Produktionsleitung, Dramaturgie)'
     type: article
     enabled: true
 kuenstler_artist_website_link: www.google.com

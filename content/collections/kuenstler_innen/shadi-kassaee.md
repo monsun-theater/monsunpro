@@ -108,6 +108,28 @@ page_builder:
               -
                 type: italic
             text: '(Elektronik & Komposition)'
+          -
+            type: hardBreak
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::713d8754-1008-4cb3-ae31-4469a5028ec6'
+                  rel: null
+                  target: null
+                  title: null
+            text: 'FLIEG, PRINZ PROPELL, FLIEG!'
+          -
+            type: text
+            text: ' '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: '(Komposition & Arrangement)'
       -
         type: set
         attrs:
@@ -128,5 +150,5 @@ page_builder:
     type: article
     enabled: true
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1693556673
+updated_at: 1708625587
 ---

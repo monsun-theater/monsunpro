@@ -9,7 +9,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1698066623
+updated_at: 1712596421
 template: presse
 cinema_monsun: true
 do_not_track_toggle: true
@@ -17,22 +17,22 @@ monsun_video: 'https://vimeo.com/773546857'
 hero_featured_sect:
   -
     id: jF5HW6Kq
-    title: 'Gala der Preisträger:innen'
+    title: 'Aktuelle Pressemitteilung zur Situation im monsun.theater'
     titelzusatz_zeigen: false
     einfarbiger_hintergrund: false
     type: featured
     enabled: false
-    title_desc: '26. Internationales Solo-Tanz-Theater-Festival Stuttgart'
+    title_desc: 08.04.2024
     darken_overlay: true
     buttons:
       -
         id: VvJtH2oQ
         label: 'Mehr lesen'
         target_blank: false
-        link_type: entry
-        entry: 48154ad4-1764-449a-a007-7b1f106f38ee
-        attr_title: 'Mehr lesen'
-        attr_aria: 'Mehr über das 26. Internationales Solo-Tanz-Theater-Festival Stuttgart lesen'
+        link_type: asset
+        attr_title: Pressemitteilung
+        attr_aria: Pressemitteilung
+        asset: presse/2024-04-08/pressemitteilung_monsun.theater_wir-leben.pdf
   -
     id: bPfvflvU
     title: 'Theaterpreis Hamburg 2022'
@@ -118,6 +118,22 @@ page_builder:
         asset: spielstaette/monsun.gaussstrasse_01.jpg
         attr_title: 'Download Pressefoto'
         attr_aria: 'Download Pressefoto monsun.theater Gaußstraße'
+    type: call_to_action
+    enabled: true
+  -
+    id: lur7irrz
+    title: Pressemitteilung
+    image: presse/2024-04-08/monsun_zuschauerraum.jpg
+    text: 'Aktuelle Pressemitteilung zur Situation im monsun.theater'
+    buttons:
+      -
+        id: lur7jlvh
+        label: 'Download Pressemitteilung vom 08.04.2024'
+        target_blank: false
+        link_type: asset
+        asset: presse/2024-04-08/pressemitteilung_monsun.theater_wir-leben.pdf
+        attr_title: 'Download Pressemitteilung'
+        attr_aria: 'Download Pressemitteilung'
     type: call_to_action
     enabled: true
   -
