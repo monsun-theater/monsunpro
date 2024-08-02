@@ -6,10 +6,12 @@
 /public/assets/produktionen
 /public/assets/monsun-team
 public/assets/spielstaette
+public/assets/site-setup/social-media-icons/
 /public/storage
 /public/vendor/statamic
 /public/img/
 /public/static/
+/public/
 /storage/*.key
 /vendor
 .env

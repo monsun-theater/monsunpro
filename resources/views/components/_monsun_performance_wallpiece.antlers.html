@@ -87,14 +87,14 @@
         <!-- Tickets sold out -->
         {{ if sold_out}}
         <div
-            class="pt-3 font-bold tracking-widest uppercase dark:text-white sm:text-lg"
+            class="pt-3 font-bold tracking-widest uppercase text-black dark:text-white sm:text-lg"
         >
             Ausverkauft!
         </div>
         <!-- Event cancelled -->
         {{ elseif cancelled }}
         <div
-            class="pt-3 font-bold tracking-widest uppercase dark:text-white sm:text-lg"
+            class="pt-3 font-bold tracking-widest uppercase text-black dark:text-white sm:text-lg"
         >
             Abgesagt
         </div>
@@ -106,8 +106,8 @@
             <a class="block" href="{{ ticket_url }}">
                 <div class="pt-3 font-bold tracking-widest uppercase">
                     <!-- Few tickets left -->
-                    {{if few_tickets_left}}Rest{{ /if }} {{ if
-                    kartenlink_verstecken }} {{ else }}Karten<span
+                    {{if few_tickets_left}}Rest{{ /if }}{{ if
+                    kartenlink_verstecken }}{{ else }}Karten<span
                         class="font-bold text-monsun"
                         >&nbsp;→</span
                     >
