@@ -245,8 +245,27 @@ page_builder:
               -
                 type: italic
             text: (Kostüm)
+          -
+            type: hardBreak
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::72645625-4fe1-4c4c-b180-2ae056e0f6cf'
+                  rel: null
+                  target: null
+                  title: null
+            text: 'SOLANGE NUR MEIN HERZ BRENNT'
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: ' (Kostüm)'
     type: article
     enabled: true
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1717745580
+updated_at: 1724865718
 ---

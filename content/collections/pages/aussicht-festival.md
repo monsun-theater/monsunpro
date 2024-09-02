@@ -41,13 +41,13 @@ page_builder:
         content:
           -
             type: text
-            text: 'Das Festival bildet einen Ort verschiedener Sichtweisen, die durch das Eigenverständnis seiner Künstler:innen und ihren individuellen Fähigkeiten bestimmt sind.'
+            text: 'Das Festival bildet einen Ort verschiedener Sichtweisen, die durch das Eigenverständnis seiner Künstler:innen und ihren individuellen Fähigkeiten bestimmt sind. Es folgt hierbei dem Gedanken der künstlerischen Teilhabe aller! '
       -
         type: paragraph
         content:
           -
             type: text
-            text: 'Mit der fünften und letzten Ausgabe des AUSSICHT Festivals in seiner jetzigen Form, möchte das monsun.theater dem Gedanken der künstlerischen Teilhabe aller folgen. Wir gehen einen Schritt weiter: Aus der kompakten Form eines viertägigen Programms geben wir künftig den AUSSICHT-Produktionen eine stetige Sichtbarkeit im regulären Spielplan.'
+            text: 'Die sechste Ausgabe des AUSSICHT Festivals ist zugleich die letzte Ausgabe in der Interimsspielstätte in der Gaußstraße. Das monsun.theater zieht Ende 2024 um. Noch sind die neuen Räumlichkeiten nicht konkret, und dennoch ist eines klar: Das AUSSICHT Festival bleibt erhalten und wird im nächsten Jahr zum 45-jährigen Jubiläum des monsun.theaters neue Räume bespielen. '
       -
         type: paragraph
         content:
@@ -61,7 +61,7 @@ page_builder:
           values:
             type: pull_quote
             quote: 'Teilhabe muss größer gedacht und gelebt werden. Wer dabei nur an Menschen mit Behinderung denkt, fährt eingleisig. Teilhabe muss alle Gruppen einschließen.'
-            author: 'Roland Walter, Künstler & Inklusionsbotschafter, #4 AUSSICHT Festival 2022'
+            author: 'Roland Walter, Künstler & Inklusionsbotschafter'
       -
         type: paragraph
       -
@@ -106,11 +106,11 @@ page_builder:
         type: set
         attrs:
           id: lyn3nx5m
-          enabled: false
           values:
             type: video
             caption: 'AUSSICHT Festival #6 (2024)'
             do_not_track: true
+            video_url: 'https://vimeo.com/1005151718'
     type: article
     enabled: true
   -
@@ -673,7 +673,7 @@ sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 template: default
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1721145281
+updated_at: 1725209003
 seo_title: 'AUSSICHT Festival'
 seo_description: 'Hamburgs Mixed-Abled Festival'
 og_title: 'AUSSICHT Festival'
