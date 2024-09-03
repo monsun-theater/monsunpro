@@ -1,28 +1,38 @@
-{{# The outer wrapper grid as defined in tailwind.config.js. It makes sure all blocks on a page get evenly spaced
-without having to worry about margins or paddings. #}}
-{{ partial:components/monsun_featured}}
+{{# The outer wrapper grid as defined in tailwind.config.js. #}} {{
+partial:components/monsun_featured}}
 <main class="outer-grid fluid-container">
-    {{ if demnachst_verstecken}}
+    {{ cache for="1 hour" }} {{ if demnachst_verstecken}}
     <div class="text-3xl text-black lg:text-4xl dark:text-white">Demnächst</div>
-    <div class="text-2xl text-black dark:text-white">Zur Zeit keine Vorstellungen.</div>
-    {{ else }}
-    {{ partial:components/_monsun_feed_upcoming_perf}}
-    {{ /if }}
-    {{ partial:components/_monsun_feed_news}}
-    <!-- Spielplan -->
-    <div class="text-3xl lg:text-4xl text-black dark:text-white">{{ spielzeit }}</div>
-      {{ partial:components/_monsun_feed_programme }}
-      <div class="md:grid grid-cols-12 gap-4 items-baseline">
+    <div class="text-2xl text-black dark:text-white">
+        Zur Zeit keine Vorstellungen.
+    </div>
+    {{ else }} {{ partial:components/_monsun_feed_upcoming_perf}} {{ /if }} {{
+    /cache }} {{ cache for="1 hour" }} {{ partial:components/_monsun_feed_news}}
+    {{ /cache }}
+
+    <div class="text-3xl lg:text-4xl text-black dark:text-white">
+        {{ spielzeit }}
+    </div>
+
+    {{ cache for="1 day" }} {{ partial:components/_monsun_feed_programme }} {{
+    /cache }}
+
+    <div class="md:grid grid-cols-12 gap-4 items-baseline">
         <div class="col-span-4"></div>
         <div class="col-span-8">
+            <button
+                aria-label="Unseres Repertoire Zeigen"
+                class="max-w-sm mx-auto sm:max-w-none flex justify-center text-black dark:text-white"
+            >
+                <a
+                    href="/repertoire"
+                    class="flex items-center justify-center px-4 py-3 border-2 text-md font-bold tracking-wider uppercase shadow-sm hover:bg-monsun dark:hover:bg-monsun sm:px-8 focus-visible:ring-2 focus-visible:border-monsun"
+                    >Zum Repertoire</a
+                >
+            </button>
+        </div>
+    </div>
 
-      <button aria-label="Unseres Repertoire Zeigen"
-        class="max-w-sm mx-auto sm:max-w-none flex justify-center text-black dark:text-white">
-        <a href="/repertoire" class="flex items-center justify-center px-4 py-3 border-2 text-md font-bold tracking-wider uppercase shadow-sm
-        hover:bg-monsun dark:hover:bg-monsun sm:px-8 focus-visible:ring-2 focus-visible:border-monsun">Zum Repertoire</a>
-    </button></div>
-</div>
-    {{ page_builder scope="block" }}
-    {{ partial src="page_builder/{type}" }}
-    {{ /page_builder }}
+    {{ page_builder scope="block" }} {{ partial src="page_builder/{type}" }} {{
+    /page_builder }}
 </main>
