@@ -20,7 +20,7 @@ hero_featured_sect:
         attr_title: 'Mehr lesen'
         attr_aria: 'Mehr über „Lovecamp“ lesen'
     type: featured
-    enabled: false
+    enabled: true
     darken_overlay: true
   -
     id: mLrP5jtA
@@ -132,24 +132,6 @@ hero_featured_sect:
         attr_aria: 'Mehr über „Goldene Tage“ lesen'
     type: featured
     enabled: true
-  -
-    id: lzac50d9
-    title: 'Anna Insonnia'
-    titelzusatz_zeigen: false
-    einfarbiger_hintergrund: false
-    featured_image: produktionen/backstage_festival/2024/anna_insomnia/anna_insomnia_01_c_christian_bartsch.jpg
-    darken_overlay: true
-    buttons:
-      -
-        id: lzac5tb7
-        label: 'Mehr lesen'
-        target_blank: false
-        link_type: entry
-        entry: 5291f5a9-396f-4af0-b83c-9a40811213ca
-        attr_title: 'Mehr lesen'
-        attr_aria: 'Mehr über „For Sale: Kindheit“ lesen'
-    type: featured
-    enabled: false
 page_builder:
   -
     id: MDKz9D7h
@@ -175,6 +157,16 @@ page_builder:
     title: 'BACKSTAGE-Festival 2024 »Was aus uns werden soll«'
     link_blocks:
       -
+        id: m0lfd2ni
+        title: '01. Oktober 2024 | 19:00 Uhr'
+        text: 'Leitung: Gesche Lundbeck'
+        label: LOVECAMP
+        target_blank: false
+        link_type: entry
+        entry: 14c28178-7cdc-4431-b523-cfe096959044
+        attr_title: LOVECAMP
+        attr_aria: LOVECAMP
+      -
         id: cLAQG8wh
         title: '4. Oktober 2024 | 19:00 Uhr<br>5. Oktober 2024 | 19:00 Uhr'
         text: 'Leitung: Manfred Hüttmann'
@@ -196,7 +188,7 @@ page_builder:
         attr_aria: 'SO LANGE NUR MEIN HERZ BRENNT'
       -
         id: jVsOhiwV
-        title: '8. Oktober 2024 | 19:00 Uhr<br>9. Oktober 2024 | 11:00 Uhr [optionale Vorstellung]'
+        title: '8. Oktober 2024 | 19:00 Uhr<br>9. Oktober 2024 | 11:00 Uhr'
         text: 'Leitung: Benjamin Böcker, Antonia Rehfueß'
         label: 'FOR SALE: KINDHEIT'
         target_blank: false
@@ -206,7 +198,7 @@ page_builder:
         attr_aria: 'FOR SALE: KINDHEIT'
       -
         id: GSWZvnff
-        title: '10. Oktober 2024 | 11:00 Uhr [optionale Vorstellung]<br>10. Oktober 2024 | 19:00 Uhr<br>11. Oktober 2024 | 19:00 Uhr'
+        title: '10. Oktober 2024 | 11:00 Uhr<br>10. Oktober 2024 | 19:00 Uhr<br>11. Oktober 2024 | 19:00 Uhr'
         text: 'Leitung: Marie Petzold'
         label: ZUCKERHERZEN
         target_blank: false
@@ -243,5 +235,5 @@ sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 template: default
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1722600017
+updated_at: 1725307330
 ---
