@@ -1,59 +1,76 @@
 {{# The contact form content block. #}}
 <section class="grid md:grid-cols-12 gap-y-4">
-    <div class="md:col-start-5 md:col-span-8  bg-darkWhite dark:bg-darkGray p-3">
-        {{ partial:typography/h2 class="mb-4 dark:text-white" :content="block:title" }}
-        {{ partial:typography/paragraph class="dark:text-white" :content="block:text" }}
-
-        {{# Create the selected form and reference Alpine data in `sending()`. Prevent form from submitting with POST as
-        we will submit with AJAX. #}}
-        {{ form:create in="{ form:handle }"
-        id="form"
-        class="flex flex-wrap"
-        x-ref="form"
-        x-data="sending()"
-        @submit.prevent="sendForm()"
-        }}
+    <div class="md:col-start-5 md:col-span-8 bg-darkWhite dark:bg-darkGray p-3">
+        {{ partial:typography/h2 class="mb-4 dark:text-white"
+        :content="block:title" }} {{ partial:typography/paragraph
+        class="dark:text-white" :content="block:text" }} {{# Create the selected
+        form and reference Alpine data in `sending()`. Prevent form from
+        submitting with POST as we will submit with AJAX. #}} {{ form:create
+        in="{ form:handle }" id="form" class="flex flex-wrap" x-ref="form"
+        x-data="sending()" @submit.prevent="sendForm()" }}
         <div class="w-full grid md:grid-cols-12 gap-y-6 md:gap-x-6">
             {{# Honeypot spam protection. #}}
             <div class="hidden">
-                <label class="font-bold" for="fax">{{ trans:strings.form_honeypot }} <sup
-                        class="text-notice-400">*</sup></label>
-                <input class="form-input w-full" id="fax" type="fax" name="fax" tabindex="-1" autocomplete="off" />
+                <label class="font-bold" for="fax"
+                    >{{ trans:strings.form_honeypot }}
+                    <sup class="text-notice-400">*</sup></label
+                >
+                <input
+                    class="form-input w-full"
+                    id="fax"
+                    type="fax"
+                    name="fax"
+                    tabindex="-1"
+                    autocomplete="off"
+                />
             </div>
 
             {{ fields }}
-            <div class="flex flex-col space-y-1 
+            <div
+                class="flex flex-col space-y-1 
                         {{ width == '25' ?= 'md:col-span-3' }}
                         {{ width == '33' ?= 'md:col-span-4' }}
                         {{ width == '50' ?= 'md:col-span-6' }}
                         {{ width == '66' ?= 'md:col-span-8' }}
                         {{ width == '75' ?= 'md:col-span-9' }}
-                        {{ width == '100' ?= 'md:col-span-12' }}">
-                {{# Labels are hidden by default but visible while an error message shows up #}}
-                <label class="dark:text-white text-sm font-normal" for="{{ handle }}">{{ trans key="{display}" }} {{ if validate |
-                    contains:required }}<sup class="text-notice-400">*</sup>{{ /if }}</label>
-                {{# Load notification when there is a validation error with the name field. #}}
+                        {{ width == '100' ?= 'md:col-span-12' }}"
+            >
+                {{# Labels are hidden by default but visible while an error
+                message shows up #}}
+                <label
+                    class="text-black dark:text-white text-sm font-normal"
+                    for="{{ handle }}"
+                    >{{ trans key="{display}" }} {{ if validate |
+                    contains:required }}<sup class="text-notice-400">*</sup>{{
+                    /if }}</label
+                >
+                {{# Load notification when there is a validation error with the
+                name field. #}}
                 <template x-if="errors.{{ handle }}">
-                    {{ partial src="components/notification" type="error" attribute="x-text='errors.{handle}'" }}
+                    {{ partial src="components/notification" type="error"
+                    attribute="x-text='errors.{handle}'" }}
                 </template>
                 {{ field }}
             </div>
-            {{ /fields }}
-
-           {{# Pulse button and disable upon sending. #}}
-           <div class="md:col-span-12 flex justify-start">
-            {{ partial:components/button tag="button" label="{ trans:strings.form_send }" attribute='x-bind:disabled="sending" x-bind:class="&#123;&#39;opacity-25 cursor-default&#39;: sending&#125;"' }}
-        </div>
-        <template x-if="success">
-            {{ partial src="components/notification" type="success" class="md:col-span-12" content="{trans:strings.form_success}" }}
-        </template>
+            {{ /fields }} {{# Pulse button and disable upon sending. #}}
+            <div class="md:col-span-12 flex justify-start">
+                {{ partial:components/button tag="button" label="{
+                trans:strings.form_send }" attribute='x-bind:disabled="sending"
+                x-bind:class="&#123;&#39;opacity-25 cursor-default&#39;:
+                sending&#125;"' }}
+            </div>
+            <template x-if="success">
+                {{ partial src="components/notification" type="success"
+                class="md:col-span-12" content="{trans:strings.form_success}" }}
+            </template>
         </div>
         {{ /form:create }}
-<div class="pt-3 prose text-xs dark:prose-dark">{{zusatsinfo_forms}}</div>
-        {{# Load dynamic token JS to dynamically fetch and refresh a CSRF token. #}}
-        {{ dynamic_token }}
-
-        {{# The form script handling validation and submission via AJAX with `fetch()`. #}}
+        <div class="pt-3 prose text-xs dark:prose-dark">
+            {{zusatsinfo_forms}}
+        </div>
+        {{# Load dynamic token JS to dynamically fetch and refresh a CSRF token.
+        #}} {{ dynamic_token }} {{# The form script handling validation and
+        submission via AJAX with `fetch()`. #}}
         <script>
             function sending() {
                 return {
@@ -65,42 +82,41 @@
                         this.sending = true;
                         fetch(this.$refs.form.action, {
                             headers: {
-                                'X-Requested-With' : 'XMLHttpRequest'
+                                "X-Requested-With": "XMLHttpRequest",
                             },
-                            method: 'POST',
-                            body: new FormData(this.$refs.form)})
-                        .then(res => res.json())
-                        .then(json => {
-    
-                            var t = this; // re-assign this
-    
-                            if (json['success']) {
-                                t.errors = [];
-                                t.success = true;
-                                t.error = false;
-                                t.sending = false;
-                                t.$refs.form.reset();
-    
-                                setTimeout(function(){ 
-                                    t.success = false; // to hide the success message
-                                }, 4500);
-                            }
-                            if (json['error']) {
-                                t.sending = false;
-                                t.error = true;
-                                t.success = false;
-                                t.errors = json['error'];
-                            }
+                            method: "POST",
+                            body: new FormData(this.$refs.form),
                         })
-                        .catch(err => {
-                            err.text().then( errorMessage => {
-                                this.sending = false
+                            .then((res) => res.json())
+                            .then((json) => {
+                                var t = this; // re-assign this
+
+                                if (json["success"]) {
+                                    t.errors = [];
+                                    t.success = true;
+                                    t.error = false;
+                                    t.sending = false;
+                                    t.$refs.form.reset();
+
+                                    setTimeout(function () {
+                                        t.success = false; // to hide the success message
+                                    }, 4500);
+                                }
+                                if (json["error"]) {
+                                    t.sending = false;
+                                    t.error = true;
+                                    t.success = false;
+                                    t.errors = json["error"];
+                                }
                             })
-                        })
-                    }
-                }
+                            .catch((err) => {
+                                err.text().then((errorMessage) => {
+                                    this.sending = false;
+                                });
+                            });
+                    },
+                };
             }
         </script>
-
     </div>
 </section>

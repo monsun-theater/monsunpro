@@ -9,15 +9,14 @@
     </div>
     <div class="col-span-8 sm:text-lg py-3 md:py-0">
         <div class="text-xl font-bold leading-tight md:leading-normal pb-3">
-            {{# Create the selected form and reference Alpine data in
-            `sending()`. Prevent form from submitting with POST as we will
-            submit with AJAX. #}} {{ form:newsletter id="form" x-ref="form"
-            x-data="sending()" @submit.prevent="sendForm()" }} {{# Honeypot spam
-            protection. #}}
+            {{ form:newsletter id="form" x-ref="form" x-data="sending()"
+            @submit.prevent="sendForm()" }}
             <div class="hidden">
                 <label class="font-bold" for="fax"
-                    >{{ trans:strings.form_honeypot }}
-                    <sup class="text-notice-400">*</sup></label
+                    >{{ trans:strings.form_honeypot }}<sup
+                        class="text-notice-400"
+                        >*</sup
+                    ></label
                 >
                 <input
                     class="form-input w-full"
@@ -27,27 +26,30 @@
                     tabindex="-1"
                     autocomplete="off"
                 />
+                <!-- Add hidden timestamp field -->
+                <input type="hidden" name="formTimestamp" id="formTimestamp" />
             </div>
             {{ fields }}
             <div class="pb-3">
-                {{# Labels are hidden by default but visible while an error
-                message shows up #}}
                 <label
                     class="text-black dark:text-white text-sm font-normal"
                     for="{{ handle }}"
-                    >{{ trans key="{display}" }} {{ if validate |
-                    contains:required }}<sup class="text-notice-400">*</sup>{{
-                    /if }}</label
                 >
-                {{# Load notification when there is a validation error with the
-                name field. #}}
-                <template x-if="errors.{{ handle }}">
+                    {{ trans key="{display}" }} {{ if validate |
+                    contains:required }}<sup class="text-notice-400">*</sup>{{
+                    /if }}
+                </label>
+                <template
+                    class="text-black dark:text-white text-sm font-normal"
+                    x-if="errors.{{ handle }}"
+                >
                     {{ partial src="components/notification" type="error"
                     attribute="x-text='errors.{handle}'" }}
                 </template>
                 {{ field }}
             </div>
-            {{ /fields }} {{# Pulse button and disable upon sending. #}}
+            {{ /fields }}
+
             <div
                 class="text-black dark:text-white uppercase tracking-wider hover:text-monsun dark:hover:text-monsun sm:text-lg"
             >
@@ -60,12 +62,9 @@
                 {{ partial src="components/notification" type="success"
                 class="md:col-span-12" content="{trans:strings.form_success}" }}
             </template>
-            {{ /form:newsletter }} {{# Load dynamic token JS to dynamically
-            fetch and refresh a CSRF token. #}} {{ dynamic_token }}
+            {{ /form:newsletter }} {{ dynamic_token }}
         </div>
     </div>
-    {{# The form script handling validation and submission via AJAX with
-    `fetch()`. #}}
     <script>
         function sending() {
             return {
@@ -73,7 +72,23 @@
                 errors: [],
                 sending: false,
                 success: false,
+                init() {
+                    // Set the timestamp when the form is loaded
+                    document.getElementById("formTimestamp").value = Date.now();
+                },
                 sendForm() {
+                    // Check if the form was submitted too quickly (less than 3 seconds)
+                    const timestamp =
+                        document.getElementById("formTimestamp").value;
+                    const now = Date.now();
+                    if (now - timestamp < 3000) {
+                        this.error = true;
+                        this.errors = {
+                            form: "Please wait a moment before submitting the form.",
+                        };
+                        return;
+                    }
+
                     this.sending = true;
                     fetch(this.$refs.form.action, {
                         headers: {
@@ -84,17 +99,18 @@
                     })
                         .then((res) => res.json())
                         .then((json) => {
-                            var t = this; // re-assign this
-
+                            var t = this;
                             if (json["success"]) {
                                 t.errors = [];
                                 t.success = true;
                                 t.error = false;
                                 t.sending = false;
                                 t.$refs.form.reset();
-
+                                // Reset timestamp after successful submission
+                                document.getElementById("formTimestamp").value =
+                                    Date.now();
                                 setTimeout(function () {
-                                    t.success = false; // to hide the success message
+                                    t.success = false;
                                 }, 4500);
                             }
                             if (json["error"]) {
