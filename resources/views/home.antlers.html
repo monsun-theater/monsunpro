@@ -2,21 +2,18 @@
 blocks on a page get evenly spaced without having to worry about margins or
 paddings. #}} {{ partial:components/monsun_featured}}
 <main class="outer-grid fluid-container">
-    {{ cache key="homepage_{locale}" }} {{ if demnachst_verstecken}}
+    {{ if demnachst_verstecken}}
     <div class="text-3xl text-black lg:text-4xl dark:text-white">Demnächst</div>
     <div class="text-2xl text-black dark:text-white">
         Zur Zeit keine Vorstellungen.
     </div>
     {{ else }} {{ partial:components/_monsun_feed_upcoming_perf}} {{ /if }} {{
     partial:components/_monsun_feed_news}}
-
     <!-- Spielplan -->
     <div class="text-3xl lg:text-4xl text-black dark:text-white">
         {{ spielzeit }}
     </div>
-
-    {{ partial:components/_monsun_feed_programme }} {{ /cache }}
-
+    {{ partial:components/_monsun_feed_programme }}
     <div class="md:grid grid-cols-12 gap-4 items-baseline">
         <div class="col-span-4"></div>
         <div class="col-span-8">
@@ -32,7 +29,6 @@ paddings. #}} {{ partial:components/monsun_featured}}
             </button>
         </div>
     </div>
-
     {{ page_builder scope="block" }} {{ partial src="page_builder/{type}" }} {{
     /page_builder }}
 </main>
