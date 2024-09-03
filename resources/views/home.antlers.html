@@ -1,34 +1,55 @@
 {{# The outer wrapper grid as defined in tailwind.config.js. #}} {{
 partial:components/monsun_featured}}
 <main class="outer-grid fluid-container">
-    {{ cache key="homepage_{locale}" }} {{# Demnächst section #}} {{ if
+    {{# Use the current locale in the cache key to separate caches for different
+    languages #}} {{ cache key="homepage_{locale}" }} {{# Demnächst section -
+    kept outside of cache to ensure it's always current #}} {{ if
     demnachst_verstecken}}
-    <div class="text-3xl text-black lg:text-4xl dark:text-white">Demnächst</div>
+    <div class="text-3xl text-black lg:text-4xl dark:text-white">
+        {{ trans:strings.upcoming }}
+    </div>
     <div class="text-2xl text-black dark:text-white">
-        Zur Zeit keine Vorstellungen.
+        {{ trans:strings.no_performances }}
     </div>
     {{ else }} {{ partial:components/_monsun_feed_upcoming_perf}} {{ /if }} {{#
-    News feed - using the existing partial #}} {{
-    partial:components/_monsun_feed_news}}
+    News feed #}} {{ collection:news limit="5" as="news_items" }}
+    <div class="news-feed">
+        {{ news_items }}
+        <div class="news-item">
+            <h3>{{ title }}</h3>
+            <p>{{ summary }}</p>
+        </div>
+        {{ /news_items }}
+    </div>
+    {{ /collection:news }}
 
     <div class="text-3xl lg:text-4xl text-black dark:text-white">
         {{ spielzeit }}
     </div>
 
-    {{# Programme feed - using the existing partial #}} {{
-    partial:components/_monsun_feed_programme }} {{ /cache }}
+    {{# Programme feed #}} {{ collection:programme limit="10"
+    as="programme_items" }}
+    <div class="programme-feed">
+        {{ programme_items }}
+        <div class="programme-item">
+            <h3>{{ title }}</h3>
+            <p>{{ date format="d.m.Y" }}</p>
+        </div>
+        {{ /programme_items }}
+    </div>
+    {{ /collection:programme }} {{ /cache }}
 
     <div class="md:grid grid-cols-12 gap-4 items-baseline">
         <div class="col-span-4"></div>
         <div class="col-span-8">
             <button
-                aria-label="Unseres Repertoire Zeigen"
+                aria-label="{{ trans:strings.show_repertoire }}"
                 class="max-w-sm mx-auto sm:max-w-none flex justify-center text-black dark:text-white"
             >
                 <a
                     href="{{ url:repertoire }}"
                     class="flex items-center justify-center px-4 py-3 border-2 text-md font-bold tracking-wider uppercase shadow-sm hover:bg-monsun dark:hover:bg-monsun sm:px-8 focus-visible:ring-2 focus-visible:border-monsun"
-                    >Zum Repertoire</a
+                    >{{ trans:strings.to_repertoire }}</a
                 >
             </button>
         </div>
