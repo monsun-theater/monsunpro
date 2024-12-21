@@ -39,6 +39,7 @@ preferences:
       columns:
         - datestamp
         - email
+      per_page: 100
   favorites:
     -
       name: 'Startseite ‹ Seiten ‹ Collections'

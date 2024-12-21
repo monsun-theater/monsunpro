@@ -9,30 +9,20 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1712596421
+updated_at: 1733413903
 template: presse
-cinema_monsun: true
-do_not_track_toggle: true
-monsun_video: 'https://vimeo.com/773546857'
+cinema_monsun: false
 hero_featured_sect:
   -
     id: jF5HW6Kq
-    title: 'Aktuelle Pressemitteilung zur Situation im monsun.theater'
+    title: 'Neue Spielstätte ab 2025'
     titelzusatz_zeigen: false
     einfarbiger_hintergrund: false
     type: featured
-    enabled: false
-    title_desc: 08.04.2024
-    darken_overlay: true
-    buttons:
-      -
-        id: VvJtH2oQ
-        label: 'Mehr lesen'
-        target_blank: false
-        link_type: asset
-        attr_title: Pressemitteilung
-        attr_aria: Pressemitteilung
-        asset: presse/2024-04-08/pressemitteilung_monsun.theater_wir-leben.pdf
+    enabled: true
+    title_desc: 'monsun.theater in der Billrothstraße'
+    darken_overlay: false
+    featured_image: presse/2024-12-05/spielstaette_billrothstrasse_13_c_monsun.theater.jpg
   -
     id: bPfvflvU
     title: 'Theaterpreis Hamburg 2022'
@@ -94,6 +84,30 @@ page_builder:
     type: call_to_action
     enabled: false
   -
+    id: I4MZyTkR
+    title: 'Unser neuer Spielort ab 2025'
+    image: presse/2024-12-05/spielstaette_billrothstrasse_07_c_monsun.theater.jpg
+    text: 'Pressemitteilung & Pressefotos'
+    buttons:
+      -
+        id: V3VspIgR
+        label: 'Download Pressemitteilung'
+        target_blank: false
+        link_type: asset
+        asset: presse/2024-12-05/pressemitteilung_monsun.theater_neuer-spielort-furs-theater_dezember-2024.pdf
+        attr_title: 'Download Pressemitteilung'
+        attr_aria: 'Download Pressefotos monsun.theater Billrothstraße'
+      -
+        id: m4bhs34f
+        label: 'Download Pressefotos'
+        target_blank: false
+        link_type: asset
+        asset: presse/2024-12-05/presse/neue_spielstaette_2025_monsun.zip
+        attr_title: 'Download Pressefotos monsun.theater Billrothstraße'
+        attr_aria: 'Download Pressefotos monsun.theater Billrothstraße'
+    type: call_to_action
+    enabled: true
+  -
     id: nI545NWh
     bard:
       -
@@ -103,22 +117,6 @@ page_builder:
             type: text
             text: "Auf dieser Seite stellen wir Ihnen zu unseren aktuellen Veranstaltungen Pressemitteilung als PDF sowie ausgesuchtes Bildmaterial in hochauflösender Qualität als Download zur Verfügung.\_"
     type: article
-    enabled: true
-  -
-    id: I4MZyTkR
-    title: 'monsun.theater Gaußstraße'
-    image: spielstaette/monsun.gaussstrasse_01.jpg
-    text: Pressefoto
-    buttons:
-      -
-        id: V3VspIgR
-        label: Download
-        target_blank: false
-        link_type: asset
-        asset: spielstaette/monsun.gaussstrasse_01.jpg
-        attr_title: 'Download Pressefoto'
-        attr_aria: 'Download Pressefoto monsun.theater Gaußstraße'
-    type: call_to_action
     enabled: true
   -
     id: lur7irrz
@@ -135,7 +133,7 @@ page_builder:
         attr_title: 'Download Pressemitteilung'
         attr_aria: 'Download Pressemitteilung'
     type: call_to_action
-    enabled: true
+    enabled: false
   -
     id: sTDyZY9L
     title: Pressekontakt
@@ -153,4 +151,5 @@ page_builder:
         attr_aria: Pressekontakt
     type: call_to_action
     enabled: true
+parent: home
 ---

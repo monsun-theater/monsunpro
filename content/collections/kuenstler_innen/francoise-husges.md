@@ -3,7 +3,7 @@ id: 230ec157-5076-45d0-8d68-597a5f3d0743
 blueprint: kuenstler_innen
 title: 'Francoise Hüsges'
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1716126133
+updated_at: 1728504636
 page_builder:
   -
     id: 4qZc6Zgz
@@ -1375,13 +1375,46 @@ page_builder:
             type: hardBreak
           -
             type: text
-            text: 'FÜSSE IM HIMMEL '
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::022879f2-9d40-451d-84e6-171e620ad15e'
+                  rel: null
+                  target: null
+                  title: null
+            text: 'FÜSSE IM HIMMEL'
+          -
+            type: text
+            text: ' '
           -
             type: text
             marks:
               -
                 type: italic
-            text: '(Produktionsleitung, Dramaturgie)'
+            text: (Dramaturgie)
+          -
+            type: hardBreak
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::9875a2ed-fc1f-48b4-b15f-8bc8317b9cf4'
+                  rel: null
+                  target: null
+                  title: null
+            text: 'FINALE FURIOSO'
+          -
+            type: text
+            text: ' '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: '(Konzept & Regie)'
     type: article
     enabled: true
 kuenstler_artist_website_link: www.google.com

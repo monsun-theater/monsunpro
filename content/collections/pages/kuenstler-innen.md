@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1718571015
+updated_at: 1728825530
 template: default
 cinema_monsun: false
 page_builder:
@@ -17,12 +17,15 @@ page_builder:
     title: A
     collection:
       - b4b6b93e-7c86-4b83-b97b-5ba70ec82c47
+      - 37bab7ac-b6ce-4ac4-9c59-2adeb120fb20
     type: collection
     enabled: true
   -
     id: bquHS9Pe
     title: B
     collection:
+      - fae83cf2-4013-451e-ac82-700d3c528bac
+      - b2651ea7-24e3-4ef1-b7a0-dd175a47a93a
       - 3a9d35dd-3fb1-4045-a101-1eec603d300a
       - 0e810994-4499-46e6-ba2c-ce31e765fe50
     type: collection
@@ -95,13 +98,22 @@ page_builder:
       - be5b2398-1de0-411c-8916-fdcc92a69f55
       - afcab694-180f-4d45-b6be-b707d9d61297
       - 8bda46f5-0a8b-4aa8-bf4d-3751f32f9d61
+      - 197241fe-463d-4269-8751-b46544426078
     type: collection
     enabled: true
   -
     id: W7vpsYBk
     title: O
     collection:
+      - c8cc1da1-5599-40fe-b491-e55c01585cdb
       - 26327ffa-0be5-4603-9053-fac89951580f
+    type: collection
+    enabled: true
+  -
+    id: m27m1spd
+    title: P
+    collection:
+      - 5a5b2b34-7b29-4117-906f-ca4c91ed0d18
     type: collection
     enabled: true
   -
@@ -110,12 +122,14 @@ page_builder:
     collection:
       - fa117777-625b-41cf-b436-b93a3313376c
       - 9f116228-3938-4d2c-bdee-c47b7bf8a5b7
+      - 9a39b5b7-37a2-46f5-8981-331d368d5cd5
     type: collection
     enabled: true
   -
     id: a0CWAPwO
     title: S
     collection:
+      - 5cadbb24-14e8-464b-a71b-21d9e0ac64a7
       - 78a4fa9b-1bc1-418e-91f4-859095e18045
       - 621b9232-8742-408e-87b1-8f74ba9dcf0c
       - 1aec10b8-4b2b-4e5b-9f4c-6f009a61c3a5
@@ -152,4 +166,5 @@ page_builder:
       - 2a783111-0fd9-4d70-9f20-8a0e95eb067c
     type: collection
     enabled: true
+parent: home
 ---

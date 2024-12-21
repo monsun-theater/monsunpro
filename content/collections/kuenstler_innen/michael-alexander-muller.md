@@ -141,7 +141,7 @@ page_builder:
               -
                 type: link
                 attrs:
-                  href: 'https://monsun.theater/veranstaltungen/bruchlinien'
+                  href: 'statamic://entry::1b9487d8-edfc-421a-bc2b-29a2745985f5'
                   rel: null
                   target: null
                   title: null
@@ -343,8 +343,30 @@ page_builder:
               -
                 type: italic
             text: (Leitung)
+          -
+            type: hardBreak
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::022879f2-9d40-451d-84e6-171e620ad15e'
+                  rel: null
+                  target: null
+                  title: null
+            text: 'FÜSSE IM HIMMEL'
+          -
+            type: text
+            text: ' '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: (Text)
     type: article
     enabled: true
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1717745825
+updated_at: 1729032222
 ---

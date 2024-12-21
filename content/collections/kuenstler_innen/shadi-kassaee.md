@@ -130,6 +130,28 @@ page_builder:
               -
                 type: italic
             text: '(Komposition & Arrangement)'
+          -
+            type: hardBreak
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::9875a2ed-fc1f-48b4-b15f-8bc8317b9cf4'
+                  rel: null
+                  target: null
+                  title: null
+            text: 'FINALE FURIOSO'
+          -
+            type: text
+            text: ' '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: (Komposition)
       -
         type: set
         attrs:
@@ -150,5 +172,5 @@ page_builder:
     type: article
     enabled: true
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1708625587
+updated_at: 1728507067
 ---

@@ -1,0 +1,18 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: email
+            field:
+              display: 'Ihre E-Mail'
+              type: text
+              validate:
+                - required
+                - email
+              localizable: true
+              listable: hidden
+              input_type: text
+              antlers: false

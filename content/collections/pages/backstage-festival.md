@@ -95,32 +95,13 @@ hero_featured_sect:
     enabled: true
     darken_overlay: true
   -
-    id: lzac0ppo
-    title: Spatenland
-    titelzusatz_zeigen: true
-    subtitle: 'oder wovon träumt die Gurke'
-    einfarbiger_hintergrund: false
-    featured_image: produktionen/backstage_festival/2024/spatenland_oder_wovon_traeumt_die_gurke/spatenland_01_c_christian_bartsch.jpg
-    darken_overlay: true
-    buttons:
-      -
-        id: lzac1f5z
-        label: 'Mehr lesen'
-        target_blank: false
-        link_type: entry
-        entry: d10fc1fc-057c-4680-b56f-bbf4db9608db
-        attr_title: 'Mehr lesen'
-        attr_aria: 'Mehr über „Spatenland“ lesen'
-    type: featured
-    enabled: true
-  -
     id: lzac2ja3
     title: 'Goldene Tage'
     titelzusatz_zeigen: true
     subtitle: 'aber bitte nur für mich...'
     einfarbiger_hintergrund: false
-    featured_image: produktionen/backstage_festival/2024/goldene_tage/goldene_tage_02_c_g2_baraniak.jpg
-    darken_overlay: true
+    featured_image: produktionen/backstage_festival/2024/goldene_tage/goldene_tage_40_c_peter_bruns.jpg
+    darken_overlay: false
     buttons:
       -
         id: lzac3wcr
@@ -168,7 +149,7 @@ page_builder:
         attr_aria: LOVECAMP
       -
         id: cLAQG8wh
-        title: '4. Oktober 2024 | 19:00 Uhr<br>5. Oktober 2024 | 19:00 Uhr'
+        title: '4. Oktober 2024 | 19:00 Uhr<br>'
         text: 'Leitung: Manfred Hüttmann'
         label: 'WIR SIND DOCH SCHON WAS GEWORDEN'
         target_blank: false
@@ -207,16 +188,6 @@ page_builder:
         attr_title: ZUCKERHERZEN
         attr_aria: ZUCKERHERZEN
       -
-        id: 3Rc8Yjce
-        title: '12. Oktober 2022 | 19:00 Uhr'
-        text: 'Leitung: Christopher Baum, Celina Rahman'
-        label: SPATENLAND
-        target_blank: false
-        link_type: entry
-        entry: d10fc1fc-057c-4680-b56f-bbf4db9608db
-        attr_title: SPATENLAND
-        attr_aria: SPATENLAND
-      -
         id: lzcmnbdd
         title: '13. Oktober 2024 | 19:00 Uhr'
         text: 'Leitung: Manfred Hüttmann, Ahmed Soura'
@@ -235,5 +206,6 @@ sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 template: default
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1725307330
+updated_at: 1728302126
+parent: home
 ---

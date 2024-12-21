@@ -1,0 +1,12 @@
+title: 'Tanz mit'
+honeypot: fax
+email:
+  -
+    id: 40Kngmds
+    to: info@monsun.theater
+    reply_to: '{{ email }}'
+    subject: 'Neue Newsletter-Anmeldung'
+    html: email/form_sender
+    text: email/form_sender_text
+    markdown: true
+    attachments: true
