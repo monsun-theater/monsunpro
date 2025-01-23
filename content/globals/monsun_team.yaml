@@ -28,12 +28,7 @@ data:
       mailadresse:
         -
           id: lgt3alu3
-          e-mail: presse@monsun.theater
-          type: neues_set
-          enabled: true
-        -
-          id: lgt3aguh
-          e-mail: info@monsun.theater
+          e-mail: m.kraemer@monsun.theater
           type: neues_set
           enabled: true
       telefonnummer:
@@ -47,9 +42,29 @@ data:
       type: neues_mitgleid
       enabled: true
     -
+      id: lgt3h4zt
+      name: 'Amelie Möller'
+      rolle: 'PRESSE & KOMMUNIKATION'
+      mailadresse:
+        -
+          id: lgt3h9p4
+          e-mail: a.moeller@monsun.theater
+          type: neues_set
+          enabled: true
+      telefonnummer:
+        -
+          id: lgt3hjwf
+          nummer: '+49403903148'
+          extra_info_telefon: false
+          type: telefonnummer
+          enabled: true
+      extra_info_toggle: false
+      type: neues_mitgleid
+      enabled: true
+    -
       id: lgt3fny0
       name: 'Kianosh Kinz'
-      rolle: Technik
+      rolle: 'Technische Leitung'
       mailadresse:
         -
           id: lgt3fz63
@@ -66,26 +81,6 @@ data:
       extra_info_toggle: false
       type: neues_mitgleid
       enabled: true
-    -
-      id: lgt3h4zt
-      name: 'Tim Passgang'
-      rolle: Technik
-      mailadresse:
-        -
-          id: lgt3h9p4
-          e-mail: technik@monsun.theater
-          type: neues_set
-          enabled: true
-      telefonnummer:
-        -
-          id: lgt3hjwf
-          nummer: '+49403903148'
-          extra_info_telefon: false
-          type: telefonnummer
-          enabled: true
-      extra_info_toggle: false
-      type: neues_mitgleid
-      enabled: false
     -
       id: lgt5ry8c
       name: 'Katharina Theßeling'
@@ -107,33 +102,42 @@ data:
       type: neues_mitgleid
       enabled: true
     -
-      id: lgt5u3md
-      name: 'Clara Weise'
-      rolle: FSJ-Kultur
+      id: m685nsgm
+      name: 'Sam Ansari'
+      rolle: Technik
       mailadresse:
         -
-          id: lgt5uaru
-          e-mail: info@monsun.theater
+          id: m685oafe
+          e-mail: technik@monsun.theater
           type: neues_set
+          enabled: true
+      telefonnummer:
+        -
+          id: m685oi11
+          nummer: '+49403903148'
+          extra_info_telefon: false
+          type: telefonnummer
           enabled: true
       extra_info_toggle: false
       type: neues_mitgleid
-      enabled: false
+      enabled: true
     -
-      id: lgt5uqhz
-      name: 'Emmi Spieler'
-      rolle: FSJ-Kultur
+      id: m685r1hx
+      name: 'Martin Hüsges'
+      rolle: 'VIDEO & WEB'
       mailadresse:
         -
-          id: lgt5urw0
+          id: m685rg6z
           e-mail: info@monsun.theater
           type: neues_set
           enabled: true
-      extra_info_toggle: false
-      type: neues_mitgleid
-      enabled: false
-    -
-      id: lgt5v8gg
+      telefonnummer:
+        -
+          id: m685roqy
+          nummer: '+49403903148'
+          extra_info_telefon: false
+          type: telefonnummer
+          enabled: true
       extra_info_toggle: false
       type: neues_mitgleid
       enabled: true

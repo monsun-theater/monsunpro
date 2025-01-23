@@ -3,7 +3,7 @@ id: home
 blueprint: homepage
 title: Startseite
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1734561208
+updated_at: 1737566272
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -13,45 +13,16 @@ template: home
 hero_featured_sect:
   -
     id: lyolnf6m
-    title: 'Füße im Himmel'
+    title: 04.04.2025
     titelzusatz_zeigen: true
-    subtitle: 'Von Michael Alexander Müller'
+    subtitle: 'SAVE THE DATE'
     einfarbiger_hintergrund: false
     darken_overlay: false
-    buttons:
-      -
-        id: lyolo6cy
-        label: 'MEHR LESEN'
-        target_blank: false
-        link_type: entry
-        entry: 022879f2-9d40-451d-84e6-171e620ad15e
-        attr_title: 'MEHR LESEN'
-        attr_aria: 'MEHR LESEN'
     type: featured
-    enabled: false
-    featured_image: produktionen/fuesse_im_himmel/fuesse_im_himmel_077_c_g2_baraniak.jpg
-    title_desc: 'Für Kinder & Jugendliche ab 10 Jahren'
-  -
-    id: m2envwpv
-    title: 'FINALE FURIOSO'
-    titelzusatz_zeigen: true
-    subtitle: 'Von SZENE 2WEI & monsun.theater'
-    title_desc: 'Wer putzt hier wen weg?'
-    einfarbiger_hintergrund: false
-    featured_image: produktionen/finale_furioso/finale_furioso_002_c_g2_baraniak.jpg
-    darken_overlay: false
-    buttons:
-      -
-        id: m2eo0s3s
-        label: 'MEHR LESEN'
-        target_blank: false
-        link_type: entry
-        entry: 9875a2ed-fc1f-48b4-b15f-8bc8317b9cf4
-        attr_title: 'MEHR LESEN'
-        attr_aria: 'MEHR LESEN'
-    type: featured
-    enabled: false
-anzahl_vorstellungen_in_demnaechst: 0
+    enabled: true
+    title_desc: 'Eröffnung unserer neuen Spielstätte in der Billrothstraße'
+    featured_image: aktuelles/2025-01-22/spielstaette_billrothstrasse_unscharf.jpg
+anzahl_vorstellungen_in_demnaechst: 3
 anzahl_eintraege_in_aktuelles: 2
 anzahl_stuecke_in_spielzeit_component: 2
 seo_title: Startseite
@@ -88,8 +59,10 @@ page_builder:
           -
             type: text
             text: .
-demnachst_verstecken: true
+demnachst_verstecken: false
+spielzeit_eintraege:
+  - f244e52d-dd45-44b5-9041-1bb94fcf7704
 aktuelles_eintraege:
+  - 947e6dc4-2d0d-48f7-9726-519c367404e5
   - 5edd85af-1545-4a6e-91d8-0ec94ad3ddb5
-  - ff576f4f-f1a8-47b1-a547-38b732d34a15
 ---
