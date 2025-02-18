@@ -9,7 +9,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1733413903
+updated_at: 1738762510
 template: presse
 cinema_monsun: false
 hero_featured_sect:
@@ -85,8 +85,8 @@ page_builder:
     enabled: false
   -
     id: I4MZyTkR
-    title: 'Unser neuer Spielort ab 2025'
-    image: presse/2024-12-05/spielstaette_billrothstrasse_07_c_monsun.theater.jpg
+    title: Spielstätteneröffnung
+    image: presse/2025-02-05/teamfoto_2025_web.jpg
     text: 'Pressemitteilung & Pressefotos'
     buttons:
       -
@@ -94,7 +94,7 @@ page_builder:
         label: 'Download Pressemitteilung'
         target_blank: false
         link_type: asset
-        asset: presse/2024-12-05/pressemitteilung_monsun.theater_neuer-spielort-furs-theater_dezember-2024.pdf
+        asset: presse/2025-02-05/pressemitteilung_monsun.theater_spielstatteneroffnung_februar_2025.pdf
         attr_title: 'Download Pressemitteilung'
         attr_aria: 'Download Pressefotos monsun.theater Billrothstraße'
       -
@@ -102,7 +102,7 @@ page_builder:
         label: 'Download Pressefotos'
         target_blank: false
         link_type: asset
-        asset: presse/2024-12-05/presse/neue_spielstaette_2025_monsun.zip
+        asset: presse/2025-02-05/presse/spielstaette_billrothstrasse_c_monsun_2025.zip
         attr_title: 'Download Pressefotos monsun.theater Billrothstraße'
         attr_aria: 'Download Pressefotos monsun.theater Billrothstraße'
     type: call_to_action

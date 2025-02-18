@@ -3,7 +3,7 @@ id: home
 blueprint: homepage
 title: Startseite
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1737566272
+updated_at: 1739816996
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -13,22 +13,22 @@ template: home
 hero_featured_sect:
   -
     id: lyolnf6m
-    title: 04.04.2025
+    title: 'NEUE SPIELSTÄTTE'
     titelzusatz_zeigen: true
-    subtitle: 'SAVE THE DATE'
+    subtitle: 'Billrothstraße 79'
     einfarbiger_hintergrund: false
     darken_overlay: false
     type: featured
     enabled: true
-    title_desc: 'Eröffnung unserer neuen Spielstätte in der Billrothstraße'
-    featured_image: aktuelles/2025-01-22/spielstaette_billrothstrasse_unscharf.jpg
+    title_desc: Altona-Altstadt
+    featured_image: spielstaette/billrothstrasse/treppe_mit_team_xl.jpg
 anzahl_vorstellungen_in_demnaechst: 3
 anzahl_eintraege_in_aktuelles: 2
 anzahl_stuecke_in_spielzeit_component: 2
 seo_title: Startseite
-seo_description: 'monsun.theater ist das älteste Off-Theater in Hamburg und besteht seit 1980. Es befindet sich im Stadtteil Ottensen.'
+seo_description: 'monsun.theater ist das älteste Off-Theater in Hamburg, besteht seit 1980 und befindet sich im Stadtteil Altona.'
 og_title: monsun.theater
-og_description: 'Das Monsun-Theater (Eigenschreibweise: monsun.theater) ist das älteste Off-Theater in Hamburg und besteht seit 1980. Es befindet sich im Stadtteil Ottensen.'
+og_description: 'Das Monsun-Theater (Eigenschreibweise: monsun.theater) ist das älteste Off-Theater in Hamburg und besteht seit 1980. Es befindet sich im Stadtteil Altona.'
 spielzeit: 'Spielzeit 2024-2025'
 page_builder:
   -
@@ -63,6 +63,5 @@ demnachst_verstecken: false
 spielzeit_eintraege:
   - f244e52d-dd45-44b5-9041-1bb94fcf7704
 aktuelles_eintraege:
-  - 947e6dc4-2d0d-48f7-9726-519c367404e5
-  - 5edd85af-1545-4a6e-91d8-0ec94ad3ddb5
+  - 749e8e67-84d1-4c98-a0c2-044b5457074f
 ---
