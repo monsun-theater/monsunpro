@@ -9,7 +9,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1688820980
+updated_at: 1740004872
 template: kontakt
 page_builder:
   -
@@ -30,18 +30,13 @@ page_builder:
         content:
           -
             type: text
-            text: 'MIT DEM AUTO'
+            text: 'MIT ÖFFENTLICHEN VERKEHRSMITTELN'
       -
         type: paragraph
         content:
           -
             type: text
-            text: 'Anfahrt über die Autobahn A7, Abfahrt Othmarschen'
-          -
-            type: hardBreak
-          -
-            type: text
-            text: 'dann Richtung Altona in die Behringstrasse, links abbiegen in die Bahrenfelder Straße und dann hinter dem Vivo-Center rechts in die Gaußstraße'
+            text: 'Das monsun.theater mit seiner neuen Spielstätte in der Billrothstraße 79 befindet sich mitten im Dreieck zwischen Max-Brauer-Allee (Buslinien 15, 20, 25), Holstenstraße (Buslinien 115, 610)  und Großer Bergstraße (Buslinien 116, 112, 115). Die nächsten S-Bahn Station sind Reeperbahn, Königsstraße und Bahnhof Altona.'
       -
         type: heading
         attrs:
@@ -49,15 +44,15 @@ page_builder:
         content:
           -
             type: text
-            text: 'MIT ÖFFENTLICHEN VERKEHRSMITTELN'
+            text: 'MIT DEM AUTO'
       -
         type: paragraph
         content:
           -
             type: text
-            text: 'Die S-Bahn Station Ottensen (S1 / S11) befindet sich nur ca. 250 Meter vom monsun.theater entfernt.'
-          -
-            type: hardBreak
+            text: 'Das Auto sollte am besten zuhause gelassen werden. Unser Haus befindet sich mitten im Wohngebiet mit Anwohnerparkzone, wenigen Parkplätzen und engen Einbahnstraßen.'
+      -
+        type: paragraph
       -
         type: paragraph
         content:
@@ -67,7 +62,7 @@ page_builder:
               -
                 type: link
                 attrs:
-                  href: 'https://www.google.de/maps/place/Gaußstraße+149,+22765+Hamburg/@53.5585519,9.9273546,17z/data=!3m1!4b1!4m6!3m5!1s0x47b1858dda360b99:0x7d15a6d3e7a16b5a!8m2!3d53.5585519!4d9.9299295!16s%2Fg%2F11fwbw5zvp?entry=ttu'
+                  href: 'https://www.google.de/maps/place/monsun.theater/@53.5540172,9.9437004,16.49z/data=!3m1!5s0x47b18f63773f7455:0x9a50ad6cb044981c!4m6!3m5!1s0x47b1858fc5ade13d:0xecfacb33968bda49!8m2!3d53.5537439!4d9.9472698!16s%2Fg%2F11b77qfg_2?entry=ttu&g_ep=EgoyMDI1MDIxNy4wIKXMDSoASAFQAw%3D%3D'
                   rel: null
                   target: _blank
                   title: null
@@ -75,4 +70,5 @@ page_builder:
     type: article
     enabled: true
 cinema_monsun: false
+parent: home
 ---
