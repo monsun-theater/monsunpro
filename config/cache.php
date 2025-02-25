@@ -76,8 +76,12 @@ return [
 
         'redis' => [
             'driver' => 'redis',
-            'connection' => 'cache',
+            'connection' => 'default',
             'lock_connection' => 'default',
+            'persistent' => true,
+            'read_timeout' => 60,
+            'retry_interval' => 100,
+            'timeout' => 5.0,
         ],
 
         'dynamodb' => [
@@ -106,6 +110,6 @@ return [
     |
     */
 
-    'prefix' => env('CACHE_PREFIX', Str::slug(env('APP_NAME', 'laravel'), '_').'_cache_'),
+    'prefix' => env('CACHE_PREFIX', 'monsun_events_'),
 
 ];

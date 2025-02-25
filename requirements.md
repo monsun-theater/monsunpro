@@ -63,12 +63,6 @@
 ## Performance Features
 - Static Page Caching
 - Asset Caching
-- Event Performance Optimization:
-  - Future Events Caching
-  - Today's Events Quick Access
-  - Premiere Events Filtering
-  - Digital Events Support
-  - Cache TTL: 1 hour
 
 ## Localization
 - Multi-language Support:

@@ -12,7 +12,7 @@ return [
     |
     */
 
-    'strategy' => env('CACHING_STRATEGY', null),
+    'strategy' => env('CACHING_STRATEGY', 'half'),
 
     /*
     |--------------------------------------------------------------------------
@@ -30,7 +30,7 @@ return [
 
         'half' => [
             'driver' => 'application',
-            'expiry' => 5,
+            'expiry' => 5, // 5 minutes
         ],
 
         'full' => [
@@ -56,7 +56,6 @@ return [
         '/nebeneingang',
         '/presse',
         '/password',
-        '/spielplan',
     ],
 
     /*
@@ -73,11 +72,22 @@ return [
     */
 
     'invalidation' => [
-
-        'class' => null,
-
-        'rules' => 'all',
-
+        'class' => App\StaticCaching\EventsInvalidator::class,
+        
+        'rules' => [
+            'collections' => [
+                'veranstaltungen' => [
+                    'urls' => [
+                        '/',
+                        '/spielplan',
+                        '/premiere',
+                        '/monsun_digital',
+                        '/veranstaltungen',
+                        '/pastperformances'
+                    ]
+                ],
+            ],
+        ],
     ],
 
 ];
