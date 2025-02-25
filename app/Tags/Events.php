@@ -13,9 +13,9 @@ use Illuminate\Support\Facades\Log;
 class Events extends CollectionTag
 {
     /**
-     * Debug mode - set to true to enable detailed logging
+     * Debug mode - set to false in production
      */
-    protected $debug = true;
+    protected $debug = false;
     
     public function afterToday()
     {

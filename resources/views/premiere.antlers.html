@@ -1,7 +1,6 @@
 <!-- Premieres  -->
 <div class="outer-grid fluid-container">
     <!-- Premieres module -->
-    {{ cache for="5 minutes" }}
     {{ events:premieres as="dates" }}
     {{ if no_results }}
     <div class="text-3xl text-black lg:text-4xl dark:text-white">Premieren</div>
@@ -18,5 +17,4 @@
     {{ /dates }}
     {{ /if }}
     {{ /events:premieres }}
-    {{ /cache }}
 </div>

@@ -1,6 +1,5 @@
 <div class="outer-grid fluid-container">
     <!-- Premieres module -->
-    {{ cache for="5 minutes" }}
     {{ events:digital as="dates" }}
     {{ if no_results }}
     <div class="text-3xl text-black lg:text-4xl dark:text-white">Livestream - monsun.digital</div>
@@ -17,5 +16,4 @@
     {{ /dates }}
     {{ /if }}
     {{ /events:digital }}
-    {{ /cache }}
 </div>

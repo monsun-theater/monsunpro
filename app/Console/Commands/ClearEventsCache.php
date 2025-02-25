@@ -90,7 +90,7 @@ class ClearEventsCache extends Command
             $this->call('cache:clear');
             
             // Clear static cache
-            $this->call('please:static-clear');
+            $this->call('statamic:static:clear');
             
             $this->info("Total Redis keys deleted: {$totalDeleted}");
             $this->info('Events cache cleared successfully!');

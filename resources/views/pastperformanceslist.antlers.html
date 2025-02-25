@@ -1,6 +1,5 @@
 <div class="outer-grid fluid-container">
     <!-- Month's name added iso dates-->
-    {{ cache for="5 minutes" }}
     {{ events:pastPerformances from="Veranstaltungen" group_by_format="M-Y"
     status="*" }} {{ if no_results }}
     <!-- message 'No Events'  -->
@@ -20,7 +19,6 @@
     </div>
     {{ entries }} {{ partial:components/monsun_pastperformance_wallpiece}} {{
     /entries }} {{ /date_groups }} {{ /if }} {{ /events:pastPerformances }}
-    {{ /cache }}
     <button
         aria-label="Zur Startseite"
         class="max-w-sm mx-auto sm:max-w-none flex justify-center text-black dark:text-white"
