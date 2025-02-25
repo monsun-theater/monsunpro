@@ -1,3 +1,4 @@
+{{ cache for="5 minutes" }}
 {{ events:today as="dates"}}
 {{ if no_results }}
 {{ partial:components/monsun_feed_future_perf }}
@@ -5,6 +6,7 @@
 {{ partial:components/monsun_feed_today_perf }}
 {{ /if }}
 {{ /events:today }}
+{{ /cache }}
 <button aria-label="Spielplan Zeigen"
     class="max-w-sm mx-auto sm:max-w-none flex justify-center text-black dark:text-white">
     <a href="/spielplan" class="flex items-center justify-center px-4 py-3 border-2  text-md font-bold tracking-wider uppercase shadow-sm

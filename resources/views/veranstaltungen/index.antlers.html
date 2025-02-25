@@ -1,5 +1,6 @@
 <div class="outer-grid fluid-container">
     <!-- Month's name with iso dates-->
+    {{ cache for="5 minutes" }}
     {{ events:future group_by_format="M-Y" }} {{ if no_results }}
     <!-- message 'No Events'  -->
     <div class="text-3xl text-black lg:text-4xl dark:text-white">Spielplan</div>
@@ -14,6 +15,7 @@
     </div>
     {{ entries }} {{ partial:components/monsun_performance_wallpiece}} {{
     /entries }} {{ /date_groups }} {{ /if }} {{ /events:future }}
+    {{ /cache }}
     <button
         aria-label="Zur Startseite"
         class="max-w-sm mx-auto sm:max-w-none flex justify-center text-black dark:text-white"
