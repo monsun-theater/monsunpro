@@ -39,7 +39,7 @@ return [
         |
         */
 
-        'driver' => env('IMAGE_MANIUPULATION_DRIVER'),
+        'driver' => env('IMAGE_MANIPULATION_DRIVER'),
 
         /*
         |--------------------------------------------------------------------------
