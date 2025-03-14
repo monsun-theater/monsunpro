@@ -325,7 +325,7 @@ page_builder:
               -
                 type: link
                 attrs:
-                  href: 'statamic://entry::2035a78b-61c6-468d-849c-1c5ba02e092b'
+                  href: 'statamic://entry::b5184fc5-708e-40a2-bbc4-3c708dc7e237'
                   rel: null
                   target: null
                   title: null
@@ -390,5 +390,5 @@ page_builder:
     type: article
     enabled: true
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1694642123
+updated_at: 1741180538
 ---
