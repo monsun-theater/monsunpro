@@ -3,7 +3,7 @@ id: home
 blueprint: homepage
 title: Startseite
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1739816996
+updated_at: 1743883293
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -13,15 +13,14 @@ template: home
 hero_featured_sect:
   -
     id: lyolnf6m
-    title: 'NEUE SPIELSTÄTTE'
-    titelzusatz_zeigen: true
-    subtitle: 'Billrothstraße 79'
+    title: 'Der Ursprung der Welt'
+    titelzusatz_zeigen: false
     einfarbiger_hintergrund: false
-    darken_overlay: false
+    darken_overlay: true
     type: featured
     enabled: true
-    title_desc: Altona-Altstadt
-    featured_image: spielstaette/billrothstrasse/treppe_mit_team_xl.jpg
+    title_desc: 'Basierend auf der gleichnamigen Graphic Novel von Liv Strömquist'
+    featured_image: produktionen/2025/der_ursprung_der_welt/der_ursprung_der_welt_080_c_g2_baraniak.jpg
 anzahl_vorstellungen_in_demnaechst: 3
 anzahl_eintraege_in_aktuelles: 2
 anzahl_stuecke_in_spielzeit_component: 2

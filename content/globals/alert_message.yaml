@@ -1,3 +1,4 @@
 title: 'Alert message'
 data:
-  monsun_alert_msg: false
+  monsun_alert_msg: true
+  alert_nachricht_text: 'Unsere Telefonnummer 040-3903148 ist leider zur Zeit nicht erreichbar. Kontaktaufnahme gerne per Mail!'
