@@ -6,10 +6,12 @@ hat_eigene_website_has_own_website: false
 biographie_eintragen_create_artist_s_biography: true
 page_builder:
   -
+    id: r4RLC59u
     bard:
       -
         type: set
         attrs:
+          id: xFTDDdUs
           values:
             type: figure
             image: kuenstler-innen/yijie_wang.jpg
@@ -44,7 +46,7 @@ page_builder:
                 type: italic
             text: '(Musik & Komposition)'
           -
-            type: hard_break
+            type: hardBreak
           -
             type: text
             marks:
@@ -65,8 +67,19 @@ page_builder:
               -
                 type: italic
             text: '(Musik & Komposition)'
+          -
+            type: hardBreak
+          -
+            type: text
+            text: 'SOLLEN SIE DOCH CHAOS FRESSEN '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: (Komposition)
     type: article
     enabled: true
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1675261004
+updated_at: 1750262393
 ---

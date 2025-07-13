@@ -3,7 +3,7 @@ id: home
 blueprint: homepage
 title: Startseite
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1743883293
+updated_at: 1752270193
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -13,15 +13,25 @@ template: home
 hero_featured_sect:
   -
     id: lyolnf6m
-    title: 'Der Ursprung der Welt'
-    titelzusatz_zeigen: false
+    titelzusatz_zeigen: true
     einfarbiger_hintergrund: false
     darken_overlay: true
     type: featured
-    enabled: true
-    title_desc: 'Basierend auf der gleichnamigen Graphic Novel von Liv Strömquist'
-    featured_image: produktionen/2025/der_ursprung_der_welt/der_ursprung_der_welt_080_c_g2_baraniak.jpg
-anzahl_vorstellungen_in_demnaechst: 3
+    enabled: false
+    featured_image: produktionen/2025/schuettiman/main_cover_v2_schuettiman.jpg
+    title: 'AUSSICHT Festival'
+    subtitle: 'Episode I & II'
+    title_desc: 'Ein Schluck kommt selten allein – Das ultimative Double Feature'
+    buttons:
+      -
+        id: mcf4qfx5
+        label: 'Mehr lesen'
+        target_blank: false
+        link_type: entry
+        entry: 2bc28ab6-f56e-4ba1-8b60-79ab12afa1bc
+        attr_title: 'Mehr lesen'
+        attr_aria: 'Mehr über Schüttiman lesen'
+anzahl_vorstellungen_in_demnaechst: 5
 anzahl_eintraege_in_aktuelles: 2
 anzahl_stuecke_in_spielzeit_component: 2
 seo_title: Startseite
@@ -60,7 +70,11 @@ page_builder:
             text: .
 demnachst_verstecken: false
 spielzeit_eintraege:
+  - 2bc28ab6-f56e-4ba1-8b60-79ab12afa1bc
+  - d47b1cc8-67aa-445a-9a22-9e2af0d30c22
+  - e3b1dd51-d571-486a-b4aa-950fc65be21e
   - f244e52d-dd45-44b5-9041-1bb94fcf7704
+  - 713d8754-1008-4cb3-ae31-4469a5028ec6
 aktuelles_eintraege:
   - 749e8e67-84d1-4c98-a0c2-044b5457074f
 ---

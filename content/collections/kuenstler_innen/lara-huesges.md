@@ -5,7 +5,7 @@ title: 'Lara Hüsges'
 hat_eigene_website_has_own_website: false
 biographie_eintragen_create_artist_s_biography: true
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1728507147
+updated_at: 1750262349
 page_builder:
   -
     id: ltnchsiq
@@ -200,6 +200,17 @@ page_builder:
               -
                 type: italic
             text: (Gesang)
+          -
+            type: hardBreak
+          -
+            type: text
+            text: 'SOLLEN SIE DOCH CHAOS FRESSEN'
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: ' (Gesang)'
     type: article
     enabled: true
 ---
