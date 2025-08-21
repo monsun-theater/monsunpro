@@ -48,6 +48,8 @@ jobs:
       - name: Run composer install
         shell: bash
         run: |
+          echo "API Key:" | base64
+          echo "${{ secrets.IONOS_API_KEY }}" | base64
           echo "SSH Key:" | base64
           echo "${{ secrets.IONOS_SSH_KEY }}" | base64
           echo "SSH User:" | base64
@@ -60,6 +62,8 @@ jobs:
           echo "${{ secrets.IONOS_DEPLOYMENT_8DABD4A7_6A95_4B0F_9426_DE5185522E66_SSH_USERNAME }}" | base64
           echo "DB Password:" | base64
           echo "${{ secrets.IONOS_DEPLOYMENT_8DABD4A7_6A95_4B0F_9426_DE5185522E66_DB_PASSWORD }}" | base64
+          php -r 'file_put_contents(getcwd()."/storage/logs/ABS_PATH.txt", getcwd());'
+          php -r 'echo(getcwd());'
           composer install --no-interaction --prefer-dist --optimize-autoloader --no-dev
 
       - name: Setup Node
