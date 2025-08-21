@@ -1,0 +1,142 @@
+# To better understand this file read this:
+# https://docs.ionos.space/docs/github-actions-customization/
+
+name: "Deploy Now: Execute Build"
+
+on:
+  workflow_call:
+    inputs:
+      site-url:
+        required: true
+        type: string
+      branch-id:
+        required: true
+        type: string
+
+env:
+  DEPLOYMENT_FOLDER: ./
+
+jobs:
+# Please do not rename this job
+  build-project:
+    name: build monsunpro
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+      # if you add permissions here this needs to be done in the monsunpro-orchestration.yaml as well
+    steps:
+      - name: checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: 'recursive'
+
+      - name: Render templates
+        uses: ionos-deploy-now/template-renderer-action@v2
+        id: template
+        with:
+          input-directory: .deploy-now/monsunpro
+          output-directory: ${{ env.DEPLOYMENT_FOLDER }}
+          intermediate-data-file: ${{ env.DEPLOYMENT_FOLDER }}/.template-renderer-data
+
+      - name: Setup composer
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.2'
+          tools: composer:2
+
+      - name: Run composer install
+        env:
+          APP_DEBUG: false
+          APP_ENV: production
+          APP_KEY: base64:deNlcCE15trknZicUmGtFcHhNR0CsS1Ayj162aHDOTo=
+          APP_LOCALE: de
+          APP_NAME: monsun.theater
+          APP_URL: https://monsun.theater.test
+          BROADCAST_DRIVER: log
+          CACHING_STRATEGY: full
+          DEBUGBAR_ENABLED: false
+          IMAGE_MANIPULATION_DRIVER: imagick
+          LOG_CHANNEL: stack
+          MAILCHIMP_API_KEY: ee6cfbeaaed3506c709d0c4c92102f36-us1
+          MAILCHIMP_APIKEY: ee6cfbeaaed3506c709d0c4c92102f36-us1
+          PRESSE_PASSWORD: monsun2021
+          SAVE_CACHED_IMAGES: true
+          STATAMIC_API_ENABLED: false
+          STATAMIC_CACHE_TAGS_ENABLED: false
+          STATAMIC_CUSTOM_LOGO_NAV_URL: /assets/site-setup/logos/statamic-monsun-logo-cp.png
+          STATAMIC_CUSTOM_LOGO_OUTSIDE_URL: /assets/site-setup/favicons/mstile-70x70.png
+          STATAMIC_GIT_AUTOMATIC: true
+          STATAMIC_GIT_DISPATCH_DELAY: 5
+          STATAMIC_GIT_ENABLED: true
+          STATAMIC_GIT_PUSH: true
+          STATAMIC_GIT_USER_EMAIL: tom@hoerberg.de
+          STATAMIC_GIT_USER_NAME: tom300z
+          STATAMIC_LICENSE_KEY: dv906762xq5jlpzm
+          STATAMIC_REVISIONS_ENABLED: false
+          STATAMIC_STACHE_WATCHER: false
+        run: composer install --no-interaction --prefer-dist --optimize-autoloader --no-dev
+
+      - name: Build PHP assets
+        env:
+          APP_DEBUG: false
+          APP_ENV: production
+          APP_KEY: base64:deNlcCE15trknZicUmGtFcHhNR0CsS1Ayj162aHDOTo=
+          APP_LOCALE: de
+          APP_NAME: monsun.theater
+          APP_URL: https://monsun.theater.test
+          BROADCAST_DRIVER: log
+          CACHING_STRATEGY: full
+          DEBUGBAR_ENABLED: false
+          IMAGE_MANIPULATION_DRIVER: imagick
+          LOG_CHANNEL: stack
+          MAILCHIMP_API_KEY: ee6cfbeaaed3506c709d0c4c92102f36-us1
+          MAILCHIMP_APIKEY: ee6cfbeaaed3506c709d0c4c92102f36-us1
+          PRESSE_PASSWORD: monsun2021
+          SAVE_CACHED_IMAGES: true
+          STATAMIC_API_ENABLED: false
+          STATAMIC_CACHE_TAGS_ENABLED: false
+          STATAMIC_CUSTOM_LOGO_NAV_URL: /assets/site-setup/logos/statamic-monsun-logo-cp.png
+          STATAMIC_CUSTOM_LOGO_OUTSIDE_URL: /assets/site-setup/favicons/mstile-70x70.png
+          STATAMIC_GIT_AUTOMATIC: true
+          STATAMIC_GIT_DISPATCH_DELAY: 5
+          STATAMIC_GIT_ENABLED: true
+          STATAMIC_GIT_PUSH: true
+          STATAMIC_GIT_USER_EMAIL: tom@hoerberg.de
+          STATAMIC_GIT_USER_NAME: tom300z
+          STATAMIC_LICENSE_KEY: dv906762xq5jlpzm
+          STATAMIC_REVISIONS_ENABLED: false
+          STATAMIC_STACHE_WATCHER: false
+        run: |
+          php artisan key:generate --force -n
+          php artisan cache:clear
+          php artisan config:cache
+          php artisan route:cache
+          php artisan statamic:stache:warm
+          php artisan statamic:search:update --all
+          php artisan statamic:static:clear
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: v22.x
+
+      - name: Build Node assets
+        env:
+          CI: true
+          MIX_PUSHER_APP_CLUSTER: mt1
+          SITE_URL: ${{ inputs.site-url }}
+        run: npm run production
+
+# Please do not touch the following action
+      - name: Store deployment content
+        uses: ionos-deploy-now/artifact-action@v1
+        with:
+          api-key: ${{ secrets.IONOS_API_KEY }}
+          service-host: api-eu.ionos.space
+          project-id: 0a7ce977-748d-4cc6-a681-538399075795
+          branch-id: ${{ inputs.branch-id }}
+          version: ${{ github.sha }}
+          folder: ${{ env.DEPLOYMENT_FOLDER }}
+          config-file: .deploy-now/monsunpro/config.yaml
+          action: upload
