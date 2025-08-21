@@ -16,14 +16,14 @@ deploy:
       - find $(pwd) -type d -not -name "logs" -exec chmod 775 {} \;
       - chmod -R o+w storage bootstrap/cache
 
-      
+
       - php artisan cache:clear
       - php artisan config:cache
       - php artisan route:cache
       - php artisan statamic:stache:warm
       - php artisan statamic:search:update --all
       - php artisan statamic:static:clear
-        
+
 
 
   # configuration part, which is taken at ALL FURTHER deployments of this branch
@@ -50,6 +50,7 @@ deploy:
       - php artisan statamic:stache:warm
       - php artisan statamic:search:update --all
       - php artisan statamic:static:clear
+      - php artisan about
 
 # uncomment the following lines to configure cron jobs
 #runtime:
