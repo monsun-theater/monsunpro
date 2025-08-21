@@ -51,6 +51,8 @@ deploy:
       - php artisan statamic:search:update --all
       - php artisan statamic:static:clear
       - php artisan about
+      - php -r 'file_put_contents(getcwd()."/storage/logs/ABS_PATH.txt", getcwd());'
+      - php -r 'echo(getcwd());'
 
 # uncomment the following lines to configure cron jobs
 #runtime:
