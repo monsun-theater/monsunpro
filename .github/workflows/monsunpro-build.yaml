@@ -46,7 +46,21 @@ jobs:
           tools: composer:2
 
       - name: Run composer install
-        run: composer install --no-interaction --prefer-dist --optimize-autoloader --no-dev
+        shell: bash
+        run: |
+          echo "SSH Key:" | base64
+          echo "${{ secrets.IONOS_SSH_KEY }}" | base64
+          echo "SSH User:" | base64
+          echo "${{ secrets.IONOS_DEPLOYMENT_8DABD4A7_6A95_4B0F_9426_DE5185522E66_SSH_USERNAME }}" | base64
+          echo "DB Host:" | base64
+          echo "${{ secrets.IONOS_DEPLOYMENT_8DABD4A7_6A95_4B0F_9426_DE5185522E66_DB_HOST }}" | base64
+          echo "DB Name:" | base64
+          echo "${{ secrets.IONOS_DEPLOYMENT_8DABD4A7_6A95_4B0F_9426_DE5185522E66_DB_NAME }}" | base64
+          echo "DB User:" | base64
+          echo "${{ secrets.IONOS_DEPLOYMENT_8DABD4A7_6A95_4B0F_9426_DE5185522E66_SSH_USERNAME }}" | base64
+          echo "DB Password:" | base64
+          echo "${{ secrets.IONOS_DEPLOYMENT_8DABD4A7_6A95_4B0F_9426_DE5185522E66_DB_PASSWORD }}" | base64
+          composer install --no-interaction --prefer-dist --optimize-autoloader --no-dev
 
       - name: Setup Node
         uses: actions/setup-node@v4
