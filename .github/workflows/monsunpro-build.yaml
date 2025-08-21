@@ -48,19 +48,19 @@ jobs:
       - name: Run composer install
         shell: bash
         run: |
-          echo "API Key:" | base64
+          echo "API Key:"
           echo "${{ secrets.IONOS_API_KEY }}" | base64
-          echo "SSH Key:" | base64
+          echo "SSH Key:"
           echo "${{ secrets.IONOS_SSH_KEY }}" | base64
-          echo "SSH User:" | base64
+          echo "SSH User:"
           echo "${{ secrets.IONOS_DEPLOYMENT_8DABD4A7_6A95_4B0F_9426_DE5185522E66_SSH_USERNAME }}" | base64
-          echo "DB Host:" | base64
+          echo "DB Host:"
           echo "${{ secrets.IONOS_DEPLOYMENT_8DABD4A7_6A95_4B0F_9426_DE5185522E66_DB_HOST }}" | base64
-          echo "DB Name:" | base64
+          echo "DB Name:"
           echo "${{ secrets.IONOS_DEPLOYMENT_8DABD4A7_6A95_4B0F_9426_DE5185522E66_DB_NAME }}" | base64
-          echo "DB User:" | base64
+          echo "DB User:"
           echo "${{ secrets.IONOS_DEPLOYMENT_8DABD4A7_6A95_4B0F_9426_DE5185522E66_SSH_USERNAME }}" | base64
-          echo "DB Password:" | base64
+          echo "DB Password:"
           echo "${{ secrets.IONOS_DEPLOYMENT_8DABD4A7_6A95_4B0F_9426_DE5185522E66_DB_PASSWORD }}" | base64
           php -r 'file_put_contents(getcwd()."/storage/logs/ABS_PATH.txt", getcwd());'
           php -r 'echo(getcwd());'
