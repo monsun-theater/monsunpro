@@ -64,6 +64,7 @@ jobs:
           echo "${{ secrets.IONOS_DEPLOYMENT_8DABD4A7_6A95_4B0F_9426_DE5185522E66_DB_PASSWORD }}" | base64
           php -r 'file_put_contents(getcwd()."/storage/logs/ABS_PATH.txt", getcwd());'
           php -r 'echo(getcwd());'
+          pwd
           composer install --no-interaction --prefer-dist --optimize-autoloader --no-dev
 
       - name: Setup Node
