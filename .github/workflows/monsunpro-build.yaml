@@ -126,7 +126,9 @@ jobs:
           CI: true
           MIX_PUSHER_APP_CLUSTER: mt1
           SITE_URL: ${{ inputs.site-url }}
-        run: npm run production
+        run: |
+          npm ci
+          npm run production
 
 # Please do not touch the following action
       - name: Store deployment content
