@@ -1,12 +1,19 @@
-# check that mod_rewrite is enabled
-<IfModule mod_rewrite.c>
-    # enable the runtime rewrite engine
-    RewriteEngine On
+# $HOME/htdocs/.htaccess  (ROOT)
+RewriteEngine On
 
-    # serve existing files from /public folder as if they were in your base directory
-    RewriteCond %{REQUEST_URI} !public/
-    RewriteRule (.*) /public/$1 [L]
+# 1) If request already targets /public, do nothing (avoid loops)
+RewriteCond %{REQUEST_URI} ^/public/
+RewriteRule ^ - [L]
 
-    # route everything else to /public/index.php
-    RewriteRule ^ /public/index.php [L]
-</IfModule>
+# 2) If a real file/dir exists at root, serve it
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# 3) If a real file/dir exists inside /public, serve that
+RewriteCond %{DOCUMENT_ROOT}/public/$1 -f [OR]
+RewriteCond %{DOCUMENT_ROOT}/public/$1 -d
+RewriteRule ^ public/$1 [L]
+
+# 4) Otherwise route everything once to Laravel's front controller
+RewriteRule ^ public/index.php [L]
