@@ -1,0 +1,12 @@
+# check that mod_rewrite is enabled
+<IfModule mod_rewrite.c>
+    # enable the runtime rewrite engine
+    RewriteEngine On
+
+    # serve existing files from /public folder as if they were in your base directory
+    RewriteCond %{REQUEST_URI} !public/
+    RewriteRule (.*) /public/$1 [L]
+
+    # route everything else to /public/index.php
+    RewriteRule ^ /public/index.php [L]
+</IfModule>
