@@ -15,7 +15,7 @@ ssh-keygen -t ed25519 -C "statamic-bot" -f "${KEY_PATH}" -N ""
 echo "Public key for GitHub Deploy Key (add with write access):"
 cat "${KEY_PATH}.pub"
 fi
-chmod 600 "${KEY_PATH}"
+chmod 600 ${HOME}/.ssh/*
 
 # 2) Known hosts (avoid interactive prompts) — idempotent
 if ! ssh-keygen -F github.com >/dev/null 2>&1; then
