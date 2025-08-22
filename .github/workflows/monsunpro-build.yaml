@@ -83,7 +83,7 @@ jobs:
 
       - name: Archive full project folder
         run: |
-          ARCH=./project-archive.tar.gz && tar -czf "$ARCH" --exclude="./project-archive.tar.gz" -C . . && test -s "$ARCH"
+          ARCH=project-archive.tar.gz && tar -czf "$ARCH" --exclude="$ARCH" . && test -s "$ARCH"
 
 # Please do not touch the following action
       - name: Store deployment content
