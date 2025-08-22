@@ -14,4 +14,4 @@ php artisan statamic:static:clear
 php artisan up
 
 # Set up GIT
-source set-up-git.sh
+source scripts/set-up-git.sh
