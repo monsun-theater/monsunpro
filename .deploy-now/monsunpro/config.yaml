@@ -17,13 +17,7 @@ deploy:
       - find $(pwd) -type d -not -name "logs" -exec chmod 775 {} \;
       - chmod -R o+w storage bootstrap/cache
 
-
-      - php artisan cache:clear
-      - php artisan config:cache
-      - php artisan route:cache
-      - php artisan statamic:stache:warm
-      - php artisan statamic:search:update --all
-      - php artisan statamic:static:clear
+      - source scripts/prepare-app.sh
 
 
 
@@ -42,22 +36,12 @@ deploy:
       - php artisan down
     # commands that are executed at the real webspace NOT at build servers AFTER copying new files
     post-deployment-remote-commands:
-      # Restore hidden files
-      - ARCH=./project-archive.tar.gz && [ -f "$ARCH" ] && tar -xzf "$ARCH" -C . && rm -- "$ARCH"
-
       - find $(pwd) -type f -not -path "$(pwd)/logs/*" -exec chmod 664 {} \;
       - find $(pwd) -type d -not -name "logs" -exec chmod 775 {} \;
       - chmod -R o+w storage bootstrap/cache
-      - php artisan cache:clear
-      - php artisan config:cache
-      - php artisan route:cache
-      - php artisan statamic:stache:warm
-      - php artisan statamic:search:update --all
-      - php artisan statamic:static:clear
-      - php artisan up
-      - php artisan about
-      - php -r 'file_put_contents(getcwd()."/storage/logs/ABS_PATH.txt", getcwd());'
-      - php -r 'echo(getcwd());'
+
+      - source scripts/prepare-app.sh
+
 
 
 # uncomment the following lines to configure cron jobs

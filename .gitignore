@@ -29,7 +29,12 @@ monsuntheater.code-workspace
 /public/js/site.js.LICENSE.txt
 /public/mix-manifest.json
 
+# IONOS Deploy now homedir files
 .actions_env
 .template-renderer-data
-logs/
 project-archive.tar.gz
+logs/
+.bash_profile
+.bashrc
+.deploy-now/php
+.ssh/
