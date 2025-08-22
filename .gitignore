@@ -11,7 +11,6 @@ public/assets/site-setup/social-media-icons/
 /public/vendor/statamic
 /public/img/
 /public/static/
-/public/
 /storage/*.key
 /vendor
 .env

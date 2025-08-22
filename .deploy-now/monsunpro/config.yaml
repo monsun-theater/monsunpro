@@ -50,6 +50,7 @@ deploy:
       - php artisan statamic:stache:warm
       - php artisan statamic:search:update --all
       - php artisan statamic:static:clear
+      - php artisan up
       - php artisan about
       - php -r 'file_put_contents(getcwd()."/storage/logs/ABS_PATH.txt", getcwd());'
       - php -r 'echo(getcwd());'
