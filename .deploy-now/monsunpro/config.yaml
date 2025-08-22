@@ -41,6 +41,7 @@ deploy:
       - php artisan down
     # commands that are executed at the real webspace NOT at build servers AFTER copying new files
     post-deployment-remote-commands:
+      - tar -xzf git-archive.tar.gz -C .  # Restore.git folder
       - find $(pwd) -type f -not -path "$(pwd)/logs/*" -exec chmod 664 {} \;
       - find $(pwd) -type d -not -name "logs" -exec chmod 775 {} \;
       - chmod -R o+w storage bootstrap/cache
@@ -54,6 +55,7 @@ deploy:
       - php artisan about
       - php -r 'file_put_contents(getcwd()."/storage/logs/ABS_PATH.txt", getcwd());'
       - php -r 'echo(getcwd());'
+
 
 # uncomment the following lines to configure cron jobs
 #runtime:
