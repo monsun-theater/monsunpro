@@ -81,9 +81,9 @@ jobs:
           npm ci
           npm run production
 
-      - name: Archive git folder
+      - name: Archive full project folder
         run: |
-          tar -czf git-archive.tar.gz .git
+          ARCH=./project-archive.tar.gz && tar -czf "$ARCH" --exclude="./project-archive.tar.gz" -C . . && test -s "$ARCH"
 
 # Please do not touch the following action
       - name: Store deployment content

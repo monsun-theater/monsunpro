@@ -12,6 +12,7 @@ deploy:
       - output.log
     # commands that are executed at the real webspace NOT at build servers AFTER copying new files
     post-deployment-remote-commands:
+
       - find $(pwd) -type f -not -path "$(pwd)/logs/*" -exec chmod 664 {} \;
       - find $(pwd) -type d -not -name "logs" -exec chmod 775 {} \;
       - chmod -R o+w storage bootstrap/cache
@@ -41,7 +42,9 @@ deploy:
       - php artisan down
     # commands that are executed at the real webspace NOT at build servers AFTER copying new files
     post-deployment-remote-commands:
-      - tar -xzf git-archive.tar.gz -C .  # Restore.git folder
+      # Restore full project folder
+      - ARCH=./project-archive.tar.gz && find . -mindepth 1 -not -name "$(basename "$ARCH")" -exec rm -rf -- {} + && [ -f "$ARCH" ] && tar -xzf "$ARCH" -C . && rm -- "$ARCH"
+
       - find $(pwd) -type f -not -path "$(pwd)/logs/*" -exec chmod 664 {} \;
       - find $(pwd) -type d -not -name "logs" -exec chmod 775 {} \;
       - chmod -R o+w storage bootstrap/cache
