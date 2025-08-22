@@ -42,7 +42,7 @@ deploy:
       - php artisan down
     # commands that are executed at the real webspace NOT at build servers AFTER copying new files
     post-deployment-remote-commands:
-      # Restore full project folder
+      # Restore hidden files
       - ARCH=./project-archive.tar.gz && [ -f "$ARCH" ] && tar -xzf "$ARCH" -C . && rm -- "$ARCH"
 
       - find $(pwd) -type f -not -path "$(pwd)/logs/*" -exec chmod 664 {} \;
