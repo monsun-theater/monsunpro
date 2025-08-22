@@ -1,9 +1,6 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# --- Config you set once (or pass via env) ---
-: "${GITHUB_SSH_REPO:?Set GITHUB_SSH_REPO, e.g. [email protected]:owner/repo.git}"
-
 KEY_PATH="${HOME}/.ssh/id_ed25519_statamic"
 SSH_CONFIG="${HOME}/.ssh/config"
 KNOWN_HOSTS="${HOME}/.ssh/known_hosts"
