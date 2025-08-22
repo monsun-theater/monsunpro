@@ -1,9 +1,16 @@
-{{# A sizeable video rendered in a responsive container with an optional caption. #}}
+{{# A sizeable video rendered in a responsive container with an optional
+caption. #}}
 <div class="w-full">
-    <div class="aspect-w-16 aspect-h-9">
-        <iframe class="absolute top-0 left-0 w-full h-full" width="100%" height="auto"
-            src="{{ monsun_video | embed_url }}{{ if do_not_track_toggle }}?dnt=1{{ /if }}" frameborder="0"
+    <div class="relative aspect-video">
+        <iframe
+            class="absolute top-0 left-0 w-full h-full"
+            width="100%"
+            height="auto"
+            src="{{ monsun_video | embed_url }}{{ if do_not_track_toggle }}?dnt=1{{ /if }}"
+            loading="lazy"
+            frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
+            allowfullscreen
+        ></iframe>
     </div>
 </div>

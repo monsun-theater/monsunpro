@@ -1,46 +1,57 @@
-<nav x-data="{ isOpen: false }" class="hidden sm:block">
-    <div class="flex items-center justify-between pb-2">
+<nav x-data="{ isOpen: false, mobileNavOpen: false, searchQuery: '' }" class="hidden sm:block  dark:bg-black bg-white">
+    <div class="flex items-center justify-between pb-2 dark:text-white text-black">
         <div class="flex space-x-2">
-            <button type="button" aria-label="Toggle Menu" @click="isOpen = !isOpen">
-                <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" x-show="!isOpen" x-cloak fill="none"
-                    viewBox="0 0 24 24" stroke="#fff" aria-hidden="true">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                </svg><svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" x-show="isOpen" x-cloak fill="none"
-                    viewBox="0 0 24 24" stroke="#fff" aria-hidden="true">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-                </svg></button>
-
-            <button>
-                <div aria-label="Toggle Menu" @click="isOpen = !isOpen" class="tracking-widest text-white">MENU</div>
+            <button type="button" aria-label="Toggle Menu" @click="isOpen = !isOpen" class="dark:text-white text-black">
+              <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" x-show="!isOpen" x-cloak fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+              <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" x-show="isOpen" x-cloak fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+              </svg>
             </button>
-        </div>
-        <div><a aria-label="Logo {{ config:app:name }}" href="{{ site:url }}">
-                <img class="h-10" src="/assets/site-setup/logos/monsun-logo-wordmark.svg" alt="{{ config:app:name }}" />
-            </a></div>
-        <div class="flex space-x-2" x-data="{ open: false }" x-on:click.away="{ open = false }">
-            <button x-on:click="{ open = !open, setTimeout(() => {$refs.input.focus()}, 200) }" class="tracking-widest
-                text-white" aria-label="{{ trans:strings.search }}">SUCHE</button>
+          
+            <button>
+              <div aria-label="Toggle Menu" @click="isOpen = !isOpen" class="tracking-widest dark:text-white text-black">MENU</div>
+            </button>
+          </div>
+          
+          <div>
+            <a aria-label="Logo {{ config:app:name }}" href="{{ site:url }}">
+              <picture>
+                <source
+                  srcset="/assets/site-setup/logos/monsun-logo-wordmark.svg"
+                  media="(prefers-color-scheme: dark)"
+                />
+                <img
+                  class="h-10"
+                  src="/assets/site-setup/logos/monsun-logo-wordmark-black-text.svg"
+                  alt="{{ config:app:name }}"
+                />
+              </picture>
+            </a>
+          </div>
+          
+            <div class="flex space-x-2" x-data="{ isOpen: false, searchQuery: '' }" x-on:click.away="isOpen = false">
 
-
-            <li class="flex py-2 relative">
-                <button x-on:click="{ open = !open, setTimeout(() => {$refs.input.focus()}, 200) }" class="text-white"
-                    aria-label="{{ trans:strings.search }}">
-                    {{ svg:search class="w-6 h-6 fill-current transition-colors" }}
-                </button>
-
-                <form action="/search" x-show.transition.origin.right.duration.200ms="open"
-                    class="absolute inset-y-0 right-0 -mr-2 flex">
-                    <input x-ref="input"
-                        class="bg-black focus:bg-darkGray text-white w-52 h-full pr-10 border-darkGray focus:border-monsun focus:ring focus:ring-monsun motion-safe:transition"
-                        placeholder="{{ trans:strings.search }}" type="text" value="{{ get:q }}" name="q" />
-
-                    <button class="absolute inset-y-0 right-0 mr-2 flex items-center text-white hover:text-monsun"
-                        aria-label="{{ trans:strings.search }}">
-                        {{ svg:search class="w-5 h-5 fill-current transition-colors" }}
+                <button x-on:click="isOpen = !isOpen; setTimeout(() => $refs.input.focus(), 200)" class="tracking-widest text-black dark:text-white" aria-label="{{ trans:strings.search }}">SUCHE</button>
+              
+                <li class="flex py-2 relative">
+                  <button x-on:click="isOpen = !isOpen; setTimeout(() => $refs.input.focus(), 200)" class="text-black dark:text-white" aria-label="{{ trans:strings.search }}">
+                    {{ svg:search class="w-6 h-6 transition-colors" fill="currentColor" }}
+                  </button>
+              
+                  <form action="/search" x-show.transition.origin.right.duration.200ms="isOpen" class="absolute inset-y-0 right-0 -mr-2 flex">
+                    <input x-ref="input" class="bg-white dark:bg-darkGray focus:bg-white dark:focus:bg-darkGray text-black dark:text-white w-52 h-full pr-10 border-darkGray focus:border-monsun focus:ring focus:ring-monsun motion-safe:transition" placeholder="{{ trans:strings.search }}" type="text" :value="searchQuery" @input="searchQuery = $event.target.value" name="q">
+                    <button class="absolute inset-y-0 right-0 mr-2 flex items-center text-black dark:text-white hover:text-monsun" aria-label="{{ trans:strings.search }}">
+                      {{ svg:search class="w-5 h-5 transition-colors" fill="currentColor"}}
                     </button>
-                </form>
-            </li>
-        </div>
+                  </form>
+                </li>
+              </div>
+              
+            
+            
+            
     </div>
     {{# Primary Menu Desktop #}}
     <div x-cloak x-show="isOpen" class="hidden sm:block" x-transition:enter="transition ease-out duration-300"
@@ -51,11 +62,10 @@
             <!-- Primary Menu -->
 
             <div class="grid grid-cols-12 gap-2 justify-items-left pb-3 pt-4">
-                s{{ nav:top_menu_primary max_depth="2" }}
+                {{ nav:top_menu_primary max_depth="2" }}
                 <div class="lowercase tracking-widest col-start-5 col-span-7">
-
                     <a href="{{ url }}" class="text-3xl lg:text-4xl hover:text-monsun {{ is_current || is_parent
-                        ? 'text-monsun' : 'text-white' }} " {{ if children }} href=" {{ url }}" {{ /if }}>
+                        ? 'text-monsun' : 'text-black dark:text-white'}} " {{ if children }} href=" {{ url }}" {{ /if }}>
                         {{ title }}
                     </a>
                     {{ if children }}
@@ -85,7 +95,7 @@
                     {{ nav:top_menu_secondary max_depth="2" }}
                     <div class="lowercase tracking-widest">
                         <a href="{{ url }}" class="text-md hover:text-monsun {{ is_current || is_parent
-        ? 'text-monsun' : 'text-white' }} " {{ if children }} href=" {{ url }}" {{ /if }}>
+        ? 'text-monsun' : 'text-black dark:text-white' }} " {{ if children }} href=" {{ url }}" {{ /if }}>
                             {{ title }}
                         </a>
                         {{ if children }}
@@ -108,7 +118,7 @@
                     {{ nav:top_menu_tertiary max_depth="2" }}
                     <div class="lowercase tracking-widest">
                         <a href="{{ url }}" class="text-md hover:text-monsun {{ is_current || is_parent
-    ? 'text-monsun' : 'text-white' }} " {{ if children }} href=" {{ url }}" {{ /if }}>
+    ? 'text-monsun' : 'text-black dark:text-white' }} " {{ if children }} href=" {{ url }}" {{ /if }}>
                             {{ title }}
                         </a>
                         {{ if children }}
@@ -148,24 +158,24 @@
 
     <button
         @click.prevent="mobileNavOpen = !mobileNavOpen, mobileNavOpen ? document.body.classList.add('no-scroll') : document.body.classList.remove('no-scroll')"
-        class="fixed bottom-0 z-30 h-14 flex font-bold border-2 border-white uppercase justify-center items-center right-0 w-full bg-black text-white text-base tracking-widest 
+        class="fixed bottom-0 z-30 h-14 flex font-bold outline uppercase justify-center items-center right-0 w-full bg-white dark:bg-black text-black dark:text-white text-base tracking-widest 
         aria-label=" Toggle menu" x-text="mobileNavOpen ? 'Schließen' : 'Menu'">
     </button>
 
-    <ul class="fixed z-20 inset-0 flex flex-col justify-center pt-3 items-center space-y-3 bg-black overflow-auto"
+    <ul class="fixed z-20 inset-0 flex flex-col justify-center pt-3 items-center space-y-3 bg-white dark:bg-black overflow-auto"
         x-show="mobileNavOpen" x-cloak>
         {{ nav:top_menu_mobile max_depth="2" include_home="true" }}
         <li {{ if children }} x-data="{ mobileNavSubnavOpen: false }" {{ /if }} class="leading-none">
-            <a class="flex items-start text-2xl lowercase tracking-wide font-bold hover:text-monsun {{ is_current || is_parent ? 'text-monsun' : 'text-white' }}"
+            <a class="flex items-start text-2xl lowercase tracking-wide font-bold hover:text-monsun {{ is_current || is_parent ? 'text-monsun' : 'text-black dark:text-white' }}"
                 {{ if children }} href="#" @click.prevent="mobileNavSubnavOpen = true"
                 @click.away="mobileNavSubnavOpen = false" {{ else }} href="{{ url }}" {{ /if }}>
                 {{ title }}
                 {{ if children }}
-                <svg class="ml-1 w-2 text-white stroke-current overflow-visible transform"
+                <svg class="ml-1 w-2 text-black dark:text-white stroke-current overflow-visible transform"
                     :class="{ 'rotate-180': mobileNavSubnavOpen }" aria-hidden="true" stroke-width="32"
                     viewBox="0 0 140 140">
                     <path d="M135.625 42.648l-62.533 62.527a4.37 4.37 0 01-6.184 0L4.375 42.648" fill="none"
-                        stroke="#fff" stroke-linecap="round" stroke-linejoin="round" />
+                        stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
                 {{ /if }}
             </a>
@@ -174,7 +184,7 @@
                 x-cloak>
                 {{ children }}
                 <li>
-                    <a class="whitespace-nowrap font-medium lowercase hover:text-monsun {{ is_current || is_parent ? 'text-monsun' : 'text-white' }}"
+                    <a class="whitespace-nowrap font-medium lowercase hover:text-monsun {{ is_current || is_parent ? 'text-monsun' : 'text-black dark:text-white' }}"
                         href="{{ url }}">
                         {{ title }}
                     </a>
@@ -186,16 +196,13 @@
         {{ /nav:top_menu_mobile }}
         </div>
         <li class="flex pt-10 relative">
-            <form action="/search" x-show.transition.origin.right.duration.200ms="open" class="inset-center -mr-2 flex">
-                <input x-ref="input"
-                    class="bg-black focus:bg-darkGray text-white w-52 h-full pr-10 border-2 border-white focus:border-monsun focus:ring focus:ring-monsun motion-safe:transition"
-                    placeholder="{{ trans:strings.search }}" type="text" value="{{ get:q }}" name="q" />
-
-                <button class="absolute inset-y-0 right-0 mr-2 flex items-center text-white hover:text-monsun"
-                    aria-label="{{ trans:strings.search }}">
-                    {{ svg:search class="w-5 h-5 fill-current transition-colors" }}
+            <form action="/search" x-show.transition.origin.right.duration.200ms="mobileNavOpen" x-bind:class="{ 'inset-center': mobileNavOpen, '-mr-2': !mobileNavOpen }" class="flex">
+                <input x-ref="input" class="bg-white dark:bg-black focus:bg-white dark:focus:bg-darkGray text-black dark:text-white w-52 h-full pr-10  focus:border-monsun focus:ring focus:ring-monsun motion-safe:transition" placeholder="{{ trans:strings.search }}" type="text" value="{{ get:q }}" name="q">
+                <button class="absolute inset-y-0 right-0 mr-2 flex items-center text-black dark:text-white hover:text-monsun" aria-label="{{ trans:strings.search }}">
+                  {{ svg:search class="w-5 h-5 transition-colors" fill="currentColor" }}
                 </button>
-            </form>
+              </form>
+              
         </li>
     </ul>
 

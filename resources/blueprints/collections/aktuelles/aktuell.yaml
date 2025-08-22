@@ -1,55 +1,59 @@
 title: Aktuell
-sections:
+tabs:
   main:
     display: Main
-    fields:
+    sections:
       -
-        handle: title
-        field:
-          type: text
-          required: true
-          validate:
-            - required
-      -
-        handle: untertitel
-        field:
-          input_type: text
-          antlers: false
-          display: Untertitel
-          type: text
-          icon: text
-          listable: hidden
-      -
-        import: figure_one_size
-      -
-        handle: video_link
-        field:
-          display: Video-Link
-          type: toggle
-          icon: toggle
-          instructions: 'Hides the image and adds a video player'
-          listable: hidden
-      -
-        import: video
-        prefix: akt_
-      -
-        import: page_builder
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+          -
+            handle: untertitel
+            field:
+              input_type: text
+              antlers: false
+              display: Untertitel
+              type: text
+              icon: text
+              listable: hidden
+          -
+            import: figure_one_size
+          -
+            handle: video_link
+            field:
+              display: Video-Link
+              type: toggle
+              icon: toggle
+              instructions: 'Hides the image and adds a video player'
+              listable: hidden
+          -
+            import: video
+            prefix: akt_
+          -
+            import: page_builder
   sidebar:
     display: Sidebar
-    fields:
+    sections:
       -
-        handle: slug
-        field:
-          type: slug
-          required: true
-          localizable: true
-          validate:
-            - required
-            - 'unique_entry_value:{collection},{id},{site}'
-      -
-        handle: date
-        field:
-          type: date
-          required: true
-          validate:
-            - required
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate:
+                - required
+                - 'unique_entry_value:{collection},{id},{site}'
+          -
+            handle: date
+            field:
+              type: date
+              required: true
+              default: now
+              validate:
+                - required

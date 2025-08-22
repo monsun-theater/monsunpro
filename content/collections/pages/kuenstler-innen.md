@@ -8,31 +8,37 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1665006116
+updated_at: 1749469292
 template: default
 cinema_monsun: false
-do_not_track_toggle: false
 page_builder:
   -
+    id: pIfRiCK8
     title: A
     collection:
       - b4b6b93e-7c86-4b83-b97b-5ba70ec82c47
+      - 37bab7ac-b6ce-4ac4-9c59-2adeb120fb20
     type: collection
     enabled: true
   -
+    id: bquHS9Pe
     title: B
     collection:
+      - fae83cf2-4013-451e-ac82-700d3c528bac
+      - b2651ea7-24e3-4ef1-b7a0-dd175a47a93a
       - 3a9d35dd-3fb1-4045-a101-1eec603d300a
       - 0e810994-4499-46e6-ba2c-ce31e765fe50
     type: collection
     enabled: true
   -
+    id: AlFQ62KE
     title: C
     collection:
       - 1425f122-e9de-40af-bf26-026b69605fd3
     type: collection
     enabled: true
   -
+    id: ysy7CxI3
     title: F
     collection:
       - 2d00ee94-9aba-405e-9928-2c6bc53aabad
@@ -40,21 +46,33 @@ page_builder:
     type: collection
     enabled: true
   -
+    id: duqDPduP
     title: G
     collection:
       - 0ebc4068-55f1-4363-8749-187a8db3a9ae
     type: collection
     enabled: true
   -
+    id: tJzrAkZQ
     title: H
     collection:
       - 5f9ebe63-a818-4ee9-b39c-85f98a4343b9
       - 3a0a226e-661b-4c66-a5f5-d66c69973388
       - 54a17f49-25af-4094-a996-e41495b249fb
       - 230ec157-5076-45d0-8d68-597a5f3d0743
+      - 9fdd0951-adef-43d9-b5a8-41d1d85f36ec
+      - 79b26bc6-2d2e-4d8e-97ec-7a6c69872e06
     type: collection
     enabled: true
   -
+    id: mbp0tb8t
+    title: J
+    collection:
+      - d3c969ce-9a6f-4fbc-951e-5a336cbb63a1
+    type: collection
+    enabled: true
+  -
+    id: G6Ac7NWq
     title: K
     collection:
       - 3bd0ba25-8a42-45ec-99e1-5f0be8746cf4
@@ -63,12 +81,14 @@ page_builder:
     type: collection
     enabled: true
   -
+    id: SvojOu2j
     title: L
     collection:
       - 03ddc47d-280c-4d6e-873f-c01b9b9908e5
     type: collection
     enabled: true
   -
+    id: M62w9XPP
     title: M
     collection:
       - e834ffc9-f737-4277-b74d-e9aabe51340c
@@ -78,39 +98,57 @@ page_builder:
     type: collection
     enabled: true
   -
+    id: r52AWbtE
     title: 'N'
     collection:
       - 031c029a-b79a-41d7-b0ec-2bf3ac318139
       - be5b2398-1de0-411c-8916-fdcc92a69f55
       - afcab694-180f-4d45-b6be-b707d9d61297
       - 8bda46f5-0a8b-4aa8-bf4d-3751f32f9d61
+      - 197241fe-463d-4269-8751-b46544426078
     type: collection
     enabled: true
   -
+    id: W7vpsYBk
     title: O
     collection:
+      - c8cc1da1-5599-40fe-b491-e55c01585cdb
       - 26327ffa-0be5-4603-9053-fac89951580f
     type: collection
     enabled: true
   -
-    title: R
+    id: m27m1spd
+    title: P
     collection:
-      - fa117777-625b-41cf-b436-b93a3313376c
+      - 5a5b2b34-7b29-4117-906f-ca4c91ed0d18
     type: collection
     enabled: true
   -
+    id: rZhzw0Ud
+    title: R
+    collection:
+      - fa117777-625b-41cf-b436-b93a3313376c
+      - 9f116228-3938-4d2c-bdee-c47b7bf8a5b7
+      - 9a39b5b7-37a2-46f5-8981-331d368d5cd5
+    type: collection
+    enabled: true
+  -
+    id: a0CWAPwO
     title: S
     collection:
+      - 5cadbb24-14e8-464b-a71b-21d9e0ac64a7
       - 78a4fa9b-1bc1-418e-91f4-859095e18045
       - 621b9232-8742-408e-87b1-8f74ba9dcf0c
       - 1aec10b8-4b2b-4e5b-9f4c-6f009a61c3a5
       - 076a9709-6a2f-437e-a4aa-45d537afb7fd
+      - f9ee7d16-9064-499f-af33-ac5611a1ebba
       - 3b147b53-5d93-45c1-82c0-c2286a4bc7fa
       - c1f10b95-63aa-4bfc-b71c-c5003a623a41
       - 605d1fff-6e51-4810-8b7c-9abdb2b7de9d
     type: collection
     enabled: true
   -
+    id: LgNFz9OY
     title: T
     collection:
       - 6cb23301-864e-47e2-85b8-a313f352e178
@@ -118,6 +156,7 @@ page_builder:
     type: collection
     enabled: true
   -
+    id: HUaWigNg
     title: W
     collection:
       - 5a69cdb9-fc24-49ed-9a5d-06086c2c6250
@@ -128,9 +167,11 @@ page_builder:
     type: collection
     enabled: true
   -
+    id: qNVpCtgQ
     title: Z
     collection:
       - 2a783111-0fd9-4d70-9f20-8a0e95eb067c
     type: collection
     enabled: true
+parent: home
 ---

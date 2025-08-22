@@ -9,83 +9,106 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1672661270
+updated_at: 1738762510
 template: presse
-cinema_monsun: true
-do_not_track_toggle: true
-monsun_video: 'https://vimeo.com/773546857'
+cinema_monsun: false
 hero_featured_sect:
   -
-    title: 'Gala der Preisträger:innen'
+    id: jF5HW6Kq
+    title: 'Neue Spielstätte ab 2025'
     titelzusatz_zeigen: false
     einfarbiger_hintergrund: false
     type: featured
-    enabled: false
-    title_desc: '26. Internationales Solo-Tanz-Theater-Festival Stuttgart'
-    featured_image: produktionen/gala_der_preistraeger_innnen_solotanz/gala_der_preistraegerinnen_solotanz_c_jo_grabowski.jpg
-    overlay_color: neutral-300
-    buttons:
-      -
-        label: 'Mehr lesen'
-        target_blank: false
-        link_type: entry
-        entry: 48154ad4-1764-449a-a007-7b1f106f38ee
-        url: null
-        email: null
-        tel: null
-        asset: null
-        attr_title: 'Mehr lesen'
-        attr_aria: 'Mehr über das 26. Internationales Solo-Tanz-Theater-Festival Stuttgart lesen'
+    enabled: true
+    title_desc: 'monsun.theater in der Billrothstraße'
+    darken_overlay: false
+    featured_image: presse/2024-12-05/spielstaette_billrothstrasse_13_c_monsun.theater.jpg
   -
+    id: bPfvflvU
     title: 'Theaterpreis Hamburg 2022'
     titelzusatz_zeigen: false
     title_desc: 'Der Theaterpreis Hamburg »Rolf Mares« in der Kategorie Sonderpreis für außergewöhnliche Leistungen im Rahmen des Hamburger Theaterlebens geht in diesem Jahr an Francoise Hüsges.'
     einfarbiger_hintergrund: false
     featured_image: kuenstler-innen/francoise_huesges_2022_02_c_g2-baraniak.jpg
-    overlay_color: neutral-300
+    darken_overlay: true
     buttons:
       -
+        id: Dw0stR6R
         label: 'Pressefotos Francoise Hüsges'
         target_blank: false
         link_type: asset
-        entry: null
-        url: null
-        email: null
-        tel: null
         asset: kuenstler-innen/presse/Pressefotos-Francoise-Husges-c-G2-Baraniak-monsun.theater.zip
         attr_title: 'Pressefotos Francoise Hüsges'
         attr_aria: 'Pressefotos Francoise Hüsges'
       -
+        id: WAlFa85F
         label: 'Vita Francoise Hüsges'
         target_blank: false
         link_type: entry
         entry: 230ec157-5076-45d0-8d68-597a5f3d0743
-        url: null
-        email: null
-        tel: null
-        asset: null
         attr_title: 'Vita Francoise Hüsges'
         attr_aria: 'Vita Francoise Hüsges'
       -
+        id: WVOD7QsJ
         label: 'Hamburger Abendblatt vom 21.11.2022'
         target_blank: false
         link_type: asset
-        entry: null
-        url: null
-        email: null
-        tel: null
         asset: 'aktuelles/2022-11-21/presse/Theaterpreis-Hamburg:-Gleich-zwei-Uberraschungen-unter-den-Ausgezeichneten---Hamburger-Abendblatt.pdf'
         attr_title: 'Download PDF'
         attr_aria: 'Download PDF'
     type: featured
-    enabled: true
-  -
-    titelzusatz_zeigen: false
-    einfarbiger_hintergrund: false
-    type: featured
     enabled: false
 page_builder:
   -
+    id: llqw2u4v
+    title: 'AUSSICHT Festival'
+    image: produktionen/aussicht_festival/2023/presse/aussicht-cover.jpg
+    text: Festivalprogramm
+    buttons:
+      -
+        id: llqw4f7a
+        label: 'Download Festivalprogramm'
+        target_blank: false
+        link_type: asset
+        asset: produktionen/aussicht_festival/2023/presse/aussicht-festival-programm-2023.pdf
+        attr_title: 'Download Festivalprogramm PDF'
+        attr_aria: 'Download Festivalprogramm PDF'
+      -
+        id: llqw6al6
+        label: 'Download Pressemitteilung'
+        target_blank: false
+        link_type: asset
+        asset: produktionen/aussicht_festival/2023/presse/aussicht_festival2023_pressemitteilung_monsun.theater.pdf
+        attr_title: 'Download Pressemitteilung PDF'
+        attr_aria: 'Download Pressemitteilung PDF'
+    type: call_to_action
+    enabled: false
+  -
+    id: I4MZyTkR
+    title: Spielstätteneröffnung
+    image: presse/2025-02-05/teamfoto_2025_web.jpg
+    text: 'Pressemitteilung & Pressefotos'
+    buttons:
+      -
+        id: V3VspIgR
+        label: 'Download Pressemitteilung'
+        target_blank: false
+        link_type: asset
+        asset: presse/2025-02-05/pressemitteilung_monsun.theater_spielstatteneroffnung_februar_2025.pdf
+        attr_title: 'Download Pressemitteilung'
+        attr_aria: 'Download Pressefotos monsun.theater Billrothstraße'
+      -
+        id: m4bhs34f
+        label: 'Download Pressefotos'
+        target_blank: false
+        link_type: asset
+        asset: presse/2025-02-05/presse/spielstaette_billrothstrasse_c_monsun_2025.zip
+        attr_title: 'Download Pressefotos monsun.theater Billrothstraße'
+        attr_aria: 'Download Pressefotos monsun.theater Billrothstraße'
+    type: call_to_action
+    enabled: true
+  -
+    id: nI545NWh
     bard:
       -
         type: paragraph
@@ -96,38 +119,37 @@ page_builder:
     type: article
     enabled: true
   -
-    title: 'monsun.theater Gaußstraße'
-    image: spielstaette/monsun.gaussstrasse_01.jpg
-    text: Pressefoto
+    id: lur7irrz
+    title: Pressemitteilung
+    image: presse/2024-04-08/monsun_zuschauerraum.jpg
+    text: 'Aktuelle Pressemitteilung zur Situation im monsun.theater'
     buttons:
       -
-        label: Download
+        id: lur7jlvh
+        label: 'Download Pressemitteilung vom 08.04.2024'
         target_blank: false
         link_type: asset
-        entry: null
-        url: null
-        email: null
-        tel: null
-        asset: spielstaette/monsun.gaussstrasse_01.jpg
-        attr_title: 'Download Pressefoto'
-        attr_aria: 'Download Pressefoto monsun.theater Gaußstraße'
+        asset: presse/2024-04-08/pressemitteilung_monsun.theater_wir-leben.pdf
+        attr_title: 'Download Pressemitteilung'
+        attr_aria: 'Download Pressemitteilung'
     type: call_to_action
-    enabled: true
+    enabled: false
   -
+    id: sTDyZY9L
     title: Pressekontakt
-    text: 'Für weitere Anfragen schreiben Sie uns gerne eine Mail.'
+    text: |-
+      Für weitere Anfragen schreiben Sie uns gerne eine Mail.
+      Ansprechpartnerinnen: Amelie Möller & Meike Krämer
     buttons:
       -
+        id: dTGTRc89
         label: 'Mail Presse'
         target_blank: false
         link_type: email
-        entry: null
-        url: null
         email: presse@monsun.theater
-        tel: null
-        asset: null
         attr_title: Pressekontakt
         attr_aria: Pressekontakt
     type: call_to_action
     enabled: true
+parent: home
 ---

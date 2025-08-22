@@ -29,7 +29,7 @@ return [
     */
 
     'automatic' => env('STATAMIC_GIT_AUTOMATIC', true),
-    
+
     /*
     |--------------------------------------------------------------------------
     | Queue Connection
@@ -43,7 +43,7 @@ return [
     */
 
     'queue_connection' => env('STATAMIC_GIT_QUEUE_CONNECTION'),
-    
+
     /*
     |--------------------------------------------------------------------------
     | Dispatch Delay
@@ -97,6 +97,7 @@ return [
         resource_path('fieldsets'),
         resource_path('forms'),
         resource_path('users'),
+        resource_path('preferences.yaml'),
         storage_path('forms'),
         public_path('assets'),
     ],
@@ -114,7 +115,7 @@ return [
 
     'commands' => [
         'git add {{ paths }}',
-        'git -c "user.name={{ name }}" -c "user.email={{ email }}" commit -m "{{ message }} [BOT]"',
+        'git -c "user.name={{ name }}" -c "user.email={{ email }}" commit -m "{{ message }} [BOT] [skip ci]"',
     ],
 
     /*
@@ -146,7 +147,7 @@ return [
         // \Statamic\Events\Data\UserDeleted::class,
     ],
 
-     /*
+    /*
     |--------------------------------------------------------------------------
     | Locale
     |--------------------------------------------------------------------------

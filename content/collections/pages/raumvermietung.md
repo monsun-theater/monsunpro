@@ -1,4 +1,6 @@
 ---
+id: 20bfb41c-c259-4949-b36c-3310597f0900
+blueprint: page
 title: Raumvermietung
 monsun_alert: false
 seo_noindex: false
@@ -6,11 +8,12 @@ seo_nofollow: false
 seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
-updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1616451969
+updated_by: 34d4dc92-ec1a-4900-9a81-ed8dd8606f23
+updated_at: 1682249441
 template: default
 page_builder:
   -
+    id: B9A5PBj5
     bard:
       -
         type: heading
@@ -45,7 +48,7 @@ page_builder:
             type: text
             text: 'Für Seminare und Tagungen sind vorhanden / bzw. können nach Absprache organisiert werden:'
           -
-            type: hard_break
+            type: hardBreak
           -
             type: text
             text: 'Tragbarer Video-Beamer, CD/DVD-Player, Leinwand, Tonanlage (die Akustik ist jedoch in allen Räumlichkeiten auch ohne Mikro sehr gut), Lichtanlage, Flügel.'
@@ -84,7 +87,7 @@ page_builder:
             type: text
             text: "Auch der Werkstattraum im Erdgeschoss eignet sich hervorragend für die Ausrichtung von Geburtstagsfesten, Betriebsfeiern oder ähnlichen Anlässen mit bis zu 100 Personen. Bierzeltgarnituren sind vorhanden. Individuelle Bestuhlung kann gegen Aufpreis bereit gestellt werden (z.B. individuelle Tischrunden, lange Tafeln, klassische Reihenbestuhlung).\_"
           -
-            type: hard_break
+            type: hardBreak
           -
             type: text
             text: 'Der Parkettboden eignet sich sehr gut für Tanzveranstaltungen.'
@@ -103,23 +106,19 @@ page_builder:
     type: article
     enabled: true
   -
+    id: naYLXkW7
     title: Anfrage
     text: E-mail
     buttons:
       -
+        id: u1OoK6kx
         label: info@monsun.theater
         target_blank: false
         link_type: email
-        entry: null
-        url: null
         email: info@monsun.theater
-        tel: null
-        asset: null
         attr_title: info@monsun.theater
         attr_aria: 'email info'
     type: call_to_action
     enabled: true
 cinema_monsun: false
-do_not_track_toggle: false
-id: 20bfb41c-c259-4949-b36c-3310597f0900
 ---

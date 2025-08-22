@@ -5,13 +5,15 @@ title: 'Christina Arends'
 hat_eigene_website_has_own_website: false
 biographie_eintragen_create_artist_s_biography: true
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1653566121
+updated_at: 1694642231
 page_builder:
   -
+    id: luqaGzdq
     bard:
       -
         type: set
         attrs:
+          id: svpBvPr4
           values:
             type: figure
             image: kuenstler-innen/christina_arends_c_nils_schwarz.jpg
@@ -37,6 +39,53 @@ page_builder:
                   target: null
                   title: null
             text: 'VON STRUMPFHOSENALIENS UND PULLOVERTIERCHEN'
+          -
+            type: text
+            text: "\_"
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: (Spiel)
+          -
+            type: hardBreak
+            marks:
+              -
+                type: italic
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::81124f83-4226-456b-b267-41bc526ecfef'
+                  rel: null
+                  target: null
+                  title: null
+            text: 'ANATOMIE DER GUTEN HOFFNUNG – TEIL 2'
+          -
+            type: text
+            text: "\_"
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: (Sprecherin)
+          -
+            type: hardBreak
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::4a2ebb10-e8a4-4434-bb83-4dc53b387e2a'
+                  rel: null
+                  target: null
+                  title: null
+            text: 'ROST UND STAUB'
           -
             type: text
             text: "\_"

@@ -2,145 +2,120 @@
 id: 4cf2bb20-1dff-43d5-9f8c-4f4649291e8c
 blueprint: page
 title: 'BACKSTAGE Festival'
-cinema_monsun: true
-do_not_track_toggle: true
-monsun_video: 'https://vimeo.com/746338733'
+cinema_monsun: false
 hero_featured_sect:
   -
-    title: 'Happy End'
+    id: 5pt2sIjs
+    title: Lovecamp
     titelzusatz_zeigen: false
     einfarbiger_hintergrund: false
-    featured_image: produktionen/backstage_festival/2022/happy_end/happy_end_backstage_07_c_niklas_heinecke.jpg
+    featured_image: produktionen/backstage_festival/2024/lovecamp/lovecamp_01_c_christian_bartsch.jpg
     buttons:
       -
+        id: NmFGfX2A
         label: 'Mehr lesen'
         target_blank: false
         link_type: entry
-        entry: 0ae7495a-9f0c-4427-ab2b-8a787f1b9730
-        url: null
-        email: null
-        tel: null
-        asset: null
+        entry: 14c28178-7cdc-4431-b523-cfe096959044
         attr_title: 'Mehr lesen'
-        attr_aria: 'Mehr über „Happy End“ lesen'
+        attr_aria: 'Mehr über „Lovecamp“ lesen'
     type: featured
     enabled: true
+    darken_overlay: true
   -
-    title: 'Schreibwerkstatt Nachwuchs.texte'
+    id: mLrP5jtA
+    title: 'Wir sind doch schon was geworden'
     titelzusatz_zeigen: false
     einfarbiger_hintergrund: false
-    featured_image: produktionen/backstage_festival/2022/schreibwerkstatt_nachwuchs_texte/schreibwerkstatt_nachwuchs.texte_backstage_01_c_niklas_heinecke.jpeg
+    featured_image: produktionen/backstage_festival/2024/wir_sind_doch_schon_was_geworden/wir_sind_doch_schon_was_geworden_01_c_christian_bartsch.jpg
     buttons:
       -
+        id: DDFgCXj4
         label: 'Mehr lesen'
         target_blank: false
         link_type: entry
-        entry: 194cb676-5d1d-4d3b-8116-360cf98f6e15
-        url: null
-        email: null
-        tel: null
-        asset: null
+        entry: 899417da-541a-43ab-ac87-8d1c84855032
         attr_title: 'Mehr lesen'
-        attr_aria: 'Mehr über „Schreibwerkstatt Nachwuchs.texte“ lesen'
+        attr_aria: 'Mehr über „Wir sind doch schon was geworden“ lesen'
     type: featured
     enabled: true
+    darken_overlay: true
   -
-    title: Daseinsfetzen
+    id: QJtmpmWT
+    title: 'So lange nur mein Herz brennt'
     titelzusatz_zeigen: false
     einfarbiger_hintergrund: false
-    featured_image: produktionen/backstage_festival/2022/daseinsfetzen/daseinsfetzen_backstage_01_c_niklas_heinecke.jpeg
+    featured_image: produktionen/backstage_festival/2024/so_lange_nur_mein_herz_brennt/so_lange_nur_mein_herz_brennt_01_c_christian_bartsch.jpg
     buttons:
       -
+        id: NfxyRaAG
         label: 'Mehr lesen'
         target_blank: false
         link_type: entry
-        entry: d7949f75-d56e-4973-b107-ee592514150a
-        url: null
-        email: null
-        tel: null
-        asset: null
+        entry: 72645625-4fe1-4c4c-b180-2ae056e0f6cf
         attr_title: 'Mehr lesen'
-        attr_aria: 'Mehr über „Daseinsfetzen“ lesen'
+        attr_aria: 'Mehr über „So lange nur mein Herz brennt“ lesen'
     type: featured
     enabled: true
+    darken_overlay: true
   -
-    title: 'Blendprotokolle 2044 A.D.'
+    id: NzermarS
+    title: 'For Sale: Kindheit'
     titelzusatz_zeigen: false
     einfarbiger_hintergrund: false
-    featured_image: produktionen/backstage_festival/2022/blendprotokolle_2044_ad/blendprotokolle_2044_ad_backstage_01_c_niklas_heinecke.jpeg
+    featured_image: produktionen/backstage_festival/2024/for_sale_kindheit/for_sale_kindheit_01_c_christian_bartsch.jpg
     buttons:
       -
+        id: zMa8ztwF
         label: 'Mehr lesen'
         target_blank: false
         link_type: entry
-        entry: f2cc8d79-4bc3-40f8-b57d-60441cbb4fa4
-        url: null
-        email: null
-        tel: null
-        asset: null
+        entry: 49116069-e14f-4109-a734-e3d2b1121e87
         attr_title: 'Mehr lesen'
-        attr_aria: 'Mehr über „Blendprotokolle 2044 A.D.“ lesen'
+        attr_aria: 'Mehr über „For Sale: Kindheit“ lesen'
     type: featured
     enabled: true
+    darken_overlay: true
   -
-    title: 'den spot den ich crave'
+    id: atcOQNYr
+    title: Zuckerherzen
     titelzusatz_zeigen: false
     einfarbiger_hintergrund: false
-    featured_image: produktionen/backstage_festival/2022/den_spot_den_ich_crave/den_spot_den_ich_crave_backstage_01_c_christian_bartsch.jpeg
+    featured_image: produktionen/backstage_festival/2024/zuckerherzen/zuckerherzen_01_c_christian_bartsch.jpg
     buttons:
       -
+        id: P4rwTUMg
         label: 'Mehr lesen'
         target_blank: false
         link_type: entry
-        entry: 5e6fda30-5013-44d3-9ef3-23da81723199
-        url: null
-        email: null
-        tel: null
-        asset: null
+        entry: d02c0292-2497-4460-8dfa-7eb93c6b6b9b
         attr_title: 'Mehr lesen'
-        attr_aria: 'Mehr über „den spot den ich crave“ lesen'
+        attr_aria: 'Mehr über „Zuckerherzen“ lesen'
     type: featured
     enabled: true
+    darken_overlay: true
   -
-    title: 'that’s [not] my fucking business'
-    titelzusatz_zeigen: false
+    id: lzac2ja3
+    title: 'Goldene Tage'
+    titelzusatz_zeigen: true
+    subtitle: 'aber bitte nur für mich...'
     einfarbiger_hintergrund: false
-    featured_image: produktionen/backstage_festival/2022/thats_not_my_fucking_business/thats_not_my_fucking_business_backstage_01_c_niklas_heinecke.jpeg
+    featured_image: produktionen/backstage_festival/2024/goldene_tage/goldene_tage_40_c_peter_bruns.jpg
+    darken_overlay: false
     buttons:
       -
+        id: lzac3wcr
         label: 'Mehr lesen'
         target_blank: false
         link_type: entry
-        entry: 45895954-666e-4684-80ee-9c4aae89408f
-        url: null
-        email: null
-        tel: null
-        asset: null
+        entry: e67da234-fe09-4a55-a00b-457a645c7489
         attr_title: 'Mehr lesen'
-        attr_aria: 'Mehr über „that’s [not] my fucking business“ lesen'
-    type: featured
-    enabled: true
-  -
-    title: WIR/kl/ICH/keiten
-    titelzusatz_zeigen: false
-    einfarbiger_hintergrund: false
-    featured_image: produktionen/backstage_festival/2022/wirklichkeiten/wirklichkeiten_backstage_01_c_niklas_heinecke.jpeg
-    buttons:
-      -
-        label: 'Mehr lesen'
-        target_blank: false
-        link_type: entry
-        entry: 3bf16166-346f-4ee1-83ad-91afe0737f99
-        url: null
-        email: null
-        tel: null
-        asset: null
-        attr_title: 'Mehr lesen'
-        attr_aria: 'Mehr über „WIR/kl/ICH/keiten“ lesen'
+        attr_aria: 'Mehr über „Goldene Tage“ lesen'
     type: featured
     enabled: true
 page_builder:
   -
+    id: MDKz9D7h
     bard:
       -
         type: heading
@@ -149,114 +124,79 @@ page_builder:
         content:
           -
             type: text
-            text: 'Der Jugendclub des Deutschen SchauSpielHauses '
+            text: 'Was aus uns werden soll'
       -
         type: paragraph
         content:
           -
             type: text
-            text: "In diesem Jahr beschäftigen sich alle Gruppen mit ihrer Sicht\_auf die Welt. Diese ist so vielfältig wie die Leben der Teilnehmenden.\_Aber es gibt gemeinsame Blickwinkel – auch in diesen\_herausfordernden Zeiten, die uns animieren, die Welt zusammen zu gestalten und über die Zukunft nachzudenken. Ebenso\_geht es um die Isolation, in die wir uns begeben mussten und die\_Rückkehr in eine Normalität, die uns immer wieder herausfordert."
-          -
-            type: hard_break
-          -
-            type: text
-            text: "Alle Projekte erforschen die Möglichkeiten, wie über das ICH\_in unserer Welt erzählt werden kann – und wie dieses ICH\_überhaupt zu definieren ist."
+            text: '...schon eine herausfordernde Fragestellung. „Wenn ich mal ganz ehrlich bin, kann es letztendlich nie allein um mich gehen. Mein Leben beruht auf einem großen Ganzen, quasi einem System, einer Verfassung. In dieser sind die ,Gesetze und Prinzipien‘ unserer Gesellschaft festgelegt. Ich denke darüber nach, was diese Werte in unserer Demokratie bedeuten, was wichtig ist für die freie Gestaltung meiner individuellen Träume. Wo stehe ich, wo kämpfe ich und wo hinterfrage ich meine Welt. Aber es kann eben nicht nur darum gehen, was aus mir einmal werden soll, sondern aus dem Land, in dem ich lebe... also aus uns allen. Und das hat wiederum sehr viel mit gegenseitiger Akzeptanz, Veränderung und Offenheit zu tun.“ Die Teilnehmenden der BACKSTAGE-Gruppen stecken neue (Gedanken-)räume ab, befragen sich und unsere Zukunft.'
     type: article
     enabled: true
   -
-    title: 'BACKSTAGE Festival 2022 »Die Welt und ICH!«'
+    id: pIvX9lWy
+    title: 'BACKSTAGE-Festival 2024 »Was aus uns werden soll«'
     link_blocks:
       -
-        title: '15. September 2022 | 20:00 Uhr <br> 16. September 2022 | 20:00 Uhr'
+        id: m0lfd2ni
+        title: '01. Oktober 2024 | 19:00 Uhr'
         text: 'Leitung: Gesche Lundbeck'
-        label: 'Happy End'
+        label: LOVECAMP
         target_blank: false
         link_type: entry
-        entry: 0ae7495a-9f0c-4427-ab2b-8a787f1b9730
-        url: null
-        email: null
-        tel: null
-        asset: null
-        attr_title: 'Happy End'
-        attr_aria: 'Happy End'
+        entry: 14c28178-7cdc-4431-b523-cfe096959044
+        attr_title: LOVECAMP
+        attr_aria: LOVECAMP
       -
-        title: '17. September 2022 | 19:00 Uhr'
-        text: 'Leitung: Carsten Brandau'
-        label: 'Schreibwerkstatt Nachwuchs.texte'
-        target_blank: false
-        link_type: entry
-        entry: 194cb676-5d1d-4d3b-8116-360cf98f6e15
-        url: null
-        email: null
-        tel: null
-        asset: null
-        attr_title: 'Schreibwerkstatt Nachwuchs.texte'
-        attr_aria: 'Schreibwerkstatt Nachwuchs.texte'
-      -
-        title: '18. September 2022 | 19:00 Uhr <br> 19. September 2022 | 19:00 Uhr'
-        text: 'Leitung: Pia Düsterhus & Ute Hannig'
-        label: Daseinsfetzen
-        target_blank: false
-        link_type: entry
-        entry: d7949f75-d56e-4973-b107-ee592514150a
-        url: null
-        email: null
-        tel: null
-        asset: null
-        attr_title: Daseinsfetzen
-        attr_aria: Daseinsfetzen
-      -
-        title: '22. September 2022 | 19:00 Uhr <br> 23. September 2022 | 12:00 Uhr <br> 23. September 2022 | 19:00 Uhr'
-        text: 'Leitung: Michael Alexander Müller'
-        label: 'Blendprotokolle 2044 A.D.'
-        target_blank: false
-        link_type: entry
-        entry: f2cc8d79-4bc3-40f8-b57d-60441cbb4fa4
-        url: null
-        email: null
-        tel: null
-        asset: null
-        attr_title: 'Blendprotokolle 2044 A.D.'
-        attr_aria: 'Blendprotokolle 2044 A.D.'
-      -
-        title: '24. September 2022 | 20:00 Uhr <br> 25. September 2022 | 19:00 Uhr'
-        text: 'Leitung: Max Pross'
-        label: 'den spot den ich crave'
-        target_blank: false
-        link_type: entry
-        entry: 5e6fda30-5013-44d3-9ef3-23da81723199
-        url: null
-        email: null
-        tel: null
-        asset: null
-        attr_title: 'den spot den ich crave'
-        attr_aria: 'den spot den ich crave'
-      -
-        title: '27. September 2022 | 12:00 Uhr <br> 27. September 2022 | 19:00 Uhr <br> 28. September 2022 | 12:00 Uhr'
-        text: 'Leitung: Marie Petzold'
-        label: 'that’s [not] my fucking business'
-        target_blank: false
-        link_type: entry
-        entry: 45895954-666e-4684-80ee-9c4aae89408f
-        url: null
-        email: null
-        tel: null
-        asset: null
-        attr_title: 'that’s [not] my fucking business'
-        attr_aria: 'that’s [not] my fucking business'
-      -
-        title: '29. September 2022 | 19:00 Uhr <br> 30. September 2022 | 19:00 Uhr'
+        id: cLAQG8wh
+        title: '4. Oktober 2024 | 19:00 Uhr<br>'
         text: 'Leitung: Manfred Hüttmann'
-        label: WIR/kl/ICH/keiten
+        label: 'WIR SIND DOCH SCHON WAS GEWORDEN'
         target_blank: false
         link_type: entry
-        entry: 3bf16166-346f-4ee1-83ad-91afe0737f99
-        url: null
-        email: null
-        tel: null
-        asset: null
-        attr_title: WIR/kl/ICH/keiten
-        attr_aria: WIR/kl/ICH/keiten
+        entry: 899417da-541a-43ab-ac87-8d1c84855032
+        attr_title: 'WIR SIND DOCH SCHON WAS GEWORDEN'
+        attr_aria: 'WIR SIND DOCH SCHON WAS GEWORDEN'
+      -
+        id: UpvlLRzN
+        title: '6. Oktober 2024 | 19:00 Uhr<br>7. Oktober 2024 | 19:00 Uhr'
+        text: 'Leitung: Michael Alexander Müller'
+        label: 'SO LANGE NUR MEIN HERZ BRENNT'
+        target_blank: false
+        link_type: entry
+        entry: 72645625-4fe1-4c4c-b180-2ae056e0f6cf
+        attr_title: 'SO LANGE NUR MEIN HERZ BRENNT'
+        attr_aria: 'SO LANGE NUR MEIN HERZ BRENNT'
+      -
+        id: jVsOhiwV
+        title: '8. Oktober 2024 | 19:00 Uhr<br>9. Oktober 2024 | 11:00 Uhr'
+        text: 'Leitung: Benjamin Böcker, Antonia Rehfueß'
+        label: 'FOR SALE: KINDHEIT'
+        target_blank: false
+        link_type: entry
+        entry: 49116069-e14f-4109-a734-e3d2b1121e87
+        attr_title: 'FOR SALE: KINDHEIT'
+        attr_aria: 'FOR SALE: KINDHEIT'
+      -
+        id: GSWZvnff
+        title: '10. Oktober 2024 | 11:00 Uhr<br>10. Oktober 2024 | 19:00 Uhr<br>11. Oktober 2024 | 19:00 Uhr'
+        text: 'Leitung: Marie Petzold'
+        label: ZUCKERHERZEN
+        target_blank: false
+        link_type: entry
+        entry: d02c0292-2497-4460-8dfa-7eb93c6b6b9b
+        attr_title: ZUCKERHERZEN
+        attr_aria: ZUCKERHERZEN
+      -
+        id: lzcmnbdd
+        title: '13. Oktober 2024 | 19:00 Uhr'
+        text: 'Leitung: Manfred Hüttmann, Ahmed Soura'
+        label: 'GOLDENE TAGE, ABER BITTE NUR FÜR MICH...'
+        target_blank: false
+        link_type: entry
+        entry: e67da234-fe09-4a55-a00b-457a645c7489
+        attr_title: 'GOLDENE TAGE, ABER BITTE NUR FÜR MICH...'
+        attr_aria: 'GOLDENE TAGE, ABER BITTE NUR FÜR MICH...'
     type: link_blocks
     enabled: true
 seo_noindex: false
@@ -266,5 +206,6 @@ sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 template: default
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1663259806
+updated_at: 1728302126
+parent: home
 ---

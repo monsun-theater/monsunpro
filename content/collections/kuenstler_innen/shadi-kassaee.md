@@ -6,10 +6,12 @@ hat_eigene_website_has_own_website: false
 biographie_eintragen_create_artist_s_biography: true
 page_builder:
   -
+    id: hn7BKeBZ
     bard:
       -
         type: set
         attrs:
+          id: bkkwCuc8
           values:
             type: figure
             image: kuenstler-innen/shadi_kassaee.jpg
@@ -48,6 +50,28 @@ page_builder:
               -
                 type: link
                 attrs:
+                  href: 'statamic://entry::61bbc0a3-5ac0-4a3a-8aac-f95834419f12'
+                  rel: null
+                  target: null
+                  title: null
+            text: '#MOMENT!'
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: ' (Klavier)'
+          -
+            type: hardBreak
+            marks:
+              -
+                type: italic
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
                   href: 'statamic://entry::c53a40b8-e334-4e17-bc9c-2c8b7c687da5'
                   rel: null
                   target: null
@@ -62,21 +86,96 @@ page_builder:
               -
                 type: italic
             text: '(Live Komposition & Sounddesign)'
+          -
+            type: hardBreak
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::e2920504-4fdf-4a1e-9838-6f9d211aa752'
+                  rel: null
+                  target: null
+                  title: null
+            text: ZAHÅK
+          -
+            type: text
+            text: ' '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: '(Elektronik & Komposition)'
+          -
+            type: hardBreak
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::713d8754-1008-4cb3-ae31-4469a5028ec6'
+                  rel: null
+                  target: null
+                  title: null
+            text: 'FLIEG, PRINZ PROPELL, FLIEG!'
+          -
+            type: text
+            text: ' '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: '(Komposition & Arrangement)'
+          -
+            type: hardBreak
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::9875a2ed-fc1f-48b4-b15f-8bc8317b9cf4'
+                  rel: null
+                  target: null
+                  title: null
+            text: 'FINALE FURIOSO'
+          -
+            type: text
+            text: ' '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: (Komposition)
+          -
+            type: hardBreak
+          -
+            type: text
+            text: 'SOLLEN SIE DOCH CHAOS FRESSEN '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: (Komposition)
       -
         type: set
         attrs:
+          id: 9dVYbvVu
           values:
             type: buttons
             buttons:
               -
+                id: 2ggtrvQQ
                 label: 'Website Shadi Kassaee'
                 target_blank: true
                 link_type: url
-                entry: null
                 url: 'https://shadi-kassaee.jimdofree.com/'
-                email: null
-                tel: null
-                asset: null
                 attr_title: 'Website Shadi Kassaee'
                 attr_aria: 'Website Shadi Kassaee'
       -
@@ -84,5 +183,5 @@ page_builder:
     type: article
     enabled: true
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1664184387
+updated_at: 1750262376
 ---

@@ -2,42 +2,38 @@ title: Monsun_team
 data:
   mitglieder:
     -
+      id: lgt27ee4
       name: 'Francoise Hüsges'
-      role_list:
-        - Intendanz
-        - Geschäftsführung
-      e-mail-adresse:
-        -
-          e-mail: f.huesges@monsun.theater
-          type: neue_e-mail-adresse
-          enabled: true
-          extra_info_email: false
-      extra_info_toggle: false
-      type: neues_mitgleid
-      enabled: true
       rolle: 'Geschäftsführung & Theaterleitung'
       telefonnummer:
         -
+          id: lgt27n4j
           nummer: '+49403903148'
           extra_info_telefon: false
           type: telefonnummer
-          enabled: false
+          enabled: true
+      extra_info_toggle: false
+      mailadresse:
+        -
+          id: lgt284z9
+          e-mail: f.huesges@monsun.theater
+          type: neues_set
+          enabled: true
+      type: neues_mitgleid
+      enabled: true
     -
+      id: lgt3h4zt
       name: 'Amelie Möller'
-      rolle: 'Presse & Kommunikation'
-      e-mail-adresse:
+      rolle: 'PRESSE & KOMMUNIKATION'
+      mailadresse:
         -
-          e-mail: info@monsun.theater
-          extra_info_email: false
-          type: neue_e-mail-adresse
-          enabled: true
-        -
-          e-mail: presse@monsun.theater
-          extra_info_email: false
-          type: neue_e-mail-adresse
+          id: lgt3h9p4
+          e-mail: a.moeller@monsun.theater
+          type: neues_set
           enabled: true
       telefonnummer:
         -
+          id: lgt3hjwf
           nummer: '+49403903148'
           extra_info_telefon: false
           type: telefonnummer
@@ -46,21 +42,18 @@ data:
       type: neues_mitgleid
       enabled: true
     -
-      name: 'Meike Krämer'
+      id: lgt39xiw
+      name: 'Lara Hüsges'
       rolle: 'Presse & Kommunikation'
-      e-mail-adresse:
+      mailadresse:
         -
-          e-mail: info@monsun.theater
-          extra_info_email: false
-          type: neue_e-mail-adresse
-          enabled: true
-        -
-          e-mail: presse@monsun.theater
-          extra_info_email: false
-          type: neue_e-mail-adresse
+          id: lgt3alu3
+          e-mail: l.huesges@monsun.theater
+          type: neues_set
           enabled: true
       telefonnummer:
         -
+          id: lgt3aydq
           nummer: '+49403903148'
           extra_info_telefon: false
           type: telefonnummer
@@ -69,123 +62,84 @@ data:
       type: neues_mitgleid
       enabled: true
     -
+      id: lgt3fny0
       name: 'Kianosh Kinz'
-      role_list:
-        - Technik
-      e-mail-adresse:
+      rolle: 'Technische Leitung'
+      mailadresse:
         -
+          id: lgt3fz63
           e-mail: technik@monsun.theater
-          type: neue_e-mail-adresse
-          enabled: true
-          extra_info_email: false
-      extra_info_toggle: false
-      type: neues_mitgleid
-      enabled: true
-      rolle: Technik
-      telefonnummer:
-        -
-          nummer: '+49403903148'
-          extra_info_telefon: false
-          type: telefonnummer
-          enabled: false
-    -
-      name: 'Tim Passgang'
-      rolle: Technik
-      e-mail-adresse:
-        -
-          e-mail: technik@monsun.theater
-          extra_info_email: false
-          type: neue_e-mail-adresse
+          type: neues_set
           enabled: true
       telefonnummer:
         -
+          id: lgt3g7jf
           nummer: '+49403903148'
           extra_info_telefon: false
           type: telefonnummer
-          enabled: false
+          enabled: true
       extra_info_toggle: false
       type: neues_mitgleid
       enabled: true
     -
+      id: lgt5ry8c
       name: 'Katharina Theßeling'
       rolle: Technik
-      e-mail-adresse:
+      mailadresse:
         -
+          id: lgt5satp
           e-mail: technik@monsun.theater
-          extra_info_email: false
-          type: neue_e-mail-adresse
+          type: neues_set
           enabled: true
       telefonnummer:
         -
+          id: lgt5sgnm
           nummer: '+49403903148'
           extra_info_telefon: false
           type: telefonnummer
-          enabled: false
+          enabled: true
       extra_info_toggle: false
       type: neues_mitgleid
       enabled: true
     -
-      role_list:
-        - Presse
-        - Öffentlichkeitsarbeit
-        - Kommunikation
-      e-mail-adresse:
+      id: m685r1hx
+      name: 'Martin Hüsges'
+      rolle: 'Video & Web'
+      mailadresse:
         -
+          id: m685rg6z
           e-mail: info@monsun.theater
-          type: neue_e-mail-adresse
+          type: neues_set
           enabled: true
-          extra_info_email: false
-      extra_info_toggle: false
-      type: neues_mitgleid
-      enabled: true
-      name: 'Clara Weise'
-      rolle: FSJ-Kultur
       telefonnummer:
         -
+          id: m685roqy
           nummer: '+49403903148'
           extra_info_telefon: false
           type: telefonnummer
-          enabled: false
-    -
-      name: 'Emmi Spieler'
-      rolle: FSJ-Kultur
-      e-mail-adresse:
-        -
-          e-mail: info@monsun.theater
-          extra_info_email: false
-          type: neue_e-mail-adresse
           enabled: true
       extra_info_toggle: false
       type: neues_mitgleid
       enabled: true
-      telefonnummer:
-        -
-          nummer: '+49403903148'
-          extra_info_telefon: false
-          type: telefonnummer
-          enabled: false
     -
+      id: lgt5vilv
       name: Reservix
-      role_list:
-        - Ticketdienstleister
-      e-mail-adresse:
+      rolle: Ticketdienstleister
+      mailadresse:
         -
+          id: lgt5w8im
           e-mail: tickets@reservix.de
-          extra_info_email: true
-          type: neue_e-mail-adresse
+          type: neues_set
           enabled: true
       telefonnummer:
         -
+          id: lgt5wlx7
           nummer: '01806 700 733'
           extra_info_telefon: true
           info: '(0,20 € pauschal aus dem deutschen Festnetz; aus dem Mobilfunknetz 0,60 €)'
           type: telefonnummer
           enabled: true
       extra_info_toggle: true
-      extra_info:
-        Website: www.adticket.de
-      type: neues_mitgleid
-      enabled: true
       zusatsinfo:
         -
           type: paragraph
@@ -197,8 +151,9 @@ data:
                   type: link
                   attrs:
                     href: 'https://www.reservix.de/'
-                    target: null
                     rel: null
+                    target: null
+                    title: null
                 -
                   type: bold
               text: www.reservix.de
@@ -226,17 +181,17 @@ data:
             -
               type: text
               text: Deutschland
-      rolle: Ticketdienstleister
+      type: neues_mitgleid
+      enabled: true
     -
+      id: lgt8cb1s
       name: monsun.theater
-      role_list:
-        - Bildnachweis
-        - Illustration
+      rolle: 'Bildnachweis, Illustration'
       extra_info_toggle: false
       type: neues_mitgleid
       enabled: true
-      rolle: 'Bildnachweis, Illustration'
     -
+      id: lgt8co12
       name: 'Hamburger Sparkasse'
       rolle: Bankverbindung
       extra_info_toggle: true
@@ -256,107 +211,8 @@ data:
       type: neues_mitgleid
       enabled: true
     -
+      id: lgt8dagi
       rolle: '© Copyright monsun.theater Hamburg 2021'
       extra_info_toggle: true
-      zusatsinfo:
-        -
-          type: paragraph
-          content:
-            -
-              type: text
-              text: 'Sitz: Hamburg'
-            -
-              type: hard_break
-            -
-              type: text
-              text: 'Amtsgericht Hamburg Altona'
-            -
-              type: hard_break
-            -
-              type: text
-              text: 'Steuernummer 41/101/01029'
-            -
-              type: hard_break
-            -
-              type: hard_break
-            -
-              type: text
-              text: 'Alle Texte und Bilder sind urheberrechtlich geschützt und dürfen ohne ausdrückliche Genehmigung nicht reproduziert, wiederverwendet oder für gewerbliche Zwecke benutzt werden.'
-        -
-          type: paragraph
-        -
-          type: heading
-          attrs:
-            level: 3
-          content:
-            -
-              type: text
-              text: HAFTUNGSAUSSCHLUSS
-        -
-          type: paragraph
-          content:
-            -
-              type: text
-              text: '1. Inhalt des Onlineangebotes'
-        -
-          type: paragraph
-          content:
-            -
-              type: text
-              text: 'Der Autor übernimmt keinerlei Gewähr für die Aktualität, Korrektheit, Vollständigkeit oder Qualität der bereitgestellten Informationen. Haftungsansprüche gegen den Autor, welche sich auf Schäden materieller oder ideeller Art beziehen, die durch die Nutzung oder Nichtnutzung der dargebotenen Informationen bzw. durch die Nutzung fehlerhafter und unvollständiger Informationen verursacht wurden sind grundsätzlich ausgeschlossen, sofern seitens des Autors kein nachweislich vorsätzliches oder grob fahrlässiges Verschulden vorliegt.'
-        -
-          type: paragraph
-          content:
-            -
-              type: text
-              text: 'Alle Angebote sind freibleibend und unverbindlich. Der Autor behält es sich ausdrücklich vor, Teile der Seiten oder das gesamte Angebot ohne gesonderte Ankündigung zu verändern, zu ergänzen, zu löschen oder die Veröffentlichung zeitweise oder endgültig einzustellen.'
-        -
-          type: paragraph
-          content:
-            -
-              type: text
-              text: '2. Verweise und Links'
-        -
-          type: paragraph
-          content:
-            -
-              type: text
-              text: 'Bei direkten oder indirekten Verweisen auf fremde Internetseiten ("Links"), die außerhalb des Verantwortungsbereiches des Autors liegen, würde eine Haftungsverpflichtung ausschließlich in dem Fall in Kraft treten, in dem der Autor von den Inhalten Kenntnis hat und es ihm technisch möglich und zumutbar wäre, die Nutzung im Falle rechtswidriger Inhalte zu verhindern. Der Autor erklärt hiermit ausdrücklich, dass zum Zeitpunkt der Linksetzung die entsprechenden verlinkten Seiten frei von illegalen Inhalten waren. Auf die aktuelle und zukünftige Gestaltung, die Inhalte oder die Urheberschaft der gelinkten/verknüpften Seiten hat der Autor keinerlei Einfluss. Deshalb distanziert er sich hiermit ausdrücklich von allen Inhalten aller gelinkten/verknüpften Seiten, die nach der Linksetzung verändert wurden. Diese Feststellung gilt für alle innerhalb des eigenen Internetangebotes gesetzten Links und Verweise. Für illegale, fehlerhafte oder unvollständige Inhalte und insbesondere für Schäden, die aus der Nutzung oder Nichtnutzung solcherart dargebotener Informationen entstehen, haftet allein der Anbieter der Seite, auf welche verwiesen wurde, nicht derjenige, der über Links auf die jeweilige Veröffentlichung lediglich verweist.'
-        -
-          type: paragraph
-          content:
-            -
-              type: text
-              text: '3. Urheber- und Kennzeichenrecht'
-        -
-          type: paragraph
-          content:
-            -
-              type: text
-              text: 'Der Autor ist bestrebt, in allen Publikationen die Urheberrechte der verwendeten Grafiken, Fotografien und Texte zu beachten, von ihm selbst erstellte Grafiken, Fotografien und Texte zu nutzen oder auf lizenzfreie Grafiken, Fotografien und Texte zurückzugreifen. Alle innerhalb des Internetangebotes genannten und ggf. durch Dritte geschützten Marken- und Warenzeichen unterliegen uneingeschränkt den Bestimmungen des jeweils gültigen Kennzeichenrechts und den Besitzrechten der jeweiligen eingetragenen Eigentümer. Allein aufgrund der bloßen Nennung ist nicht der Schluß zu ziehen, dass Markenzeichen nicht durch Rechte Dritter geschützt sind! Das Copyright für veröffentlichte, vom Autor selbst erstellte Objekte bleibt allein beim Autor der Seiten. Eine Vervielfältigung oder Verwendung solcher Grafiken/Fotografien und Texte in anderen elektronischen oder gedruckten Publikationen ist ohne ausdrückliche Zustimmung des Autors nicht gestattet.'
-        -
-          type: paragraph
-          content:
-            -
-              type: text
-              text: '4. Rechtswirksamkeit dieses Haftungsausschlusses'
-        -
-          type: paragraph
-          content:
-            -
-              type: text
-              text: 'Dieser Haftungsausschluss ist als Teil des Internetangebotes zu betrachten, von dem aus auf diese Seite verwiesen wurde. Sofern Teile oder einzelne Formulierungen dieses Textes der geltenden Rechtslage nicht, nicht mehr oder nicht vollständig entsprechen sollten, bleiben die übrigen Teile des Dokumentes in ihrem Inhalt und ihrer Gültigkeit davon unberührt.'
-        -
-          type: paragraph
-          content:
-            -
-              type: text
-              text: 'Haftungshinweis: Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.'
-        -
-          type: paragraph
-          content:
-            -
-              type: text
-              text: 'Sollten wir versehentlich gegen irgendwelche Copyrights verstoßen haben, benachrichtigen Sie uns bitte umgehend per E-Mail.'
       type: neues_mitgleid
       enabled: true

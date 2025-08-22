@@ -7,11 +7,6 @@ preferences:
     kuenstler_innen:
       per_page: 25
       after_save: continue_editing
-    veranstaltungen:
-      columns:
-        - date
-        - title
-        - kategorien
     rollen:
       per_page: 25
     produktionen:
@@ -23,15 +18,17 @@ preferences:
         - og_image
     pages:
       after_save: continue_editing
+    veranstaltungen:
+      columns:
+        - title
+        - date
+        - status
   taxonomies:
     kategorien:
       columns:
         - title
         - slug
         - kategorie_farbe
-  assets:
-    assets:
-      mode: table
   forms:
     newsletter:
       columns:
@@ -42,7 +39,11 @@ preferences:
       columns:
         - datestamp
         - email
+      per_page: 100
   favorites:
     -
       name: 'Startseite ‹ Seiten ‹ Collections'
       url: collections/pages/entries/home/home
+  assets:
+    assets:
+      mode: grid

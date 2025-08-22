@@ -6,10 +6,12 @@ hat_eigene_website_has_own_website: false
 biographie_eintragen_create_artist_s_biography: true
 page_builder:
   -
+    id: qhSrFgrf
     bard:
       -
         type: set
         attrs:
+          id: pfndjoyp
           values:
             type: figure
             image: kuenstler-innen/roland_walter.jpg
@@ -51,7 +53,7 @@ page_builder:
                 type: italic
             text: '(Tanz & Performance)'
           -
-            type: hard_break
+            type: hardBreak
             marks:
               -
                 type: italic
@@ -65,7 +67,7 @@ page_builder:
                 type: italic
             text: ' (Performance)'
           -
-            type: hard_break
+            type: hardBreak
             marks:
               -
                 type: italic
@@ -79,7 +81,7 @@ page_builder:
                 type: italic
             text: ' (Performance)'
           -
-            type: hard_break
+            type: hardBreak
             marks:
               -
                 type: italic
@@ -93,7 +95,7 @@ page_builder:
                 type: italic
             text: ' (Performance)'
           -
-            type: hard_break
+            type: hardBreak
             marks:
               -
                 type: italic
@@ -115,7 +117,7 @@ page_builder:
                 type: italic
             text: ' (Tanz & Performance)'
           -
-            type: hard_break
+            type: hardBreak
             marks:
               -
                 type: italic
@@ -137,7 +139,7 @@ page_builder:
                 type: italic
             text: ' (Performance)'
           -
-            type: hard_break
+            type: hardBreak
             marks:
               -
                 type: italic
@@ -159,7 +161,7 @@ page_builder:
                 type: italic
             text: ' (Performance)'
           -
-            type: hard_break
+            type: hardBreak
             marks:
               -
                 type: italic
@@ -180,25 +182,60 @@ page_builder:
               -
                 type: italic
             text: ' (Performance)'
+          -
+            type: hardBreak
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::88318169-cad6-4a1a-a904-dfc077ba4517'
+                  rel: null
+                  target: null
+                  title: null
+            text: 'ROLAND MEETS BEETHOVEN'
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: ' (Performance)'
+          -
+            type: hardBreak
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::d4a5a747-1858-45c7-9c0f-6e25969dbdcf'
+                  rel: null
+                  target: null
+                  title: null
+            text: 'THEATERNACHT HAMBURG 2022'
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: ' (Performance)'
       -
         type: set
         attrs:
+          id: VSiQhD2S
           values:
             type: buttons
             buttons:
               -
+                id: rKk182Rs
                 label: 'Website Roland Walter'
                 target_blank: true
                 link_type: url
-                entry: null
                 url: 'https://roland-walter.de'
-                email: null
-                tel: null
-                asset: null
                 attr_title: 'Website Roland Walter'
-                attr_aria: null
     type: article
     enabled: true
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1659534286
+updated_at: 1693556520
 ---

@@ -95,13 +95,16 @@ page_builder:
             text: (Regie)
           -
             type: hard_break
+            marks:
+              -
+                type: italic
           -
             type: text
             marks:
               -
                 type: link
                 attrs:
-                  href: 'https://monsun.theater/veranstaltungen/bruchlinien'
+                  href: 'statamic://entry::d9305f9c-af1b-44c6-9a1b-f3a596f61b3a'
                   rel: null
                   target: null
                   title: null
@@ -114,7 +117,32 @@ page_builder:
             marks:
               -
                 type: italic
-            text: (Regie)
+            text: '(Konzept & Regie)'
+          -
+            type: hard_break
+            marks:
+              -
+                type: italic
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::cdf42f89-6704-4ec1-8f26-fcfae3ded255'
+                  rel: null
+                  target: null
+                  title: null
+            text: 'BRUCHLINIEN – ORT DES GESCHEHENS: EINE WOHNUNG'
+          -
+            type: text
+            text: ' '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: '(Konzept & Regie)'
           -
             type: hard_break
           -
@@ -162,5 +190,5 @@ page_builder:
     type: article
     enabled: true
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1647785178
+updated_at: 1675690589
 ---

@@ -3,7 +3,7 @@ id: home
 blueprint: homepage
 title: Startseite
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1672155404
+updated_at: 1752270193
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -12,36 +12,36 @@ sitemap_priority: 0.5
 template: home
 hero_featured_sect:
   -
-    title: 'Das Bellen<br>der Hunde'
+    id: lyolnf6m
     titelzusatz_zeigen: true
-    subtitle: 'von Michael Alexander Müller'
     einfarbiger_hintergrund: false
-    featured_image: produktionen/das_bellen_der_hunde/das_bellen_der_hunde_35_c_g2_baraniak.jpg
+    darken_overlay: true
+    type: featured
+    enabled: false
+    featured_image: produktionen/2025/schuettiman/main_cover_v2_schuettiman.jpg
+    title: 'AUSSICHT Festival'
+    subtitle: 'Episode I & II'
+    title_desc: 'Ein Schluck kommt selten allein – Das ultimative Double Feature'
     buttons:
       -
+        id: mcf4qfx5
         label: 'Mehr lesen'
         target_blank: false
         link_type: entry
-        entry: c53a40b8-e334-4e17-bc9c-2c8b7c687da5
-        url: null
-        email: null
-        tel: null
-        asset: null
+        entry: 2bc28ab6-f56e-4ba1-8b60-79ab12afa1bc
         attr_title: 'Mehr lesen'
-        attr_aria: 'Mehr über „Das Bellen der Hunde“ lesen'
-    type: featured
-    enabled: true
-    overlay_color: neutral-300
-anzahl_vorstellungen_in_demnaechst: 7
+        attr_aria: 'Mehr über Schüttiman lesen'
+anzahl_vorstellungen_in_demnaechst: 5
 anzahl_eintraege_in_aktuelles: 2
 anzahl_stuecke_in_spielzeit_component: 2
 seo_title: Startseite
-seo_description: 'monsun.theater ist das älteste Off-Theater in Hamburg und besteht seit 1980. Es befindet sich im Stadtteil Ottensen.'
+seo_description: 'monsun.theater ist das älteste Off-Theater in Hamburg, besteht seit 1980 und befindet sich im Stadtteil Altona.'
 og_title: monsun.theater
-og_description: 'Das Monsun-Theater (Eigenschreibweise: monsun.theater) ist das älteste Off-Theater in Hamburg und besteht seit 1980. Es befindet sich im Stadtteil Ottensen.'
-spielzeit: 'Spielzeit 2022-2023'
+og_description: 'Das Monsun-Theater (Eigenschreibweise: monsun.theater) ist das älteste Off-Theater in Hamburg und besteht seit 1980. Es befindet sich im Stadtteil Altona.'
+spielzeit: 'Spielzeit 2024-2025'
 page_builder:
   -
+    id: bNPrLafc
     title: Newsletter
     text: 'Bleiben Sie im Kontakt mit dem monsun.theater! Einmal im Monat aktuelle Informationen zu unseren Veranstaltungen: Premieren, Festivals, Extra-Events und ein Blick hinter die Kulissen.'
     form: contact
@@ -61,19 +61,20 @@ page_builder:
                 type: link
                 attrs:
                   href: /datenschutz
-                  target: null
                   rel: null
+                  target: null
+                  title: null
             text: hier
           -
             type: text
             text: .
 demnachst_verstecken: false
-aktuelles_eintraege:
-  - 28d83c7c-2966-4907-97b5-73b89ad84d3f
-  - 4f100bf4-619c-4ee9-858c-fd72e81e0054
 spielzeit_eintraege:
-  - c53a40b8-e334-4e17-bc9c-2c8b7c687da5
-  - e4212489-2476-45d4-8d56-6d5a0921c6e0
-  - 7d64f06d-4441-4755-a61f-a7ea44487e45
-  - 82ca7f0f-d5d4-4e21-9d07-b75f6e1b930b
+  - 2bc28ab6-f56e-4ba1-8b60-79ab12afa1bc
+  - d47b1cc8-67aa-445a-9a22-9e2af0d30c22
+  - e3b1dd51-d571-486a-b4aa-950fc65be21e
+  - f244e52d-dd45-44b5-9041-1bb94fcf7704
+  - 713d8754-1008-4cb3-ae31-4469a5028ec6
+aktuelles_eintraege:
+  - 749e8e67-84d1-4c98-a0c2-044b5457074f
 ---

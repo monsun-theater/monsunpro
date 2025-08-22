@@ -1,4 +1,6 @@
 ---
+id: c87dc0bd-8f2e-4f9f-9929-819a043d1263
+blueprint: page
 title: Datenschutz
 monsun_alert: false
 seo_noindex: false
@@ -6,12 +8,12 @@ seo_nofollow: false
 seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
-updated_by: 34d4dc92-ec1a-4900-9a81-ed8dd8606f23
-updated_at: 1616153248
+updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
+updated_at: 1741180406
 cinema_monsun: false
-do_not_track_toggle: false
 page_builder:
   -
+    id: flycHjwV
     bard:
       -
         type: heading
@@ -42,32 +44,27 @@ page_builder:
             type: text
             text: monsun.theater
           -
-            type: hard_break
+            type: hardBreak
           -
             type: text
             text: 'Geschäftsführerin: Francoise Hüsges'
           -
-            type: hard_break
+            type: hardBreak
           -
             type: text
-            text: 'Friedensallee 20'
+            text: 'Billrothstraße 79'
           -
-            type: hard_break
+            type: hardBreak
           -
             type: text
-            text: '22765 Hamburg'
+            text: '22767 Hamburg'
           -
-            type: hard_break
+            type: hardBreak
           -
             type: text
             text: 'Tel: +49 (0)40-390 31 48'
           -
-            type: hard_break
-          -
-            type: text
-            text: 'Fax: +49 (0)40-390 64 41'
-          -
-            type: hard_break
+            type: hardBreak
           -
             type: text
             text: 'Email: info(at)monsun.theater'
@@ -300,47 +297,47 @@ page_builder:
             type: text
             text: '- IP-Adresse'
           -
-            type: hard_break
+            type: hardBreak
           -
             type: text
             text: '- Datum und Uhrzeit der Anfrage'
           -
-            type: hard_break
+            type: hardBreak
           -
             type: text
             text: '- Zeitzonendifferenz zur Greenwich Mean Time (GMT)'
           -
-            type: hard_break
+            type: hardBreak
           -
             type: text
             text: '- Inhalt der Anforderung (konkrete Seite)'
           -
-            type: hard_break
+            type: hardBreak
           -
             type: text
             text: '- Zugriffsstatus/HTTP-Statuscode'
           -
-            type: hard_break
+            type: hardBreak
           -
             type: text
             text: '- jeweils übertragene Datenmenge'
           -
-            type: hard_break
+            type: hardBreak
           -
             type: text
             text: '- Website, von der die Anforderung kommt'
           -
-            type: hard_break
+            type: hardBreak
           -
             type: text
             text: '- Browser'
           -
-            type: hard_break
+            type: hardBreak
           -
             type: text
             text: '- Betriebssystem und dessen Oberfläche'
           -
-            type: hard_break
+            type: hardBreak
           -
             type: text
             text: '- Sprache und Version der Browsersoftware.'
@@ -493,8 +490,9 @@ page_builder:
                 type: link
                 attrs:
                   href: 'https://www.reservix.net/files/data/docs/Datenschutzerklaerung_Reservix.pdf'
-                  target: null
                   rel: null
+                  target: null
+                  title: null
             text: Datenschutzerklaerung_Reservix.pdf
       -
         type: paragraph
@@ -521,8 +519,9 @@ page_builder:
                 type: link
                 attrs:
                   href: 'https://www.reservix.net/files/data/docs/Datenschutzerklaerung_Reservix.pdf'
-                  target: null
                   rel: null
+                  target: null
+                  title: null
             text: Datenschutzerklaerung_Reservix.pdf
       -
         type: heading
@@ -934,5 +933,5 @@ page_builder:
             text: 'Sie haben unbeschadet eines verfügbaren verwaltungsrechtlichen oder außergerichtlichen Rechtsbehelfs einschließlich des Rechts auf Beschwerde bei einer Aufsichtsbehörde gemäß Artikel 77 DSGVO das Recht auf einen wirksamen gerichtlichen Rechtsbehelf, wenn sie der Ansicht sind, dass die ihr aufgrund dieser Verordnung zustehenden Rechte infolge einer nicht im Einklang mit dieser Verordnung stehenden Verarbeitung ihrer personenbezogenen Daten verletzt wurden.'
     type: article
     enabled: true
-id: c87dc0bd-8f2e-4f9f-9929-819a043d1263
+parent: home
 ---

@@ -20,26 +20,20 @@
                 {{ untertitel }}
             </div></a
         >
-
+        <div></div>
         {{ if video_link }} {{# A sizeable video rendered in a responsive
         container with an optional caption. #}}
         <div class="size-lg pb-3">
-            <div class="aspect-w-16 aspect-h-9">
-                <iframe
-                    class="absolute top-0 left-0 w-full h-full"
-                    width="100%"
-                    height="auto"
-                    src="{{ akt_video_url | embed_url }}{{ if akt_do_not_track }}?dnt=1{{ /if }}"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                ></iframe>
+            <div class="relative aspect-video">
+                <lite-vimeo
+                    videoid="{{ akt_video_url | explode('/') | last | explode('?') | first }}"
+                ></lite-vimeo>
             </div>
         </div>
         {{ else }}
         <a href="{{ url }}">
             <figure class="pb-3">
-                {{ partial:components/picture class="w-full"}}
+                {{ partial:components/picture class="w-full" lazy="true" }}
             </figure></a
         >
         {{ /if }}

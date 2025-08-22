@@ -35,11 +35,11 @@ return [
         |--------------------------------------------------------------------------
         |
         | The driver that will be used under the hood for image manipulation.
-        | Supported: "gd" or "imagick" (if installed on your server)
+        | Supported: "gd" or "imagick" (if installed on your server).
         |
         */
 
-        'driver' => env('IMAGE_MANIUPULATION_DRIVER'),
+        'driver' => env('IMAGE_MANIPULATION_DRIVER'),
 
         /*
         |--------------------------------------------------------------------------

@@ -1,60 +1,92 @@
-{{ if cinema_monsun}}
-{{ partial:components/cinema_monsun}} {{ /if }}
-{{ partial:components/monsun_featured}}
+{{ if cinema_monsun}} {{ partial:components/cinema_monsun}} {{ /if }} {{
+partial:components/monsun_featured}}
 <div class="outer-grid fluid-container">
-    <div class="text-3xl lg:text-4xl text-black dark:text-white">{{ title }}</div>
-    {{ page_builder scope="block" }}
-        {{ partial src="page_builder/{type}" }}
-        {{ /page_builder }}
-    {{ collection:veranstaltungen as="posts" sort="title:asc" limit="5" paginate="true"}} 
-    {{ posts }}<div class="md:grid grid-cols-12 gap-4 items-baseline pb-6">
-    {{ if no_results }}
-    <div class="text-2xl md:col-span-12 text-black dark:text-white">Zur Zeit keine Vorstellungen.</div>
-    <div class="pt-9 md:col-span-12"><button aria-label="Zur Startseite"
-            class="max-w-sm mx-auto sm:max-w-none flex justify-center text-black dark:text-white">
-            <a href="/"
-                class="flex items-center justify-center px-4 py-3 border-2  text-md font-bold tracking-wider uppercase shadow-sm
-                      hover:bg-monsun dark:hover:bg-monsun sm:px-8 focus-visible:ring-2 focus-visible:border-monsun">Zur
-                Startseite</a>
-        </button></div>
-    {{ else }}
-    <div class="col-span-4">
-
-        <button aria-label="Vorstellungen in der {{ kategorien }} {{ title }} {{
-            /kategorien }} Kategorie Zeigen"
-            class="p-2 mb-1 text-xs font-bold tracking-widest text-white uppercase sm:text-sm" style="background-color: {{ kategorien }} {{ kategorie_farbe }}{{
-            /kategorien }};">{{ kategorien }} <a href="{{ url }}">{{ title }}
-                {{ /kategorien }}{{ if from_to_toggle }} <span>{{from_to}}</span> {{ /if }}</a></button>
-        {{ veranstaltungsoerter }}
-
-        <div class="text-black sm:text-lg dark:text-white">{{ title }} </div>{{ /veranstaltungsoerter }}
+    <div class="text-3xl lg:text-4xl text-black dark:text-white">
+        {{ title }}
     </div>
-    <div class="col-span-8">
-        <a href=" {{ url }}">
-        <div class="text-2xl font-bold sm:text-3xl leading-tight text-black dark:text-white">
-                {{ title }}</div>
-            <div class="sm:text-lg pb-2 dark:text-white font-medium">{{ additional_title }}</div>
-            <div class="sm:text-lg pb-2 dark:text-white">{{ subtitle }}</div>
-            <figure class="pb-3">{{ partial:components/picture class="w-full"}}</figure>       
-        </a>
-        {{ /if }} 
-       </div>
-</div> {{/posts}}
-        <div class="max-w-full mx-auto justify-center flex">        
-{{ paginate }}
-<button class="flex-row items-center justify-center px-2 py-3 dark:text-white text-xl sm:text-2xl font-bold tracking-widest uppercase
-  "><a class="hover:text-monsun" href="{{ prev_page }}"><span
-    class="font-bold text-monsun">&nbsp;←</span> Zurück</a></button>
-        <button class="flex-row items-center justify-center px-2 hover:text-monsun
-        py-3 dark:text-white text-xl sm:text-2xl font-bold tracking-widest uppercase 
-           sm:px-8"><a class="hover:text-monsun" href="{{ next_page }}">Weiter<span
-            class="font-bold text-monsun">&nbsp;→</span></a></button>
-          
+    {{ page_builder scope="block" }} {{ partial src="page_builder/{type}" }} {{
+    /page_builder }} {{ collection:veranstaltungen as="posts" sort="title:asc"
+    limit="5" paginate="true"}} {{ posts }}
+    <div class="md:grid grid-cols-12 gap-4 items-baseline pb-6">
+        {{ if no_results }}
+        <div class="text-2xl md:col-span-12 text-black dark:text-white">
+            Zur Zeit keine Vorstellungen.
         </div>
-        <div class="max-w-md mx-auto dark:text-white sm:text-xl">
-       {{ current_page }}. von {{ total_pages }} Seite(n).
-        {{ total_items }} Produktion(en) insgesamt.</div>
-   {{ /paginate }}
-{{/collection:veranstaltungen }}
-    
+        <div class="pt-9 md:col-span-12">
+            <button
+                aria-label="Zur Startseite"
+                class="max-w-sm mx-auto sm:max-w-none flex justify-center text-black dark:text-white"
+            >
+                <a
+                    href="/"
+                    class="flex items-center justify-center px-4 py-3 border-2 text-md font-bold tracking-wider uppercase shadow-sm hover:bg-monsun dark:hover:bg-monsun sm:px-8 focus-visible:ring-2 focus-visible:border-monsun"
+                    >Zur Startseite</a
+                >
+            </button>
+        </div>
+        {{ else }}
+        <div class="col-span-4">
+            <button
+                aria-label="Vorstellungen in der {{ kategorien }} {{ title }} {{
+            /kategorien }} Kategorie Zeigen"
+                class="p-2 mb-1 text-xs font-bold tracking-widest text-white uppercase sm:text-sm"
+                style="background-color: {{ kategorien }} {{ kategorie_farbe }}{{
+            /kategorien }};"
+            >
+                {{ kategorien }}
+                <a href="{{ url }}"
+                    >{{ title }} {{ /kategorien }}{{ if from_to_toggle }}
+                    <span>{{from_to}}</span> {{ /if }}</a
+                >
+            </button>
+            {{ veranstaltungsoerter }}
+
+            <div class="text-black sm:text-lg dark:text-white">{{ title }}</div>
+            {{ /veranstaltungsoerter }}
+        </div>
+        <div class="col-span-8">
+            <a href=" {{ url }}">
+                <div
+                    class="text-2xl font-bold sm:text-3xl leading-tight text-black dark:text-white"
+                >
+                    {{ title }}
+                </div>
+                <div
+                    class="sm:text-lg pb-2 text-black dark:text-white font-medium"
+                >
+                    {{ additional_title }}
+                </div>
+                <div class="sm:text-lg pb-2 text-black dark:text-white">
+                    {{ subtitle }}
+                </div>
+                <figure class="pb-3">
+                    {{ partial:components/picture class="w-full" lazy="true" }}
+                </figure>
+            </a>
+            {{ /if }}
+        </div>
+    </div>
+    {{/posts}}
+    <div class="max-w-full mx-auto justify-center flex">
+        {{ paginate }}
+        <button
+            class="flex-row items-center justify-center px-2 py-3 text-black dark:text-white text-xl sm:text-2xl font-bold tracking-widest uppercase"
+        >
+            <a class="hover:text-monsun" href="{{ prev_page }}"
+                ><span class="font-bold text-monsun">&nbsp;←</span> Zurück</a
+            >
+        </button>
+        <button
+            class="flex-row items-center justify-center px-2 hover:text-monsun py-3 text-black dark:text-white text-xl sm:text-2xl font-bold tracking-widest uppercase sm:px-8"
+        >
+            <a class="hover:text-monsun" href="{{ next_page }}"
+                >Weiter<span class="font-bold text-monsun">&nbsp;→</span></a
+            >
+        </button>
+    </div>
+    <div class="max-w-md mx-auto dark:text-white sm:text-xl">
+        {{ current_page }}. von {{ total_pages }} Seite(n). {{ total_items }}
+        Produktion(en) insgesamt.
+    </div>
+    {{ /paginate }} {{/collection:veranstaltungen }}
 </div>

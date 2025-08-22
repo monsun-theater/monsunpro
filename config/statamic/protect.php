@@ -43,7 +43,7 @@ return [
 
         'password' => [
             'driver' => 'password',
-            'allowed' =>  [env('PRESSE_PASSWORD')],
+            'allowed' => [env('PRESSE_PASSWORD')],
             'form_url' => '/password',
         ],
 

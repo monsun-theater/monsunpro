@@ -78,6 +78,14 @@ page_builder:
                 type: italic
           -
             type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::5adf536e-5125-460f-9ba2-c28eaeeef93e'
+                  rel: null
+                  target: null
+                  title: null
             text: 'BROKEN HEART'
           -
             type: text
@@ -212,5 +220,5 @@ page_builder:
     type: article
     enabled: true
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1665006532
+updated_at: 1675008435
 ---

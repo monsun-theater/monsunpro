@@ -6,6 +6,7 @@
 /public/assets/produktionen
 /public/assets/monsun-team
 public/assets/spielstaette
+public/assets/site-setup/social-media-icons/
 /public/storage
 /public/vendor/statamic
 /public/img/
@@ -14,7 +15,7 @@ public/assets/spielstaette
 /vendor
 .env
 .env.backup
-.phpunit.result.cache
+/.phpunit.cache
 Homestead.json
 Homestead.yaml
 npm-debug.log
@@ -28,3 +29,12 @@ monsuntheater.code-workspace
 /public/js/site.js.LICENSE.txt
 /public/mix-manifest.json
 
+# IONOS Deploy now homedir files
+.actions_env
+.template-renderer-data
+project-archive.tar.gz
+logs/
+.bash_profile
+.bashrc
+.deploy-now/php
+.ssh/

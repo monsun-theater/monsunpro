@@ -8,27 +8,24 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1650793266
+updated_at: 1687200562
 page_builder:
   -
+    id: BaLxYCSX
     title: 'KARTEN KAUFEN'
     link_blocks:
       -
+        id: XuSipmAJ
         title: 'ONLINE TICKETS'
         text: 'Bestellen Sie hier direkt Karten für Ihren Besuch im monsun.theater.'
         label: Webshop
         target_blank: false
         link_type: url
-        entry: null
         url: 'http://shop.reservix.de/off/login_check.php?id=7c421e5247cdb753ed6fbe41b702d162cac7d0950fb25ed26535ce922a436d32&vID=7337'
-        email: null
-        tel: null
-        asset: null
-        attr_title: null
-        attr_aria: null
     type: link_blocks
     enabled: true
   -
+    id: DafxCbab
     bard:
       -
         type: heading
@@ -61,7 +58,7 @@ page_builder:
             type: text
             text: TICKETPREISE
           -
-            type: hard_break
+            type: hardBreak
           -
             type: text
             text: 'Sitzplatz Theatersaal'
@@ -72,12 +69,12 @@ page_builder:
             type: text
             text: '19,00 € Normalpreis'
           -
-            type: hard_break
+            type: hardBreak
           -
             type: text
             text: '13,00 € Ermäßigt*'
           -
-            type: hard_break
+            type: hardBreak
           -
             type: text
             text: '25,00 € Unterstützer:innen'
@@ -90,7 +87,7 @@ page_builder:
             type: text
             text: 'TICKETPREISE '
           -
-            type: hard_break
+            type: hardBreak
           -
             type: text
             text: monsun.digital
@@ -101,12 +98,12 @@ page_builder:
             type: text
             text: '10,00 € Normalpreis'
           -
-            type: hard_break
+            type: hardBreak
           -
             type: text
             text: '8,00 € Ermäßigt*'
           -
-            type: hard_break
+            type: hardBreak
           -
             type: text
             text: '18,00 € Unterstützer:innen'
@@ -125,7 +122,7 @@ page_builder:
             type: text
             text: 'TICKETPREISE '
           -
-            type: hard_break
+            type: hardBreak
           -
             type: text
             text: monsun.kinder
@@ -136,12 +133,12 @@ page_builder:
             type: text
             text: '12,00 € Normalpreis'
           -
-            type: hard_break
+            type: hardBreak
           -
             type: text
             text: '8,00 € Ermäßigt*'
           -
-            type: hard_break
+            type: hardBreak
           -
             type: text
             text: '18,00 € Unterstützer:innen'
@@ -160,7 +157,7 @@ page_builder:
             type: text
             text: 'TICKETPREISE '
           -
-            type: hard_break
+            type: hardBreak
           -
             type: text
             text: monsun.jugend
@@ -171,12 +168,12 @@ page_builder:
             type: text
             text: '12,00 € Normalpreis'
           -
-            type: hard_break
+            type: hardBreak
           -
             type: text
             text: '8,00 € Ermäßigt*'
           -
-            type: hard_break
+            type: hardBreak
           -
             type: text
             text: '18,00 € Unterstützer:innen'
@@ -243,21 +240,32 @@ page_builder:
             type: text
             text: 'Oder buchen Sie über die Tickethotline von Reservix'
           -
-            type: hard_break
+            type: hardBreak
           -
             type: text
             marks:
               -
                 type: link
                 attrs:
-                  href: 'tel:01806700733'
+                  href: 'tel:0761 88849999'
                   rel: null
                   target: null
                   title: null
-            text: '01806 700733'
+            text: '0'
           -
             type: text
-            text: "\_24 Stunden rund um die Uhr. (0,20 €/Anruf inkl.MwSt aus den Festnetzen und max 0,60 €/Anruf inkl. MwSt aus den Mobilfunknetzen)."
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'tel:076188849999'
+                  rel: null
+                  target: null
+                  title: null
+            text: '761 888499 99'
+          -
+            type: text
+            text: "\_von 6 bis 22 Uhr auch an Wochenenden und Feiertagen."
       -
         type: heading
         attrs:
@@ -295,9 +303,9 @@ page_builder:
             type: text
             text: 'Unsere Stempelkarte!'
           -
-            type: hard_break
+            type: hardBreak
           -
-            type: hard_break
+            type: hardBreak
           -
             type: text
             text: "Besuchen Sie bei uns 6 Vorstellungen im Jahr und lassen Sie sich das von uns auf Ihrer kostenfreien persönlichen Stempelkarte quittieren, dann schenken wir Ihnen als Dankeschön einen Theaterbesuch im monsun.theater!\_"
@@ -330,7 +338,7 @@ page_builder:
             type: text
             text: 'Der monsun theater Gutschein ist das ideale Geschenk für alle Theaterliebhaber. Verschenken Sie soviel Theater, wie sie möchten und bestimmen den Wert Ihres Gutscheins selbst.'
           -
-            type: hard_break
+            type: hardBreak
           -
             type: text
             text: 'Den monsun theater Gutschein können sie bei uns an der Kartenkasse erwerben.'
@@ -349,24 +357,21 @@ page_builder:
     type: article
     enabled: true
   -
+    id: G2xa2jV8
     title: Hygiene
     text: 'Für unsere Vorstellung gilt: Tragen einer FFP2-Maske'
     buttons:
       -
+        id: fFL43L5A
         label: Hygienekonzept
         target_blank: false
         link_type: entry
         entry: bcc3699a-8af0-48b7-82e0-e1ba94e9167f
-        url: null
-        email: null
-        tel: null
-        asset: null
         attr_title: Hygiene
         attr_aria: Hygienekonzept
     type: call_to_action
-    enabled: true
+    enabled: false
 monsun_alert: false
 template: default
 cinema_monsun: false
-do_not_track_toggle: false
 ---

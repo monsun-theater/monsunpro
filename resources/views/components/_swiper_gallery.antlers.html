@@ -1,42 +1,46 @@
-<link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
-    <style>
-.swiper-button-prev {
-    color: #f38a49;
-}
-.swiper-button-next {
-  color: #f38a49;
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
-    </style>
+<style>
+    .swiper-button-prev {
+        color: #f38a49;
+    }
+    .swiper-button-next {
+        color: #f38a49;
+    }
+</style>
 
-    <div class="col-span-12 md:col-span-8 md:col-start-5">
-        <!-- Swiper -->
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper">
+<div class="col-span-12 md:col-span-8 md:col-start-5">
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
             {{image}}
-            <div class="swiper-slide"><img class="" src="{{ glide:url preset='lg' }}" alt="{{ alt }}" /></div>
+            <div class="swiper-slide" lazy="true">
+                <img
+                    src="{{ glide:url preset='lg' }}"
+                    loading="lazy"
+                    alt="{{ alt }}"
+                />
+            </div>
             {{/image}}
-          </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
         </div>
-        <div class="text-neutral-300 dark:text-neutral-600 text-xs text-center">© {{ credits
-        }}</div>
-    
-        <!-- Swiper JS -->
-        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    
-        <!-- Initialize Swiper -->
-        <script>
-          var swiper = new Swiper(".mySwiper", {
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+    <div class="text-neutral-300 dark:text-neutral-600 text-xs text-center">
+        © {{ credits }}
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
             autoHeight: true,
             navigation: {
-              nextEl: ".swiper-button-next",
-              prevEl: ".swiper-button-prev",
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
             },
-          });
-        </script>
-      
-    </div>
+        });
+    </script>
+</div>

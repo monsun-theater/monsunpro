@@ -6,10 +6,12 @@ hat_eigene_website_has_own_website: false
 biographie_eintragen_create_artist_s_biography: true
 page_builder:
   -
+    id: VHvXTu17
     bard:
       -
         type: set
         attrs:
+          id: nHfCQr7r
           values:
             type: figure
             image: kuenstler-innen/michael_alexander_mueller.jpg
@@ -54,7 +56,7 @@ page_builder:
             text: 'FILETSTÜCKE – WEM GEHÖRT DAS LAND'
           -
             type: text
-            text: '. Aktuell steht sein neues Stück '
+            text: '. In der Spielzeit 22|23 steht '
           -
             type: text
             marks:
@@ -68,7 +70,21 @@ page_builder:
             text: 'DAS BELLEN DER HUNDE'
           -
             type: text
-            text: ' auf dem Programm.'
+            text: ' auf dem Programm und ein Jahr später folgt '
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::713d8754-1008-4cb3-ae31-4469a5028ec6'
+                  rel: null
+                  target: null
+                  title: null
+            text: 'FLIEG, PRINZ PROPELL, FLIEG!'
+          -
+            type: text
+            text: .
       -
         type: paragraph
         content:
@@ -93,14 +109,14 @@ page_builder:
                 type: italic
             text: (Leitung)
           -
-            type: hard_break
+            type: hardBreak
           -
             type: text
             marks:
               -
                 type: link
                 attrs:
-                  href: 'https://monsun.theater/veranstaltungen/bruchlinien'
+                  href: 'statamic://entry::d9305f9c-af1b-44c6-9a1b-f3a596f61b3a'
                   rel: null
                   target: null
                   title: null
@@ -115,7 +131,32 @@ page_builder:
                 type: italic
             text: (Text)
           -
-            type: hard_break
+            type: hardBreak
+            marks:
+              -
+                type: italic
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::1b9487d8-edfc-421a-bc2b-29a2745985f5'
+                  rel: null
+                  target: null
+                  title: null
+            text: 'BRUCHLINIEN – ORT DES GESCHEHENS: EINE WOHNUNG'
+          -
+            type: text
+            text: ' '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: (Text)
+          -
+            type: hardBreak
           -
             type: text
             marks:
@@ -137,7 +178,7 @@ page_builder:
                 type: italic
             text: (Text)
           -
-            type: hard_break
+            type: hardBreak
             marks:
               -
                 type: italic
@@ -162,7 +203,7 @@ page_builder:
                 type: italic
             text: (Leitung)
           -
-            type: hard_break
+            type: hardBreak
             marks:
               -
                 type: italic
@@ -187,7 +228,7 @@ page_builder:
                 type: italic
             text: '(Dramaturgie & Regie)'
           -
-            type: hard_break
+            type: hardBreak
             marks:
               -
                 type: italic
@@ -212,7 +253,7 @@ page_builder:
                 type: italic
             text: '(Textbearbeitung & Leitung)'
           -
-            type: hard_break
+            type: hardBreak
             marks:
               -
                 type: italic
@@ -236,8 +277,96 @@ page_builder:
               -
                 type: italic
             text: (Text)
+          -
+            type: hardBreak
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::b035bb4f-3dac-461d-bc91-b71d98e244b2'
+                  rel: null
+                  target: null
+                  title: null
+            text: 'DIESE COLA SCHMECKT NACH ZUKUNFT'
+          -
+            type: text
+            text: ' '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: '(Text & Kostüm & Leitung)'
+          -
+            type: hardBreak
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::713d8754-1008-4cb3-ae31-4469a5028ec6'
+                  rel: null
+                  target: null
+                  title: null
+            text: 'FLIEG, PRINZ PROPELL, FLIEG!'
+          -
+            type: text
+            text: ' '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: (Text)
+          -
+            type: hardBreak
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::e67da234-fe09-4a55-a00b-457a645c7489'
+                  rel: null
+                  target: null
+                  title: null
+            text: 'WAS KANN ICH FÜR SIE TUN?'
+          -
+            type: text
+            text: ' '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: (Leitung)
+          -
+            type: hardBreak
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::022879f2-9d40-451d-84e6-171e620ad15e'
+                  rel: null
+                  target: null
+                  title: null
+            text: 'FÜSSE IM HIMMEL'
+          -
+            type: text
+            text: ' '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: (Text)
     type: article
     enabled: true
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1669810043
+updated_at: 1729032222
 ---

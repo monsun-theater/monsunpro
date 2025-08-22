@@ -10,7 +10,7 @@
             {{ search:results }}
             {{ if no_results }}
             <article class="col-span-12 md:col-span-8 md:col-start-5">
-                {{ partial:typography/paragraph class="dark:text-white" content="{trans:strings.search_no_results}" }}
+                {{ partial:typography/paragraph class="text-black dark:text-white" content="{trans:strings.search_no_results}" }}
                 {{ else }}
                 <article class="dark:bg-black col-span-12 md:col-span-8 md:col-start-5">
                     <a class="flex flex-col pb-2" href="{{ url }}">
@@ -24,7 +24,7 @@
                         dark:hover:text-monsun" :content="title" }}
                         {{ partial:components/figure_onesize :content="image" }}
                         {{ page_builder limit="1" }}
-                        <span class="dark:bg-black dark:text-white hover:text-monsun dark:hover:text-monsun">{{ if bard
+                        <span class="dark:bg-black text-black dark:text-white hover:text-monsun dark:hover:text-monsun">{{ if bard
                             }}
                             {{ bard where="type:text" limit="1" }}
                             {{ text | strip_tags | safe_truncate:300:... }}

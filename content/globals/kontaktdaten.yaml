@@ -1,11 +1,10 @@
 title: Kontaktdaten
 data:
-  strasse: Gaußstraße
-  hausnummer: '149'
-  postleitzahl: '22765'
+  strasse: Billrothstraße
+  hausnummer: '79'
+  postleitzahl: '22767'
   website: 'https://www.monsun.theater'
-  wohnort: Hamburg-Ottensen
-  e-mail-adresse: info@monsun.theater
-  telefonnummer: '040 - 390 3148'
-  fax: '040 - 390 6441'
+  wohnort: Hamburg-Altona
+  mailadresse: info@monsun.theater
+  telefonnummer: '040 - 3903148'
   presse_e-mail: presse@monsun.theater

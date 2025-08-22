@@ -1,35 +1,67 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="{{ site:short_locale }}">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+        />
+        {{ partial:components/dark_mode_toggle }} {{# Replace the following line
+        with the SEO Pro or Aardvark SEO tag if you want to use an addon for
+        SEO. Also remove the seo section in you page blueprint.#}} {{
+        partial:snippets/seo }}
+        <link rel="stylesheet" href="{{ mix src='css/site.css' }}" />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="/assets/site-setup/favicons/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="/assets/site-setup/favicons/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="/assets/site-setup/favicons/favicon-16x16.png"
+        />
+        <link
+            rel="manifest"
+            href="/assets/site-setup/favicons/site.webmanifest"
+        />
+        <link
+            rel="mask-icon"
+            href="/assets/site-setup/favicons/safari-pinned-tab.svg"
+            color="#da532c"
+        />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
+    </head>
+    {{# Dev Bar Breakpoints // Attach to Body #}} {{# {{ environment == 'local'
+    ? 'debug' : '' }} #}}
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    {{ partial:components/dark_mode_toggle }}
-    {{# Replace the following line with the SEO Pro or Aardvark SEO tag if you want to use an addon for SEO. Also remove
-    the seo section in you page blueprint.#}}
-    {{ partial:snippets/seo }}
-    <link rel="stylesheet" href="{{ mix src='css/site.css' }}">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/site-setup/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/site-setup/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/site-setup/favicons/favicon-16x16.png">
-    <link rel="manifest" href="/assets/site-setup/favicons/site.webmanifest">
-    <link rel="mask-icon" href="/assets/site-setup/favicons/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-</head>
-{{# Dev Bar Breakpoints // Attach to Body #}}
-{{# {{ environment == 'local' ? 'debug' : '' }} #}}
-
-<body class="flex flex-col min-h-screen {{ environment == 'local' ? 'debug' : '' }}">
-    {{ yield:google_tag_manager }}
-    {{ if alert_message:monsun_alert_msg }}{{ partial:components/monsun_alert}} {{ /if }}
-    {{ partial:layout/monsun_header }}
-    <div class="bg-white dark:bg-black flex-grow">{{ template_content }}</div>
-    {{ partial:layout/monsun_footer }}
-    <script src="{{ mix src='/js/site.js' }}"></script>
-</body>
+    <body
+        class="flex flex-col min-h-screen {{ environment == 'local' ? 'debug' : '' }}"
+    >
+        {{ yield:google_tag_manager }} {{ if alert_message:monsun_alert_msg }}{{
+        partial:components/monsun_alert}} {{ /if }} {{
+        partial:layout/monsun_header }}
+        <div class="bg-white dark:bg-black flex-grow">
+            {{ template_content }}
+        </div>
+        {{ partial:layout/monsun_footer }}
+        <script
+            defer
+            src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+        ></script>
+        <script src="{{ mix src='/js/site.js' }}" defer></script>
+        <script
+            type="module"
+            src="https://cdn.jsdelivr.net/npm/@slightlyoff/lite-vimeo@0.1.1/lite-vimeo.js"
+        ></script>
+    </body>
 </html>

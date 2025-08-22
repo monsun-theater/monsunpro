@@ -6,10 +6,12 @@ hat_eigene_website_has_own_website: false
 biographie_eintragen_create_artist_s_biography: true
 page_builder:
   -
+    id: WPK980bg
     bard:
       -
         type: set
         attrs:
+          id: Yp4ezI6M
           values:
             type: figure
             image: kuenstler-innen/kathrine_altaparmakov_c_grigorios_yfantis.jpg
@@ -20,7 +22,7 @@ page_builder:
         content:
           -
             type: text
-            text: 'Kathrine Altaparmakov studiert Freie Kunst und Bühnenraum an der Hochschule für Bildende Künste in Hamburg sowie Szenografie an der Danish National School of Performing Arts in Kopenhagen. Nach dem Diplom arbeitet sie am Thalia Theater, am Deutschen Schauspielhaus Hamburg und am Theater Bremen als Bühnen- und Kostümbildassistentin u.a. mit Florian Lösche, Stéphane Laimé, Alex Eales, Duri Bischoff, Ene-Liis Semper und Peter Baur. Währenddessen entwickelt sie eigene Arbeiten und Raumkonzepte. Als freischaffende Bühnen- und Kostümbildnerin ist sie sowohl im Stadt- und Staatstheater als auch in der Freien Szene tätig. Projekte führen sie u.a. an das Junge Schauspielhaus Düsseldorf, monsun.theater Hamburg, Theater Münster, Junges Schauspielhaus Bochum, Theater Konstanz oder Staatstheater Hannover. Beim Theater der Welt 2017 ist sie als künstlerische Mitarbeiterin des Ausstattungsduos ''Georg & Paul'' (Eva-Maria Henschkowski und Lolita Hindenberg) für die Gestaltung des Zentrums „Haven“ im Hamburger Baakenhafen verantwortlich, und für das Hauptsache Frei Festival entwirft sie ein mobiles Festivalzentrum. '
+            text: "Kathrine Altaparmakov studiert Freie Kunst und Bühnenraum an der Hochschule für Bildende Künste in Hamburg sowie Szenografie an der Danish National School of Performing Arts in Kopenhagen. Nach dem Diplom arbeitet sie am Thalia Theater, am Deutschen Schauspielhaus Hamburg und am Theater Bremen als Bühnen- und Kostümbildassistentin u.a. mit Florian Lösche, Stéphane Laimé, Alex Eales, Duri Bischoff, Ene-Liis Semper und Peter Baur. Währenddessen entwickelt sie eigene Arbeiten und Raumkonzepte. Als freischaffende Bühnen- und Kostümbildnerin ist sie sowohl im Stadt- und Staatstheater als auch in der Freien Szene tätig. Projekte führen sie u.a. an das Junge Schauspielhaus Düsseldorf, monsun.theater Hamburg, Theater Münster, Junges Schauspielhaus Bochum, Theater Konstanz oder Staatstheater Hannover. Beim Theater der Welt 2017 ist sie als künstlerische Mitarbeiterin des Ausstattungsduos 'Georg & Paul' (Eva-Maria Henschkowski und Lolita Hindenberg) für die Gestaltung des Zentrums „Haven“ im Hamburger Baakenhafen verantwortlich, und für das Hauptsache Frei Festival entwirft sie ein mobiles Festivalzentrum. "
       -
         type: paragraph
         content:
@@ -30,6 +32,31 @@ page_builder:
       -
         type: paragraph
         content:
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::3f4d0ced-6e9b-4bbc-a73a-250a7e3fddcb'
+                  rel: null
+                  target: null
+                  title: null
+            text: 'WIR SIND IN DIE WELT GEVÖGELT, ABER KÖNNEN NICHT FLIEGEN - Teil II'
+          -
+            type: text
+            text: ' '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: (Bühne)
+          -
+            type: hardBreak
+            marks:
+              -
+                type: italic
           -
             type: text
             marks:
@@ -51,7 +78,7 @@ page_builder:
                 type: italic
             text: (Bühne)
           -
-            type: hard_break
+            type: hardBreak
           -
             type: text
             marks:
@@ -73,7 +100,7 @@ page_builder:
                 type: italic
             text: '(Bühne & Raum & Licht)'
           -
-            type: hard_break
+            type: hardBreak
           -
             type: text
             marks:
@@ -95,7 +122,7 @@ page_builder:
                 type: italic
             text: '(Bühne & Licht)'
           -
-            type: hard_break
+            type: hardBreak
             marks:
               -
                 type: italic
@@ -119,8 +146,80 @@ page_builder:
               -
                 type: italic
             text: (Bühnenraum)
+          -
+            type: hardBreak
+            marks:
+              -
+                type: italic
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::81124f83-4226-456b-b267-41bc526ecfef'
+                  rel: null
+                  target: null
+                  title: null
+            text: 'ANATOMIE DER GUTEN HOFFNUNG – TEIL 2'
+          -
+            type: text
+            text: "\_"
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: (Bühnenraum)
+          -
+            type: hardBreak
+            marks:
+              -
+                type: italic
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::2035a78b-61c6-468d-849c-1c5ba02e092b'
+                  rel: null
+                  target: null
+                  title: null
+            text: 'ANATOMIE DER GUTEN HOFFNUNG – TEIL 3'
+          -
+            type: text
+            text: "\_"
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: (Bühnenraum)
+          -
+            type: hardBreak
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::4a2ebb10-e8a4-4434-bb83-4dc53b387e2a'
+                  rel: null
+                  target: null
+                  title: null
+            text: 'ROST UND STAUB'
+          -
+            type: text
+            text: "\_"
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: (Bühnenraum)
     type: article
     enabled: true
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1671031875
+updated_at: 1694642152
 ---
