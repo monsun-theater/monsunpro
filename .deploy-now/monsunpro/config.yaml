@@ -16,12 +16,7 @@ deploy:
       - find $(pwd) -type f -not -path "$(pwd)/logs/*" -exec chmod 664 {} \;
       - find $(pwd) -type d -not -name "logs" -exec chmod 775 {} \;
       - chmod -R o+w storage bootstrap/cache
-      - php artisan migrate --force
-      - php artisan optimize:clear
-      - php artisan migrate --force -n
-      - php artisan storage:link
-      - php artisan optimize
-      - php artisan up
+
       - source scripts/prepare-app.sh
 
   # configuration part, which is taken at ALL FURTHER deployments of this branch
@@ -42,12 +37,7 @@ deploy:
       - find $(pwd) -type f -not -path "$(pwd)/logs/*" -exec chmod 664 {} \;
       - find $(pwd) -type d -not -name "logs" -exec chmod 775 {} \;
       - chmod -R o+w storage bootstrap/cache
-      - php artisan migrate --force
-      - php artisan optimize:clear
-      - php artisan migrate --force -n
-      - php artisan storage:link
-      - php artisan optimize
-      - php artisan up
+
       - source scripts/prepare-app.sh
 
 # uncomment the following lines to configure cron jobs

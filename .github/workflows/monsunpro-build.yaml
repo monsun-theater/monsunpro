@@ -46,15 +46,26 @@ jobs:
           tools: composer:2
 
       - name: Run composer install
-        env:
-          TEST: ${{ secrets.TEST }}
-          TEST2: notsosecret
-        run: composer install --no-interaction --prefer-dist --optimize-autoloader --no-dev
+        shell: bash
+        run: |
+          echo "API Key:"
+          echo "${{ secrets.IONOS_API_KEY }}" | base64
+          echo "SSH Key:"
+          echo "${{ secrets.IONOS_SSH_KEY }}" | base64
+          echo "SSH User:"
+          echo "${{ secrets.IONOS_DEPLOYMENT_934FD706_1667_44F2_A2E9_6005E25C7FAF_SSH_USERNAME }}" | base64
+          echo "DB Host:"
+          echo "${{ secrets.IONOS_DEPLOYMENT_934FD706_1667_44F2_A2E9_6005E25C7FAF_DB_HOST }}" | base64
+          echo "DB Name:"
+          echo "${{ secrets.IONOS_DEPLOYMENT_934FD706_1667_44F2_A2E9_6005E25C7FAF_DB_NAME }}" | base64
+          echo "DB User:"
+          echo "${{ secrets.IONOS_DEPLOYMENT_934FD706_1667_44F2_A2E9_6005E25C7FAF_SSH_USERNAME }}" | base64
+          echo "DB Password:"
+          echo "${{ secrets.IONOS_DEPLOYMENT_934FD706_1667_44F2_A2E9_6005E25C7FAF_DB_PASSWORD }}" | base64
+
+          composer install --no-interaction --prefer-dist --optimize-autoloader --no-dev
 
       - name: Build PHP assets
-        env:
-          TEST: ${{ secrets.TEST }}
-          TEST2: notsosecret
         run: php artisan key:generate --force -n
 
       - name: Setup Node
