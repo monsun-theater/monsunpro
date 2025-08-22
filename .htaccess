@@ -1,19 +1,14 @@
-# $HOME/htdocs/.htaccess  (ROOT)
+# ROOT .htaccess (next to /public)
 RewriteEngine On
 
-# 1) If request already targets /public, do nothing (avoid loops)
+# If we're already under /public, do nothing (avoid loops)
 RewriteCond %{REQUEST_URI} ^/public/
 RewriteRule ^ - [L]
 
-# 2) If a real file/dir exists at root, serve it
-RewriteCond %{REQUEST_FILENAME} -f [OR]
-RewriteCond %{REQUEST_FILENAME} -d
-RewriteRule ^ - [L]
+# If the target exists inside /public, serve it directly (files or dirs)
+RewriteCond %{DOCUMENT_ROOT}/public%{REQUEST_URI} -f [OR]
+RewriteCond %{DOCUMENT_ROOT}/public%{REQUEST_URI} -d
+RewriteRule ^ public%{REQUEST_URI} [L]
 
-# 3) If a real file/dir exists inside /public, serve that
-RewriteCond %{DOCUMENT_ROOT}/public/$1 -f [OR]
-RewriteCond %{DOCUMENT_ROOT}/public/$1 -d
-RewriteRule ^ public/$1 [L]
-
-# 4) Otherwise route everything once to Laravel's front controller
+# Otherwise, send everything to Laravel's front controller
 RewriteRule ^ public/index.php [L]
