@@ -30,3 +30,5 @@ monsuntheater.code-workspace
 /public/mix-manifest.json
 
 .actions_env
+.template-renderer-data
+logs/
