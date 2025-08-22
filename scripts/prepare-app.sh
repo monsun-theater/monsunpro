@@ -6,6 +6,7 @@ ARCH=./project-archive.tar.gz && [ -f "$ARCH" ] && tar -xzf "$ARCH" -C . && rm -
 
 # Reset cache and start app
 php artisan cache:clear
+php artisan config:clear
 php artisan config:cache
 php artisan route:cache
 php artisan statamic:stache:warm
