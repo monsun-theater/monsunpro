@@ -4,6 +4,7 @@ set -euo pipefail
 KEY_PATH="${HOME}/.ssh/id_ed25519_statamic"
 SSH_CONFIG="${HOME}/.ssh/config"
 KNOWN_HOSTS="${HOME}/.ssh/known_hosts"
+GITHUB_SSH_REPO="git@github.com:tom300z/monsunpro.git"
 
 mkdir -p "${HOME}/.ssh"
 chmod 700 "${HOME}/.ssh"
@@ -56,16 +57,4 @@ if ! git rev-parse --abbrev-ref --symbolic-full-name @{u} >/dev/null 2>&1; then
   fi
 fi
 
-# 7) Quick connectivity check (non-fatal)
-ssh -o BatchMode=yes -o StrictHostKeyChecking=yes -T [email protected] >/dev/null 2>&1 || true
-git ls-remote origin >/dev/null 2>&1 || true
-
-# 8) Statamic .env toggles (idempotent line-replace/add)
-if [ -f ".env" ]; then
-  awk -v k="STATAMIC_GIT_ENABLED"   -v v="true" 'BEGIN{FS=OFS="="} $1==k{$2=v;f=1}1; END{if(!f)print k"="v}' .env > .env.tmp && mv .env.tmp .env
-  awk -v k="STATAMIC_GIT_PUSH"      -v v="true" 'BEGIN{FS=OFS="="} $1==k{$2=v;f=1}1; END{if(!f)print k"="v}' .env > .env.tmp && mv .env.tmp .env
-  awk -v k="STATAMIC_GIT_USER_NAME" -v v="${STATAMIC_GIT_USER_NAME}" 'BEGIN{FS=OFS="="} $1==k{$2=v;f=1}1; END{if(!f)print k"="v}' .env > .env.tmp && mv .env.tmp .env
-  awk -v k="STATAMIC_GIT_USER_EMAIL"-v v="${STATAMIC_GIT_USER_EMAIL}" 'BEGIN{FS=OFS="="} $1==k{$2=v;f=1}1; END{if(!f)print k"="v}' .env > .env.tmp && mv .env.tmp .env
-fi
-
-echo "Statamic Git SSH setup: OK (idempotent)."
+echo "Statamic Git SSH setup: OK"
