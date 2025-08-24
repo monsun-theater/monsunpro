@@ -37,4 +37,4 @@ logs/
 .bash_profile
 .bashrc
 .deploy-now/php
-.ssh/
+.ssh/**
