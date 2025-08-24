@@ -41,7 +41,7 @@ jobs:
 
       - name: Render templates with secrets
         uses: ionos-deploy-now/template-renderer-action@v2
-        id: template
+        id: template-secrets
         with:
           data: "[${{ toJson(secrets) }}]"
           input-directory: ${{ env.DEPLOYMENT_FOLDER }}
