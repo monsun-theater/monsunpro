@@ -48,6 +48,8 @@ jobs:
       - name: Run composer install
         shell: bash
         run: |
+          cat .env
+          cat .secrets
           composer install --no-interaction --prefer-dist --optimize-autoloader --no-dev
 
       - name: Build PHP assets
