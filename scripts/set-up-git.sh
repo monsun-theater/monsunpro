@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-set -euo pipefail
+set -xeuo pipefail
 
 KEY_PATH="${HOME}/.ssh/id_ed25519_statamic"
 SSH_CONFIG="${HOME}/.ssh/config"
@@ -10,7 +10,7 @@ mkdir -p "${HOME}/.ssh"
 chmod 700 "${HOME}/.ssh"
 
 # Generate once if missing (stateful host)
-if [ ! -f "${KEY_PATH}" ]; then
+if  ; then
 ssh-keygen -t ed25519 -C "statamic-bot" -f "${KEY_PATH}" -N ""
 echo "Public key for GitHub Deploy Key (add with write access):"
 cat "${KEY_PATH}.pub"
@@ -61,10 +61,11 @@ fi
 if [ ! -d .git ]; then
   git init
   git remote add origin "git@github.com:${GIT_REPOSITORY}.git"
-  git fetch origin "${GIT_BRANCH}"
-  git reset --hard "origin/${GIT_BRANCH}"
   echo "Updated from git"
 fi
+git fetch origin "${GIT_BRANCH}"
+git reset --hard "origin/${GIT_BRANCH}"
+
 
 echo "Statamic Git SSH setup: OK"
 
