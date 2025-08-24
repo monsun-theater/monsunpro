@@ -39,7 +39,7 @@ jobs:
           output-directory: ${{ env.DEPLOYMENT_FOLDER }}
           intermediate-data-file: ${{ env.DEPLOYMENT_FOLDER }}/.template-renderer-data
 
-      - name: Render templates
+      - name: Render templates with secrets
         uses: ionos-deploy-now/template-renderer-action@v2
         id: template
         with:
