@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-set -xeuo pipefail
+set -euo pipefail
 
 KEY_PATH="${HOME}/.ssh/id_ed25519_statamic"
 SSH_CONFIG="${HOME}/.ssh/config"
