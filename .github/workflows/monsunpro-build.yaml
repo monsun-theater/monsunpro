@@ -48,7 +48,6 @@ jobs:
       - name: Run composer install
         shell: bash
         run: |
-          ls -asl .ssh
           composer install --no-interaction --prefer-dist --optimize-autoloader --no-dev
 
       - name: Build PHP assets
