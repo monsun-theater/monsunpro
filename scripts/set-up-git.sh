@@ -10,7 +10,7 @@ mkdir -p "${HOME}/.ssh"
 chmod 700 "${HOME}/.ssh"
 
 # Generate once if missing (stateful host)
-if  ; then
+if [ ! -f "${KEY_PATH}" ]; then
 ssh-keygen -t ed25519 -C "statamic-bot" -f "${KEY_PATH}" -N ""
 echo "Public key for GitHub Deploy Key (add with write access):"
 cat "${KEY_PATH}.pub"
