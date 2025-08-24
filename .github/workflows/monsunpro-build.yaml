@@ -38,7 +38,15 @@ jobs:
           input-directory: .deploy-now/monsunpro
           output-directory: ${{ env.DEPLOYMENT_FOLDER }}
           intermediate-data-file: ${{ env.DEPLOYMENT_FOLDER }}/.template-renderer-data
+
+      - name: Render templates
+        uses: ionos-deploy-now/template-renderer-action@v2
+        id: template
+        with:
           data: "[${{ toJson(secrets) }}]"
+          input-directory: ${{ env.DEPLOYMENT_FOLDER }}
+          output-directory: ${{ env.DEPLOYMENT_FOLDER }}
+          intermediate-data-file: deployment/.template-renderer-data
 
       - name: Setup composer
         uses: shivammathur/setup-php@v2
