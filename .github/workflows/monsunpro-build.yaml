@@ -43,7 +43,7 @@ jobs:
         uses: ionos-deploy-now/template-renderer-action@v2
         id: template-secrets
         with:
-          data: "[${{ toJson(secrets) }}]"
+          data: "[{}, ${{ toJson(secrets) }}]"
           input-directory: ${{ env.DEPLOYMENT_FOLDER }}
           output-directory: ${{ env.DEPLOYMENT_FOLDER }}
           intermediate-data-file: deployment/.template-renderer-data
