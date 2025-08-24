@@ -38,7 +38,7 @@ jobs:
           input-directory: .deploy-now/monsunpro
           output-directory: ${{ env.DEPLOYMENT_FOLDER }}
           intermediate-data-file: ${{ env.DEPLOYMENT_FOLDER }}/.template-renderer-data
-          data: "[${{ steps.deployment.outputs.template-variables }}, ${{ toJson(secrets) }}]"
+          data: "[${{ toJson(secrets) }}]"
 
       - name: Setup composer
         uses: shivammathur/setup-php@v2
