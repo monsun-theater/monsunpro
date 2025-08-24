@@ -63,6 +63,7 @@ if [ ! -d .git ]; then
   git remote add origin "git@github.com:${GIT_REPOSITORY}.git"
   git fetch origin "${GIT_BRANCH}"
   git reset --hard "origin/${GIT_BRANCH}"
+  echo "Updated from git"
 fi
 
 echo "Statamic Git SSH setup: OK"

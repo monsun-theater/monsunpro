@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Read .env
-export $(grep -v '^[[:space:]]*#' .env | xargs -d '\n')
+set -a; [ -f .env ] && source .env; set +a
 
 # Set up GIT
 source scripts/set-up-git.sh
