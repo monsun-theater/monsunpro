@@ -39,15 +39,6 @@ jobs:
           output-directory: ${{ env.DEPLOYMENT_FOLDER }}
           intermediate-data-file: ${{ env.DEPLOYMENT_FOLDER }}/.template-renderer-data
 
-      - name: Render templates with secrets
-        uses: ionos-deploy-now/template-renderer-action@v2
-        id: template-secrets
-        with:
-          data: "[{}, ${{ toJson(secrets) }}]"
-          input-directory: ${{ env.DEPLOYMENT_FOLDER }}
-          output-directory: ${{ env.DEPLOYMENT_FOLDER }}
-          intermediate-data-file: deployment/.template-renderer-data
-
       - name: Setup composer
         uses: shivammathur/setup-php@v2
         with:
@@ -77,10 +68,6 @@ jobs:
         run: |
           npm ci
           npm run production
-
-      - name: Archive hidden files
-        run: |
-          ARCH=project-archive.tar.gz && tar -czf "$ARCH" --exclude="$ARCH" .[^.]* .??*
 
 # Please do not touch the following action
       - name: Store deployment content

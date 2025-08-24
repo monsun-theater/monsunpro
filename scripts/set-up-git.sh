@@ -57,4 +57,13 @@ if ! git rev-parse --abbrev-ref --symbolic-full-name @{u} >/dev/null 2>&1; then
   fi
 fi
 
+# Init repo and reset worktree if it is missing
+if [ ! -d .git ]; then
+  git init
+  git remote add origin "git@github.com:${GIT_REPOSITORY}.git"
+  git fetch origin "${GIT_BRANCH}"
+  git reset --hard "origin/${GIT_BRANCH}"
+fi
+
 echo "Statamic Git SSH setup: OK"
+

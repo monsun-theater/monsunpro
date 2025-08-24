@@ -73,6 +73,16 @@ jobs:
         with:
           deployment-id: ${{ matrix.deployment-id }}
           data: "[${{ steps.deployment.outputs.template-variables }}, ${{ toJson(secrets) }}]"
+          data: >
+            [
+              {
+                "GIT_REPOSITORY": "${{ github.repository }}",
+                "GIT_BRANCH": "${{ github.ref_name }}",
+                "GIT_SHA": "${{ github.sha }}"
+              },
+              ${{ toJson(secrets) }},
+              ${{ steps.deployment.outputs.template-variables }}
+            ]
           input-directory: deployment
           output-directory: deployment
           intermediate-data-file: deployment/.template-renderer-data
