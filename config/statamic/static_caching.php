@@ -72,8 +72,6 @@ return [
     */
 
     'invalidation' => [
-        'class' => App\StaticCaching\EventsInvalidator::class,
-
         'rules' => [
             'collections' => [
                 'veranstaltungen' => [
