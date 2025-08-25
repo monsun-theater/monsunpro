@@ -73,7 +73,7 @@ return [
 
     'invalidation' => [
         'class' => App\StaticCaching\EventsInvalidator::class,
-        
+
         'rules' => [
             'collections' => [
                 'veranstaltungen' => [
@@ -83,9 +83,26 @@ return [
                         '/premiere',
                         '/monsun_digital',
                         '/veranstaltungen',
-                        '/pastperformances'
+                        '/pastperformances',
                     ]
                 ],
+                'aktuelles' => [
+                    'urls' => [
+                        '/',
+                        '/aktuelles'
+                    ]
+                ],
+                'kuenstler_innen' => [
+                    'urls' => [
+                        '/',
+                        '/kuenstler_innen'
+                    ]
+                ],
+                '*' => [
+                    'urls' => [
+                        '/',
+                    ]
+                ]
             ],
         ],
     ],
