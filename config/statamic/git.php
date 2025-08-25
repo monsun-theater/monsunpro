@@ -114,6 +114,7 @@ return [
     */
 
     'commands' => [
+        'git pull',
         'git add {{ paths }}',
         'git -c "user.name={{ name }}" -c "user.email={{ email }}" commit -m "{{ message }} [BOT] [skip ci]"',
     ],
