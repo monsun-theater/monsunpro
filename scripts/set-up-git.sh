@@ -44,7 +44,8 @@ if [ ! -d .git ]; then
 fi
 git fetch origin "${GIT_BRANCH}"
 git reset --hard "origin/${GIT_BRANCH}"
-
+git branch --set-upstream-to="origin/${GIT_BRANCH}"
+git clean -df
 
 echo "Statamic Git SSH setup: OK"
 
