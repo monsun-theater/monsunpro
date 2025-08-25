@@ -17,4 +17,6 @@ php artisan statamic:search:update --all
 php artisan statamic:static:clear
 php artisan statamic:stache:refresh
 
+python3 warm-static-cache.py
+
 
