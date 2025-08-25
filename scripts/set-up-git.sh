@@ -46,6 +46,10 @@ git fetch origin "${GIT_BRANCH}"
 git reset --hard "origin/${GIT_BRANCH}"
 git branch --set-upstream-to="origin/${GIT_BRANCH}"
 git clean -df
+
+# Configure git behaviour
 git config core.sshCommand "ssh -o UserKnownHostsFile=$KNOWN_HOSTS -o GlobalKnownHostsFile=/dev/null -o StrictHostKeyChecking=yes -i $KEY_PATH"
+git config pull.rebase false
+
 echo "Statamic Git SSH setup: OK"
 
