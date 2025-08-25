@@ -3,7 +3,7 @@ id: 230ec157-5076-45d0-8d68-597a5f3d0743
 blueprint: kuenstler_innen
 title: 'Francoise Hüsges'
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1752322438
+updated_at: 1753118561
 page_builder:
   -
     id: 4qZc6Zgz
@@ -1419,18 +1419,40 @@ page_builder:
             type: hardBreak
           -
             type: text
-            text: 'YOU’RE IN BY ANDY! '
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::13529a8b-7eb3-479f-b85f-891e62cd94e5'
+                  rel: null
+                  target: null
+                  title: null
+            text: 'YOU’RE IN BY ANDY!'
+          -
+            type: text
+            text: ' '
           -
             type: text
             marks:
               -
                 type: italic
-            text: (Film)
+            text: (Video)
           -
             type: hardBreak
           -
             type: text
-            text: 'SOLLEN SIE DOCH CHAOS FRESSEN '
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::43b10577-2eaf-408c-a518-cd732e6db359'
+                  rel: null
+                  target: null
+                  title: null
+            text: 'SOLLEN SIE DOCH CHAOS FRESSEN'
+          -
+            type: text
+            text: "\_"
           -
             type: text
             marks:

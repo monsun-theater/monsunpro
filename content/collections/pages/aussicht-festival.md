@@ -47,7 +47,7 @@ page_builder:
         content:
           -
             type: text
-            text: 'Die sechste Ausgabe des AUSSICHT Festivals ist zugleich die letzte Ausgabe in der Interimsspielstätte in der Gaußstraße. Das monsun.theater zieht Ende 2024 um. Noch sind die neuen Räumlichkeiten nicht konkret, und dennoch ist eines klar: Das AUSSICHT Festival bleibt erhalten und wird im nächsten Jahr zum 45-jährigen Jubiläum des monsun.theaters neue Räume bespielen. '
+            text: 'Die siebte Ausgabe des AUSSICHT Festivals eröffnet unsere Spielzeit 2025|26 und findet zum ersten mal in unserer neuen Spielstätte in der Billrothstraße 79 statt.'
       -
         type: paragraph
         content:
@@ -92,6 +92,164 @@ page_builder:
     type: article
     enabled: true
   -
+    id: mdfsf0fl
+    bard:
+      -
+        type: set
+        attrs:
+          id: mdfsf3u7
+          values:
+            type: figure
+            image: produktionen/aussicht_festival/07_trenner.jpg
+            size: md
+      -
+        type: set
+        attrs:
+          id: mdykngzt
+          values:
+            type: figure
+            image: produktionen/aussicht_festival/2025/banner_mit_schrift.jpg
+            size: md
+      -
+        type: set
+        attrs:
+          id: mdfsgtfl
+          enabled: false
+          values:
+            type: video
+            caption: 'AUSSICHT Festival #7 (2025)'
+            do_not_track: true
+      -
+        type: paragraph
+    type: article
+    enabled: true
+  -
+    id: mdfshks1
+    title: 'AUSSICHT Festival #7'
+    link_blocks:
+      -
+        id: 6vb193NJ
+        title: '10. September 2025 | 19:00 Uhr'
+        text: 'Mit Künstler:innen des diesjährigen AUSSICHT Festivals [Hamburg, Berlin, Lahr]'
+        label: 'AUSSICHT Festival #7 – Eröffnung | Über Sonne und Luft'
+        target_blank: false
+        link_type: entry
+        entry: d47b1cc8-67aa-445a-9a22-9e2af0d30c22
+        attr_title: 'AUSSICHT Festival #7 – Eröffnung | Über Sonne und Luft'
+        attr_aria: 'AUSSICHT Festival #7 – Eröffnung | Über Sonne und Luft'
+      -
+        id: mdfsn9ms
+        title: '10. September 2025 | 20:00 Uhr [Stückausschnitt]'
+        text: 'Roland Walter & John Dogobone [Berlin]'
+        label: 'Coffee Lovers'
+        target_blank: false
+        link_type: entry
+        entry: 4a88eb45-f68c-448f-a881-5c4193389313
+        attr_title: 'Coffee Lovers'
+        attr_aria: 'Coffee Lovers'
+      -
+        id: mdfsobpu
+        title: '10. September 2025 | 21:00 Uhr'
+        text: 'SZENE 2WEI [Lahr, Schwarzwald]'
+        label: Zeder
+        target_blank: false
+        link_type: entry
+        entry: a4920d72-62ea-4a3b-961e-ce7c961d4a74
+        attr_title: Zeder
+        attr_aria: Zeder
+      -
+        id: mdfsopol
+        title: '11. September 2025 | 19:00 Uhr'
+        text: 'Roland Walter & John Dogobone [Berlin]'
+        label: 'Coffee Lovers'
+        target_blank: false
+        link_type: entry
+        entry: 4a88eb45-f68c-448f-a881-5c4193389313
+        attr_title: 'Coffee Lovers'
+        attr_aria: 'Coffee Lovers'
+      -
+        id: mdfsqab2
+        title: '11. September 2025 | 20:00 Uhr'
+        text: 'SZENE 2WEI [Lahr, Schwarzwald] & monsun.theater [Hamburg]'
+        label: 'FINALE FURIOSO'
+        target_blank: false
+        link_type: entry
+        entry: 9875a2ed-fc1f-48b4-b15f-8bc8317b9cf4
+        attr_title: 'FINALE FURIOSO'
+        attr_aria: 'FINALE FURIOSO'
+      -
+        id: mdfsrvul
+        title: '12. September 2025 | 19:00 Uhr'
+        text: 'Thalia Treffpunkt [Hamburg]'
+        label: 'Pragma – Das Gewimmel'
+        target_blank: false
+        link_type: entry
+        entry: 8979a103-e594-4e81-8eb7-72bde3886715
+        attr_title: 'Pragma – Das Gewimmel'
+        attr_aria: 'Pragma – Das Gewimmel'
+      -
+        id: mdfst0r8
+        title: '12. September 2025 | 20:30 Uhr'
+        text: 'Eisenhans Theaterprojekt [Hamburg]'
+        label: 'Das Märchen von der grünen Schlange und der schönen Lilie'
+        target_blank: false
+        link_type: entry
+        entry: e3b1dd51-d571-486a-b4aa-950fc65be21e
+        attr_title: 'Das Märchen von der grünen Schlange und der schönen Lilie'
+        attr_aria: 'Das Märchen von der grünen Schlange und der schönen Lilie'
+      -
+        id: mdfstibo
+        title: '13. September 2025 | 17:30 Uhr'
+        text: 'Roland Walter & John Dogobone [Berlin]'
+        label: 'Coffee Lovers'
+        target_blank: false
+        link_type: entry
+        entry: 4a88eb45-f68c-448f-a881-5c4193389313
+        attr_title: 'Coffee Lovers'
+        attr_aria: 'Coffee Lovers'
+      -
+        id: mdfsw89s
+        title: '13. September 2025 | 19:00 Uhr'
+        text: 'SZENE 2WEI [Lahr, Schwarzwald]'
+        label: Zeder
+        target_blank: false
+        link_type: entry
+        entry: a4920d72-62ea-4a3b-961e-ce7c961d4a74
+        attr_title: Zeder
+        attr_aria: Zeder
+      -
+        id: mdfswvmg
+        title: '13. September 2025 | 19:40 Uhr [Stückausschnitt]'
+        text: 'Eisenhans Theaterprojekt [Hamburg]'
+        label: 'Das Märchen von der grünen Schlange und der schönen Lilie'
+        target_blank: false
+        link_type: entry
+        entry: e3b1dd51-d571-486a-b4aa-950fc65be21e
+        attr_title: 'Das Märchen von der grünen Schlange und der schönen Lilie'
+        attr_aria: 'Das Märchen von der grünen Schlange und der schönen Lilie'
+      -
+        id: mdfsy8wm
+        title: '13. September 2025 | 20:20 Uhr [Stückausschnitt]'
+        text: 'SZENE 2WEI [Lahr, Schwarzwald] & monsun.theater [Hamburg]'
+        label: 'FINALE FURIOSO'
+        target_blank: false
+        link_type: entry
+        entry: 9875a2ed-fc1f-48b4-b15f-8bc8317b9cf4
+        attr_title: 'FINALE FURIOSO'
+        attr_aria: 'FINALE FURIOSO'
+      -
+        id: mdfszfdm
+        title: '13. September 2025 | 21:10 Uhr [Vorschau auf unsere neue Eigenproduktion]'
+        text: 'SZENE 2WEI [Lahr, Schwarzwald] & monsun.theater [Hamburg]'
+        label: 'Sollen sie doch Chaos fressen'
+        target_blank: false
+        link_type: entry
+        entry: 43b10577-2eaf-408c-a518-cd732e6db359
+        attr_title: 'Sollen sie doch Chaos fressen'
+        attr_aria: 'Sollen sie doch Chaos fressen'
+    type: link_blocks
+    enabled: true
+  -
     id: lyn3n3dl
     bard:
       -
@@ -121,12 +279,12 @@ page_builder:
         id: iTauVAmK
         title: '12. September 2024 | 19:00 Uhr'
         text: 'Mit Künstler:innen des diesjährigen AUSSICHT Festivals [Hamburg, Berlin, Lahr]'
-        label: 'AUSSICHT Festival #6 – Eröffnung | Voll Normal'
+        label: 'AUSSICHT Festival #7 – Eröffnung | Voll Normal'
         target_blank: false
         link_type: entry
         entry: 2cab0e31-9739-4f02-8045-4a493313426f
-        attr_title: 'AUSSICHT Festival #6 – Eröffnung | Voll Normal'
-        attr_aria: 'AUSSICHT Festival #6 – Eröffnung | Voll Normal'
+        attr_title: 'AUSSICHT Festival #7 – Eröffnung | Voll Normal'
+        attr_aria: 'AUSSICHT Festival #7 – Eröffnung | Voll Normal'
       -
         id: lyol6osm
         title: '12. September 2024 | 21:00 Uhr'
@@ -673,10 +831,11 @@ sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 template: default
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1725209003
+updated_at: 1754414337
 seo_title: 'AUSSICHT Festival'
 seo_description: 'Hamburgs Mixed-Abled Festival'
 og_title: 'AUSSICHT Festival'
 og_description: 'Hamburgs Mixed-Abled Festival'
 og_image: produktionen/aussicht_festival/AusSicht-Festival-Logo-Rechteck.jpg
+parent: home
 ---

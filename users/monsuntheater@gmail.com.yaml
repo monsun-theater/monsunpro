@@ -11,6 +11,7 @@ preferences:
         - status
         - in_kategorien_zeigen
         - kategorien
+        - in_presse_zeigen
     aktuelles:
       columns:
         - title

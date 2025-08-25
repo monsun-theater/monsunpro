@@ -213,7 +213,26 @@ page_builder:
                   rel: null
                   target: null
                   title: null
-            text: 'THEATERNACHT HAMBURG 2022'
+            text: 'THEATERNACHT HAMBURG 2023'
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: ' (Performance)'
+          -
+            type: hardBreak
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::4a88eb45-f68c-448f-a881-5c4193389313'
+                  rel: null
+                  target: null
+                  title: null
+            text: 'COFFEE LOVERS'
           -
             type: text
             marks:
@@ -237,5 +256,5 @@ page_builder:
     type: article
     enabled: true
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1693556520
+updated_at: 1753109279
 ---

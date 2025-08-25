@@ -351,6 +351,28 @@ page_builder:
               -
                 type: link
                 attrs:
+                  href: 'statamic://entry::72645625-4fe1-4c4c-b180-2ae056e0f6cf'
+                  rel: null
+                  target: null
+                  title: null
+            text: 'SO LANGE NUR MEIN HERZ BRENNT'
+          -
+            type: text
+            text: ' '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: (Leitung)
+          -
+            type: hardBreak
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
                   href: 'statamic://entry::022879f2-9d40-451d-84e6-171e620ad15e'
                   rel: null
                   target: null
@@ -365,8 +387,30 @@ page_builder:
               -
                 type: italic
             text: (Text)
+          -
+            type: hardBreak
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::13529a8b-7eb3-479f-b85f-891e62cd94e5'
+                  rel: null
+                  target: null
+                  title: null
+            text: 'YOU’RE IN BY ANDY!'
+          -
+            type: text
+            text: ' '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: (Leitung)
     type: article
     enabled: true
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1729032222
+updated_at: 1752765488
 ---
