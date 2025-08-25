@@ -86,13 +86,13 @@ return [
                         '/pastperformances',
                     ]
                 ],
-                'aktuelles' => [
+                'aktuelles/*' => [
                     'urls' => [
                         '/',
                         '/aktuelles'
                     ]
                 ],
-                'kuenstler_innen' => [
+                'kuenstler_innen/*' => [
                     'urls' => [
                         '/',
                         '/kuenstler_innen'
