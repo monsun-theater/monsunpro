@@ -6,23 +6,9 @@
     RewriteEngine On
     RewriteBase /
 
-    RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteCond %{QUERY_STRING} !live-preview
-    RewriteRule ^ index.php [L]
-
-    RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteCond %{QUERY_STRING} live-preview
-    RewriteRule ^ index.php [L]
-
     RewriteCond %{DOCUMENT_ROOT}/static/%{REQUEST_URI}_%{QUERY_STRING}\.html -s
     RewriteCond %{REQUEST_METHOD} GET
     RewriteRule .* static/%{REQUEST_URI}_%{QUERY_STRING}\.html [L,T=text/html]
-
-    # Handle Authorization Header (optional but fine to keep)
-    RewriteCond %{HTTP:Authorization} .
-    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
 
     # Redirect trailing slashes if not a folder
     RewriteCond %{REQUEST_FILENAME} !-d
@@ -32,5 +18,6 @@
     # Send requests to front controller
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{QUERY_STRING} !live-preview
     RewriteRule ^ index.php [L]
 </IfModule>
