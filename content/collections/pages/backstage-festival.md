@@ -6,113 +6,94 @@ cinema_monsun: false
 hero_featured_sect:
   -
     id: 5pt2sIjs
-    title: Lovecamp
+    title: LakritZPizza
     titelzusatz_zeigen: false
     einfarbiger_hintergrund: false
-    featured_image: produktionen/backstage_festival/2024/lovecamp/lovecamp_01_c_christian_bartsch.jpg
+    featured_image: produktionen/backstage_festival/2025/lakritzpizza/lakritzpizza_cover_c_delmar_mavignier.jpg
     buttons:
       -
         id: NmFGfX2A
         label: 'Mehr lesen'
         target_blank: false
         link_type: entry
-        entry: 14c28178-7cdc-4431-b523-cfe096959044
+        entry: f45c7475-ed82-4557-a7b2-eb3e119e0adc
         attr_title: 'Mehr lesen'
-        attr_aria: 'Mehr über „Lovecamp“ lesen'
+        attr_aria: 'Mehr über „LakritZPizza“ lesen'
     type: featured
     enabled: true
     darken_overlay: true
   -
     id: mLrP5jtA
-    title: 'Wir sind doch schon was geworden'
+    title: 'babelgum - a tale of impermanence'
     titelzusatz_zeigen: false
     einfarbiger_hintergrund: false
-    featured_image: produktionen/backstage_festival/2024/wir_sind_doch_schon_was_geworden/wir_sind_doch_schon_was_geworden_01_c_christian_bartsch.jpg
+    featured_image: produktionen/backstage_festival/2025/babelgum/babelgum_01_c_delmar_mavignier.jpg
     buttons:
       -
         id: DDFgCXj4
         label: 'Mehr lesen'
         target_blank: false
         link_type: entry
-        entry: 899417da-541a-43ab-ac87-8d1c84855032
+        entry: 0b10b2c6-dfc0-43d7-97b0-fcb91a308fe3
         attr_title: 'Mehr lesen'
-        attr_aria: 'Mehr über „Wir sind doch schon was geworden“ lesen'
+        attr_aria: 'Mehr über „babelgum - a tale of impermanence“ lesen'
     type: featured
     enabled: true
     darken_overlay: true
   -
     id: QJtmpmWT
-    title: 'So lange nur mein Herz brennt'
+    title: 'Mindestens haltbar bis'
     titelzusatz_zeigen: false
     einfarbiger_hintergrund: false
-    featured_image: produktionen/backstage_festival/2024/so_lange_nur_mein_herz_brennt/so_lange_nur_mein_herz_brennt_01_c_christian_bartsch.jpg
+    featured_image: produktionen/backstage_festival/2025/mindestens_haltbar_bis/mindestens_haltbar_bis_16_c_delmar_mavignier.jpg
     buttons:
       -
         id: NfxyRaAG
         label: 'Mehr lesen'
         target_blank: false
         link_type: entry
-        entry: 72645625-4fe1-4c4c-b180-2ae056e0f6cf
+        entry: fce20cf6-3956-4640-9f95-60e9ef43d94c
         attr_title: 'Mehr lesen'
-        attr_aria: 'Mehr über „So lange nur mein Herz brennt“ lesen'
+        attr_aria: 'Mehr über „Mindestens haltbar bis“ lesen'
     type: featured
     enabled: true
     darken_overlay: true
   -
     id: NzermarS
-    title: 'For Sale: Kindheit'
+    title: 'Das Bällebad'
     titelzusatz_zeigen: false
     einfarbiger_hintergrund: false
-    featured_image: produktionen/backstage_festival/2024/for_sale_kindheit/for_sale_kindheit_01_c_christian_bartsch.jpg
+    featured_image: produktionen/backstage_festival/2025/das_baellebad/das_baellebad_01_c_delmar_mavignier.jpg
     buttons:
       -
         id: zMa8ztwF
         label: 'Mehr lesen'
         target_blank: false
         link_type: entry
-        entry: 49116069-e14f-4109-a734-e3d2b1121e87
+        entry: 73547d48-9c31-4fc5-99a0-9c4ba51264e5
         attr_title: 'Mehr lesen'
-        attr_aria: 'Mehr über „For Sale: Kindheit“ lesen'
+        attr_aria: 'Mehr über „Das Bällebad“ lesen'
     type: featured
     enabled: true
     darken_overlay: true
   -
     id: atcOQNYr
-    title: Zuckerherzen
+    title: 'You’re IN by Andy!'
     titelzusatz_zeigen: false
     einfarbiger_hintergrund: false
-    featured_image: produktionen/backstage_festival/2024/zuckerherzen/zuckerherzen_01_c_christian_bartsch.jpg
+    featured_image: produktionen/backstage_festival/2025/youre_in_by_andy/youre_in_by_andy_01_c_delmar_mavignier.jpg
     buttons:
       -
         id: P4rwTUMg
         label: 'Mehr lesen'
         target_blank: false
         link_type: entry
-        entry: d02c0292-2497-4460-8dfa-7eb93c6b6b9b
+        entry: 13529a8b-7eb3-479f-b85f-891e62cd94e5
         attr_title: 'Mehr lesen'
-        attr_aria: 'Mehr über „Zuckerherzen“ lesen'
+        attr_aria: 'Mehr über „You’re IN by Andy!“ lesen'
     type: featured
     enabled: true
     darken_overlay: true
-  -
-    id: lzac2ja3
-    title: 'Goldene Tage'
-    titelzusatz_zeigen: true
-    subtitle: 'aber bitte nur für mich...'
-    einfarbiger_hintergrund: false
-    featured_image: produktionen/backstage_festival/2024/goldene_tage/goldene_tage_40_c_peter_bruns.jpg
-    darken_overlay: false
-    buttons:
-      -
-        id: lzac3wcr
-        label: 'Mehr lesen'
-        target_blank: false
-        link_type: entry
-        entry: e67da234-fe09-4a55-a00b-457a645c7489
-        attr_title: 'Mehr lesen'
-        attr_aria: 'Mehr über „Goldene Tage“ lesen'
-    type: featured
-    enabled: true
 page_builder:
   -
     id: MDKz9D7h
@@ -124,79 +105,69 @@ page_builder:
         content:
           -
             type: text
-            text: 'Was aus uns werden soll'
+            text: 'E X T E N D E D'
       -
         type: paragraph
         content:
           -
             type: text
-            text: '...schon eine herausfordernde Fragestellung. „Wenn ich mal ganz ehrlich bin, kann es letztendlich nie allein um mich gehen. Mein Leben beruht auf einem großen Ganzen, quasi einem System, einer Verfassung. In dieser sind die ,Gesetze und Prinzipien‘ unserer Gesellschaft festgelegt. Ich denke darüber nach, was diese Werte in unserer Demokratie bedeuten, was wichtig ist für die freie Gestaltung meiner individuellen Träume. Wo stehe ich, wo kämpfe ich und wo hinterfrage ich meine Welt. Aber es kann eben nicht nur darum gehen, was aus mir einmal werden soll, sondern aus dem Land, in dem ich lebe... also aus uns allen. Und das hat wiederum sehr viel mit gegenseitiger Akzeptanz, Veränderung und Offenheit zu tun.“ Die Teilnehmenden der BACKSTAGE-Gruppen stecken neue (Gedanken-)räume ab, befragen sich und unsere Zukunft.'
+            text: 'Wie E X T E N D E D sind wir eigentlich? »Faster? Bigger? Better?« Muss nicht alles möglichst nur fifteen seconds of Fame dauern und dann schnell weiter im Rad der Zeit? Eine extended Version unserer Person könnte sich doch endlich einmal den Raum nehmen, der uns selten zugestanden wird. Einfach mal extended Denken, Erkennen und die Diskussion darüber, was möglich ist erweitern. Der Backstage Jugendclub gibt dieser Idee eine Bühne, auf der die Teilnehmer*innen den Blick für Vorgänge der Wahrnehmung und Kommunikation durch neue künstlerische Ideen entwickeln. Manchmal braucht es als Einstieg etwas Greifbares – ein riesiges Bällebad, Maxisingles oder Haarextensions – manchmal aber auch etwas Übergeordnetes wie gesellschaftliche Ordnungsprinzipien, die Gründung einer Artfactory oder das ewige Gebot der Spießigkeit.'
     type: article
     enabled: true
   -
     id: pIvX9lWy
-    title: 'BACKSTAGE-Festival 2024 »Was aus uns werden soll«'
+    title: 'BACKSTAGE-Festival 2025 »E X T E N D E D«'
     link_blocks:
       -
         id: m0lfd2ni
-        title: '01. Oktober 2024 | 19:00 Uhr'
-        text: 'Leitung: Gesche Lundbeck'
-        label: LOVECAMP
+        title: '20. September 2025 | 19:00 Uhr<br>21. September 2025 | 19:00 Uhr'
+        text: 'Leitung: Manfred Hüttmann'
+        label: LAKRITZPIZZA
         target_blank: false
         link_type: entry
-        entry: 14c28178-7cdc-4431-b523-cfe096959044
-        attr_title: LOVECAMP
-        attr_aria: LOVECAMP
+        entry: f45c7475-ed82-4557-a7b2-eb3e119e0adc
+        attr_title: LAKRITZPIZZA
+        attr_aria: LAKRITZPIZZA
       -
         id: cLAQG8wh
-        title: '4. Oktober 2024 | 19:00 Uhr<br>'
-        text: 'Leitung: Manfred Hüttmann'
-        label: 'WIR SIND DOCH SCHON WAS GEWORDEN'
+        title: '22. September 2025 | 19:00 Uhr<br>23. September 2025 | 19:00 Uhr'
+        text: 'Leitung: Gesche Lundbeck'
+        label: 'BABELBUM – A TALE OF IMPERMANENCE'
         target_blank: false
         link_type: entry
-        entry: 899417da-541a-43ab-ac87-8d1c84855032
-        attr_title: 'WIR SIND DOCH SCHON WAS GEWORDEN'
-        attr_aria: 'WIR SIND DOCH SCHON WAS GEWORDEN'
+        entry: 0b10b2c6-dfc0-43d7-97b0-fcb91a308fe3
+        attr_title: 'BABELBUM – A TALE OF IMPERMANENCE'
+        attr_aria: 'BABELBUM – A TALE OF IMPERMANENCE'
       -
         id: UpvlLRzN
-        title: '6. Oktober 2024 | 19:00 Uhr<br>7. Oktober 2024 | 19:00 Uhr'
-        text: 'Leitung: Michael Alexander Müller'
-        label: 'SO LANGE NUR MEIN HERZ BRENNT'
+        title: '25. September 2025 | 19:00 Uhr<br>26. September 2025 | 11:00 Uhr<br>26. September 2025 | 19:00 Uhr'
+        text: 'Leitung: Marie Petzold & Lena Moszczynski'
+        label: 'MINDESTENS HALTBAR BIS'
         target_blank: false
         link_type: entry
-        entry: 72645625-4fe1-4c4c-b180-2ae056e0f6cf
-        attr_title: 'SO LANGE NUR MEIN HERZ BRENNT'
-        attr_aria: 'SO LANGE NUR MEIN HERZ BRENNT'
+        entry: fce20cf6-3956-4640-9f95-60e9ef43d94c
+        attr_title: 'MINDESTENS HALTBAR BIS'
+        attr_aria: 'MINDESTENS HALTBAR BIS'
       -
         id: jVsOhiwV
-        title: '8. Oktober 2024 | 19:00 Uhr<br>9. Oktober 2024 | 11:00 Uhr'
-        text: 'Leitung: Benjamin Böcker, Antonia Rehfueß'
-        label: 'FOR SALE: KINDHEIT'
+        title: '29. September 2025 | 19:00 Uhr<br>30. September 2025 | 19:00 Uhr'
+        text: 'Leitung: Jan Phillip Meyer'
+        label: 'DAS BÄLLEBAD'
         target_blank: false
         link_type: entry
-        entry: 49116069-e14f-4109-a734-e3d2b1121e87
-        attr_title: 'FOR SALE: KINDHEIT'
-        attr_aria: 'FOR SALE: KINDHEIT'
+        entry: 73547d48-9c31-4fc5-99a0-9c4ba51264e5
+        attr_title: 'DAS BÄLLEBAD'
+        attr_aria: 'DAS BÄLLEBAD'
       -
         id: GSWZvnff
-        title: '10. Oktober 2024 | 11:00 Uhr<br>10. Oktober 2024 | 19:00 Uhr<br>11. Oktober 2024 | 19:00 Uhr'
-        text: 'Leitung: Marie Petzold'
-        label: ZUCKERHERZEN
+        title: '1. Oktober 2025 | 19:00 Uhr<br>2. Oktober 2025 | 19:00 Uhr'
+        text: 'Leitung: Michael Alexander Müller'
+        label: 'YOU’RE IN BY ANDY!'
         target_blank: false
         link_type: entry
-        entry: d02c0292-2497-4460-8dfa-7eb93c6b6b9b
-        attr_title: ZUCKERHERZEN
-        attr_aria: ZUCKERHERZEN
-      -
-        id: lzcmnbdd
-        title: '13. Oktober 2024 | 19:00 Uhr'
-        text: 'Leitung: Manfred Hüttmann, Ahmed Soura'
-        label: 'GOLDENE TAGE, ABER BITTE NUR FÜR MICH...'
-        target_blank: false
-        link_type: entry
-        entry: e67da234-fe09-4a55-a00b-457a645c7489
-        attr_title: 'GOLDENE TAGE, ABER BITTE NUR FÜR MICH...'
-        attr_aria: 'GOLDENE TAGE, ABER BITTE NUR FÜR MICH...'
+        entry: 13529a8b-7eb3-479f-b85f-891e62cd94e5
+        attr_title: 'YOU’RE IN BY ANDY!'
+        attr_aria: 'YOU’RE IN BY ANDY!'
     type: link_blocks
     enabled: true
 seo_noindex: false
@@ -206,6 +177,8 @@ sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 template: default
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1728302126
+updated_at: 1752763407
 parent: home
+seo_title: 'BACKSTAGE Festival'
+og_title: 'BACKSTAGE Festival'
 ---

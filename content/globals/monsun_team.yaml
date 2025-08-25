@@ -102,6 +102,26 @@ data:
       type: neues_mitgleid
       enabled: true
     -
+      id: mdd3mncy
+      name: 'Anni Rauh'
+      rolle: Technik
+      mailadresse:
+        -
+          id: mdd3n2zt
+          e-mail: technik@monsun.theater
+          type: neues_set
+          enabled: true
+      telefonnummer:
+        -
+          id: mdd3nqeb
+          nummer: '+49403903148'
+          extra_info_telefon: false
+          type: telefonnummer
+          enabled: true
+      extra_info_toggle: false
+      type: neues_mitgleid
+      enabled: true
+    -
       id: m685r1hx
       name: 'Martin Hüsges'
       rolle: 'Video & Web'

@@ -5,7 +5,7 @@ title: 'Lara Hüsges'
 hat_eigene_website_has_own_website: false
 biographie_eintragen_create_artist_s_biography: true
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1750262349
+updated_at: 1755185209
 page_builder:
   -
     id: ltnchsiq
@@ -199,18 +199,29 @@ page_builder:
             marks:
               -
                 type: italic
-            text: (Gesang)
+            text: '(Gesang & Violoncello)'
           -
             type: hardBreak
           -
             type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::43b10577-2eaf-408c-a518-cd732e6db359'
+                  rel: null
+                  target: null
+                  title: null
             text: 'SOLLEN SIE DOCH CHAOS FRESSEN'
+          -
+            type: text
+            text: "\_"
           -
             type: text
             marks:
               -
                 type: italic
-            text: ' (Gesang)'
+            text: (Gesang)
     type: article
     enabled: true
 ---

@@ -71,7 +71,18 @@ page_builder:
             type: hardBreak
           -
             type: text
-            text: 'SOLLEN SIE DOCH CHAOS FRESSEN '
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::43b10577-2eaf-408c-a518-cd732e6db359'
+                  rel: null
+                  target: null
+                  title: null
+            text: 'SOLLEN SIE DOCH CHAOS FRESSEN'
+          -
+            type: text
+            text: "\_"
           -
             type: text
             marks:
@@ -81,5 +92,5 @@ page_builder:
     type: article
     enabled: true
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1750262393
+updated_at: 1753118732
 ---

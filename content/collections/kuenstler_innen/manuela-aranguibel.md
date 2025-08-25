@@ -5,7 +5,7 @@ title: 'Manuela Aranguibel'
 hat_eigene_website_has_own_website: false
 biographie_eintragen_create_artist_s_biography: true
 updated_by: b1a43fd3-c865-4122-b6cc-50cfa81a1985
-updated_at: 1728508579
+updated_at: 1753118704
 page_builder:
   -
     id: m22d9vqo
@@ -149,6 +149,50 @@ page_builder:
                   target: null
                   title: null
             text: 'FINALE FURIOSO'
+          -
+            type: text
+            text: ' '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: (Tanz)
+          -
+            type: hardBreak
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::a4920d72-62ea-4a3b-961e-ce7c961d4a74'
+                  rel: null
+                  target: null
+                  title: null
+            text: ZEDER
+          -
+            type: text
+            text: ' '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: (Tanz)
+          -
+            type: hardBreak
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::43b10577-2eaf-408c-a518-cd732e6db359'
+                  rel: null
+                  target: null
+                  title: null
+            text: 'SOLLEN SIE DOCH CHAOS FRESSEN'
           -
             type: text
             text: ' '
