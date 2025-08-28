@@ -41,7 +41,7 @@ APP_URL = os.environ["APP_URL"]
 # set up a global pool manager with sane timeouts
 http = urllib3.PoolManager(
     timeout=urllib3.util.Timeout(connect=5.0,
-read=20.0),
+read=60.0),
 retries=False,
 )
 
