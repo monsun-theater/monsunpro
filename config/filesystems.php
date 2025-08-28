@@ -59,11 +59,31 @@ return [
         ],
 
         'assets' => [
+            'driver'    => 'sftp',
+            'host'      => env('ASSETS_SFTP_HOST'),
+            'port'      => env('ASSETS_SFTP_PORT', 22),
+            'username'  => env('ASSETS_SFTP_USERNAME'),
+
+            // Use ONE of the following auth methods:
+            'password'  => env('ASSETS_SFTP_PASSWORD'),
+
+            // Directory on the SFTP server where originals live:
+            'root'      => env('ASSETS_SFTP_ROOT', '/'),
+
+            // Optional niceties:
+            'timeout'         => 30,
+            'url' => '/assets',
+            'visibility'      => 'public',
+            'directory_perm'  => 0755,
+        ],
+
+        /*
+        'assets' => [
             'driver' => 'local',
             'root' => public_path('assets'),
             'url' => '/assets',
             'visibility' => 'public',
-        ],
+        ],*/
 
     ],
 
