@@ -14,6 +14,7 @@
         "jonassiewertsen/statamic-external-link": "^1.5",
         "laravel/framework": "^10.19",
         "laravel/tinker": "^2.8",
+        "league/flysystem-sftp-v3": "*",
         "pixelfear/composer-dist-plugin": "^0.1",
         "statamic-rad-pack/mailchimp": "^4.1",
         "statamic/cms": "^4.0"
