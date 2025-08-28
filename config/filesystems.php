@@ -61,7 +61,7 @@ return [
         'assets' => [
             'driver'    => 'sftp',
             'host'      => env('ASSETS_SFTP_HOST'),
-            'port'      => env('ASSETS_SFTP_PORT', 22),
+            'port'      => 22,
             'username'  => env('ASSETS_SFTP_USERNAME'),
 
             // Use ONE of the following auth methods:
