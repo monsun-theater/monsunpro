@@ -36,3 +36,4 @@ bin/
 .local
 .wget-hsts
 public/.htaccess
+.bash_history
