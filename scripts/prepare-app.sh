@@ -14,13 +14,14 @@ sed -i 's|%{DOCUMENT_ROOT}|'"$HOME"'/public/|g' public/.htaccess
 source scripts/sync-assets.sh
 
 # Reset cache and start app
-php artisan up
+php please glide:clear
 php artisan config:cache
 php artisan route:cache
 php artisan statamic:search:update --all
 php artisan statamic:static:clear
 php artisan statamic:stache:clear
 php artisan statamic:stache:refresh
+php artisan up
 
 
 # Warm static cache
