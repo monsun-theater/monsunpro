@@ -18,7 +18,11 @@ php artisan statamic:static:clear
 php artisan statamic:stache:clear
 php artisan statamic:stache:refresh
 
+# Sync assets
+scripts/sync-assets.sh
+
 # Warm static cache
 python3 scripts/warm-static-cache.py
+
 
 
