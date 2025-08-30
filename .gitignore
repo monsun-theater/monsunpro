@@ -1,12 +1,6 @@
 /node_modules
 /public/hot
-/public/assets/aktuelles
-/public/assets/extras
-/public/assets/kuenstler-innen
-/public/assets/produktionen
-/public/assets/monsun-team
-public/assets/spielstaette
-public/assets/site-setup/social-media-icons/
+/public/assets
 /public/storage
 /public/vendor/statamic
 /public/img/
@@ -38,3 +32,7 @@ logs/
 .bashrc
 .deploy-now/php
 .ssh/**
+bin/
+.local
+.wget-hsts
+public/.htaccess
