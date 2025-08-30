@@ -45,4 +45,6 @@ deploy:
 runtime:
   cron-jobs:
     - command: python3 $HOME/scripts/warm-static-cache.py # the deployment is located at $HOME/htdocs/ to execute a deployed script just prefix it accordingly
-      schedule: 0/5 * * * * # run every day at 5:00
+      schedule: 0/5 * * * * # run every 5 mins
+    - command: scripts/sync-assets.sh # Sync assets to/from the server
+      schedule: 0/15 * * * * # run every 15 mins
