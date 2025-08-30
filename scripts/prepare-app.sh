@@ -6,7 +6,8 @@ set -a; [ -f .env ] && source .env; set +a
 # Set up GIT
 source scripts/set-up-git.sh
 
-# replace %{DOCUMENT_ROOT} in public/.htaccess as it is misconfigured in deploy now
+# create htaccess and replace %{DOCUMENT_ROOT} in public/.htaccess as it is misconfigured in deploy now
+cp public/.htaccess.template public/.htaccess
 sed -i 's|%{DOCUMENT_ROOT}|'"$HOME"'/public/|g' public/.htaccess
 
 # Reset cache and start app
