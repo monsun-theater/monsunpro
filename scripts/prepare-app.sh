@@ -10,6 +10,9 @@ source scripts/set-up-git.sh
 cp public/.htaccess.template public/.htaccess
 sed -i 's|%{DOCUMENT_ROOT}|'"$HOME"'/public/|g' public/.htaccess
 
+# Sync assets
+source scripts/sync-assets.sh
+
 # Reset cache and start app
 php artisan up
 php artisan config:cache
@@ -19,8 +22,6 @@ php artisan statamic:static:clear
 php artisan statamic:stache:clear
 php artisan statamic:stache:refresh
 
-# Sync assets
-source scripts/sync-assets.sh
 
 # Warm static cache
 python3 scripts/warm-static-cache.py
